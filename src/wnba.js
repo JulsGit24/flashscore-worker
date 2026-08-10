@@ -18,19 +18,29 @@ import {
   linesAtProbability,
   projectGame,
 } from './basketball/model.js';
+import { fetchQuarters, projectPeriods, quarterProfile } from './basketball/quarters.js';
 import { renderJson, renderMarkdown } from './basketball/report.js';
 
 export const WNBA_PATH = 'usa/wnba';
 export const DEFAULT_CACHE = 'data/wnba-history.json';
 
-/** Keep only finished WNBA games, in the same compact shape the soccer cache uses. */
-export function distilWnbaDay(matches) {
-  const out = [];
+/**
+ * Keep only finished WNBA games, and pull each one's quarter splits.
+ *
+ * The quarter feed is per match, so this costs one extra request per cached
+ * game — a handful a day for the WNBA. A game whose splits cannot be read is
+ * still kept: it counts toward the table and form, just not toward the quarter
+ * profiles.
+ */
+export async function distilWnbaDay(matches, deps = {}) {
+  const getQuarters = deps.fetchQuarters ?? fetchQuarters;
+  const finished = [];
   for (const m of matches) {
     if (m.homeScore === null || m.awayScore === null) continue;
     const { country, slug } = parseTournamentUrl(m.tournament?.url);
     if (`${country}/${slug}` !== WNBA_PATH) continue;
-    out.push({
+    finished.push({
+      id: m.id ?? null,
       l: WNBA_PATH,
       h: m.home,
       a: m.away,
@@ -39,7 +49,19 @@ export function distilWnbaDay(matches) {
       ts: m.kickoff ? Math.floor(m.kickoff.getTime() / 1000) : 0,
     });
   }
-  return out;
+
+  await Promise.all(
+    finished.map(async (game) => {
+      if (!game.id) return;
+      try {
+        game.quarters = await getQuarters(game.id);
+      } catch {
+        // A missing split is not worth failing a day's capture over.
+        game.quarters = null;
+      }
+    }),
+  );
+  return finished;
 }
 
 function parseArgs(argv) {
@@ -119,6 +141,7 @@ export async function buildWnbaReport(args, deps = {}) {
     daysFetched: 0,
     daysFailed: 0,
     teamsKnown: 0,
+    gamesWithQuarters: 0,
     errors: [],
   };
 
@@ -140,6 +163,7 @@ export async function buildWnbaReport(args, deps = {}) {
 
   const rows = buildStandings(history.matches);
   stats.teamsKnown = rows.length;
+  stats.gamesWithQuarters = history.matches.filter((m) => m.quarters).length;
   const ctx = leagueContext(rows);
 
   const games = fixtures
@@ -152,6 +176,8 @@ export async function buildWnbaReport(args, deps = {}) {
       const awayRow = findRow(rows, m.away) ?? baselineRow(m.away);
       const h2h = headToHead(history.matches, homeRow.team, awayRow.team);
       const projection = projectGame(m, homeRow, awayRow, ctx);
+      const homeProfile = quarterProfile(history.matches, homeRow.team);
+      const awayProfile = quarterProfile(history.matches, awayRow.team);
       return {
         id: m.id,
         tipoff: m.kickoff,
@@ -159,6 +185,8 @@ export async function buildWnbaReport(args, deps = {}) {
         away: m.away,
         projection,
         lines: linesAtProbability(projection, args.coverProbability ?? 0.7),
+        periods: projectPeriods(projection, homeProfile, awayProfile),
+        quarterSample: Math.min(homeProfile.played, awayProfile.played),
         form: {
           home: recentForm(history.matches, homeRow.team),
           away: recentForm(history.matches, awayRow.team),

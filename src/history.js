@@ -135,7 +135,7 @@ export async function updateHistory({
   let failed = 0;
   await mapWithConcurrency(wanted, concurrency, async ({ offset, key }) => {
     try {
-      cache[key] = distil(await fetchDay(offset));
+      cache[key] = await distil(await fetchDay(offset));
       fetched += 1;
     } catch (err) {
       failed += 1;

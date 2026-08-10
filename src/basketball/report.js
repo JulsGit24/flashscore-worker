@@ -59,6 +59,7 @@ export function renderMarkdown(data) {
   out.push('| **Form** | Last 5 results, most recent first |');
   out.push('| **PF/PA** | Points scored and allowed per game across those 5 |');
   out.push('| **H2H** | Cached meetings this season: home wins–away wins, average total |');
+  out.push('| **Q1-Q4 / H1-H2** | Projected points, margin and winner for each quarter and half |');
   out.push(
     '| **?** | How much rests on these teams’ own results: ' +
       '● 5+ games each · ◑ 3-4 · ◔ 1-2 · ○ none, league baseline |',
@@ -140,6 +141,38 @@ export function renderMarkdown(data) {
     }
     out.push('');
 
+    // --- quarters and halves ------------------------------------------------
+    out.push('## Quarters and halves');
+    out.push('');
+    out.push(
+      'Points per period, and who takes it. Built from each side’s share of ' +
+        'its own scoring by quarter against how much the opponent concedes in ' +
+        'that quarter, then applied to the whole-game projection. A quarter can ' +
+        'be tied, so the tie carries its own probability rather than being ' +
+        'folded into a winner.',
+    );
+    out.push('');
+    for (const g of games) {
+      const q = g.periods;
+      out.push(`**${g.home} v ${g.away}** — quarter sample: ${g.quarterSample} game(s) each`);
+      out.push('');
+      out.push('| Period | Points H–A | Total | Margin | Win H | Tie | Win A |');
+      out.push('|---|---|---:|---:|---:|---:|---:|');
+      for (const p of [...q.quarters, ...q.halves]) {
+        out.push(
+          `| ${p.period} | ${p.points.home.toFixed(1)}–${p.points.away.toFixed(1)} | ` +
+            `${p.points.total.toFixed(1)} | ${signed(p.margin)} | ` +
+            `${pct(p.outcome.home)} | ${pct(p.outcome.tie)} | ${pct(p.outcome.away)} |`,
+        );
+      }
+      out.push('');
+      out.push(
+        `Best quarter for ${g.home}: **${q.bestForHome}** · ` +
+          `for ${g.away}: **${q.bestForAway}**`,
+      );
+      out.push('');
+    }
+
     out.push('## Totals — over/under by line');
     out.push('');
     out.push('| Tip | Game | Proj total | 80% range | ' + 'Over lines |');
@@ -195,6 +228,7 @@ export function renderMarkdown(data) {
     `${stats.totalGames} basketball games worldwide · ${games.length} WNBA · ` +
       `${stats.teamsKnown} teams in the derived table from ${stats.daysCached} days of ` +
       `results (${stats.daysFetched} newly fetched, ${stats.daysFailed} failed) · ` +
+      `${stats.gamesWithQuarters ?? 0} games with quarter splits · ` +
       `generated ${new Date().toISOString()}`,
   );
   out.push('');
@@ -222,6 +256,8 @@ export function renderJson(data) {
         away: g.away,
         projection: g.projection,
         linesAtProbability: g.lines,
+        periods: g.periods,
+        quarterSample: g.quarterSample,
         form: g.form,
         headToHead: g.h2h,
         headToHeadSummary: g.h2hSummary,

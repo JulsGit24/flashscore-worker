@@ -1,4 +1,5 @@
 import { TREND_ARROW } from './form.js';
+import { STATUS_BADGE } from './promotion.js';
 
 /** Confidence shown as a filled-ness symbol, weakest to strongest. */
 const CONFIDENCE_MARK = {
@@ -123,12 +124,19 @@ export function strongPicks(ranked, threshold, minConfidence = 'low') {
     .sort((a, b) => b.score.pick.probability - a.score.pick.probability);
 }
 
+/** "Luton ⇑" — the badge is empty for a side that did not change tier. */
+function teamCell(name, movement, venue) {
+  const badge = STATUS_BADGE[movement] ?? '';
+  return `${name}${badge ? ` ${badge}` : ''} *(${venue})*`;
+}
+
 function fixtureRow(f, tz) {
   const s = f.score;
   const p = s.probabilities;
 
   return (
-    `| ${formatTime(f.kickoff, tz)} | ${f.home} *(H)* | ${f.away} *(A)* | ` +
+    `| ${formatTime(f.kickoff, tz)} | ${teamCell(f.home, f.movement?.home, 'H')} | ` +
+    `${teamCell(f.away, f.movement?.away, 'A')} | ` +
     `${pct(p.home)} | ${pct(p.draw)} | ${pct(p.away)} | ` +
     `${s.projected.home.toFixed(1)}–${s.projected.away.toFixed(1)} | ` +
     `${s.projected.total.toFixed(1)} | ${pct(p.over25)} | ${pct(p.under15)} | ${pct(p.btts)} | ` +
@@ -185,6 +193,7 @@ export function renderMarkdown(data) {
   );
   out.push('| **Form** | Last 5 results, most recent first. W win, T tie, L loss |');
   out.push('| **↑ ↓ →** | Points per game over those 5 vs the season: rising, sliding, steady |');
+  out.push('| **⇑ ⇓** | Promoted into this league last close season, or relegated into it |');
   out.push('| **L5** | Goals scored–conceded across those 5 games |');
   out.push('| **last season** | Marked on a league whose table is too thin this season, so last season’s record is used instead |');
   out.push('');
@@ -288,6 +297,7 @@ export function renderJson(data) {
     home: f.home,
     away: f.away,
     tableFromPreviousSeason: Boolean(f.tableFromPreviousSeason),
+    movement: { home: f.movement?.home ?? 'unknown', away: f.movement?.away ?? 'unknown' },
     form: {
       home: f.form?.home ?? null,
       away: f.form?.away ?? null,
