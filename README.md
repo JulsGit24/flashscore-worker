@@ -41,6 +41,45 @@ Two things keep August honest:
 Tags on each row explain why it made the list: `goals`, `mismatch`,
 `attack v leaky`, `top v bottom`, `wide gap`, `few games played`.
 
+## What the report contains
+
+Three sections, then the schedule:
+
+1. **Strong favourites** — fixtures where one side is at or above the win
+   threshold (default 70%, `--strong-pick`). Draws never qualify.
+2. **Most goals expected** — fixtures flagged high-goals, highest total first.
+3. **Full schedule** — every in-scope fixture, split into a table per country
+   and league, earliest kickoff first. Leagues are ordered by their first
+   kickoff so the document as a whole still reads early to late.
+
+Per-fixture columns:
+
+| Column | Meaning |
+|---|---|
+| **Home / Away** | Marked `(H)` and `(A)` so the venue is never ambiguous |
+| **xG** | Projected goals, home–away |
+| **Tot** | Projected total goals |
+| **BTTS** | Both teams to score |
+| **Win%** | Most likely result and its probability: `H`, `A` or `D` |
+| **Form H / Form A** | Last 5 results, most recent first — `W` win, `T` tie, `L` loss |
+| **↑ ↓ →** | Points per game across those 5 against the season average: rising, sliding, steady |
+| **L5 H / L5 A** | Goals scored–conceded across those same 5 games |
+
+Win, draw, BTTS and over-2.5 probabilities come from independent Poisson
+distributions over the two projected scorelines (`src/probabilities.js`). That
+ignores the mild negative correlation real scorelines show, so the draw
+probability runs a point or two low — good enough to rank fixtures, not to price
+a bet.
+
+> **On "ascending / descending":** the arrows track *form trend* — a side's
+> points per game over its last five against its own season average — not
+> promotion or relegation. Promotion status isn't derivable from the feed, which
+> only exposes the current season. Say the word if you meant promoted/relegated
+> sides and I'll source it differently.
+
+Fixtures with too little data still get a row, with their reason in **Notes**
+instead of numbers, so the schedule is complete even when the model is silent.
+
 See [`reports/EXAMPLE.md`](reports/EXAMPLE.md) for the output format.
 
 ## Usage
@@ -48,11 +87,12 @@ See [`reports/EXAMPLE.md`](reports/EXAMPLE.md) for the output format.
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 33 offline tests, no network
+npm test                       # 59 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40
 node src/index.js --day-offset 1 --format json
+node src/index.js --strong-pick 0.8    # only call 80%+ a strong favourite
 ```
 
 Output is written to `reports/YYYY-MM-DD.md` and `reports/YYYY-MM-DD.json`.
@@ -129,6 +169,8 @@ src/flashscore.js    feed client + parser
 src/history.js       season results, replayed from past day feeds and cached
 src/table.js         league tables + season-boundary detection
 src/score.js         the goals and edge model
+src/probabilities.js win/draw/BTTS/over-2.5 from the projected scorelines
+src/form.js          last-5 streaks, goals in them, and form trend
 src/report.js        markdown and JSON rendering
 src/index.js         CLI and pipeline
 test/                offline tests over recorded feed samples

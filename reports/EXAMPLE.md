@@ -1,25 +1,48 @@
 # Soccer shortlist — 2026-08-10
 
-European tier-1 and tier-2 leagues, men’s and women’s. Times in **America/New_York**. 2 games ranked out of 3 in scope.
+European tier-1 and tier-2 leagues, men’s and women’s. All times **America/New_York**, earliest first. 3 fixtures, 2 with enough data to score.
 
-`Goals` and `Edge` are 0-100. `Goals` is how high-scoring the game projects; `Edge` is how lopsided it is. `Proj` is the projected scoreline.
+<details><summary>Column guide</summary>
 
-| # | Time | League | Fixture | Table | Goals | Edge | Proj | Why |
-|---:|---|---|---|---|---:|---:|---|---|
-| 1 | 07:00 | England Premier League | **Arsenal** v **Sheffield Utd** | 1st v 4th | 76.2 | 86 | 3.5–0.2 | goals, mismatch, attack v leaky, top v bottom, wide gap |
-| 2 | 10:00 | England Premier League | **Brighton** v **Man City** | 3rd v 2nd | 19 | 26.2 | 0.9–1.6 |  |
+| Column | Meaning |
+|---|---|
+| **xG** | Projected goals, home–away |
+| **Tot** | Projected total goals |
+| **BTTS** | Both teams to score |
+| **Win%** | Most likely result: `H` home, `A` away, `D` draw |
+| **Form** | Last 5 results, most recent first. W win, T tie, L loss |
+| **↑ ↓ →** | Points per game over those 5 vs the season: rising, sliding, steady |
+| **L5** | Goals scored–conceded across those 5 games |
 
-## Running order
+</details>
 
-- **07:00** — Arsenal v Sheffield Utd (Premier League) · goals 76.2 · edge 86 · lean Arsenal
-- **10:00** — Brighton v Man City (Premier League) · goals 19 · edge 26.2 · lean Man City
+## Strong favourites (70%+)
 
-## In scope but not ranked
+| Time | League | Fixture | Side | Win% | xG | Tot |
+|---|---|---|---|---:|---|---:|
+| 07:00 | England Premier League | Arsenal v Sheffield Utd | **Arsenal (H)** | **95%** | 3.5–0.2 | 3.7 |
 
-Not enough completed results in the derived league table to score these yet.
+## Most goals expected
 
-- 08:00 — Hammarby v Vittsjo (Damallsvenskan) — no results yet
+| Time | League | Fixture | Tot | BTTS | Why |
+|---|---|---|---:|---:|---|
+| 07:00 | England Premier League | Arsenal v Sheffield Utd | **3.7** | 16% | goals, mismatch, attack v leaky, top v bottom, wide gap |
+
+## Full schedule
+
+### England — Premier League · tier 1
+
+| Time | Home | Away | xG | Tot | BTTS | Win% | Form H | Form A | L5 H | L5 A | Notes |
+|---|---|---|---|---:|---:|---|---|---|---|---|---|
+| 07:00 | Arsenal *(H)* | Sheffield Utd *(A)* | 3.5–0.2 | 3.7 | 16% | H 95% | WWWWW → | LLLLL → | 12-0 | 0-12 | goals, mismatch, attack v leaky, top v bottom, wide gap |
+| 10:00 | Brighton *(H)* | Man City *(A)* | 0.9–1.6 | 2.5 | 47% | A 55% | WWLLL → | WWWWL ↑ | 5-7 | 10-2 |  |
+
+### Sweden — Damallsvenskan (Women) · tier 1
+
+| Time | Home | Away | xG | Tot | BTTS | Win% | Form H | Form A | L5 H | L5 A | Notes |
+|---|---|---|---|---:|---:|---|---|---|---|---|---|
+| 08:00 | Hammarby *(H)* | Vittsjo *(A)* | — | — | — | — | — | — | — | — | _no results yet_ |
 
 ---
 
-Fetched 6 fixtures worldwide · 3 in scope · 1 league tables derived from 300 days of results (1 newly fetched, 0 failed) · generated 2026-08-10T16:08:27.109Z
+Fetched 6 fixtures worldwide · 3 in scope · 1 league tables derived from 120 days of results (1 newly fetched, 0 failed) · generated 2026-08-10T16:31:41.411Z
