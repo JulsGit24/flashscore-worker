@@ -140,7 +140,7 @@ test('buildSeasonTable cannot fall back when there is only one season', () => {
   assert.equal(rows.find((r) => r.team === 'Alpha').played, 1);
 });
 
-test('distilDay keeps finished in-scope games and drops everything else', () => {
+test('distilDay keeps finished in-region games and drops everything else', () => {
   const mk = (url, name, home, away, hg, ag) => ({
     tournament: { url, name },
     home,
@@ -153,7 +153,6 @@ test('distilDay keeps finished in-scope games and drops everything else', () => 
   const kept = distilDay([
     mk('/football/england/premier-league/', 'ENGLAND: Premier League', 'A', 'B', 2, 1),
     mk('/football/england/premier-league/', 'ENGLAND: Premier League', 'C', 'D', null, null), // not played
-    mk('/football/england/league-one/', 'ENGLAND: League One', 'E', 'F', 1, 1), // tier 3
     mk('/football/nigeria/npfl/', 'NIGERIA: NPFL', 'G', 'H', 3, 0), // out of region
   ]);
 
@@ -185,4 +184,20 @@ test('distilDay keeps results from every configured region, not just Europe', ()
   ]);
 
   assert.deepEqual(kept.map((k) => k.l), ['brazil/serie-a', 'japan/j1-league', 'usa/mls']);
+});
+
+test('distilDay caches by region, not by the league allowlist', () => {
+  // A tier-3 league is still cached: the allowlist is applied when a report is
+  // built, so a league added later can be backfilled from history already held.
+  const kept = distilDay([
+    {
+      tournament: { url: '/football/england/league-one/', name: 'ENGLAND: League One' },
+      home: 'Barnsley',
+      away: 'Wigan',
+      homeScore: 1,
+      awayScore: 1,
+      kickoff: new Date(day(0) * 1000),
+    },
+  ]);
+  assert.deepEqual(kept.map((k) => k.l), ['england/league-one']);
 });

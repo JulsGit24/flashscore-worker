@@ -31,6 +31,50 @@ export const MODEL = {
   lowSampleDamping: 0.85,
 };
 
+/**
+ * How much of a fixture's numbers come from the two teams' own results rather
+ * than from the league prior. Every fixture gets a projection — with no results
+ * at all, shrinkage returns exactly the league average, which is a real if
+ * uninformative answer — so this says how much weight to put on it.
+ */
+export const CONFIDENCE = {
+  /** Neither side has a result on file: the numbers are the league baseline. */
+  baseline: 'baseline',
+  /** 1-2 games: mostly prior. */
+  low: 'low',
+  /** 3-4 games: the sides are starting to separate from the prior. */
+  medium: 'medium',
+  /** 5+ games each: the model is reading form, not the prior. */
+  high: 'high',
+};
+
+export function confidenceFor(homePlayed, awayPlayed) {
+  const games = Math.min(homePlayed ?? 0, awayPlayed ?? 0);
+  if (games === 0) return CONFIDENCE.baseline;
+  if (games < 3) return CONFIDENCE.low;
+  if (games < MODEL.minPlayedForConfidence) return CONFIDENCE.medium;
+  return CONFIDENCE.high;
+}
+
+/**
+ * A stand-in row for a team with no results on file. Every counter is zero, so
+ * teamRates() shrinks it all the way to the league average — which is exactly
+ * what "we know nothing about this side" should mean.
+ */
+export function baselineRow(team) {
+  return {
+    team,
+    rank: null,
+    played: 0,
+    wins: 0,
+    draws: 0,
+    losses: 0,
+    goalsFor: 0,
+    goalsAgainst: 0,
+    points: 0,
+  };
+}
+
 const clamp01 = (x) => Math.min(1, Math.max(0, x));
 const scale = (x, lo, hi) => clamp01((x - lo) / (hi - lo));
 
@@ -120,6 +164,7 @@ export function scoreFixture(fixture, homeRow, awayRow, ctx) {
     homeExp === awayExp ? null : homeExp > awayExp ? fixture.home : fixture.away;
 
   return {
+    confidence: confidenceFor(H.played, A.played),
     goalsIndex: round(goalsIndex),
     mismatchIndex: round(mismatchIndex),
     rankScore: round(rankScore),

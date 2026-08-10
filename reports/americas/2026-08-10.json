@@ -2,11 +2,11 @@
   "date": "2026-08-10",
   "region": "americas",
   "timezone": "America/New_York",
-  "generatedAt": "2026-08-10T17:15:50.486Z",
+  "generatedAt": "2026-08-10T20:11:52.448Z",
   "stats": {
     "totalFixtures": 152,
     "inScope": 43,
-    "tablesLoaded": 62,
+    "tablesLoaded": 320,
     "daysCached": 7,
     "daysFetched": 0,
     "daysFailed": 0,
@@ -24,7 +24,76 @@
     "errors": []
   },
   "strongPickThreshold": 0.7,
-  "strongPicks": [],
+  "minConfidenceForPicks": "low",
+  "strongPicks": [
+    {
+      "kickoff": "2026-08-09T23:30:00.000Z",
+      "kickoffLocal": "19:30",
+      "country": "bolivia",
+      "league": "División Profesional",
+      "tier": 1,
+      "gender": "M",
+      "home": "Oriente Petrolero",
+      "away": "Universitario de Vinto",
+      "tableFromPreviousSeason": false,
+      "form": {
+        "home": {
+          "streak": "WLLW",
+          "played": 4,
+          "goalsFor": 8,
+          "goalsAgainst": 4,
+          "points": 6,
+          "ppg": 1.5
+        },
+        "away": {
+          "streak": "LL",
+          "played": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 7,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "descending",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 1,
+      "awayRank": 16,
+      "goalsIndex": 61.8,
+      "mismatchIndex": 62.5,
+      "rankScore": 77.9,
+      "projected": {
+        "home": 2.96,
+        "away": 0.67,
+        "total": 3.63
+      },
+      "probabilities": {
+        "home": 0.8324848288490662,
+        "draw": 0.11172196383930788,
+        "away": 0.05579320731162615,
+        "btts": 0.46298207334784147,
+        "over15": 0.8771979649499244,
+        "over25": 0.7024517299983757,
+        "over35": 0.49100878570700157,
+        "under15": 0.12280203505007559,
+        "under25": 0.2975482700016243
+      },
+      "pick": {
+        "side": "Oriente Petrolero",
+        "where": "H",
+        "probability": 0.8324848288490662
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "ATK_VS_LEAKY",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP",
+        "LOW_SAMPLE"
+      ]
+    }
+  ],
   "games": [
     {
       "kickoff": "2026-08-09T23:00:00.000Z",
@@ -38,26 +107,57 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "points": 6,
+          "ppg": 3
         },
         "away": {
-          "streak": "",
-          "played": 0,
+          "streak": "L",
+          "played": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsAgainst": 2,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 1,
+      "awayRank": 10,
+      "goalsIndex": 25.8,
+      "mismatchIndex": 45.8,
+      "rankScore": 52.3,
+      "projected": {
+        "home": 1.93,
+        "away": 0.81,
+        "total": 2.74
+      },
+      "probabilities": {
+        "home": 0.6373277376700772,
+        "draw": 0.21253134640647867,
+        "away": 0.1501409159234444,
+        "btts": 0.4745635997938036,
+        "over15": 0.7585054579374315,
+        "over25": 0.5161198397570917,
+        "over35": 0.29474097515238146,
+        "under15": 0.24149454206256848,
+        "under25": 0.48388016024290825
+      },
+      "pick": {
+        "side": "Municipal",
+        "where": "H",
+        "probability": 0.6373277376700772
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP",
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-09T23:00:00.000Z",
@@ -71,26 +171,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
+          "streak": "L",
+          "played": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsAgainst": 1,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 1,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 3,
+          "ppg": 3
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 8,
+      "awayRank": 4,
+      "goalsIndex": 5.3,
+      "mismatchIndex": 23,
+      "rankScore": 24.3,
+      "projected": {
+        "home": 1.06,
+        "away": 1.18,
+        "total": 2.23
+      },
+      "probabilities": {
+        "home": 0.32628555883459853,
+        "draw": 0.2875180884690962,
+        "away": 0.3861963526963048,
+        "btts": 0.45272394053446563,
+        "over15": 0.6550744214111175,
+        "over25": 0.3879913067309356,
+        "over35": 0.18856924776973308,
+        "under15": 0.3449255785888825,
+        "under25": 0.6120086932690644
+      },
+      "pick": {
+        "side": "UNAN-Managua",
+        "where": "A",
+        "probability": 0.3861963526963048
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-09T23:00:00.000Z",
@@ -104,26 +233,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
+          "streak": "T",
+          "played": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 1,
+          "ppg": 1
         },
         "away": {
-          "streak": "",
-          "played": 0,
+          "streak": "T",
+          "played": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 1,
+          "ppg": 1
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 10,
+      "awayRank": 9,
+      "goalsIndex": 3.1,
+      "mismatchIndex": 2.6,
+      "rankScore": 3.7,
+      "projected": {
+        "home": 1.2,
+        "away": 0.98,
+        "total": 2.18
+      },
+      "probabilities": {
+        "home": 0.4101804109548708,
+        "draw": 0.29056232872136784,
+        "away": 0.29925726032376126,
+        "btts": 0.4365362060180602,
+        "over15": 0.6405279072458957,
+        "over25": 0.3719186032200145,
+        "over35": 0.17672917562787432,
+        "under15": 0.3594720927541043,
+        "under25": 0.6280813967799854
+      },
+      "pick": {
+        "side": "Chicago W",
+        "where": "H",
+        "probability": 0.4101804109548708
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-09T23:10:00.000Z",
@@ -137,26 +295,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "TLL",
+          "played": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "points": 1,
+          "ppg": 0.3333333333333333
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "TLT",
+          "played": 3,
+          "goalsFor": 3,
+          "goalsAgainst": 4,
+          "points": 2,
+          "ppg": 0.6666666666666666
         },
-        "homeTrend": "unknown",
-        "awayTrend": "unknown"
+        "homeTrend": "steady",
+        "awayTrend": "steady"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 12,
+      "awayRank": 11,
+      "goalsIndex": 2.1,
+      "mismatchIndex": 2.4,
+      "rankScore": 2.9,
+      "projected": {
+        "home": 1.17,
+        "away": 0.99,
+        "total": 2.15
+      },
+      "probabilities": {
+        "home": 0.3991155190162377,
+        "draw": 0.29294395844247006,
+        "away": 0.3079405225412918,
+        "btts": 0.43338147698210294,
+        "over15": 0.6355725965691916,
+        "over25": 0.3665421387453341,
+        "over35": 0.17284020911215664,
+        "under15": 0.36442740343080837,
+        "under25": 0.633457861254666
+      },
+      "pick": {
+        "side": "Jaguares de Cordoba",
+        "where": "H",
+        "probability": 0.3991155190162377
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-09T23:15:00.000Z",
@@ -170,26 +357,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 10,
+      "awayRank": 22,
+      "goalsIndex": 13.5,
+      "mismatchIndex": 24.8,
+      "rankScore": 28.2,
+      "projected": {
+        "home": 1.56,
+        "away": 0.87,
+        "total": 2.43
+      },
+      "probabilities": {
+        "home": 0.5356449901276831,
+        "draw": 0.25472278502931867,
+        "away": 0.20963222484299823,
+        "btts": 0.45894911310589953,
+        "over15": 0.6980334205963981,
+        "over25": 0.4381088645147171,
+        "over35": 0.22756997408855595,
+        "under15": 0.30196657940360194,
+        "under25": 0.5618911354852829
+      },
+      "pick": {
+        "side": "Argentinos Jrs",
+        "where": "H",
+        "probability": 0.5356449901276831
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-09T23:15:00.000Z",
@@ -203,26 +419,56 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
+          "streak": "L",
+          "played": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsAgainst": 2,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "WL",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 1.5
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 11,
+      "awayRank": 5,
+      "goalsIndex": 0,
+      "mismatchIndex": 23.6,
+      "rankScore": 23.6,
+      "projected": {
+        "home": 0.73,
+        "away": 1.08,
+        "total": 1.81
+      },
+      "probabilities": {
+        "home": 0.24493056942110422,
+        "draw": 0.3204509271774036,
+        "away": 0.4346185034014919,
+        "btts": 0.3421496171068014,
+        "over15": 0.5401318653818985,
+        "over25": 0.27205820064482344,
+        "over35": 0.11032042292012147,
+        "under15": 0.4598681346181015,
+        "under25": 0.7279417993551766
+      },
+      "pick": {
+        "side": "Estrella Roja",
+        "where": "A",
+        "probability": 0.4346185034014919
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP",
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-09T23:15:00.000Z",
@@ -236,26 +482,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
+          "streak": "T",
+          "played": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 1,
+          "ppg": 1
         },
         "away": {
-          "streak": "",
-          "played": 0,
+          "streak": "T",
+          "played": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 1,
+          "ppg": 1
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 7,
+      "awayRank": 4,
+      "goalsIndex": 0,
+      "mismatchIndex": 9.3,
+      "rankScore": 9.3,
+      "projected": {
+        "home": 0.65,
+        "away": 0.53,
+        "total": 1.19
+      },
+      "probabilities": {
+        "home": 0.3269807196567158,
+        "draw": 0.4226098396623654,
+        "away": 0.2504094406809186,
+        "btts": 0.19662799213175738,
+        "over15": 0.33013234975892286,
+        "over25": 0.11620489191587792,
+        "over35": 0.032060091830946914,
+        "under15": 0.6698676502410772,
+        "under25": 0.8837951080841221
+      },
+      "pick": {
+        "side": "Draw",
+        "where": "D",
+        "probability": 0.4226098396623654
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-09T23:30:00.000Z",
@@ -269,26 +544,60 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "WLLW",
+          "played": 4,
+          "goalsFor": 8,
+          "goalsAgainst": 4,
+          "points": 6,
+          "ppg": 1.5
         },
         "away": {
-          "streak": "",
-          "played": 0,
+          "streak": "LL",
+          "played": 2,
           "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsAgainst": 7,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
-        "homeTrend": "unknown",
+        "homeTrend": "descending",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 1,
+      "awayRank": 16,
+      "goalsIndex": 61.8,
+      "mismatchIndex": 62.5,
+      "rankScore": 77.9,
+      "projected": {
+        "home": 2.96,
+        "away": 0.67,
+        "total": 3.63
+      },
+      "probabilities": {
+        "home": 0.8324848288490662,
+        "draw": 0.11172196383930788,
+        "away": 0.05579320731162615,
+        "btts": 0.46298207334784147,
+        "over15": 0.8771979649499244,
+        "over25": 0.7024517299983757,
+        "over35": 0.49100878570700157,
+        "under15": 0.12280203505007559,
+        "under25": 0.2975482700016243
+      },
+      "pick": {
+        "side": "Oriente Petrolero",
+        "where": "H",
+        "probability": 0.8324848288490662
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "ATK_VS_LEAKY",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP",
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-09T23:30:00.000Z",
@@ -302,26 +611,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "TW",
+          "played": 2,
+          "goalsFor": 5,
+          "goalsAgainst": 1,
+          "points": 4,
+          "ppg": 2
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "T",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "points": 1,
+          "ppg": 1
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 1,
+      "awayRank": 6,
+      "goalsIndex": 14.7,
+      "mismatchIndex": 25.3,
+      "rankScore": 29,
+      "projected": {
+        "home": 1.68,
+        "away": 0.78,
+        "total": 2.46
+      },
+      "probabilities": {
+        "home": 0.5885336750906345,
+        "draw": 0.23986659268329225,
+        "away": 0.17159973222607344,
+        "btts": 0.44065479875532937,
+        "over15": 0.704394587466823,
+        "over25": 0.4458850911538499,
+        "over35": 0.23390730417721256,
+        "under15": 0.29560541253317696,
+        "under25": 0.5541149088461501
+      },
+      "pick": {
+        "side": "FAS",
+        "where": "H",
+        "probability": 0.5885336750906345
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T00:00:00.000Z",
@@ -335,26 +673,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 5,
+      "awayRank": 9,
+      "goalsIndex": 35.2,
+      "mismatchIndex": 20.9,
+      "rankScore": 40.4,
+      "projected": {
+        "home": 1.83,
+        "away": 1.14,
+        "total": 2.97
+      },
+      "probabilities": {
+        "home": 0.5351455847010786,
+        "draw": 0.22892980212254183,
+        "away": 0.23592461317637917,
+        "btts": 0.571070312824061,
+        "over15": 0.7963251076563461,
+        "over25": 0.5700535890323998,
+        "over35": 0.3460447855946924,
+        "under15": 0.20367489234365388,
+        "under25": 0.4299464109676002
+      },
+      "pick": {
+        "side": "U. De Chile",
+        "where": "H",
+        "probability": 0.5351455847010786
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T00:00:00.000Z",
@@ -368,26 +735,56 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "LT",
+          "played": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 4,
+          "points": 1,
+          "ppg": 0.5
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 3,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 3,
+          "ppg": 3
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 7,
+      "awayRank": 3,
+      "goalsIndex": 10.7,
+      "mismatchIndex": 29.3,
+      "rankScore": 32,
+      "projected": {
+        "home": 0.69,
+        "away": 1.67,
+        "total": 2.36
+      },
+      "probabilities": {
+        "home": 0.15120991491114402,
+        "draw": 0.23887936642672503,
+        "away": 0.609910718662131,
+        "btts": 0.40459694384582545,
+        "over15": 0.6827475612156696,
+        "over25": 0.419805718499419,
+        "over35": 0.21295813556263504,
+        "under15": 0.3172524387843304,
+        "under25": 0.5801942815005809
+      },
+      "pick": {
+        "side": "Alajuelense",
+        "where": "A",
+        "probability": 0.609910718662131
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "ATK_VS_LEAKY",
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T00:00:00.000Z",
@@ -401,26 +798,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
+          "streak": "T",
+          "played": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 1,
+          "ppg": 1
         },
         "away": {
-          "streak": "",
-          "played": 0,
+          "streak": "T",
+          "played": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 1,
+          "ppg": 1
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 7,
+      "awayRank": 6,
+      "goalsIndex": 0,
+      "mismatchIndex": 3.8,
+      "rankScore": 3.8,
+      "projected": {
+        "home": 0.75,
+        "away": 0.62,
+        "total": 1.37
+      },
+      "probabilities": {
+        "home": 0.3460043521503077,
+        "draw": 0.38673347643218736,
+        "away": 0.26726217141750563,
+        "btts": 0.24379596907980688,
+        "over15": 0.3977665054943834,
+        "over25": 0.15929982915733856,
+        "over35": 0.05040004696342132,
+        "under15": 0.6022334945056166,
+        "under25": 0.8407001708426615
+      },
+      "pick": {
+        "side": "Draw",
+        "where": "D",
+        "probability": 0.38673347643218736
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T01:00:00.000Z",
@@ -434,12 +860,12 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 4,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "away": {
           "streak": "",
@@ -452,8 +878,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 9,
+      "awayRank": null,
+      "goalsIndex": 50.2,
+      "mismatchIndex": 2.7,
+      "rankScore": 50.9,
+      "projected": {
+        "home": 1.54,
+        "away": 1.8,
+        "total": 3.34
+      },
+      "probabilities": {
+        "home": 0.3322701443238246,
+        "draw": 0.22677832808363801,
+        "away": 0.44095152759253753,
+        "btts": 0.6557564352037508,
+        "over15": 0.846203013721624,
+        "over25": 0.6485419929696599,
+        "over35": 0.4284793898658063,
+        "under15": 0.153796986278376,
+        "under25": 0.35145800703034014
+      },
+      "pick": {
+        "side": "Managua FC",
+        "where": "A",
+        "probability": 0.44095152759253753
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T01:00:00.000Z",
@@ -485,8 +940,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 52.6,
+      "mismatchIndex": 0,
+      "rankScore": 52.6,
+      "projected": {
+        "home": 1.87,
+        "away": 1.53,
+        "total": 3.4
+      },
+      "probabilities": {
+        "home": 0.4587524005163965,
+        "draw": 0.2232322295328897,
+        "away": 0.3180153699507132,
+        "btts": 0.6627132798341759,
+        "over15": 0.8531568590211427,
+        "over25": 0.6602583692807347,
+        "over35": 0.4416400809082715,
+        "under15": 0.1468431409788573,
+        "under25": 0.33974163071926533
+      },
+      "pick": {
+        "side": "Seattle Reign W",
+        "where": "H",
+        "probability": 0.4587524005163965
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T01:15:00.000Z",
@@ -500,12 +984,12 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 1,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 3,
+          "ppg": 3
         },
         "away": {
           "streak": "",
@@ -518,8 +1002,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 7,
+      "awayRank": null,
+      "goalsIndex": 11.1,
+      "mismatchIndex": 4.4,
+      "rankScore": 12.2,
+      "projected": {
+        "home": 1.4,
+        "away": 0.97,
+        "total": 2.37
+      },
+      "probabilities": {
+        "home": 0.46868976904154097,
+        "draw": 0.27061224899051645,
+        "away": 0.26069798196794286,
+        "btts": 0.46780067881467463,
+        "over15": 0.6849698610099545,
+        "over25": 0.422433839097019,
+        "over35": 0.21503038178579992,
+        "under15": 0.3150301389900455,
+        "under25": 0.577566160902981
+      },
+      "pick": {
+        "side": "America De Cali",
+        "where": "H",
+        "probability": 0.46868976904154097
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T01:30:00.000Z",
@@ -533,12 +1046,12 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
+          "streak": "L",
+          "played": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsAgainst": 1,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "away": {
           "streak": "",
@@ -551,8 +1064,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 8,
+      "awayRank": null,
+      "goalsIndex": 0,
+      "mismatchIndex": 2.7,
+      "rankScore": 2.7,
+      "projected": {
+        "home": 0.88,
+        "away": 0.9,
+        "total": 1.78
+      },
+      "probabilities": {
+        "home": 0.328964383073077,
+        "draw": 0.33109082181138455,
+        "away": 0.33994479511553855,
+        "btts": 0.34728557434851887,
+        "over15": 0.5311859476863428,
+        "over25": 0.26402939312688367,
+        "over35": 0.10551650408827125,
+        "under15": 0.46881405231365725,
+        "under25": 0.7359706068731163
+      },
+      "pick": {
+        "side": "Choloma",
+        "where": "A",
+        "probability": 0.33994479511553855
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T15:00:00.000Z",
@@ -566,26 +1108,57 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 4,
+      "awayRank": 8,
+      "goalsIndex": 85,
+      "mismatchIndex": 35.2,
+      "rankScore": 93.8,
+      "projected": {
+        "home": 3,
+        "away": 1.44,
+        "total": 4.44
+      },
+      "probabilities": {
+        "home": 0.6905329471582667,
+        "draw": 0.15277803314881364,
+        "away": 0.15668901969291962,
+        "btts": 0.7250699182968803,
+        "over15": 0.9358113058638213,
+        "over25": 0.8195070557973716,
+        "over35": 0.6473767656990259,
+        "under15": 0.06418869413617867,
+        "under25": 0.1804929442026284
+      },
+      "pick": {
+        "side": "FBC Melgar W",
+        "where": "H",
+        "probability": 0.6905329471582667
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "ATK_VS_LEAKY",
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T18:00:00.000Z",
@@ -617,8 +1190,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 8.7,
+      "mismatchIndex": 0,
+      "rankScore": 8.7,
+      "projected": {
+        "home": 1.27,
+        "away": 1.04,
+        "total": 2.32
+      },
+      "probabilities": {
+        "home": 0.41628927931872206,
+        "draw": 0.2805625184790487,
+        "away": 0.3031482022022294,
+        "btts": 0.4649749242475708,
+        "over15": 0.6714452166383715,
+        "over25": 0.40661120160876696,
+        "over35": 0.20268901003597095,
+        "under15": 0.32855478336162847,
+        "under25": 0.593388798391233
+      },
+      "pick": {
+        "side": "All Boys",
+        "where": "H",
+        "probability": 0.41628927931872206
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T18:00:00.000Z",
@@ -632,26 +1234,57 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
+          "streak": "L",
+          "played": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsAgainst": 2,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 31,
+      "awayRank": 5,
+      "goalsIndex": 18.8,
+      "mismatchIndex": 35.7,
+      "rankScore": 40.4,
+      "projected": {
+        "home": 0.99,
+        "away": 1.57,
+        "total": 2.56
+      },
+      "probabilities": {
+        "home": 0.23862977516873815,
+        "draw": 0.25304622645089725,
+        "away": 0.5083239983803646,
+        "btts": 0.4976827525824704,
+        "over15": 0.7247948861660856,
+        "over25": 0.4714824937472735,
+        "over35": 0.2553225855498874,
+        "under15": 0.27520511383391444,
+        "under25": 0.5285175062527265
+      },
+      "pick": {
+        "side": "Tristan Suarez",
+        "where": "A",
+        "probability": 0.5083239983803646
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP",
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T18:00:00.000Z",
@@ -665,12 +1298,12 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
+          "streak": "L",
+          "played": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsAgainst": 1,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "away": {
           "streak": "",
@@ -683,8 +1316,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 9,
+      "awayRank": null,
+      "goalsIndex": 19.4,
+      "mismatchIndex": 2.7,
+      "rankScore": 20.1,
+      "projected": {
+        "home": 1.32,
+        "away": 1.26,
+        "total": 2.58
+      },
+      "probabilities": {
+        "home": 0.38162010005736413,
+        "draw": 0.2649642921002657,
+        "away": 0.35341560784237036,
+        "btts": 0.5249846241346161,
+        "over15": 0.7287289950625836,
+        "over25": 0.4765378892992575,
+        "over35": 0.25965353834279675,
+        "under15": 0.2712710049374164,
+        "under25": 0.5234621107007424
+      },
+      "pick": {
+        "side": "Independiente W",
+        "where": "H",
+        "probability": 0.38162010005736413
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T19:00:00.000Z",
@@ -706,18 +1368,47 @@
           "ppg": null
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "T",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "points": 1,
+          "ppg": 1
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": 7,
+      "goalsIndex": 9.8,
+      "mismatchIndex": 0.7,
+      "rankScore": 10,
+      "projected": {
+        "home": 1.29,
+        "away": 1.05,
+        "total": 2.34
+      },
+      "probabilities": {
+        "home": 0.4195795418217235,
+        "draw": 0.27822986870412303,
+        "away": 0.3021905894741531,
+        "btts": 0.4711190791283312,
+        "over15": 0.6782656421469507,
+        "over25": 0.4145397963595018,
+        "over35": 0.2088336366452919,
+        "under15": 0.32173435785304927,
+        "under25": 0.5854602036404982
+      },
+      "pick": {
+        "side": "Tigres",
+        "where": "H",
+        "probability": 0.4195795418217235
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T19:00:00.000Z",
@@ -749,8 +1440,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 1.7,
+      "mismatchIndex": 0,
+      "rankScore": 1.7,
+      "projected": {
+        "home": 1.18,
+        "away": 0.96,
+        "total": 2.14
+      },
+      "probabilities": {
+        "home": 0.40900183888428154,
+        "draw": 0.29378188626152324,
+        "away": 0.29721627485419516,
+        "btts": 0.4274832066920613,
+        "over15": 0.6305637709925784,
+        "over25": 0.36115769545716614,
+        "over35": 0.16898136157523902,
+        "under15": 0.36943622900742157,
+        "under25": 0.6388423045428339
+      },
+      "pick": {
+        "side": "Tecnico U.",
+        "where": "H",
+        "probability": 0.40900183888428154
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T19:00:00.000Z",
@@ -772,18 +1492,47 @@
           "ppg": null
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "WL",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "points": 3,
+          "ppg": 1.5
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": 5,
+      "goalsIndex": 7.4,
+      "mismatchIndex": 3.2,
+      "rankScore": 8.2,
+      "projected": {
+        "home": 1.42,
+        "away": 0.86,
+        "total": 2.28
+      },
+      "probabilities": {
+        "home": 0.5014013973598467,
+        "draw": 0.2709180129059834,
+        "away": 0.2276805897341699,
+        "btts": 0.43740806153572315,
+        "over15": 0.6645076923216906,
+        "over25": 0.39865049533465957,
+        "over35": 0.19659902562451625,
+        "under15": 0.3354923076783094,
+        "under25": 0.6013495046653404
+      },
+      "pick": {
+        "side": "Rentistas",
+        "where": "H",
+        "probability": 0.5014013973598467
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T19:30:00.000Z",
@@ -815,8 +1564,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 31.4,
+      "mismatchIndex": 0,
+      "rankScore": 31.4,
+      "projected": {
+        "home": 1.58,
+        "away": 1.29,
+        "total": 2.88
+      },
+      "probabilities": {
+        "home": 0.44166355463101103,
+        "draw": 0.2463295154230601,
+        "away": 0.3120069299459291,
+        "btts": 0.5754528818513983,
+        "over15": 0.7805749268428941,
+        "over25": 0.5470629907850432,
+        "over35": 0.32366990528969897,
+        "under15": 0.2194250731571059,
+        "under25": 0.45293700921495683
+      },
+      "pick": {
+        "side": "Tacuary",
+        "where": "H",
+        "probability": 0.44166355463101103
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T19:30:00.000Z",
@@ -830,26 +1608,57 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
+          "streak": "L",
+          "played": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsAgainst": 1,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "WT",
+          "played": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "points": 4,
+          "ppg": 2
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 12,
+      "awayRank": 4,
+      "goalsIndex": 7.1,
+      "mismatchIndex": 25.7,
+      "rankScore": 27.5,
+      "projected": {
+        "home": 1.08,
+        "away": 1.19,
+        "total": 2.28
+      },
+      "probabilities": {
+        "home": 0.33001343285275936,
+        "draw": 0.28535764425875865,
+        "away": 0.3846289228884826,
+        "btts": 0.4594953737162375,
+        "over15": 0.662169144418001,
+        "over25": 0.3959904569977447,
+        "over35": 0.19458191684974982,
+        "under15": 0.337830855581999,
+        "under25": 0.6040095430022553
+      },
+      "pick": {
+        "side": "Estudiantes Merida",
+        "where": "A",
+        "probability": 0.3846289228884826
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP",
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T20:00:00.000Z",
@@ -871,18 +1680,47 @@
           "ppg": null
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "T",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "points": 1,
+          "ppg": 1
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": 6,
+      "goalsIndex": 44.5,
+      "mismatchIndex": 0.7,
+      "rankScore": 44.7,
+      "projected": {
+        "home": 1.76,
+        "away": 1.44,
+        "total": 3.2
+      },
+      "probabilities": {
+        "home": 0.45249954284365224,
+        "draw": 0.23119635794756255,
+        "away": 0.31630409920878544,
+        "btts": 0.631789176422254,
+        "over15": 0.8287982465403505,
+        "over25": 0.6200951566085875,
+        "over35": 0.3974785273480399,
+        "under15": 0.1712017534596495,
+        "under25": 0.3799048433914125
+      },
+      "pick": {
+        "side": "Talleres Cordoba W",
+        "where": "H",
+        "probability": 0.45249954284365224
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T20:00:00.000Z",
@@ -896,12 +1734,12 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 1,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 3,
+          "ppg": 3
         },
         "away": {
           "streak": "",
@@ -914,8 +1752,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 6,
+      "awayRank": null,
+      "goalsIndex": 25.7,
+      "mismatchIndex": 4.8,
+      "rankScore": 26.9,
+      "projected": {
+        "home": 1.6,
+        "away": 1.13,
+        "total": 2.73
+      },
+      "probabilities": {
+        "home": 0.48258054492625707,
+        "draw": 0.2484432558497977,
+        "away": 0.2689761992239452,
+        "btts": 0.5402893663412875,
+        "over15": 0.7567317918800679,
+        "over25": 0.5136951124836814,
+        "over35": 0.2925317342329695,
+        "under15": 0.2432682081199321,
+        "under25": 0.4863048875163186
+      },
+      "pick": {
+        "side": "Bucaramanga W",
+        "where": "H",
+        "probability": 0.48258054492625707
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T21:00:00.000Z",
@@ -947,8 +1814,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 1,
+      "mismatchIndex": 0,
+      "rankScore": 1,
+      "projected": {
+        "home": 1.17,
+        "away": 0.96,
+        "total": 2.13
+      },
+      "probabilities": {
+        "home": 0.40605884537931397,
+        "draw": 0.29481716814392467,
+        "away": 0.2991239864767606,
+        "btts": 0.42557745558360194,
+        "over15": 0.6280392497613424,
+        "over25": 0.3584627756786317,
+        "over35": 0.16706347907990737,
+        "under15": 0.3719607502386576,
+        "under25": 0.6415372243213683
+      },
+      "pick": {
+        "side": "Botafogo RJ W",
+        "where": "H",
+        "probability": 0.40605884537931397
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T21:00:00.000Z",
@@ -970,18 +1866,47 @@
           "ppg": null
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": 3,
+      "goalsIndex": 32.9,
+      "mismatchIndex": 3.3,
+      "rankScore": 33.8,
+      "projected": {
+        "home": 1.4,
+        "away": 1.51,
+        "total": 2.91
+      },
+      "probabilities": {
+        "home": 0.3520627157246748,
+        "draw": 0.2468550074645171,
+        "away": 0.40108227681080805,
+        "btts": 0.5869686357248235,
+        "over15": 0.7869997106709262,
+        "over25": 0.5563465457006542,
+        "over35": 0.33261297567949016,
+        "under15": 0.21300028932907378,
+        "under25": 0.4436534542993458
+      },
+      "pick": {
+        "side": "Llaneros",
+        "where": "A",
+        "probability": 0.40108227681080805
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T21:30:00.000Z",
@@ -1013,8 +1938,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 1.7,
+      "mismatchIndex": 0,
+      "rankScore": 1.7,
+      "projected": {
+        "home": 1.18,
+        "away": 0.96,
+        "total": 2.14
+      },
+      "probabilities": {
+        "home": 0.40900183888428154,
+        "draw": 0.29378188626152324,
+        "away": 0.29721627485419516,
+        "btts": 0.4274832066920613,
+        "over15": 0.6305637709925784,
+        "over25": 0.36115769545716614,
+        "over35": 0.16898136157523902,
+        "under15": 0.36943622900742157,
+        "under25": 0.6388423045428339
+      },
+      "pick": {
+        "side": "Libertad",
+        "where": "H",
+        "probability": 0.40900183888428154
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T21:30:00.000Z",
@@ -1036,18 +1990,47 @@
           "ppg": null
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 3,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 3,
+          "ppg": 3
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": 2,
+      "goalsIndex": 10.9,
+      "mismatchIndex": 3.4,
+      "rankScore": 11.7,
+      "projected": {
+        "home": 1.01,
+        "away": 1.36,
+        "total": 2.37
+      },
+      "probabilities": {
+        "home": 0.27845478867030427,
+        "draw": 0.27332074735045464,
+        "away": 0.4482244639792412,
+        "btts": 0.4726009319508224,
+        "over15": 0.6849698817699762,
+        "over25": 0.4224338771577775,
+        "over35": 0.21503043351414047,
+        "under15": 0.3150301182300238,
+        "under25": 0.5775661228422224
+      },
+      "pick": {
+        "side": "Sportivo Trinidense",
+        "where": "A",
+        "probability": 0.4482244639792412
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T22:00:00.000Z",
@@ -1069,18 +2052,47 @@
           "ppg": null
         },
         "away": {
-          "streak": "",
-          "played": 0,
+          "streak": "TT",
+          "played": 2,
           "goalsFor": 0,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 2,
+          "ppg": 1
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": 17,
+      "goalsIndex": 0,
+      "mismatchIndex": 0.7,
+      "rankScore": 0.7,
+      "projected": {
+        "home": 0.84,
+        "away": 0.69,
+        "total": 1.52
+      },
+      "probabilities": {
+        "home": 0.3628858630026174,
+        "draw": 0.3614398541890422,
+        "away": 0.27567428280834044,
+        "btts": 0.28324907438926855,
+        "over15": 0.4521647606316562,
+        "over25": 0.19872058833178335,
+        "over35": 0.06946406045884813,
+        "under15": 0.5478352393683438,
+        "under25": 0.8012794116682167
+      },
+      "pick": {
+        "side": "Banfield",
+        "where": "H",
+        "probability": 0.3628858630026174
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T22:00:00.000Z",
@@ -1112,8 +2124,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 31.4,
+      "mismatchIndex": 0,
+      "rankScore": 31.4,
+      "projected": {
+        "home": 1.58,
+        "away": 1.29,
+        "total": 2.88
+      },
+      "probabilities": {
+        "home": 0.44166355463101103,
+        "draw": 0.2463295154230601,
+        "away": 0.3120069299459291,
+        "btts": 0.5754528818513983,
+        "over15": 0.7805749268428941,
+        "over25": 0.5470629907850432,
+        "over35": 0.32366990528969897,
+        "under15": 0.2194250731571059,
+        "under25": 0.45293700921495683
+      },
+      "pick": {
+        "side": "Atl. Tembetary",
+        "where": "H",
+        "probability": 0.44166355463101103
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T22:00:00.000Z",
@@ -1145,8 +2186,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 6.1,
+      "mismatchIndex": 0,
+      "rankScore": 6.1,
+      "projected": {
+        "home": 1.24,
+        "away": 1.01,
+        "total": 2.25
+      },
+      "probabilities": {
+        "home": 0.4147267249274067,
+        "draw": 0.28495587653748883,
+        "away": 0.30031739853510453,
+        "btts": 0.4517960083389548,
+        "over15": 0.657452486882605,
+        "over25": 0.3906606737815576,
+        "over35": 0.19056681395577146,
+        "under15": 0.34254751311739495,
+        "under25": 0.6093393262184423
+      },
+      "pick": {
+        "side": "Maldonado",
+        "where": "H",
+        "probability": 0.4147267249274067
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T22:30:00.000Z",
@@ -1178,8 +2248,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 1,
+      "mismatchIndex": 0,
+      "rankScore": 1,
+      "projected": {
+        "home": 1.17,
+        "away": 0.96,
+        "total": 2.13
+      },
+      "probabilities": {
+        "home": 0.40605884537931397,
+        "draw": 0.29481716814392467,
+        "away": 0.2991239864767606,
+        "btts": 0.42557745558360194,
+        "over15": 0.6280392497613424,
+        "over25": 0.3584627756786317,
+        "over35": 0.16706347907990737,
+        "under15": 0.3719607502386576,
+        "under25": 0.6415372243213683
+      },
+      "pick": {
+        "side": "Goias",
+        "where": "H",
+        "probability": 0.40605884537931397
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T22:30:00.000Z",
@@ -1193,26 +2292,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "LT",
+          "played": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
+          "points": 1,
+          "ppg": 0.5
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 10,
+      "awayRank": 11,
+      "goalsIndex": 43.1,
+      "mismatchIndex": 2.7,
+      "rankScore": 43.8,
+      "projected": {
+        "home": 1.69,
+        "away": 1.48,
+        "total": 3.16
+      },
+      "probabilities": {
+        "home": 0.42788965545526314,
+        "draw": 0.23417460573876736,
+        "away": 0.3379357388059693,
+        "btts": 0.6298460497499,
+        "over15": 0.8248446097532106,
+        "over25": 0.6137991659821123,
+        "over35": 0.3907944803973182,
+        "under15": 0.1751553902467894,
+        "under25": 0.38620083401788774
+      },
+      "pick": {
+        "side": "Caracas",
+        "where": "H",
+        "probability": 0.42788965545526314
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T23:00:00.000Z",
@@ -1226,26 +2354,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "points": 6,
+          "ppg": 3
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 2,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 3,
+          "ppg": 3
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 6,
+      "awayRank": 5,
+      "goalsIndex": 33.8,
+      "mismatchIndex": 2.3,
+      "rankScore": 34.3,
+      "projected": {
+        "home": 1.48,
+        "away": 1.46,
+        "total": 2.93
+      },
+      "probabilities": {
+        "home": 0.3815347684236447,
+        "draw": 0.24580657805003225,
+        "away": 0.37265865352632294,
+        "btts": 0.5929916046766242,
+        "over15": 0.7917088392840924,
+        "over25": 0.5632335249739377,
+        "over35": 0.3393277169499859,
+        "under15": 0.2082911607159076,
+        "under25": 0.43676647502606225
+      },
+      "pick": {
+        "side": "Ind. Medellin",
+        "where": "H",
+        "probability": 0.3815347684236447
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-10T23:00:00.000Z",
@@ -1259,26 +2416,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "WT",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "points": 4,
+          "ppg": 2
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 2,
+      "awayRank": 3,
+      "goalsIndex": 10.1,
+      "mismatchIndex": 4.5,
+      "rankScore": 11.2,
+      "projected": {
+        "home": 1.21,
+        "away": 1.14,
+        "total": 2.35
+      },
+      "probabilities": {
+        "home": 0.3771917483677273,
+        "draw": 0.2798740797286441,
+        "away": 0.3429341719036284,
+        "btts": 0.47735283887364904,
+        "over15": 0.6805132730468797,
+        "over25": 0.417175146241117,
+        "over35": 0.21089361357660327,
+        "under15": 0.3194867269531203,
+        "under25": 0.5828248537588829
+      },
+      "pick": {
+        "side": "Leones",
+        "where": "H",
+        "probability": 0.3771917483677273
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-11T00:00:00.000Z",
@@ -1300,18 +2486,47 @@
           "ppg": null
         },
         "away": {
-          "streak": "",
-          "played": 0,
+          "streak": "L",
+          "played": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsAgainst": 1,
           "points": 0,
-          "ppg": null
+          "ppg": 0
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": 11,
+      "goalsIndex": 0,
+      "mismatchIndex": 3.2,
+      "rankScore": 3.2,
+      "projected": {
+        "home": 1.16,
+        "away": 0.76,
+        "total": 1.92
+      },
+      "probabilities": {
+        "home": 0.45202243252510593,
+        "draw": 0.3072917974531039,
+        "away": 0.24068577002179034,
+        "btts": 0.3654543466237355,
+        "over15": 0.5719076512886948,
+        "over25": 0.3016816865131204,
+        "over35": 0.12873706905675295,
+        "under15": 0.4280923487113052,
+        "under25": 0.6983183134868796
+      },
+      "pick": {
+        "side": "America Mineiro W",
+        "where": "H",
+        "probability": 0.45202243252510593
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-11T00:00:00.000Z",
@@ -1343,8 +2558,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 30.6,
+      "mismatchIndex": 0,
+      "rankScore": 30.6,
+      "projected": {
+        "home": 1.57,
+        "away": 1.29,
+        "total": 2.86
+      },
+      "probabilities": {
+        "home": 0.43919686508562616,
+        "draw": 0.2470140429384614,
+        "away": 0.31378909197591215,
+        "btts": 0.5739526381737898,
+        "over15": 0.7789423682372891,
+        "over25": 0.5447243624385495,
+        "over35": 0.3214365302437512,
+        "under15": 0.22105763176271087,
+        "under25": 0.4552756375614505
+      },
+      "pick": {
+        "side": "A. Italiano",
+        "where": "H",
+        "probability": 0.43919686508562616
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-11T00:00:00.000Z",
@@ -1376,8 +2620,37 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 1.7,
+      "mismatchIndex": 0,
+      "rankScore": 1.7,
+      "projected": {
+        "home": 1.18,
+        "away": 0.96,
+        "total": 2.14
+      },
+      "probabilities": {
+        "home": 0.40900183888428154,
+        "draw": 0.29378188626152324,
+        "away": 0.29721627485419516,
+        "btts": 0.4274832066920613,
+        "over15": 0.6305637709925784,
+        "over25": 0.36115769545716614,
+        "over35": 0.16898136157523902,
+        "under15": 0.36943622900742157,
+        "under25": 0.6388423045428339
+      },
+      "pick": {
+        "side": "Dep. Cuenca",
+        "where": "H",
+        "probability": 0.40900183888428154
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-11T00:00:00.000Z",
@@ -1391,12 +2664,12 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
         },
         "away": {
           "streak": "",
@@ -1409,8 +2682,38 @@
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 3,
+      "awayRank": null,
+      "goalsIndex": 84.5,
+      "mismatchIndex": 11.8,
+      "rankScore": 87.4,
+      "projected": {
+        "home": 2.6,
+        "away": 1.59,
+        "total": 4.19
+      },
+      "probabilities": {
+        "home": 0.5940797410436388,
+        "draw": 0.1813228231441448,
+        "away": 0.2245974358122165,
+        "btts": 0.7369417850769733,
+        "over15": 0.9213838884980047,
+        "over25": 0.7884173841492401,
+        "over35": 0.6027074997421322,
+        "under15": 0.07861611150199532,
+        "under25": 0.21158261585075988
+      },
+      "pick": {
+        "side": "Toluca W",
+        "where": "H",
+        "probability": 0.5940797410436388
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "LOW_SAMPLE"
+      ]
     },
     {
       "kickoff": "2026-08-11T00:15:00.000Z",
@@ -1424,26 +2727,55 @@
       "tableFromPreviousSeason": false,
       "form": {
         "home": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
         },
         "away": {
-          "streak": "",
-          "played": 0,
-          "goalsFor": 0,
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 2,
           "goalsAgainst": 0,
-          "points": 0,
-          "ppg": null
+          "points": 6,
+          "ppg": 3
         },
         "homeTrend": "unknown",
         "awayTrend": "unknown"
       },
-      "scored": false,
-      "why": "no results yet"
+      "homeRank": 13,
+      "awayRank": 14,
+      "goalsIndex": 0,
+      "mismatchIndex": 1.2,
+      "rankScore": 1.2,
+      "projected": {
+        "home": 1.02,
+        "away": 0.87,
+        "total": 1.9
+      },
+      "probabilities": {
+        "home": 0.3811665460047384,
+        "draw": 0.3179754671884332,
+        "away": 0.30085798680682746,
+        "btts": 0.37152531619042356,
+        "over15": 0.5634024660395254,
+        "over25": 0.2935806578976199,
+        "over35": 0.12359291876821973,
+        "under15": 0.4365975339604746,
+        "under25": 0.7064193421023801
+      },
+      "pick": {
+        "side": "Union de Santa Fe",
+        "where": "H",
+        "probability": 0.3811665460047384
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
     }
   ],
   "needsReview": [

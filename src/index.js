@@ -6,7 +6,7 @@ import { classifyCompetition, parseTournamentUrl } from './leagues.js';
 import { REGIONS, REGION_LABEL, regionOf } from './leagues.data.js';
 import { DEFAULT_CACHE, DEFAULT_RETAIN_DAYS, updateHistory } from './history.js';
 import { buildTables, groupByLeague } from './table.js';
-import { leagueContext, rankFixtures, scoreFixture } from './score.js';
+import { CONFIDENCE, baselineRow, leagueContext, rankFixtures, scoreFixture } from './score.js';
 import { formTrend, recentForm } from './form.js';
 import { favourite, outcomeProbabilities } from './probabilities.js';
 import { renderJson, renderMarkdown } from './report.js';
@@ -22,7 +22,7 @@ function parseArgs(argv) {
     outDir: 'reports',
     cache: DEFAULT_CACHE,
     retain: DEFAULT_RETAIN_DAYS,
-    minPlayed: 3,
+    minConfidence: 'low',
     strongPick: 0.7,
     quiet: false,
   };
@@ -38,7 +38,7 @@ function parseArgs(argv) {
     else if (a === '--out') args.outDir = next();
     else if (a === '--cache') args.cache = next();
     else if (a === '--retain') args.retain = Number(next());
-    else if (a === '--min-played') args.minPlayed = Number(next());
+    else if (a === '--min-confidence') args.minConfidence = next();
     else if (a === '--strong-pick') args.strongPick = Number(next());
     else if (a === '--quiet') args.quiet = true;
     else if (a === '--help' || a === '-h') args.help = true;
@@ -60,7 +60,8 @@ flashscore-worker — daily shortlist of high-goal / lopsided fixtures
   --out DIR        output root (default reports/; files land in <root>/<region>/)
   --cache PATH     season history cache (default ${DEFAULT_CACHE})
   --retain N       days of results history to keep (default ${DEFAULT_RETAIN_DAYS})
-  --min-played N   league table games needed before a fixture can be ranked (default 3)
+  --min-confidence C  lowest confidence a game may have and still be called a
+                   strong pick: baseline | low | medium | high (default low)
   --strong-pick P  win probability that counts as a strong favourite (default 0.7)
   --quiet          write files only, no stdout
 
@@ -156,7 +157,6 @@ export async function buildReport(args, deps = {}) {
   const historyByLeague = groupByLeague(history.matches);
 
   const scored = [];
-  const unrankable = [];
 
   for (const fixture of inScope) {
     const entry = tables.get(fixture.leagueKey);
@@ -177,26 +177,31 @@ export async function buildReport(args, deps = {}) {
       away: formTrend(fixture.form.away, awayRow?.played ? awayRow.points / awayRow.played : null),
     };
 
-    if (!homeRow || !awayRow) {
-      unrankable.push({ ...fixture, why: table ? 'team not in table' : 'no results yet' });
-      continue;
-    }
-    if (homeRow.played < args.minPlayed || awayRow.played < args.minPlayed) {
-      unrankable.push({ ...fixture, why: 'too few games played' });
-      continue;
-    }
-    const ctx = leagueContext(table);
-    const score = scoreFixture(fixture, homeRow, awayRow, ctx);
+    // Every fixture is projected. A side with no results on file falls back to
+    // the league baseline, which shrinkage already produces exactly — so the
+    // numbers are always there, and `confidence` says how much they are worth.
+    const ctx = leagueContext(table ?? []);
+    const score = scoreFixture(
+      fixture,
+      homeRow ?? baselineRow(fixture.home),
+      awayRow ?? baselineRow(fixture.away),
+      ctx,
+    );
     score.probabilities = outcomeProbabilities(score.projected.home, score.projected.away);
     score.pick = favourite(score.probabilities, fixture.home, fixture.away);
+    score.basis = table ? 'league table' : 'league baseline';
     scored.push({ ...fixture, score });
   }
 
-  const ranked = rankFixtures(scored, { min: args.min, threshold: args.threshold });
+  // Baseline-only fixtures all carry identical numbers, so ranking them says
+  // nothing — they appear in the schedule with their projection but are kept
+  // out of the shortlist, which is meant to separate games from each other.
+  const rankable = scored.filter((f) => f.score.confidence !== CONFIDENCE.baseline);
+  const ranked = rankFixtures(rankable, { min: args.min, threshold: args.threshold });
 
-  // Every in-scope game appears in the per-league tables, scored or not, so the
-  // report is a usable schedule for the day rather than only a shortlist.
-  const all = [...scored, ...unrankable].sort(
+  // Every in-scope game appears in the per-league tables, so the report is a
+  // usable schedule for the day rather than only a shortlist.
+  const all = [...scored].sort(
     (a, b) => (a.kickoff?.getTime() ?? 0) - (b.kickoff?.getTime() ?? 0),
   );
 
@@ -209,8 +214,8 @@ export async function buildReport(args, deps = {}) {
     tz: args.tz,
     all,
     ranked,
-    unrankable,
     strongPickThreshold: args.strongPick,
+    minConfidenceForPicks: args.minConfidence,
     review: [...reviewSeen.values()],
     stats,
   };

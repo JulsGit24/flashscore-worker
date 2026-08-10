@@ -12,7 +12,7 @@ const BASE = {
   format: 'both',
   cache: 'unused',
   retain: 400,
-  minPlayed: 3,
+  minConfidence: 'low',
   strongPick: 0.7,
 };
 

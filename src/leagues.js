@@ -90,14 +90,33 @@ export function classifyCompetition(competition) {
 }
 
 /**
- * Split a Flashscore tournament URL into country + league slug.
- * e.g. "/soccer/england/premier-league/" -> { country, slug }
+ * Leading path segments that name a sport rather than a country. The feed uses
+ * /soccer/ and /football/ interchangeably for the same competitions, and other
+ * sports follow the same shape — /basketball/usa/wnba/.
+ */
+const SPORT_SEGMENTS = new Set([
+  'soccer',
+  'football',
+  'basketball',
+  'tennis',
+  'hockey',
+  'baseball',
+  'handball',
+  'volleyball',
+  'rugby-union',
+  'rugby-league',
+  'american-football',
+]);
+
+/**
+ * Split a Flashscore tournament URL into country + league slug, dropping the
+ * sport segment when there is one.
+ * e.g. "/soccer/england/premier-league/"  -> { england, premier-league }
+ *      "/basketball/usa/wnba/"            -> { usa, wnba }
  */
 export function parseTournamentUrl(url) {
   if (!url) return { country: null, slug: null };
   const parts = String(url).split('/').filter(Boolean);
-  // ["soccer", "<country>", "<league>", ...]
-  const i = parts.findIndex((p) => p === 'soccer' || p === 'football');
-  const base = i >= 0 ? parts.slice(i + 1) : parts;
+  const base = SPORT_SEGMENTS.has(parts[0]) ? parts.slice(1) : parts;
   return { country: base[0] ?? null, slug: base[1] ?? null };
 }

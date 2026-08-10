@@ -22,7 +22,8 @@ export function poissonPmf(k, lambda) {
 /**
  * @param {number} homeExp expected goals for the home side
  * @param {number} awayExp expected goals for the away side
- * @returns {{home:number, draw:number, away:number, btts:number, over25:number}}
+ * @returns {{home:number, draw:number, away:number, btts:number,
+ *   over15:number, over25:number, over35:number, under15:number, under25:number}}
  *   probabilities in 0-1, normalised over the grid.
  */
 export function outcomeProbabilities(homeExp, awayExp) {
@@ -30,7 +31,9 @@ export function outcomeProbabilities(homeExp, awayExp) {
   let draw = 0;
   let away = 0;
   let btts = 0;
+  let over15 = 0;
   let over25 = 0;
+  let over35 = 0;
   let mass = 0;
 
   const homePmf = [];
@@ -48,7 +51,9 @@ export function outcomeProbabilities(homeExp, awayExp) {
       else if (h < a) away += p;
       else draw += p;
       if (h >= 1 && a >= 1) btts += p;
+      if (h + a >= 2) over15 += p;
       if (h + a >= 3) over25 += p;
+      if (h + a >= 4) over35 += p;
     }
   }
 
@@ -60,7 +65,12 @@ export function outcomeProbabilities(homeExp, awayExp) {
     draw: draw * norm,
     away: away * norm,
     btts: btts * norm,
+    over15: over15 * norm,
     over25: over25 * norm,
+    over35: over35 * norm,
+    // "will it stay under two goals" — i.e. 0 or 1 in the match.
+    under15: 1 - over15 * norm,
+    under25: 1 - over25 * norm,
   };
 }
 

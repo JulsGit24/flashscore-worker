@@ -1,5 +1,13 @@
 # flashscore-worker
 
+Two reports, on two schedules:
+
+| Report | Runs | Output |
+|---|---|---|
+| Soccer, three regions | 05:00 America/New_York | `reports/<region>/YYYY-MM-DD.md` |
+| WNBA slate | 16:00 America/New_York | `reports/wnba/YYYY-MM-DD.md` |
+
+
 Every morning, produce a shortlist of the day's league games most likely to be
 worth watching — either because they project to be high scoring, or because one
 side is far stronger than the other.
@@ -51,6 +59,8 @@ Two things keep August honest:
   register as the best attack in its league.
 - **Low-sample damping.** If either side has played fewer than 5 games, both
   indices are scaled down and the game is tagged `few games played`.
+- **A confidence floor on picks.** Ranking and strong-favourite calls require a
+  minimum confidence; see *Every fixture gets numbers* below.
 
 Tags on each row explain why it made the list: `goals`, `mismatch`,
 `attack v leaky`, `top v bottom`, `wide gap`, `few games played`.
@@ -71,13 +81,38 @@ Per-fixture columns:
 | Column | Meaning |
 |---|---|
 | **Home / Away** | Marked `(H)` and `(A)` so the venue is never ambiguous |
+| **1 / X / 2** | Home win, draw, away win |
 | **xG** | Projected goals, home–away |
 | **Tot** | Projected total goals |
+| **O2.5** | Three goals or more. Under 2.5 is 100 − this |
+| **U1.5** | Fewer than two goals in the match |
 | **BTTS** | Both teams to score |
-| **Win%** | Most likely result and its probability: `H`, `A` or `D` |
+| **?** | Confidence — see below |
 | **Form H / Form A** | Last 5 results, most recent first — `W` win, `T` tie, `L` loss |
 | **↑ ↓ →** | Points per game across those 5 against the season average: rising, sliding, steady |
 | **L5 H / L5 A** | Goals scored–conceded across those same 5 games |
+
+### Every fixture gets numbers
+
+There is no "not enough data to say anything" row. Shrinkage means a side with
+no results on file resolves to exactly the league average, which is a real if
+uninformative projection — so a game between two unknown teams still comes out
+at roughly 44/26/31 with 2.7 goals, because that is what an average fixture
+looks like. What changes is how much of that comes from the teams themselves,
+and the **?** column says so:
+
+| Mark | Meaning |
+|---|---|
+| ● | 5+ games each — the model is reading form |
+| ◑ | 3-4 games each |
+| ◔ | 1-2 games each — mostly prior |
+| ○ | no results on file — pure league baseline |
+
+Two guards keep that from being misleading. Baseline-only fixtures are kept out
+of the shortlist, since they all carry identical numbers and ranking them would
+be ranking noise. And the strong-favourites section applies a confidence floor
+(`--min-confidence`, default `low`), so a 70% call can never come from the prior
+alone.
 
 Win, draw, BTTS and over-2.5 probabilities come from independent Poisson
 distributions over the two projected scorelines (`src/probabilities.js`). That
@@ -91,8 +126,9 @@ a bet.
 > only exposes the current season. Say the word if you meant promoted/relegated
 > sides and I'll source it differently.
 
-Fixtures with too little data still get a row, with their reason in **Notes**
-instead of numbers, so the schedule is complete even when the model is silent.
+When a league has no cached results at all, its fixtures fall back to the global
+baseline: 2.7 goals a game, 55% of them to the home side. As the cache fills,
+teams pull away from that prior and the confidence mark climbs.
 
 See [`reports/EXAMPLE-europe.md`](reports/EXAMPLE-europe.md) for the output
 format — the Americas and Asia reports are identical in shape.
@@ -102,7 +138,7 @@ format — the Americas and Asia reports are identical in shape.
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 74 offline tests, no network
+npm test                       # 111 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40
@@ -110,6 +146,10 @@ node src/index.js --day-offset 1 --format json
 node src/index.js --region americas
 node src/index.js --region asia --tz Asia/Tokyo
 node src/index.js --strong-pick 0.8    # only call 80%+ a strong favourite
+node src/index.js --min-confidence medium  # picks need 3+ games a side
+
+node src/wnba.js               # today's WNBA slate
+node src/wnba.js --help
 ```
 
 Output is written to `reports/<region>/YYYY-MM-DD.md` and `.json`.
@@ -149,9 +189,15 @@ keeps its season to date.
 **The day feed only serves a 7-day window** (offsets -7..+7; -8 and +8 both
 answer with the same 1-byte `0`). So the tables cannot be reconstructed in one
 run — the worker caches each day it fetches in `data/history.json`, commits it,
-and the season accumulates as the job runs each morning. A team needs 3 results
-in the cache before its fixtures can be ranked; until then they are listed under
-*In scope but not ranked*.
+and the season accumulates as the job runs each morning.
+
+The cache captures every finished match from a country in a reported region,
+**not** only the leagues on the allowlist. That matters because the allowlist
+moves — a league added or a slug corrected today cannot be backfilled, since the
+feed reaches back only a week. Capturing against regions, the stable layer, keeps
+history usable underneath a changing league list. `CACHE_VERSION` guards the
+rule: a cache written under an older one is discarded and refetched rather than
+silently mixed with days captured under different rules.
 
 Ranks are computed on points, then goal difference, then goals scored — they can
 differ from the official table where a league applies a points deduction or
@@ -200,3 +246,81 @@ test/                offline tests over recorded feed samples
 data/history.json    cached results, all regions (committed; regenerates if deleted)
 reports/<region>/    one dated report per region
 ```
+
+## WNBA slate
+
+`node src/wnba.js` builds a separate report for the day's WNBA games, on its
+own 4pm schedule ([`.github/workflows/wnba-report.yml`](.github/workflows/wnba-report.yml)).
+
+Basketball needs a different model, not a different config. Football scores are
+small counts, so the soccer side treats them as Poisson and sums a scoreline
+grid. Basketball scores are large sums of many possessions, so margin and total
+are close to normal — win probability comes from the normal CDF of the projected
+margin, and the natural outputs are a spread and a total rather than 1X2 and
+both-teams-to-score.
+
+| Column | Meaning |
+|---|---|
+| **Proj** | Projected points, home–away |
+| **Spread** | Projected margin, quoted on the favourite as a negative number |
+| **Total** | Projected combined points, with an 80% range |
+| **Win% H / A** | From the projected margin against an 11.5-point standard deviation |
+| **Form** | Last 5 results, most recent first |
+| **PF/PA** | Points scored and allowed per game across those 5 |
+| **H2H** | Cached meetings this season: home wins–away wins, and their average total |
+| **?** | Confidence, same scale as the soccer report |
+
+Two further sections:
+
+- **Lines that clear 70%** — the inverse of the usual question. Rather than the
+  odds at a posted line, this solves for the line itself: the total 70% likely
+  to go over, the total 70% likely to stay under, and the spread the favourite
+  covers 70% of the time. Threshold set by `--cover-probability`. Lines snap to
+  half points *in the direction that keeps the stated probability a floor*, so a
+  quoted 70% is never really 69%. On a near coin-flip the spread comes back with
+  the favourite taking points — correct, not a bug: a 3-point projected margin
+  cannot cover anything at that confidence.
+- **Biggest strength gaps** — the slate ranked by the distance between the two
+  sides' net ratings (points scored minus allowed per game), with projected
+  margin and the favourite's win probability alongside. This is a *team*
+  strength gap, the measurable stand-in for a roster mismatch; it cannot see
+  that a starter is out tonight.
+
+Home court is worth 3 points, applied additively after the multiplicative
+offence/defence adjustment — home court lifts margin rather than scaling a
+team's quality. Totals are also quoted as over probabilities at three round
+lines either side of the projection.
+
+### What this report does not contain
+
+**Player props and injury status are not produced.** This is a data limit, not
+an omission. Probing the feed established:
+
+- Basketball is sport id 3 and the WNBA is present at `/basketball/usa/wnba/`.
+- The only per-match detail endpoint that responds is `df_sui_1_<id>`, and it
+  returns quarter scores — `1st Quarter 16-6, 2nd Quarter 12-18, …`. There are
+  no player rows behind a game at all.
+- Every injury and news feed shape probed returned the empty sentinel.
+
+Props need each player's points, rebounds, assists and minutes per game plus
+their record against that specific opponent; injuries need an availability
+report.
+
+The WNBA's own endpoints were probed as an alternative, from a GitHub runner:
+
+| Endpoint | Result |
+|---|---|
+| `stats.wnba.com/stats/leaguegamelog` (players) | timeout |
+| `stats.wnba.com/stats/leaguedashplayerstats` (season, vs-opponent, last-5) | timeout |
+| `stats.wnba.com/stats/commonallplayers` | timeout |
+| `cdn.wnba.com/.../todaysScoreboard_10.json` | 200 but HTML, not the JSON document |
+| `wnba.com/injuries` | 404 |
+
+The timeouts are how `stats.wnba.com` behaves toward datacenter IPs in general,
+so this is "not reachable from here", not "proven absent" — from a residential
+address those endpoints may well answer. Either way, a scheduled job on a cloud
+runner cannot rely on them, so props and injuries need a keyed commercial feed
+(API-Sports, SportsDataIO, The Odds API or similar).
+
+The report states this limitation in its own body, so nobody reads a slate and
+assumes props were considered and found wanting.
