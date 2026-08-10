@@ -23,9 +23,27 @@ function tagList(tags) {
   return tags.map((t) => TAG_LABEL[t] ?? t).join(', ');
 }
 
-/** "north-macedonia" -> "North Macedonia" */
+/** Slugs whose display name is not just a title-cased slug. */
+const COUNTRY_OVERRIDES = {
+  usa: 'USA',
+  'south-korea': 'South Korea',
+  'trinidad-and-tobago': 'Trinidad and Tobago',
+  'bosnia-and-herzegovina': 'Bosnia and Herzegovina',
+  'czech-republic': 'Czech Republic',
+  'dominican-republic': 'Dominican Republic',
+  'el-salvador': 'El Salvador',
+  'costa-rica': 'Costa Rica',
+  'faroe-islands': 'Faroe Islands',
+  'north-macedonia': 'North Macedonia',
+  'northern-ireland': 'Northern Ireland',
+  'san-marino': 'San Marino',
+};
+
+/** "north-macedonia" -> "North Macedonia", "usa" -> "USA" */
 export function prettyCountry(slug) {
-  return String(slug ?? '')
+  const key = String(slug ?? '');
+  if (COUNTRY_OVERRIDES[key]) return COUNTRY_OVERRIDES[key];
+  return key
     .split('-')
     .filter(Boolean)
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
@@ -127,14 +145,16 @@ const TABLE_HEAD = [
  */
 export function renderMarkdown(data) {
   const { date, tz, all, ranked, review, stats } = data;
+  const label = data.regionLabel ?? 'Europe';
   const threshold = data.strongPickThreshold ?? 0.7;
   const out = [];
 
-  out.push(`# Soccer shortlist — ${date}`);
+  out.push(`# Soccer shortlist — ${label} — ${date}`);
   out.push('');
   out.push(
-    `European tier-1 and tier-2 leagues, men’s and women’s. All times **${tz}**, ` +
-      `earliest first. ${all.length} fixtures, ${ranked.length} with enough data to score.`,
+    `Tier-1 and tier-2 leagues across ${label}, men’s and women’s. All times ` +
+      `**${tz}**, earliest first. ${all.length} fixtures, ${ranked.length} with ` +
+      'enough data to score.',
   );
   out.push('');
 
@@ -150,6 +170,7 @@ export function renderMarkdown(data) {
   out.push('| **Form** | Last 5 results, most recent first. W win, T tie, L loss |');
   out.push('| **↑ ↓ →** | Points per game over those 5 vs the season: rising, sliding, steady |');
   out.push('| **L5** | Goals scored–conceded across those 5 games |');
+  out.push('| **last season** | Marked on a league whose table is too thin this season, so last season’s record is used instead |');
   out.push('');
   out.push('</details>');
   out.push('');
@@ -200,9 +221,11 @@ export function renderMarkdown(data) {
   out.push('## Full schedule');
   out.push('');
   for (const group of groupFixtures(all)) {
+    const fromLastSeason = group.fixtures.some((f) => f.tableFromPreviousSeason);
     out.push(
       `### ${prettyCountry(group.country)} — ${group.league.name}` +
-        `${group.league.gender === 'W' ? ' (Women)' : ''} · tier ${group.league.tier}`,
+        `${group.league.gender === 'W' ? ' (Women)' : ''} · tier ${group.league.tier}` +
+        `${fromLastSeason ? ' · _last season’s table_' : ''}`,
     );
     out.push('');
     out.push(...TABLE_HEAD);
@@ -244,6 +267,7 @@ export function renderJson(data) {
     gender: f.league.gender,
     home: f.home,
     away: f.away,
+    tableFromPreviousSeason: Boolean(f.tableFromPreviousSeason),
     form: {
       home: f.form?.home ?? null,
       away: f.form?.away ?? null,
@@ -268,6 +292,7 @@ export function renderJson(data) {
   return JSON.stringify(
     {
       date: data.date,
+      region: data.region ?? 'europe',
       timezone: data.tz,
       generatedAt: new Date().toISOString(),
       stats: data.stats,

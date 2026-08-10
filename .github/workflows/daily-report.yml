@@ -46,24 +46,37 @@ jobs:
 
       - run: npm test
 
-      - name: Generate shortlist
+      - name: Generate shortlists
         env:
           # IANA timezone the kickoff times are printed in.
           REPORT_TZ: ${{ vars.REPORT_TZ || 'America/New_York' }}
         run: |
-          node src/index.js \
-            --day-offset "${{ github.event.inputs.day_offset || 0 }}" \
-            --min 30 \
-            --quiet
+          # One pass per region. The day feed is worldwide and the results cache
+          # is shared, so the second and third runs cost almost nothing.
+          for region in europe americas asia; do
+            echo "::group::$region"
+            node src/index.js \
+              --region "$region" \
+              --day-offset "${{ github.event.inputs.day_offset || 0 }}" \
+              --min 30 \
+              --quiet
+            echo "::endgroup::"
+          done
 
-      - name: Publish the report to the job summary
+      - name: Publish the reports to the job summary
         if: always()
         run: |
-          latest=$(ls -1 reports/*.md 2>/dev/null | grep -v EXAMPLE | sort | tail -1)
-          if [ -n "$latest" ]; then
-            cat "$latest" >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo 'No report was produced — check the Generate step.' >> "$GITHUB_STEP_SUMMARY"
+          found=0
+          for region in europe americas asia; do
+            latest=$(ls -1 "reports/$region"/*.md 2>/dev/null | sort | tail -1)
+            if [ -n "$latest" ]; then
+              found=1
+              cat "$latest" >> "$GITHUB_STEP_SUMMARY"
+              echo >> "$GITHUB_STEP_SUMMARY"
+            fi
+          done
+          if [ "$found" = 0 ]; then
+            echo 'No reports were produced — check the Generate step.' >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: Commit the report
@@ -74,6 +87,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No new report to commit.'
           else
-            git commit -m "Shortlist for $(TZ=America/New_York date +%F)"
+            git commit -m "Shortlists for $(TZ=America/New_York date +%F)"
             git push
           fi

@@ -1,12 +1,26 @@
 # flashscore-worker
 
-Every morning, produce a shortlist of the day's European league games most
-likely to be worth watching — either because they project to be high scoring,
-or because one side is far stronger than the other.
+Every morning, produce a shortlist of the day's league games most likely to be
+worth watching — either because they project to be high scoring, or because one
+side is far stronger than the other.
+
+## Regions
+
+One report per region, each a separate file:
+
+| Region | Covers | Output |
+|---|---|---|
+| `europe` | UEFA member countries | `reports/europe/YYYY-MM-DD.md` |
+| `americas` | South, Central and North America plus the Caribbean | `reports/americas/YYYY-MM-DD.md` |
+| `asia` | Japan, South Korea and China only | `reports/asia/YYYY-MM-DD.md` |
+
+The three country sets are disjoint, and a country in none of them is out of
+scope everywhere. The day feed is worldwide, so all three reports come from one
+fetch and share one results cache.
 
 ## What it covers
 
-- **Geography**: UEFA member countries only.
+- **Geography**: the region's countries only.
 - **Tiers**: first tier ("main") and second tier ("B") only. Third tier and
   below — League One, 3. Liga, Serie C, Primera Federación, II liga — are
   excluded, as are youth, reserve, and friendly fixtures.
@@ -14,7 +28,7 @@ or because one side is far stronger than the other.
 - Fixtures both live and still to kick off.
 
 The competition list lives in [`src/leagues.data.js`](src/leagues.data.js).
-Anything European and senior that isn't in it is reported in a **needs review**
+Anything in-region and senior that isn't in it is reported in a **needs review**
 section at the bottom of the report rather than being silently dropped — that's
 the signal to add a league or to fix a slug that changed upstream.
 
@@ -34,7 +48,7 @@ Two things keep August honest:
 
 - **Shrinkage.** Per-game rates are pulled toward the league average with a
   4-game prior, so a team that has played twice and won 5-0 twice doesn't
-  register as the best attack in Europe.
+  register as the best attack in its league.
 - **Low-sample damping.** If either side has played fewer than 5 games, both
   indices are scaled down and the game is tagged `few games played`.
 
@@ -80,28 +94,31 @@ a bet.
 Fixtures with too little data still get a row, with their reason in **Notes**
 instead of numbers, so the schedule is complete even when the model is silent.
 
-See [`reports/EXAMPLE.md`](reports/EXAMPLE.md) for the output format.
+See [`reports/EXAMPLE-europe.md`](reports/EXAMPLE-europe.md) for the output
+format — the Americas and Asia reports are identical in shape.
 
 ## Usage
 
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 59 offline tests, no network
+npm test                       # 74 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40
 node src/index.js --day-offset 1 --format json
+node src/index.js --region americas
+node src/index.js --region asia --tz Asia/Tokyo
 node src/index.js --strong-pick 0.8    # only call 80%+ a strong favourite
 ```
 
-Output is written to `reports/YYYY-MM-DD.md` and `reports/YYYY-MM-DD.json`.
+Output is written to `reports/<region>/YYYY-MM-DD.md` and `.json`.
 
 ## Scheduling it for 5am
 
 [`.github/workflows/daily-report.yml`](.github/workflows/daily-report.yml) runs
-at **05:00 America/New_York**, writes `reports/YYYY-MM-DD.md`, commits it, and
-prints it to the Actions job summary.
+at **05:00 America/New_York**, generates all three regional reports, commits
+them, and prints each to the Actions job summary.
 
 GitHub cron is UTC and does not follow DST, so the workflow schedules both
 09:03 and 10:03 UTC and a `gate` job checks the real New York hour — the slot
@@ -140,6 +157,12 @@ Ranks are computed on points, then goal difference, then goals scored — they c
 differ from the official table where a league applies a points deduction or
 head-to-head tiebreaks.
 
+**Last season as a fallback.** When a league's current season is too thin to say
+anything — fewer than 3 games for every side — the table is rebuilt to include
+the previous season as well, and the league is marked *last season's table* in
+the report. Better a stale prior that is labelled than three games of noise
+presented as fact.
+
 > **Known limitation.** Starting from an empty cache, the shortlist is a
 > filtered fixture list rather than a ranked one for the first few weeks. To get
 > ranking immediately, point `src/table.js` at an external standings API instead
@@ -163,8 +186,8 @@ site's own network tab shows and everything downstream works unchanged.
 ## Layout
 
 ```
-src/leagues.data.js  European tier-1/tier-2 allowlist (men + women)
-src/leagues.js       scope filtering: geography, tier, seniority
+src/leagues.data.js  region country sets + tier-1/tier-2 allowlist (men + women)
+src/leagues.js       scope filtering: region, tier, seniority
 src/flashscore.js    feed client + parser
 src/history.js       season results, replayed from past day feeds and cached
 src/table.js         league tables + season-boundary detection
@@ -174,5 +197,6 @@ src/form.js          last-5 streaks, goals in them, and form trend
 src/report.js        markdown and JSON rendering
 src/index.js         CLI and pipeline
 test/                offline tests over recorded feed samples
-data/history.json    cached results (committed; regenerates if deleted)
+data/history.json    cached results, all regions (committed; regenerates if deleted)
+reports/<region>/    one dated report per region
 ```

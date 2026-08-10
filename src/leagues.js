@@ -1,4 +1,4 @@
-import { LEAGUE_INDEX, UEFA_COUNTRIES } from './leagues.data.js';
+import { LEAGUE_INDEX, regionOf } from './leagues.data.js';
 
 /**
  * Competition names that are third tier or below, or otherwise not senior
@@ -24,6 +24,15 @@ const TIER3_PLUS_PATTERNS = [
   /\bdivision\s*[2-9]\b/i,
   // English non-league pyramid (tier 7 and below).
   /\bisthmian\b|\bsouthern league\b|\bnorthern premier\b|\bcombined counties\b/i,
+  // Americas: tier 3 and below.
+  /\bprimera\s+b\s+metropolitana\b|\btorneo\s+federal\b/i,        // Argentina
+  /\bsegunda\s+divisi[oó]n\s+profesional\b/i,                       // Chile
+  /\bliga\s+premier\b|\bserie\s+a\s+de\s+m[eé]xico\b/i,           // Mexico
+  /\bsegunda\s+categor[ií]a\b|\bcopa\s+per[uú]\b/i,                 // Ecuador / Peru
+  // Asia: tier 3 and below.
+  /\bj3\s*league\b|\bjfl\b/i,                                       // Japan
+  /\bk[3-7]\s*league\b/i,                                            // Korea
+  /\bchina\s+league\s+two\b/i,
 ];
 
 /** Not senior first-team league football at all. */
@@ -34,6 +43,8 @@ const NON_SENIOR_PATTERNS = [
   /\bfriendl/i,
   /\bfutsal\b|\bbeach\b|\besports\b|\bsimulated\b|\bcyber\b/i,
   /\bplay\s*offs?\b.*\bqualification\b/i,
+  // Spanish- and Portuguese-language youth grades.
+  /\bsub-?\s?(1[0-9]|2[0-3])\b/i,
 ];
 
 /**
@@ -48,8 +59,9 @@ export function classifyCompetition(competition) {
   const { country, slug, name } = competition;
   const label = `${name ?? ''} ${slug ?? ''}`;
 
-  if (!country || !UEFA_COUNTRIES.has(country)) {
-    return { include: false, reason: 'non-european' };
+  // A country outside every configured region is out of scope for all reports.
+  if (!country || !regionOf(country)) {
+    return { include: false, reason: 'out-of-region' };
   }
   for (const re of NON_SENIOR_PATTERNS) {
     if (re.test(label)) return { include: false, reason: 'not-senior-football' };
@@ -65,10 +77,10 @@ export function classifyCompetition(competition) {
     if (re.test(label)) return { include: false, reason: 'tier-3-or-below' };
   }
 
-  // European, senior, not obviously a lower tier — but not in the allowlist.
-  // Most often a cup, a super cup, or a slug that changed. Surfaced for review
-  // instead of being guessed at.
-  return { include: false, reason: 'needs-review' };
+  // In a reported region, senior, not obviously a lower tier — but not in the
+  // allowlist. Most often a cup, a super cup, or a slug that changed. Surfaced
+  // for review instead of being guessed at.
+  return { include: false, reason: 'needs-review', region: regionOf(country) };
 }
 
 /**

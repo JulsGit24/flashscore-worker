@@ -9,6 +9,7 @@ const dayFeed = await readFile(new URL('../fixtures/sample-day-feed.txt', import
 
 const ARGS = {
   dayOffset: 0,
+  region: 'europe',
   min: 3,
   threshold: 45,
   tz: 'UTC',

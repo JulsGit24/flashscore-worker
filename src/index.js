@@ -3,6 +3,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fetchDayFixtures, DEFAULTS } from './flashscore.js';
 import { classifyCompetition, parseTournamentUrl } from './leagues.js';
+import { REGIONS, REGION_LABEL, regionOf } from './leagues.data.js';
 import { DEFAULT_CACHE, DEFAULT_RETAIN_DAYS, updateHistory } from './history.js';
 import { buildTables, groupByLeague } from './table.js';
 import { leagueContext, rankFixtures, scoreFixture } from './score.js';
@@ -13,6 +14,7 @@ import { renderJson, renderMarkdown } from './report.js';
 function parseArgs(argv) {
   const args = {
     dayOffset: 0,
+    region: 'europe',
     min: 30,
     threshold: 45,
     tz: process.env.REPORT_TZ ?? 'UTC',
@@ -28,6 +30,7 @@ function parseArgs(argv) {
     const a = argv[i];
     const next = () => argv[(i += 1)];
     if (a === '--day-offset') args.dayOffset = Number(next());
+    else if (a === '--region') args.region = next();
     else if (a === '--min') args.min = Number(next());
     else if (a === '--threshold') args.threshold = Number(next());
     else if (a === '--tz') args.tz = next();
@@ -44,16 +47,17 @@ function parseArgs(argv) {
 }
 
 const HELP = `
-flashscore-worker — daily shortlist of high-goal / lopsided European fixtures
+flashscore-worker — daily shortlist of high-goal / lopsided fixtures
 
   node src/index.js [options]
 
+  --region NAME    which report to build: ${REGIONS.join(' | ')} (default europe)
   --day-offset N   0 = today (default), 1 = tomorrow, -1 = yesterday
   --min N          minimum games in the shortlist (default 30)
   --threshold N    rank score a game must clear to be included beyond --min (default 45)
   --tz ZONE        IANA timezone for displayed kickoff times (default $REPORT_TZ or UTC)
   --format md|json|both
-  --out DIR        output directory (default reports/)
+  --out DIR        output root (default reports/; files land in <root>/<region>/)
   --cache PATH     season history cache (default ${DEFAULT_CACHE})
   --retain N       days of results history to keep (default ${DEFAULT_RETAIN_DAYS})
   --min-played N   league table games needed before a fixture can be ranked (default 3)
@@ -132,8 +136,9 @@ export async function buildReport(args, deps = {}) {
     const verdict = classifyCompetition(competition);
 
     if (verdict.include) {
+      if (verdict.league.region !== args.region) continue;
       inScope.push({ ...fixture, league: verdict.league, leagueKey: `${country}/${slug}` });
-    } else if (verdict.reason === 'needs-review') {
+    } else if (verdict.reason === 'needs-review' && verdict.region === args.region) {
       reviewSeen.set(`${country}/${slug}`, competition);
     }
   }
@@ -146,7 +151,9 @@ export async function buildReport(args, deps = {}) {
   const unrankable = [];
 
   for (const fixture of inScope) {
-    const table = tables.get(fixture.leagueKey);
+    const entry = tables.get(fixture.leagueKey);
+    const table = entry?.rows;
+    fixture.tableFromPreviousSeason = Boolean(entry?.usedPreviousSeason);
     const leagueMatches = historyByLeague.get(fixture.leagueKey) ?? [];
     const homeRow = table ? findRow(table, fixture.home) : null;
     const awayRow = table ? findRow(table, fixture.away) : null;
@@ -189,6 +196,8 @@ export async function buildReport(args, deps = {}) {
 
   return {
     date,
+    region: args.region,
+    regionLabel: REGION_LABEL[args.region] ?? args.region,
     tz: args.tz,
     all,
     ranked,
@@ -206,16 +215,24 @@ async function main() {
     return;
   }
 
+  if (!REGIONS.includes(args.region)) {
+    process.stderr.write(
+      `Unknown region "${args.region}". Choose one of: ${REGIONS.join(', ')}.\n`,
+    );
+    process.exit(2);
+  }
+
   const data = await buildReport(args);
-  await mkdir(args.outDir, { recursive: true });
+  const outDir = path.join(args.outDir, args.region);
+  await mkdir(outDir, { recursive: true });
 
   if (args.format === 'md' || args.format === 'both') {
     const md = renderMarkdown(data);
-    await writeFile(path.join(args.outDir, `${data.date}.md`), md);
+    await writeFile(path.join(outDir, `${data.date}.md`), md);
     if (!args.quiet) process.stdout.write(`${md}\n`);
   }
   if (args.format === 'json' || args.format === 'both') {
-    await writeFile(path.join(args.outDir, `${data.date}.json`), renderJson(data));
+    await writeFile(path.join(outDir, `${data.date}.json`), renderJson(data));
   }
 
   if (data.stats.errors.length) {
@@ -227,8 +244,9 @@ async function main() {
   }
   if (data.ranked.length === 0) {
     process.stderr.write(
-      '\nNo games ranked. Either it is a genuinely empty day, or the feed shape ' +
-        'changed — run with --format json and inspect the stats block.\n',
+      `\nNo ${args.region} games ranked. Either it is a genuinely empty day, the ` +
+        'history cache is still filling, or the feed shape changed — run with ' +
+        '--format json and inspect the stats block.\n',
     );
   }
 }
