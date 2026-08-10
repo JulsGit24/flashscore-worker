@@ -1,7 +1,7 @@
 {
   "date": "2026-08-10",
   "timezone": "America/New_York",
-  "generatedAt": "2026-08-10T16:13:52.342Z",
+  "generatedAt": "2026-08-10T16:32:48.291Z",
   "stats": {
     "totalFixtures": 152,
     "inScope": 47,
@@ -11,335 +11,1511 @@
     "daysFailed": 0,
     "errors": []
   },
-  "games": [],
-  "unrankable": [
-    {
-      "kickoff": "2026-08-10T16:00:00.000Z",
-      "league": "Premier League",
-      "home": "Alashkert",
-      "away": "BKMA",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T13:00:00.000Z",
-      "league": "First League",
-      "home": "Andranik",
-      "away": "Shirak Gyumri 2",
-      "why": "too few games played"
-    },
-    {
-      "kickoff": "2026-08-10T13:00:00.000Z",
-      "league": "First League",
-      "home": "Mika",
-      "away": "Pyunik Yerevan 2",
-      "why": "too few games played"
-    },
-    {
-      "kickoff": "2026-08-10T15:00:00.000Z",
-      "league": "First League",
-      "home": "Urartu 2",
-      "away": "Noah 2",
-      "why": "too few games played"
-    },
-    {
-      "kickoff": "2026-08-10T14:00:00.000Z",
-      "league": "Pershaya Liga",
-      "home": "FC Gomel 2",
-      "away": "Soligorsk",
-      "why": "too few games played"
-    },
-    {
-      "kickoff": "2026-08-10T14:30:00.000Z",
-      "league": "Pershaya Liga",
-      "home": "Minsk 2",
-      "away": "Ostrovets",
-      "why": "too few games played"
-    },
-    {
-      "kickoff": "2026-08-10T15:00:00.000Z",
-      "league": "Pershaya Liga",
-      "home": "FC Slonim",
-      "away": "BumProm Gomel",
-      "why": "too few games played"
-    },
-    {
-      "kickoff": "2026-08-10T15:00:00.000Z",
-      "league": "Pershaya Liga",
-      "home": "Orsha",
-      "away": "Molodechno",
-      "why": "too few games played"
-    },
-    {
-      "kickoff": "2026-08-10T15:00:00.000Z",
-      "league": "Pershaya Liga",
-      "home": "Smorgon",
-      "away": "BATE 2",
-      "why": "too few games played"
-    },
-    {
-      "kickoff": "2026-08-10T15:00:00.000Z",
-      "league": "Pershaya Liga",
-      "home": "Volna Pinsk",
-      "away": "Uni X Labs",
-      "why": "too few games played"
-    },
-    {
-      "kickoff": "2026-08-10T13:00:00.000Z",
-      "league": "Vysshaya Liga Women",
-      "home": "Smorgon W",
-      "away": "Belshina W",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T16:00:00.000Z",
-      "league": "efbet League",
-      "home": "Botev Vratsa",
-      "away": "Slavia Sofia",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T18:15:00.000Z",
-      "league": "efbet League",
-      "home": "Botev Plovdiv",
-      "away": "Spartak Varna",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T15:00:00.000Z",
-      "league": "Vtora liga",
-      "home": "Nesebar",
-      "away": "Dobrudzha",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T17:00:00.000Z",
-      "league": "Vtora liga",
-      "home": "Beroe",
-      "away": "Ludogorets II",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T17:00:00.000Z",
-      "league": "Superliga",
-      "home": "Silkeborg",
-      "away": "Odense",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T16:00:00.000Z",
-      "league": "Esiliiga",
-      "home": "Flora U21",
-      "away": "Nomme Kalju U21",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T17:30:00.000Z",
-      "league": "Betri deildin",
-      "home": "Klaksvik",
-      "away": "HB Torshavn",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T18:00:00.000Z",
-      "league": "Betri deildin",
-      "home": "NSI Runavik",
-      "away": "Skala Itrottarfelag",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T19:15:00.000Z",
-      "league": "Besta deild karla",
-      "home": "Fram",
-      "away": "KR Reykjavik",
-      "why": "team not in table"
-    },
+  "strongPickThreshold": 0.7,
+  "strongPicks": [],
+  "games": [
     {
       "kickoff": "2026-08-10T10:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "kazakhstan",
       "league": "Kazakhstan League Women",
+      "tier": 1,
+      "gender": "W",
       "home": "Tobol W",
       "away": "Kyzylzhar W",
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
       "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T11:00:00.000Z",
+      "kickoffLocal": "07:00",
+      "country": "kazakhstan",
       "league": "Kazakhstan League Women",
+      "tier": 1,
+      "gender": "W",
       "home": "Kairat W",
       "away": "Kaisar Kyzylorda W",
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
       "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T11:00:00.000Z",
+      "kickoffLocal": "07:00",
+      "country": "kazakhstan",
       "league": "Kazakhstan League Women",
+      "tier": 1,
+      "gender": "W",
       "home": "Zhetysu W",
       "away": "Tomiris-Turan W",
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 11,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 4,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
       "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T12:00:00.000Z",
+      "kickoffLocal": "08:00",
+      "country": "kazakhstan",
       "league": "Kazakhstan League Women",
+      "tier": 1,
+      "gender": "W",
       "home": "Ordabasy W",
       "away": "Shymkent W",
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 4,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 11,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
       "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T12:00:00.000Z",
+      "kickoffLocal": "08:00",
+      "country": "kazakhstan",
       "league": "Kazakhstan League Women",
+      "tier": 1,
+      "gender": "W",
       "home": "Ulytau W",
       "away": "Kaspij Aktau W",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T16:30:00.000Z",
-      "league": "Virsliga",
-      "home": "RFS",
-      "away": "Grobina",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T15:45:00.000Z",
-      "league": "TOPLYGA",
-      "home": "Transinvest",
-      "away": "FK Panevezys",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T16:00:00.000Z",
-      "league": "I Lyga",
-      "home": "Zalgiris 2",
-      "away": "Kauno Zalgiris 2",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T18:00:00.000Z",
-      "league": "Eerste Divisie",
-      "home": "Jong AZ",
-      "away": "Eindhoven FC",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T18:00:00.000Z",
-      "league": "Eerste Divisie",
-      "home": "Jong PSV",
-      "away": "FC Volendam",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T18:45:00.000Z",
-      "league": "NIFL Premiership Women",
-      "home": "Linfield W",
-      "away": "Cliftonville W",
-      "why": "too few games played"
-    },
-    {
-      "kickoff": "2026-08-10T17:00:00.000Z",
-      "league": "OBOS-ligaen",
-      "home": "Moss",
-      "away": "Odd",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T17:00:00.000Z",
-      "league": "I liga",
-      "home": "Skierniewice",
-      "away": "Arka Gdynia",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T19:15:00.000Z",
-      "league": "Liga Portugal",
-      "home": "Santa Clara",
-      "away": "Nacional",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T17:00:00.000Z",
-      "league": "Liga Portugal 2",
-      "home": "Benfica B",
-      "away": "Leixoes",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T17:00:00.000Z",
-      "league": "Liga Portugal 2",
-      "home": "Lusitania FC",
-      "away": "FC Porto B",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T15:30:00.000Z",
-      "league": "SuperLiga",
-      "home": "FC Botosani",
-      "away": "Corvinul",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T18:30:00.000Z",
-      "league": "SuperLiga",
-      "home": "Sepsi Sf. Gheorghe",
-      "away": "FCSB",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T16:30:00.000Z",
-      "league": "Premier League",
-      "home": "Fakel Voronezh",
-      "away": "Akhmat Grozny",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T15:00:00.000Z",
-      "league": "2. liga",
-      "home": "Povazska Bystrica",
-      "away": "Z. Moravce-Vrable",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T16:00:00.000Z",
-      "league": "Prva liga",
-      "home": "Mura",
-      "away": "Radomlje",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T17:00:00.000Z",
-      "league": "Allsvenskan",
-      "home": "Sirius",
-      "away": "Brommapojkarna",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T17:00:00.000Z",
-      "league": "Allsvenskan",
-      "home": "Vasteras SK",
-      "away": "Djurgarden",
-      "why": "too few games played"
-    },
-    {
-      "kickoff": "2026-08-10T17:00:00.000Z",
-      "league": "Superettan",
-      "home": "Norrby",
-      "away": "Orebro",
-      "why": "team not in table"
-    },
-    {
-      "kickoff": "2026-08-10T18:30:00.000Z",
-      "league": "1. Lig",
-      "home": "Pendikspor",
-      "away": "Batman Petrolspor",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 5,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
       "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T12:30:00.000Z",
+      "kickoffLocal": "08:30",
+      "country": "ukraine",
       "league": "Premier League",
+      "tier": 1,
+      "gender": "M",
       "home": "Polissya Zhytomyr",
       "away": "FC Kharkiv",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T13:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "armenia",
+      "league": "First League",
+      "tier": 2,
+      "gender": "M",
+      "home": "Andranik",
+      "away": "Shirak Gyumri 2",
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 4,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 1,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T13:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "armenia",
+      "league": "First League",
+      "tier": 2,
+      "gender": "M",
+      "home": "Mika",
+      "away": "Pyunik Yerevan 2",
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "points": 3,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T13:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "belarus",
+      "league": "Vysshaya Liga Women",
+      "tier": 1,
+      "gender": "W",
+      "home": "Smorgon W",
+      "away": "Belshina W",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T14:00:00.000Z",
+      "kickoffLocal": "10:00",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "gender": "M",
+      "home": "FC Gomel 2",
+      "away": "Soligorsk",
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T14:30:00.000Z",
+      "kickoffLocal": "10:30",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "gender": "M",
+      "home": "Minsk 2",
+      "away": "Ostrovets",
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "points": 3,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "armenia",
+      "league": "First League",
+      "tier": 2,
+      "gender": "M",
+      "home": "Urartu 2",
+      "away": "Noah 2",
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 2,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "gender": "M",
+      "home": "FC Slonim",
+      "away": "BumProm Gomel",
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "gender": "M",
+      "home": "Orsha",
+      "away": "Molodechno",
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "T",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "points": 1,
+          "ppg": 1
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "gender": "M",
+      "home": "Smorgon",
+      "away": "BATE 2",
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 2,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "gender": "M",
+      "home": "Volna Pinsk",
+      "away": "Uni X Labs",
+      "form": {
+        "home": {
+          "streak": "T",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "points": 1,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "bulgaria",
+      "league": "Vtora liga",
+      "tier": 2,
+      "gender": "M",
+      "home": "Nesebar",
+      "away": "Dobrudzha",
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
       "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "slovakia",
+      "league": "2. liga",
+      "tier": 2,
+      "gender": "M",
+      "home": "Povazska Bystrica",
+      "away": "Z. Moravce-Vrable",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "ukraine",
       "league": "Premier League",
+      "tier": 1,
+      "gender": "M",
       "home": "Karpaty Lviv",
       "away": "LNZ Cherkasy",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "T",
+          "played": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 1,
+          "ppg": 1
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T15:30:00.000Z",
+      "kickoffLocal": "11:30",
+      "country": "romania",
+      "league": "SuperLiga",
+      "tier": 1,
+      "gender": "M",
+      "home": "FC Botosani",
+      "away": "Corvinul",
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T15:45:00.000Z",
+      "kickoffLocal": "11:45",
+      "country": "lithuania",
+      "league": "TOPLYGA",
+      "tier": 1,
+      "gender": "M",
+      "home": "Transinvest",
+      "away": "FK Panevezys",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "T",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "points": 1,
+          "ppg": 1
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T16:00:00.000Z",
+      "kickoffLocal": "12:00",
+      "country": "armenia",
+      "league": "Premier League",
+      "tier": 1,
+      "gender": "M",
+      "home": "Alashkert",
+      "away": "BKMA",
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T16:00:00.000Z",
+      "kickoffLocal": "12:00",
+      "country": "bulgaria",
+      "league": "efbet League",
+      "tier": 1,
+      "gender": "M",
+      "home": "Botev Vratsa",
+      "away": "Slavia Sofia",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T16:00:00.000Z",
+      "kickoffLocal": "12:00",
+      "country": "estonia",
+      "league": "Esiliiga",
+      "tier": 2,
+      "gender": "M",
+      "home": "Flora U21",
+      "away": "Nomme Kalju U21",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T16:00:00.000Z",
+      "kickoffLocal": "12:00",
+      "country": "lithuania",
+      "league": "I Lyga",
+      "tier": 2,
+      "gender": "M",
+      "home": "Zalgiris 2",
+      "away": "Kauno Zalgiris 2",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T16:00:00.000Z",
+      "kickoffLocal": "12:00",
+      "country": "slovenia",
+      "league": "Prva liga",
+      "tier": 1,
+      "gender": "M",
+      "home": "Mura",
+      "away": "Radomlje",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T16:30:00.000Z",
+      "kickoffLocal": "12:30",
+      "country": "latvia",
+      "league": "Virsliga",
+      "tier": 1,
+      "gender": "M",
+      "home": "RFS",
+      "away": "Grobina",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T16:30:00.000Z",
+      "kickoffLocal": "12:30",
+      "country": "russia",
+      "league": "Premier League",
+      "tier": 1,
+      "gender": "M",
+      "home": "Fakel Voronezh",
+      "away": "Akhmat Grozny",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "bulgaria",
+      "league": "Vtora liga",
+      "tier": 2,
+      "gender": "M",
+      "home": "Beroe",
+      "away": "Ludogorets II",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "denmark",
+      "league": "Superliga",
+      "tier": 1,
+      "gender": "M",
+      "home": "Silkeborg",
+      "away": "Odense",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "norway",
+      "league": "OBOS-ligaen",
+      "tier": 2,
+      "gender": "M",
+      "home": "Moss",
+      "away": "Odd",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 4,
+          "goalsAgainst": 3,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "poland",
+      "league": "I liga",
+      "tier": 2,
+      "gender": "M",
+      "home": "Skierniewice",
+      "away": "Arka Gdynia",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "portugal",
+      "league": "Liga Portugal 2",
+      "tier": 2,
+      "gender": "M",
+      "home": "Benfica B",
+      "away": "Leixoes",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "portugal",
+      "league": "Liga Portugal 2",
+      "tier": 2,
+      "gender": "M",
+      "home": "Lusitania FC",
+      "away": "FC Porto B",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "sweden",
+      "league": "Allsvenskan",
+      "tier": 1,
+      "gender": "M",
+      "home": "Sirius",
+      "away": "Brommapojkarna",
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "sweden",
+      "league": "Allsvenskan",
+      "tier": 1,
+      "gender": "M",
+      "home": "Vasteras SK",
+      "away": "Djurgarden",
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 6,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "sweden",
+      "league": "Superettan",
+      "tier": 2,
+      "gender": "M",
+      "home": "Norrby",
+      "away": "Orebro",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T17:30:00.000Z",
+      "kickoffLocal": "13:30",
+      "country": "faroe-islands",
+      "league": "Betri deildin",
+      "tier": 1,
+      "gender": "M",
+      "home": "Klaksvik",
+      "away": "HB Torshavn",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T18:00:00.000Z",
+      "kickoffLocal": "14:00",
+      "country": "faroe-islands",
+      "league": "Betri deildin",
+      "tier": 1,
+      "gender": "M",
+      "home": "NSI Runavik",
+      "away": "Skala Itrottarfelag",
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T18:00:00.000Z",
+      "kickoffLocal": "14:00",
+      "country": "netherlands",
+      "league": "Eerste Divisie",
+      "tier": 2,
+      "gender": "M",
+      "home": "Jong AZ",
+      "away": "Eindhoven FC",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T18:00:00.000Z",
+      "kickoffLocal": "14:00",
+      "country": "netherlands",
+      "league": "Eerste Divisie",
+      "tier": 2,
+      "gender": "M",
+      "home": "Jong PSV",
+      "away": "FC Volendam",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T18:15:00.000Z",
+      "kickoffLocal": "14:15",
+      "country": "bulgaria",
+      "league": "efbet League",
+      "tier": 1,
+      "gender": "M",
+      "home": "Botev Plovdiv",
+      "away": "Spartak Varna",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "points": 3,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T18:30:00.000Z",
+      "kickoffLocal": "14:30",
+      "country": "romania",
+      "league": "SuperLiga",
+      "tier": 1,
+      "gender": "M",
+      "home": "Sepsi Sf. Gheorghe",
+      "away": "FCSB",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "T",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "points": 1,
+          "ppg": 1
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T18:30:00.000Z",
+      "kickoffLocal": "14:30",
+      "country": "turkey",
+      "league": "1. Lig",
+      "tier": 2,
+      "gender": "M",
+      "home": "Pendikspor",
+      "away": "Batman Petrolspor",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "northern-ireland",
+      "league": "NIFL Premiership Women",
+      "tier": 1,
+      "gender": "W",
+      "home": "Linfield W",
+      "away": "Cliftonville W",
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 11,
+          "goalsAgainst": 1,
+          "points": 6,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T19:15:00.000Z",
+      "kickoffLocal": "15:15",
+      "country": "iceland",
+      "league": "Besta deild karla",
+      "tier": 1,
+      "gender": "M",
+      "home": "Fram",
+      "away": "KR Reykjavik",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "T",
+          "played": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "points": 1,
+          "ppg": 1
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T19:15:00.000Z",
+      "kickoffLocal": "15:15",
+      "country": "portugal",
+      "league": "Liga Portugal",
+      "tier": 1,
+      "gender": "M",
+      "home": "Santa Clara",
+      "away": "Nacional",
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "scored": false,
       "why": "team not in table"
     }
   ],
