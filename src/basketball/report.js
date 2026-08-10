@@ -175,12 +175,17 @@ export function renderMarkdown(data) {
   out.push('## Not covered');
   out.push('');
   out.push(
-    'Player props and injury status are **not** in this report. The feed behind ' +
-      'it carries team scores and quarter splits only — its per-match detail ' +
-      'endpoint returns `1st Quarter 16-6, 2nd Quarter 12-18, …` and nothing at ' +
-      'player level — and every injury and news feed shape probed came back ' +
-      'empty. Both need a source with box scores and an injury report; see the ' +
-      'README for what that would take.',
+    'Player props and injury status are **not** in this report, and the strength ' +
+      'gap above is a team measure, not a roster one.',
+  );
+  out.push('');
+  out.push(
+    'The feed behind this report carries team scores and quarter splits only — ' +
+      'its per-match detail endpoint returns `1st Quarter 16-6, 2nd Quarter ' +
+      '12-18, …` and nothing at player level. The WNBA’s own stats endpoints ' +
+      'were probed as an alternative and time out from a datacenter host, which ' +
+      'is how they behave for cloud IPs generally. Props need a keyed feed; see ' +
+      'the README.',
   );
   out.push('');
 

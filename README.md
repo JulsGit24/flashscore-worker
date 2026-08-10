@@ -138,7 +138,7 @@ format — the Americas and Asia reports are identical in shape.
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 103 offline tests, no network
+npm test                       # 111 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40
@@ -270,6 +270,22 @@ both-teams-to-score.
 | **H2H** | Cached meetings this season: home wins–away wins, and their average total |
 | **?** | Confidence, same scale as the soccer report |
 
+Two further sections:
+
+- **Lines that clear 70%** — the inverse of the usual question. Rather than the
+  odds at a posted line, this solves for the line itself: the total 70% likely
+  to go over, the total 70% likely to stay under, and the spread the favourite
+  covers 70% of the time. Threshold set by `--cover-probability`. Lines snap to
+  half points *in the direction that keeps the stated probability a floor*, so a
+  quoted 70% is never really 69%. On a near coin-flip the spread comes back with
+  the favourite taking points — correct, not a bug: a 3-point projected margin
+  cannot cover anything at that confidence.
+- **Biggest strength gaps** — the slate ranked by the distance between the two
+  sides' net ratings (points scored minus allowed per game), with projected
+  margin and the favourite's win probability alongside. This is a *team*
+  strength gap, the measurable stand-in for a roster mismatch; it cannot see
+  that a starter is out tonight.
+
 Home court is worth 3 points, applied additively after the multiplicative
 offence/defence adjustment — home court lifts margin rather than scaling a
 team's quality. Totals are also quoted as over probabilities at three round
@@ -288,7 +304,23 @@ an omission. Probing the feed established:
 
 Props need each player's points, rebounds, assists and minutes per game plus
 their record against that specific opponent; injuries need an availability
-report. Both require a source with box scores — the WNBA's own stats API, or a
-commercial feed — which is a new integration rather than a new query against
-this one. The report states this limitation in its own body, so nobody reads a
-slate and assumes props were considered and found wanting.
+report.
+
+The WNBA's own endpoints were probed as an alternative, from a GitHub runner:
+
+| Endpoint | Result |
+|---|---|
+| `stats.wnba.com/stats/leaguegamelog` (players) | timeout |
+| `stats.wnba.com/stats/leaguedashplayerstats` (season, vs-opponent, last-5) | timeout |
+| `stats.wnba.com/stats/commonallplayers` | timeout |
+| `cdn.wnba.com/.../todaysScoreboard_10.json` | 200 but HTML, not the JSON document |
+| `wnba.com/injuries` | 404 |
+
+The timeouts are how `stats.wnba.com` behaves toward datacenter IPs in general,
+so this is "not reachable from here", not "proven absent" — from a residential
+address those endpoints may well answer. Either way, a scheduled job on a cloud
+runner cannot rely on them, so props and injuries need a keyed commercial feed
+(API-Sports, SportsDataIO, The Odds API or similar).
+
+The report states this limitation in its own body, so nobody reads a slate and
+assumes props were considered and found wanting.
