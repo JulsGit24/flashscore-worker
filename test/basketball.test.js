@@ -609,3 +609,29 @@ test('the report renders a period table per game', async () => {
   assert.equal(json.games[0].periods.quarters.length, 4);
   assert.equal(json.games[0].periods.halves.length, 2);
 });
+
+test('the WNBA cache is versioned apart from the soccer one', async () => {
+  const { WNBA_CACHE_VERSION } = await import('../src/wnba.js');
+  const { CACHE_VERSION, loadCache } = await import('../src/history.js');
+  const { mkdtemp, writeFile } = await import('node:fs/promises');
+  const { tmpdir } = await import('node:os');
+  const path = await import('node:path');
+
+  assert.notEqual(
+    WNBA_CACHE_VERSION,
+    CACHE_VERSION,
+    'the quarter capture rule changed only for the WNBA cache',
+  );
+
+  // A cache written at the soccer version must not load as a WNBA cache: those
+  // days predate quarter capture and would read as games with no splits.
+  const dir = await mkdtemp(path.join(tmpdir(), 'fsw-'));
+  const file = path.join(dir, 'wnba.json');
+  await writeFile(
+    file,
+    JSON.stringify({ version: CACHE_VERSION, days: { '2026-08-09': [{ l: 'usa/wnba' }] } }),
+  );
+  assert.deepEqual(await loadCache(file, WNBA_CACHE_VERSION), {});
+  // But it still loads fine as what it actually is.
+  assert.ok(Object.keys(await loadCache(file, CACHE_VERSION)).length === 1);
+});

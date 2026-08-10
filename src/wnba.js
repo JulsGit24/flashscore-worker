@@ -25,6 +25,16 @@ export const WNBA_PATH = 'usa/wnba';
 export const DEFAULT_CACHE = 'data/wnba-history.json';
 
 /**
+ * Versioned separately from the soccer cache, since the two capture different
+ * things and change on their own schedules.
+ *
+ * 3: store the match id and the quarter line score. Under v2 a cached day held
+ *    neither, and cached days are never refetched — so the quarter props would
+ *    have read empty against every game captured before they existed.
+ */
+export const WNBA_CACHE_VERSION = 3;
+
+/**
  * Keep only finished WNBA games, and pull each one's quarter splits.
  *
  * The quarter feed is per match, so this costs one extra request per cached
@@ -151,6 +161,7 @@ export async function buildWnbaReport(args, deps = {}) {
       cachePath: args.cache,
       retainDays: args.retain,
       sport: SPORT.basketball,
+      cacheVersion: WNBA_CACHE_VERSION,
       distil: distilWnbaDay,
       onError: (e) => stats.errors.push(e),
     }),
