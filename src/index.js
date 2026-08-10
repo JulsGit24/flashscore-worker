@@ -8,6 +8,7 @@ import { DEFAULT_CACHE, DEFAULT_RETAIN_DAYS, updateHistory } from './history.js'
 import { buildTables, groupByLeague } from './table.js';
 import { CONFIDENCE, baselineRow, leagueContext, rankFixtures, scoreFixture } from './score.js';
 import { formTrend, recentForm } from './form.js';
+import { promotionStatus } from './promotion.js';
 import { favourite, outcomeProbabilities } from './probabilities.js';
 import { renderJson, renderMarkdown } from './report.js';
 
@@ -175,6 +176,12 @@ export async function buildReport(args, deps = {}) {
     fixture.trend = {
       home: formTrend(fixture.form.home, homeRow?.played ? homeRow.points / homeRow.played : null),
       away: formTrend(fixture.form.away, awayRow?.played ? awayRow.points / awayRow.played : null),
+    };
+    // Promoted or relegated, read from which league the side played in last
+    // season. Needs two seasons in the cache; reports `unknown` until then.
+    fixture.movement = {
+      home: promotionStatus(history.matches, homeRow?.team ?? fixture.home, fixture.leagueKey),
+      away: promotionStatus(history.matches, awayRow?.team ?? fixture.away, fixture.leagueKey),
     };
 
     // Every fixture is projected. A side with no results on file falls back to

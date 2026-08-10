@@ -22,10 +22,13 @@ export const DEFAULT_CACHE = 'data/history.json';
  * written under an older version is discarded and refetched rather than
  * silently mixed with days captured under different rules.
  *
- * 2: capture by region rather than by the league allowlist. Under v1 a day was
- *    filtered through the full allowlist at write time, so leagues added later
- *    could never be backfilled — the Americas and Asia came out empty against a
- *    cache captured when only Europe was configured.
+ * Each cache carries its own version, because the caches have their own capture
+ * rules and change independently — bumping one must not throw away the other.
+ *
+ * Soccer, v2: capture by region rather than by the league allowlist. Under v1 a
+ *    day was filtered through the full allowlist at write time, so leagues added
+ *    later could never be backfilled — the Americas and Asia came out empty
+ *    against a cache captured when only Europe was configured.
  */
 export const CACHE_VERSION = 2;
 /**
@@ -46,19 +49,19 @@ export function dayKeyForOffset(offset, now = new Date()) {
   return isoDay(new Date(now.getTime() + offset * 86400000));
 }
 
-export async function loadCache(cachePath = DEFAULT_CACHE) {
+export async function loadCache(cachePath = DEFAULT_CACHE, version = CACHE_VERSION) {
   try {
     const parsed = JSON.parse(await readFile(cachePath, 'utf8'));
-    if (parsed?.version !== CACHE_VERSION) return {};
+    if (parsed?.version !== version) return {};
     return parsed.days ?? {};
   } catch {
     return {};
   }
 }
 
-export async function saveCache(days, cachePath = DEFAULT_CACHE) {
+export async function saveCache(days, cachePath = DEFAULT_CACHE, version = CACHE_VERSION) {
   await mkdir(path.dirname(cachePath), { recursive: true });
-  await writeFile(cachePath, JSON.stringify({ version: CACHE_VERSION, days }));
+  await writeFile(cachePath, JSON.stringify({ version, days }));
 }
 
 /**
@@ -119,11 +122,12 @@ export async function updateHistory({
   concurrency = DEFAULT_CONCURRENCY,
   now = new Date(),
   sport = SPORT.soccer,
+  cacheVersion = CACHE_VERSION,
   distil = distilDay,
   fetchDay = (offset) => fetchDayFixtures({ dayOffset: offset, sport }),
   onError = () => {},
 } = {}) {
-  const cache = await loadCache(cachePath);
+  const cache = await loadCache(cachePath, cacheVersion);
 
   const wanted = [];
   for (let offset = -1; offset >= -window; offset -= 1) {
@@ -135,7 +139,7 @@ export async function updateHistory({
   let failed = 0;
   await mapWithConcurrency(wanted, concurrency, async ({ offset, key }) => {
     try {
-      cache[key] = distil(await fetchDay(offset));
+      cache[key] = await distil(await fetchDay(offset));
       fetched += 1;
     } catch (err) {
       failed += 1;
@@ -149,7 +153,7 @@ export async function updateHistory({
     if (key < oldest) delete cache[key];
   }
 
-  if (fetched > 0 || failed > 0) await saveCache(cache, cachePath);
+  if (fetched > 0 || failed > 0) await saveCache(cache, cachePath, cacheVersion);
 
   const matches = Object.values(cache).flat();
   return { matches, daysCached: Object.keys(cache).length, daysFetched: fetched, daysFailed: failed };

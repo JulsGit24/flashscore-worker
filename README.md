@@ -120,11 +120,13 @@ ignores the mild negative correlation real scorelines show, so the draw
 probability runs a point or two low — good enough to rank fixtures, not to price
 a bet.
 
-> **On "ascending / descending":** the arrows track *form trend* — a side's
-> points per game over its last five against its own season average — not
-> promotion or relegation. Promotion status isn't derivable from the feed, which
-> only exposes the current season. Say the word if you meant promoted/relegated
-> sides and I'll source it differently.
+**Promoted and relegated sides** are marked `⇑` and `⇓` next to the team name.
+The feed carries no such flag, but the cached results record which league every
+result belonged to — so a side that played the second tier last season and the
+first tier now came up. That needs two seasons in the cache; until it has them,
+every team reports `unknown` and no badge is shown. The `↑ ↓ →` arrows in the
+Form column are a separate thing: form trend, a side's recent points per game
+against its own season average.
 
 When a league has no cached results at all, its fixtures fall back to the global
 baseline: 2.7 goals a game, 55% of them to the home side. As the cache fills,
@@ -138,7 +140,7 @@ format — the Americas and Asia reports are identical in shape.
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 111 offline tests, no network
+npm test                       # 120 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40
@@ -285,6 +287,29 @@ Two further sections:
   margin and the favourite's win probability alongside. This is a *team*
   strength gap, the measurable stand-in for a roster mismatch; it cannot see
   that a starter is out tonight.
+- **Quarters and halves** — projected points, margin and winner for Q1-Q4, H1
+  and H2, plus each side's best quarter.
+
+### Quarter and half props
+
+The one per-match endpoint that responds, `df_sui_1_<id>`, returns the quarter
+line score. Capturing it per cached game gives each team a scoring profile: what
+share of its points it puts up in each quarter, and what share it concedes.
+A period projection is that share applied to the whole-game numbers — a side's
+own scoring share tempered by how much the opponent tends to concede in that
+quarter, the same offence-meets-defence idea the game model uses, applied
+within the period. Shares are shrunk toward an even 25% split, so two games
+cannot claim a team scores 40% of its points in the first.
+
+Period spreads are derived rather than guessed: if quarters were independent,
+the game margin's variance is the sum of four quarter variances, so a quarter's
+standard deviation is the game's over two and a half's is the game's over root
+two. Quarters are not quite independent — a blowout changes how the fourth is
+played — so treat those as a floor on the real uncertainty.
+
+**A quarter can be tied**, and a continuous distribution assigns that outcome
+zero probability, so a half-point continuity correction carries the tie mass
+explicitly. Every period reports win / tie / win rather than a forced binary.
 
 Home court is worth 3 points, applied additively after the multiplicative
 offence/defence adjustment — home court lifts margin rather than scaling a

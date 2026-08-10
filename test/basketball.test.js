@@ -220,8 +220,9 @@ test('headToHeadSummary counts from the named team perspective', () => {
 
 // --- pipeline ----------------------------------------------------------------
 
-test('distilWnbaDay keeps finished WNBA games and nothing else', () => {
+test('distilWnbaDay keeps finished WNBA games and nothing else', async () => {
   const mk = (url, home, away, hg, ag) => ({
+    id: `${home}-${away}`,
     tournament: { url, name: url },
     home,
     away,
@@ -230,15 +231,53 @@ test('distilWnbaDay keeps finished WNBA games and nothing else', () => {
     kickoff: new Date(d(0) * 1000),
   });
 
-  const kept = distilWnbaDay([
+  const kept = await distilWnbaDay([
     mk('/basketball/usa/wnba/', 'Aces', 'Liberty', 90, 84),
     mk('/basketball/usa/wnba/', 'Sky', 'Fever', null, null), // not played
     mk('/basketball/usa/nba/', 'Lakers', 'Celtics', 110, 100), // wrong competition
     mk('/basketball/chile/lnb/', 'A', 'B', 80, 70),
-  ]);
+  ], { fetchQuarters: async () => null });
 
   assert.equal(kept.length, 1);
-  assert.deepEqual(kept[0], { l: 'usa/wnba', h: 'Aces', a: 'Liberty', hg: 90, ag: 84, ts: d(0) });
+  assert.deepEqual(kept[0], {
+    id: 'Aces-Liberty',
+    l: 'usa/wnba',
+    h: 'Aces',
+    a: 'Liberty',
+    hg: 90,
+    ag: 84,
+    ts: d(0),
+    quarters: null,
+  });
+});
+
+test('distilWnbaDay attaches quarter splits and survives one that fails', async () => {
+  const mk = (id, home, away) => ({
+    id,
+    tournament: { url: '/basketball/usa/wnba/', name: 'USA: WNBA' },
+    home,
+    away,
+    homeScore: 90,
+    awayScore: 84,
+    kickoff: new Date(d(0) * 1000),
+  });
+  const splits = [
+    { home: 25, away: 20 },
+    { home: 20, away: 22 },
+    { home: 25, away: 20 },
+    { home: 20, away: 22 },
+  ];
+
+  const kept = await distilWnbaDay([mk('ok1', 'Aces', 'Sky'), mk('bad1', 'Liberty', 'Fever')], {
+    fetchQuarters: async (id) => {
+      if (id === 'bad1') throw new Error('feed 500');
+      return splits;
+    },
+  });
+
+  assert.equal(kept.length, 2, 'a failed split must not drop the game');
+  assert.deepEqual(kept.find((k) => k.id === 'ok1').quarters, splits);
+  assert.equal(kept.find((k) => k.id === 'bad1').quarters, null);
 });
 
 const ARGS = { dayOffset: 0, tz: 'America/New_York', format: 'both', cache: 'unused', retain: 400 };
@@ -437,4 +476,162 @@ test('toHalfPoint always rounds in the direction that keeps the odds honest', as
   assert.equal(toHalfPoint(160.5, 'under'), 160.5);
   // Negative spreads behave the same way.
   assert.equal(toHalfPoint(-3.2, 'over'), -3.5);
+});
+
+// --- quarters and halves -----------------------------------------------------
+
+test('parseQuarters reads the df_sui feed shape', async () => {
+  const { parseQuarters } = await import('../src/basketball/quarters.js');
+  const body =
+    'AC÷1st Quarter¬IG÷16¬IH÷6¬~AC÷2nd Quarter¬IG÷12¬IH÷18¬~' +
+    'AC÷3rd Quarter¬IG÷23¬IH÷18¬~AC÷4th Quarter¬IG÷9¬IH÷11¬~' +
+    'A1÷111f0b376e35022f0dcd7c98d85ecf11¬~';
+  assert.deepEqual(parseQuarters(body), [
+    { home: 16, away: 6 },
+    { home: 12, away: 18 },
+    { home: 23, away: 18 },
+    { home: 9, away: 11 },
+  ]);
+});
+
+test('parseQuarters rejects an incomplete game rather than guessing', async () => {
+  const { parseQuarters } = await import('../src/basketball/quarters.js');
+  assert.equal(parseQuarters('AC÷1st Quarter¬IG÷16¬IH÷6¬~AC÷2nd Quarter¬IG÷12¬IH÷18¬~'), null);
+  assert.equal(parseQuarters(''), null);
+  // A live game partway through is not a usable sample either.
+  assert.equal(parseQuarters('AC÷1st Quarter¬IG÷16¬IH÷6¬~AC÷2nd Quarter¬IG÷¬IH÷¬~'), null);
+});
+
+const WITH_QUARTERS = [
+  {
+    l: 'usa/wnba', h: 'Fast', a: 'Slow', hg: 100, ag: 80, ts: d(1),
+    // Fast score heavily in the first quarter.
+    quarters: [
+      { home: 40, away: 20 }, { home: 20, away: 20 },
+      { home: 20, away: 20 }, { home: 20, away: 20 },
+    ],
+  },
+  {
+    l: 'usa/wnba', h: 'Fast', a: 'Slow', hg: 100, ag: 80, ts: d(8),
+    quarters: [
+      { home: 40, away: 20 }, { home: 20, away: 20 },
+      { home: 20, away: 20 }, { home: 20, away: 20 },
+    ],
+  },
+];
+
+test('quarterProfile measures scoring share and shrinks a small sample', async () => {
+  const { quarterProfile, EVEN_SHARE } = await import('../src/basketball/quarters.js');
+  const fast = quarterProfile(WITH_QUARTERS, 'Fast');
+
+  assert.equal(fast.played, 2);
+  const shares = fast.scoring;
+  assert.ok(close(shares.reduce((a, b) => a + b, 0), 1, 1e-9), 'shares must sum to 1');
+  assert.ok(shares[0] > EVEN_SHARE, 'the first quarter is their strongest');
+  // Two games cannot claim the raw 40% share; shrinkage pulls it back.
+  assert.ok(shares[0] < 0.4, `expected shrinkage, got ${shares[0]}`);
+});
+
+test('a team with no quarter data falls back to an even split', async () => {
+  const { quarterProfile, EVEN_SHARE } = await import('../src/basketball/quarters.js');
+  const none = quarterProfile(WITH_QUARTERS, 'Nobody');
+  assert.equal(none.played, 0);
+  for (const s of none.scoring) assert.ok(close(s, EVEN_SHARE));
+  for (const s of none.conceding) assert.ok(close(s, EVEN_SHARE));
+});
+
+test('periodOutcome gives a tie its own probability', async () => {
+  const { periodOutcome, QUARTER_MARGIN_SD } = await import('../src/basketball/quarters.js');
+  const level = periodOutcome(0, QUARTER_MARGIN_SD);
+  assert.ok(close(level.home, level.away, 1e-9), 'a level quarter is symmetric');
+  assert.ok(level.tie > 0.05, `a quarter can genuinely be tied, got ${level.tie}`);
+  assert.ok(close(level.home + level.tie + level.away, 1, 1e-9));
+
+  const oneSided = periodOutcome(8, QUARTER_MARGIN_SD);
+  assert.ok(oneSided.home > 0.85);
+  assert.ok(oneSided.tie < level.tie, 'a lopsided quarter is less likely to tie');
+});
+
+test('projectPeriods splits the game into four quarters and two halves', async () => {
+  const { projectPeriods, quarterProfile } = await import('../src/basketball/quarters.js');
+  const ctx = leagueContext(LEAGUE);
+  const projection = projectGame({ home: 'Elite', away: 'Weak' }, LEAGUE[0], LEAGUE[2], ctx);
+  const periods = projectPeriods(
+    projection,
+    quarterProfile(WITH_QUARTERS, 'Fast'),
+    quarterProfile(WITH_QUARTERS, 'Slow'),
+  );
+
+  assert.deepEqual(periods.quarters.map((q) => q.period), ['Q1', 'Q2', 'Q3', 'Q4']);
+  assert.deepEqual(periods.halves.map((h) => h.period), ['H1', 'H2']);
+
+  // The quarters must add back up to the whole-game projection.
+  const qHome = periods.quarters.reduce((s, q) => s + q.points.home, 0);
+  const qAway = periods.quarters.reduce((s, q) => s + q.points.away, 0);
+  assert.ok(close(qHome, projection.points.home, 0.3), `${qHome} vs ${projection.points.home}`);
+  assert.ok(close(qAway, projection.points.away, 0.3));
+
+  // And the halves must add up to the same thing.
+  const hTotal = periods.halves.reduce((s, h) => s + h.points.total, 0);
+  assert.ok(close(hTotal, qHome + qAway, 0.3));
+
+  for (const p of [...periods.quarters, ...periods.halves]) {
+    const o = p.outcome;
+    assert.ok(close(o.home + o.tie + o.away, 1, 1e-9), `${p.period} outcome must sum to 1`);
+  }
+});
+
+test('a half is more decidable than a quarter', async () => {
+  const { projectPeriods, quarterProfile } = await import('../src/basketball/quarters.js');
+  const ctx = leagueContext(LEAGUE);
+  const projection = projectGame({ home: 'Elite', away: 'Weak' }, LEAGUE[0], LEAGUE[2], ctx);
+  const periods = projectPeriods(
+    projection,
+    quarterProfile([], 'A'),
+    quarterProfile([], 'B'),
+  );
+  // With an even split, a half carries twice the margin of a quarter and a
+  // smaller relative spread, so the favourite is clearer over the longer span.
+  assert.ok(periods.halves[0].outcome.home > periods.quarters[0].outcome.home);
+  assert.ok(periods.halves[0].outcome.tie < periods.quarters[0].outcome.tie);
+});
+
+test('the report renders a period table per game', async () => {
+  const data = await buildWnbaReport(ARGS, deps);
+  const md = renderMarkdown(data);
+  assert.match(md, /## Quarters and halves/);
+  assert.match(md, /\| Period \| Points H–A \| Total \| Margin \| Win H \| Tie \| Win A \|/);
+  assert.match(md, /\| Q1 \|/);
+  assert.match(md, /\| H2 \|/);
+  assert.match(md, /Best quarter for Aces/);
+
+  const json = JSON.parse(renderJson(data));
+  assert.equal(json.games[0].periods.quarters.length, 4);
+  assert.equal(json.games[0].periods.halves.length, 2);
+});
+
+test('the WNBA cache is versioned apart from the soccer one', async () => {
+  const { WNBA_CACHE_VERSION } = await import('../src/wnba.js');
+  const { CACHE_VERSION, loadCache } = await import('../src/history.js');
+  const { mkdtemp, writeFile } = await import('node:fs/promises');
+  const { tmpdir } = await import('node:os');
+  const path = await import('node:path');
+
+  assert.notEqual(
+    WNBA_CACHE_VERSION,
+    CACHE_VERSION,
+    'the quarter capture rule changed only for the WNBA cache',
+  );
+
+  // A cache written at the soccer version must not load as a WNBA cache: those
+  // days predate quarter capture and would read as games with no splits.
+  const dir = await mkdtemp(path.join(tmpdir(), 'fsw-'));
+  const file = path.join(dir, 'wnba.json');
+  await writeFile(
+    file,
+    JSON.stringify({ version: CACHE_VERSION, days: { '2026-08-09': [{ l: 'usa/wnba' }] } }),
+  );
+  assert.deepEqual(await loadCache(file, WNBA_CACHE_VERSION), {});
+  // But it still loads fine as what it actually is.
+  assert.ok(Object.keys(await loadCache(file, CACHE_VERSION)).length === 1);
 });
