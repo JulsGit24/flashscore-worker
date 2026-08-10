@@ -60,10 +60,15 @@ Output is written to `reports/YYYY-MM-DD.md` and `reports/YYYY-MM-DD.json`.
 ## Scheduling it for 5am
 
 [`.github/workflows/daily-report.yml`](.github/workflows/daily-report.yml) runs
-the report daily and commits it. **GitHub cron is UTC**, so set the hour for
-your own 5am and set a `REPORT_TZ` repository variable (Settings → Secrets and
-variables → Actions → Variables) to the IANA zone you want kickoff times
-printed in.
+at **05:00 America/New_York**, writes `reports/YYYY-MM-DD.md`, commits it, and
+prints it to the Actions job summary.
+
+GitHub cron is UTC and does not follow DST, so the workflow schedules both
+09:03 and 10:03 UTC and a `gate` job checks the real New York hour — the slot
+that isn't 5am stops before doing any work. To change the target, edit the two
+cron lines and the `TZ=America/New_York` check together. Kickoff times are
+printed in `America/New_York`; override with a `REPORT_TZ` repository variable
+(Settings → Secrets and variables → Actions → Variables).
 
 ## Data source
 
