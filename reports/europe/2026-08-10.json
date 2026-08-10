@@ -2,7 +2,7 @@
   "date": "2026-08-10",
   "region": "europe",
   "timezone": "America/New_York",
-  "generatedAt": "2026-08-10T17:13:59.322Z",
+  "generatedAt": "2026-08-10T17:15:49.427Z",
   "stats": {
     "totalFixtures": 152,
     "inScope": 47,
@@ -10,6 +10,17 @@
     "daysCached": 7,
     "daysFetched": 0,
     "daysFailed": 0,
+    "outOfRegion": [
+      "australia",
+      "australia-oceania",
+      "india",
+      "kuwait",
+      "mozambique",
+      "north-central-america",
+      "sri-lanka",
+      "uzbekistan",
+      "world"
+    ],
     "errors": []
   },
   "strongPickThreshold": 0.7,
@@ -1578,5 +1589,16 @@
       "slug": "kansallinen-ykkonen-women",
       "name": "FINLAND: Kansallinen Ykkonen Women - Relegation Group"
     }
+  ],
+  "outOfRegionCountries": [
+    "australia",
+    "australia-oceania",
+    "india",
+    "kuwait",
+    "mozambique",
+    "north-central-america",
+    "sri-lanka",
+    "uzbekistan",
+    "world"
   ]
 }
