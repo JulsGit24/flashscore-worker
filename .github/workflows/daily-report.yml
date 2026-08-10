@@ -46,20 +46,6 @@ jobs:
 
       - run: npm test
 
-      # TEMPORARY: diagnosing the standings endpoint. Remove once fixed.
-      - name: Probe standings feed
-        continue-on-error: true
-        run: |
-          node scripts/probe-standings.js 2>&1 | tee /tmp/probe.txt
-          {
-            echo '<details><summary>standings probe</summary>'
-            echo
-            echo '```'
-            head -c 60000 /tmp/probe.txt
-            echo '```'
-            echo '</details>'
-          } >> "$GITHUB_STEP_SUMMARY"
-
       - name: Generate shortlist
         env:
           # IANA timezone the kickoff times are printed in.
@@ -84,7 +70,7 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add reports/
+          git add reports/ data/
           if git diff --cached --quiet; then
             echo 'No new report to commit.'
           else
