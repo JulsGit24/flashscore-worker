@@ -46,6 +46,13 @@ jobs:
 
       - run: npm test
 
+      # TEMPORARY: verifying the WNBA quarter capture end to end.
+      - name: Verify the WNBA slate
+        continue-on-error: true
+        env:
+          REPORT_TZ: America/New_York
+        run: node src/wnba.js --format md 2>&1 | sed -n '/Quarters and halves/,/Best quarter/p' | head -30
+
       - name: Generate shortlists
         env:
           # IANA timezone the kickoff times are printed in.
