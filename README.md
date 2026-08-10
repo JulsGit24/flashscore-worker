@@ -138,7 +138,7 @@ format — the Americas and Asia reports are identical in shape.
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 80 offline tests, no network
+npm test                       # 103 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40
@@ -147,6 +147,9 @@ node src/index.js --region americas
 node src/index.js --region asia --tz Asia/Tokyo
 node src/index.js --strong-pick 0.8    # only call 80%+ a strong favourite
 node src/index.js --min-confidence medium  # picks need 3+ games a side
+
+node src/wnba.js               # today's WNBA slate
+node src/wnba.js --help
 ```
 
 Output is written to `reports/<region>/YYYY-MM-DD.md` and `.json`.
