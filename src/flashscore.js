@@ -15,6 +15,15 @@
 // 1-byte "0"), so league tables are derived from past day feeds instead — see
 // history.js and table.js.
 
+/**
+ * Feed sport ids, confirmed live: 1 and 3 both return a full day, 2 and 6 too.
+ * The WNBA sits on 3 at /basketball/usa/wnba/.
+ */
+export const SPORT = {
+  soccer: 1,
+  basketball: 3,
+};
+
 export const REC_SEP = '~';
 export const PAIR_SEP = '¬';
 export const KV_SEP = '÷';
@@ -150,8 +159,13 @@ export async function fetchFeed(feedPath, options = {}) {
  * timestamps are absolute either way, so this only affects which matches the
  * feed considers to fall on the requested day.
  */
-export async function fetchDayFixtures({ dayOffset = 0, tzOffset = 0, ...options } = {}) {
+export async function fetchDayFixtures({
+  dayOffset = 0,
+  tzOffset = 0,
+  sport = SPORT.soccer,
+  ...options
+} = {}) {
   const cfg = { ...DEFAULTS, ...options };
-  const body = await fetchFeed(`f_1_${dayOffset}_${tzOffset}_${cfg.lang}_1`, cfg);
+  const body = await fetchFeed(`f_${sport}_${dayOffset}_${tzOffset}_${cfg.lang}_1`, cfg);
   return extractMatches(parseFeed(body));
 }

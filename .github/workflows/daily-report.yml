@@ -46,11 +46,6 @@ jobs:
 
       - run: npm test
 
-      # TEMPORARY: checking what the feed carries beyond soccer. Remove once resolved.
-      - name: Probe sports
-        continue-on-error: true
-        run: node scripts/probe-sports.js 2>&1 | head -120
-
       - name: Generate shortlists
         env:
           # IANA timezone the kickoff times are printed in.

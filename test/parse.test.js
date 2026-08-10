@@ -43,6 +43,24 @@ test('parseTournamentUrl pulls country and league slug', () => {
   assert.deepEqual(parseTournamentUrl(null), { country: null, slug: null });
 });
 
+test('parseTournamentUrl drops the sport segment for any sport', () => {
+  // Basketball shares the shape, so the WNBA must not parse as country
+  // "basketball", league "usa".
+  assert.deepEqual(parseTournamentUrl('/basketball/usa/wnba/'), {
+    country: 'usa',
+    slug: 'wnba',
+  });
+  assert.deepEqual(parseTournamentUrl('/hockey/finland/liiga/'), {
+    country: 'finland',
+    slug: 'liiga',
+  });
+  // A path with no sport prefix is read as country-first.
+  assert.deepEqual(parseTournamentUrl('/spain/laliga/'), {
+    country: 'spain',
+    slug: 'laliga',
+  });
+});
+
 test('classifyCompetition keeps tier 1 and 2, men and women', () => {
   for (const [country, slug] of [
     ['england', 'premier-league'],

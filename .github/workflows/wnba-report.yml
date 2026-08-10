@@ -1,0 +1,77 @@
+name: WNBA slate
+
+on:
+  schedule:
+    # Target: 16:00 America/New_York, year round. GitHub cron is UTC only and
+    # does not follow DST, so both candidate hours fire and the `gate` job
+    # checks the real New York hour — 20:0x UTC is 4pm EDT, 21:0x is 4pm EST,
+    # and whichever one is not 4pm stops before doing any work.
+    - cron: '7 20 * * *'
+    - cron: '7 21 * * *'
+  workflow_dispatch:
+    inputs:
+      day_offset:
+        description: '0 = today, 1 = tomorrow'
+        default: '0'
+
+permissions:
+  contents: write
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.check.outputs.go }}
+    steps:
+      - id: check
+        run: |
+          hour=$(TZ=America/New_York date +%H)
+          if [ "${{ github.event_name }}" != 'schedule' ] || [ "$hour" = '16' ]; then
+            echo 'go=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'go=false' >> "$GITHUB_OUTPUT"
+            echo "New York hour is $hour, not 16 — this is the other DST slot."
+          fi
+
+  report:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - run: npm test
+
+      - name: Generate the WNBA slate
+        env:
+          REPORT_TZ: ${{ vars.REPORT_TZ || 'America/New_York' }}
+        run: |
+          node src/wnba.js \
+            --day-offset "${{ github.event.inputs.day_offset || 0 }}" \
+            --quiet
+
+      - name: Publish the slate to the job summary
+        if: always()
+        run: |
+          latest=$(ls -1 reports/wnba/*.md 2>/dev/null | sort | tail -1)
+          if [ -n "$latest" ]; then
+            cat "$latest" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'No slate was produced — check the Generate step.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit the slate
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add reports/wnba/ data/
+          if git diff --cached --quiet; then
+            echo 'No new slate to commit.'
+          else
+            git commit -m "WNBA slate for $(TZ=America/New_York date +%F)"
+            git push
+          fi

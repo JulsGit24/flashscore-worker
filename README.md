@@ -1,5 +1,13 @@
 # flashscore-worker
 
+Two reports, on two schedules:
+
+| Report | Runs | Output |
+|---|---|---|
+| Soccer, three regions | 05:00 America/New_York | `reports/<region>/YYYY-MM-DD.md` |
+| WNBA slate | 16:00 America/New_York | `reports/wnba/YYYY-MM-DD.md` |
+
+
 Every morning, produce a shortlist of the day's league games most likely to be
 worth watching — either because they project to be high scoring, or because one
 side is far stronger than the other.
@@ -235,3 +243,49 @@ test/                offline tests over recorded feed samples
 data/history.json    cached results, all regions (committed; regenerates if deleted)
 reports/<region>/    one dated report per region
 ```
+
+## WNBA slate
+
+`node src/wnba.js` builds a separate report for the day's WNBA games, on its
+own 4pm schedule ([`.github/workflows/wnba-report.yml`](.github/workflows/wnba-report.yml)).
+
+Basketball needs a different model, not a different config. Football scores are
+small counts, so the soccer side treats them as Poisson and sums a scoreline
+grid. Basketball scores are large sums of many possessions, so margin and total
+are close to normal — win probability comes from the normal CDF of the projected
+margin, and the natural outputs are a spread and a total rather than 1X2 and
+both-teams-to-score.
+
+| Column | Meaning |
+|---|---|
+| **Proj** | Projected points, home–away |
+| **Spread** | Projected margin, quoted on the favourite as a negative number |
+| **Total** | Projected combined points, with an 80% range |
+| **Win% H / A** | From the projected margin against an 11.5-point standard deviation |
+| **Form** | Last 5 results, most recent first |
+| **PF/PA** | Points scored and allowed per game across those 5 |
+| **H2H** | Cached meetings this season: home wins–away wins, and their average total |
+| **?** | Confidence, same scale as the soccer report |
+
+Home court is worth 3 points, applied additively after the multiplicative
+offence/defence adjustment — home court lifts margin rather than scaling a
+team's quality. Totals are also quoted as over probabilities at three round
+lines either side of the projection.
+
+### What this report does not contain
+
+**Player props and injury status are not produced.** This is a data limit, not
+an omission. Probing the feed established:
+
+- Basketball is sport id 3 and the WNBA is present at `/basketball/usa/wnba/`.
+- The only per-match detail endpoint that responds is `df_sui_1_<id>`, and it
+  returns quarter scores — `1st Quarter 16-6, 2nd Quarter 12-18, …`. There are
+  no player rows behind a game at all.
+- Every injury and news feed shape probed returned the empty sentinel.
+
+Props need each player's points, rebounds, assists and minutes per game plus
+their record against that specific opponent; injuries need an availability
+report. Both require a source with box scores — the WNBA's own stats API, or a
+commercial feed — which is a new integration rather than a new query against
+this one. The report states this limitation in its own body, so nobody reads a
+slate and assumes props were considered and found wanting.

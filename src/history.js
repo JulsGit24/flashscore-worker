@@ -11,7 +11,7 @@
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
-import { fetchDayFixtures } from './flashscore.js';
+import { SPORT, fetchDayFixtures } from './flashscore.js';
 import { parseTournamentUrl } from './leagues.js';
 import { regionOf } from './leagues.data.js';
 
@@ -118,7 +118,9 @@ export async function updateHistory({
   window = FETCH_WINDOW_DAYS,
   concurrency = DEFAULT_CONCURRENCY,
   now = new Date(),
-  fetchDay = (offset) => fetchDayFixtures({ dayOffset: offset }),
+  sport = SPORT.soccer,
+  distil = distilDay,
+  fetchDay = (offset) => fetchDayFixtures({ dayOffset: offset, sport }),
   onError = () => {},
 } = {}) {
   const cache = await loadCache(cachePath);
@@ -133,7 +135,7 @@ export async function updateHistory({
   let failed = 0;
   await mapWithConcurrency(wanted, concurrency, async ({ offset, key }) => {
     try {
-      cache[key] = distilDay(await fetchDay(offset));
+      cache[key] = distil(await fetchDay(offset));
       fetched += 1;
     } catch (err) {
       failed += 1;
