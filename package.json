@@ -1,0 +1,14 @@
+{
+  "name": "flashscore-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Daily shortlist of European league fixtures likely to bring goals or a big mismatch",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "report": "node src/index.js",
+    "test": "node --test 'test/*.test.js'"
+  }
+}
