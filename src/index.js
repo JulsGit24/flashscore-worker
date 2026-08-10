@@ -107,6 +107,7 @@ export async function buildReport(args, deps = {}) {
     daysCached: 0,
     daysFetched: 0,
     daysFailed: 0,
+    outOfRegion: [],
     errors: [],
   };
 
@@ -129,6 +130,10 @@ export async function buildReport(args, deps = {}) {
 
   const inScope = [];
   const reviewSeen = new Map();
+  // Competitions dropped because their country is in no region. Recorded so a
+  // renamed country slug shows up as a diagnostic instead of silently emptying
+  // a report.
+  const outOfRegionSeen = new Set();
 
   for (const fixture of fixtures) {
     const { country, slug } = parseTournamentUrl(fixture.tournament?.url);
@@ -140,9 +145,12 @@ export async function buildReport(args, deps = {}) {
       inScope.push({ ...fixture, league: verdict.league, leagueKey: `${country}/${slug}` });
     } else if (verdict.reason === 'needs-review' && verdict.region === args.region) {
       reviewSeen.set(`${country}/${slug}`, competition);
+    } else if (verdict.reason === 'out-of-region' && country) {
+      outOfRegionSeen.add(country);
     }
   }
   stats.inScope = inScope.length;
+  stats.outOfRegion = [...outOfRegionSeen].sort();
 
   // Recent-form lookups read the same distilled history the tables come from.
   const historyByLeague = groupByLeague(history.matches);

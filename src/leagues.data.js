@@ -196,9 +196,9 @@ export const LEAGUES = [
   { country: 'brazil', slug: 'serie-a', name: 'Serie A', tier: 1, gender: 'M', region: 'americas' },
   { country: 'brazil', slug: 'serie-b', name: 'Serie B', tier: 2, gender: 'M', region: 'americas' },
   { country: 'brazil', slug: 'brasileiro-women', name: 'Brasileiro Women', tier: 1, gender: 'W', region: 'americas' },
-  { country: 'uruguay', slug: 'primera-division', name: 'Primera División', tier: 1, gender: 'M', region: 'americas' },
+  { country: 'uruguay', slug: 'liga-auf-uruguaya', name: 'Liga AUF Uruguaya', tier: 1, gender: 'M', region: 'americas' },
   { country: 'uruguay', slug: 'segunda-division', name: 'Segunda División', tier: 2, gender: 'M', region: 'americas' },
-  { country: 'chile', slug: 'primera-division', name: 'Primera División', tier: 1, gender: 'M', region: 'americas' },
+  { country: 'chile', slug: 'liga-de-primera', name: 'Liga de Primera', tier: 1, gender: 'M', region: 'americas' },
   { country: 'chile', slug: 'primera-b', name: 'Primera B', tier: 2, gender: 'M', region: 'americas' },
   { country: 'colombia', slug: 'primera-a', name: 'Primera A', tier: 1, gender: 'M', region: 'americas' },
   { country: 'colombia', slug: 'primera-b', name: 'Primera B', tier: 2, gender: 'M', region: 'americas' },
@@ -206,7 +206,7 @@ export const LEAGUES = [
   { country: 'peru', slug: 'liga-2', name: 'Liga 2', tier: 2, gender: 'M', region: 'americas' },
   { country: 'ecuador', slug: 'liga-pro', name: 'LigaPro', tier: 1, gender: 'M', region: 'americas' },
   { country: 'ecuador', slug: 'liga-pro-serie-b', name: 'LigaPro Serie B', tier: 2, gender: 'M', region: 'americas' },
-  { country: 'paraguay', slug: 'primera-division', name: 'Primera División', tier: 1, gender: 'M', region: 'americas' },
+  { country: 'paraguay', slug: 'copa-de-primera', name: 'Copa de Primera', tier: 1, gender: 'M', region: 'americas' },
   { country: 'paraguay', slug: 'division-intermedia', name: 'División Intermedia', tier: 2, gender: 'M', region: 'americas' },
   { country: 'bolivia', slug: 'division-profesional', name: 'División Profesional', tier: 1, gender: 'M', region: 'americas' },
   { country: 'venezuela', slug: 'liga-futve', name: 'Liga FUTVE', tier: 1, gender: 'M', region: 'americas' },
@@ -214,7 +214,10 @@ export const LEAGUES = [
   // --- North & Central America, Caribbean -----------------------------------
   { country: 'usa', slug: 'mls', name: 'MLS', tier: 1, gender: 'M', region: 'americas' },
   { country: 'usa', slug: 'usl-championship', name: 'USL Championship', tier: 2, gender: 'M', region: 'americas' },
-  { country: 'usa', slug: 'nwsl', name: 'NWSL', tier: 1, gender: 'W', region: 'americas' },
+  { country: 'usa', slug: 'nwsl-women', name: 'NWSL', tier: 1, gender: 'W', region: 'americas' },
+  { country: 'argentina', slug: 'primera-a-women', name: 'Primera A Women', tier: 1, gender: 'W', region: 'americas' },
+  { country: 'colombia', slug: 'liga-women', name: 'Liga Femenina', tier: 1, gender: 'W', region: 'americas' },
+  { country: 'peru', slug: 'liga-women', name: 'Liga Femenina', tier: 1, gender: 'W', region: 'americas' },
   { country: 'mexico', slug: 'liga-mx', name: 'Liga MX', tier: 1, gender: 'M', region: 'americas' },
   { country: 'mexico', slug: 'liga-de-expansion-mx', name: 'Liga de Expansión MX', tier: 2, gender: 'M', region: 'americas' },
   { country: 'mexico', slug: 'liga-mx-women', name: 'Liga MX Femenil', tier: 1, gender: 'W', region: 'americas' },
@@ -224,7 +227,7 @@ export const LEAGUES = [
   { country: 'guatemala', slug: 'liga-nacional', name: 'Liga Nacional', tier: 1, gender: 'M', region: 'americas' },
   { country: 'el-salvador', slug: 'primera-division', name: 'Primera División', tier: 1, gender: 'M', region: 'americas' },
   { country: 'panama', slug: 'lpf', name: 'Liga Panameña', tier: 1, gender: 'M', region: 'americas' },
-  { country: 'nicaragua', slug: 'primera-division', name: 'Primera División', tier: 1, gender: 'M', region: 'americas' },
+  { country: 'nicaragua', slug: 'liga-primera', name: 'Liga Primera', tier: 1, gender: 'M', region: 'americas' },
   { country: 'jamaica', slug: 'premier-league', name: 'Premier League', tier: 1, gender: 'M', region: 'americas' },
   { country: 'trinidad-and-tobago', slug: 'pro-league', name: 'Pro League', tier: 1, gender: 'M', region: 'americas' },
   { country: 'dominican-republic', slug: 'liga-mayor', name: 'Liga Mayor', tier: 1, gender: 'M', region: 'americas' },
@@ -242,6 +245,18 @@ export const LEAGUES = [
   { country: 'china', slug: 'league-one', name: 'China League One', tier: 2, gender: 'M', region: 'asia' },
   { country: 'china', slug: 'womens-super-league', name: 'Women’s Super League', tier: 1, gender: 'W', region: 'asia' },
 ];
+
+/**
+ * Competitions to drop outright. Used where the name alone cannot settle the
+ * tier in that country — Chile's "Segunda División" is the third tier, while
+ * Uruguay's league of the same name is the second.
+ */
+export const EXCLUDED_SLUGS = new Set([
+  'chile/segunda-division',
+  'usa/mls-next-pro',
+  'brazil/cearense-3',
+  'argentina/torneo-promocional-amateur',
+]);
 
 export const LEAGUE_INDEX = new Map(
   LEAGUES.map((l) => [`${l.country}/${l.slug}`, l]),

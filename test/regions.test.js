@@ -120,3 +120,30 @@ test('country names render properly, not just title-cased slugs', async () => {
   assert.equal(prettyCountry('japan'), 'Japan');
   assert.equal(prettyCountry('north-macedonia'), 'North Macedonia');
 });
+
+test('countries outside every region are recorded as a diagnostic', async () => {
+  const data = await buildReport({ ...BASE, region: 'europe' }, deps);
+  assert.deepEqual(data.stats.outOfRegion, ['nigeria']);
+});
+
+test('explicitly excluded slugs are dropped even though they look top-flight', async () => {
+  const { classifyCompetition } = await import('../src/leagues.js');
+  // Chile's second tier is Primera B; its "Segunda División" is the third.
+  assert.equal(
+    classifyCompetition({
+      country: 'chile',
+      slug: 'segunda-division',
+      name: 'CHILE: Segunda Division',
+    }).reason,
+    'tier-3-or-below',
+  );
+  // Uruguay's Segunda División really is the second tier, and still gets in.
+  assert.equal(
+    classifyCompetition({
+      country: 'uruguay',
+      slug: 'segunda-division',
+      name: 'URUGUAY: Segunda Division',
+    }).include,
+    true,
+  );
+});

@@ -300,6 +300,7 @@ export function renderJson(data) {
       strongPicks: strongPicks(data.ranked, data.strongPickThreshold ?? 0.7).map(fixture),
       games: data.all.map(fixture),
       needsReview: data.review,
+      outOfRegionCountries: data.stats.outOfRegion ?? [],
     },
     null,
     2,
