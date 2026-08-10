@@ -1,14 +1,10 @@
 import { readFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { extractMatches, extractStandings, parseFeed } from '../src/flashscore.js';
+import { extractMatches, parseFeed } from '../src/flashscore.js';
 import { classifyCompetition, parseTournamentUrl } from '../src/leagues.js';
 
 const dayFeed = await readFile(new URL('../fixtures/sample-day-feed.txt', import.meta.url), 'utf8');
-const tableFeed = await readFile(
-  new URL('../fixtures/sample-standings-feed.txt', import.meta.url),
-  'utf8',
-);
 
 test('parseFeed splits records and key/value pairs', () => {
   const records = parseFeed('AA÷1¬AE÷Home¬AF÷Away¬~AA÷2¬AE÷X¬AF÷Y¬~');
@@ -35,22 +31,6 @@ test('extractMatches attaches each match to its preceding tournament header', ()
   assert.equal(brazil.tournament.country, 'Brazil');
 });
 
-test('extractStandings reads per-team rows', () => {
-  const rows = extractStandings(parseFeed(tableFeed));
-  assert.equal(rows.length, 5);
-  assert.deepEqual(rows[0], {
-    team: 'Arsenal',
-    rank: 1,
-    played: 20,
-    wins: 15,
-    draws: 3,
-    losses: 2,
-    goalsFor: 48,
-    goalsAgainst: 14,
-    points: 48,
-  });
-});
-
 test('parseTournamentUrl pulls country and league slug', () => {
   assert.deepEqual(parseTournamentUrl('/soccer/england/premier-league/'), {
     country: 'england',
@@ -71,6 +51,15 @@ test('classifyCompetition keeps tier 1 and 2, men and women', () => {
     ['sweden', 'damallsvenskan'],
     ['germany', 'frauen-bundesliga'],
     ['ukraine', 'premier-league'],
+    // Slugs corrected against live feed URLs, and second tiers the feed labels
+    // "Division 1" — these must survive the tier-3 regexes.
+    ['poland', 'division-1'],
+    ['bulgaria', 'efbet-league'],
+    ['lithuania', 'toplyga'],
+    ['iceland', 'besta-deild-karla'],
+    ['faroe-islands', 'premier-league'],
+    ['gibraltar', 'national-league'],
+    ['belarus', 'vysshaya-liga-women'],
   ]) {
     const verdict = classifyCompetition({ country, slug, name: slug });
     assert.equal(verdict.include, true, `${country}/${slug} should be included`);
@@ -87,6 +76,13 @@ test('classifyCompetition rejects tier 3 and below', () => {
     { country: 'spain', slug: 'primera-federacion', name: 'SPAIN: Primera Federación' },
     { country: 'poland', slug: 'ii-liga', name: 'POLAND: II liga' },
     { country: 'france', slug: 'national-2', name: 'FRANCE: National 2' },
+    { country: 'norway', slug: 'division-3-group-4', name: 'NORWAY: Division 3 - Group 4' },
+    { country: 'iceland', slug: 'division-2', name: 'ICELAND: Division 2' },
+    {
+      country: 'england',
+      slug: 'isthmian-league-premier-division',
+      name: 'ENGLAND: Isthmian League Premier Division',
+    },
   ];
   for (const c of cases) {
     const verdict = classifyCompetition(c);

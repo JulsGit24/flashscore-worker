@@ -94,11 +94,12 @@ export function renderMarkdown(data) {
     out.push('');
     out.push('## In scope but not ranked');
     out.push('');
-    out.push('No usable league table yet (new season, cup stage, or standings feed empty).');
+    out.push('Not enough completed results in the derived league table to score these yet.');
     out.push('');
     for (const f of unrankable) {
       out.push(
-        `- ${formatTime(f.kickoff, tz)} — ${f.home} v ${f.away} (${f.league?.name ?? f.tournament?.name})`,
+        `- ${formatTime(f.kickoff, tz)} — ${f.home} v ${f.away} ` +
+          `(${f.league?.name ?? f.tournament?.name})${f.why ? ` — ${f.why}` : ''}`,
       );
     }
   }
@@ -120,7 +121,8 @@ export function renderMarkdown(data) {
   out.push('');
   out.push(
     `Fetched ${stats.totalFixtures} fixtures worldwide · ${stats.inScope} in scope · ` +
-      `tables loaded ${stats.tablesLoaded} · table errors ${stats.tableErrors} · ` +
+      `${stats.tablesLoaded} league tables derived from ${stats.daysCached} days of results ` +
+      `(${stats.daysFetched} newly fetched, ${stats.daysFailed} failed) · ` +
       `generated ${new Date().toISOString()}`,
   );
   out.push('');
@@ -158,6 +160,7 @@ export function renderJson(data) {
         league: f.league?.name ?? f.tournament?.name ?? null,
         home: f.home,
         away: f.away,
+        why: f.why ?? null,
       })),
       needsReview: data.review,
     },

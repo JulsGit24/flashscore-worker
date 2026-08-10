@@ -19,6 +19,11 @@ const TIER3_PLUS_PATTERNS = [
   /\b(third|fourth|fifth)\s+(division|league|tier)\b/i,
   /\b2\.?\s*deild\b|\b3\.?\s*deild\b/i,
   /\besiliiga\s*b\b|\b1\.?\s*lyga\s*b\b/i,
+  // Seen in live feeds: "Division 2", "Division 3 - Group 4". Tier-2 leagues
+  // that the feed calls "Division 1" are allowlisted by slug before this runs.
+  /\bdivision\s*[2-9]\b/i,
+  // English non-league pyramid (tier 7 and below).
+  /\bisthmian\b|\bsouthern league\b|\bnorthern premier\b|\bcombined counties\b/i,
 ];
 
 /** Not senior first-team league football at all. */

@@ -48,7 +48,7 @@ See [`reports/EXAMPLE.md`](reports/EXAMPLE.md) for the output format.
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 24 offline tests, no network
+npm test                       # 33 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40
@@ -77,6 +77,34 @@ delimiter-separated stream, not JSON. `src/flashscore.js` documents the shape
 and keeps every field code in one `FIELDS` map so an upstream rename is a
 one-line fix.
 
+**League tables are computed, not fetched.** Flashscore's standings endpoint
+could not be identified — every candidate stage id and URL shape answers HTTP
+200 with a 1-byte `0` body. So the worker replays past day feeds, keeps the
+finished in-scope results, and builds the tables itself (`src/history.js`,
+`src/table.js`). That leaves exactly one upstream endpoint to depend on, and
+guarantees the table is consistent with the fixtures being ranked.
+
+Season boundaries are found per league rather than hardcoded: a gap of 40+ days
+in a league's own fixture list is treated as the summer break, so an
+autumn-spring league in August starts from zero while a summer-calendar league
+keeps its season to date.
+
+**The day feed only serves a 7-day window** (offsets -7..+7; -8 and +8 both
+answer with the same 1-byte `0`). So the tables cannot be reconstructed in one
+run — the worker caches each day it fetches in `data/history.json`, commits it,
+and the season accumulates as the job runs each morning. A team needs 3 results
+in the cache before its fixtures can be ranked; until then they are listed under
+*In scope but not ranked*.
+
+Ranks are computed on points, then goal difference, then goals scored — they can
+differ from the official table where a league applies a points deduction or
+head-to-head tiebreaks.
+
+> **Known limitation.** Starting from an empty cache, the shortlist is a
+> filtered fixture list rather than a ranked one for the first few weeks. To get
+> ranking immediately, point `src/table.js` at an external standings API instead
+> — nothing else in the pipeline needs to change.
+
 Endpoint details can be overridden without touching code:
 
 | Variable | Default | Purpose |
@@ -87,14 +115,10 @@ Endpoint details can be overridden without touching code:
 | `FS_LANG` | `en-us` | feed language |
 | `FS_REFERER` | `https://www.flashscoreusa.com/` | Referer/Origin headers |
 
-> **Verify the feed constants on first live run.** The parser, the filtering,
-> the scoring and the rendering are all covered by offline tests against
-> recorded samples, but the network layer has never been exercised against the
-> live endpoint — the environment this was written in blocks outbound access to
-> flashscore. If the first run reports 0 fixtures, `fetchFeed` will say whether
-> the response failed to look like a feed; adjust `FS_PROJECT` / `FS_SIGN`
-> from the values the site's own network tab shows and everything downstream
-> works unchanged.
+These defaults are confirmed working against the live feed. If Flashscore
+rotates them, a run will report 0 fixtures and `fetchFeed` will say the response
+did not look like a feed — reset `FS_PROJECT` / `FS_SIGN` from the values the
+site's own network tab shows and everything downstream works unchanged.
 
 ## Layout
 
@@ -102,8 +126,11 @@ Endpoint details can be overridden without touching code:
 src/leagues.data.js  European tier-1/tier-2 allowlist (men + women)
 src/leagues.js       scope filtering: geography, tier, seniority
 src/flashscore.js    feed client + parser
+src/history.js       season results, replayed from past day feeds and cached
+src/table.js         league tables + season-boundary detection
 src/score.js         the goals and edge model
 src/report.js        markdown and JSON rendering
 src/index.js         CLI and pipeline
 test/                offline tests over recorded feed samples
+data/history.json    cached results (committed; regenerates if deleted)
 ```

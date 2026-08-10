@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { fetchDayFixtures, fetchStandings, DEFAULTS } from './flashscore.js';
+import { fetchDayFixtures, DEFAULTS } from './flashscore.js';
 import { classifyCompetition, parseTournamentUrl } from './leagues.js';
+import { DEFAULT_CACHE, DEFAULT_RETAIN_DAYS, updateHistory } from './history.js';
+import { buildTables } from './table.js';
 import { leagueContext, rankFixtures, scoreFixture } from './score.js';
 import { renderJson, renderMarkdown } from './report.js';
 
@@ -14,6 +16,9 @@ function parseArgs(argv) {
     tz: process.env.REPORT_TZ ?? 'UTC',
     format: 'both',
     outDir: 'reports',
+    cache: DEFAULT_CACHE,
+    retain: DEFAULT_RETAIN_DAYS,
+    minPlayed: 3,
     quiet: false,
   };
   for (let i = 0; i < argv.length; i += 1) {
@@ -25,6 +30,9 @@ function parseArgs(argv) {
     else if (a === '--tz') args.tz = next();
     else if (a === '--format') args.format = next();
     else if (a === '--out') args.outDir = next();
+    else if (a === '--cache') args.cache = next();
+    else if (a === '--retain') args.retain = Number(next());
+    else if (a === '--min-played') args.minPlayed = Number(next());
     else if (a === '--quiet') args.quiet = true;
     else if (a === '--help' || a === '-h') args.help = true;
   }
@@ -42,39 +50,22 @@ flashscore-worker — daily shortlist of high-goal / lopsided European fixtures
   --tz ZONE        IANA timezone for displayed kickoff times (default $REPORT_TZ or UTC)
   --format md|json|both
   --out DIR        output directory (default reports/)
+  --cache PATH     season history cache (default ${DEFAULT_CACHE})
+  --retain N       days of results history to keep (default ${DEFAULT_RETAIN_DAYS})
+  --min-played N   league table games needed before a fixture can be ranked (default 3)
   --quiet          write files only, no stdout
+
+League tables are computed from past day feeds rather than fetched, and cached
+in --cache. The feed only serves a 7-day window, so a fresh cache cannot
+reconstruct a season on day one — it accumulates as the job runs each morning.
 
 Environment: FS_HOST, FS_PROJECT, FS_SIGN, FS_LANG, FS_REFERER override the
 feed endpoint if Flashscore rotates it. Current defaults:
   host=${DEFAULTS.host} project=${DEFAULTS.project} lang=${DEFAULTS.lang}
 `;
 
-/** Fetch standings once per tournament stage, with the in-flight promise shared. */
-function standingsLoader(stats, getStandings) {
-  const cache = new Map();
-  return (stageId) => {
-    if (!stageId) return Promise.resolve(null);
-    if (!cache.has(stageId)) {
-      cache.set(
-        stageId,
-        getStandings(stageId)
-          .then((rows) => {
-            if (rows.length) stats.tablesLoaded += 1;
-            return rows.length ? rows : null;
-          })
-          .catch((err) => {
-            stats.tableErrors += 1;
-            stats.errors.push(`standings ${stageId}: ${err.message}`);
-            return null;
-          }),
-      );
-    }
-    return cache.get(stageId);
-  };
-}
-
-/** Match a fixture's team names against standings rows, tolerating minor differences. */
-function findRow(table, name) {
+/** Match a fixture's team names against table rows, tolerating minor differences. */
+export function findRow(table, name) {
   const norm = (s) =>
     String(s)
       .toLowerCase()
@@ -82,9 +73,13 @@ function findRow(table, name) {
       .replace(/[̀-ͯ]/g, '')
       .replace(/[^a-z0-9]/g, '');
   const target = norm(name);
+  if (!target) return null;
   return (
     table.find((r) => norm(r.team) === target) ??
-    table.find((r) => norm(r.team).includes(target) || target.includes(norm(r.team))) ??
+    table.find((r) => {
+      const t = norm(r.team);
+      return t.includes(target) || target.includes(t);
+    }) ??
     null
   );
 }
@@ -95,17 +90,33 @@ function findRow(table, name) {
  */
 export async function buildReport(args, deps = {}) {
   const getFixtures = deps.fetchDayFixtures ?? fetchDayFixtures;
-  const getStandings = deps.fetchStandings ?? fetchStandings;
+  const getHistory = deps.updateHistory ?? updateHistory;
   const stats = {
     totalFixtures: 0,
     inScope: 0,
     tablesLoaded: 0,
-    tableErrors: 0,
+    daysCached: 0,
+    daysFetched: 0,
+    daysFailed: 0,
     errors: [],
   };
 
-  const fixtures = await getFixtures({ dayOffset: args.dayOffset });
+  const [fixtures, history] = await Promise.all([
+    getFixtures({ dayOffset: args.dayOffset }),
+    getHistory({
+      cachePath: args.cache,
+      retainDays: args.retain,
+      onError: (e) => stats.errors.push(e),
+    }),
+  ]);
+
   stats.totalFixtures = fixtures.length;
+  stats.daysCached = history.daysCached;
+  stats.daysFetched = history.daysFetched;
+  stats.daysFailed = history.daysFailed;
+
+  const tables = buildTables(history.matches);
+  stats.tablesLoaded = tables.size;
 
   const inScope = [];
   const reviewSeen = new Map();
@@ -116,48 +127,38 @@ export async function buildReport(args, deps = {}) {
     const verdict = classifyCompetition(competition);
 
     if (verdict.include) {
-      inScope.push({ ...fixture, league: verdict.league });
+      inScope.push({ ...fixture, league: verdict.league, leagueKey: `${country}/${slug}` });
     } else if (verdict.reason === 'needs-review') {
       reviewSeen.set(`${country}/${slug}`, competition);
     }
   }
   stats.inScope = inScope.length;
 
-  const loadStandings = standingsLoader(stats, getStandings);
   const scored = [];
   const unrankable = [];
 
-  const results = await Promise.all(
-    inScope.map(async (fixture) => {
-      const table = await loadStandings(fixture.tournament?.stageId);
-      if (!table) return { fixture, ok: false };
-      const homeRow = findRow(table, fixture.home);
-      const awayRow = findRow(table, fixture.away);
-      if (!homeRow || !awayRow) return { fixture, ok: false };
-      const ctx = leagueContext(table);
-      return { fixture, ok: true, score: scoreFixture(fixture, homeRow, awayRow, ctx) };
-    }),
-  );
+  for (const fixture of inScope) {
+    const table = tables.get(fixture.leagueKey);
+    const homeRow = table ? findRow(table, fixture.home) : null;
+    const awayRow = table ? findRow(table, fixture.away) : null;
 
-  for (const r of results) {
-    if (r.ok) scored.push({ ...r.fixture, score: r.score });
-    else unrankable.push(r.fixture);
+    if (!homeRow || !awayRow) {
+      unrankable.push({ ...fixture, why: table ? 'team not in table' : 'no results yet' });
+      continue;
+    }
+    if (homeRow.played < args.minPlayed || awayRow.played < args.minPlayed) {
+      unrankable.push({ ...fixture, why: 'too few games played' });
+      continue;
+    }
+    const ctx = leagueContext(table);
+    scored.push({ ...fixture, score: scoreFixture(fixture, homeRow, awayRow, ctx) });
   }
 
   const ranked = rankFixtures(scored, { min: args.min, threshold: args.threshold });
 
-  const date = new Date(Date.now() + args.dayOffset * 86400000)
-    .toISOString()
-    .slice(0, 10);
+  const date = new Date(Date.now() + args.dayOffset * 86400000).toISOString().slice(0, 10);
 
-  return {
-    date,
-    tz: args.tz,
-    ranked,
-    unrankable,
-    review: [...reviewSeen.values()],
-    stats,
-  };
+  return { date, tz: args.tz, ranked, unrankable, review: [...reviewSeen.values()], stats };
 }
 
 async function main() {
