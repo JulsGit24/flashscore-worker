@@ -51,6 +51,8 @@ Two things keep August honest:
   register as the best attack in its league.
 - **Low-sample damping.** If either side has played fewer than 5 games, both
   indices are scaled down and the game is tagged `few games played`.
+- **A confidence floor on picks.** Ranking and strong-favourite calls require a
+  minimum confidence; see *Every fixture gets numbers* below.
 
 Tags on each row explain why it made the list: `goals`, `mismatch`,
 `attack v leaky`, `top v bottom`, `wide gap`, `few games played`.
@@ -71,13 +73,38 @@ Per-fixture columns:
 | Column | Meaning |
 |---|---|
 | **Home / Away** | Marked `(H)` and `(A)` so the venue is never ambiguous |
+| **1 / X / 2** | Home win, draw, away win |
 | **xG** | Projected goals, home–away |
 | **Tot** | Projected total goals |
+| **O2.5** | Three goals or more. Under 2.5 is 100 − this |
+| **U1.5** | Fewer than two goals in the match |
 | **BTTS** | Both teams to score |
-| **Win%** | Most likely result and its probability: `H`, `A` or `D` |
+| **?** | Confidence — see below |
 | **Form H / Form A** | Last 5 results, most recent first — `W` win, `T` tie, `L` loss |
 | **↑ ↓ →** | Points per game across those 5 against the season average: rising, sliding, steady |
 | **L5 H / L5 A** | Goals scored–conceded across those same 5 games |
+
+### Every fixture gets numbers
+
+There is no "not enough data to say anything" row. Shrinkage means a side with
+no results on file resolves to exactly the league average, which is a real if
+uninformative projection — so a game between two unknown teams still comes out
+at roughly 44/26/31 with 2.7 goals, because that is what an average fixture
+looks like. What changes is how much of that comes from the teams themselves,
+and the **?** column says so:
+
+| Mark | Meaning |
+|---|---|
+| ● | 5+ games each — the model is reading form |
+| ◑ | 3-4 games each |
+| ◔ | 1-2 games each — mostly prior |
+| ○ | no results on file — pure league baseline |
+
+Two guards keep that from being misleading. Baseline-only fixtures are kept out
+of the shortlist, since they all carry identical numbers and ranking them would
+be ranking noise. And the strong-favourites section applies a confidence floor
+(`--min-confidence`, default `low`), so a 70% call can never come from the prior
+alone.
 
 Win, draw, BTTS and over-2.5 probabilities come from independent Poisson
 distributions over the two projected scorelines (`src/probabilities.js`). That
@@ -91,8 +118,9 @@ a bet.
 > only exposes the current season. Say the word if you meant promoted/relegated
 > sides and I'll source it differently.
 
-Fixtures with too little data still get a row, with their reason in **Notes**
-instead of numbers, so the schedule is complete even when the model is silent.
+When a league has no cached results at all, its fixtures fall back to the global
+baseline: 2.7 goals a game, 55% of them to the home side. As the cache fills,
+teams pull away from that prior and the confidence mark climbs.
 
 See [`reports/EXAMPLE-europe.md`](reports/EXAMPLE-europe.md) for the output
 format — the Americas and Asia reports are identical in shape.
@@ -102,7 +130,7 @@ format — the Americas and Asia reports are identical in shape.
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 74 offline tests, no network
+npm test                       # 77 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40
@@ -110,6 +138,7 @@ node src/index.js --day-offset 1 --format json
 node src/index.js --region americas
 node src/index.js --region asia --tz Asia/Tokyo
 node src/index.js --strong-pick 0.8    # only call 80%+ a strong favourite
+node src/index.js --min-confidence medium  # picks need 3+ games a side
 ```
 
 Output is written to `reports/<region>/YYYY-MM-DD.md` and `.json`.

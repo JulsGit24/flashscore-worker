@@ -1,5 +1,18 @@
 import { TREND_ARROW } from './form.js';
 
+/** Confidence shown as a filled-ness symbol, weakest to strongest. */
+const CONFIDENCE_MARK = {
+  baseline: '○',
+  low: '◔',
+  medium: '◑',
+  high: '●',
+};
+const CONFIDENCE_ORDER = ['baseline', 'low', 'medium', 'high'];
+
+export function meetsConfidence(confidence, minimum) {
+  return CONFIDENCE_ORDER.indexOf(confidence) >= CONFIDENCE_ORDER.indexOf(minimum);
+}
+
 const TAG_LABEL = {
   HIGH_GOALS: 'goals',
   MISMATCH: 'mismatch',
@@ -93,44 +106,41 @@ export function groupFixtures(fixtures) {
   );
 }
 
-/** Fixtures where one side is at or above the strong-favourite threshold. */
-export function strongPicks(ranked, threshold) {
+/**
+ * Fixtures where one side is at or above the strong-favourite threshold. A
+ * minimum confidence applies: a 70% call built purely on the league baseline
+ * would be an artefact of the prior, not a read on the game.
+ */
+export function strongPicks(ranked, threshold, minConfidence = 'low') {
   return ranked
-    .filter((f) => f.score?.pick && f.score.pick.where !== 'D' && f.score.pick.probability >= threshold)
+    .filter(
+      (f) =>
+        f.score?.pick &&
+        f.score.pick.where !== 'D' &&
+        f.score.pick.probability >= threshold &&
+        meetsConfidence(f.score.confidence, minConfidence),
+    )
     .sort((a, b) => b.score.pick.probability - a.score.pick.probability);
 }
 
 function fixtureRow(f, tz) {
   const s = f.score;
-  const home = `${f.home} *(H)*`;
-  const away = `${f.away} *(A)*`;
-
-  if (!s) {
-    return (
-      `| ${formatTime(f.kickoff, tz)} | ${home} | ${away} | — | — | — | — | ` +
-      `${formCell(f.form?.home, f.trend?.home)} | ${formCell(f.form?.away, f.trend?.away)} | ` +
-      `${goalsCell(f.form?.home)} | ${goalsCell(f.form?.away)} | _${f.why ?? 'not scored'}_ |`
-    );
-  }
-
   const p = s.probabilities;
-  const pick =
-    s.pick.where === 'D'
-      ? `Draw ${pct(s.pick.probability)}`
-      : `${s.pick.where} ${pct(s.pick.probability)}`;
 
   return (
-    `| ${formatTime(f.kickoff, tz)} | ${home} | ${away} | ` +
+    `| ${formatTime(f.kickoff, tz)} | ${f.home} *(H)* | ${f.away} *(A)* | ` +
+    `${pct(p.home)} | ${pct(p.draw)} | ${pct(p.away)} | ` +
     `${s.projected.home.toFixed(1)}–${s.projected.away.toFixed(1)} | ` +
-    `${s.projected.total.toFixed(1)} | ${pct(p.btts)} | ${pick} | ` +
+    `${s.projected.total.toFixed(1)} | ${pct(p.over25)} | ${pct(p.under15)} | ${pct(p.btts)} | ` +
+    `${CONFIDENCE_MARK[s.confidence] ?? '?'} | ` +
     `${formCell(f.form?.home, f.trend?.home)} | ${formCell(f.form?.away, f.trend?.away)} | ` +
     `${goalsCell(f.form?.home)} | ${goalsCell(f.form?.away)} | ${tagList(s.tags)} |`
   );
 }
 
 const TABLE_HEAD = [
-  '| Time | Home | Away | xG | Tot | BTTS | Win% | Form H | Form A | L5 H | L5 A | Notes |',
-  '|---|---|---|---|---:|---:|---|---|---|---|---|---|',
+  '| Time | Home | Away | 1 | X | 2 | xG | Tot | O2.5 | U1.5 | BTTS | ? | Form H | Form A | L5 H | L5 A | Notes |',
+  '|---|---|---|---:|---:|---:|---|---:|---:|---:|---:|:-:|---|---|---|---|---|',
 ];
 
 /**
@@ -163,10 +173,16 @@ export function renderMarkdown(data) {
   out.push('');
   out.push('| Column | Meaning |');
   out.push('|---|---|');
+  out.push('| **1 / X / 2** | Home win, draw, away win |');
   out.push('| **xG** | Projected goals, home–away |');
   out.push('| **Tot** | Projected total goals |');
+  out.push('| **O2.5** | Three goals or more. Under 2.5 is 100 − this |');
+  out.push('| **U1.5** | Fewer than two goals in the match |');
   out.push('| **BTTS** | Both teams to score |');
-  out.push('| **Win%** | Most likely result: `H` home, `A` away, `D` draw |');
+  out.push(
+    '| **?** | How much the numbers rest on these teams’ own results: ' +
+      '● 5+ games each · ◑ 3-4 · ◔ 1-2 · ○ none, pure league baseline |',
+  );
   out.push('| **Form** | Last 5 results, most recent first. W win, T tie, L loss |');
   out.push('| **↑ ↓ →** | Points per game over those 5 vs the season: rising, sliding, steady |');
   out.push('| **L5** | Goals scored–conceded across those 5 games |');
@@ -176,7 +192,8 @@ export function renderMarkdown(data) {
   out.push('');
 
   // --- strong favourites ---------------------------------------------------
-  const strong = strongPicks(ranked, threshold);
+  const minConfidence = data.minConfidenceForPicks ?? 'low';
+  const strong = strongPicks(ranked, threshold, minConfidence);
   out.push(`## Strong favourites (${pct(threshold)}+)`);
   out.push('');
   if (strong.length) {
@@ -192,7 +209,10 @@ export function renderMarkdown(data) {
       );
     }
   } else {
-    out.push(`_No fixture today has a side at ${pct(threshold)} or better._`);
+    out.push(
+      `_No fixture today has a side at ${pct(threshold)} or better with at least ` +
+        `${minConfidence} confidence._`,
+    );
   }
   out.push('');
 
@@ -284,6 +304,8 @@ export function renderJson(data) {
           projected: f.score.projected,
           probabilities: f.score.probabilities,
           pick: f.score.pick,
+          confidence: f.score.confidence,
+          basis: f.score.basis,
           tags: f.score.tags,
         }
       : { scored: false, why: f.why ?? null }),
@@ -297,7 +319,12 @@ export function renderJson(data) {
       generatedAt: new Date().toISOString(),
       stats: data.stats,
       strongPickThreshold: data.strongPickThreshold ?? 0.7,
-      strongPicks: strongPicks(data.ranked, data.strongPickThreshold ?? 0.7).map(fixture),
+      minConfidenceForPicks: data.minConfidenceForPicks ?? 'low',
+      strongPicks: strongPicks(
+        data.ranked,
+        data.strongPickThreshold ?? 0.7,
+        data.minConfidenceForPicks ?? 'low',
+      ).map(fixture),
       games: data.all.map(fixture),
       needsReview: data.review,
       outOfRegionCountries: data.stats.outOfRegion ?? [],
