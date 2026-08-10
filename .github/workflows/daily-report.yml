@@ -46,6 +46,14 @@ jobs:
 
       - run: npm test
 
+      # TEMPORARY: verifying the WNBA slate live. Its own workflow cannot be
+      # dispatched until it exists on the default branch.
+      - name: Verify the WNBA slate
+        continue-on-error: true
+        env:
+          REPORT_TZ: America/New_York
+        run: node src/wnba.js --format md | head -40
+
       - name: Generate shortlists
         env:
           # IANA timezone the kickoff times are printed in.
