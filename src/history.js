@@ -15,8 +15,15 @@ import { fetchDayFixtures } from './flashscore.js';
 import { classifyCompetition, parseTournamentUrl } from './leagues.js';
 
 export const DEFAULT_CACHE = 'data/history.json';
-/** How far back to look. Covers a full summer-calendar season (Mar-Nov). */
-export const DEFAULT_LOOKBACK_DAYS = 300;
+/**
+ * The day feed only serves offsets -7..+7 — anything outside answers HTTP 200
+ * with a 1-byte "0". Verified directly: -8 and +8 are empty, -7 and +7 both
+ * return a full day. So this is the hard ceiling on what a single run can pull,
+ * and the cache is what turns it into a season.
+ */
+export const FETCH_WINDOW_DAYS = 7;
+/** How much history to keep once fetched. Covers a full season either calendar. */
+export const DEFAULT_RETAIN_DAYS = 400;
 /** Parallel day-feed fetches. Kept modest to stay a polite client. */
 export const DEFAULT_CONCURRENCY = 6;
 
@@ -73,12 +80,18 @@ async function mapWithConcurrency(items, limit, worker) {
 }
 
 /**
- * Ensure the cache covers the last `days` days, fetching only what is missing.
- * Returns every cached match plus counters for the report footer.
+ * Top up the cache from the fetchable window, then prune anything older than
+ * `retainDays`. Returns every cached match plus counters for the report footer.
+ *
+ * Because the window is only a week wide, a fresh cache cannot reconstruct a
+ * season on its first run — it fills in as the job runs each morning. Days
+ * already cached are never refetched, so no history is lost when it ages out
+ * of the window.
  */
 export async function updateHistory({
   cachePath = DEFAULT_CACHE,
-  days = DEFAULT_LOOKBACK_DAYS,
+  retainDays = DEFAULT_RETAIN_DAYS,
+  window = FETCH_WINDOW_DAYS,
   concurrency = DEFAULT_CONCURRENCY,
   now = new Date(),
   fetchDay = (offset) => fetchDayFixtures({ dayOffset: offset }),
@@ -87,7 +100,7 @@ export async function updateHistory({
   const cache = await loadCache(cachePath);
 
   const wanted = [];
-  for (let offset = -1; offset >= -days; offset -= 1) {
+  for (let offset = -1; offset >= -window; offset -= 1) {
     const key = dayKeyForOffset(offset, now);
     if (!cache[key]) wanted.push({ offset, key });
   }
@@ -105,7 +118,7 @@ export async function updateHistory({
   });
 
   // Drop days that have aged out so the cache does not grow without bound.
-  const oldest = dayKeyForOffset(-days, now);
+  const oldest = dayKeyForOffset(-retainDays, now);
   for (const key of Object.keys(cache)) {
     if (key < oldest) delete cache[key];
   }

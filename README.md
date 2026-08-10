@@ -89,11 +89,21 @@ in a league's own fixture list is treated as the summer break, so an
 autumn-spring league in August starts from zero while a summer-calendar league
 keeps its season to date.
 
-Results are cached in `data/history.json` and committed, so the first run
-backfills ~300 days and every later run fetches one. Ranks are computed on
-points, then goal difference, then goals scored — they can differ from the
-official table where a league applies a points deduction or head-to-head
-tiebreaks.
+**The day feed only serves a 7-day window** (offsets -7..+7; -8 and +8 both
+answer with the same 1-byte `0`). So the tables cannot be reconstructed in one
+run — the worker caches each day it fetches in `data/history.json`, commits it,
+and the season accumulates as the job runs each morning. A team needs 3 results
+in the cache before its fixtures can be ranked; until then they are listed under
+*In scope but not ranked*.
+
+Ranks are computed on points, then goal difference, then goals scored — they can
+differ from the official table where a league applies a points deduction or
+head-to-head tiebreaks.
+
+> **Known limitation.** Starting from an empty cache, the shortlist is a
+> filtered fixture list rather than a ranked one for the first few weeks. To get
+> ranking immediately, point `src/table.js` at an external standings API instead
+> — nothing else in the pipeline needs to change.
 
 Endpoint details can be overridden without touching code:
 

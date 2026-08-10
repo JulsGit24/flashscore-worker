@@ -46,12 +46,6 @@ jobs:
 
       - run: npm test
 
-      # TEMPORARY: hunting for a per-tournament results feed. Remove once resolved.
-      - name: Probe feeds
-        continue-on-error: true
-        run: |
-          node scripts/probe-feeds.js 2>&1 | tail -60
-
       - name: Generate shortlist
         env:
           # IANA timezone the kickoff times are printed in.

@@ -14,7 +14,7 @@ const ARGS = {
   tz: 'UTC',
   format: 'both',
   cache: 'unused',
-  lookback: 300,
+  retain: 400,
   minPlayed: 3,
 };
 

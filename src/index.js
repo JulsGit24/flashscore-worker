@@ -3,7 +3,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fetchDayFixtures, DEFAULTS } from './flashscore.js';
 import { classifyCompetition, parseTournamentUrl } from './leagues.js';
-import { DEFAULT_CACHE, DEFAULT_LOOKBACK_DAYS, updateHistory } from './history.js';
+import { DEFAULT_CACHE, DEFAULT_RETAIN_DAYS, updateHistory } from './history.js';
 import { buildTables } from './table.js';
 import { leagueContext, rankFixtures, scoreFixture } from './score.js';
 import { renderJson, renderMarkdown } from './report.js';
@@ -17,7 +17,7 @@ function parseArgs(argv) {
     format: 'both',
     outDir: 'reports',
     cache: DEFAULT_CACHE,
-    lookback: DEFAULT_LOOKBACK_DAYS,
+    retain: DEFAULT_RETAIN_DAYS,
     minPlayed: 3,
     quiet: false,
   };
@@ -31,7 +31,7 @@ function parseArgs(argv) {
     else if (a === '--format') args.format = next();
     else if (a === '--out') args.outDir = next();
     else if (a === '--cache') args.cache = next();
-    else if (a === '--lookback') args.lookback = Number(next());
+    else if (a === '--retain') args.retain = Number(next());
     else if (a === '--min-played') args.minPlayed = Number(next());
     else if (a === '--quiet') args.quiet = true;
     else if (a === '--help' || a === '-h') args.help = true;
@@ -51,12 +51,13 @@ flashscore-worker — daily shortlist of high-goal / lopsided European fixtures
   --format md|json|both
   --out DIR        output directory (default reports/)
   --cache PATH     season history cache (default ${DEFAULT_CACHE})
-  --lookback N     days of history to keep (default ${DEFAULT_LOOKBACK_DAYS})
+  --retain N       days of results history to keep (default ${DEFAULT_RETAIN_DAYS})
   --min-played N   league table games needed before a fixture can be ranked (default 3)
   --quiet          write files only, no stdout
 
 League tables are computed from past day feeds rather than fetched, and cached
-in --cache; the first run backfills the season, later runs fetch one day.
+in --cache. The feed only serves a 7-day window, so a fresh cache cannot
+reconstruct a season on day one — it accumulates as the job runs each morning.
 
 Environment: FS_HOST, FS_PROJECT, FS_SIGN, FS_LANG, FS_REFERER override the
 feed endpoint if Flashscore rotates it. Current defaults:
@@ -104,7 +105,7 @@ export async function buildReport(args, deps = {}) {
     getFixtures({ dayOffset: args.dayOffset }),
     getHistory({
       cachePath: args.cache,
-      days: args.lookback,
+      retainDays: args.retain,
       onError: (e) => stats.errors.push(e),
     }),
   ]);
