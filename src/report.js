@@ -1,3 +1,5 @@
+import { TREND_ARROW } from './form.js';
+
 const TAG_LABEL = {
   HIGH_GOALS: 'goals',
   MISMATCH: 'mismatch',
@@ -37,75 +39,178 @@ function ordinal(n) {
   return n + (s[(v - 20) % 10] || s[v] || s[0]);
 }
 
+const pct = (p) => (p === undefined || p === null ? '—' : `${Math.round(p * 100)}%`);
+
+/** "WWLTW ↑" — blank when the team has no cached results. */
+function formCell(form, trend) {
+  if (!form || form.played === 0) return '—';
+  return `${form.streak} ${TREND_ARROW[trend] ?? '·'}`;
+}
+
+/** "8-3" — goals scored and conceded across the form window. */
+function goalsCell(form) {
+  if (!form || form.played === 0) return '—';
+  return `${form.goalsFor}-${form.goalsAgainst}`;
+}
+
+/**
+ * Group fixtures by country then league, ordering the groups by their earliest
+ * kickoff so the document as a whole still reads earliest to latest.
+ */
+export function groupFixtures(fixtures) {
+  const groups = new Map();
+  for (const f of fixtures) {
+    const key = `${f.league.country}/${f.league.slug}`;
+    if (!groups.has(key)) {
+      groups.set(key, { country: f.league.country, league: f.league, fixtures: [] });
+    }
+    groups.get(key).fixtures.push(f);
+  }
+  for (const g of groups.values()) {
+    g.fixtures.sort((a, b) => (a.kickoff?.getTime() ?? 0) - (b.kickoff?.getTime() ?? 0));
+    g.earliest = g.fixtures[0]?.kickoff?.getTime() ?? 0;
+  }
+  return [...groups.values()].sort(
+    (a, b) => a.earliest - b.earliest || a.country.localeCompare(b.country),
+  );
+}
+
+/** Fixtures where one side is at or above the strong-favourite threshold. */
+export function strongPicks(ranked, threshold) {
+  return ranked
+    .filter((f) => f.score?.pick && f.score.pick.where !== 'D' && f.score.pick.probability >= threshold)
+    .sort((a, b) => b.score.pick.probability - a.score.pick.probability);
+}
+
+function fixtureRow(f, tz) {
+  const s = f.score;
+  const home = `${f.home} *(H)*`;
+  const away = `${f.away} *(A)*`;
+
+  if (!s) {
+    return (
+      `| ${formatTime(f.kickoff, tz)} | ${home} | ${away} | — | — | — | — | ` +
+      `${formCell(f.form?.home, f.trend?.home)} | ${formCell(f.form?.away, f.trend?.away)} | ` +
+      `${goalsCell(f.form?.home)} | ${goalsCell(f.form?.away)} | _${f.why ?? 'not scored'}_ |`
+    );
+  }
+
+  const p = s.probabilities;
+  const pick =
+    s.pick.where === 'D'
+      ? `Draw ${pct(s.pick.probability)}`
+      : `${s.pick.where} ${pct(s.pick.probability)}`;
+
+  return (
+    `| ${formatTime(f.kickoff, tz)} | ${home} | ${away} | ` +
+    `${s.projected.home.toFixed(1)}–${s.projected.away.toFixed(1)} | ` +
+    `${s.projected.total.toFixed(1)} | ${pct(p.btts)} | ${pick} | ` +
+    `${formCell(f.form?.home, f.trend?.home)} | ${formCell(f.form?.away, f.trend?.away)} | ` +
+    `${goalsCell(f.form?.home)} | ${goalsCell(f.form?.away)} | ${tagList(s.tags)} |`
+  );
+}
+
+const TABLE_HEAD = [
+  '| Time | Home | Away | xG | Tot | BTTS | Win% | Form H | Form A | L5 H | L5 A | Notes |',
+  '|---|---|---|---|---:|---:|---|---|---|---|---|---|',
+];
+
 /**
  * @param {object} data
  * @param {string} data.date          ISO date the report covers
  * @param {string} data.tz            IANA timezone used for displayed times
- * @param {Array}  data.ranked        scored + ranked fixtures
- * @param {Array}  data.unrankable    in-scope fixtures with no usable league table
+ * @param {Array}  data.all           every in-scope fixture, scored or not
+ * @param {Array}  data.ranked        scored fixtures, best first
+ * @param {number} data.strongPickThreshold
  * @param {Array}  data.review        competitions that matched no allowlist entry
  * @param {object} data.stats         counters for the diagnostics footer
  */
 export function renderMarkdown(data) {
-  const { date, tz, ranked, unrankable, review, stats } = data;
+  const { date, tz, all, ranked, review, stats } = data;
+  const threshold = data.strongPickThreshold ?? 0.7;
   const out = [];
 
   out.push(`# Soccer shortlist — ${date}`);
   out.push('');
   out.push(
-    `European tier-1 and tier-2 leagues, men’s and women’s. Times in **${tz}**. ` +
-      `${ranked.length} games ranked out of ${stats.inScope} in scope.`,
+    `European tier-1 and tier-2 leagues, men’s and women’s. All times **${tz}**, ` +
+      `earliest first. ${all.length} fixtures, ${ranked.length} with enough data to score.`,
   );
   out.push('');
-  out.push(
-    '`Goals` and `Edge` are 0-100. `Goals` is how high-scoring the game projects; ' +
-      '`Edge` is how lopsided it is. `Proj` is the projected scoreline.',
-  );
-  out.push('');
-  out.push('| # | Time | League | Fixture | Table | Goals | Edge | Proj | Why |');
-  out.push('|---:|---|---|---|---|---:|---:|---|---|');
 
-  ranked.forEach((f, i) => {
-    const s = f.score;
-    const table = `${ordinal(s.detail.home.rank)} v ${ordinal(s.detail.away.rank)}`;
-    const proj = `${s.projected.home.toFixed(1)}–${s.projected.away.toFixed(1)}`;
-    out.push(
-      `| ${i + 1} | ${formatTime(f.kickoff, tz)} | ${prettyCountry(f.league.country)} ${f.league.name}` +
-        `${f.league.gender === 'W' ? ' (W)' : ''} | **${f.home}** v **${f.away}** | ${table} | ` +
-        `${s.goalsIndex} | ${s.mismatchIndex} | ${proj} | ${tagList(s.tags)} |`,
-    );
-  });
-
+  // --- legend --------------------------------------------------------------
+  out.push('<details><summary>Column guide</summary>');
   out.push('');
-  out.push('## Running order');
+  out.push('| Column | Meaning |');
+  out.push('|---|---|');
+  out.push('| **xG** | Projected goals, home–away |');
+  out.push('| **Tot** | Projected total goals |');
+  out.push('| **BTTS** | Both teams to score |');
+  out.push('| **Win%** | Most likely result: `H` home, `A` away, `D` draw |');
+  out.push('| **Form** | Last 5 results, most recent first. W win, T tie, L loss |');
+  out.push('| **↑ ↓ →** | Points per game over those 5 vs the season: rising, sliding, steady |');
+  out.push('| **L5** | Goals scored–conceded across those 5 games |');
   out.push('');
-  const byTime = [...ranked].sort(
-    (a, b) => (a.kickoff?.getTime() ?? 0) - (b.kickoff?.getTime() ?? 0),
-  );
-  for (const f of byTime) {
-    out.push(
-      `- **${formatTime(f.kickoff, tz)}** — ${f.home} v ${f.away} ` +
-        `(${f.league.name}) · goals ${f.score.goalsIndex} · edge ${f.score.mismatchIndex}` +
-        `${f.score.favourite ? ` · lean ${f.score.favourite}` : ''}`,
-    );
-  }
+  out.push('</details>');
+  out.push('');
 
-  if (unrankable.length) {
-    out.push('');
-    out.push('## In scope but not ranked');
-    out.push('');
-    out.push('Not enough completed results in the derived league table to score these yet.');
-    out.push('');
-    for (const f of unrankable) {
+  // --- strong favourites ---------------------------------------------------
+  const strong = strongPicks(ranked, threshold);
+  out.push(`## Strong favourites (${pct(threshold)}+)`);
+  out.push('');
+  if (strong.length) {
+    out.push('| Time | League | Fixture | Side | Win% | xG | Tot |');
+    out.push('|---|---|---|---|---:|---|---:|');
+    for (const f of strong) {
+      const side = f.score.pick.where === 'H' ? `${f.home} (H)` : `${f.away} (A)`;
       out.push(
-        `- ${formatTime(f.kickoff, tz)} — ${f.home} v ${f.away} ` +
-          `(${f.league?.name ?? f.tournament?.name})${f.why ? ` — ${f.why}` : ''}`,
+        `| ${formatTime(f.kickoff, tz)} | ${prettyCountry(f.league.country)} ${f.league.name} | ` +
+          `${f.home} v ${f.away} | **${side}** | **${pct(f.score.pick.probability)}** | ` +
+          `${f.score.projected.home.toFixed(1)}–${f.score.projected.away.toFixed(1)} | ` +
+          `${f.score.projected.total.toFixed(1)} |`,
       );
     }
+  } else {
+    out.push(`_No fixture today has a side at ${pct(threshold)} or better._`);
+  }
+  out.push('');
+
+  // --- goal-heavy ----------------------------------------------------------
+  const goalGames = ranked
+    .filter((f) => f.score.tags.includes('HIGH_GOALS'))
+    .sort((a, b) => b.score.projected.total - a.score.projected.total);
+  out.push('## Most goals expected');
+  out.push('');
+  if (goalGames.length) {
+    out.push('| Time | League | Fixture | Tot | BTTS | Why |');
+    out.push('|---|---|---|---:|---:|---|');
+    for (const f of goalGames) {
+      out.push(
+        `| ${formatTime(f.kickoff, tz)} | ${prettyCountry(f.league.country)} ${f.league.name} | ` +
+          `${f.home} v ${f.away} | **${f.score.projected.total.toFixed(1)}** | ` +
+          `${pct(f.score.probabilities.btts)} | ${tagList(f.score.tags)} |`,
+      );
+    }
+  } else {
+    out.push('_No fixture today projects above the high-goals threshold._');
+  }
+  out.push('');
+
+  // --- full schedule by country and league ---------------------------------
+  out.push('## Full schedule');
+  out.push('');
+  for (const group of groupFixtures(all)) {
+    out.push(
+      `### ${prettyCountry(group.country)} — ${group.league.name}` +
+        `${group.league.gender === 'W' ? ' (Women)' : ''} · tier ${group.league.tier}`,
+    );
+    out.push('');
+    out.push(...TABLE_HEAD);
+    for (const f of group.fixtures) out.push(fixtureRow(f, tz));
+    out.push('');
   }
 
   if (review.length) {
-    out.push('');
     out.push('## Competitions needing review');
     out.push('');
     out.push(
@@ -114,9 +219,9 @@ export function renderMarkdown(data) {
     );
     out.push('');
     for (const c of review) out.push(`- \`${c.country}/${c.slug}\` — ${c.name}`);
+    out.push('');
   }
 
-  out.push('');
   out.push('---');
   out.push('');
   out.push(
@@ -130,38 +235,45 @@ export function renderMarkdown(data) {
 }
 
 export function renderJson(data) {
+  const fixture = (f) => ({
+    kickoff: f.kickoff?.toISOString() ?? null,
+    kickoffLocal: formatTime(f.kickoff, data.tz),
+    country: f.league.country,
+    league: f.league.name,
+    tier: f.league.tier,
+    gender: f.league.gender,
+    home: f.home,
+    away: f.away,
+    form: {
+      home: f.form?.home ?? null,
+      away: f.form?.away ?? null,
+      homeTrend: f.trend?.home ?? null,
+      awayTrend: f.trend?.away ?? null,
+    },
+    ...(f.score
+      ? {
+          homeRank: f.score.detail.home.rank,
+          awayRank: f.score.detail.away.rank,
+          goalsIndex: f.score.goalsIndex,
+          mismatchIndex: f.score.mismatchIndex,
+          rankScore: f.score.rankScore,
+          projected: f.score.projected,
+          probabilities: f.score.probabilities,
+          pick: f.score.pick,
+          tags: f.score.tags,
+        }
+      : { scored: false, why: f.why ?? null }),
+  });
+
   return JSON.stringify(
     {
       date: data.date,
       timezone: data.tz,
       generatedAt: new Date().toISOString(),
       stats: data.stats,
-      games: data.ranked.map((f, i) => ({
-        rank: i + 1,
-        kickoff: f.kickoff?.toISOString() ?? null,
-        kickoffLocal: formatTime(f.kickoff, data.tz),
-        country: f.league.country,
-        league: f.league.name,
-        tier: f.league.tier,
-        gender: f.league.gender,
-        home: f.home,
-        away: f.away,
-        homeRank: f.score.detail.home.rank,
-        awayRank: f.score.detail.away.rank,
-        goalsIndex: f.score.goalsIndex,
-        mismatchIndex: f.score.mismatchIndex,
-        rankScore: f.score.rankScore,
-        projected: f.score.projected,
-        favourite: f.score.favourite,
-        tags: f.score.tags,
-      })),
-      unrankable: data.unrankable.map((f) => ({
-        kickoff: f.kickoff?.toISOString() ?? null,
-        league: f.league?.name ?? f.tournament?.name ?? null,
-        home: f.home,
-        away: f.away,
-        why: f.why ?? null,
-      })),
+      strongPickThreshold: data.strongPickThreshold ?? 0.7,
+      strongPicks: strongPicks(data.ranked, data.strongPickThreshold ?? 0.7).map(fixture),
+      games: data.all.map(fixture),
       needsReview: data.review,
     },
     null,

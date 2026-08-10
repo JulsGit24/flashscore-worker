@@ -4,8 +4,10 @@ import path from 'node:path';
 import { fetchDayFixtures, DEFAULTS } from './flashscore.js';
 import { classifyCompetition, parseTournamentUrl } from './leagues.js';
 import { DEFAULT_CACHE, DEFAULT_RETAIN_DAYS, updateHistory } from './history.js';
-import { buildTables } from './table.js';
+import { buildTables, groupByLeague } from './table.js';
 import { leagueContext, rankFixtures, scoreFixture } from './score.js';
+import { formTrend, recentForm } from './form.js';
+import { favourite, outcomeProbabilities } from './probabilities.js';
 import { renderJson, renderMarkdown } from './report.js';
 
 function parseArgs(argv) {
@@ -19,6 +21,7 @@ function parseArgs(argv) {
     cache: DEFAULT_CACHE,
     retain: DEFAULT_RETAIN_DAYS,
     minPlayed: 3,
+    strongPick: 0.7,
     quiet: false,
   };
   for (let i = 0; i < argv.length; i += 1) {
@@ -33,6 +36,7 @@ function parseArgs(argv) {
     else if (a === '--cache') args.cache = next();
     else if (a === '--retain') args.retain = Number(next());
     else if (a === '--min-played') args.minPlayed = Number(next());
+    else if (a === '--strong-pick') args.strongPick = Number(next());
     else if (a === '--quiet') args.quiet = true;
     else if (a === '--help' || a === '-h') args.help = true;
   }
@@ -53,6 +57,7 @@ flashscore-worker — daily shortlist of high-goal / lopsided European fixtures
   --cache PATH     season history cache (default ${DEFAULT_CACHE})
   --retain N       days of results history to keep (default ${DEFAULT_RETAIN_DAYS})
   --min-played N   league table games needed before a fixture can be ranked (default 3)
+  --strong-pick P  win probability that counts as a strong favourite (default 0.7)
   --quiet          write files only, no stdout
 
 League tables are computed from past day feeds rather than fetched, and cached
@@ -134,13 +139,28 @@ export async function buildReport(args, deps = {}) {
   }
   stats.inScope = inScope.length;
 
+  // Recent-form lookups read the same distilled history the tables come from.
+  const historyByLeague = groupByLeague(history.matches);
+
   const scored = [];
   const unrankable = [];
 
   for (const fixture of inScope) {
     const table = tables.get(fixture.leagueKey);
+    const leagueMatches = historyByLeague.get(fixture.leagueKey) ?? [];
     const homeRow = table ? findRow(table, fixture.home) : null;
     const awayRow = table ? findRow(table, fixture.away) : null;
+
+    // Form is reported even when the fixture cannot be scored — a couple of
+    // recent results is still worth seeing next to a game with no table.
+    fixture.form = {
+      home: recentForm(leagueMatches, homeRow?.team ?? fixture.home),
+      away: recentForm(leagueMatches, awayRow?.team ?? fixture.away),
+    };
+    fixture.trend = {
+      home: formTrend(fixture.form.home, homeRow?.played ? homeRow.points / homeRow.played : null),
+      away: formTrend(fixture.form.away, awayRow?.played ? awayRow.points / awayRow.played : null),
+    };
 
     if (!homeRow || !awayRow) {
       unrankable.push({ ...fixture, why: table ? 'team not in table' : 'no results yet' });
@@ -151,14 +171,32 @@ export async function buildReport(args, deps = {}) {
       continue;
     }
     const ctx = leagueContext(table);
-    scored.push({ ...fixture, score: scoreFixture(fixture, homeRow, awayRow, ctx) });
+    const score = scoreFixture(fixture, homeRow, awayRow, ctx);
+    score.probabilities = outcomeProbabilities(score.projected.home, score.projected.away);
+    score.pick = favourite(score.probabilities, fixture.home, fixture.away);
+    scored.push({ ...fixture, score });
   }
 
   const ranked = rankFixtures(scored, { min: args.min, threshold: args.threshold });
 
+  // Every in-scope game appears in the per-league tables, scored or not, so the
+  // report is a usable schedule for the day rather than only a shortlist.
+  const all = [...scored, ...unrankable].sort(
+    (a, b) => (a.kickoff?.getTime() ?? 0) - (b.kickoff?.getTime() ?? 0),
+  );
+
   const date = new Date(Date.now() + args.dayOffset * 86400000).toISOString().slice(0, 10);
 
-  return { date, tz: args.tz, ranked, unrankable, review: [...reviewSeen.values()], stats };
+  return {
+    date,
+    tz: args.tz,
+    all,
+    ranked,
+    unrankable,
+    strongPickThreshold: args.strongPick,
+    review: [...reviewSeen.values()],
+    stats,
+  };
 }
 
 async function main() {
