@@ -1,32 +1,308 @@
 {
   "date": "2026-08-10",
   "timezone": "America/New_York",
-  "generatedAt": "2026-08-10T16:02:12.237Z",
+  "generatedAt": "2026-08-10T16:08:47.734Z",
   "stats": {
     "totalFixtures": 152,
-    "inScope": 32,
-    "tablesLoaded": 0,
-    "tableErrors": 19,
+    "inScope": 47,
+    "tablesLoaded": 62,
+    "daysCached": 7,
+    "daysFetched": 7,
+    "daysFailed": 293,
     "errors": [
-      "standings b3gDmFWi: feed to_b3gDmFWi_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings xrh8d5L7: feed to_xrh8d5L7_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings 4pnBakVs: feed to_4pnBakVs_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings lAP5a3zg: feed to_lAP5a3zg_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings rHbMeifc: feed to_rHbMeifc_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings hhJ7LFzn: feed to_hhJ7LFzn_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings lKCGJg5b: feed to_lKCGJg5b_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings raB81Qkm: feed to_raB81Qkm_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings fHgT9gEt: feed to_fHgT9gEt_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings UePIiDNj: feed to_UePIiDNj_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings 820i0mMr: feed to_820i0mMr_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings pOcTEGTq: feed to_pOcTEGTq_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings Mmys27Ja: feed to_Mmys27Ja_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings zVZzl1mf: feed to_zVZzl1mf_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings ULIeKBDj: feed to_ULIeKBDj_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings llS6O0mJ: feed to_llS6O0mJ_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings ltrtRhko: feed to_ltrtRhko_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings d8WbLTwp: feed to_d8WbLTwp_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
-      "standings Q1caF54l: feed to_Q1caF54l_overall returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN."
+      "day 2026-08-02: feed f_1_-8_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-08-01: feed f_1_-9_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-31: feed f_1_-10_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-30: feed f_1_-11_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-29: feed f_1_-12_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-28: feed f_1_-13_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-26: feed f_1_-15_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-27: feed f_1_-14_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-25: feed f_1_-16_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-24: feed f_1_-17_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-23: feed f_1_-18_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-21: feed f_1_-20_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-22: feed f_1_-19_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-20: feed f_1_-21_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-19: feed f_1_-22_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-16: feed f_1_-25_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-17: feed f_1_-24_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-18: feed f_1_-23_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-15: feed f_1_-26_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-13: feed f_1_-28_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-12: feed f_1_-29_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-14: feed f_1_-27_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-11: feed f_1_-30_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-10: feed f_1_-31_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-07: feed f_1_-34_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-08: feed f_1_-33_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-06: feed f_1_-35_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-09: feed f_1_-32_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-05: feed f_1_-36_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-04: feed f_1_-37_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-03: feed f_1_-38_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-02: feed f_1_-39_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-07-01: feed f_1_-40_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-30: feed f_1_-41_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-27: feed f_1_-44_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-26: feed f_1_-45_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-29: feed f_1_-42_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-28: feed f_1_-43_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-25: feed f_1_-46_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-23: feed f_1_-48_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-22: feed f_1_-49_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-24: feed f_1_-47_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-21: feed f_1_-50_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-20: feed f_1_-51_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-19: feed f_1_-52_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-17: feed f_1_-54_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-18: feed f_1_-53_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-15: feed f_1_-56_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-13: feed f_1_-58_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-14: feed f_1_-57_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-11: feed f_1_-60_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-12: feed f_1_-59_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-10: feed f_1_-61_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-09: feed f_1_-62_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-08: feed f_1_-63_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-06: feed f_1_-65_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-07: feed f_1_-64_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-05: feed f_1_-66_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-03: feed f_1_-68_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-04: feed f_1_-67_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-02: feed f_1_-69_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-01: feed f_1_-70_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-31: feed f_1_-71_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-30: feed f_1_-72_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-29: feed f_1_-73_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-27: feed f_1_-75_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-28: feed f_1_-74_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-26: feed f_1_-76_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-25: feed f_1_-77_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-24: feed f_1_-78_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-23: feed f_1_-79_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-22: feed f_1_-80_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-21: feed f_1_-81_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-20: feed f_1_-82_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-19: feed f_1_-83_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-06-16: feed f_1_-55_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-18: feed f_1_-84_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-17: feed f_1_-85_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-16: feed f_1_-86_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-14: feed f_1_-88_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-15: feed f_1_-87_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-13: feed f_1_-89_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-12: feed f_1_-90_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-11: feed f_1_-91_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-10: feed f_1_-92_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-09: feed f_1_-93_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-08: feed f_1_-94_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-07: feed f_1_-95_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-06: feed f_1_-96_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-05: feed f_1_-97_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-04: feed f_1_-98_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-02: feed f_1_-100_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-03: feed f_1_-99_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-05-01: feed f_1_-101_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-30: feed f_1_-102_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-29: feed f_1_-103_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-28: feed f_1_-104_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-27: feed f_1_-105_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-26: feed f_1_-106_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-25: feed f_1_-107_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-24: feed f_1_-108_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-23: feed f_1_-109_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-22: feed f_1_-110_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-21: feed f_1_-111_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-20: feed f_1_-112_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-19: feed f_1_-113_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-17: feed f_1_-115_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-18: feed f_1_-114_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-16: feed f_1_-116_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-15: feed f_1_-117_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-14: feed f_1_-118_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-13: feed f_1_-119_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-11: feed f_1_-121_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-12: feed f_1_-120_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-10: feed f_1_-122_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-09: feed f_1_-123_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-08: feed f_1_-124_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-06: feed f_1_-126_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-05: feed f_1_-127_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-07: feed f_1_-125_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-04: feed f_1_-128_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-03: feed f_1_-129_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-02: feed f_1_-130_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-04-01: feed f_1_-131_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-31: feed f_1_-132_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-30: feed f_1_-133_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-29: feed f_1_-134_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-28: feed f_1_-135_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-27: feed f_1_-136_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-26: feed f_1_-137_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-25: feed f_1_-138_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-24: feed f_1_-139_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-23: feed f_1_-140_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-21: feed f_1_-142_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-22: feed f_1_-141_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-20: feed f_1_-143_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-19: feed f_1_-144_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-18: feed f_1_-145_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-17: feed f_1_-146_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-16: feed f_1_-147_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-15: feed f_1_-148_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-14: feed f_1_-149_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-12: feed f_1_-151_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-13: feed f_1_-150_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-11: feed f_1_-152_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-10: feed f_1_-153_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-09: feed f_1_-154_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-08: feed f_1_-155_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-07: feed f_1_-156_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-06: feed f_1_-157_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-05: feed f_1_-158_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-03: feed f_1_-160_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-04: feed f_1_-159_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-02: feed f_1_-161_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-03-01: feed f_1_-162_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-28: feed f_1_-163_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-27: feed f_1_-164_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-26: feed f_1_-165_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-25: feed f_1_-166_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-24: feed f_1_-167_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-23: feed f_1_-168_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-22: feed f_1_-169_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-21: feed f_1_-170_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-19: feed f_1_-172_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-18: feed f_1_-173_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-20: feed f_1_-171_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-17: feed f_1_-174_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-16: feed f_1_-175_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-15: feed f_1_-176_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-14: feed f_1_-177_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-12: feed f_1_-179_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-13: feed f_1_-178_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-11: feed f_1_-180_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-10: feed f_1_-181_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-09: feed f_1_-182_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-08: feed f_1_-183_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-06: feed f_1_-185_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-05: feed f_1_-186_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-07: feed f_1_-184_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-04: feed f_1_-187_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-03: feed f_1_-188_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-02: feed f_1_-189_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-31: feed f_1_-191_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-02-01: feed f_1_-190_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-30: feed f_1_-192_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-28: feed f_1_-194_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-29: feed f_1_-193_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-26: feed f_1_-196_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-27: feed f_1_-195_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-25: feed f_1_-197_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-24: feed f_1_-198_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-23: feed f_1_-199_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-22: feed f_1_-200_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-21: feed f_1_-201_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-20: feed f_1_-202_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-19: feed f_1_-203_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-18: feed f_1_-204_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-16: feed f_1_-206_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-17: feed f_1_-205_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-15: feed f_1_-207_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-13: feed f_1_-209_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-14: feed f_1_-208_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-12: feed f_1_-210_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-10: feed f_1_-212_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-11: feed f_1_-211_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-07: feed f_1_-215_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-09: feed f_1_-213_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-06: feed f_1_-216_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-08: feed f_1_-214_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-05: feed f_1_-217_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-04: feed f_1_-218_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-03: feed f_1_-219_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-02: feed f_1_-220_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-29: feed f_1_-224_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-30: feed f_1_-223_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2026-01-01: feed f_1_-221_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-31: feed f_1_-222_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-28: feed f_1_-225_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-27: feed f_1_-226_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-26: feed f_1_-227_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-23: feed f_1_-230_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-25: feed f_1_-228_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-24: feed f_1_-229_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-22: feed f_1_-231_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-21: feed f_1_-232_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-20: feed f_1_-233_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-19: feed f_1_-234_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-18: feed f_1_-235_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-17: feed f_1_-236_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-16: feed f_1_-237_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-15: feed f_1_-238_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-14: feed f_1_-239_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-13: feed f_1_-240_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-11: feed f_1_-242_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-12: feed f_1_-241_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-10: feed f_1_-243_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-07: feed f_1_-246_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-09: feed f_1_-244_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-08: feed f_1_-245_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-06: feed f_1_-247_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-05: feed f_1_-248_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-04: feed f_1_-249_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-02: feed f_1_-251_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-03: feed f_1_-250_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-12-01: feed f_1_-252_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-29: feed f_1_-254_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-30: feed f_1_-253_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-27: feed f_1_-256_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-26: feed f_1_-257_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-28: feed f_1_-255_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-25: feed f_1_-258_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-23: feed f_1_-260_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-24: feed f_1_-259_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-22: feed f_1_-261_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-21: feed f_1_-262_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-20: feed f_1_-263_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-19: feed f_1_-264_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-18: feed f_1_-265_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-17: feed f_1_-266_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-14: feed f_1_-269_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-15: feed f_1_-268_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-16: feed f_1_-267_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-13: feed f_1_-270_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-12: feed f_1_-271_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-11: feed f_1_-272_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-09: feed f_1_-274_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-10: feed f_1_-273_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-08: feed f_1_-275_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-06: feed f_1_-277_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-07: feed f_1_-276_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-05: feed f_1_-278_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-04: feed f_1_-279_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-03: feed f_1_-280_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-02: feed f_1_-281_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-11-01: feed f_1_-282_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-31: feed f_1_-283_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-30: feed f_1_-284_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-29: feed f_1_-285_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-28: feed f_1_-286_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-27: feed f_1_-287_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-26: feed f_1_-288_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-24: feed f_1_-290_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-25: feed f_1_-289_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-22: feed f_1_-292_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-23: feed f_1_-291_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-21: feed f_1_-293_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-20: feed f_1_-294_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-19: feed f_1_-295_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-18: feed f_1_-296_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-16: feed f_1_-298_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-17: feed f_1_-297_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-15: feed f_1_-299_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN.",
+      "day 2025-10-14: feed f_1_-300_0_en-us_1 returned 1 bytes that do not look like a feed (first 120: 0). Re-check FS_PROJECT / FS_SIGN."
     ]
   },
   "games": [],
@@ -35,290 +311,342 @@
       "kickoff": "2026-08-10T16:00:00.000Z",
       "league": "Premier League",
       "home": "Alashkert",
-      "away": "BKMA"
+      "away": "BKMA",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T13:00:00.000Z",
       "league": "First League",
       "home": "Andranik",
-      "away": "Shirak Gyumri 2"
+      "away": "Shirak Gyumri 2",
+      "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T13:00:00.000Z",
       "league": "First League",
       "home": "Mika",
-      "away": "Pyunik Yerevan 2"
+      "away": "Pyunik Yerevan 2",
+      "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T15:00:00.000Z",
       "league": "First League",
       "home": "Urartu 2",
-      "away": "Noah 2"
+      "away": "Noah 2",
+      "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T14:00:00.000Z",
       "league": "Pershaya Liga",
       "home": "FC Gomel 2",
-      "away": "Soligorsk"
+      "away": "Soligorsk",
+      "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T14:30:00.000Z",
       "league": "Pershaya Liga",
       "home": "Minsk 2",
-      "away": "Ostrovets"
+      "away": "Ostrovets",
+      "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T15:00:00.000Z",
       "league": "Pershaya Liga",
       "home": "FC Slonim",
-      "away": "BumProm Gomel"
+      "away": "BumProm Gomel",
+      "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T15:00:00.000Z",
       "league": "Pershaya Liga",
       "home": "Orsha",
-      "away": "Molodechno"
+      "away": "Molodechno",
+      "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T15:00:00.000Z",
       "league": "Pershaya Liga",
       "home": "Smorgon",
-      "away": "BATE 2"
+      "away": "BATE 2",
+      "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T15:00:00.000Z",
       "league": "Pershaya Liga",
       "home": "Volna Pinsk",
-      "away": "Uni X Labs"
+      "away": "Uni X Labs",
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T13:00:00.000Z",
+      "league": "Vysshaya Liga Women",
+      "home": "Smorgon W",
+      "away": "Belshina W",
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T16:00:00.000Z",
+      "league": "efbet League",
+      "home": "Botev Vratsa",
+      "away": "Slavia Sofia",
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T18:15:00.000Z",
+      "league": "efbet League",
+      "home": "Botev Plovdiv",
+      "away": "Spartak Varna",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T15:00:00.000Z",
       "league": "Vtora liga",
       "home": "Nesebar",
-      "away": "Dobrudzha"
+      "away": "Dobrudzha",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T17:00:00.000Z",
       "league": "Vtora liga",
       "home": "Beroe",
-      "away": "Ludogorets II"
+      "away": "Ludogorets II",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T17:00:00.000Z",
       "league": "Superliga",
       "home": "Silkeborg",
-      "away": "Odense"
+      "away": "Odense",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T16:00:00.000Z",
       "league": "Esiliiga",
       "home": "Flora U21",
-      "away": "Nomme Kalju U21"
+      "away": "Nomme Kalju U21",
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T17:30:00.000Z",
+      "league": "Betri deildin",
+      "home": "Klaksvik",
+      "away": "HB Torshavn",
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T18:00:00.000Z",
+      "league": "Betri deildin",
+      "home": "NSI Runavik",
+      "away": "Skala Itrottarfelag",
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T19:15:00.000Z",
+      "league": "Besta deild karla",
+      "home": "Fram",
+      "away": "KR Reykjavik",
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T10:00:00.000Z",
+      "league": "Kazakhstan League Women",
+      "home": "Tobol W",
+      "away": "Kyzylzhar W",
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T11:00:00.000Z",
+      "league": "Kazakhstan League Women",
+      "home": "Kairat W",
+      "away": "Kaisar Kyzylorda W",
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T11:00:00.000Z",
+      "league": "Kazakhstan League Women",
+      "home": "Zhetysu W",
+      "away": "Tomiris-Turan W",
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T12:00:00.000Z",
+      "league": "Kazakhstan League Women",
+      "home": "Ordabasy W",
+      "away": "Shymkent W",
+      "why": "too few games played"
+    },
+    {
+      "kickoff": "2026-08-10T12:00:00.000Z",
+      "league": "Kazakhstan League Women",
+      "home": "Ulytau W",
+      "away": "Kaspij Aktau W",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T16:30:00.000Z",
       "league": "Virsliga",
       "home": "RFS",
-      "away": "Grobina"
+      "away": "Grobina",
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T15:45:00.000Z",
+      "league": "TOPLYGA",
+      "home": "Transinvest",
+      "away": "FK Panevezys",
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T16:00:00.000Z",
+      "league": "I Lyga",
+      "home": "Zalgiris 2",
+      "away": "Kauno Zalgiris 2",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T18:00:00.000Z",
       "league": "Eerste Divisie",
       "home": "Jong AZ",
-      "away": "Eindhoven FC"
+      "away": "Eindhoven FC",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T18:00:00.000Z",
       "league": "Eerste Divisie",
       "home": "Jong PSV",
-      "away": "FC Volendam"
+      "away": "FC Volendam",
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T18:45:00.000Z",
+      "league": "NIFL Premiership Women",
+      "home": "Linfield W",
+      "away": "Cliftonville W",
+      "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T17:00:00.000Z",
       "league": "OBOS-ligaen",
       "home": "Moss",
-      "away": "Odd"
+      "away": "Odd",
+      "why": "team not in table"
+    },
+    {
+      "kickoff": "2026-08-10T17:00:00.000Z",
+      "league": "I liga",
+      "home": "Skierniewice",
+      "away": "Arka Gdynia",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T19:15:00.000Z",
       "league": "Liga Portugal",
       "home": "Santa Clara",
-      "away": "Nacional"
+      "away": "Nacional",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T17:00:00.000Z",
       "league": "Liga Portugal 2",
       "home": "Benfica B",
-      "away": "Leixoes"
+      "away": "Leixoes",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T17:00:00.000Z",
       "league": "Liga Portugal 2",
       "home": "Lusitania FC",
-      "away": "FC Porto B"
+      "away": "FC Porto B",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T15:30:00.000Z",
       "league": "SuperLiga",
       "home": "FC Botosani",
-      "away": "Corvinul"
+      "away": "Corvinul",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T18:30:00.000Z",
       "league": "SuperLiga",
       "home": "Sepsi Sf. Gheorghe",
-      "away": "FCSB"
+      "away": "FCSB",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T16:30:00.000Z",
       "league": "Premier League",
       "home": "Fakel Voronezh",
-      "away": "Akhmat Grozny"
+      "away": "Akhmat Grozny",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T15:00:00.000Z",
       "league": "2. liga",
       "home": "Povazska Bystrica",
-      "away": "Z. Moravce-Vrable"
+      "away": "Z. Moravce-Vrable",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T16:00:00.000Z",
       "league": "Prva liga",
       "home": "Mura",
-      "away": "Radomlje"
+      "away": "Radomlje",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T17:00:00.000Z",
       "league": "Allsvenskan",
       "home": "Sirius",
-      "away": "Brommapojkarna"
+      "away": "Brommapojkarna",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T17:00:00.000Z",
       "league": "Allsvenskan",
       "home": "Vasteras SK",
-      "away": "Djurgarden"
+      "away": "Djurgarden",
+      "why": "too few games played"
     },
     {
       "kickoff": "2026-08-10T17:00:00.000Z",
       "league": "Superettan",
       "home": "Norrby",
-      "away": "Orebro"
+      "away": "Orebro",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T18:30:00.000Z",
       "league": "1. Lig",
       "home": "Pendikspor",
-      "away": "Batman Petrolspor"
+      "away": "Batman Petrolspor",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T12:30:00.000Z",
       "league": "Premier League",
       "home": "Polissya Zhytomyr",
-      "away": "FC Kharkiv"
+      "away": "FC Kharkiv",
+      "why": "team not in table"
     },
     {
       "kickoff": "2026-08-10T15:00:00.000Z",
       "league": "Premier League",
       "home": "Karpaty Lviv",
-      "away": "LNZ Cherkasy"
+      "away": "LNZ Cherkasy",
+      "why": "team not in table"
     }
   ],
   "needsReview": [
-    {
-      "country": "belarus",
-      "slug": "vysshaya-liga-women",
-      "name": "BELARUS: Vysshaya Liga Women"
-    },
-    {
-      "country": "bulgaria",
-      "slug": "efbet-league",
-      "name": "BULGARIA: efbet League"
-    },
-    {
-      "country": "england",
-      "slug": "isthmian-league-premier-division",
-      "name": "ENGLAND: Isthmian League Premier Division"
-    },
     {
       "country": "england",
       "slug": "efl-cup",
       "name": "ENGLAND: EFL Cup"
     },
     {
-      "country": "faroe-islands",
-      "slug": "premier-league",
-      "name": "FAROE ISLANDS: Premier League"
-    },
-    {
       "country": "finland",
       "slug": "kansallinen-ykkonen-women",
       "name": "FINLAND: Kansallinen Ykkonen Women - Relegation Group"
-    },
-    {
-      "country": "iceland",
-      "slug": "besta-deild-karla",
-      "name": "ICELAND: Besta deild karla"
-    },
-    {
-      "country": "iceland",
-      "slug": "division-2",
-      "name": "ICELAND: Division 2"
-    },
-    {
-      "country": "kazakhstan",
-      "slug": "league-women",
-      "name": "KAZAKHSTAN: League Women"
-    },
-    {
-      "country": "lithuania",
-      "slug": "toplyga",
-      "name": "LITHUANIA: TOPLYGA"
-    },
-    {
-      "country": "lithuania",
-      "slug": "i-lyga",
-      "name": "LITHUANIA: I Lyga"
-    },
-    {
-      "country": "northern-ireland",
-      "slug": "premiership-women",
-      "name": "NORTHERN IRELAND: Premiership Women"
-    },
-    {
-      "country": "norway",
-      "slug": "division-3-group-1",
-      "name": "NORWAY: Division 3 - Group 1"
-    },
-    {
-      "country": "norway",
-      "slug": "division-3-group-2",
-      "name": "NORWAY: Division 3 - Group 2"
-    },
-    {
-      "country": "norway",
-      "slug": "division-3-group-3",
-      "name": "NORWAY: Division 3 - Group 3"
-    },
-    {
-      "country": "norway",
-      "slug": "division-3-group-4",
-      "name": "NORWAY: Division 3 - Group 4"
-    },
-    {
-      "country": "norway",
-      "slug": "division-3-group-5",
-      "name": "NORWAY: Division 3 - Group 5"
-    },
-    {
-      "country": "norway",
-      "slug": "division-3-group-6",
-      "name": "NORWAY: Division 3 - Group 6"
-    },
-    {
-      "country": "poland",
-      "slug": "division-1",
-      "name": "POLAND: Division 1"
     }
   ]
 }
