@@ -319,3 +319,122 @@ test('an empty slate renders without pretending otherwise', async () => {
   assert.match(md, /_No WNBA games scheduled today\._/);
   assert.match(md, /## Not covered/);
 });
+
+// --- inverse lines -----------------------------------------------------------
+
+test('normalQuantile inverts normalCdf', async () => {
+  const { normalQuantile } = await import('../src/basketball/model.js');
+  for (const p of [0.05, 0.3, 0.5, 0.7, 0.95, 0.99]) {
+    assert.ok(close(normalCdf(normalQuantile(p)), p, 1e-9), `round trip at ${p}`);
+  }
+  assert.equal(normalQuantile(0), -Infinity);
+  assert.equal(normalQuantile(1), Infinity);
+});
+
+test('lineAtProbability solves for the line, not the odds', async () => {
+  const { lineAtProbability } = await import('../src/basketball/model.js');
+  // A total projected at 165 with sd 16.5: the line that is 70% likely to be
+  // beaten sits below the projection, by 0.5244 standard deviations.
+  const over = lineAtProbability({ mean: 165, sd: 16.5, probability: 0.7, direction: 'over' });
+  assert.ok(close(over, 165 - 0.5244 * 16.5, 0.01), `got ${over}`);
+  assert.ok(close(1 - normalCdf(over, 165, 16.5), 0.7, 1e-6), 'and it really is 70%');
+
+  const under = lineAtProbability({ mean: 165, sd: 16.5, probability: 0.7, direction: 'under' });
+  assert.ok(under > 165, 'the under line sits above the projection');
+  assert.ok(close(normalCdf(under, 165, 16.5), 0.7, 1e-6));
+});
+
+test('linesAtProbability quotes half points that really clear the bar', async () => {
+  const { linesAtProbability, MODEL: M } = await import('../src/basketball/model.js');
+  const ctx = leagueContext(LEAGUE);
+  const projection = projectGame({ home: 'Elite', away: 'Weak' }, LEAGUE[0], LEAGUE[2], ctx);
+  const lines = linesAtProbability(projection, 0.7);
+
+  assert.equal(lines.probability, 0.7);
+  for (const v of [lines.totalOver, lines.totalUnder, Math.abs(lines.spread.line)]) {
+    assert.ok(String(v).endsWith('.5'), `${v} should be a half point`);
+  }
+  assert.ok(lines.totalOver < projection.total.projected);
+  assert.ok(lines.totalUnder > projection.total.projected);
+
+  // Rounding is conservative, so the true probability is at least the target.
+  const overProb = 1 - normalCdf(lines.totalOver, projection.total.projected, M.totalSd);
+  const underProb = normalCdf(lines.totalUnder, projection.total.projected, M.totalSd);
+  assert.ok(overProb >= 0.7, `over line only reaches ${overProb}`);
+  assert.ok(underProb >= 0.7, `under line only reaches ${underProb}`);
+
+  const coverProb = 1 - normalCdf(Math.abs(lines.spread.line), Math.abs(projection.margin), M.marginSd);
+  assert.ok(coverProb >= 0.7, `spread line only reaches ${coverProb}`);
+  assert.equal(lines.spread.side, 'Elite');
+});
+
+test('a coin-flip game needs the favourite to take points at 70%', async () => {
+  const { linesAtProbability } = await import('../src/basketball/model.js');
+  const ctx = leagueContext(LEAGUE);
+  // Two equal sides: the margin is just home court, well under the 70% bar.
+  const projection = projectGame(
+    { home: 'Mid', away: 'Mid2' },
+    LEAGUE[1],
+    { ...LEAGUE[1], team: 'Mid2' },
+    ctx,
+  );
+  const lines = linesAtProbability(projection, 0.7);
+  assert.ok(lines.spread.line > 0, 'the favourite must be getting points to clear 70%');
+});
+
+test('a higher confidence demands a softer line', async () => {
+  const { linesAtProbability } = await import('../src/basketball/model.js');
+  const ctx = leagueContext(LEAGUE);
+  const projection = projectGame({ home: 'Elite', away: 'Weak' }, LEAGUE[0], LEAGUE[2], ctx);
+
+  const at70 = linesAtProbability(projection, 0.7);
+  const at90 = linesAtProbability(projection, 0.9);
+  assert.ok(at90.totalOver < at70.totalOver, '90% needs a lower over line');
+  assert.ok(at90.totalUnder > at70.totalUnder, '90% needs a higher under line');
+  assert.ok(at90.spread.line > at70.spread.line, '90% needs a shorter spread');
+});
+
+test('strengthGap measures the distance between the two net ratings', () => {
+  const ctx = leagueContext(LEAGUE);
+  const wide = projectGame({ home: 'Elite', away: 'Weak' }, LEAGUE[0], LEAGUE[2], ctx);
+  const narrow = projectGame(
+    { home: 'Mid', away: 'Mid2' },
+    LEAGUE[1],
+    { ...LEAGUE[1], team: 'Mid2' },
+    ctx,
+  );
+  assert.ok(wide.strengthGap > narrow.strengthGap);
+  assert.ok(close(narrow.strengthGap, 0, 0.05), 'identical sides have no gap');
+  const elite = wide.ratings.home;
+  const weak = wide.ratings.away;
+  assert.ok(close(wide.strengthGap, Math.abs(elite.netRating - weak.netRating), 0.05));
+});
+
+test('the report renders the 70% lines and the strength-gap table', async () => {
+  const data = await buildWnbaReport(ARGS, deps);
+  const md = renderMarkdown(data);
+  assert.match(md, /## Lines that clear 70%/);
+  assert.match(md, /\| Tip \| Game \| Spread 70% \| Total over \| Total under \|/);
+  assert.match(md, /\*\*Over \d+\.5\*\*/);
+  assert.match(md, /\*\*Under \d+\.5\*\*/);
+  assert.match(md, /## Biggest strength gaps/);
+  assert.match(md, /\| Tip \| Game \| Net H \| Net A \| Gap \| Margin \| Win% fav \| \? \|/);
+
+  const json = JSON.parse(renderJson(data));
+  assert.equal(json.coverProbability, 0.7);
+  assert.ok(json.games[0].linesAtProbability.totalOver > 0);
+});
+
+test('toHalfPoint always rounds in the direction that keeps the odds honest', async () => {
+  const { toHalfPoint } = await import('../src/basketball/model.js');
+  // Over lines move down, under lines move up, from the same starting point.
+  assert.equal(toHalfPoint(156.3, 'over'), 155.5);
+  assert.equal(toHalfPoint(156.3, 'under'), 156.5);
+  assert.equal(toHalfPoint(173.7, 'over'), 173.5);
+  assert.equal(toHalfPoint(173.7, 'under'), 174.5);
+  // Already on a half point: an over line must not round up onto it.
+  assert.equal(toHalfPoint(160.5, 'over'), 160.5);
+  assert.equal(toHalfPoint(160.5, 'under'), 160.5);
+  // Negative spreads behave the same way.
+  assert.equal(toHalfPoint(-3.2, 'over'), -3.5);
+});

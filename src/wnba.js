@@ -12,7 +12,12 @@ import { SPORT, fetchDayFixtures, DEFAULTS } from './flashscore.js';
 import { parseTournamentUrl } from './leagues.js';
 import { DEFAULT_RETAIN_DAYS, updateHistory } from './history.js';
 import { buildStandings, headToHead, headToHeadSummary, recentForm } from './basketball/standings.js';
-import { baselineRow, leagueContext, projectGame } from './basketball/model.js';
+import {
+  baselineRow,
+  leagueContext,
+  linesAtProbability,
+  projectGame,
+} from './basketball/model.js';
 import { renderJson, renderMarkdown } from './basketball/report.js';
 
 export const WNBA_PATH = 'usa/wnba';
@@ -44,6 +49,7 @@ function parseArgs(argv) {
     format: 'both',
     outDir: 'reports',
     cache: DEFAULT_CACHE,
+    coverProbability: 0.7,
     retain: DEFAULT_RETAIN_DAYS,
     quiet: false,
   };
@@ -55,6 +61,7 @@ function parseArgs(argv) {
     else if (a === '--format') args.format = next();
     else if (a === '--out') args.outDir = next();
     else if (a === '--cache') args.cache = next();
+    else if (a === '--cover-probability') args.coverProbability = Number(next());
     else if (a === '--retain') args.retain = Number(next());
     else if (a === '--quiet') args.quiet = true;
     else if (a === '--help' || a === '-h') args.help = true;
@@ -72,6 +79,7 @@ flashscore-worker — WNBA slate with projected spread, total and win probabilit
   --format md|json|both
   --out DIR        output root (default reports/; files land in <root>/wnba/)
   --cache PATH     results history cache (default ${DEFAULT_CACHE})
+  --cover-probability P  confidence the quoted lines must clear (default 0.7)
   --retain N       days of results history to keep (default ${DEFAULT_RETAIN_DAYS})
   --quiet          write files only, no stdout
 
@@ -143,12 +151,14 @@ export async function buildWnbaReport(args, deps = {}) {
       const homeRow = findRow(rows, m.home) ?? baselineRow(m.home);
       const awayRow = findRow(rows, m.away) ?? baselineRow(m.away);
       const h2h = headToHead(history.matches, homeRow.team, awayRow.team);
+      const projection = projectGame(m, homeRow, awayRow, ctx);
       return {
         id: m.id,
         tipoff: m.kickoff,
         home: m.home,
         away: m.away,
-        projection: projectGame(m, homeRow, awayRow, ctx),
+        projection,
+        lines: linesAtProbability(projection, args.coverProbability ?? 0.7),
         form: {
           home: recentForm(history.matches, homeRow.team),
           away: recentForm(history.matches, awayRow.team),
@@ -160,7 +170,7 @@ export async function buildWnbaReport(args, deps = {}) {
     .sort((a, b) => (a.tipoff?.getTime() ?? 0) - (b.tipoff?.getTime() ?? 0));
 
   const date = new Date(Date.now() + args.dayOffset * 86400000).toISOString().slice(0, 10);
-  return { date, tz: args.tz, games, stats };
+  return { date, tz: args.tz, games, stats, coverProbability: args.coverProbability ?? 0.7 };
 }
 
 async function main() {

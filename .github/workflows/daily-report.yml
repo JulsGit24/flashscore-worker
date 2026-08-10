@@ -46,6 +46,12 @@ jobs:
 
       - run: npm test
 
+      # TEMPORARY: can any public WNBA source supply player game logs and
+      # injuries? Remove once answered.
+      - name: Probe player data
+        continue-on-error: true
+        run: node scripts/probe-player-data.js 2>&1 | head -60
+
       - name: Generate shortlists
         env:
           # IANA timezone the kickoff times are printed in.

@@ -92,6 +92,54 @@ export function renderMarkdown(data) {
     }
     out.push('');
 
+    const cover = data.coverProbability ?? 0.7;
+    out.push(`## Lines that clear ${pct(cover)}`);
+    out.push('');
+    out.push(
+      'The inverse of the usual question: not the odds at a posted line, but ' +
+        `the line that is ${pct(cover)} likely to land. Quoted on half points so ` +
+        'nothing can push.',
+    );
+    out.push('');
+    out.push(`| Tip | Game | Spread ${pct(cover)} | Total over | Total under |`);
+    out.push('|---|---|---|---|---|');
+    for (const g of games) {
+      const l = g.lines;
+      const spread =
+        l.spread.line <= 0
+          ? `${l.spread.side} ${l.spread.line.toFixed(1)}`
+          : `${l.spread.side} +${l.spread.line.toFixed(1)}`;
+      out.push(
+        `| ${formatTime(g.tipoff, tz)} | ${g.home} v ${g.away} | **${spread}** | ` +
+          `**Over ${l.totalOver.toFixed(1)}** | **Under ${l.totalUnder.toFixed(1)}** |`,
+      );
+    }
+    out.push('');
+
+    // --- strength gaps -----------------------------------------------------
+    const byGap = [...games].sort((a, b) => b.projection.strengthGap - a.projection.strengthGap);
+    out.push('## Biggest strength gaps');
+    out.push('');
+    out.push(
+      'Net rating is points scored minus points allowed per game. The gap is ' +
+        'the distance between the two sides — the measurable stand-in for a ' +
+        'roster mismatch, since the feed carries no player data.',
+    );
+    out.push('');
+    out.push('| Tip | Game | Net H | Net A | Gap | Margin | Win% fav | ? |');
+    out.push('|---|---|---:|---:|---:|---:|---:|:-:|');
+    for (const g of byGap) {
+      const p = g.projection;
+      const favWin = Math.max(p.winProbability.home, p.winProbability.away);
+      out.push(
+        `| ${formatTime(g.tipoff, tz)} | ${g.home} v ${g.away} | ` +
+          `${signed(p.ratings.home.netRating)} | ${signed(p.ratings.away.netRating)} | ` +
+          `**${p.strengthGap.toFixed(1)}** | ${signed(p.margin)} | ${pct(favWin)} | ` +
+          `${CONFIDENCE_MARK[p.confidence] ?? '?'} |`,
+      );
+    }
+    out.push('');
+
     out.push('## Totals — over/under by line');
     out.push('');
     out.push('| Tip | Game | Proj total | 80% range | ' + 'Over lines |');
@@ -161,12 +209,14 @@ export function renderJson(data) {
         playerProps: 'feed exposes no player-level data',
         injuries: 'no injury or news feed responded',
       },
+      coverProbability: data.coverProbability ?? 0.7,
       games: data.games.map((g) => ({
         tipoff: g.tipoff?.toISOString() ?? null,
         tipoffLocal: formatTime(g.tipoff, data.tz),
         home: g.home,
         away: g.away,
         projection: g.projection,
+        linesAtProbability: g.lines,
         form: g.form,
         headToHead: g.h2h,
         headToHeadSummary: g.h2hSummary,

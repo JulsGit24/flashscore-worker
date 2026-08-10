@@ -49,6 +49,48 @@ export function erf(x) {
   return sign * y;
 }
 
+/**
+ * Inverse of the standard normal CDF (Acklam's rational approximation, with a
+ * single Halley refinement). Needed to answer the inverse question: not "what
+ * are the odds at this line" but "which line carries these odds".
+ */
+export function normalQuantile(p) {
+  if (p <= 0) return -Infinity;
+  if (p >= 1) return Infinity;
+
+  const a = [-3.969683028665376e1, 2.209460984245205e2, -2.759285104469687e2,
+    1.383577518672690e2, -3.066479806614716e1, 2.506628277459239];
+  const b = [-5.447609879822406e1, 1.615858368580409e2, -1.556989798598866e2,
+    6.680131188771972e1, -1.328068155288572e1];
+  const c = [-7.784894002430293e-3, -3.223964580411365e-1, -2.400758277161838,
+    -2.549732539343734, 4.374664141464968, 2.938163982698783];
+  const d = [7.784695709041462e-3, 3.224671290700398e-1, 2.445134137142996,
+    3.754408661907416];
+  const pLow = 0.02425;
+  const pHigh = 1 - pLow;
+
+  let x;
+  if (p < pLow) {
+    const q = Math.sqrt(-2 * Math.log(p));
+    x = (((((c[0] * q + c[1]) * q + c[2]) * q + c[3]) * q + c[4]) * q + c[5]) /
+      ((((d[0] * q + d[1]) * q + d[2]) * q + d[3]) * q + 1);
+  } else if (p <= pHigh) {
+    const q = p - 0.5;
+    const r = q * q;
+    x = (((((a[0] * r + a[1]) * r + a[2]) * r + a[3]) * r + a[4]) * r + a[5]) * q /
+      (((((b[0] * r + b[1]) * r + b[2]) * r + b[3]) * r + b[4]) * r + 1);
+  } else {
+    const q = Math.sqrt(-2 * Math.log(1 - p));
+    x = -(((((c[0] * q + c[1]) * q + c[2]) * q + c[3]) * q + c[4]) * q + c[5]) /
+      ((((d[0] * q + d[1]) * q + d[2]) * q + d[3]) * q + 1);
+  }
+
+  // One Halley step takes the approximation to near machine precision.
+  const e = normalCdf(x) - p;
+  const u = e * Math.sqrt(2 * Math.PI) * Math.exp((x * x) / 2);
+  return x - u / (1 + (x * u) / 2);
+}
+
 /** P(X <= x) for X ~ Normal(mean, sd). */
 export function normalCdf(x, mean = 0, sd = 1) {
   if (sd <= 0) return x >= mean ? 1 : 0;
@@ -149,6 +191,80 @@ export function projectGame(game, homeRow, awayRow, ctx, options = {}) {
     winProbability: { home: homeWin, away: 1 - homeWin },
     total: { projected: round(total), range: totalRange.map((v) => round(v)), overUnder },
     ratings: { home: H, away: A },
+    // Team-strength gap in points per game. Not a roster comparison — the feed
+    // carries no player data — but the measurable proxy for one: how far apart
+    // the two sides are once scoring and conceding are both accounted for.
+    strengthGap: round(Math.abs(H.netRating - A.netRating)),
+  };
+}
+
+/**
+ * The line a side clears with probability `p`.
+ *
+ * This is the inverse of the usual question. Rather than "what are the odds of
+ * over 170.5", it answers "which total is 70% likely to be beaten" — so the
+ * report can quote a number you can actually take rather than a number the
+ * market happened to post.
+ */
+export function lineAtProbability({ mean, sd, probability, direction }) {
+  // P(X > L) = p  =>  L = mean + sd * z(1 - p)
+  // P(X < L) = p  =>  L = mean + sd * z(p)
+  const z = normalQuantile(direction === 'over' ? 1 - probability : probability);
+  return mean + sd * z;
+}
+
+/**
+ * Snap to a half point, always in the direction that keeps the stated
+ * probability honest. An "over" line moves down to the nearest half point at or
+ * below the exact answer — a lower bar is easier to clear — and an "under" line
+ * moves up. So the quoted probability is a floor, never a ceiling.
+ */
+export function toHalfPoint(x, direction) {
+  return direction === 'over'
+    ? Math.floor(x - 0.5) + 0.5
+    : Math.ceil(x - 0.5) + 0.5;
+}
+
+/**
+ * Lines that clear `probability` for this game: the total to go over, the total
+ * to stay under, and the spread the favourite covers.
+ */
+export function linesAtProbability(projection, probability = 0.7) {
+  const total = projection.total.projected;
+  const margin = projection.margin;
+
+  const overRaw = lineAtProbability({
+    mean: total,
+    sd: MODEL.totalSd,
+    probability,
+    direction: 'over',
+  });
+  const underRaw = lineAtProbability({
+    mean: total,
+    sd: MODEL.totalSd,
+    probability,
+    direction: 'under',
+  });
+  // The favourite covers -X when the margin exceeds X, so the same inversion
+  // applies to the absolute margin.
+  const coverRaw = lineAtProbability({
+    mean: Math.abs(margin),
+    sd: MODEL.marginSd,
+    probability,
+    direction: 'over',
+  });
+
+  return {
+    probability,
+    totalOver: toHalfPoint(overRaw, 'over'),
+    totalUnder: toHalfPoint(underRaw, 'under'),
+    // Negative means the favourite gives points; positive means even the
+    // favourite needs a head start to clear the bar at this confidence.
+    spread: {
+      side: projection.spread.favourite,
+      where: projection.spread.where,
+      line: -toHalfPoint(coverRaw, 'over'),
+    },
   };
 }
 
