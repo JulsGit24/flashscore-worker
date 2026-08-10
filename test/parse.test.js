@@ -91,10 +91,15 @@ test('classifyCompetition rejects tier 3 and below', () => {
   }
 });
 
-test('classifyCompetition rejects non-European and non-senior football', () => {
+test('classifyCompetition rejects out-of-region and non-senior football', () => {
+  // Africa and Oceania are in no configured region.
   assert.equal(
-    classifyCompetition({ country: 'brazil', slug: 'serie-a', name: 'BRAZIL: Serie A' }).reason,
-    'non-european',
+    classifyCompetition({ country: 'nigeria', slug: 'npfl', name: 'NIGERIA: NPFL' }).reason,
+    'out-of-region',
+  );
+  assert.equal(
+    classifyCompetition({ country: 'australia', slug: 'a-league', name: 'AUSTRALIA: A-League' }).reason,
+    'out-of-region',
   );
   assert.equal(
     classifyCompetition({
@@ -120,10 +125,58 @@ test('an unknown European league is queued for review, not silently dropped', ()
   assert.equal(verdict.reason, 'needs-review');
 });
 
+test('classifyCompetition tags each league with its region', () => {
+  const cases = [
+    ['england', 'premier-league', 'europe'],
+    ['brazil', 'serie-a', 'americas'],
+    ['usa', 'mls', 'americas'],
+    ['mexico', 'liga-mx', 'americas'],
+    ['japan', 'j1-league', 'asia'],
+    ['south-korea', 'k-league-1', 'asia'],
+    ['china', 'super-league', 'asia'],
+  ];
+  for (const [country, slug, region] of cases) {
+    const verdict = classifyCompetition({ country, slug, name: slug });
+    assert.equal(verdict.include, true, `${country}/${slug} should be included`);
+    assert.equal(verdict.league.region, region, `${country}/${slug} region`);
+  }
+});
+
+test('classifyCompetition rejects tier 3 in the Americas and Asia too', () => {
+  const cases = [
+    { country: 'japan', slug: 'j3-league', name: 'JAPAN: J3 League' },
+    { country: 'south-korea', slug: 'k3-league', name: 'SOUTH KOREA: K3 League' },
+    { country: 'china', slug: 'league-two', name: 'CHINA: League Two' },
+    { country: 'brazil', slug: 'serie-c', name: 'BRAZIL: Serie C' },
+    { country: 'usa', slug: 'usl-league-one', name: 'USA: USL League One' },
+    { country: 'mexico', slug: 'liga-premier', name: 'MEXICO: Liga Premier' },
+    {
+      country: 'argentina',
+      slug: 'primera-b-metropolitana',
+      name: 'ARGENTINA: Primera B Metropolitana',
+    },
+  ];
+  for (const c of cases) {
+    assert.equal(classifyCompetition(c).reason, 'tier-3-or-below', c.name);
+  }
+});
+
+test('second tiers that look like third tiers elsewhere still get in', () => {
+  // "China League One" is the second tier; "USL Championship" likewise.
+  for (const [country, slug, name] of [
+    ['china', 'league-one', 'CHINA: League One'],
+    ['usa', 'usl-championship', 'USA: USL Championship'],
+    ['south-korea', 'k-league-2', 'SOUTH KOREA: K League 2'],
+  ]) {
+    assert.equal(classifyCompetition({ country, slug, name }).include, true, name);
+  }
+});
+
 test('end to end: the sample day feed yields exactly the in-scope games', () => {
   const kept = extractMatches(parseFeed(dayFeed)).filter((m) => {
     const { country, slug } = parseTournamentUrl(m.tournament?.url);
-    return classifyCompetition({ country, slug, name: m.tournament?.name }).include;
+    const v = classifyCompetition({ country, slug, name: m.tournament?.name });
+    return v.include && v.league.region === 'europe';
   });
   assert.deepEqual(
     kept.map((m) => `${m.home} v ${m.away}`),
