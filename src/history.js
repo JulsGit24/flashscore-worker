@@ -12,9 +12,22 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fetchDayFixtures } from './flashscore.js';
-import { classifyCompetition, parseTournamentUrl } from './leagues.js';
+import { parseTournamentUrl } from './leagues.js';
+import { regionOf } from './leagues.data.js';
 
 export const DEFAULT_CACHE = 'data/history.json';
+
+/**
+ * Bump when the shape or the capture rule of a cached day changes. A cache
+ * written under an older version is discarded and refetched rather than
+ * silently mixed with days captured under different rules.
+ *
+ * 2: capture by region rather than by the league allowlist. Under v1 a day was
+ *    filtered through the full allowlist at write time, so leagues added later
+ *    could never be backfilled — the Americas and Asia came out empty against a
+ *    cache captured when only Europe was configured.
+ */
+export const CACHE_VERSION = 2;
 /**
  * The day feed only serves offsets -7..+7 — anything outside answers HTTP 200
  * with a 1-byte "0". Verified directly: -8 and +8 are empty, -7 and +7 both
@@ -35,25 +48,36 @@ export function dayKeyForOffset(offset, now = new Date()) {
 
 export async function loadCache(cachePath = DEFAULT_CACHE) {
   try {
-    return JSON.parse(await readFile(cachePath, 'utf8'));
+    const parsed = JSON.parse(await readFile(cachePath, 'utf8'));
+    if (parsed?.version !== CACHE_VERSION) return {};
+    return parsed.days ?? {};
   } catch {
     return {};
   }
 }
 
-export async function saveCache(cache, cachePath = DEFAULT_CACHE) {
+export async function saveCache(days, cachePath = DEFAULT_CACHE) {
   await mkdir(path.dirname(cachePath), { recursive: true });
-  await writeFile(cachePath, JSON.stringify(cache));
+  await writeFile(cachePath, JSON.stringify({ version: CACHE_VERSION, days }));
 }
 
-/** Keep only finished, in-scope matches, in a compact cacheable shape. */
+/**
+ * Keep every finished match from a country in a reported region, in a compact
+ * cacheable shape.
+ *
+ * Deliberately filtered by region rather than by the league allowlist: the
+ * allowlist changes whenever a league is added or a slug corrected, and a cache
+ * captured under the old list cannot be backfilled — the day feed only reaches
+ * back a week. Regions are the stable layer, so capturing against them keeps
+ * history usable when the league list moves underneath it. Fixtures are still
+ * filtered through the full allowlist when a report is built.
+ */
 export function distilDay(matches) {
   const out = [];
   for (const m of matches) {
     if (m.homeScore === null || m.awayScore === null) continue;
     const { country, slug } = parseTournamentUrl(m.tournament?.url);
-    const verdict = classifyCompetition({ country, slug, name: m.tournament?.name });
-    if (!verdict.include) continue;
+    if (!country || !slug || !regionOf(country)) continue;
     out.push({
       l: `${country}/${slug}`,
       h: m.home,

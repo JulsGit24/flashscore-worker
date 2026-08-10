@@ -130,7 +130,7 @@ format — the Americas and Asia reports are identical in shape.
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 77 offline tests, no network
+npm test                       # 80 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40
@@ -178,9 +178,15 @@ keeps its season to date.
 **The day feed only serves a 7-day window** (offsets -7..+7; -8 and +8 both
 answer with the same 1-byte `0`). So the tables cannot be reconstructed in one
 run — the worker caches each day it fetches in `data/history.json`, commits it,
-and the season accumulates as the job runs each morning. A team needs 3 results
-in the cache before its fixtures can be ranked; until then they are listed under
-*In scope but not ranked*.
+and the season accumulates as the job runs each morning.
+
+The cache captures every finished match from a country in a reported region,
+**not** only the leagues on the allowlist. That matters because the allowlist
+moves — a league added or a slug corrected today cannot be backfilled, since the
+feed reaches back only a week. Capturing against regions, the stable layer, keeps
+history usable underneath a changing league list. `CACHE_VERSION` guards the
+rule: a cache written under an older one is discarded and refetched rather than
+silently mixed with days captured under different rules.
 
 Ranks are computed on points, then goal difference, then goals scored — they can
 differ from the official table where a league applies a points deduction or
