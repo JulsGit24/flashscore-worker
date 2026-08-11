@@ -64,6 +64,13 @@ export function prettyCountry(slug) {
     .join(' ');
 }
 
+/** "England Premier League", or just "Champions League" for an international. */
+export function competitionLabel(league) {
+  return league.kind === 'international'
+    ? league.name
+    : `${prettyCountry(league.country)} ${league.name}`;
+}
+
 function ordinal(n) {
   if (!n) return '—';
   const s = ['th', 'st', 'nd', 'rd'];
@@ -102,8 +109,11 @@ export function groupFixtures(fixtures) {
     g.fixtures.sort((a, b) => (a.kickoff?.getTime() ?? 0) - (b.kickoff?.getTime() ?? 0));
     g.earliest = g.fixtures[0]?.kickoff?.getTime() ?? 0;
   }
+  // Domestic leagues first, then the international competitions, each block
+  // ordered by its earliest kickoff so the document still reads early to late.
+  const rank = (g) => (g.league.kind === 'international' ? 1 : 0);
   return [...groups.values()].sort(
-    (a, b) => a.earliest - b.earliest || a.country.localeCompare(b.country),
+    (a, b) => rank(a) - rank(b) || a.earliest - b.earliest || a.country.localeCompare(b.country),
   );
 }
 
@@ -211,7 +221,7 @@ export function renderMarkdown(data) {
     for (const f of strong) {
       const side = f.score.pick.where === 'H' ? `${f.home} (H)` : `${f.away} (A)`;
       out.push(
-        `| ${formatTime(f.kickoff, tz)} | ${prettyCountry(f.league.country)} ${f.league.name} | ` +
+        `| ${formatTime(f.kickoff, tz)} | ${competitionLabel(f.league)} | ` +
           `${f.home} v ${f.away} | **${side}** | **${pct(f.score.pick.probability)}** | ` +
           `${f.score.projected.home.toFixed(1)}–${f.score.projected.away.toFixed(1)} | ` +
           `${f.score.projected.total.toFixed(1)} |`,
@@ -236,7 +246,7 @@ export function renderMarkdown(data) {
     out.push('|---|---|---|---:|---:|---|');
     for (const f of goalGames) {
       out.push(
-        `| ${formatTime(f.kickoff, tz)} | ${prettyCountry(f.league.country)} ${f.league.name} | ` +
+        `| ${formatTime(f.kickoff, tz)} | ${competitionLabel(f.league)} | ` +
           `${f.home} v ${f.away} | **${f.score.projected.total.toFixed(1)}** | ` +
           `${pct(f.score.probabilities.btts)} | ${tagList(f.score.tags)} |`,
       );
@@ -251,11 +261,14 @@ export function renderMarkdown(data) {
   out.push('');
   for (const group of groupFixtures(all)) {
     const fromLastSeason = group.fixtures.some((f) => f.tableFromPreviousSeason);
-    out.push(
-      `### ${prettyCountry(group.country)} — ${group.league.name}` +
-        `${group.league.gender === 'W' ? ' (Women)' : ''} · tier ${group.league.tier}` +
-        `${fromLastSeason ? ' · _last season’s table_' : ''}`,
-    );
+    // An international competition has no country and no tier — the Champions
+    // League and the Conference League are parallel, not a pyramid.
+    const heading =
+      group.league.kind === 'international'
+        ? `${group.league.name}${group.league.gender === 'W' ? ' (Women)' : ''} · international`
+        : `${prettyCountry(group.country)} — ${group.league.name}` +
+          `${group.league.gender === 'W' ? ' (Women)' : ''} · tier ${group.league.tier}`;
+    out.push(`### ${heading}${fromLastSeason ? ' · _last season’s table_' : ''}`);
     out.push('');
     out.push(...TABLE_HEAD);
     for (const f of group.fixtures) out.push(fixtureRow(f, tz));
@@ -292,7 +305,8 @@ export function renderJson(data) {
     kickoffLocal: formatTime(f.kickoff, data.tz),
     country: f.league.country,
     league: f.league.name,
-    tier: f.league.tier,
+    tier: f.league.tier ?? null,
+    kind: f.league.kind ?? 'domestic',
     gender: f.league.gender,
     home: f.home,
     away: f.away,

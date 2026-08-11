@@ -1,4 +1,9 @@
-import { EXCLUDED_SLUGS, LEAGUE_INDEX, regionOf } from './leagues.data.js';
+import {
+  EXCLUDED_SLUGS,
+  INTERNATIONAL_EXCLUDED,
+  LEAGUE_INDEX,
+  regionOf,
+} from './leagues.data.js';
 
 /**
  * Competition names that are third tier or below, or otherwise not senior
@@ -71,6 +76,9 @@ export function classifyCompetition(competition) {
   // gives no reliable clue to their tier in their own country.
   if (EXCLUDED_SLUGS.has(`${country}/${slug}`)) {
     return { include: false, reason: 'tier-3-or-below' };
+  }
+  if (INTERNATIONAL_EXCLUDED.has(`${country}/${slug}`)) {
+    return { include: false, reason: 'not-competitive' };
   }
 
   // The allowlist is authoritative and is consulted before the tier-3 regexes,

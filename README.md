@@ -29,11 +29,36 @@ fetch and share one results cache.
 ## What it covers
 
 - **Geography**: the region's countries only.
+- **Domestic and international**: the region's leagues, plus the continental
+  club competitions filed under it — UEFA's under `europe`, CONMEBOL's and
+  CONCACAF's under `americas`, the AFC's under `asia`.
 - **Tiers**: first tier ("main") and second tier ("B") only. Third tier and
   below — League One, 3. Liga, Serie C, Primera Federación, II liga — are
   excluded, as are youth, reserve, and friendly fixtures.
 - **Both genders**: men's and women's leagues are treated identically.
 - Fixtures both live and still to kick off.
+
+### International competitions
+
+Continental competitions sit under confederation pseudo-countries in the feed
+(`europe/champions-league`, `north-central-america/leagues-cup`), so those
+pseudo-countries are members of the region whose report they belong in.
+
+They carry **no tier**: the Champions League and the Conference League are
+parallel competitions, not a pyramid, so the tier-1/tier-2 idea that scopes the
+domestic leagues does not apply to them. They are marked `kind: 'international'`
+instead, listed in their own block after the domestic leagues, and headed by
+competition name alone rather than by country and tier.
+
+Two caveats worth knowing before reading their numbers:
+
+- **The table underneath is thin.** A continental competition's "table" is a
+  qualifying round or a group stage, so most ties will sit at `◔` or `○`
+  confidence for a while — the same honesty mark the domestic games use.
+- **Not every slug is confirmed.** UEFA's four competitions, the Super Cup, the
+  Leagues Cup and the CONCACAF Central American Cup were read from the live
+  feed. CONMEBOL's and the AFC's are the expected names and will show up in the
+  report's needs-review list if they are wrong.
 
 The competition list lives in [`src/leagues.data.js`](src/leagues.data.js).
 Anything in-region and senior that isn't in it is reported in a **needs review**
@@ -140,7 +165,7 @@ format — the Americas and Asia reports are identical in shape.
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 120 offline tests, no network
+npm test                       # 127 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40
