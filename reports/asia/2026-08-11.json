@@ -2,7 +2,7 @@
   "date": "2026-08-11",
   "region": "asia",
   "timezone": "America/New_York",
-  "generatedAt": "2026-08-11T17:04:16.472Z",
+  "generatedAt": "2026-08-11T17:07:23.960Z",
   "stats": {
     "totalFixtures": 279,
     "inScope": 1,
@@ -11,17 +11,13 @@
     "daysFetched": 0,
     "daysFailed": 0,
     "outOfRegion": [
-      "asia",
       "australia",
-      "europe",
       "india",
       "kuwait",
       "kyrgyzstan",
       "mozambique",
-      "north-central-america",
       "somalia",
       "south-africa",
-      "south-america",
       "sri-lanka",
       "world",
       "yemen"
@@ -38,6 +34,7 @@
       "country": "south-korea",
       "league": "WK League",
       "tier": 1,
+      "kind": "domestic",
       "gender": "W",
       "home": "Hwacheon W",
       "away": "Incheon Hyundai Steel W",
@@ -99,19 +96,26 @@
       ]
     }
   ],
-  "needsReview": [],
+  "needsReview": [
+    {
+      "country": "asia",
+      "slug": "afc-champions-league",
+      "name": "ASIA: AFC Champions League - Qualification"
+    },
+    {
+      "country": "asia",
+      "slug": "afc-challenge-league",
+      "name": "ASIA: AFC Challenge League - Qualification"
+    }
+  ],
   "outOfRegionCountries": [
-    "asia",
     "australia",
-    "europe",
     "india",
     "kuwait",
     "kyrgyzstan",
     "mozambique",
-    "north-central-america",
     "somalia",
     "south-africa",
-    "south-america",
     "sri-lanka",
     "world",
     "yemen"
