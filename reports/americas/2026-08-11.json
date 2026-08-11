@@ -2,10 +2,10 @@
   "date": "2026-08-11",
   "region": "americas",
   "timezone": "America/New_York",
-  "generatedAt": "2026-08-11T17:07:22.818Z",
+  "generatedAt": "2026-08-11T17:10:01.088Z",
   "stats": {
     "totalFixtures": 279,
-    "inScope": 31,
+    "inScope": 33,
     "tablesLoaded": 321,
     "daysCached": 8,
     "daysFetched": 0,
@@ -495,6 +495,73 @@
         "probability": 0.3976266240946097
       },
       "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-11T01:00:00.000Z",
+      "kickoffLocal": "21:00",
+      "country": "costa-rica",
+      "league": "Liga de Ascenso",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Pitbulls",
+      "away": "Guadalupe",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 28.3,
+      "mismatchIndex": 0,
+      "rankScore": 28.3,
+      "projected": {
+        "home": 1.54,
+        "away": 1.26,
+        "total": 2.8
+      },
+      "probabilities": {
+        "home": 0.43829048509994195,
+        "draw": 0.2500061158651084,
+        "away": 0.31170339903495003,
+        "btts": 0.5627748030864977,
+        "over15": 0.7689215744941376,
+        "over25": 0.5305459355512477,
+        "over35": 0.3080620058712174,
+        "under15": 0.23107842550586244,
+        "under25": 0.46945406444875226
+      },
+      "pick": {
+        "side": "Pitbulls",
+        "where": "H",
+        "probability": 0.43829048509994195
+      },
+      "confidence": "baseline",
       "basis": "league table",
       "tags": [
         "LOW_SAMPLE"
@@ -1375,6 +1442,73 @@
     {
       "kickoff": "2026-08-11T23:00:00.000Z",
       "kickoffLocal": "19:00",
+      "country": "chile",
+      "league": "Liga de Ascenso",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "D. Puerto Montt",
+      "away": "U. Espanola",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TT",
+          "played": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 2,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 3,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 11,
+      "awayRank": 15,
+      "goalsIndex": 0,
+      "mismatchIndex": 15.3,
+      "rankScore": 15.3,
+      "projected": {
+        "home": 1.35,
+        "away": 0.67,
+        "total": 2.02
+      },
+      "probabilities": {
+        "home": 0.5320748876823945,
+        "draw": 0.2826610564800234,
+        "away": 0.18526405583758243,
+        "btts": 0.361706601470935,
+        "over15": 0.5993804159103198,
+        "over25": 0.32873668231437086,
+        "over35": 0.14650323502643142,
+        "under15": 0.40061958408968024,
+        "under25": 0.6712633176856291
+      },
+      "pick": {
+        "side": "D. Puerto Montt",
+        "where": "H",
+        "probability": 0.5320748876823945
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-11T23:00:00.000Z",
+      "kickoffLocal": "19:00",
       "country": "colombia",
       "league": "Primera A",
       "tier": 1,
@@ -2179,44 +2313,9 @@
   ],
   "needsReview": [
     {
-      "country": "brazil",
-      "slug": "acreano-2",
-      "name": "BRAZIL: Acreano 2"
-    },
-    {
-      "country": "brazil",
-      "slug": "copa-paulista",
-      "name": "BRAZIL: Copa Paulista"
-    },
-    {
-      "country": "brazil",
-      "slug": "amazonense-women",
-      "name": "BRAZIL: Amazonense Women"
-    },
-    {
-      "country": "brazil",
-      "slug": "paulista-women",
-      "name": "BRAZIL: Paulista Women"
-    },
-    {
       "country": "canada",
       "slug": "championship",
       "name": "CANADA: Championship"
-    },
-    {
-      "country": "chile",
-      "slug": "liga-de-ascenso",
-      "name": "CHILE: Liga de Ascenso"
-    },
-    {
-      "country": "costa-rica",
-      "slug": "liga-de-ascenso",
-      "name": "COSTA RICA: Liga de Ascenso - Apertura"
-    },
-    {
-      "country": "paraguay",
-      "slug": "copa-paraguay",
-      "name": "PARAGUAY: Copa Paraguay"
     }
   ],
   "outOfRegionCountries": [
