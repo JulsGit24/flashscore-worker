@@ -89,7 +89,7 @@ test('international competitions classify with a kind and no tier', async () => 
     ['europe', 'conference-league', 'europe'],
     ['europe', 'champions-league-women', 'europe'],
     ['north-central-america', 'leagues-cup', 'americas'],
-    ['asia', 'afc-champions-league-elite', 'asia'],
+    ['asia', 'afc-champions-league', 'asia'],
   ];
   for (const [country, slug, region] of cases) {
     const v = classifyCompetition({ country, slug, name: slug });

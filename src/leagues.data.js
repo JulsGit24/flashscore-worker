@@ -95,7 +95,7 @@ export const LEAGUES = [
   { country: 'ireland', slug: 'premier-division', name: 'Premier Division', tier: 1, gender: 'M', region: 'europe' },
   { country: 'ireland', slug: 'first-division', name: 'First Division', tier: 2, gender: 'M', region: 'europe' },
   { country: 'northern-ireland', slug: 'premiership', name: 'NIFL Premiership', tier: 1, gender: 'M', region: 'europe' },
-  { country: 'northern-ireland', slug: 'championship', name: 'NIFL Championship', tier: 2, gender: 'M', region: 'europe' },
+  { country: 'northern-ireland', slug: 'nifl-championship', name: 'NIFL Championship', tier: 2, gender: 'M', region: 'europe' },
   { country: 'northern-ireland', slug: 'premiership-women', name: 'NIFL Premiership Women', tier: 1, gender: 'W', region: 'europe' },
   { country: 'wales', slug: 'cymru-premier', name: 'Cymru Premier', tier: 1, gender: 'M', region: 'europe' },
   { country: 'switzerland', slug: 'super-league', name: 'Super League', tier: 1, gender: 'M', region: 'europe' },
@@ -203,7 +203,7 @@ export const LEAGUES = [
   { country: 'uruguay', slug: 'liga-auf-uruguaya', name: 'Liga AUF Uruguaya', tier: 1, gender: 'M', region: 'americas' },
   { country: 'uruguay', slug: 'segunda-division', name: 'Segunda División', tier: 2, gender: 'M', region: 'americas' },
   { country: 'chile', slug: 'liga-de-primera', name: 'Liga de Primera', tier: 1, gender: 'M', region: 'americas' },
-  { country: 'chile', slug: 'primera-b', name: 'Primera B', tier: 2, gender: 'M', region: 'americas' },
+  { country: 'chile', slug: 'liga-de-ascenso', name: 'Liga de Ascenso', tier: 2, gender: 'M', region: 'americas' },
   { country: 'colombia', slug: 'primera-a', name: 'Primera A', tier: 1, gender: 'M', region: 'americas' },
   { country: 'colombia', slug: 'primera-b', name: 'Primera B', tier: 2, gender: 'M', region: 'americas' },
   { country: 'peru', slug: 'liga-1', name: 'Liga 1', tier: 1, gender: 'M', region: 'americas' },
@@ -227,6 +227,7 @@ export const LEAGUES = [
   { country: 'mexico', slug: 'liga-mx-women', name: 'Liga MX Femenil', tier: 1, gender: 'W', region: 'americas' },
   { country: 'canada', slug: 'canadian-premier-league', name: 'Canadian Premier League', tier: 1, gender: 'M', region: 'americas' },
   { country: 'costa-rica', slug: 'primera-division', name: 'Primera División', tier: 1, gender: 'M', region: 'americas' },
+  { country: 'costa-rica', slug: 'liga-de-ascenso', name: 'Liga de Ascenso', tier: 2, gender: 'M', region: 'americas' },
   { country: 'honduras', slug: 'liga-nacional', name: 'Liga Nacional', tier: 1, gender: 'M', region: 'americas' },
   { country: 'guatemala', slug: 'liga-nacional', name: 'Liga Nacional', tier: 1, gender: 'M', region: 'americas' },
   { country: 'el-salvador', slug: 'primera-division', name: 'Primera División', tier: 1, gender: 'M', region: 'americas' },
@@ -257,6 +258,9 @@ export const LEAGUES = [
  */
 export const EXCLUDED_SLUGS = new Set([
   'chile/segunda-division',
+  // Finland restructured in 2024: Veikkausliiga, then Ykkösliiga, then
+  // Ykkönen. The old name now sits at the third tier.
+  'finland/ykkonen',
   'usa/mls-next-pro',
   'brazil/cearense-3',
   'argentina/torneo-promocional-amateur',
@@ -291,8 +295,8 @@ export const INTERNATIONAL = [
   { country: 'south-america', slug: 'recopa-sudamericana', name: 'Recopa Sudamericana', gender: 'M', region: 'americas' },
 
   // --- AFC (expected slugs) ------------------------------------------------
-  { country: 'asia', slug: 'afc-champions-league-elite', name: 'AFC Champions League Elite', gender: 'M', region: 'asia' },
-  { country: 'asia', slug: 'afc-champions-league-two', name: 'AFC Champions League Two', gender: 'M', region: 'asia' },
+  { country: 'asia', slug: 'afc-champions-league', name: 'AFC Champions League', gender: 'M', region: 'asia' },
+  { country: 'asia', slug: 'afc-challenge-league', name: 'AFC Challenge League', gender: 'M', region: 'asia' },
 ];
 
 /** Competitions under a confederation that are deliberately not reported. */

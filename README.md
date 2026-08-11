@@ -55,15 +55,25 @@ Two caveats worth knowing before reading their numbers:
 - **The table underneath is thin.** A continental competition's "table" is a
   qualifying round or a group stage, so most ties will sit at `◔` or `○`
   confidence for a while — the same honesty mark the domestic games use.
-- **Not every slug is confirmed.** UEFA's four competitions, the Super Cup, the
-  Leagues Cup and the CONCACAF Central American Cup were read from the live
-  feed. CONMEBOL's and the AFC's are the expected names and will show up in the
-  report's needs-review list if they are wrong.
+- **All slugs are now confirmed against the live feed.** UEFA's four
+  competitions and the Super Cup, the Leagues Cup and the CONCACAF Central
+  American Cup came from a sweep; Copa Libertadores and Copa Sudamericana were
+  guessed correctly and confirmed by appearing in a run; the AFC pair were
+  guessed *wrong* and corrected to `afc-champions-league` and
+  `afc-challenge-league` from the needs-review list.
 
 The competition list lives in [`src/leagues.data.js`](src/leagues.data.js).
 Anything in-region and senior that isn't in it is reported in a **needs review**
 section at the bottom of the report rather than being silently dropped — that's
-the signal to add a league or to fix a slug that changed upstream.
+the signal to add a league or to fix a slug that changed upstream. That loop has
+now corrected a dozen slugs that were guessed wrong on first write.
+
+**Domestic cups are out of scope** — the brief is leagues. They are classified
+`domestic-cup` and set aside rather than left in the review list, where their
+volume would bury the slug corrections review exists to surface. An allowlisted
+competition whose name happens to contain "cup" (Paraguay's Copa de Primera, the
+UEFA Super Cup, Copa Libertadores) is unaffected, because the allowlist is
+consulted first.
 
 ## How games are ranked
 
@@ -165,7 +175,7 @@ format — the Americas and Asia reports are identical in shape.
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 127 offline tests, no network
+npm test                       # 132 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40
