@@ -46,6 +46,11 @@ jobs:
 
       - run: npm test
 
+      # TEMPORARY: reading the exact slugs of international competitions.
+      - name: Probe international competitions
+        continue-on-error: true
+        run: node scripts/probe-international.js 2>&1 | head -140
+
       - name: Generate shortlists
         env:
           # IANA timezone the kickoff times are printed in.
