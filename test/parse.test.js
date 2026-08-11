@@ -269,3 +269,35 @@ test('Denmark’s 1st Division is the second tier and survives the ordinal rule'
     true,
   );
 });
+
+test('the last two review entries from the live run are now classified', () => {
+  // A regional Austrian league, and a national cup whose name says "Championship".
+  assert.equal(
+    classifyCompetition({ country: 'austria', slug: 'salzburg', name: 'AUSTRIA: Salzburg' }).reason,
+    'tier-3-or-below',
+  );
+  assert.equal(
+    classifyCompetition({
+      country: 'canada',
+      slug: 'championship',
+      name: 'CANADA: Championship',
+    }).reason,
+    'tier-3-or-below',
+  );
+  // The Austrian top flight is unaffected — RB Salzburg is a team, not a
+  // competition, and only competition names reach these rules.
+  assert.equal(
+    classifyCompetition({ country: 'austria', slug: 'bundesliga', name: 'AUSTRIA: Bundesliga' })
+      .include,
+    true,
+  );
+  // And Canada's actual top flight still qualifies.
+  assert.equal(
+    classifyCompetition({
+      country: 'canada',
+      slug: 'canadian-premier-league',
+      name: 'CANADA: Canadian Premier League',
+    }).include,
+    true,
+  );
+});

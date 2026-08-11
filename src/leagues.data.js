@@ -258,6 +258,9 @@ export const LEAGUES = [
  */
 export const EXCLUDED_SLUGS = new Set([
   'chile/segunda-division',
+  // The Canadian Championship is the national cup, not a division — its name
+  // gives no hint of that, so it needs naming outright.
+  'canada/championship',
   // Finland restructured in 2024: Veikkausliiga, then Ykkösliiga, then
   // Ykkönen. The old name now sits at the third tier.
   'finland/ykkonen',

@@ -39,7 +39,7 @@ const TIER3_PLUS_PATTERNS = [
   /\b(3rd|4th|5th)\s+division\b/i,
   // English non-league, and the Austrian and Brazilian regional pyramids.
   /\bnpl\b/i,
-  /\bober[oö]sterreich\b|\bk[aä]rnten\b|\bsteiermark\b|\bvorarlberg\b|\bburgenland\b/i,
+  /\bober[oö]sterreich\b|\bk[aä]rnten\b|\bsteiermark\b|\bvorarlberg\b|\bburgenland\b|\bsalzburg\b|\btirol\b/i,
   /\b(acreano|alagoano|amapaense|amazonense|baiano|brasiliense|capixaba|carioca|catarinense|cearense|gaucho|goiano|maranhense|matogrossense|mineiro|paraense|paraibano|paranaense|paulista|pernambucano|piauiense|potiguar|rondoniense|roraimense|sergipano|tocantinense)\b/i,
   // Asia: tier 3 and below.
   /\bj3\s*league\b|\bjfl\b/i,                                       // Japan
