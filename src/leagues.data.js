@@ -24,6 +24,8 @@ export const REGION_COUNTRIES = {
     'north-macedonia', 'northern-ireland', 'norway', 'poland', 'portugal',
     'romania', 'russia', 'san-marino', 'scotland', 'serbia', 'slovakia',
     'slovenia', 'spain', 'sweden', 'switzerland', 'turkey', 'ukraine', 'wales',
+    // UEFA club competitions sit under this pseudo-country in the feed.
+    'europe',
   ]),
 
   // North, Central and South America, plus the Caribbean.
@@ -32,10 +34,12 @@ export const REGION_COUNTRIES = {
     'dominican-republic', 'ecuador', 'el-salvador', 'guatemala', 'haiti',
     'honduras', 'jamaica', 'mexico', 'nicaragua', 'panama', 'paraguay', 'peru',
     'trinidad-and-tobago', 'uruguay', 'usa', 'venezuela',
+    // CONMEBOL and CONCACAF competitions, likewise.
+    'south-america', 'north-central-america',
   ]),
 
   // Deliberately narrow: only the three leagues asked for.
-  asia: new Set(['china', 'japan', 'south-korea']),
+  asia: new Set(['china', 'japan', 'south-korea', 'asia']),
 };
 
 /** Region ids in report order. */
@@ -91,7 +95,7 @@ export const LEAGUES = [
   { country: 'ireland', slug: 'premier-division', name: 'Premier Division', tier: 1, gender: 'M', region: 'europe' },
   { country: 'ireland', slug: 'first-division', name: 'First Division', tier: 2, gender: 'M', region: 'europe' },
   { country: 'northern-ireland', slug: 'premiership', name: 'NIFL Premiership', tier: 1, gender: 'M', region: 'europe' },
-  { country: 'northern-ireland', slug: 'championship', name: 'NIFL Championship', tier: 2, gender: 'M', region: 'europe' },
+  { country: 'northern-ireland', slug: 'nifl-championship', name: 'NIFL Championship', tier: 2, gender: 'M', region: 'europe' },
   { country: 'northern-ireland', slug: 'premiership-women', name: 'NIFL Premiership Women', tier: 1, gender: 'W', region: 'europe' },
   { country: 'wales', slug: 'cymru-premier', name: 'Cymru Premier', tier: 1, gender: 'M', region: 'europe' },
   { country: 'switzerland', slug: 'super-league', name: 'Super League', tier: 1, gender: 'M', region: 'europe' },
@@ -199,7 +203,7 @@ export const LEAGUES = [
   { country: 'uruguay', slug: 'liga-auf-uruguaya', name: 'Liga AUF Uruguaya', tier: 1, gender: 'M', region: 'americas' },
   { country: 'uruguay', slug: 'segunda-division', name: 'Segunda División', tier: 2, gender: 'M', region: 'americas' },
   { country: 'chile', slug: 'liga-de-primera', name: 'Liga de Primera', tier: 1, gender: 'M', region: 'americas' },
-  { country: 'chile', slug: 'primera-b', name: 'Primera B', tier: 2, gender: 'M', region: 'americas' },
+  { country: 'chile', slug: 'liga-de-ascenso', name: 'Liga de Ascenso', tier: 2, gender: 'M', region: 'americas' },
   { country: 'colombia', slug: 'primera-a', name: 'Primera A', tier: 1, gender: 'M', region: 'americas' },
   { country: 'colombia', slug: 'primera-b', name: 'Primera B', tier: 2, gender: 'M', region: 'americas' },
   { country: 'peru', slug: 'liga-1', name: 'Liga 1', tier: 1, gender: 'M', region: 'americas' },
@@ -223,6 +227,7 @@ export const LEAGUES = [
   { country: 'mexico', slug: 'liga-mx-women', name: 'Liga MX Femenil', tier: 1, gender: 'W', region: 'americas' },
   { country: 'canada', slug: 'canadian-premier-league', name: 'Canadian Premier League', tier: 1, gender: 'M', region: 'americas' },
   { country: 'costa-rica', slug: 'primera-division', name: 'Primera División', tier: 1, gender: 'M', region: 'americas' },
+  { country: 'costa-rica', slug: 'liga-de-ascenso', name: 'Liga de Ascenso', tier: 2, gender: 'M', region: 'americas' },
   { country: 'honduras', slug: 'liga-nacional', name: 'Liga Nacional', tier: 1, gender: 'M', region: 'americas' },
   { country: 'guatemala', slug: 'liga-nacional', name: 'Liga Nacional', tier: 1, gender: 'M', region: 'americas' },
   { country: 'el-salvador', slug: 'primera-division', name: 'Primera División', tier: 1, gender: 'M', region: 'americas' },
@@ -253,11 +258,58 @@ export const LEAGUES = [
  */
 export const EXCLUDED_SLUGS = new Set([
   'chile/segunda-division',
+  // The Canadian Championship is the national cup, not a division — its name
+  // gives no hint of that, so it needs naming outright.
+  'canada/championship',
+  // Finland restructured in 2024: Veikkausliiga, then Ykkösliiga, then
+  // Ykkönen. The old name now sits at the third tier.
+  'finland/ykkonen',
   'usa/mls-next-pro',
   'brazil/cearense-3',
   'argentina/torneo-promocional-amateur',
 ]);
 
+
+/**
+ * International club competitions. These carry no tier: the Champions League
+ * and the Conference League are parallel competitions, not a pyramid, so the
+ * tier-1/tier-2 idea that scopes the domestic leagues does not apply. They are
+ * marked `kind: 'international'` instead and reported in their own section.
+ *
+ * Slugs marked "confirmed" were read from the live feed; the rest are the
+ * expected names and will surface in the report's needs-review list if wrong.
+ */
+export const INTERNATIONAL = [
+  // --- UEFA (confirmed against the feed) ------------------------------------
+  { country: 'europe', slug: 'champions-league', name: 'Champions League', gender: 'M', region: 'europe' },
+  { country: 'europe', slug: 'europa-league', name: 'Europa League', gender: 'M', region: 'europe' },
+  { country: 'europe', slug: 'conference-league', name: 'Conference League', gender: 'M', region: 'europe' },
+  { country: 'europe', slug: 'champions-league-women', name: 'Champions League Women', gender: 'W', region: 'europe' },
+  { country: 'europe', slug: 'uefa-super-cup', name: 'UEFA Super Cup', gender: 'M', region: 'europe' },
+
+  // --- CONCACAF (leagues-cup and the Central American Cup confirmed) --------
+  { country: 'north-central-america', slug: 'leagues-cup', name: 'Leagues Cup', gender: 'M', region: 'americas' },
+  { country: 'north-central-america', slug: 'concacaf-central-american-cup', name: 'CONCACAF Central American Cup', gender: 'M', region: 'americas' },
+  { country: 'north-central-america', slug: 'concacaf-champions-cup', name: 'CONCACAF Champions Cup', gender: 'M', region: 'americas' },
+
+  // --- CONMEBOL (expected slugs, not yet seen in a live sweep) -------------
+  { country: 'south-america', slug: 'copa-libertadores', name: 'Copa Libertadores', gender: 'M', region: 'americas' },
+  { country: 'south-america', slug: 'copa-sudamericana', name: 'Copa Sudamericana', gender: 'M', region: 'americas' },
+  { country: 'south-america', slug: 'recopa-sudamericana', name: 'Recopa Sudamericana', gender: 'M', region: 'americas' },
+
+  // --- AFC (expected slugs) ------------------------------------------------
+  { country: 'asia', slug: 'afc-champions-league', name: 'AFC Champions League', gender: 'M', region: 'asia' },
+  { country: 'asia', slug: 'afc-challenge-league', name: 'AFC Challenge League', gender: 'M', region: 'asia' },
+];
+
+/** Competitions under a confederation that are deliberately not reported. */
+export const INTERNATIONAL_EXCLUDED = new Set([
+  // A pre-season invitational, not a competitive continental tie.
+  'europe/emirates-cup',
+]);
+
 export const LEAGUE_INDEX = new Map(
-  LEAGUES.map((l) => [`${l.country}/${l.slug}`, l]),
+  [...LEAGUES, ...INTERNATIONAL.map((c) => ({ tier: null, kind: 'international', ...c }))].map(
+    (l) => [`${l.country}/${l.slug}`, l],
+  ),
 );

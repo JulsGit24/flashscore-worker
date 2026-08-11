@@ -133,14 +133,17 @@ test('classifyCompetition rejects out-of-region and non-senior football', () => 
   );
 });
 
-test('an unknown European league is queued for review, not silently dropped', () => {
+test('an unknown in-region league is queued for review, not silently dropped', () => {
+  // Not a cup, not obviously a lower tier, not on the allowlist — most likely a
+  // slug that changed upstream, which is exactly what review exists to catch.
   const verdict = classifyCompetition({
     country: 'england',
-    slug: 'fa-cup',
-    name: 'ENGLAND: FA Cup',
+    slug: 'super-league-renamed',
+    name: 'ENGLAND: Super League',
   });
   assert.equal(verdict.include, false);
   assert.equal(verdict.reason, 'needs-review');
+  assert.equal(verdict.region, 'europe');
 });
 
 test('classifyCompetition tags each league with its region', () => {
@@ -199,5 +202,102 @@ test('end to end: the sample day feed yields exactly the in-scope games', () => 
   assert.deepEqual(
     kept.map((m) => `${m.home} v ${m.away}`),
     ['Arsenal v Sheffield Utd', 'Brighton v Man City', 'Hammarby v Vittsjo'],
+  );
+});
+
+test('slug corrections read from the live feed all classify', () => {
+  const cases = [
+    ['asia', 'afc-champions-league', 'ASIA: AFC Champions League - Qualification'],
+    ['asia', 'afc-challenge-league', 'ASIA: AFC Challenge League - Qualification'],
+    ['northern-ireland', 'nifl-championship', 'NORTHERN IRELAND: NIFL Championship'],
+    ['chile', 'liga-de-ascenso', 'CHILE: Liga de Ascenso'],
+    ['costa-rica', 'liga-de-ascenso', 'COSTA RICA: Liga de Ascenso - Apertura'],
+    ['south-america', 'copa-libertadores', 'SOUTH AMERICA: Copa Libertadores'],
+    ['south-america', 'copa-sudamericana', 'SOUTH AMERICA: Copa Sudamericana'],
+  ];
+  for (const [country, slug, name] of cases) {
+    assert.equal(classifyCompetition({ country, slug, name }).include, true, name);
+  }
+});
+
+test('domestic cups are set aside with their own reason, not left for review', () => {
+  const cups = [
+    { country: 'czech-republic', slug: 'mol-cup', name: 'CZECH REPUBLIC: MOL Cup' },
+    { country: 'denmark', slug: 'betano-pokalen', name: 'DENMARK: Betano Pokalen' },
+    { country: 'greece', slug: 'greek-cup', name: 'GREECE: Greek Cup - Qualification' },
+    { country: 'scotland', slug: 'challenge-cup', name: 'SCOTLAND: Challenge Cup' },
+    { country: 'paraguay', slug: 'copa-paraguay', name: 'PARAGUAY: Copa Paraguay' },
+  ];
+  for (const c of cups) {
+    assert.equal(classifyCompetition(c).reason, 'domestic-cup', c.name);
+  }
+});
+
+test('an allowlisted competition with "cup" in its name is not swept up', () => {
+  // Paraguay's top flight and the UEFA Super Cup both read as cups by name;
+  // the allowlist is consulted first, so neither is lost.
+  for (const [country, slug, name] of [
+    ['paraguay', 'copa-de-primera', 'PARAGUAY: Copa de Primera - Clausura'],
+    ['europe', 'uefa-super-cup', 'EUROPE: UEFA Super Cup'],
+    ['north-central-america', 'concacaf-central-american-cup', 'CONCACAF Central American Cup'],
+  ]) {
+    assert.equal(classifyCompetition({ country, slug, name }).include, true, name);
+  }
+});
+
+test('regional and restructured tiers surfaced by the live run are excluded', () => {
+  const cases = [
+    { country: 'finland', slug: 'ykkonen', name: 'FINLAND: Ykkonen' },
+    { country: 'denmark', slug: '3rd-division', name: 'DENMARK: 3rd Division' },
+    { country: 'england', slug: 'npl-premier-division', name: 'ENGLAND: NPL Premier Division' },
+    { country: 'austria', slug: 'oberosterreich', name: 'AUSTRIA: Oberosterreich' },
+    { country: 'brazil', slug: 'paulista-women', name: 'BRAZIL: Paulista Women' },
+    { country: 'brazil', slug: 'acreano-2', name: 'BRAZIL: Acreano 2' },
+  ];
+  for (const c of cases) {
+    assert.equal(classifyCompetition(c).reason, 'tier-3-or-below', c.name);
+  }
+});
+
+test('Denmark’s 1st Division is the second tier and survives the ordinal rule', () => {
+  assert.equal(
+    classifyCompetition({
+      country: 'denmark',
+      slug: '1st-division',
+      name: 'DENMARK: 1st Division',
+    }).include,
+    true,
+  );
+});
+
+test('the last two review entries from the live run are now classified', () => {
+  // A regional Austrian league, and a national cup whose name says "Championship".
+  assert.equal(
+    classifyCompetition({ country: 'austria', slug: 'salzburg', name: 'AUSTRIA: Salzburg' }).reason,
+    'tier-3-or-below',
+  );
+  assert.equal(
+    classifyCompetition({
+      country: 'canada',
+      slug: 'championship',
+      name: 'CANADA: Championship',
+    }).reason,
+    'tier-3-or-below',
+  );
+  // The Austrian top flight is unaffected — RB Salzburg is a team, not a
+  // competition, and only competition names reach these rules.
+  assert.equal(
+    classifyCompetition({ country: 'austria', slug: 'bundesliga', name: 'AUSTRIA: Bundesliga' })
+      .include,
+    true,
+  );
+  // And Canada's actual top flight still qualifies.
+  assert.equal(
+    classifyCompetition({
+      country: 'canada',
+      slug: 'canadian-premier-league',
+      name: 'CANADA: Canadian Premier League',
+    }).include,
+    true,
   );
 });

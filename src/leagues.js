@@ -1,4 +1,9 @@
-import { EXCLUDED_SLUGS, LEAGUE_INDEX, regionOf } from './leagues.data.js';
+import {
+  EXCLUDED_SLUGS,
+  INTERNATIONAL_EXCLUDED,
+  LEAGUE_INDEX,
+  regionOf,
+} from './leagues.data.js';
 
 /**
  * Competition names that are third tier or below, or otherwise not senior
@@ -29,11 +34,22 @@ const TIER3_PLUS_PATTERNS = [
   /\bsegunda\s+divisi[oó]n\s+profesional\b/i,                       // Chile
   /\bliga\s+premier\b|\bserie\s+a\s+de\s+m[eé]xico\b/i,           // Mexico
   /\bsegunda\s+categor[ií]a\b|\bcopa\s+per[uú]\b/i,                 // Ecuador / Peru
+  // Ordinal division names. Second tiers that use one are allowlisted by slug
+  // before this runs, so only the genuinely lower ones are caught.
+  /\b(3rd|4th|5th)\s+division\b/i,
+  // English non-league, and the Austrian and Brazilian regional pyramids.
+  /\bnpl\b/i,
+  /\bober[oö]sterreich\b|\bk[aä]rnten\b|\bsteiermark\b|\bvorarlberg\b|\bburgenland\b|\bsalzburg\b|\btirol\b/i,
+  /\b(acreano|alagoano|amapaense|amazonense|baiano|brasiliense|capixaba|carioca|catarinense|cearense|gaucho|goiano|maranhense|matogrossense|mineiro|paraense|paraibano|paranaense|paulista|pernambucano|piauiense|potiguar|rondoniense|roraimense|sergipano|tocantinense)\b/i,
   // Asia: tier 3 and below.
   /\bj3\s*league\b|\bjfl\b/i,                                       // Japan
   /\bk[3-7]\s*league\b/i,                                            // Korea
   /\bchina\s+league\s+two\b/i,
 ];
+
+/** Knockout cups, which this report does not cover. */
+const CUP_PATTERN =
+  /\bcup\b|\bcopa\b|\bpokal\b|\bcupen\b|\bpokalen\b|\btrophy\b|\bshield\b|\bbeker\b|\bcoupe\b|\bcoppa\b|\btaca\b|\btaça\b/i;
 
 /** Not senior first-team league football at all. */
 const NON_SENIOR_PATTERNS = [
@@ -72,6 +88,9 @@ export function classifyCompetition(competition) {
   if (EXCLUDED_SLUGS.has(`${country}/${slug}`)) {
     return { include: false, reason: 'tier-3-or-below' };
   }
+  if (INTERNATIONAL_EXCLUDED.has(`${country}/${slug}`)) {
+    return { include: false, reason: 'not-competitive' };
+  }
 
   // The allowlist is authoritative and is consulted before the tier-3 regexes,
   // so a legitimately top-flight name that happens to look like a lower tier
@@ -83,9 +102,18 @@ export function classifyCompetition(competition) {
     if (re.test(label)) return { include: false, reason: 'tier-3-or-below' };
   }
 
+  // Domestic cups are out of scope by design — the brief is leagues — and they
+  // are frequent enough that leaving them in the review list would bury the
+  // slug corrections it exists to surface. Allowlisted competitions whose name
+  // contains "cup" (Paraguay's Copa de Primera, the UEFA Super Cup) never reach
+  // here, because the allowlist is consulted first.
+  if (CUP_PATTERN.test(label)) {
+    return { include: false, reason: 'domestic-cup', region: regionOf(country) };
+  }
+
   // In a reported region, senior, not obviously a lower tier — but not in the
-  // allowlist. Most often a cup, a super cup, or a slug that changed. Surfaced
-  // for review instead of being guessed at.
+  // allowlist. Most often a slug that changed upstream. Surfaced for review
+  // instead of being guessed at.
   return { include: false, reason: 'needs-review', region: regionOf(country) };
 }
 

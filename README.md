@@ -29,16 +29,51 @@ fetch and share one results cache.
 ## What it covers
 
 - **Geography**: the region's countries only.
+- **Domestic and international**: the region's leagues, plus the continental
+  club competitions filed under it — UEFA's under `europe`, CONMEBOL's and
+  CONCACAF's under `americas`, the AFC's under `asia`.
 - **Tiers**: first tier ("main") and second tier ("B") only. Third tier and
   below — League One, 3. Liga, Serie C, Primera Federación, II liga — are
   excluded, as are youth, reserve, and friendly fixtures.
 - **Both genders**: men's and women's leagues are treated identically.
 - Fixtures both live and still to kick off.
 
+### International competitions
+
+Continental competitions sit under confederation pseudo-countries in the feed
+(`europe/champions-league`, `north-central-america/leagues-cup`), so those
+pseudo-countries are members of the region whose report they belong in.
+
+They carry **no tier**: the Champions League and the Conference League are
+parallel competitions, not a pyramid, so the tier-1/tier-2 idea that scopes the
+domestic leagues does not apply to them. They are marked `kind: 'international'`
+instead, listed in their own block after the domestic leagues, and headed by
+competition name alone rather than by country and tier.
+
+Two caveats worth knowing before reading their numbers:
+
+- **The table underneath is thin.** A continental competition's "table" is a
+  qualifying round or a group stage, so most ties will sit at `◔` or `○`
+  confidence for a while — the same honesty mark the domestic games use.
+- **All slugs are now confirmed against the live feed.** UEFA's four
+  competitions and the Super Cup, the Leagues Cup and the CONCACAF Central
+  American Cup came from a sweep; Copa Libertadores and Copa Sudamericana were
+  guessed correctly and confirmed by appearing in a run; the AFC pair were
+  guessed *wrong* and corrected to `afc-champions-league` and
+  `afc-challenge-league` from the needs-review list.
+
 The competition list lives in [`src/leagues.data.js`](src/leagues.data.js).
 Anything in-region and senior that isn't in it is reported in a **needs review**
 section at the bottom of the report rather than being silently dropped — that's
-the signal to add a league or to fix a slug that changed upstream.
+the signal to add a league or to fix a slug that changed upstream. That loop has
+now corrected a dozen slugs that were guessed wrong on first write.
+
+**Domestic cups are out of scope** — the brief is leagues. They are classified
+`domestic-cup` and set aside rather than left in the review list, where their
+volume would bury the slug corrections review exists to surface. An allowlisted
+competition whose name happens to contain "cup" (Paraguay's Copa de Primera, the
+UEFA Super Cup, Copa Libertadores) is unaffected, because the allowlist is
+consulted first.
 
 ## How games are ranked
 
@@ -140,7 +175,7 @@ format — the Americas and Asia reports are identical in shape.
 Requires Node 20+. No dependencies.
 
 ```bash
-npm test                       # 120 offline tests, no network
+npm test                       # 132 offline tests, no network
 npm run report                 # today, top 30, written to reports/
 node src/index.js --help
 node src/index.js --tz Europe/Madrid --min 40

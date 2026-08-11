@@ -2,26 +2,22 @@
   "date": "2026-08-11",
   "region": "americas",
   "timezone": "America/New_York",
-  "generatedAt": "2026-08-11T14:00:03.611Z",
+  "generatedAt": "2026-08-11T17:10:01.088Z",
   "stats": {
-    "totalFixtures": 277,
-    "inScope": 21,
+    "totalFixtures": 279,
+    "inScope": 33,
     "tablesLoaded": 321,
     "daysCached": 8,
     "daysFetched": 0,
     "daysFailed": 0,
     "outOfRegion": [
-      "asia",
       "australia",
-      "europe",
       "india",
       "kuwait",
       "kyrgyzstan",
       "mozambique",
-      "north-central-america",
       "somalia",
       "south-africa",
-      "south-america",
       "sri-lanka",
       "world",
       "yemen"
@@ -37,6 +33,7 @@
       "country": "argentina",
       "league": "Liga Profesional",
       "tier": 1,
+      "kind": "domestic",
       "gender": "M",
       "home": "Talleres Cordoba",
       "away": "Lanus",
@@ -105,6 +102,7 @@
       "country": "colombia",
       "league": "Primera B",
       "tier": 2,
+      "kind": "domestic",
       "gender": "M",
       "home": "Leones",
       "away": "Real Cundinamarca",
@@ -171,6 +169,7 @@
       "country": "brazil",
       "league": "Brasileiro Women",
       "tier": 1,
+      "kind": "domestic",
       "gender": "W",
       "home": "America Mineiro W",
       "away": "Flamengo W",
@@ -237,6 +236,7 @@
       "country": "chile",
       "league": "Liga de Primera",
       "tier": 1,
+      "kind": "domestic",
       "gender": "M",
       "home": "A. Italiano",
       "away": "Nublense",
@@ -303,6 +303,7 @@
       "country": "ecuador",
       "league": "LigaPro",
       "tier": 1,
+      "kind": "domestic",
       "gender": "M",
       "home": "Dep. Cuenca",
       "away": "Manta",
@@ -369,6 +370,7 @@
       "country": "mexico",
       "league": "Liga MX Femenil",
       "tier": 1,
+      "kind": "domestic",
       "gender": "W",
       "home": "Toluca W",
       "away": "Juarez W",
@@ -437,6 +439,7 @@
       "country": "argentina",
       "league": "Liga Profesional",
       "tier": 1,
+      "kind": "domestic",
       "gender": "M",
       "home": "Union de Santa Fe",
       "away": "Central Cordoba",
@@ -500,9 +503,77 @@
     {
       "kickoff": "2026-08-11T01:00:00.000Z",
       "kickoffLocal": "21:00",
+      "country": "costa-rica",
+      "league": "Liga de Ascenso",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Pitbulls",
+      "away": "Guadalupe",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 28.3,
+      "mismatchIndex": 0,
+      "rankScore": 28.3,
+      "projected": {
+        "home": 1.54,
+        "away": 1.26,
+        "total": 2.8
+      },
+      "probabilities": {
+        "home": 0.43829048509994195,
+        "draw": 0.2500061158651084,
+        "away": 0.31170339903495003,
+        "btts": 0.5627748030864977,
+        "over15": 0.7689215744941376,
+        "over25": 0.5305459355512477,
+        "over35": 0.3080620058712174,
+        "under15": 0.23107842550586244,
+        "under25": 0.46945406444875226
+      },
+      "pick": {
+        "side": "Pitbulls",
+        "where": "H",
+        "probability": 0.43829048509994195
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-11T01:00:00.000Z",
+      "kickoffLocal": "21:00",
       "country": "panama",
       "league": "Liga Panameña",
       "tier": 1,
+      "kind": "domestic",
       "gender": "M",
       "home": "Independiente",
       "away": "Deportivo Universitario",
@@ -569,6 +640,7 @@
       "country": "mexico",
       "league": "Liga MX Femenil",
       "tier": 1,
+      "kind": "domestic",
       "gender": "W",
       "home": "Club Leon W",
       "away": "Tigres UANL W",
@@ -636,6 +708,7 @@
       "country": "argentina",
       "league": "Primera A Women",
       "tier": 1,
+      "kind": "domestic",
       "gender": "W",
       "home": "Huracan W",
       "away": "Social Atletico Television W",
@@ -702,6 +775,7 @@
       "country": "colombia",
       "league": "Primera B",
       "tier": 2,
+      "kind": "domestic",
       "gender": "M",
       "home": "Tigres",
       "away": "Envigado",
@@ -768,6 +842,7 @@
       "country": "colombia",
       "league": "Primera B",
       "tier": 2,
+      "kind": "domestic",
       "gender": "M",
       "home": "Real Santander",
       "away": "Barranquilla",
@@ -834,6 +909,7 @@
       "country": "colombia",
       "league": "Primera A",
       "tier": 1,
+      "kind": "domestic",
       "gender": "M",
       "home": "Aguilas",
       "away": "Llaneros",
@@ -900,6 +976,7 @@
       "country": "colombia",
       "league": "Liga Femenina",
       "tier": 1,
+      "kind": "domestic",
       "gender": "W",
       "home": "Ind. Medellin W",
       "away": "America de Cali W",
@@ -966,6 +1043,7 @@
       "country": "colombia",
       "league": "Liga Femenina",
       "tier": 1,
+      "kind": "domestic",
       "gender": "W",
       "home": "Orsomarso W",
       "away": "Dep. Pasto W",
@@ -1032,6 +1110,7 @@
       "country": "colombia",
       "league": "Liga Femenina",
       "tier": 1,
+      "kind": "domestic",
       "gender": "W",
       "home": "Santa Fe W",
       "away": "Fortaleza W",
@@ -1093,11 +1172,146 @@
       ]
     },
     {
+      "kickoff": "2026-08-11T22:00:00.000Z",
+      "kickoffLocal": "18:00",
+      "country": "south-america",
+      "league": "Copa Libertadores",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Fluminense (Bra)",
+      "away": "Ind. Rivadavia (Arg)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 24.3,
+      "mismatchIndex": 0,
+      "rankScore": 24.3,
+      "projected": {
+        "home": 1.49,
+        "away": 1.21,
+        "total": 2.7
+      },
+      "probabilities": {
+        "home": 0.43668843926173995,
+        "draw": 0.2552487470496958,
+        "away": 0.3080628136885635,
+        "btts": 0.5436354803453914,
+        "over15": 0.7513394574332953,
+        "over25": 0.5063752202290684,
+        "over35": 0.28590740674526427,
+        "under15": 0.24866054256670467,
+        "under25": 0.49362477977093155
+      },
+      "pick": {
+        "side": "Fluminense (Bra)",
+        "where": "H",
+        "probability": 0.43668843926173995
+      },
+      "confidence": "baseline",
+      "basis": "league baseline",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-11T22:00:00.000Z",
+      "kickoffLocal": "18:00",
+      "country": "south-america",
+      "league": "Copa Sudamericana",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Boca Juniors (Arg)",
+      "away": "Recoleta (Par)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 24.3,
+      "mismatchIndex": 0,
+      "rankScore": 24.3,
+      "projected": {
+        "home": 1.49,
+        "away": 1.21,
+        "total": 2.7
+      },
+      "probabilities": {
+        "home": 0.43668843926173995,
+        "draw": 0.2552487470496958,
+        "away": 0.3080628136885635,
+        "btts": 0.5436354803453914,
+        "over15": 0.7513394574332953,
+        "over25": 0.5063752202290684,
+        "over35": 0.28590740674526427,
+        "under15": 0.24866054256670467,
+        "under25": 0.49362477977093155
+      },
+      "pick": {
+        "side": "Boca Juniors (Arg)",
+        "where": "H",
+        "probability": 0.43668843926173995
+      },
+      "confidence": "baseline",
+      "basis": "league baseline",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
       "kickoff": "2026-08-11T22:30:00.000Z",
       "kickoffLocal": "18:30",
       "country": "brazil",
       "league": "Serie B",
       "tier": 2,
+      "kind": "domestic",
       "gender": "M",
       "home": "Avai",
       "away": "CRB",
@@ -1164,6 +1378,7 @@
       "country": "colombia",
       "league": "Primera B",
       "tier": 2,
+      "kind": "domestic",
       "gender": "M",
       "home": "Cartagena",
       "away": "Bogota",
@@ -1227,9 +1442,77 @@
     {
       "kickoff": "2026-08-11T23:00:00.000Z",
       "kickoffLocal": "19:00",
+      "country": "chile",
+      "league": "Liga de Ascenso",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "D. Puerto Montt",
+      "away": "U. Espanola",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TT",
+          "played": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 2,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "L",
+          "played": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 3,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 11,
+      "awayRank": 15,
+      "goalsIndex": 0,
+      "mismatchIndex": 15.3,
+      "rankScore": 15.3,
+      "projected": {
+        "home": 1.35,
+        "away": 0.67,
+        "total": 2.02
+      },
+      "probabilities": {
+        "home": 0.5320748876823945,
+        "draw": 0.2826610564800234,
+        "away": 0.18526405583758243,
+        "btts": 0.361706601470935,
+        "over15": 0.5993804159103198,
+        "over25": 0.32873668231437086,
+        "over35": 0.14650323502643142,
+        "under15": 0.40061958408968024,
+        "under25": 0.6712633176856291
+      },
+      "pick": {
+        "side": "D. Puerto Montt",
+        "where": "H",
+        "probability": 0.5320748876823945
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-11T23:00:00.000Z",
+      "kickoffLocal": "19:00",
       "country": "colombia",
       "league": "Primera A",
       "tier": 1,
+      "kind": "domestic",
       "gender": "M",
       "home": "Ind. Medellin",
       "away": "Millonarios",
@@ -1296,6 +1579,7 @@
       "country": "colombia",
       "league": "Primera B",
       "tier": 2,
+      "kind": "domestic",
       "gender": "M",
       "home": "Patriotas",
       "away": "Orsomarso",
@@ -1357,11 +1641,146 @@
       ]
     },
     {
+      "kickoff": "2026-08-11T23:30:00.000Z",
+      "kickoffLocal": "19:30",
+      "country": "north-central-america",
+      "league": "Leagues Cup",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Charlotte",
+      "away": "Pachuca",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 24.3,
+      "mismatchIndex": 0,
+      "rankScore": 24.3,
+      "projected": {
+        "home": 1.49,
+        "away": 1.21,
+        "total": 2.7
+      },
+      "probabilities": {
+        "home": 0.43668843926173995,
+        "draw": 0.2552487470496958,
+        "away": 0.3080628136885635,
+        "btts": 0.5436354803453914,
+        "over15": 0.7513394574332953,
+        "over25": 0.5063752202290684,
+        "over35": 0.28590740674526427,
+        "under15": 0.24866054256670467,
+        "under25": 0.49362477977093155
+      },
+      "pick": {
+        "side": "Charlotte",
+        "where": "H",
+        "probability": 0.43668843926173995
+      },
+      "confidence": "baseline",
+      "basis": "league baseline",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-11T23:30:00.000Z",
+      "kickoffLocal": "19:30",
+      "country": "north-central-america",
+      "league": "Leagues Cup",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Columbus Crew",
+      "away": "UNAM Pumas",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 24.3,
+      "mismatchIndex": 0,
+      "rankScore": 24.3,
+      "projected": {
+        "home": 1.49,
+        "away": 1.21,
+        "total": 2.7
+      },
+      "probabilities": {
+        "home": 0.43668843926173995,
+        "draw": 0.2552487470496958,
+        "away": 0.3080628136885635,
+        "btts": 0.5436354803453914,
+        "over15": 0.7513394574332953,
+        "over25": 0.5063752202290684,
+        "over35": 0.28590740674526427,
+        "under15": 0.24866054256670467,
+        "under25": 0.49362477977093155
+      },
+      "pick": {
+        "side": "Columbus Crew",
+        "where": "H",
+        "probability": 0.43668843926173995
+      },
+      "confidence": "baseline",
+      "basis": "league baseline",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
       "kickoff": "2026-08-12T00:00:00.000Z",
       "kickoffLocal": "20:00",
       "country": "argentina",
       "league": "Liga Profesional",
       "tier": 1,
+      "kind": "domestic",
       "gender": "M",
       "home": "Talleres Cordoba",
       "away": "Lanus",
@@ -1423,11 +1842,414 @@
       ]
     },
     {
+      "kickoff": "2026-08-12T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "country": "north-central-america",
+      "league": "CONCACAF Central American Cup",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Plaza Amador (Pan)",
+      "away": "Xelaju (Gtm)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 24.3,
+      "mismatchIndex": 0,
+      "rankScore": 24.3,
+      "projected": {
+        "home": 1.49,
+        "away": 1.21,
+        "total": 2.7
+      },
+      "probabilities": {
+        "home": 0.43668843926173995,
+        "draw": 0.2552487470496958,
+        "away": 0.3080628136885635,
+        "btts": 0.5436354803453914,
+        "over15": 0.7513394574332953,
+        "over25": 0.5063752202290684,
+        "over35": 0.28590740674526427,
+        "under15": 0.24866054256670467,
+        "under25": 0.49362477977093155
+      },
+      "pick": {
+        "side": "Plaza Amador (Pan)",
+        "where": "H",
+        "probability": 0.43668843926173995
+      },
+      "confidence": "baseline",
+      "basis": "league baseline",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-12T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "country": "north-central-america",
+      "league": "Leagues Cup",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "FC Cincinnati",
+      "away": "Atlas",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 24.3,
+      "mismatchIndex": 0,
+      "rankScore": 24.3,
+      "projected": {
+        "home": 1.49,
+        "away": 1.21,
+        "total": 2.7
+      },
+      "probabilities": {
+        "home": 0.43668843926173995,
+        "draw": 0.2552487470496958,
+        "away": 0.3080628136885635,
+        "btts": 0.5436354803453914,
+        "over15": 0.7513394574332953,
+        "over25": 0.5063752202290684,
+        "over35": 0.28590740674526427,
+        "under15": 0.24866054256670467,
+        "under25": 0.49362477977093155
+      },
+      "pick": {
+        "side": "FC Cincinnati",
+        "where": "H",
+        "probability": 0.43668843926173995
+      },
+      "confidence": "baseline",
+      "basis": "league baseline",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-12T00:30:00.000Z",
+      "kickoffLocal": "20:30",
+      "country": "north-central-america",
+      "league": "Leagues Cup",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Minnesota United",
+      "away": "Atlante",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 24.3,
+      "mismatchIndex": 0,
+      "rankScore": 24.3,
+      "projected": {
+        "home": 1.49,
+        "away": 1.21,
+        "total": 2.7
+      },
+      "probabilities": {
+        "home": 0.43668843926173995,
+        "draw": 0.2552487470496958,
+        "away": 0.3080628136885635,
+        "btts": 0.5436354803453914,
+        "over15": 0.7513394574332953,
+        "over25": 0.5063752202290684,
+        "over35": 0.28590740674526427,
+        "under15": 0.24866054256670467,
+        "under25": 0.49362477977093155
+      },
+      "pick": {
+        "side": "Minnesota United",
+        "where": "H",
+        "probability": 0.43668843926173995
+      },
+      "confidence": "baseline",
+      "basis": "league baseline",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-12T00:30:00.000Z",
+      "kickoffLocal": "20:30",
+      "country": "south-america",
+      "league": "Copa Libertadores",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Deportes Tolima (Col)",
+      "away": "Ind. del Valle (Ecu)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 24.3,
+      "mismatchIndex": 0,
+      "rankScore": 24.3,
+      "projected": {
+        "home": 1.49,
+        "away": 1.21,
+        "total": 2.7
+      },
+      "probabilities": {
+        "home": 0.43668843926173995,
+        "draw": 0.2552487470496958,
+        "away": 0.3080628136885635,
+        "btts": 0.5436354803453914,
+        "over15": 0.7513394574332953,
+        "over25": 0.5063752202290684,
+        "over35": 0.28590740674526427,
+        "under15": 0.24866054256670467,
+        "under25": 0.49362477977093155
+      },
+      "pick": {
+        "side": "Deportes Tolima (Col)",
+        "where": "H",
+        "probability": 0.43668843926173995
+      },
+      "confidence": "baseline",
+      "basis": "league baseline",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-12T00:30:00.000Z",
+      "kickoffLocal": "20:30",
+      "country": "south-america",
+      "league": "Copa Libertadores",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Estudiantes L.P. (Arg)",
+      "away": "U. Catolica (Chi)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 24.3,
+      "mismatchIndex": 0,
+      "rankScore": 24.3,
+      "projected": {
+        "home": 1.49,
+        "away": 1.21,
+        "total": 2.7
+      },
+      "probabilities": {
+        "home": 0.43668843926173995,
+        "draw": 0.2552487470496958,
+        "away": 0.3080628136885635,
+        "btts": 0.5436354803453914,
+        "over15": 0.7513394574332953,
+        "over25": 0.5063752202290684,
+        "over35": 0.28590740674526427,
+        "under15": 0.24866054256670467,
+        "under25": 0.49362477977093155
+      },
+      "pick": {
+        "side": "Estudiantes L.P. (Arg)",
+        "where": "H",
+        "probability": 0.43668843926173995
+      },
+      "confidence": "baseline",
+      "basis": "league baseline",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-12T00:30:00.000Z",
+      "kickoffLocal": "20:30",
+      "country": "south-america",
+      "league": "Copa Sudamericana",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Bolivar (Bol)",
+      "away": "Sao Paulo (Bra)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": null,
+      "awayRank": null,
+      "goalsIndex": 24.3,
+      "mismatchIndex": 0,
+      "rankScore": 24.3,
+      "projected": {
+        "home": 1.49,
+        "away": 1.21,
+        "total": 2.7
+      },
+      "probabilities": {
+        "home": 0.43668843926173995,
+        "draw": 0.2552487470496958,
+        "away": 0.3080628136885635,
+        "btts": 0.5436354803453914,
+        "over15": 0.7513394574332953,
+        "over25": 0.5063752202290684,
+        "over35": 0.28590740674526427,
+        "under15": 0.24866054256670467,
+        "under25": 0.49362477977093155
+      },
+      "pick": {
+        "side": "Bolivar (Bol)",
+        "where": "H",
+        "probability": 0.43668843926173995
+      },
+      "confidence": "baseline",
+      "basis": "league baseline",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
       "kickoff": "2026-08-12T00:45:00.000Z",
       "kickoffLocal": "20:45",
       "country": "colombia",
       "league": "Primera B",
       "tier": 2,
+      "kind": "domestic",
       "gender": "M",
       "home": "Boca Juniors",
       "away": "U. Magdalena",
@@ -1491,58 +2313,19 @@
   ],
   "needsReview": [
     {
-      "country": "brazil",
-      "slug": "acreano-2",
-      "name": "BRAZIL: Acreano 2"
-    },
-    {
-      "country": "brazil",
-      "slug": "copa-paulista",
-      "name": "BRAZIL: Copa Paulista"
-    },
-    {
-      "country": "brazil",
-      "slug": "amazonense-women",
-      "name": "BRAZIL: Amazonense Women"
-    },
-    {
-      "country": "brazil",
-      "slug": "paulista-women",
-      "name": "BRAZIL: Paulista Women"
-    },
-    {
       "country": "canada",
       "slug": "championship",
       "name": "CANADA: Championship"
-    },
-    {
-      "country": "chile",
-      "slug": "liga-de-ascenso",
-      "name": "CHILE: Liga de Ascenso"
-    },
-    {
-      "country": "costa-rica",
-      "slug": "liga-de-ascenso",
-      "name": "COSTA RICA: Liga de Ascenso - Apertura"
-    },
-    {
-      "country": "paraguay",
-      "slug": "copa-paraguay",
-      "name": "PARAGUAY: Copa Paraguay"
     }
   ],
   "outOfRegionCountries": [
-    "asia",
     "australia",
-    "europe",
     "india",
     "kuwait",
     "kyrgyzstan",
     "mozambique",
-    "north-central-america",
     "somalia",
     "south-africa",
-    "south-america",
     "sri-lanka",
     "world",
     "yemen"
