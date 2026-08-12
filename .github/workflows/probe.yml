@@ -17,22 +17,27 @@ jobs:
 
       - name: What can this runner render a PDF with?
         run: |
-          echo '### Runner rendering capability' >> "$GITHUB_STEP_SUMMARY"
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          echo '=== BROWSERS ==='
           for bin in google-chrome google-chrome-stable chromium chromium-browser; do
             path=$(command -v "$bin" || true)
             if [ -n "$path" ]; then
-              echo "$bin -> $path -> $("$bin" --version 2>&1 | head -1)"
+              echo "FOUND $bin -> $path -> $("$bin" --version 2>&1 | head -1)"
             else
-              echo "$bin -> absent"
+              echo "ABSENT $bin"
             fi
           done
-          echo "--- emoji fonts ---"
-          fc-list 2>/dev/null | grep -i -E 'emoji|noto color' | head -5 || echo 'none found'
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          echo '=== EMOJI FONTS ==='
+          fc-list 2>/dev/null | grep -i -E 'emoji' | head -5 || echo 'NO EMOJI FONT'
+          echo '=== PDF SMOKE TEST ==='
+          printf '<h1>hello</h1><p style="font-size:40px">flag test: \xf0\x9f\x87\xac\xf0\x9f\x87\xa7 \xf0\x9f\x87\xaf\xf0\x9f\x87\xb5</p>' > /tmp/t.html
+          if command -v google-chrome >/dev/null; then
+            google-chrome --headless --no-sandbox --disable-gpu \
+              --print-to-pdf=/tmp/t.pdf --no-pdf-header-footer file:///tmp/t.html 2>&1 | tail -3
+            echo "pdf: $(file -b /tmp/t.pdf 2>/dev/null) $(stat -c%s /tmp/t.pdf 2>/dev/null) bytes"
+          fi
 
-      - name: Feed field census
-        run: node tools/probe-feed.js
+      - name: Image hosts, with real filenames
+        run: node tools/probe-images.js
 
       - name: Image URL patterns
         run: |
