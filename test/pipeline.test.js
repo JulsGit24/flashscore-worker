@@ -21,7 +21,9 @@ const ARGS = {
 };
 
 const DAY = 86400;
-const day = (n) => 1_700_000_000 + n * DAY;
+// Midnight UTC, so hour offsets stay inside the same calendar day.
+const BASE_TS = Date.UTC(2023, 10, 24) / 1000;
+const day = (n) => BASE_TS + n * DAY;
 
 /**
  * Synthetic Premier League season as a double round robin with a strict
@@ -43,6 +45,12 @@ function premierLeagueHistory() {
   return out;
 }
 
+/**
+ * The recorded sample all sits on one UTC day; reports filter to their local
+ * day, so every call is anchored to it rather than to whenever the suite runs.
+ */
+const NOW = extractMatches(parseFeed(dayFeed)).find((m) => m.kickoff).kickoff;
+
 const deps = {
   fetchDayFixtures: async () => extractMatches(parseFeed(dayFeed)),
   updateHistory: async () => ({
@@ -54,7 +62,7 @@ const deps = {
 };
 
 test('the pipeline keeps only in-scope games and ranks the ones it can score', async () => {
-  const data = await buildReport(ARGS, deps);
+  const data = await buildReport(ARGS, deps, NOW);
 
   assert.equal(data.stats.totalFixtures, 6);
   assert.equal(data.stats.inScope, 3); // 2 Premier League + 1 Damallsvenskan
@@ -79,7 +87,7 @@ test('the pipeline keeps only in-scope games and ranks the ones it can score', a
 });
 
 test('the top-versus-bottom game outranks the two-even-teams game', async () => {
-  const data = await buildReport(ARGS, deps);
+  const data = await buildReport(ARGS, deps, NOW);
   const [first, second] = data.ranked;
   assert.ok(first.score.rankScore > second.score.rankScore);
   assert.ok(first.score.tags.includes('TOP_VS_BOTTOM'));
@@ -98,7 +106,7 @@ test('a fixture whose teams have barely played still gets numbers, marked low', 
       daysFetched: 1,
       daysFailed: 0,
     }),
-  });
+  }, NOW);
 
   assert.deepEqual(
     data.all.map((f) => `${f.home}: ${f.score.confidence}`),
@@ -116,7 +124,7 @@ test('a baseline fixture reads as a neutral league-average game', async () => {
   const data = await buildReport(ARGS, {
     ...deps,
     updateHistory: async () => ({ matches: [], daysCached: 0, daysFetched: 0, daysFailed: 0 }),
-  });
+  }, NOW);
 
   assert.equal(data.ranked.length, 0, 'nothing to separate, so nothing is shortlisted');
   for (const f of data.all) {
@@ -130,12 +138,12 @@ test('a baseline fixture reads as a neutral league-average game', async () => {
 });
 
 test('tier-3 competitions never reach the review list', async () => {
-  const data = await buildReport(ARGS, deps);
+  const data = await buildReport(ARGS, deps, NOW);
   assert.deepEqual(data.review, []);
 });
 
 test('markdown renders sections, per-league grouping and the new columns', async () => {
-  const data = await buildReport(ARGS, deps);
+  const data = await buildReport(ARGS, deps, NOW);
   const md = renderMarkdown(data);
 
   assert.match(md, /# Soccer shortlist/);
@@ -155,7 +163,7 @@ test('markdown renders sections, per-league grouping and the new columns', async
 });
 
 test('every in-scope fixture appears in the schedule, scored or not', async () => {
-  const data = await buildReport(ARGS, deps);
+  const data = await buildReport(ARGS, deps, NOW);
   const md = renderMarkdown(data);
   for (const name of ['Arsenal', 'Brighton', 'Hammarby']) {
     assert.ok(md.includes(name), `${name} should be in the full schedule`);
@@ -165,7 +173,7 @@ test('every in-scope fixture appears in the schedule, scored or not', async () =
 });
 
 test('the schedule is grouped by league and ordered earliest first inside it', async () => {
-  const data = await buildReport(ARGS, deps);
+  const data = await buildReport(ARGS, deps, NOW);
   const groups = groupFixtures(data.all);
 
   assert.deepEqual(
@@ -177,7 +185,7 @@ test('the schedule is grouped by league and ordered earliest first inside it', a
 });
 
 test('json carries probabilities, form and the strong-pick set', async () => {
-  const data = await buildReport(ARGS, deps);
+  const data = await buildReport(ARGS, deps, NOW);
   const json = JSON.parse(renderJson(data));
 
   assert.equal(json.timezone, 'UTC');
@@ -206,7 +214,7 @@ test('json carries probabilities, form and the strong-pick set', async () => {
 });
 
 test('strong picks only include sides at or above the threshold', async () => {
-  const data = await buildReport(ARGS, deps);
+  const data = await buildReport(ARGS, deps, NOW);
   for (const f of strongPicks(data.ranked, 0.7)) {
     assert.ok(f.score.pick.probability >= 0.7);
     assert.notEqual(f.score.pick.where, 'D', 'a draw is never a strong pick');
@@ -221,7 +229,7 @@ test('a history fetch failure degrades the run instead of killing it', async () 
       onError('day 2026-08-09: feed 503');
       return { matches: [], daysCached: 0, daysFetched: 0, daysFailed: 1 };
     },
-  });
+  }, NOW);
   assert.equal(data.ranked.length, 0, 'no history means nothing to rank');
   assert.equal(data.all.length, 3, 'but the schedule is still complete');
   assert.ok(data.all.every((f) => f.score.confidence === 'baseline'));
