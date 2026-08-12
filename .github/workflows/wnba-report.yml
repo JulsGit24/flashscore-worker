@@ -2,15 +2,26 @@ name: WNBA slate
 
 on:
   schedule:
-    # Target: the first opportunity at or after 16:00 America/New_York.
-    # Scheduled runs are routinely delayed, so try every hour through the
-    # evening; the gate stops once today's slate exists.
-    - cron: '7 20-23 * * *'
+    # Target: committed and waiting before the 16:15 read.
+    #
+    # GitHub cron is UTC, does not follow DST, and delivers scheduled runs late
+    # under load — routinely by an hour or more. So this fires every hour across
+    # a window and lets the gate decide; the gate is idempotent, stopping once
+    # today's slate exists.
+    #
+    # The window opens at 13:00 New York rather than 16:00. An earlier version
+    # opened at 16:00 against a reader that wakes at 16:15 — fifteen minutes of
+    # slack against a scheduler that is routinely an hour late, which is no
+    # slack at all. Tip-offs are published long before the afternoon.
+    - cron: '7 17-23 * * *'
   workflow_dispatch:
     inputs:
       day_offset:
         description: '0 = today, 1 = tomorrow'
         default: '0'
+      force:
+        description: 'regenerate even if today already has a slate'
+        default: 'false'
 
 permissions:
   contents: write
@@ -29,8 +40,13 @@ jobs:
           today=$(TZ=America/New_York date +%F)
 
           if [ "${{ github.event_name }}" != 'schedule' ]; then
-            echo 'go=true' >> "$GITHUB_OUTPUT"
-          elif [ "$hour" -lt 16 ]; then
+            if [ "${{ github.event.inputs.force }}" = 'true' ] || [ ! -f "reports/wnba/$today.md" ]; then
+              echo 'go=true' >> "$GITHUB_OUTPUT"
+            else
+              echo 'go=false' >> "$GITHUB_OUTPUT"
+              echo "Dispatched, but $today already has a slate. Re-run with force=true to replace it."
+            fi
+          elif [ "$hour" -lt 13 ]; then
             echo 'go=false' >> "$GITHUB_OUTPUT"
             echo "New York hour is $hour — too early. A later cron will pick it up."
           elif [ -f "reports/wnba/$today.md" ]; then
