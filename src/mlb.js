@@ -6,8 +6,6 @@
 // why baseball runs are neither Poisson like soccer goals nor normal like
 // basketball points.
 
-import { mkdir, writeFile } from 'node:fs/promises';
-import path from 'node:path';
 import { SPORT, fetchDayFixtures, DEFAULTS } from './flashscore.js';
 import { parseTournamentUrl } from './leagues.js';
 import { DEFAULT_RETAIN_DAYS, updateHistory } from './history.js';
@@ -15,6 +13,8 @@ import { buildStandings, headToHead, headToHeadSummary, recentForm } from './bas
 import { baselineRow, leagueContext, linesAtProbability, projectGame } from './baseball/model.js';
 import { renderJson, renderMarkdown } from './baseball/report.js';
 import { collectLocalDay } from './localtime.js';
+import { writeReportBundle } from './visual/write.js';
+import { mlbDocument } from './visual/model.js';
 
 export const MLB_PATH = 'usa/mlb';
 export const DEFAULT_CACHE = 'data/mlb-history.json';
@@ -183,6 +183,8 @@ export async function buildMlbReport(args, deps = {}, now = new Date()) {
         first: m.kickoff,
         home: m.home,
         away: m.away,
+        homeImage: m.homeImage ?? null,
+        awayImage: m.awayImage ?? null,
         projection,
         lines: linesAtProbability(projection, args.coverProbability ?? 0.7),
         form: {
@@ -206,17 +208,20 @@ async function main() {
   }
 
   const data = await buildMlbReport(args);
-  const outDir = path.join(args.outDir, 'mlb');
-  await mkdir(outDir, { recursive: true });
+  const { dir, pdf, warning } = await writeReportBundle({
+    outDir: args.outDir,
+    key: 'mlb',
+    date: data.date,
+    markdown: renderMarkdown(data),
+    json: renderJson(data),
+    doc: mlbDocument(data),
+  });
 
-  if (args.format === 'md' || args.format === 'both') {
-    const md = renderMarkdown(data);
-    await writeFile(path.join(outDir, `${data.date}.md`), md);
-    if (!args.quiet) process.stdout.write(`${md}\n`);
+  if (!args.quiet) {
+    process.stdout.write(`${renderMarkdown(data)}\n`);
+    process.stdout.write(`\nWrote ${dir}/report.{md,json${pdf ? ',pdf' : ''}}\n`);
   }
-  if (args.format === 'json' || args.format === 'both') {
-    await writeFile(path.join(outDir, `${data.date}.json`), renderJson(data));
-  }
+  if (warning) process.stderr.write(`\n${warning}\n`);
 
   if (data.stats.errors.length) {
     process.stderr.write(

@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-import { mkdir, writeFile } from 'node:fs/promises';
-import path from 'node:path';
 import { fetchDayFixtures, DEFAULTS } from './flashscore.js';
 import { collectLocalDay } from './localtime.js';
+import { writeReportBundle } from './visual/write.js';
+import { soccerDocument } from './visual/model.js';
 import { classifyCompetition, parseTournamentUrl } from './leagues.js';
 import { REGIONS, REGION_LABEL, regionOf } from './leagues.data.js';
 import { DEFAULT_CACHE, DEFAULT_RETAIN_DAYS, updateHistory } from './history.js';
@@ -245,17 +245,20 @@ async function main() {
   }
 
   const data = await buildReport(args);
-  const outDir = path.join(args.outDir, args.region);
-  await mkdir(outDir, { recursive: true });
+  const { dir, pdf, warning } = await writeReportBundle({
+    outDir: args.outDir,
+    key: args.region,
+    date: data.date,
+    markdown: renderMarkdown(data),
+    json: renderJson(data),
+    doc: soccerDocument(data),
+  });
 
-  if (args.format === 'md' || args.format === 'both') {
-    const md = renderMarkdown(data);
-    await writeFile(path.join(outDir, `${data.date}.md`), md);
-    if (!args.quiet) process.stdout.write(`${md}\n`);
+  if (!args.quiet) {
+    process.stdout.write(`${renderMarkdown(data)}\n`);
+    process.stdout.write(`\nWrote ${dir}/report.{md,json${pdf ? ',pdf' : ''}}\n`);
   }
-  if (args.format === 'json' || args.format === 'both') {
-    await writeFile(path.join(outDir, `${data.date}.json`), renderJson(data));
-  }
+  if (warning) process.stderr.write(`\n${warning}\n`);
 
   if (data.stats.errors.length) {
     process.stderr.write(

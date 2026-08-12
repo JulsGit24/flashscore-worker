@@ -40,7 +40,7 @@ jobs:
           today=$(TZ=America/New_York date +%F)
 
           if [ "${{ github.event_name }}" != 'schedule' ]; then
-            if [ "${{ github.event.inputs.force }}" = 'true' ] || [ ! -f "reports/wnba/$today.md" ]; then
+            if [ "${{ github.event.inputs.force }}" = 'true' ] || [ ! -f "reports/wnba/$today/report.md" ]; then
               echo 'go=true' >> "$GITHUB_OUTPUT"
             else
               echo 'go=false' >> "$GITHUB_OUTPUT"
@@ -49,7 +49,7 @@ jobs:
           elif [ "$hour" -lt 13 ]; then
             echo 'go=false' >> "$GITHUB_OUTPUT"
             echo "New York hour is $hour — too early. A later cron will pick it up."
-          elif [ -f "reports/wnba/$today.md" ]; then
+          elif [ -f "reports/wnba/$today/report.md" ]; then
             echo 'go=false' >> "$GITHUB_OUTPUT"
             echo "$today already has a slate; nothing to do."
           else
@@ -80,8 +80,8 @@ jobs:
       - name: Publish the slate to the job summary
         if: always()
         run: |
-          latest=$(ls -1 reports/wnba/*.md 2>/dev/null | sort | tail -1)
-          if [ -n "$latest" ]; then
+          latest=$(ls -1d reports/wnba/*/ 2>/dev/null | sort | tail -1)report.md
+          if [ -f "$latest" ]; then
             cat "$latest" >> "$GITHUB_STEP_SUMMARY"
           else
             echo 'No slate was produced — check the Generate step.' >> "$GITHUB_STEP_SUMMARY"

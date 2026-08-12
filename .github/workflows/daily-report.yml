@@ -45,7 +45,7 @@ jobs:
           today=$(TZ=America/New_York date +%F)
 
           if [ "${{ github.event_name }}" != 'schedule' ]; then
-            if [ "${{ github.event.inputs.force }}" = 'true' ] || [ ! -f "reports/europe/$today.md" ]; then
+            if [ "${{ github.event.inputs.force }}" = 'true' ] || [ ! -f "reports/europe/$today/report.md" ]; then
               echo 'go=true' >> "$GITHUB_OUTPUT"
             else
               echo 'go=false' >> "$GITHUB_OUTPUT"
@@ -54,7 +54,7 @@ jobs:
           elif [ "$hour" -lt 3 ]; then
             echo 'go=false' >> "$GITHUB_OUTPUT"
             echo "New York hour is $hour — too early. A later cron will pick it up."
-          elif [ -f "reports/europe/$today.md" ]; then
+          elif [ -f "reports/europe/$today/report.md" ]; then
             echo 'go=false' >> "$GITHUB_OUTPUT"
             echo "$today already has a report; nothing to do."
           else
@@ -96,8 +96,8 @@ jobs:
         run: |
           found=0
           for region in europe americas asia; do
-            latest=$(ls -1 "reports/$region"/*.md 2>/dev/null | sort | tail -1)
-            if [ -n "$latest" ]; then
+            latest=$(ls -1d "reports/$region"/*/ 2>/dev/null | sort | tail -1)report.md
+            if [ -f "$latest" ]; then
               found=1
               cat "$latest" >> "$GITHUB_STEP_SUMMARY"
               echo >> "$GITHUB_STEP_SUMMARY"
