@@ -2,12 +2,10 @@ name: WNBA slate
 
 on:
   schedule:
-    # Target: 16:00 America/New_York, year round. GitHub cron is UTC only and
-    # does not follow DST, so both candidate hours fire and the `gate` job
-    # checks the real New York hour — 20:0x UTC is 4pm EDT, 21:0x is 4pm EST,
-    # and whichever one is not 4pm stops before doing any work.
-    - cron: '7 20 * * *'
-    - cron: '7 21 * * *'
+    # Target: the first opportunity at or after 16:00 America/New_York.
+    # Scheduled runs are routinely delayed, so try every hour through the
+    # evening; the gate stops once today's slate exists.
+    - cron: '7 20-23 * * *'
   workflow_dispatch:
     inputs:
       day_offset:
@@ -23,14 +21,23 @@ jobs:
     outputs:
       go: ${{ steps.check.outputs.go }}
     steps:
+      - uses: actions/checkout@v4
+
       - id: check
         run: |
           hour=$(TZ=America/New_York date +%H)
-          if [ "${{ github.event_name }}" != 'schedule' ] || [ "$hour" = '16' ]; then
+          today=$(TZ=America/New_York date +%F)
+
+          if [ "${{ github.event_name }}" != 'schedule' ]; then
             echo 'go=true' >> "$GITHUB_OUTPUT"
-          else
+          elif [ "$hour" -lt 16 ]; then
             echo 'go=false' >> "$GITHUB_OUTPUT"
-            echo "New York hour is $hour, not 16 — this is the other DST slot."
+            echo "New York hour is $hour — too early. A later cron will pick it up."
+          elif [ -f "reports/wnba/$today.md" ]; then
+            echo 'go=false' >> "$GITHUB_OUTPUT"
+            echo "$today already has a slate; nothing to do."
+          else
+            echo 'go=true' >> "$GITHUB_OUTPUT"
           fi
 
   report:
@@ -73,5 +80,10 @@ jobs:
             echo 'No new slate to commit.'
           else
             git commit -m "WNBA slate for $(TZ=America/New_York date +%F)"
-            git push
+            for attempt in 1 2 3; do
+              git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0
+              sleep $((attempt * 5))
+            done
+            echo 'Could not push after three attempts.' >&2
+            exit 1
           fi
