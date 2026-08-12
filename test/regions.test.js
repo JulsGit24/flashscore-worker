@@ -17,7 +17,11 @@ const BASE = {
 };
 
 const DAY = 86400;
-const day = (n) => 1_700_000_000 + n * DAY;
+// Midnight UTC, so the hour offsets below stay inside the same calendar day.
+const BASE_TS = Date.UTC(2023, 10, 24) / 1000;
+const day = (n) => BASE_TS + n * DAY;
+/** The instant these fixtures are 'today' — reports filter to their local day. */
+const NOW = new Date(day(10) * 1000);
 
 /** One fixture per region, plus one that is out of scope entirely. */
 function worldFixtures() {
@@ -131,7 +135,7 @@ test('each region report contains only its own fixtures', async () => {
   };
 
   for (const region of REGIONS) {
-    const data = await buildReport({ ...BASE, region }, deps);
+    const data = await buildReport({ ...BASE, region }, deps, NOW);
     assert.deepEqual(
       data.all.map((f) => `${f.home} v ${f.away}`),
       expected[region],
@@ -151,14 +155,14 @@ test('each region report is titled and tagged for that region', async () => {
     asia: /# Soccer shortlist — Asia —/,
   };
   for (const region of REGIONS) {
-    const data = await buildReport({ ...BASE, region }, deps);
+    const data = await buildReport({ ...BASE, region }, deps, NOW);
     assert.match(renderMarkdown(data), titles[region]);
     assert.equal(JSON.parse(renderJson(data)).region, region);
   }
 });
 
 test('the Americas report groups by country, so Brazil and the USA stay apart', async () => {
-  const data = await buildReport({ ...BASE, region: 'americas' }, deps);
+  const data = await buildReport({ ...BASE, region: 'americas' }, deps, NOW);
   const md = renderMarkdown(data);
   assert.match(md, /### Brazil — Serie A · tier 1/);
   assert.match(md, /### USA — MLS · tier 1/);
@@ -175,7 +179,7 @@ test('country names render properly, not just title-cased slugs', async () => {
 });
 
 test('countries outside every region are recorded as a diagnostic', async () => {
-  const data = await buildReport({ ...BASE, region: 'europe' }, deps);
+  const data = await buildReport({ ...BASE, region: 'europe' }, deps, NOW);
   assert.deepEqual(data.stats.outOfRegion, ['nigeria']);
 });
 
@@ -223,6 +227,7 @@ test('international competitions render in their own block, after the domestic o
       ],
       updateHistory: async () => ({ matches: [], daysCached: 7, daysFetched: 0, daysFailed: 0 }),
     },
+    NOW,
   );
 
   assert.equal(data.all.length, 2, 'a continental tie is in scope for its region');
@@ -272,8 +277,8 @@ test('a continental tie lands only in its own region report', async () => {
     updateHistory: async () => ({ matches: [], daysCached: 7, daysFetched: 0, daysFailed: 0 }),
   };
 
-  const europe = await buildReport({ ...BASE, region: 'europe' }, deps2);
-  const americas = await buildReport({ ...BASE, region: 'americas' }, deps2);
+  const europe = await buildReport({ ...BASE, region: 'europe' }, deps2, NOW);
+  const americas = await buildReport({ ...BASE, region: 'americas' }, deps2, NOW);
   assert.deepEqual(europe.all.map((f) => f.home), ['Celje']);
   assert.deepEqual(americas.all.map((f) => f.home), ['Columbus Crew']);
 });

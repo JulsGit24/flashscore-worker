@@ -300,6 +300,9 @@ const deps = {
   }),
 };
 
+/** The fixtures above sit on the evening of the FIXTURE_TS day in New York. */
+const NOW = new Date((FIXTURE_TS + 19 * 3600) * 1000);
+
 const ARGS = {
   dayOffset: 0,
   tz: 'America/New_York',
@@ -309,7 +312,7 @@ const ARGS = {
 };
 
 test('the report covers MLB only, earliest first', async () => {
-  const data = await buildMlbReport(ARGS, deps);
+  const data = await buildMlbReport(ARGS, deps, NOW);
   assert.deepEqual(
     data.games.map((g) => g.home),
     ['Yankees', 'Dodgers'],
@@ -319,7 +322,7 @@ test('the report covers MLB only, earliest first', async () => {
 });
 
 test('form and head-to-head come through from the cache', async () => {
-  const data = await buildMlbReport(ARGS, deps);
+  const data = await buildMlbReport(ARGS, deps, NOW);
   const game = data.games.find((g) => g.home === 'Yankees');
 
   assert.equal(game.form.home.streak, 'WWW', 'the Yankees swept the cached meetings');
@@ -329,7 +332,7 @@ test('form and head-to-head come through from the cache', async () => {
 });
 
 test('a dominant side is favoured, and the numbers stay in range', async () => {
-  const data = await buildMlbReport(ARGS, deps);
+  const data = await buildMlbReport(ARGS, deps, NOW);
   for (const g of data.games) {
     const p = g.projection;
     for (const v of [p.winProbability.home, p.winProbability.away, p.runLine.coverProbability]) {
@@ -342,7 +345,7 @@ test('a dominant side is favoured, and the numbers stay in range', async () => {
 });
 
 test('markdown renders, names the sections, and states its limits', async () => {
-  const data = await buildMlbReport(ARGS, deps);
+  const data = await buildMlbReport(ARGS, deps, NOW);
   const md = renderMarkdown(data);
 
   assert.match(md, /^# MLB slate — \d{4}-\d{2}-\d{2}/);
@@ -359,16 +362,17 @@ test('markdown renders, names the sections, and states its limits', async () => 
 });
 
 test('an empty slate renders without throwing', async () => {
-  const data = await buildMlbReport(ARGS, {
-    ...deps,
-    fetchDayFixtures: async () => [],
-  });
+  const data = await buildMlbReport(
+    ARGS,
+    { ...deps, fetchDayFixtures: async () => [] },
+    NOW,
+  );
   const md = renderMarkdown(data);
   assert.match(md, /_No MLB games scheduled today\._/);
 });
 
 test('the JSON drops the run distribution but keeps the projection', async () => {
-  const data = await buildMlbReport(ARGS, deps);
+  const data = await buildMlbReport(ARGS, deps, NOW);
   const json = JSON.parse(renderJson(data));
 
   assert.equal(json.sport, 'baseball');
@@ -377,4 +381,133 @@ test('the JSON drops the run distribution but keeps the projection', async () =>
   assert.equal(json.games[0].projection.distribution, undefined, 'the raw grid is not shipped');
   assert.ok(json.games[0].projection.winProbability.home > 0);
   assert.ok(json.notCovered.startingPitchers);
+});
+
+// --- local days --------------------------------------------------------------
+//
+// A 7:05pm Eastern first pitch is 23:05 UTC, so an evening slate straddles UTC
+// midnight. The first MLB run produced 25 "games" — 15 real ones plus 10 from
+// the night before, each projected as though it were still to come.
+
+test('localDate reports the day where the game is played, not in UTC', async () => {
+  const { localDate } = await import('../src/localtime.js');
+  // 00:05 UTC on the 13th is still the evening of the 12th in New York.
+  assert.equal(localDate(new Date('2026-08-13T00:05:00Z'), 'America/New_York'), '2026-08-12');
+  assert.equal(localDate(new Date('2026-08-13T00:05:00Z'), 'UTC'), '2026-08-13');
+  assert.equal(localDate(new Date('2026-08-12T23:05:00Z'), 'America/New_York'), '2026-08-12');
+});
+
+test('tzOffsetHours follows daylight saving', async () => {
+  const { tzOffsetHours } = await import('../src/localtime.js');
+  assert.equal(tzOffsetHours('America/New_York', new Date('2026-08-12T12:00:00Z')), -4);
+  assert.equal(tzOffsetHours('America/New_York', new Date('2026-01-12T12:00:00Z')), -5);
+  assert.equal(tzOffsetHours('UTC', new Date('2026-08-12T12:00:00Z')), 0);
+});
+
+test('onLocalDate keeps a whole Eastern evening together', async () => {
+  const { onLocalDate } = await import('../src/localtime.js');
+  const fixtures = [
+    { home: 'early', kickoff: new Date('2026-08-12T17:40:00Z') }, // 13:40 ET, same day
+    { home: 'late', kickoff: new Date('2026-08-13T01:40:00Z') },  // 21:40 ET, same day
+    { home: 'yesterday', kickoff: new Date('2026-08-11T23:05:00Z') }, // 19:05 ET, day before
+    { home: 'undated', kickoff: null },
+  ];
+  assert.deepEqual(
+    onLocalDate(fixtures, '2026-08-12', 'America/New_York').map((f) => f.home),
+    ['early', 'late'],
+  );
+});
+
+test('the report drops games from the neighbouring day and counts them', async () => {
+  const spread = [
+    { ...mlbFixture('Yankees', 'Red Sox', 0), kickoff: new Date('2026-08-12T23:05:00Z') },
+    { ...mlbFixture('Dodgers', 'Giants', 0), kickoff: new Date('2026-08-13T01:40:00Z') },
+    // Last night's game, which the feed's day window overlaps into. Its own
+    // match id, or the dedupe would treat it as a repeat of tonight's fixture.
+    {
+      ...mlbFixture('Yankees', 'Red Sox', 0),
+      id: 'yesterday',
+      kickoff: new Date('2026-08-11T23:05:00Z'),
+    },
+  ];
+  const data = await buildMlbReport(
+    { ...ARGS, tz: 'America/New_York' },
+    {
+      ...deps,
+      fetchDayFixtures: async () => spread,
+    },
+    new Date('2026-08-12T15:00:00Z'),
+  );
+
+  assert.equal(data.date, '2026-08-12');
+  assert.equal(data.games.length, 2, 'only the games actually played today');
+  assert.equal(data.stats.otherDays, 1, 'and the discard is reported, not silent');
+});
+
+test('the feed is asked for the day in the report timezone, not UTC', async () => {
+  let asked = null;
+  await buildMlbReport(
+    { ...ARGS, tz: 'America/New_York' },
+    {
+      ...deps,
+      fetchDayFixtures: async (opts) => {
+        asked = opts;
+        return [];
+      },
+    },
+    new Date('2026-08-12T15:00:00Z'),
+  );
+  assert.equal(asked.tzOffset, -4, 'August in New York is UTC-4');
+});
+
+test('the standard totals ladder is always quoted, wherever the projection lands', () => {
+  for (const total of [6.2, 8.9, 10.4, 13.5]) {
+    const lines = defaultTotalLines(total);
+    for (const standard of [6.5, 7.5, 8.5, 9.5, 10.5, 11.5]) {
+      assert.ok(lines.includes(standard), `total ${total} dropped the ${standard} line`);
+    }
+    assert.deepEqual(lines, [...lines].sort((a, b) => a - b), 'lines ascend');
+    assert.equal(new Set(lines).size, lines.length, 'no duplicates');
+  }
+  // And it stretches to cover an extreme projection.
+  assert.ok(defaultTotalLines(14).includes(14.5));
+});
+
+test('the two day windows are merged and deduped by match id', async () => {
+  const asked = [];
+  const tonight = { ...mlbFixture('Yankees', 'Red Sox', 0), id: 'a', kickoff: new Date('2026-08-12T23:05:00Z') };
+  const late = { ...mlbFixture('Dodgers', 'Giants', 0), id: 'b', kickoff: new Date('2026-08-13T02:10:00Z') };
+
+  const data = await buildMlbReport(
+    { ...ARGS, tz: 'America/New_York' },
+    {
+      ...deps,
+      fetchDayFixtures: async ({ dayOffset }) => {
+        asked.push(dayOffset);
+        // The late game sits in tomorrow's file even though it is tonight in
+        // New York; the early one appears in both, so it must not double up.
+        return dayOffset === 0 ? [tonight] : [tonight, late];
+      },
+    },
+    new Date('2026-08-12T15:00:00Z'),
+  );
+
+  assert.deepEqual(asked.sort(), [0, 1], 'the requested day and the one after it');
+  assert.equal(data.games.length, 2, 'the late game is recovered, the repeat is not counted twice');
+  assert.deepEqual(data.games.map((g) => g.home), ['Yankees', 'Dodgers']);
+});
+
+test('a failure on the neighbouring day does not cost us the day we asked for', async () => {
+  const data = await buildMlbReport(
+    { ...ARGS, tz: 'America/New_York' },
+    {
+      ...deps,
+      fetchDayFixtures: async ({ dayOffset }) => {
+        if (dayOffset !== 0) throw new Error('feed 500');
+        return [{ ...mlbFixture('Yankees', 'Red Sox', 0), id: 'a', kickoff: new Date('2026-08-12T23:05:00Z') }];
+      },
+    },
+    new Date('2026-08-12T15:00:00Z'),
+  );
+  assert.equal(data.games.length, 1);
 });

@@ -20,6 +20,7 @@ import {
 } from './basketball/model.js';
 import { fetchQuarters, projectPeriods, quarterProfile } from './basketball/quarters.js';
 import { renderJson, renderMarkdown } from './basketball/report.js';
+import { collectLocalDay } from './localtime.js';
 
 export const WNBA_PATH = 'usa/wnba';
 export const DEFAULT_CACHE = 'data/wnba-history.json';
@@ -142,7 +143,7 @@ function findRow(rows, name) {
   );
 }
 
-export async function buildWnbaReport(args, deps = {}) {
+export async function buildWnbaReport(args, deps = {}, now = new Date()) {
   const getFixtures = deps.fetchDayFixtures ?? fetchDayFixtures;
   const getHistory = deps.updateHistory ?? updateHistory;
   const stats = {
@@ -152,11 +153,18 @@ export async function buildWnbaReport(args, deps = {}) {
     daysFailed: 0,
     teamsKnown: 0,
     gamesWithQuarters: 0,
+    otherDays: 0,
     errors: [],
   };
 
-  const [fixtures, history] = await Promise.all([
-    getFixtures({ dayOffset: args.dayOffset, sport: SPORT.basketball }),
+  const [day, history] = await Promise.all([
+    collectLocalDay({
+      dayOffset: args.dayOffset,
+      tz: args.tz,
+      sport: SPORT.basketball,
+      now,
+      fetchDay: getFixtures,
+    }),
     getHistory({
       cachePath: args.cache,
       retainDays: args.retain,
@@ -167,7 +175,9 @@ export async function buildWnbaReport(args, deps = {}) {
     }),
   ]);
 
-  stats.totalGames = fixtures.length;
+  const fixtures = day.onDay;
+  stats.totalGames = day.all.length;
+  stats.otherDays = day.otherDays;
   stats.daysCached = history.daysCached;
   stats.daysFetched = history.daysFetched;
   stats.daysFailed = history.daysFailed;
@@ -208,8 +218,7 @@ export async function buildWnbaReport(args, deps = {}) {
     })
     .sort((a, b) => (a.tipoff?.getTime() ?? 0) - (b.tipoff?.getTime() ?? 0));
 
-  const date = new Date(Date.now() + args.dayOffset * 86400000).toISOString().slice(0, 10);
-  return { date, tz: args.tz, games, stats, coverProbability: args.coverProbability ?? 0.7 };
+  return { date: day.date, tz: args.tz, games, stats, coverProbability: args.coverProbability ?? 0.7 };
 }
 
 async function main() {

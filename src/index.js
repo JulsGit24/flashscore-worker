@@ -2,6 +2,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fetchDayFixtures, DEFAULTS } from './flashscore.js';
+import { collectLocalDay } from './localtime.js';
 import { classifyCompetition, parseTournamentUrl } from './leagues.js';
 import { REGIONS, REGION_LABEL, regionOf } from './leagues.data.js';
 import { DEFAULT_CACHE, DEFAULT_RETAIN_DAYS, updateHistory } from './history.js';
@@ -99,7 +100,7 @@ export function findRow(table, name) {
  * @param {object} args parsed CLI arguments
  * @param {object} [deps] injection seam so the pipeline can be tested offline
  */
-export async function buildReport(args, deps = {}) {
+export async function buildReport(args, deps = {}, now = new Date()) {
   const getFixtures = deps.fetchDayFixtures ?? fetchDayFixtures;
   const getHistory = deps.updateHistory ?? updateHistory;
   const stats = {
@@ -110,11 +111,12 @@ export async function buildReport(args, deps = {}) {
     daysFetched: 0,
     daysFailed: 0,
     outOfRegion: [],
+    otherDays: 0,
     errors: [],
   };
 
-  const [fixtures, history] = await Promise.all([
-    getFixtures({ dayOffset: args.dayOffset }),
+  const [day, history] = await Promise.all([
+    collectLocalDay({ dayOffset: args.dayOffset, tz: args.tz, now, fetchDay: getFixtures }),
     getHistory({
       cachePath: args.cache,
       retainDays: args.retain,
@@ -122,7 +124,9 @@ export async function buildReport(args, deps = {}) {
     }),
   ]);
 
-  stats.totalFixtures = fixtures.length;
+  const fixtures = day.onDay;
+  stats.totalFixtures = day.all.length;
+  stats.otherDays = day.otherDays;
   stats.daysCached = history.daysCached;
   stats.daysFetched = history.daysFetched;
   stats.daysFailed = history.daysFailed;
@@ -212,10 +216,8 @@ export async function buildReport(args, deps = {}) {
     (a, b) => (a.kickoff?.getTime() ?? 0) - (b.kickoff?.getTime() ?? 0),
   );
 
-  const date = new Date(Date.now() + args.dayOffset * 86400000).toISOString().slice(0, 10);
-
   return {
-    date,
+    date: day.date,
     region: args.region,
     regionLabel: REGION_LABEL[args.region] ?? args.region,
     tz: args.tz,

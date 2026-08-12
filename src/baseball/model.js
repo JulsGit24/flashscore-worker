@@ -215,10 +215,20 @@ export function confidenceFor(homePlayed, awayPlayed) {
   return 'high';
 }
 
-/** Standard major-league totals, either side of the projection. */
+/**
+ * Totals to quote.
+ *
+ * The standard major-league ladder (6.5 to 11.5) is always included, because
+ * those are the lines actually posted and a report that omits 7.5 because the
+ * projection happened to land at 10.2 is not answering the question asked of
+ * it. The ladder then extends to cover the projection itself when it falls
+ * outside that range.
+ */
 export function defaultTotalLines(total) {
+  const standard = [6.5, 7.5, 8.5, 9.5, 10.5, 11.5];
   const centre = Math.round(total) + 0.5;
-  return [centre - 2, centre - 1, centre, centre + 1, centre + 2].filter((l) => l > 0);
+  const around = [centre - 1, centre, centre + 1];
+  return [...new Set([...standard, ...around])].filter((l) => l > 0).sort((a, b) => a - b);
 }
 
 /**

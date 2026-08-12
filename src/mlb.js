@@ -14,6 +14,7 @@ import { DEFAULT_RETAIN_DAYS, updateHistory } from './history.js';
 import { buildStandings, headToHead, headToHeadSummary, recentForm } from './baseball/standings.js';
 import { baselineRow, leagueContext, linesAtProbability, projectGame } from './baseball/model.js';
 import { renderJson, renderMarkdown } from './baseball/report.js';
+import { collectLocalDay } from './localtime.js';
 
 export const MLB_PATH = 'usa/mlb';
 export const DEFAULT_CACHE = 'data/mlb-history.json';
@@ -117,11 +118,18 @@ function findRow(rows, name) {
   );
 }
 
-export async function buildMlbReport(args, deps = {}) {
+/**
+ * @param {object} args
+ * @param {object} [deps]  injected for tests
+ * @param {Date}   [now]   the instant "today" is measured from; injected so the
+ *                         day-boundary behaviour is testable without a clock
+ */
+export async function buildMlbReport(args, deps = {}, now = new Date()) {
   const getFixtures = deps.fetchDayFixtures ?? fetchDayFixtures;
   const getHistory = deps.updateHistory ?? updateHistory;
   const stats = {
     totalGames: 0,
+    otherDays: 0,
     daysCached: 0,
     daysFetched: 0,
     daysFailed: 0,
@@ -129,8 +137,16 @@ export async function buildMlbReport(args, deps = {}) {
     errors: [],
   };
 
-  const [fixtures, history] = await Promise.all([
-    getFixtures({ dayOffset: args.dayOffset, sport: SPORT.baseball }),
+  // A 7:05pm Eastern first pitch is 23:05 UTC, so a UTC-bucketed day splits the
+  // evening slate across two feed files — see localtime.js.
+  const [day, history] = await Promise.all([
+    collectLocalDay({
+      dayOffset: args.dayOffset,
+      tz: args.tz,
+      sport: SPORT.baseball,
+      now,
+      fetchDay: getFixtures,
+    }),
     getHistory({
       cachePath: args.cache,
       retainDays: args.retain,
@@ -141,7 +157,7 @@ export async function buildMlbReport(args, deps = {}) {
     }),
   ]);
 
-  stats.totalGames = fixtures.length;
+  stats.totalGames = day.all.length;
   stats.daysCached = history.daysCached;
   stats.daysFetched = history.daysFetched;
   stats.daysFailed = history.daysFailed;
@@ -150,7 +166,9 @@ export async function buildMlbReport(args, deps = {}) {
   stats.teamsKnown = rows.length;
   const ctx = leagueContext(rows);
 
-  const games = fixtures
+  stats.otherDays = day.otherDays;
+
+  const games = day.onDay
     .filter((m) => {
       const { country, slug } = parseTournamentUrl(m.tournament?.url);
       return `${country}/${slug}` === MLB_PATH;
@@ -177,8 +195,7 @@ export async function buildMlbReport(args, deps = {}) {
     })
     .sort((a, b) => (a.first?.getTime() ?? 0) - (b.first?.getTime() ?? 0));
 
-  const date = new Date(Date.now() + args.dayOffset * 86400000).toISOString().slice(0, 10);
-  return { date, tz: args.tz, games, stats, coverProbability: args.coverProbability ?? 0.7 };
+  return { date: day.date, tz: args.tz, games, stats, coverProbability: args.coverProbability ?? 0.7 };
 }
 
 async function main() {

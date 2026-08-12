@@ -305,7 +305,8 @@ export function renderMarkdown(data) {
   out.push('---');
   out.push('');
   out.push(
-    `${stats.totalGames} baseball games worldwide · ${games.length} MLB · ` +
+    `${stats.totalGames} baseball games worldwide · ${games.length} MLB on ${date} · ` +
+      `${stats.otherDays ?? 0} dropped as belonging to a neighbouring day · ` +
       `${stats.teamsKnown} teams in the derived table from ${stats.daysCached} days of ` +
       `results (${stats.daysFetched} newly fetched, ${stats.daysFailed} failed) · ` +
       `generated ${new Date().toISOString()}`,

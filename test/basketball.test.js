@@ -20,7 +20,9 @@ import { buildWnbaReport, distilWnbaDay } from '../src/wnba.js';
 import { renderJson, renderMarkdown } from '../src/basketball/report.js';
 
 const DAY = 86400;
-const d = (n) => 1_750_000_000 + n * DAY;
+// Midday UTC on a fixed date: far enough from either midnight that the same
+// instant is the same calendar day in UTC and in New York.
+const d = (n) => Date.UTC(2025, 5, 15, 12) / 1000 + n * DAY;
 const g = (h, a, hg, ag, ts) => ({ l: 'usa/wnba', h, a, hg, ag, ts });
 
 const close = (a, b, eps = 1e-3) => Math.abs(a - b) < eps;
@@ -281,6 +283,8 @@ test('distilWnbaDay attaches quarter splits and survives one that fails', async 
 });
 
 const ARGS = { dayOffset: 0, tz: 'America/New_York', format: 'both', cache: 'unused', retain: 400 };
+/** The slate below sits on d(20); reports filter to their local day. */
+const NOW = new Date(d(20) * 1000);
 
 const deps = {
   fetchDayFixtures: async () => [
@@ -312,7 +316,7 @@ const deps = {
 };
 
 test('the WNBA pipeline keeps only WNBA games and projects them', async () => {
-  const data = await buildWnbaReport(ARGS, deps);
+  const data = await buildWnbaReport(ARGS, deps, NOW);
 
   assert.equal(data.stats.totalGames, 2, 'both basketball games were fetched');
   assert.equal(data.games.length, 1, 'only the WNBA one is reported');
@@ -327,7 +331,7 @@ test('the WNBA pipeline keeps only WNBA games and projects them', async () => {
 });
 
 test('the WNBA report renders the slate, totals and the not-covered notice', async () => {
-  const data = await buildWnbaReport(ARGS, deps);
+  const data = await buildWnbaReport(ARGS, deps, NOW);
   const md = renderMarkdown(data);
 
   assert.match(md, /# WNBA slate/);
@@ -352,7 +356,7 @@ test('an empty slate renders without pretending otherwise', async () => {
   const data = await buildWnbaReport(ARGS, {
     ...deps,
     fetchDayFixtures: async () => [],
-  });
+  }, NOW);
   assert.equal(data.games.length, 0);
   const md = renderMarkdown(data);
   assert.match(md, /_No WNBA games scheduled today\._/);
@@ -450,7 +454,7 @@ test('strengthGap measures the distance between the two net ratings', () => {
 });
 
 test('the report renders the 70% lines and the strength-gap table', async () => {
-  const data = await buildWnbaReport(ARGS, deps);
+  const data = await buildWnbaReport(ARGS, deps, NOW);
   const md = renderMarkdown(data);
   assert.match(md, /## Lines that clear 70%/);
   assert.match(md, /\| Tip \| Game \| Spread 70% \| Total over \| Total under \|/);
@@ -597,7 +601,7 @@ test('a half is more decidable than a quarter', async () => {
 });
 
 test('the report renders a period table per game', async () => {
-  const data = await buildWnbaReport(ARGS, deps);
+  const data = await buildWnbaReport(ARGS, deps, NOW);
   const md = renderMarkdown(data);
   assert.match(md, /## Quarters and halves/);
   assert.match(md, /\| Period \| Points H–A \| Total \| Margin \| Win H \| Tie \| Win A \|/);
