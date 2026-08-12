@@ -1,0 +1,48 @@
+name: Probe the feed and the runner
+
+# Manual only. Reconnaissance for work that has to be done against the live
+# feed, which no Claude agent environment can reach.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: What can this runner render a PDF with?
+        run: |
+          echo '### Runner rendering capability' >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          for bin in google-chrome google-chrome-stable chromium chromium-browser; do
+            path=$(command -v "$bin" || true)
+            if [ -n "$path" ]; then
+              echo "$bin -> $path -> $("$bin" --version 2>&1 | head -1)"
+            else
+              echo "$bin -> absent"
+            fi
+          done
+          echo "--- emoji fonts ---"
+          fc-list 2>/dev/null | grep -i -E 'emoji|noto color' | head -5 || echo 'none found'
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Feed field census
+        run: node tools/probe-feed.js
+
+      - name: Image URL patterns
+        run: |
+          # Which of the documented Flashscore image hosts actually answer, and
+          # what do they answer with? A 200 that returns HTML is not an image.
+          for url in \
+            "https://www.flashscore.com/res/image/data/tVCPMLzL-hUJhKmVe.png" \
+            "https://static.flashscore.com/res/image/data/tVCPMLzL-hUJhKmVe.png" \
+            "https://www.flashscoreusa.com/res/image/data/tVCPMLzL-hUJhKmVe.png"
+          do
+            code=$(curl -s -o /tmp/img -w '%{http_code}' -m 15 "$url" || echo 000)
+            echo "$code  $(file -b /tmp/img 2>/dev/null | head -c 60)  $url"
+          done
