@@ -105,4 +105,4 @@ The feed behind this report carries team scores and quarter splits only — its 
 
 ---
 
-65 basketball games worldwide · 3 WNBA · 15 teams in the derived table from 9 days of results (1 newly fetched, 0 failed) · 37 games with quarter splits · generated 2026-08-12T15:49:08.703Z
+65 basketball games worldwide · 3 WNBA · 15 teams in the derived table from 9 days of results (0 newly fetched, 0 failed) · 37 games with quarter splits · generated 2026-08-12T16:16:47.682Z
