@@ -17,11 +17,13 @@
 
 /**
  * Feed sport ids, confirmed live: 1 and 3 both return a full day, 2 and 6 too.
- * The WNBA sits on 3 at /basketball/usa/wnba/.
+ * The WNBA sits on 3 at /basketball/usa/wnba/, and MLB on 6 at
+ * /baseball/usa/mlb/.
  */
 export const SPORT = {
   soccer: 1,
   basketball: 3,
+  baseball: 6,
 };
 
 export const REC_SEP = '~';

@@ -1,0 +1,105 @@
+name: Daily MLB slate
+
+on:
+  schedule:
+    # Target: the first opportunity at or after 08:00 America/New_York, so the
+    # slate is committed and waiting before the 10:00 read.
+    #
+    # GitHub cron is UTC, does not follow DST, and delivers scheduled runs late
+    # under load — routinely by an hour or more. So this fires every hour across
+    # a window and lets the gate decide; the gate is idempotent, stopping once
+    # today's slate exists, so the extra crons cost a few seconds each and the
+    # report survives a late or failed run. See the README.
+    - cron: '9 12-17 * * *'
+  workflow_dispatch:
+    inputs:
+      day_offset:
+        description: '0 = today, 1 = tomorrow'
+        default: '0'
+      force:
+        description: 'regenerate even if today already has a slate'
+        default: 'false'
+
+permissions:
+  contents: write
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.check.outputs.go }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: check
+        run: |
+          hour=$(TZ=America/New_York date +%H)
+          today=$(TZ=America/New_York date +%F)
+
+          if [ "${{ github.event_name }}" != 'schedule' ]; then
+            if [ "${{ github.event.inputs.force }}" = 'true' ] || [ ! -f "reports/mlb/$today.md" ]; then
+              echo 'go=true' >> "$GITHUB_OUTPUT"
+            else
+              echo 'go=false' >> "$GITHUB_OUTPUT"
+              echo "Dispatched, but $today already has a slate. Re-run with force=true to replace it."
+            fi
+          elif [ "$hour" -lt 8 ]; then
+            echo 'go=false' >> "$GITHUB_OUTPUT"
+            echo "New York hour is $hour — too early. A later cron will pick it up."
+          elif [ -f "reports/mlb/$today.md" ]; then
+            echo 'go=false' >> "$GITHUB_OUTPUT"
+            echo "$today already has a slate; nothing to do."
+          else
+            echo 'go=true' >> "$GITHUB_OUTPUT"
+            echo "New York hour is $hour and $today has no slate yet — generating."
+          fi
+
+  report:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - run: npm test
+
+      - name: Generate the MLB slate
+        env:
+          REPORT_TZ: ${{ vars.REPORT_TZ || 'America/New_York' }}
+        run: |
+          node src/mlb.js \
+            --day-offset "${{ github.event.inputs.day_offset || 0 }}" \
+            --quiet
+
+      - name: Publish the slate to the job summary
+        if: always()
+        run: |
+          latest=$(ls -1 reports/mlb/*.md 2>/dev/null | sort | tail -1)
+          if [ -n "$latest" ]; then
+            cat "$latest" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'No slate was produced — check the Generate step.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit the slate
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add reports/ data/
+          if git diff --cached --quiet; then
+            echo 'No new slate to commit.'
+          else
+            git commit -m "MLB slate for $(TZ=America/New_York date +%F)"
+            # The hourly crons can overlap with the other report jobs; rebase
+            # rather than fail.
+            for attempt in 1 2 3; do
+              git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0
+              sleep $((attempt * 5))
+            done
+            echo 'Could not push after three attempts.' >&2
+            exit 1
+          fi
