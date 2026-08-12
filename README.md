@@ -197,12 +197,40 @@ Output is written to `reports/<region>/YYYY-MM-DD.md` and `.json`.
 at **05:00 America/New_York**, generates all three regional reports, commits
 them, and prints each to the Actions job summary.
 
-GitHub cron is UTC and does not follow DST, so the workflow schedules both
-09:03 and 10:03 UTC and a `gate` job checks the real New York hour — the slot
-that isn't 5am stops before doing any work. To change the target, edit the two
-cron lines and the `TZ=America/New_York` check together. Kickoff times are
-printed in `America/New_York`; override with a `REPORT_TZ` repository variable
-(Settings → Secrets and variables → Actions → Variables).
+### Why the schedule is a range, not a time
+
+GitHub cron is UTC and does not follow DST, and scheduled runs are routinely
+delayed under load — by an hour or more. An earlier version fired at 09:03 and
+10:03 UTC and required the New York hour to be exactly `05`. Every run arrived
+late, every run was skipped, and the schedule never once produced a report; the
+reports that existed had all come from manual dispatches.
+
+So the workflow now fires **every hour through the morning** (`7 9-13 * * *`) and
+the gate decides:
+
+1. Before 05:00 in New York → skip, a later cron will pick it up.
+2. Today already has a report → skip.
+3. Otherwise → generate.
+
+That is idempotent, so the extra crons cost a few seconds each, and the report
+still appears if a run is delayed or fails outright. The WNBA slate uses the
+same shape from 16:00. Kickoff times are printed in `America/New_York`; override
+with a `REPORT_TZ` repository variable (Settings → Secrets and variables →
+Actions → Variables).
+
+### Where generation has to happen
+
+**The GitHub runner is the only place that can reach the feed.** From a Claude
+agent environment every sports-data host is blocked by the egress proxy —
+verified against Flashscore, API-Football, ESPN, SofaScore, TheSportsDB,
+football-data.org and the Odds API, all of which fail to connect. Switching data
+provider does not change that, because the block is on the environment, not the
+provider.
+
+So the division of labour is fixed: **the Action generates, the agent reads.** A
+morning routine should pull the repo and summarise what the Action committed. It
+cannot regenerate a missing report, and should say the Action failed rather than
+attempting a fetch that will always 403.
 
 ## Data source
 

@@ -2,17 +2,26 @@ name: Daily soccer shortlist
 
 on:
   schedule:
-    # Target: 05:00 America/New_York, year round. GitHub cron is UTC only and
-    # does not follow DST, so both candidate hours fire and the `gate` job
-    # checks the real New York hour — 09:0x UTC is 5am EDT, 10:0x is 5am EST,
-    # and whichever one is not 5am stops before doing any work.
-    - cron: '3 9 * * *'
-    - cron: '3 10 * * *'
+    # Target: the first opportunity at or after 05:00 America/New_York.
+    #
+    # GitHub cron is UTC and does not follow DST, and — more importantly —
+    # scheduled runs are routinely delayed under load, by an hour or more. An
+    # earlier version fired at 09:03/10:03 UTC and required the New York hour to
+    # be exactly 05; every run arrived late and was skipped, so the schedule
+    # never once produced a report.
+    #
+    # So: try every hour through the morning, and let the gate decide. The gate
+    # is idempotent — it stops once today's report exists — so the extra crons
+    # cost a few seconds each and the report survives a late or failed run.
+    - cron: '7 9-13 * * *'
   workflow_dispatch:
     inputs:
       day_offset:
         description: '0 = today, 1 = tomorrow'
         default: '0'
+      force:
+        description: 'regenerate even if today already has a report'
+        default: 'false'
 
 permissions:
   contents: write
@@ -23,14 +32,29 @@ jobs:
     outputs:
       go: ${{ steps.check.outputs.go }}
     steps:
+      - uses: actions/checkout@v4
+
       - id: check
         run: |
           hour=$(TZ=America/New_York date +%H)
-          if [ "${{ github.event_name }}" != 'schedule' ] || [ "$hour" = '05' ]; then
-            echo 'go=true' >> "$GITHUB_OUTPUT"
-          else
+          today=$(TZ=America/New_York date +%F)
+
+          if [ "${{ github.event_name }}" != 'schedule' ]; then
+            if [ "${{ github.event.inputs.force }}" = 'true' ] || [ ! -f "reports/europe/$today.md" ]; then
+              echo 'go=true' >> "$GITHUB_OUTPUT"
+            else
+              echo 'go=false' >> "$GITHUB_OUTPUT"
+              echo "Dispatched, but $today already has a report. Re-run with force=true to replace it."
+            fi
+          elif [ "$hour" -lt 5 ]; then
             echo 'go=false' >> "$GITHUB_OUTPUT"
-            echo "New York hour is $hour, not 05 — this is the other DST slot."
+            echo "New York hour is $hour — too early. A later cron will pick it up."
+          elif [ -f "reports/europe/$today.md" ]; then
+            echo 'go=false' >> "$GITHUB_OUTPUT"
+            echo "$today already has a report; nothing to do."
+          else
+            echo 'go=true' >> "$GITHUB_OUTPUT"
+            echo "New York hour is $hour and $today has no report yet — generating."
           fi
 
   report:
@@ -48,7 +72,6 @@ jobs:
 
       - name: Generate shortlists
         env:
-          # IANA timezone the kickoff times are printed in.
           REPORT_TZ: ${{ vars.REPORT_TZ || 'America/New_York' }}
         run: |
           # One pass per region. The day feed is worldwide and the results cache
@@ -79,7 +102,7 @@ jobs:
             echo 'No reports were produced — check the Generate step.' >> "$GITHUB_STEP_SUMMARY"
           fi
 
-      - name: Commit the report
+      - name: Commit the reports
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
@@ -88,5 +111,11 @@ jobs:
             echo 'No new report to commit.'
           else
             git commit -m "Shortlists for $(TZ=America/New_York date +%F)"
-            git push
+            # The morning crons overlap with other runs; rebase rather than fail.
+            for attempt in 1 2 3; do
+              git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0
+              sleep $((attempt * 5))
+            done
+            echo 'Could not push after three attempts.' >&2
+            exit 1
           fi
