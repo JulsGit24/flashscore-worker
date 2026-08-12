@@ -82,4 +82,4 @@ European and senior, but not in the tier-1/tier-2 allowlist — usually a cup, o
 
 ---
 
-Fetched 493 fixtures worldwide · 18 in scope · 341 league tables derived from 9 days of results (0 newly fetched, 0 failed) · generated 2026-08-12T15:48:16.369Z
+Fetched 493 fixtures worldwide · 18 in scope · 341 league tables derived from 9 days of results (0 newly fetched, 0 failed) · generated 2026-08-12T16:14:34.090Z

@@ -39,4 +39,4 @@ _No fixture today projects above the high-goals threshold._
 
 ---
 
-Fetched 493 fixtures worldwide · 1 in scope · 341 league tables derived from 9 days of results (0 newly fetched, 0 failed) · generated 2026-08-12T15:48:17.379Z
+Fetched 493 fixtures worldwide · 1 in scope · 341 league tables derived from 9 days of results (0 newly fetched, 0 failed) · generated 2026-08-12T16:14:36.512Z
