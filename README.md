@@ -194,8 +194,9 @@ Output is written to `reports/<region>/YYYY-MM-DD.md` and `.json`.
 ## Scheduling it for 5am
 
 [`.github/workflows/daily-report.yml`](.github/workflows/daily-report.yml) runs
-at **05:00 America/New_York**, generates all three regional reports, commits
-them, and prints each to the Actions job summary.
+in the small hours of **America/New_York**, generates all three regional
+reports, commits them, and prints each to the Actions job summary — so they are
+on disk before the 5am read.
 
 ### Why the schedule is a range, not a time
 
@@ -205,16 +206,24 @@ delayed under load — by an hour or more. An earlier version fired at 09:03 and
 late, every run was skipped, and the schedule never once produced a report; the
 reports that existed had all come from manual dispatches.
 
-So the workflow now fires **every hour through the morning** (`7 9-13 * * *`) and
+So the workflow now fires **every hour through the morning** (`7 6-13 * * *`) and
 the gate decides:
 
-1. Before 05:00 in New York → skip, a later cron will pick it up.
+1. Before 03:00 in New York → skip, a later cron will pick it up.
 2. Today already has a report → skip.
 3. Otherwise → generate.
 
 That is idempotent, so the extra crons cost a few seconds each, and the report
-still appears if a run is delayed or fails outright. The WNBA slate uses the
-same shape from 16:00. Kickoff times are printed in `America/New_York`; override
+still appears if a run is delayed or fails outright.
+
+The window opens at 03:00 rather than 05:00 on purpose. The reader is a
+scheduled agent that wakes at 05:15 expecting the report to be waiting for it,
+and a generator that starts at exactly 05:00 leaves it no slack at all — a
+single delayed run and the agent finds nothing. Starting two hours early costs
+nothing, since the day's fixtures are published well before then.
+
+The WNBA slate uses the same shape from 16:00. Kickoff times are printed in
+`America/New_York`; override
 with a `REPORT_TZ` repository variable (Settings → Secrets and variables →
 Actions → Variables).
 

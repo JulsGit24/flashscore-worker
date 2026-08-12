@@ -13,7 +13,12 @@ on:
     # So: try every hour through the morning, and let the gate decide. The gate
     # is idempotent — it stops once today's report exists — so the extra crons
     # cost a few seconds each and the report survives a late or failed run.
-    - cron: '7 9-13 * * *'
+    #
+    # The window opens at 03:00 New York rather than 05:00. The reader — a
+    # scheduled agent — wakes at 05:15 and expects the report to be waiting for
+    # it, so generation needs a couple of hours of slack ahead of that, not
+    # zero. The day's fixtures are published long before 3am either way.
+    - cron: '7 6-13 * * *'
   workflow_dispatch:
     inputs:
       day_offset:
@@ -46,7 +51,7 @@ jobs:
               echo 'go=false' >> "$GITHUB_OUTPUT"
               echo "Dispatched, but $today already has a report. Re-run with force=true to replace it."
             fi
-          elif [ "$hour" -lt 5 ]; then
+          elif [ "$hour" -lt 3 ]; then
             echo 'go=false' >> "$GITHUB_OUTPUT"
             echo "New York hour is $hour — too early. A later cron will pick it up."
           elif [ -f "reports/europe/$today.md" ]; then
