@@ -229,7 +229,8 @@ and a generator that starts at exactly 05:00 leaves it no slack at all — a
 single delayed run and the agent finds nothing. Starting two hours early costs
 nothing, since the day's fixtures are published well before then.
 
-The WNBA slate uses the same shape from 16:00. Kickoff times are printed in
+The MLB and WNBA slates use the same shape, opening at 08:00 and 13:00
+respectively — each a few hours ahead of its own read. Kickoff times are printed in
 `America/New_York`; override
 with a `REPORT_TZ` repository variable (Settings → Secrets and variables →
 Actions → Variables).
