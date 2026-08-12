@@ -6,8 +6,6 @@
 // different — normal margin and total rather than a Poisson scoreline grid —
 // and because it runs on its own schedule.
 
-import { mkdir, writeFile } from 'node:fs/promises';
-import path from 'node:path';
 import { SPORT, fetchDayFixtures, DEFAULTS } from './flashscore.js';
 import { parseTournamentUrl } from './leagues.js';
 import { DEFAULT_RETAIN_DAYS, updateHistory } from './history.js';
@@ -21,6 +19,8 @@ import {
 import { fetchQuarters, projectPeriods, quarterProfile } from './basketball/quarters.js';
 import { renderJson, renderMarkdown } from './basketball/report.js';
 import { collectLocalDay } from './localtime.js';
+import { writeReportBundle } from './visual/write.js';
+import { wnbaDocument } from './visual/model.js';
 
 export const WNBA_PATH = 'usa/wnba';
 export const DEFAULT_CACHE = 'data/wnba-history.json';
@@ -204,6 +204,8 @@ export async function buildWnbaReport(args, deps = {}, now = new Date()) {
         tipoff: m.kickoff,
         home: m.home,
         away: m.away,
+        homeImage: m.homeImage ?? null,
+        awayImage: m.awayImage ?? null,
         projection,
         lines: linesAtProbability(projection, args.coverProbability ?? 0.7),
         periods: projectPeriods(projection, homeProfile, awayProfile),
@@ -229,17 +231,20 @@ async function main() {
   }
 
   const data = await buildWnbaReport(args);
-  const outDir = path.join(args.outDir, 'wnba');
-  await mkdir(outDir, { recursive: true });
+  const { dir, pdf, warning } = await writeReportBundle({
+    outDir: args.outDir,
+    key: 'wnba',
+    date: data.date,
+    markdown: renderMarkdown(data),
+    json: renderJson(data),
+    doc: wnbaDocument(data),
+  });
 
-  if (args.format === 'md' || args.format === 'both') {
-    const md = renderMarkdown(data);
-    await writeFile(path.join(outDir, `${data.date}.md`), md);
-    if (!args.quiet) process.stdout.write(`${md}\n`);
+  if (!args.quiet) {
+    process.stdout.write(`${renderMarkdown(data)}\n`);
+    process.stdout.write(`\nWrote ${dir}/report.{md,json${pdf ? ',pdf' : ''}}\n`);
   }
-  if (args.format === 'json' || args.format === 'both') {
-    await writeFile(path.join(outDir, `${data.date}.json`), renderJson(data));
-  }
+  if (warning) process.stderr.write(`\n${warning}\n`);
 
   if (data.stats.errors.length) {
     process.stderr.write(

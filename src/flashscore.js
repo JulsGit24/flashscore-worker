@@ -44,6 +44,12 @@ export const FIELDS = {
   tournamentUrl: ['ZL'],
   tournamentCountry: ['ZY'],
   tournamentStageId: ['ZC', 'ZEE', 'ZB'],
+  // Image filenames, e.g. "61kdErlC-tAokhjfk.png". Opaque handles rather than
+  // URLs; images.js turns them into ones. Confirmed present on the live feed
+  // for all three sports.
+  homeImage: ['OA'],
+  awayImage: ['OB'],
+  tournamentImage: ['OAJ'],
 };
 
 export function pick(record, field) {
@@ -86,6 +92,7 @@ export function extractMatches(records) {
         url: pick(record, 'tournamentUrl') ?? '',
         country: pick(record, 'tournamentCountry') ?? '',
         stageId: pick(record, 'tournamentStageId') ?? null,
+        image: pick(record, 'tournamentImage') ?? null,
       };
       continue;
     }
@@ -102,6 +109,8 @@ export function extractMatches(records) {
       away: pick(record, 'awayName') ?? '',
       homeScore: toIntOrNull(pick(record, 'homeScore')),
       awayScore: toIntOrNull(pick(record, 'awayScore')),
+      homeImage: pick(record, 'homeImage') ?? null,
+      awayImage: pick(record, 'awayImage') ?? null,
       statusId: pick(record, 'statusId') ?? null,
       raw: record,
     });
