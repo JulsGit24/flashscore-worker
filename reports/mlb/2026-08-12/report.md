@@ -243,4 +243,4 @@ That is a limit of the source, not an oversight: the feed carries final scores o
 
 ---
 
-101 baseball games worldwide · 15 MLB on 2026-08-12 · 46 dropped as belonging to a neighbouring day · 30 teams in the derived table from 7 days of results (0 newly fetched, 0 failed) · generated 2026-08-12T15:47:27.590Z
+101 baseball games worldwide · 15 MLB on 2026-08-12 · 46 dropped as belonging to a neighbouring day · 30 teams in the derived table from 7 days of results (0 newly fetched, 0 failed) · generated 2026-08-12T16:15:58.962Z
