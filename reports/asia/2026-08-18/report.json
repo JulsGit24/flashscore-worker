@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-18",
+  "region": "asia",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-08-18T07:45:18.070Z",
+  "stats": {
+    "totalFixtures": 619,
+    "inScope": 1,
+    "tablesLoaded": 407,
+    "daysCached": 15,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "australia",
+      "australia-oceania",
+      "bhutan",
+      "india",
+      "iran",
+      "kyrgyzstan",
+      "mozambique",
+      "saudi-arabia",
+      "sri-lanka",
+      "tajikistan",
+      "tanzania",
+      "uzbekistan",
+      "world"
+    ],
+    "otherDays": 398,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-08-18T11:35:00.000Z",
+      "kickoffLocal": "07:35",
+      "country": "china",
+      "league": "Chinese Super League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Shanghai Shenhua",
+      "away": "Beijing Guoan",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 5,
+          "goalsAgainst": 1,
+          "points": 6,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 8,
+          "goalsAgainst": 2,
+          "points": 6,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 2,
+      "awayRank": 1,
+      "goalsIndex": 55.5,
+      "mismatchIndex": 2.3,
+      "rankScore": 56.1,
+      "projected": {
+        "home": 1.82,
+        "away": 1.65,
+        "total": 3.47
+      },
+      "probabilities": {
+        "home": 0.423421984252517,
+        "draw": 0.22309176869719752,
+        "away": 0.3534862470502855,
+        "btts": 0.6770406964421859,
+        "over15": 0.8609061999350776,
+        "over25": 0.6735667662436091,
+        "over35": 0.45687748794047756,
+        "under15": 0.13909380006492245,
+        "under25": 0.3264332337563909
+      },
+      "pick": {
+        "side": "Shanghai Shenhua",
+        "where": "H",
+        "probability": 0.423421984252517
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "asia",
+      "slug": "asean-championship",
+      "name": "ASIA: ASEAN Championship - Play Offs"
+    }
+  ],
+  "outOfRegionCountries": [
+    "australia",
+    "australia-oceania",
+    "bhutan",
+    "india",
+    "iran",
+    "kyrgyzstan",
+    "mozambique",
+    "saudi-arabia",
+    "sri-lanka",
+    "tajikistan",
+    "tanzania",
+    "uzbekistan",
+    "world"
+  ]
+}
