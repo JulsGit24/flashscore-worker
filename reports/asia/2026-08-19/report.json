@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-19",
+  "region": "asia",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-08-19T07:45:56.998Z",
+  "stats": {
+    "totalFixtures": 593,
+    "inScope": 1,
+    "tablesLoaded": 413,
+    "daysCached": 16,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "australia",
+      "australia-oceania",
+      "burundi",
+      "india",
+      "iran",
+      "mozambique",
+      "saudi-arabia",
+      "south-africa",
+      "tanzania",
+      "uzbekistan",
+      "world",
+      "yemen",
+      "zimbabwe"
+    ],
+    "otherDays": 193,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-08-19T11:35:00.000Z",
+      "kickoffLocal": "07:35",
+      "country": "china",
+      "league": "Chinese Super League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Shanghai Port",
+      "away": "Dalian Yingbo",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "points": 6,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "LW",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 4,
+      "awayRank": 7,
+      "goalsIndex": 59.5,
+      "mismatchIndex": 18.4,
+      "rankScore": 64,
+      "projected": {
+        "home": 2.22,
+        "away": 1.35,
+        "total": 3.57
+      },
+      "probabilities": {
+        "home": 0.571620330839085,
+        "draw": 0.20127918778680873,
+        "away": 0.22710048137410604,
+        "btts": 0.6603047110091346,
+        "over15": 0.8713249605226733,
+        "over25": 0.6918993029040104,
+        "over35": 0.47838277033780185,
+        "under15": 0.12867503947732672,
+        "under25": 0.30810069709598964
+      },
+      "pick": {
+        "side": "Shanghai Port",
+        "where": "H",
+        "probability": 0.571620330839085
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "asia",
+      "slug": "asean-championship",
+      "name": "ASIA: ASEAN Championship - Play Offs"
+    }
+  ],
+  "outOfRegionCountries": [
+    "australia",
+    "australia-oceania",
+    "burundi",
+    "india",
+    "iran",
+    "mozambique",
+    "saudi-arabia",
+    "south-africa",
+    "tanzania",
+    "uzbekistan",
+    "world",
+    "yemen",
+    "zimbabwe"
+  ]
+}
