@@ -1,0 +1,259 @@
+{
+  "date": "2026-08-26",
+  "region": "asia",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-08-26T07:52:44.800Z",
+  "stats": {
+    "totalFixtures": 551,
+    "inScope": 3,
+    "tablesLoaded": 469,
+    "daysCached": 23,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "angola",
+      "australia",
+      "bhutan",
+      "egypt",
+      "india",
+      "iraq",
+      "kuwait",
+      "malaysia",
+      "mozambique",
+      "saudi-arabia",
+      "south-africa",
+      "uzbekistan",
+      "world"
+    ],
+    "otherDays": 146,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-08-26T10:30:00.000Z",
+      "kickoffLocal": "06:30",
+      "country": "south-korea",
+      "league": "K League 1",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Anyang",
+      "away": "Incheon",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLL",
+          "played": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 11,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "WT",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "points": 4,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 12,
+      "awayRank": 6,
+      "goalsIndex": 23.7,
+      "mismatchIndex": 38.4,
+      "rankScore": 44.3,
+      "projected": {
+        "home": 0.76,
+        "away": 1.92,
+        "total": 2.69
+      },
+      "probabilities": {
+        "home": 0.14056671384765668,
+        "draw": 0.2115988989918034,
+        "away": 0.6478343871605403,
+        "btts": 0.454289319904091,
+        "over15": 0.7476861543243796,
+        "over25": 0.501460751446584,
+        "over35": 0.28149939154242,
+        "under15": 0.25231384567562043,
+        "under25": 0.498539248553416
+      },
+      "pick": {
+        "side": "Incheon",
+        "where": "A",
+        "probability": 0.6478343871605403
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-26T10:30:00.000Z",
+      "kickoffLocal": "06:30",
+      "country": "south-korea",
+      "league": "K League 1",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Daejeon",
+      "away": "Ulsan HD",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLW",
+          "played": 3,
+          "goalsFor": 7,
+          "goalsAgainst": 5,
+          "points": 6,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "LLW",
+          "played": 3,
+          "goalsFor": 4,
+          "goalsAgainst": 4,
+          "points": 3,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 4,
+      "awayRank": 9,
+      "goalsIndex": 47.1,
+      "mismatchIndex": 24,
+      "rankScore": 53.1,
+      "projected": {
+        "home": 1.94,
+        "away": 1.32,
+        "total": 3.26
+      },
+      "probabilities": {
+        "home": 0.5191309432578957,
+        "draw": 0.22071838050723366,
+        "away": 0.2601506762348701,
+        "btts": 0.6275484491008634,
+        "over15": 0.8364643723882093,
+        "over25": 0.632474790697239,
+        "over35": 0.41080611192638483,
+        "under15": 0.16353562761179075,
+        "under25": 0.367525209302761
+      },
+      "pick": {
+        "side": "Daejeon",
+        "where": "H",
+        "probability": 0.5191309432578957
+      },
+      "confidence": "medium",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-08-26T10:30:00.000Z",
+      "kickoffLocal": "06:30",
+      "country": "south-korea",
+      "league": "K League 1",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Gangwon",
+      "away": "Gwangju FC",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LW",
+          "played": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "away": {
+          "streak": "LLT",
+          "played": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "points": 1,
+          "ppg": 0.3333333333333333
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "steady"
+      },
+      "homeRank": 10,
+      "awayRank": 11,
+      "goalsIndex": 11.5,
+      "mismatchIndex": 8.9,
+      "rankScore": 13.7,
+      "projected": {
+        "home": 1.35,
+        "away": 1.04,
+        "total": 2.38
+      },
+      "probabilities": {
+        "home": 0.4384374994382079,
+        "draw": 0.2731317882733896,
+        "away": 0.28843071228840295,
+        "btts": 0.4789347041144526,
+        "over15": 0.6893753053956176,
+        "over25": 0.42767629093401155,
+        "over35": 0.21918940941293097,
+        "under15": 0.31062469460438236,
+        "under25": 0.5723237090659885
+      },
+      "pick": {
+        "side": "Gangwon",
+        "where": "H",
+        "probability": 0.4384374994382079
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "asia",
+      "slug": "asean-championship",
+      "name": "ASIA: ASEAN Championship - Play Offs"
+    }
+  ],
+  "outOfRegionCountries": [
+    "angola",
+    "australia",
+    "bhutan",
+    "egypt",
+    "india",
+    "iraq",
+    "kuwait",
+    "malaysia",
+    "mozambique",
+    "saudi-arabia",
+    "south-africa",
+    "uzbekistan",
+    "world"
+  ]
+}
