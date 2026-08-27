@@ -235,6 +235,41 @@ A machine with no browser is a normal condition rather than a failure — local
 development, mostly. There the run writes `report.html` beside the other two
 files and says so on stderr, so the visual report is never silently lost.
 
+## Weekly cleanup
+
+The reports directory grows about 3.4 MB a day, and roughly 89% of that is PDFs.
+Left alone it passes a gigabyte within the year, so every Monday the old folders
+go: `tools/prune-reports.js` keeps today and removes every other dated folder.
+
+It runs as the **first step of the 5am soccer job**, before anything is
+generated, rather than as a workflow of its own. That is deliberate — it removes
+the ordering question entirely. A separate cleanup run on its own schedule could
+be delayed past generation and take the reports it had just produced; a step in
+the same job cannot.
+
+Today is kept rather than wiped, so a forced mid-Monday re-run of the soccer job
+cannot destroy the MLB and WNBA reports generated since 3am.
+
+Retention is a repository variable, not a constant: set `REPORT_KEEP_DAYS`
+(Settings → Secrets and variables → Actions → Variables) to keep a wider window.
+The default is 1.
+
+```bash
+node tools/prune-reports.js --dry-run       # list what would go, remove nothing
+node tools/prune-reports.js --keep-days 14  # keep a fortnight instead
+```
+
+Two things it will not do. It only ever removes a directory two levels under
+`reports/` whose name is exactly a `YYYY-MM-DD` date, so a stray file, a note, or
+a newly added report family cannot be caught by it. And it never touches
+`data/` — the results caches there are accumulated over months from a feed that
+only serves a 7-day window, so unlike the reports they cannot be regenerated.
+
+**This does not shrink `.git`.** Deleting a file removes it from the working tree
+but leaves every past version in history, so a fresh clone still carries them.
+Cleanup stops the checkout growing, which is the part you actually work in;
+shrinking history is a rewrite and a force-push, and is not done here.
+
 ## Scheduling it for 5am
 
 [`.github/workflows/daily-report.yml`](.github/workflows/daily-report.yml) runs

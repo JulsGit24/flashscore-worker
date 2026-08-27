@@ -75,6 +75,22 @@ jobs:
 
       - run: npm test
 
+      - name: Monday cleanup
+        run: |
+          # Weekly housekeeping, deliberately placed here rather than in a
+          # workflow of its own: running it as the first step of the job that
+          # regenerates the day removes any ordering question. There is no
+          # window in which a separate cleanup run could land after generation
+          # and take the reports it had just produced.
+          #
+          # Today is kept, so a forced mid-Monday re-run of this job cannot
+          # destroy the MLB and WNBA reports generated since 3am.
+          if [ "$(TZ=America/New_York date +%u)" = '1' ]; then
+            node tools/prune-reports.js --keep-days "${{ vars.REPORT_KEEP_DAYS || 1 }}"
+          else
+            echo "Not Monday in New York — nothing to prune."
+          fi
+
       - name: Generate shortlists
         env:
           REPORT_TZ: ${{ vars.REPORT_TZ || 'America/New_York' }}
@@ -111,7 +127,7 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add reports/ data/
+          git add -A reports/ data/
           if git diff --cached --quiet; then
             echo 'No new report to commit.'
           else
