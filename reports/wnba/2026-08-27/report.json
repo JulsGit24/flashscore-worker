@@ -1,0 +1,445 @@
+{
+  "date": "2026-08-27",
+  "sport": "basketball",
+  "competition": "WNBA",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-08-28T01:27:21.685Z",
+  "stats": {
+    "totalGames": 68,
+    "daysCached": 25,
+    "daysFetched": 2,
+    "daysFailed": 0,
+    "teamsKnown": 15,
+    "gamesWithQuarters": 102,
+    "otherDays": 28,
+    "errors": []
+  },
+  "notCovered": {
+    "playerProps": "feed exposes no player-level data",
+    "injuries": "no injury or news feed responded"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "tipoff": "2026-08-28T00:00:00.000Z",
+      "tipoffLocal": "20:00",
+      "home": "New York Liberty W",
+      "away": "Golden State Valkyries W",
+      "projection": {
+        "confidence": "high",
+        "points": {
+          "home": 77.5,
+          "away": 79.2,
+          "total": 156.7
+        },
+        "margin": -1.7,
+        "spread": {
+          "favourite": "Golden State Valkyries W",
+          "line": -1.7,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.44180430385133695,
+          "away": 0.558195696148663
+        },
+        "total": {
+          "projected": 156.7,
+          "range": [
+            135.6,
+            177.8
+          ],
+          "overUnder": [
+            {
+              "line": 150.5,
+              "over": 0.6465393182681315
+            },
+            {
+              "line": 155.5,
+              "over": 0.5290826243301441
+            },
+            {
+              "line": 160.5,
+              "over": 0.4090201088178157
+            }
+          ]
+        },
+        "ratings": {
+          "home": {
+            "played": 9,
+            "rank": 6,
+            "pointsFor": 87.65274725274725,
+            "pointsAgainst": 84.34505494505494,
+            "offence": 1.0148349830784498,
+            "defence": 0.976538843227563,
+            "netRating": 3.3076923076923066
+          },
+          "away": {
+            "played": 11,
+            "rank": 1,
+            "pointsFor": 82.63238095238096,
+            "pointsAgainst": 74.89904761904762,
+            "offence": 0.9567096703054362,
+            "defence": 0.8671738890726652,
+            "netRating": 7.733333333333334
+          }
+        },
+        "strengthGap": 4.4
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 147.5,
+        "totalUnder": 165.5,
+        "spread": {
+          "side": "Golden State Valkyries W",
+          "where": "A",
+          "line": 4.5
+        }
+      },
+      "periods": {
+        "quarters": [
+          {
+            "period": "Q1",
+            "points": {
+              "home": 19.8,
+              "away": 19.5,
+              "total": 39.3
+            },
+            "margin": 0.2,
+            "outcome": {
+              "home": 0.48151911280713044,
+              "tie": 0.06923704394757813,
+              "away": 0.44924384324529143
+            }
+          },
+          {
+            "period": "Q2",
+            "points": {
+              "home": 18.8,
+              "away": 19.9,
+              "total": 38.7
+            },
+            "margin": -1.2,
+            "outcome": {
+              "home": 0.38669518470919595,
+              "tie": 0.06791172127912981,
+              "away": 0.5453930940116742
+            }
+          },
+          {
+            "period": "Q3",
+            "points": {
+              "home": 19.2,
+              "away": 20.1,
+              "total": 39.3
+            },
+            "margin": -0.9,
+            "outcome": {
+              "home": 0.4039874900778926,
+              "tie": 0.06845696198397389,
+              "away": 0.5275555479381335
+            }
+          },
+          {
+            "period": "Q4",
+            "points": {
+              "home": 19.7,
+              "away": 19.6,
+              "total": 39.4
+            },
+            "margin": 0.1,
+            "outcome": {
+              "home": 0.4736273188464004,
+              "tie": 0.06927909671714694,
+              "away": 0.45709358443645265
+            }
+          }
+        ],
+        "halves": [
+          {
+            "period": "H1",
+            "points": {
+              "home": 38.6,
+              "away": 39.4,
+              "total": 78
+            },
+            "margin": -0.8,
+            "outcome": {
+              "home": 0.43649266940977705,
+              "tie": 0.04879261981756944,
+              "away": 0.5147147107726535
+            }
+          },
+          {
+            "period": "H2",
+            "points": {
+              "home": 38.9,
+              "away": 39.7,
+              "total": 78.6
+            },
+            "margin": -0.8,
+            "outcome": {
+              "home": 0.4364926694097766,
+              "tie": 0.04879261981756988,
+              "away": 0.5147147107726535
+            }
+          }
+        ],
+        "bestForHome": "Q1",
+        "bestForAway": "Q2"
+      },
+      "quarterSample": 13,
+      "form": {
+        "home": {
+          "streak": "LWWLW",
+          "played": 5,
+          "pointsFor": 428,
+          "pointsAgainst": 426,
+          "winRate": 0.6,
+          "pointsForAvg": 85.6,
+          "pointsAgainstAvg": 85.2
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 392,
+          "pointsAgainst": 302,
+          "winRate": 1,
+          "pointsForAvg": 78.4,
+          "pointsAgainstAvg": 60.4
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1787875200,
+          "home": "New York Liberty W",
+          "away": "Golden State Valkyries W",
+          "homePoints": 42,
+          "awayPoints": 54,
+          "total": 96,
+          "winner": "Golden State Valkyries W"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 1,
+        "aWins": 0,
+        "bWins": 1,
+        "averageTotal": 96
+      }
+    },
+    {
+      "tipoff": "2026-08-28T02:00:00.000Z",
+      "tipoffLocal": "22:00",
+      "home": "Phoenix Mercury W",
+      "away": "Washington Mystics W",
+      "projection": {
+        "confidence": "high",
+        "points": {
+          "home": 85.9,
+          "away": 89.6,
+          "total": 175.5
+        },
+        "margin": -3.8,
+        "spread": {
+          "favourite": "Washington Mystics W",
+          "line": -3.8,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.37214178509618034,
+          "away": 0.6278582149038197
+        },
+        "total": {
+          "projected": 175.5,
+          "range": [
+            154.3,
+            196.6
+          ],
+          "overUnder": [
+            {
+              "line": 170.5,
+              "over": 0.6180805469307835
+            },
+            {
+              "line": 175.5,
+              "over": 0.4989680707034637
+            },
+            {
+              "line": 180.5,
+              "over": 0.3799482246845465
+            }
+          ]
+        },
+        "ratings": {
+          "home": {
+            "played": 8,
+            "rank": 13,
+            "pointsFor": 86.04047619047618,
+            "pointsAgainst": 90.04047619047618,
+            "offence": 0.9961682655199029,
+            "defence": 1.0424798765023706,
+            "netRating": -4
+          },
+          "away": {
+            "played": 10,
+            "rank": 4,
+            "pointsFor": 87.39183673469388,
+            "pointsAgainst": 84.67755102040816,
+            "offence": 1.0118141864751193,
+            "defence": 0.980388450451302,
+            "netRating": 2.7142857142857224
+          }
+        },
+        "strengthGap": 6.7
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 166.5,
+        "totalUnder": 184.5,
+        "spread": {
+          "side": "Washington Mystics W",
+          "where": "A",
+          "line": 2.5
+        }
+      },
+      "periods": {
+        "quarters": [
+          {
+            "period": "Q1",
+            "points": {
+              "home": 22.5,
+              "away": 23,
+              "total": 45.5
+            },
+            "margin": -0.5,
+            "outcome": {
+              "home": 0.43022760696846796,
+              "tie": 0.06902170056339496,
+              "away": 0.5007506924681371
+            }
+          },
+          {
+            "period": "Q2",
+            "points": {
+              "home": 20.2,
+              "away": 21.3,
+              "total": 41.5
+            },
+            "margin": -1.1,
+            "outcome": {
+              "home": 0.38723641370189665,
+              "tie": 0.06793090433285809,
+              "away": 0.5448326819652453
+            }
+          },
+          {
+            "period": "Q3",
+            "points": {
+              "home": 21,
+              "away": 22.6,
+              "total": 43.6
+            },
+            "margin": -1.5,
+            "outcome": {
+              "home": 0.36288526816918465,
+              "tie": 0.06693008616045992,
+              "away": 0.5701846456703554
+            }
+          },
+          {
+            "period": "Q4",
+            "points": {
+              "home": 22.2,
+              "away": 22.7,
+              "total": 44.9
+            },
+            "margin": -0.5,
+            "outcome": {
+              "home": 0.42927397324755234,
+              "tie": 0.0690066400675613,
+              "away": 0.5017193866848864
+            }
+          }
+        ],
+        "halves": [
+          {
+            "period": "H1",
+            "points": {
+              "home": 42.7,
+              "away": 44.3,
+              "total": 87
+            },
+            "margin": -1.6,
+            "outcome": {
+              "home": 0.39810793410508916,
+              "tie": 0.04809020909277473,
+              "away": 0.5538018568021361
+            }
+          },
+          {
+            "period": "H2",
+            "points": {
+              "home": 43.2,
+              "away": 45.3,
+              "total": 88.5
+            },
+            "margin": -2.1,
+            "outcome": {
+              "home": 0.37458459042932846,
+              "tie": 0.04742305134898295,
+              "away": 0.5779923582216886
+            }
+          }
+        ],
+        "bestForHome": "Q1",
+        "bestForAway": "Q3"
+      },
+      "quarterSample": 11,
+      "form": {
+        "home": {
+          "streak": "LLLLW",
+          "played": 5,
+          "pointsFor": 437,
+          "pointsAgainst": 456,
+          "winRate": 0.2,
+          "pointsForAvg": 87.4,
+          "pointsAgainstAvg": 91.2
+        },
+        "away": {
+          "streak": "WWWLL",
+          "played": 5,
+          "pointsFor": 472,
+          "pointsAgainst": 472,
+          "winRate": 0.6,
+          "pointsForAvg": 94.4,
+          "pointsAgainstAvg": 94.4
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1787709600,
+          "home": "Phoenix Mercury W",
+          "away": "Washington Mystics W",
+          "homePoints": 84,
+          "awayPoints": 94,
+          "total": 178,
+          "winner": "Washington Mystics W"
+        },
+        {
+          "ts": 1786302000,
+          "home": "Washington Mystics W",
+          "away": "Phoenix Mercury W",
+          "homePoints": 95,
+          "awayPoints": 75,
+          "total": 170,
+          "winner": "Washington Mystics W"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 2,
+        "aWins": 0,
+        "bWins": 2,
+        "averageTotal": 174
+      }
+    }
+  ]
+}
