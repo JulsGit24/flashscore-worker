@@ -1,0 +1,2275 @@
+{
+  "date": "2026-08-31",
+  "sport": "baseball",
+  "competition": "MLB",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-08-31T19:06:41.200Z",
+  "stats": {
+    "totalGames": 61,
+    "otherDays": 47,
+    "daysCached": 26,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 30,
+    "errors": []
+  },
+  "notCovered": {
+    "startingPitchers": "feed exposes no probable-pitcher data",
+    "injuries": "no injury or news feed responded",
+    "parkAndWeather": "not carried by the feed",
+    "inningData": "feed carries final scores only; the first-five split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "firstPitch": "2026-08-31T22:05:00.000Z",
+      "firstPitchLocal": "18:05",
+      "home": "Atlanta Braves",
+      "away": "San Francisco Giants",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 3.93,
+          "away": 2.74,
+          "total": 6.67
+        },
+        "margin": 1.2,
+        "winProbability": {
+          "home": 0.6340216397427754,
+          "away": 0.3659783602572231
+        },
+        "regulation": {
+          "home": 0.5673227151338477,
+          "away": 0.30916075781258096,
+          "tie": 0.12351652705356979
+        },
+        "runLine": {
+          "favourite": "Atlanta Braves",
+          "where": "H",
+          "line": -1.5,
+          "coverProbability": 0.4408499749909468,
+          "underdogProbability": 0.5591500250090532
+        },
+        "total": {
+          "projected": 6.67,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.4672182231068842
+            },
+            {
+              "line": 7.5,
+              "over": 0.3601371149309782
+            },
+            {
+              "line": 8.5,
+              "over": 0.26888035544192596
+            },
+            {
+              "line": 9.5,
+              "over": 0.19506394273888994
+            },
+            {
+              "line": 10.5,
+              "over": 0.13790706822929316
+            },
+            {
+              "line": 11.5,
+              "over": 0.09526212122837208
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 3.93,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.4910269066058188
+              },
+              {
+                "line": 4.5,
+                "over": 0.35434496526084996
+              },
+              {
+                "line": 5.5,
+                "over": 0.2458965402995363
+              }
+            ]
+          },
+          "away": {
+            "projected": 2.74,
+            "overUnder": [
+              {
+                "line": 2.5,
+                "over": 0.468698543710706
+              },
+              {
+                "line": 3.5,
+                "over": 0.30203800300050354
+              },
+              {
+                "line": 4.5,
+                "over": 0.18354429051461205
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.19,
+            "away": 1.52,
+            "total": 3.71
+          },
+          "winProbability": {
+            "home": 0.5096707577682287,
+            "away": 0.2967118936068627,
+            "tie": 0.19361734862490726
+          },
+          "total": {
+            "projected": 3.71,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.4782502781938189
+              },
+              {
+                "line": 4.5,
+                "over": 0.3212775114126357
+              },
+              {
+                "line": 5.5,
+                "over": 0.20202227932897315
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 25,
+            "rank": 6,
+            "runsFor": 3.6464942681951475,
+            "runsAgainst": 3.3561716875499865,
+            "offence": 0.840163388990694,
+            "defence": 0.7732721818982196,
+            "runDifferential": 0.29032258064516103
+          },
+          "away": {
+            "played": 24,
+            "rank": 28,
+            "runsFor": 3.7013774104683193,
+            "runsAgainst": 4.534710743801653,
+            "offence": 0.85280863218026,
+            "defence": 1.0448111710568073,
+            "runDifferential": -0.8333333333333335
+          }
+        },
+        "strengthGap": 1.12
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 4.5,
+        "totalUnder": 8.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 18,
+          "pointsAgainst": 11,
+          "winRate": 1,
+          "pointsForAvg": 3.6,
+          "pointsAgainstAvg": 2.2
+        },
+        "away": {
+          "streak": "WLLWL",
+          "played": 5,
+          "pointsFor": 29,
+          "pointsAgainst": 30,
+          "winRate": 0.4,
+          "pointsForAvg": 5.8,
+          "pointsAgainstAvg": 6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "firstPitch": "2026-08-31T22:40:00.000Z",
+      "firstPitchLocal": "18:40",
+      "home": "Cincinnati Reds",
+      "away": "San Diego Padres",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 3.64,
+          "away": 5.77,
+          "total": 9.42
+        },
+        "margin": -2.13,
+        "winProbability": {
+          "home": 0.32755545242711726,
+          "away": 0.6724445475728819
+        },
+        "regulation": {
+          "home": 0.2784329674105692,
+          "away": 0.6305994677439706,
+          "tie": 0.09096756484545927
+        },
+        "runLine": {
+          "favourite": "San Diego Padres",
+          "where": "A",
+          "line": -1.5,
+          "coverProbability": 0.5337421608351847,
+          "underdogProbability": 0.46625783916481534
+        },
+        "total": {
+          "projected": 9.42,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.7138989803169821
+            },
+            {
+              "line": 7.5,
+              "over": 0.6224422839193668
+            },
+            {
+              "line": 8.5,
+              "over": 0.530116516027614
+            },
+            {
+              "line": 9.5,
+              "over": 0.4416383780943554
+            },
+            {
+              "line": 10.5,
+              "over": 0.36045904091498915
+            },
+            {
+              "line": 11.5,
+              "over": 0.2886785718014855
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 3.64,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.4490157173610205
+              },
+              {
+                "line": 4.5,
+                "over": 0.3134865586715797
+              },
+              {
+                "line": 5.5,
+                "over": 0.21012833805074513
+              }
+            ]
+          },
+          "away": {
+            "projected": 5.77,
+            "overUnder": [
+              {
+                "line": 5.5,
+                "over": 0.45956478659552125
+              },
+              {
+                "line": 6.5,
+                "over": 0.3594126121854007
+              },
+              {
+                "line": 7.5,
+                "over": 0.2748880749179723
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.02,
+            "away": 3.21,
+            "total": 5.23
+          },
+          "winProbability": {
+            "home": 0.2766413065878094,
+            "away": 0.5772436400326588,
+            "tie": 0.14611505337953234
+          },
+          "total": {
+            "projected": 5.23,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.6898875774123514
+              },
+              {
+                "line": 4.5,
+                "over": 0.5465336771640917
+              },
+              {
+                "line": 5.5,
+                "over": 0.4110193246897927
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 25,
+            "rank": 21,
+            "runsFor": 4.1626233004532125,
+            "runsAgainst": 5.6464942681951475,
+            "offence": 0.9590810904884265,
+            "defence": 1.3009694822944071,
+            "runDifferential": -1.483870967741935
+          },
+          "away": {
+            "played": 24,
+            "rank": 8,
+            "runsFor": 4.534710743801653,
+            "runsAgainst": 3.668044077134986,
+            "offence": 1.0448111710568073,
+            "defence": 0.8451285306251982,
+            "runDifferential": 0.8666666666666667
+          }
+        },
+        "strengthGap": 2.35
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 6.5,
+        "totalUnder": 11.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WLWWL",
+          "played": 5,
+          "pointsFor": 33,
+          "pointsAgainst": 42,
+          "winRate": 0.6,
+          "pointsForAvg": 6.6,
+          "pointsAgainstAvg": 8.4
+        },
+        "away": {
+          "streak": "LLLLW",
+          "played": 5,
+          "pointsFor": 21,
+          "pointsAgainst": 30,
+          "winRate": 0.2,
+          "pointsForAvg": 4.2,
+          "pointsAgainstAvg": 6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "firstPitch": "2026-08-31T22:40:00.000Z",
+      "firstPitchLocal": "18:40",
+      "home": "Tampa Bay Rays",
+      "away": "New York Mets",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 4.89,
+          "away": 4.05,
+          "total": 8.94
+        },
+        "margin": 0.84,
+        "winProbability": {
+          "home": 0.5778923261484822,
+          "away": 0.4221076738515179
+        },
+        "regulation": {
+          "home": 0.5231386281970619,
+          "away": 0.3754656348558636,
+          "tie": 0.10139573694707452
+        },
+        "runLine": {
+          "favourite": "Tampa Bay Rays",
+          "where": "H",
+          "line": -1.5,
+          "coverProbability": 0.4218764173111023,
+          "underdogProbability": 0.5781235826888977
+        },
+        "total": {
+          "projected": 8.94,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.6826108346482087
+            },
+            {
+              "line": 7.5,
+              "over": 0.5858785383627706
+            },
+            {
+              "line": 8.5,
+              "over": 0.49023157455857735
+            },
+            {
+              "line": 9.5,
+              "over": 0.40054188588210793
+            },
+            {
+              "line": 10.5,
+              "over": 0.32010030708104603
+            },
+            {
+              "line": 11.5,
+              "over": 0.25063872149870015
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 4.89,
+            "overUnder": [
+              {
+                "line": 4.5,
+                "over": 0.47704119272993106
+              },
+              {
+                "line": 5.5,
+                "over": 0.3614686356245284
+              },
+              {
+                "line": 6.5,
+                "over": 0.26611497241520854
+              }
+            ]
+          },
+          "away": {
+            "projected": 4.05,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.506636161280441
+              },
+              {
+                "line": 4.5,
+                "over": 0.369937543462895
+              },
+              {
+                "line": 5.5,
+                "over": 0.25991510632162934
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.72,
+            "away": 2.25,
+            "total": 4.97
+          },
+          "winProbability": {
+            "home": 0.4827862811153267,
+            "away": 0.3581793213412346,
+            "tie": 0.1590343975434374
+          },
+          "total": {
+            "projected": 4.97,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.6616454557042915
+              },
+              {
+                "line": 4.5,
+                "over": 0.5126424320858842
+              },
+              {
+                "line": 5.5,
+                "over": 0.37576261609768513
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 24,
+            "rank": 2,
+            "runsFor": 4.8347107438016526,
+            "runsAgainst": 4.20137741046832,
+            "offence": 1.1139320850523642,
+            "defence": 0.9680101555061884,
+            "runDifferential": 0.6333333333333329
+          },
+          "away": {
+            "played": 23,
+            "rank": 9,
+            "runsFor": 4.311769734967227,
+            "runsAgainst": 4.277286976346537,
+            "offence": 0.993444883397717,
+            "defence": 0.9854999507545495,
+            "runDifferential": 0.0344827586206895
+          }
+        },
+        "strengthGap": 0.6
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 5.5,
+        "totalUnder": 11.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 33,
+          "pointsAgainst": 18,
+          "winRate": 1,
+          "pointsForAvg": 6.6,
+          "pointsAgainstAvg": 3.6
+        },
+        "away": {
+          "streak": "LWLLL",
+          "played": 5,
+          "pointsFor": 13,
+          "pointsAgainst": 22,
+          "winRate": 0.2,
+          "pointsForAvg": 2.6,
+          "pointsAgainstAvg": 4.4
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "firstPitch": "2026-08-31T22:45:00.000Z",
+      "firstPitchLocal": "18:45",
+      "home": "Boston Red Sox",
+      "away": "Seattle Mariners",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 6.97,
+          "away": 3.23,
+          "total": 10.2
+        },
+        "margin": 3.74,
+        "winProbability": {
+          "home": 0.7805745759658419,
+          "away": 0.2194254240341566
+        },
+        "regulation": {
+          "home": 0.7407251684253447,
+          "away": 0.18547963242558493,
+          "tie": 0.07379519914906885
+        },
+        "runLine": {
+          "favourite": "Boston Red Sox",
+          "where": "H",
+          "line": -1.5,
+          "coverProbability": 0.6565189180815421,
+          "underdogProbability": 0.34348108191845794
+        },
+        "total": {
+          "projected": 10.2,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.7562079602118082
+            },
+            {
+              "line": 7.5,
+              "over": 0.6734948823609214
+            },
+            {
+              "line": 8.5,
+              "over": 0.5876586870199512
+            },
+            {
+              "line": 9.5,
+              "over": 0.5029439656098471
+            },
+            {
+              "line": 10.5,
+              "over": 0.422756284848909
+            },
+            {
+              "line": 11.5,
+              "over": 0.3494825797984605
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 6.97,
+            "overUnder": [
+              {
+                "line": 6.5,
+                "over": 0.4741256162931493
+              },
+              {
+                "line": 7.5,
+                "over": 0.3854551914895743
+              },
+              {
+                "line": 8.5,
+                "over": 0.3079990444081043
+              }
+            ]
+          },
+          "away": {
+            "projected": 3.23,
+            "overUnder": [
+              {
+                "line": 2.5,
+                "over": 0.552083645489697
+              },
+              {
+                "line": 3.5,
+                "over": 0.3850171753024223
+              },
+              {
+                "line": 4.5,
+                "over": 0.2543763376608013
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 3.87,
+            "away": 1.8,
+            "total": 5.67
+          },
+          "winProbability": {
+            "home": 0.6796485319719551,
+            "away": 0.19596153460293844,
+            "tie": 0.12438993342510514
+          },
+          "total": {
+            "projected": 5.67,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.7292979779877576
+              },
+              {
+                "line": 4.5,
+                "over": 0.5959490075009432
+              },
+              {
+                "line": 5.5,
+                "over": 0.4648014260379223
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 26,
+            "rank": 13,
+            "runsFor": 5.032541322314049,
+            "runsAgainst": 4.282541322314049,
+            "offence": 1.1595128530625196,
+            "defence": 0.9867105680736273,
+            "runDifferential": 0.75
+          },
+          "away": {
+            "played": 24,
+            "rank": 27,
+            "runsFor": 3.4013774104683194,
+            "runsAgainst": 5.901377410468319,
+            "offence": 0.7836877181847032,
+            "defence": 1.3596953348143443,
+            "runDifferential": -2.4999999999999996
+          }
+        },
+        "strengthGap": 3.25
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 6.5,
+        "totalUnder": 12.5,
+        "runLineCovers": false,
+        "moneylineCovers": true
+      },
+      "form": {
+        "home": {
+          "streak": "LLLWL",
+          "played": 5,
+          "pointsFor": 11,
+          "pointsAgainst": 35,
+          "winRate": 0.2,
+          "pointsForAvg": 2.2,
+          "pointsAgainstAvg": 7
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "pointsFor": 5,
+          "pointsAgainst": 33,
+          "winRate": 0,
+          "pointsForAvg": 1,
+          "pointsAgainstAvg": 6.6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "firstPitch": "2026-08-31T22:45:00.000Z",
+      "firstPitchLocal": "18:45",
+      "home": "Washington Nationals",
+      "away": "Miami Marlins",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 4.38,
+          "away": 3.94,
+          "total": 8.32
+        },
+        "margin": 0.43,
+        "winProbability": {
+          "home": 0.5447150550985045,
+          "away": 0.4552849449014948
+        },
+        "regulation": {
+          "home": 0.48624338451528676,
+          "away": 0.40547574403430936,
+          "tie": 0.10828087145040312
+        },
+        "runLine": {
+          "favourite": "Washington Nationals",
+          "where": "H",
+          "line": -1.5,
+          "coverProbability": 0.38070968360394286,
+          "underdogProbability": 0.6192903163960571
+        },
+        "total": {
+          "projected": 8.32,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.6326853167784431
+            },
+            {
+              "line": 7.5,
+              "over": 0.5302909025809712
+            },
+            {
+              "line": 8.5,
+              "over": 0.4324520634770874
+            },
+            {
+              "line": 9.5,
+              "over": 0.343807076785695
+            },
+            {
+              "line": 10.5,
+              "over": 0.26700019012587883
+            },
+            {
+              "line": 11.5,
+              "over": 0.2029369837428158
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 4.38,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.5489177063494998
+              },
+              {
+                "line": 4.5,
+                "over": 0.4132939697958583
+              },
+              {
+                "line": 5.5,
+                "over": 0.2999326355513494
+              }
+            ]
+          },
+          "away": {
+            "projected": 3.94,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.4918674491408755
+              },
+              {
+                "line": 4.5,
+                "over": 0.35517893458083377
+              },
+              {
+                "line": 5.5,
+                "over": 0.2466412430937804
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.43,
+            "away": 2.19,
+            "total": 4.62
+          },
+          "winProbability": {
+            "home": 0.4494354856000103,
+            "away": 0.38178441717810047,
+            "tie": 0.1687800972218882
+          },
+          "total": {
+            "projected": 4.62,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.6181131410375059
+              },
+              {
+                "line": 4.5,
+                "over": 0.463610409187981
+              },
+              {
+                "line": 5.5,
+                "over": 0.32788025188257586
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 24,
+            "rank": 22,
+            "runsFor": 4.534710743801653,
+            "runsAgainst": 4.268044077134986,
+            "offence": 1.0448111710568073,
+            "defence": 0.9833703586163122,
+            "runDifferential": 0.2666666666666666
+          },
+          "away": {
+            "played": 24,
+            "rank": 20,
+            "runsFor": 4.134710743801652,
+            "runsAgainst": 4.068044077134986,
+            "offence": 0.9526499523960645,
+            "defence": 0.9372897492859408,
+            "runDifferential": 0.06666666666666643
+          }
+        },
+        "strengthGap": 0.2
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 5.5,
+        "totalUnder": 10.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LWWWL",
+          "played": 5,
+          "pointsFor": 24,
+          "pointsAgainst": 26,
+          "winRate": 0.6,
+          "pointsForAvg": 4.8,
+          "pointsAgainstAvg": 5.2
+        },
+        "away": {
+          "streak": "WLLWL",
+          "played": 5,
+          "pointsFor": 19,
+          "pointsAgainst": 23,
+          "winRate": 0.4,
+          "pointsForAvg": 3.8,
+          "pointsAgainstAvg": 4.6
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1788106500,
+          "home": "Washington Nationals",
+          "away": "Miami Marlins",
+          "homePoints": 2,
+          "awayPoints": 6,
+          "total": 8,
+          "winner": "Miami Marlins"
+        },
+        {
+          "ts": 1788033900,
+          "home": "Washington Nationals",
+          "away": "Miami Marlins",
+          "homePoints": 5,
+          "awayPoints": 4,
+          "total": 9,
+          "winner": "Washington Nationals"
+        },
+        {
+          "ts": 1787957100,
+          "home": "Washington Nationals",
+          "away": "Miami Marlins",
+          "homePoints": 9,
+          "awayPoints": 2,
+          "total": 11,
+          "winner": "Washington Nationals"
+        },
+        {
+          "ts": 1787506800,
+          "home": "Miami Marlins",
+          "away": "Washington Nationals",
+          "homePoints": 6,
+          "awayPoints": 2,
+          "total": 8,
+          "winner": "Miami Marlins"
+        },
+        {
+          "ts": 1787429400,
+          "home": "Miami Marlins",
+          "away": "Washington Nationals",
+          "homePoints": 4,
+          "awayPoints": 2,
+          "total": 6,
+          "winner": "Miami Marlins"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 5,
+        "aWins": 2,
+        "bWins": 3,
+        "averageTotal": 8.4
+      }
+    },
+    {
+      "firstPitch": "2026-08-31T23:40:00.000Z",
+      "firstPitchLocal": "19:40",
+      "home": "Chicago Cubs",
+      "away": "Milwaukee Brewers",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 4.7,
+          "away": 5.04,
+          "total": 9.74
+        },
+        "margin": -0.34,
+        "winProbability": {
+          "home": 0.4759850154775638,
+          "away": 0.5240149845224353
+        },
+        "regulation": {
+          "home": 0.4242324787687291,
+          "away": 0.47992949028898363,
+          "tie": 0.09583803094228638
+        },
+        "runLine": {
+          "favourite": "Milwaukee Brewers",
+          "where": "A",
+          "line": -1.5,
+          "coverProbability": 0.38635419549245587,
+          "underdogProbability": 0.6136458045075441
+        },
+        "total": {
+          "projected": 9.74,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.7391183571546657
+            },
+            {
+              "line": 7.5,
+              "over": 0.6508825376114814
+            },
+            {
+              "line": 8.5,
+              "over": 0.5600421141365723
+            },
+            {
+              "line": 9.5,
+              "over": 0.4713670860717816
+            },
+            {
+              "line": 10.5,
+              "over": 0.38859065036366264
+            },
+            {
+              "line": 11.5,
+              "over": 0.3142108924330969
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 4.7,
+            "overUnder": [
+              {
+                "line": 4.5,
+                "over": 0.45461645916439974
+              },
+              {
+                "line": 5.5,
+                "over": 0.3394609412424495
+              },
+              {
+                "line": 6.5,
+                "over": 0.24611592372425037
+              }
+            ]
+          },
+          "away": {
+            "projected": 5.04,
+            "overUnder": [
+              {
+                "line": 4.5,
+                "over": 0.49460857590563734
+              },
+              {
+                "line": 5.5,
+                "over": 0.3789802880072206
+              },
+              {
+                "line": 6.5,
+                "over": 0.2822782733784288
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.61,
+            "away": 2.8,
+            "total": 5.41
+          },
+          "winProbability": {
+            "home": 0.40117240994078124,
+            "away": 0.4484649852339734,
+            "tie": 0.15036260482524536
+          },
+          "total": {
+            "projected": 5.41,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.712028469241598
+              },
+              {
+                "line": 4.5,
+                "over": 0.571868057024499
+              },
+              {
+                "line": 5.5,
+                "over": 0.4361263113055373
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 24,
+            "rank": 10,
+            "runsFor": 5.70137741046832,
+            "runsAgainst": 4.601377410468319,
+            "offence": 1.3136147254839732,
+            "defence": 1.060171374166931,
+            "runDifferential": 1.1000000000000005
+          },
+          "away": {
+            "played": 25,
+            "rank": 3,
+            "runsFor": 4.872300719808051,
+            "runsAgainst": 3.4852039456145025,
+            "offence": 1.1225929300478084,
+            "defence": 0.8030016072726527,
+            "runDifferential": 1.387096774193548
+          }
+        },
+        "strengthGap": 0.29
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 6.5,
+        "totalUnder": 12.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LWLLL",
+          "played": 5,
+          "pointsFor": 34,
+          "pointsAgainst": 29,
+          "winRate": 0.2,
+          "pointsForAvg": 6.8,
+          "pointsAgainstAvg": 5.8
+        },
+        "away": {
+          "streak": "LWWWW",
+          "played": 5,
+          "pointsFor": 26,
+          "pointsAgainst": 15,
+          "winRate": 0.8,
+          "pointsForAvg": 5.2,
+          "pointsAgainstAvg": 3
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "firstPitch": "2026-08-31T23:40:00.000Z",
+      "firstPitchLocal": "19:40",
+      "home": "Minnesota Twins",
+      "away": "Detroit Tigers",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 3.66,
+          "away": 4.28,
+          "total": 7.94
+        },
+        "margin": -0.62,
+        "winProbability": {
+          "home": 0.44487677028845396,
+          "away": 0.5551232297115436
+        },
+        "regulation": {
+          "home": 0.38456069594036946,
+          "away": 0.5037428700816938,
+          "tie": 0.11169643397793423
+        },
+        "runLine": {
+          "favourite": "Detroit Tigers",
+          "where": "A",
+          "line": -1.5,
+          "coverProbability": 0.39384621129448827,
+          "underdogProbability": 0.6061537887055117
+        },
+        "total": {
+          "projected": 7.94,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.5989444398895145
+            },
+            {
+              "line": 7.5,
+              "over": 0.4939403815431184
+            },
+            {
+              "line": 8.5,
+              "over": 0.3958948927083488
+            },
+            {
+              "line": 9.5,
+              "over": 0.3090789326391949
+            },
+            {
+              "line": 10.5,
+              "over": 0.23555696630863998
+            },
+            {
+              "line": 11.5,
+              "over": 0.17561381132887477
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 3.66,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.45159726713431264
+              },
+              {
+                "line": 4.5,
+                "over": 0.31595057465454235
+              },
+              {
+                "line": 5.5,
+                "over": 0.21224498912666026
+              }
+            ]
+          },
+          "away": {
+            "projected": 4.28,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.537045606485493
+              },
+              {
+                "line": 4.5,
+                "over": 0.4009545889850185
+              },
+              {
+                "line": 5.5,
+                "over": 0.2883899813484759
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.03,
+            "away": 2.38,
+            "total": 4.41
+          },
+          "winProbability": {
+            "home": 0.3632380765961888,
+            "away": 0.46270977711245415,
+            "tie": 0.17405214629135699
+          },
+          "total": {
+            "projected": 4.41,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.5892049244668351
+              },
+              {
+                "line": 4.5,
+                "over": 0.43241230803878156
+              },
+              {
+                "line": 5.5,
+                "over": 0.2986922506282354
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 24,
+            "rank": 26,
+            "runsFor": 4.0013774104683195,
+            "runsAgainst": 4.901377410468319,
+            "offence": 0.9219295461758171,
+            "defence": 1.1292922881624878,
+            "runDifferential": -0.8999999999999995
+          },
+          "away": {
+            "played": 24,
+            "rank": 24,
+            "runsFor": 3.9013774104683194,
+            "runsAgainst": 3.8347107438016526,
+            "offence": 0.8988892415106314,
+            "defence": 0.8835290384005077,
+            "runDifferential": 0.06666666666666687
+          }
+        },
+        "strengthGap": 0.97
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 5.5,
+        "totalUnder": 10.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "pointsFor": 19,
+          "pointsAgainst": 25,
+          "winRate": 0.2,
+          "pointsForAvg": 3.8,
+          "pointsAgainstAvg": 5
+        },
+        "away": {
+          "streak": "LWLLW",
+          "played": 5,
+          "pointsFor": 8,
+          "pointsAgainst": 13,
+          "winRate": 0.4,
+          "pointsForAvg": 1.6,
+          "pointsAgainstAvg": 2.6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "firstPitch": "2026-09-01T00:05:00.000Z",
+      "firstPitchLocal": "20:05",
+      "home": "Texas Rangers",
+      "away": "Athletics",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 5,
+          "away": 4.07,
+          "total": 9.07
+        },
+        "margin": 0.93,
+        "winProbability": {
+          "home": 0.5848688682235561,
+          "away": 0.4151311317764416
+        },
+        "regulation": {
+          "home": 0.5308930969616361,
+          "away": 0.3691517710718431,
+          "tie": 0.09995513196651856
+        },
+        "runLine": {
+          "favourite": "Texas Rangers",
+          "where": "H",
+          "line": -1.5,
+          "coverProbability": 0.4305897653404742,
+          "underdogProbability": 0.5694102346595258
+        },
+        "total": {
+          "projected": 9.07,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.6924252786641201
+            },
+            {
+              "line": 7.5,
+              "over": 0.5970411409854655
+            },
+            {
+              "line": 8.5,
+              "over": 0.5020838330803982
+            },
+            {
+              "line": 9.5,
+              "over": 0.41242997446890334
+            },
+            {
+              "line": 10.5,
+              "over": 0.3314657828150864
+            },
+            {
+              "line": 11.5,
+              "over": 0.261067895385824
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 5,
+            "overUnder": [
+              {
+                "line": 4.5,
+                "over": 0.4901514027339604
+              },
+              {
+                "line": 5.5,
+                "over": 0.3745147830178452
+              },
+              {
+                "line": 6.5,
+                "over": 0.27813581364639395
+              }
+            ]
+          },
+          "away": {
+            "projected": 4.07,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.5094548827686812
+              },
+              {
+                "line": 4.5,
+                "over": 0.3727770003449976
+              },
+              {
+                "line": 5.5,
+                "over": 0.2624894180518906
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.78,
+            "away": 2.26,
+            "total": 5.04
+          },
+          "winProbability": {
+            "home": 0.4898396042080704,
+            "away": 0.35314623346759166,
+            "tie": 0.15701416232433638
+          },
+          "total": {
+            "projected": 5.04,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.6703230219236531
+              },
+              {
+                "line": 4.5,
+                "over": 0.5226916598686915
+              },
+              {
+                "line": 5.5,
+                "over": 0.38585256394386835
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 24,
+            "rank": 17,
+            "runsFor": 3.8013774104683193,
+            "runsAgainst": 4.168044077134986,
+            "offence": 0.8758489368454457,
+            "defence": 0.9603300539511264,
+            "runDifferential": -0.36666666666666625
+          },
+          "away": {
+            "played": 24,
+            "rank": 29,
+            "runsFor": 4.368044077134986,
+            "runsAgainst": 5.568044077134986,
+            "offence": 1.0064106632814978,
+            "defence": 1.2828943192637257,
+            "runDifferential": -1.2000000000000002
+          }
+        },
+        "strengthGap": 0.83
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 5.5,
+        "totalUnder": 11.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "pointsFor": 15,
+          "pointsAgainst": 26,
+          "winRate": 0.2,
+          "pointsForAvg": 3,
+          "pointsAgainstAvg": 5.2
+        },
+        "away": {
+          "streak": "LLLWW",
+          "played": 5,
+          "pointsFor": 22,
+          "pointsAgainst": 23,
+          "winRate": 0.4,
+          "pointsForAvg": 4.4,
+          "pointsAgainstAvg": 4.6
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1786910700,
+          "home": "Athletics",
+          "away": "Texas Rangers",
+          "homePoints": 5,
+          "awayPoints": 2,
+          "total": 7,
+          "winner": "Athletics"
+        },
+        {
+          "ts": 1786844400,
+          "home": "Athletics",
+          "away": "Texas Rangers",
+          "homePoints": 3,
+          "awayPoints": 5,
+          "total": 8,
+          "winner": "Texas Rangers"
+        },
+        {
+          "ts": 1786758000,
+          "home": "Athletics",
+          "away": "Texas Rangers",
+          "homePoints": 8,
+          "awayPoints": 3,
+          "total": 11,
+          "winner": "Athletics"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 3,
+        "aWins": 1,
+        "bWins": 2,
+        "averageTotal": 8.666666666666666
+      }
+    },
+    {
+      "firstPitch": "2026-09-01T00:10:00.000Z",
+      "firstPitchLocal": "20:10",
+      "home": "Houston Astros",
+      "away": "Chicago White Sox",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 5.03,
+          "away": 4.96,
+          "total": 9.99
+        },
+        "margin": 0.06,
+        "winProbability": {
+          "home": 0.5089232582131354,
+          "away": 0.49107674178686433
+        },
+        "regulation": {
+          "home": 0.4580982567644818,
+          "away": 0.44778137018245573,
+          "tie": 0.09412037305306226
+        },
+        "runLine": {
+          "favourite": "Houston Astros",
+          "where": "H",
+          "line": -1.5,
+          "coverProbability": 0.36721637600841806,
+          "underdogProbability": 0.632783623991582
+        },
+        "total": {
+          "projected": 9.99,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.7544878070552253
+            },
+            {
+              "line": 7.5,
+              "over": 0.6690481560078445
+            },
+            {
+              "line": 8.5,
+              "over": 0.5800817126874609
+            },
+            {
+              "line": 9.5,
+              "over": 0.49224631339053676
+            },
+            {
+              "line": 10.5,
+              "over": 0.40932144969259016
+            },
+            {
+              "line": 11.5,
+              "over": 0.3339631243976658
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 5.03,
+            "overUnder": [
+              {
+                "line": 4.5,
+                "over": 0.49313832217655984
+              },
+              {
+                "line": 5.5,
+                "over": 0.37750559890218205
+              },
+              {
+                "line": 6.5,
+                "over": 0.28090870121170486
+              }
+            ]
+          },
+          "away": {
+            "projected": 4.96,
+            "overUnder": [
+              {
+                "line": 4.5,
+                "over": 0.48577233271613446
+              },
+              {
+                "line": 5.5,
+                "over": 0.37014239866783255
+              },
+              {
+                "line": 6.5,
+                "over": 0.2740934869558191
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.79,
+            "away": 2.76,
+            "total": 5.55
+          },
+          "winProbability": {
+            "home": 0.43050574955059867,
+            "away": 0.4217282775630556,
+            "tie": 0.1477659728863462
+          },
+          "total": {
+            "projected": 5.55,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.7260352250002557
+              },
+              {
+                "line": 4.5,
+                "over": 0.5889263504778554
+              },
+              {
+                "line": 5.5,
+                "over": 0.4541317419028694
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 23,
+            "rank": 19,
+            "runsFor": 4.173838700484469,
+            "runsAgainst": 4.656597321174123,
+            "offence": 0.9616651528250473,
+            "defence": 1.0728942098293917,
+            "runDifferential": -0.4827586206896548
+          },
+          "away": {
+            "played": 25,
+            "rank": 16,
+            "runsFor": 4.743268461743535,
+            "runsAgainst": 5.0981071714209545,
+            "offence": 1.0928635046733755,
+            "defence": 1.1746194244530666,
+            "runDifferential": -0.35483870967741993
+          }
+        },
+        "strengthGap": 0.13
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 6.5,
+        "totalUnder": 12.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WLWWW",
+          "played": 5,
+          "pointsFor": 19,
+          "pointsAgainst": 12,
+          "winRate": 0.8,
+          "pointsForAvg": 3.8,
+          "pointsAgainstAvg": 2.4
+        },
+        "away": {
+          "streak": "LWWWW",
+          "played": 5,
+          "pointsFor": 28,
+          "pointsAgainst": 19,
+          "winRate": 0.8,
+          "pointsForAvg": 5.6,
+          "pointsAgainstAvg": 3.8
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "firstPitch": "2026-09-01T00:40:00.000Z",
+      "firstPitchLocal": "20:40",
+      "home": "Colorado Rockies",
+      "away": "Baltimore Orioles",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 4.13,
+          "away": 5.8,
+          "total": 9.93
+        },
+        "margin": -1.68,
+        "winProbability": {
+          "home": 0.3690800368205371,
+          "away": 0.6309199631794641
+        },
+        "regulation": {
+          "home": 0.3202993542822137,
+          "away": 0.5893660484245961,
+          "tie": 0.09033459729319147
+        },
+        "runLine": {
+          "favourite": "Baltimore Orioles",
+          "where": "A",
+          "line": -1.5,
+          "coverProbability": 0.4956235601740915,
+          "underdogProbability": 0.5043764398259085
+        },
+        "total": {
+          "projected": 9.93,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.7485911851755072
+            },
+            {
+              "line": 7.5,
+              "over": 0.6625562208268225
+            },
+            {
+              "line": 8.5,
+              "over": 0.573448014844847
+            },
+            {
+              "line": 9.5,
+              "over": 0.48588645557458815
+            },
+            {
+              "line": 10.5,
+              "over": 0.4035567831021696
+            },
+            {
+              "line": 11.5,
+              "over": 0.32899701205577064
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 4.13,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.517044611599509
+              },
+              {
+                "line": 4.5,
+                "over": 0.3804586861310324
+              },
+              {
+                "line": 5.5,
+                "over": 0.2694867266706992
+              }
+            ]
+          },
+          "away": {
+            "projected": 5.8,
+            "overUnder": [
+              {
+                "line": 5.5,
+                "over": 0.46259238034665534
+              },
+              {
+                "line": 6.5,
+                "over": 0.3623967135048903
+              },
+              {
+                "line": 7.5,
+                "over": 0.2776612380754337
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.29,
+            "away": 3.22,
+            "total": 5.52
+          },
+          "winProbability": {
+            "home": 0.3131642760065613,
+            "away": 0.5430367627545301,
+            "tie": 0.14379896123890581
+          },
+          "total": {
+            "projected": 5.52,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.7209943308114449
+              },
+              {
+                "line": 4.5,
+                "over": 0.5833843619796392
+              },
+              {
+                "line": 5.5,
+                "over": 0.4489152895198241
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 24,
+            "rank": 30,
+            "runsFor": 4.101377410468319,
+            "runsAgainst": 5.434710743801653,
+            "offence": 0.9449698508410027,
+            "defence": 1.2521739130434781,
+            "runDifferential": -1.333333333333334
+          },
+          "away": {
+            "played": 24,
+            "rank": 11,
+            "runsFor": 4.734710743801653,
+            "runsAgainst": 4.234710743801653,
+            "offence": 1.0908917803871785,
+            "defence": 0.9756902570612503,
+            "runDifferential": 0.5
+          }
+        },
+        "strengthGap": 1.83
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 6.5,
+        "totalUnder": 12.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLL",
+          "played": 5,
+          "pointsFor": 12,
+          "pointsAgainst": 24,
+          "winRate": 0,
+          "pointsForAvg": 2.4,
+          "pointsAgainstAvg": 4.8
+        },
+        "away": {
+          "streak": "WWWLW",
+          "played": 5,
+          "pointsFor": 30,
+          "pointsAgainst": 25,
+          "winRate": 0.8,
+          "pointsForAvg": 6,
+          "pointsAgainstAvg": 5
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "firstPitch": "2026-09-01T01:38:00.000Z",
+      "firstPitchLocal": "21:38",
+      "home": "Los Angeles Angels",
+      "away": "New York Yankees",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 2.75,
+          "away": 3.71,
+          "total": 6.45
+        },
+        "margin": -0.96,
+        "winProbability": {
+          "home": 0.39849875317950145,
+          "away": 0.6015012468204978
+        },
+        "regulation": {
+          "home": 0.329178276842551,
+          "away": 0.5424504706816141,
+          "tie": 0.12837125247583409
+        },
+        "runLine": {
+          "favourite": "New York Yankees",
+          "where": "A",
+          "line": -1.5,
+          "coverProbability": 0.4135210244771158,
+          "underdogProbability": 0.5864789755228842
+        },
+        "total": {
+          "projected": 6.45,
+          "overUnder": [
+            {
+              "line": 5.5,
+              "over": 0.5620506347318688
+            },
+            {
+              "line": 6.5,
+              "over": 0.4427407590930287
+            },
+            {
+              "line": 7.5,
+              "over": 0.33628762823422537
+            },
+            {
+              "line": 8.5,
+              "over": 0.24717480391101296
+            },
+            {
+              "line": 9.5,
+              "over": 0.17639243880204883
+            },
+            {
+              "line": 10.5,
+              "over": 0.1225894260595423
+            },
+            {
+              "line": 11.5,
+              "over": 0.08319430475767549
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 2.75,
+            "overUnder": [
+              {
+                "line": 2.5,
+                "over": 0.47032026015903233
+              },
+              {
+                "line": 3.5,
+                "over": 0.30357684547854913
+              },
+              {
+                "line": 4.5,
+                "over": 0.1847958939738534
+              }
+            ]
+          },
+          "away": {
+            "projected": 3.71,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.458687779037504
+              },
+              {
+                "line": 4.5,
+                "over": 0.3227497923595543
+              },
+              {
+                "line": 5.5,
+                "over": 0.21811291317670478
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 1.53,
+            "away": 2.06,
+            "total": 3.59
+          },
+          "winProbability": {
+            "home": 0.31243979674232625,
+            "away": 0.4875531601614349,
+            "tie": 0.20000704309623754
+          },
+          "total": {
+            "projected": 3.59,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.4577564017971869
+              },
+              {
+                "line": 4.5,
+                "over": 0.3018078631226552
+              },
+              {
+                "line": 5.5,
+                "over": 0.18597202499725027
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 24,
+            "rank": 25,
+            "runsFor": 3.668044077134986,
+            "runsAgainst": 3.868044077134986,
+            "offence": 0.8451285306251982,
+            "defence": 0.8912091399555696,
+            "runDifferential": -0.20000000000000018
+          },
+          "away": {
+            "played": 24,
+            "rank": 5,
+            "runsFor": 4.301377410468319,
+            "runsAgainst": 3.101377410468319,
+            "offence": 0.991050460171374,
+            "defence": 0.7145668041891462,
+            "runDifferential": 1.2000000000000002
+          }
+        },
+        "strengthGap": 1.4
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 3.5,
+        "totalUnder": 8.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLL",
+          "played": 5,
+          "pointsFor": 16,
+          "pointsAgainst": 26,
+          "winRate": 0,
+          "pointsForAvg": 3.2,
+          "pointsAgainstAvg": 5.2
+        },
+        "away": {
+          "streak": "WWWLW",
+          "played": 5,
+          "pointsFor": 35,
+          "pointsAgainst": 11,
+          "winRate": 0.8,
+          "pointsForAvg": 7,
+          "pointsAgainstAvg": 2.2
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "firstPitch": "2026-09-01T01:40:00.000Z",
+      "firstPitchLocal": "21:40",
+      "home": "Arizona Diamondbacks",
+      "away": "Philadelphia Phillies",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 4.41,
+          "away": 5.11,
+          "total": 9.52
+        },
+        "margin": -0.71,
+        "winProbability": {
+          "home": 0.4445527764170547,
+          "away": 0.5554472235829462
+        },
+        "regulation": {
+          "home": 0.3922054221458631,
+          "away": 0.5108550329074867,
+          "tie": 0.09693954494665111
+        },
+        "runLine": {
+          "favourite": "Philadelphia Phillies",
+          "where": "A",
+          "line": -1.5,
+          "coverProbability": 0.41461352179263433,
+          "underdogProbability": 0.5853864782073657
+        },
+        "total": {
+          "projected": 9.52,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.7243764584653465
+            },
+            {
+              "line": 7.5,
+              "over": 0.6337110049929792
+            },
+            {
+              "line": 8.5,
+              "over": 0.541372686825341
+            },
+            {
+              "line": 9.5,
+              "over": 0.4521954691063257
+            },
+            {
+              "line": 10.5,
+              "over": 0.36982853297119633
+            },
+            {
+              "line": 11.5,
+              "over": 0.29659021909103456
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 4.41,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.5528565936870729
+              },
+              {
+                "line": 4.5,
+                "over": 0.41741651472087693
+              },
+              {
+                "line": 5.5,
+                "over": 0.3038159286943441
+              }
+            ]
+          },
+          "away": {
+            "projected": 5.11,
+            "overUnder": [
+              {
+                "line": 4.5,
+                "over": 0.503065805238052
+              },
+              {
+                "line": 5.5,
+                "over": 0.38749526089679076
+              },
+              {
+                "line": 6.5,
+                "over": 0.29021636587759225
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.45,
+            "away": 2.84,
+            "total": 5.29
+          },
+          "winProbability": {
+            "home": 0.37356885552247493,
+            "away": 0.47418558483053524,
+            "tie": 0.15224555964698974
+          },
+          "total": {
+            "projected": 5.29,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.698759662979798
+              },
+              {
+                "line": 4.5,
+                "over": 0.5560160872577844
+              },
+              {
+                "line": 5.5,
+                "over": 0.4197114305737377
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 25,
+            "rank": 15,
+            "runsFor": 4.4529458810983735,
+            "runsAgainst": 4.4852039456145025,
+            "offence": 1.025972297580901,
+            "defence": 1.0334046539245092,
+            "runDifferential": -0.032258064516129004
+          },
+          "away": {
+            "played": 23,
+            "rank": 1,
+            "runsFor": 5.070390424622399,
+            "runsAgainst": 4.173838700484469,
+            "offence": 1.1682334015474014,
+            "defence": 0.9616651528250473,
+            "runDifferential": 0.8965517241379306
+          }
+        },
+        "strengthGap": 0.93
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 6.5,
+        "totalUnder": 11.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LWWLW",
+          "played": 5,
+          "pointsFor": 22,
+          "pointsAgainst": 20,
+          "winRate": 0.6,
+          "pointsForAvg": 4.4,
+          "pointsAgainstAvg": 4
+        },
+        "away": {
+          "streak": "WWWWL",
+          "played": 5,
+          "pointsFor": 21,
+          "pointsAgainst": 11,
+          "winRate": 0.8,
+          "pointsForAvg": 4.2,
+          "pointsAgainstAvg": 2.2
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
