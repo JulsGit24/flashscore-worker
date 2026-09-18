@@ -1,0 +1,410 @@
+{
+  "date": "2026-09-18",
+  "region": "asia",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-09-18T11:01:10.464Z",
+  "stats": {
+    "totalFixtures": 2307,
+    "inScope": 5,
+    "tablesLoaded": 615,
+    "daysCached": 46,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "africa",
+      "algeria",
+      "australia",
+      "bangladesh",
+      "bermuda",
+      "bhutan",
+      "burkina-faso",
+      "egypt",
+      "ghana",
+      "indonesia",
+      "iraq",
+      "jordan",
+      "kenya",
+      "kyrgyzstan",
+      "niger",
+      "nigeria",
+      "rwanda",
+      "saudi-arabia",
+      "singapore",
+      "south-africa",
+      "thailand",
+      "united-arab-emirates",
+      "vietnam",
+      "world"
+    ],
+    "otherDays": 1803,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-09-18T04:00:00.000Z",
+      "kickoffLocal": "00:00",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Vanraure",
+      "away": "Tegevajaro Miyazaki",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTWLL",
+          "played": 5,
+          "goalsFor": 1,
+          "goalsAgainst": 8,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "WLLTT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 9,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 15,
+      "awayRank": 18,
+      "goalsIndex": 0,
+      "mismatchIndex": 11.6,
+      "rankScore": 11.6,
+      "projected": {
+        "home": 1.06,
+        "away": 1.03,
+        "total": 2.08
+      },
+      "probabilities": {
+        "home": 0.3575252808627015,
+        "draw": 0.30037871029840757,
+        "away": 0.34209600883889135,
+        "btts": 0.4202243577373713,
+        "over15": 0.6178067382491733,
+        "over25": 0.34766784073238,
+        "over35": 0.15947107546234704,
+        "under15": 0.3821932617508267,
+        "under25": 0.65233215926762
+      },
+      "pick": {
+        "side": "Vanraure",
+        "where": "H",
+        "probability": 0.3575252808627015
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-18T10:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "china",
+      "league": "China League One",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Yanbian Longding",
+      "away": "Guangdong GZ-Power",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLWW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 10,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "TTWWW",
+          "played": 5,
+          "goalsFor": 13,
+          "goalsAgainst": 3,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 11,
+      "awayRank": 2,
+      "goalsIndex": 46.7,
+      "mismatchIndex": 48.6,
+      "rankScore": 60.3,
+      "projected": {
+        "home": 0.92,
+        "away": 2.16,
+        "total": 3.08
+      },
+      "probabilities": {
+        "home": 0.14876590740200257,
+        "draw": 0.1940328031573089,
+        "away": 0.6572012894406879,
+        "btts": 0.532113929970461,
+        "over15": 0.812483088083895,
+        "over25": 0.5944854859759372,
+        "over35": 0.3706746144784333,
+        "under15": 0.18751691191610498,
+        "under25": 0.4055145140240628
+      },
+      "pick": {
+        "side": "Guangdong GZ-Power",
+        "where": "A",
+        "probability": 0.6572012894406879
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-18T11:00:00.000Z",
+      "kickoffLocal": "07:00",
+      "country": "china",
+      "league": "China League One",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Dalian K'un City",
+      "away": "Ningbo Professional",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWWL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 7,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "WLTLT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 6,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 9,
+      "awayRank": 12,
+      "goalsIndex": 12.9,
+      "mismatchIndex": 10.9,
+      "rankScore": 15.6,
+      "projected": {
+        "home": 1.37,
+        "away": 1,
+        "total": 2.37
+      },
+      "probabilities": {
+        "home": 0.45333042302028614,
+        "draw": 0.2726941532519243,
+        "away": 0.273975423727789,
+        "btts": 0.47149428600776216,
+        "over15": 0.6849698771248246,
+        "over25": 0.4224338686415047,
+        "over35": 0.21503042193968255,
+        "under15": 0.3150301228751754,
+        "under25": 0.5775661313584953
+      },
+      "pick": {
+        "side": "Dalian K'un City",
+        "where": "H",
+        "probability": 0.45333042302028614
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-18T11:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "china",
+      "league": "China League One",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Nantong Zhiyun",
+      "away": "Guangxi Hengchen",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTLWT",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "WLWTW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 5,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 5,
+      "goalsIndex": 29.6,
+      "mismatchIndex": 9.5,
+      "rankScore": 32,
+      "projected": {
+        "home": 1.63,
+        "away": 1.09,
+        "total": 2.72
+      },
+      "probabilities": {
+        "home": 0.4993524420736523,
+        "draw": 0.24638820611122247,
+        "away": 0.2542593518151248,
+        "btts": 0.533728521005566,
+        "over15": 0.754945607842791,
+        "over25": 0.5112614122868909,
+        "over35": 0.29032107498287485,
+        "under15": 0.24505439215720903,
+        "under25": 0.4887385877131091
+      },
+      "pick": {
+        "side": "Nantong Zhiyun",
+        "where": "H",
+        "probability": 0.4993524420736523
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-18T11:35:00.000Z",
+      "kickoffLocal": "07:35",
+      "country": "china",
+      "league": "Chinese Super League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Zhejiang Professional",
+      "away": "Wuhan Three Towns",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWTL",
+          "played": 4,
+          "goalsFor": 10,
+          "goalsAgainst": 6,
+          "points": 4,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "TTWTL",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 7,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 13,
+      "awayRank": 10,
+      "goalsIndex": 64.7,
+      "mismatchIndex": 10.1,
+      "rankScore": 67.2,
+      "projected": {
+        "home": 2.11,
+        "away": 1.59,
+        "total": 3.7
+      },
+      "probabilities": {
+        "home": 0.49831405351321917,
+        "draw": 0.20941237516813133,
+        "away": 0.2922735713186489,
+        "btts": 0.6995584668958703,
+        "over15": 0.8837977381176221,
+        "over25": 0.7145627418229676,
+        "over35": 0.5058395797262264,
+        "under15": 0.11620226188237792,
+        "under25": 0.28543725817703236
+      },
+      "pick": {
+        "side": "Zhejiang Professional",
+        "where": "H",
+        "probability": 0.49831405351321917
+      },
+      "confidence": "medium",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "LOW_SAMPLE"
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "asia",
+      "slug": "asian-games",
+      "name": "ASIA: Asian Games"
+    }
+  ],
+  "outOfRegionCountries": [
+    "africa",
+    "algeria",
+    "australia",
+    "bangladesh",
+    "bermuda",
+    "bhutan",
+    "burkina-faso",
+    "egypt",
+    "ghana",
+    "indonesia",
+    "iraq",
+    "jordan",
+    "kenya",
+    "kyrgyzstan",
+    "niger",
+    "nigeria",
+    "rwanda",
+    "saudi-arabia",
+    "singapore",
+    "south-africa",
+    "thailand",
+    "united-arab-emirates",
+    "vietnam",
+    "world"
+  ]
+}
