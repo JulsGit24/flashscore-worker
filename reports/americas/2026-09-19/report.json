@@ -1,0 +1,6661 @@
+{
+  "date": "2026-09-19",
+  "region": "americas",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-09-19T10:44:52.056Z",
+  "stats": {
+    "totalFixtures": 3105,
+    "inScope": 94,
+    "tablesLoaded": 617,
+    "daysCached": 47,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "africa",
+      "algeria",
+      "angola",
+      "australia",
+      "australia-oceania",
+      "bangladesh",
+      "bermuda",
+      "bhutan",
+      "botswana",
+      "burkina-faso",
+      "burundi",
+      "cambodia",
+      "eswatini",
+      "ghana",
+      "hong-kong",
+      "india",
+      "indonesia",
+      "iraq",
+      "jordan",
+      "kenya",
+      "kyrgyzstan",
+      "malawi",
+      "malaysia",
+      "niger",
+      "nigeria",
+      "saudi-arabia",
+      "singapore",
+      "south-africa",
+      "thailand",
+      "turkmenistan",
+      "uganda",
+      "united-arab-emirates",
+      "uzbekistan",
+      "vietnam",
+      "world",
+      "zimbabwe"
+    ],
+    "otherDays": 1306,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [
+    {
+      "kickoff": "2026-09-19T20:15:00.000Z",
+      "kickoffLocal": "16:15",
+      "country": "peru",
+      "league": "Liga Femenina",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "U. de Deportes W",
+      "away": "Killas W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLWW",
+          "played": 5,
+          "goalsFor": 24,
+          "goalsAgainst": 6,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "WLLWL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 9,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 7,
+      "goalsIndex": 100,
+      "mismatchIndex": 53.3,
+      "rankScore": 113.3,
+      "projected": {
+        "home": 3.92,
+        "away": 0.87,
+        "total": 4.8
+      },
+      "probabilities": {
+        "home": 0.8874347392843124,
+        "draw": 0.0724127205121047,
+        "away": 0.04015254020358297,
+        "btts": 0.5694916015885285,
+        "over15": 0.9517530987372694,
+        "over25": 0.8561588217716202,
+        "over35": 0.7035266262164669,
+        "under15": 0.04824690126273057,
+        "under25": 0.14384117822837983
+      },
+      "pick": {
+        "side": "U. de Deportes W",
+        "where": "H",
+        "probability": 0.8874347392843124
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T00:30:00.000Z",
+      "kickoffLocal": "20:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Sporting Kansas City",
+      "away": "Philadelphia Union",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLLL",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 13,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 19,
+          "goalsAgainst": 0,
+          "points": 15,
+          "ppg": 3
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 28,
+      "awayRank": 1,
+      "goalsIndex": 84.2,
+      "mismatchIndex": 74.6,
+      "rankScore": 102.9,
+      "projected": {
+        "home": 1.12,
+        "away": 2.75,
+        "total": 3.87
+      },
+      "probabilities": {
+        "home": 0.1293625346725353,
+        "draw": 0.15521753766052168,
+        "away": 0.7154199276669425,
+        "btts": 0.6306446538407928,
+        "over15": 0.8984054682352037,
+        "over25": 0.7421866650742001,
+        "over35": 0.5406644089965054,
+        "under15": 0.10159453176479627,
+        "under25": 0.25781333492579994
+      },
+      "pick": {
+        "side": "Philadelphia Union",
+        "where": "A",
+        "probability": 0.7154199276669425
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Charleston",
+      "away": "Monterey Bay",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTLLW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "TTLLT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 9,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 22,
+      "goalsIndex": 63.7,
+      "mismatchIndex": 50.7,
+      "rankScore": 76.3,
+      "projected": {
+        "home": 2.49,
+        "away": 0.94,
+        "total": 3.44
+      },
+      "probabilities": {
+        "home": 0.7119143652643951,
+        "draw": 0.16595107113353952,
+        "away": 0.12213456360206516,
+        "btts": 0.5588461305270006,
+        "over15": 0.8565173141339315,
+        "over25": 0.6659914167359962,
+        "over35": 0.44815680737768987,
+        "under15": 0.1434826858660685,
+        "under25": 0.33400858326400384
+      },
+      "pick": {
+        "side": "Charleston",
+        "where": "H",
+        "probability": 0.7119143652643951
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "ATK_VS_LEAKY"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Lexington",
+      "away": "Orange County SC",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 9,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "LTTTL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 10,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 14,
+      "awayRank": 25,
+      "goalsIndex": 52.3,
+      "mismatchIndex": 43.3,
+      "rankScore": 63.1,
+      "projected": {
+        "home": 2.35,
+        "away": 0.85,
+        "total": 3.2
+      },
+      "probabilities": {
+        "home": 0.7084022013659353,
+        "draw": 0.17309744749476652,
+        "away": 0.11850035113929815,
+        "btts": 0.517976158882721,
+        "over15": 0.8287926288260399,
+        "over25": 0.6200826906330219,
+        "over35": 0.3974587565604693,
+        "under15": 0.17120737117396012,
+        "under25": 0.3799173093669781
+      },
+      "pick": {
+        "side": "Lexington",
+        "where": "H",
+        "probability": 0.7084022013659353
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T14:00:00.000Z",
+      "kickoffLocal": "10:00",
+      "country": "argentina",
+      "league": "Primera A Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Boca Juniors W",
+      "away": "Independiente W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLTWW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "LLWLW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 10,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 12,
+      "goalsIndex": 42.5,
+      "mismatchIndex": 50.8,
+      "rankScore": 61.4,
+      "projected": {
+        "home": 2.23,
+        "away": 0.76,
+        "total": 2.99
+      },
+      "probabilities": {
+        "home": 0.7082989978595199,
+        "draw": 0.17920089375369702,
+        "away": 0.11250010838678341,
+        "btts": 0.4750912996461935,
+        "over15": 0.7993486416991251,
+        "over25": 0.5745562597009225,
+        "over35": 0.35051318564271416,
+        "under15": 0.20065135830087488,
+        "under25": 0.4254437402990775
+      },
+      "pick": {
+        "side": "Boca Juniors W",
+        "where": "H",
+        "probability": 0.7082989978595199
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "kickoff": "2026-09-19T13:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "paraguay",
+      "league": "División Intermedia",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Fernando de la Mora",
+      "away": "Resistencia",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWTTL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 6,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "LLWLT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 6,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 10,
+      "awayRank": 9,
+      "goalsIndex": 0,
+      "mismatchIndex": 2.7,
+      "rankScore": 2.7,
+      "projected": {
+        "home": 1.03,
+        "away": 0.9,
+        "total": 1.94
+      },
+      "probabilities": {
+        "home": 0.3773720162040297,
+        "draw": 0.31428806149573013,
+        "away": 0.30833992230024043,
+        "btts": 0.38157157440374734,
+        "over15": 0.5747157712184622,
+        "over25": 0.3043845043603821,
+        "over35": 0.1304713893483507,
+        "under15": 0.4252842287815378,
+        "under25": 0.6956154956396179
+      },
+      "pick": {
+        "side": "Fernando de la Mora",
+        "where": "H",
+        "probability": 0.3773720162040297
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T13:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "paraguay",
+      "league": "División Intermedia",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Paraguari AC",
+      "away": "General Caballero JLM",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWL",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 7,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "WWTWT",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 3,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 1,
+      "awayRank": 3,
+      "goalsIndex": 35.8,
+      "mismatchIndex": 5.4,
+      "rankScore": 37.2,
+      "projected": {
+        "home": 1.37,
+        "away": 1.48,
+        "total": 2.85
+      },
+      "probabilities": {
+        "home": 0.3503530377534392,
+        "draw": 0.2498184026180133,
+        "away": 0.39982855962854785,
+        "btts": 0.5760995456835594,
+        "over15": 0.7772992056762806,
+        "over25": 0.5423787898458378,
+        "over35": 0.31920439480691765,
+        "under15": 0.22270079432371936,
+        "under25": 0.45762121015416224
+      },
+      "pick": {
+        "side": "General Caballero JLM",
+        "where": "A",
+        "probability": 0.39982855962854785
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T13:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "uruguay",
+      "league": "Segunda División",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Fenix",
+      "away": "Colon",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLTWW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 3,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "LLWWT",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 3,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 9,
+      "awayRank": 2,
+      "goalsIndex": 0,
+      "mismatchIndex": 31.5,
+      "rankScore": 31.5,
+      "projected": {
+        "home": 1.09,
+        "away": 0.98,
+        "total": 2.07
+      },
+      "probabilities": {
+        "home": 0.3776130151982035,
+        "draw": 0.3015436814749747,
+        "away": 0.320843303326822,
+        "btts": 0.4146581820884173,
+        "over15": 0.612609637737338,
+        "over25": 0.3422629010501592,
+        "over35": 0.1557236527360053,
+        "under15": 0.387390362262662,
+        "under25": 0.6577370989498408
+      },
+      "pick": {
+        "side": "Fenix",
+        "where": "H",
+        "probability": 0.3776130151982035
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T14:00:00.000Z",
+      "kickoffLocal": "10:00",
+      "country": "argentina",
+      "league": "Primera A Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Boca Juniors W",
+      "away": "Independiente W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLTWW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "LLWLW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 10,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 12,
+      "goalsIndex": 42.5,
+      "mismatchIndex": 50.8,
+      "rankScore": 61.4,
+      "projected": {
+        "home": 2.23,
+        "away": 0.76,
+        "total": 2.99
+      },
+      "probabilities": {
+        "home": 0.7082989978595199,
+        "draw": 0.17920089375369702,
+        "away": 0.11250010838678341,
+        "btts": 0.4750912996461935,
+        "over15": 0.7993486416991251,
+        "over25": 0.5745562597009225,
+        "over35": 0.35051318564271416,
+        "under15": 0.20065135830087488,
+        "under25": 0.4254437402990775
+      },
+      "pick": {
+        "side": "Boca Juniors W",
+        "where": "H",
+        "probability": 0.7082989978595199
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "uruguay",
+      "league": "Liga AUF Uruguaya",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Boston River",
+      "away": "Progreso",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTWT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 7,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "LWWLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 6,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 12,
+      "goalsIndex": 2.1,
+      "mismatchIndex": 17.5,
+      "rankScore": 18,
+      "projected": {
+        "home": 1.39,
+        "away": 0.75,
+        "total": 2.14
+      },
+      "probabilities": {
+        "home": 0.5217266006521333,
+        "draw": 0.27623156108324376,
+        "away": 0.20204183826462305,
+        "btts": 0.3962129507931434,
+        "over15": 0.6305636952625296,
+        "over25": 0.3611575645020647,
+        "over35": 0.1689811912262663,
+        "under15": 0.36943630473747036,
+        "under25": 0.6388424354979353
+      },
+      "pick": {
+        "side": "Boston River",
+        "where": "H",
+        "probability": 0.5217266006521333
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T16:00:00.000Z",
+      "kickoffLocal": "12:00",
+      "country": "uruguay",
+      "league": "Segunda División",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Miramar",
+      "away": "Uruguay Montevideo",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLTT",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 5,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "TLTLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 8,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 10,
+      "awayRank": 13,
+      "goalsIndex": 3,
+      "mismatchIndex": 13.7,
+      "rankScore": 14.5,
+      "projected": {
+        "home": 1.31,
+        "away": 0.86,
+        "total": 2.16
+      },
+      "probabilities": {
+        "home": 0.4708878898026919,
+        "draw": 0.283908795500639,
+        "away": 0.24520331469666906,
+        "btts": 0.42119545453596646,
+        "over15": 0.6380569001175823,
+        "over25": 0.36923136967021375,
+        "over35": 0.17478090264661741,
+        "under15": 0.3619430998824177,
+        "under25": 0.6307686303297863
+      },
+      "pick": {
+        "side": "Miramar",
+        "where": "H",
+        "probability": 0.4708878898026919
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T17:30:00.000Z",
+      "kickoffLocal": "13:30",
+      "country": "argentina",
+      "league": "Liga Profesional",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Gimnasia L.P.",
+      "away": "Banfield",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWWLL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 10,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TLLLL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 11,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 14,
+      "awayRank": 28,
+      "goalsIndex": 55.5,
+      "mismatchIndex": 37.3,
+      "rankScore": 64.8,
+      "projected": {
+        "home": 2.05,
+        "away": 1.22,
+        "total": 3.27
+      },
+      "probabilities": {
+        "home": 0.5652611654682543,
+        "draw": 0.2118696927709829,
+        "away": 0.22286914176076292,
+        "btts": 0.6140403923281852,
+        "over15": 0.8377108534763771,
+        "over25": 0.6345092592301891,
+        "over35": 0.4130195215018437,
+        "under15": 0.16228914652362292,
+        "under25": 0.3654907407698109
+      },
+      "pick": {
+        "side": "Gimnasia L.P.",
+        "where": "H",
+        "probability": 0.5652611654682543
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T17:30:00.000Z",
+      "kickoffLocal": "13:30",
+      "country": "argentina",
+      "league": "Liga Profesional",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Gimnasia Mendoza",
+      "away": "Dep. Riestra",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTWWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 7,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "LTTTT",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 9,
+      "awayRank": 25,
+      "goalsIndex": 23.5,
+      "mismatchIndex": 37.5,
+      "rankScore": 43.3,
+      "projected": {
+        "home": 1.74,
+        "away": 0.85,
+        "total": 2.59
+      },
+      "probabilities": {
+        "home": 0.5847531284297113,
+        "draw": 0.23440417378489717,
+        "away": 0.18084269778539133,
+        "btts": 0.47208447854198965,
+        "over15": 0.7306774437782015,
+        "over25": 0.479055906258502,
+        "over35": 0.26182264553316115,
+        "under15": 0.26932255622179846,
+        "under25": 0.520944093741498
+      },
+      "pick": {
+        "side": "Gimnasia Mendoza",
+        "where": "H",
+        "probability": 0.5847531284297113
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T18:00:00.000Z",
+      "kickoffLocal": "14:00",
+      "country": "argentina",
+      "league": "Primera Nacional",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Acassuso",
+      "away": "CA Mitre",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTLL",
+          "played": 5,
+          "goalsFor": 1,
+          "goalsAgainst": 5,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "TTTTL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 6,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 35,
+      "awayRank": 28,
+      "goalsIndex": 0,
+      "mismatchIndex": 16.7,
+      "rankScore": 16.7,
+      "projected": {
+        "home": 0.84,
+        "away": 1.04,
+        "total": 1.88
+      },
+      "probabilities": {
+        "home": 0.2873977406979531,
+        "draw": 0.3179918937871152,
+        "away": 0.3946103655149319,
+        "btts": 0.36742489689644514,
+        "over15": 0.5605404881151255,
+        "over25": 0.29088324873910093,
+        "over35": 0.12189804539679247,
+        "under15": 0.43945951188487453,
+        "under25": 0.7091167512608991
+      },
+      "pick": {
+        "side": "CA Mitre",
+        "where": "A",
+        "probability": 0.3946103655149319
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T18:00:00.000Z",
+      "kickoffLocal": "14:00",
+      "country": "argentina",
+      "league": "Primera A Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "San Luis W",
+      "away": "Social Atletico Television W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWL",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 6,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "TWWWT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 5,
+      "awayRank": 7,
+      "goalsIndex": 0,
+      "mismatchIndex": 6.6,
+      "rankScore": 6.6,
+      "projected": {
+        "home": 0.99,
+        "away": 1.1,
+        "total": 2.08
+      },
+      "probabilities": {
+        "home": 0.3218252243050151,
+        "draw": 0.2998059630603476,
+        "away": 0.37836881263463773,
+        "btts": 0.4192393533717738,
+        "over15": 0.617806736850956,
+        "over25": 0.3476678383458855,
+        "over35": 0.1594710723873522,
+        "under15": 0.382193263149044,
+        "under25": 0.6523321616541145
+      },
+      "pick": {
+        "side": "Social Atletico Television W",
+        "where": "A",
+        "probability": 0.37836881263463773
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T18:00:00.000Z",
+      "kickoffLocal": "14:00",
+      "country": "argentina",
+      "league": "Primera A Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Talleres Cordoba W",
+      "away": "Belgrano W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWWTW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 3,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "away": {
+          "streak": "WWWLT",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 4,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 2,
+      "goalsIndex": 10.7,
+      "mismatchIndex": 10.9,
+      "rankScore": 13.6,
+      "projected": {
+        "home": 1.06,
+        "away": 1.27,
+        "total": 2.33
+      },
+      "probabilities": {
+        "home": 0.3087492211486783,
+        "draw": 0.2795358293702678,
+        "away": 0.41171494948105414,
+        "btts": 0.47000829048350423,
+        "over15": 0.6760051210385648,
+        "over25": 0.4119006468052716,
+        "over35": 0.2067795051507467,
+        "under15": 0.3239948789614352,
+        "under25": 0.5880993531947284
+      },
+      "pick": {
+        "side": "Belgrano W",
+        "where": "A",
+        "probability": 0.41171494948105414
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T18:00:00.000Z",
+      "kickoffLocal": "14:00",
+      "country": "peru",
+      "league": "Liga 1",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "FC Cajamarca",
+      "away": "Cusco",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLWLL",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 14,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LLWWW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 11,
+      "awayRank": 10,
+      "goalsIndex": 90.5,
+      "mismatchIndex": 2.4,
+      "rankScore": 91,
+      "projected": {
+        "home": 2.17,
+        "away": 1.83,
+        "total": 4
+      },
+      "probabilities": {
+        "home": 0.46311261150109406,
+        "draw": 0.2044355405917993,
+        "away": 0.33245184790710663,
+        "btts": 0.7437222601614913,
+        "over15": 0.9084198706214373,
+        "over25": 0.7618916636157367,
+        "over35": 0.5665207209414697,
+        "under15": 0.09158012937856275,
+        "under25": 0.23810833638426332
+      },
+      "pick": {
+        "side": "FC Cajamarca",
+        "where": "H",
+        "probability": 0.46311261150109406
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T18:00:00.000Z",
+      "kickoffLocal": "14:00",
+      "country": "peru",
+      "league": "Liga Femenina",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Flamengo FBC W",
+      "away": "UNSAAC W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 13,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "WLLLL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 12,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 9,
+      "awayRank": 8,
+      "goalsIndex": 40.3,
+      "mismatchIndex": 5.4,
+      "rankScore": 41.6,
+      "projected": {
+        "home": 1.38,
+        "away": 1.56,
+        "total": 2.95
+      },
+      "probabilities": {
+        "home": 0.3377425288589179,
+        "draw": 0.24473077037148747,
+        "away": 0.4175267007695952,
+        "btts": 0.591150929109259,
+        "over15": 0.7917088100052841,
+        "over25": 0.5632334635791008,
+        "over35": 0.339327624081441,
+        "under15": 0.20829118999471585,
+        "under25": 0.43676653642089924
+      },
+      "pick": {
+        "side": "UNSAAC W",
+        "where": "A",
+        "probability": 0.4175267007695952
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T18:30:00.000Z",
+      "kickoffLocal": "14:30",
+      "country": "argentina",
+      "league": "Primera Nacional",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Ferro",
+      "away": "Ciudad Bolivar",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTTTW",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TLWTL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 30,
+      "goalsIndex": 0,
+      "mismatchIndex": 45.1,
+      "rankScore": 45.1,
+      "projected": {
+        "home": 1.46,
+        "away": 0.5,
+        "total": 1.96
+      },
+      "probabilities": {
+        "home": 0.6102124423744072,
+        "draw": 0.26404467985848873,
+        "away": 0.12574287776710405,
+        "btts": 0.3020914476401366,
+        "over15": 0.5830588968736727,
+        "over25": 0.3124979269800748,
+        "over35": 0.13573142664959106,
+        "under15": 0.41694110312632726,
+        "under25": 0.6875020730199253
+      },
+      "pick": {
+        "side": "Ferro",
+        "where": "H",
+        "probability": 0.6102124423744072
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T18:30:00.000Z",
+      "kickoffLocal": "14:30",
+      "country": "argentina",
+      "league": "Primera Nacional",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "San Miguel",
+      "away": "All Boys",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLLLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 10,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "LWTLL",
+          "played": 5,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "descending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 31,
+      "awayRank": 21,
+      "goalsIndex": 0,
+      "mismatchIndex": 18.9,
+      "rankScore": 18.9,
+      "projected": {
+        "home": 0.7,
+        "away": 0.86,
+        "total": 1.56
+      },
+      "probabilities": {
+        "home": 0.275334946403022,
+        "draw": 0.3569990792744001,
+        "away": 0.3676659743225779,
+        "btts": 0.2903886845540267,
+        "over15": 0.46205165641692886,
+        "over25": 0.20635808435760034,
+        "over35": 0.07339742688674941,
+        "under15": 0.5379483435830712,
+        "under25": 0.7936419156423997
+      },
+      "pick": {
+        "side": "All Boys",
+        "where": "A",
+        "probability": 0.3676659743225779
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T18:30:00.000Z",
+      "kickoffLocal": "14:30",
+      "country": "argentina",
+      "league": "Primera Nacional",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "San Telmo",
+      "away": "CA Estudiantes",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTLWT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "WLTLW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 5,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 25,
+      "awayRank": 26,
+      "goalsIndex": 0,
+      "mismatchIndex": 1.5,
+      "rankScore": 1.5,
+      "projected": {
+        "home": 0.9,
+        "away": 1.15,
+        "total": 2.06
+      },
+      "probabilities": {
+        "home": 0.2850452994654937,
+        "draw": 0.3006836940776112,
+        "away": 0.41427100645689435,
+        "btts": 0.4055284658455469,
+        "over15": 0.6073585266883675,
+        "over25": 0.33685429855850946,
+        "over35": 0.1520097426697736,
+        "under15": 0.39264147331163246,
+        "under25": 0.6631457014414905
+      },
+      "pick": {
+        "side": "CA Estudiantes",
+        "where": "A",
+        "probability": 0.41427100645689435
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T18:30:00.000Z",
+      "kickoffLocal": "14:30",
+      "country": "argentina",
+      "league": "Primera A Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Lanus W",
+      "away": "Union de Santa Fe W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLLW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 7,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "LLLTT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 11,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 11,
+      "awayRank": 15,
+      "goalsIndex": 49.4,
+      "mismatchIndex": 34.5,
+      "rankScore": 58.1,
+      "projected": {
+        "home": 2.18,
+        "away": 0.96,
+        "total": 3.14
+      },
+      "probabilities": {
+        "home": 0.6516642391991364,
+        "draw": 0.19385102080637226,
+        "away": 0.15448473999449144,
+        "btts": 0.5473471077501826,
+        "over15": 0.8208059499355905,
+        "over25": 0.6074265228806324,
+        "over35": 0.3840893892297757,
+        "under15": 0.17919405006440947,
+        "under25": 0.39257347711936763
+      },
+      "pick": {
+        "side": "Lanus W",
+        "where": "H",
+        "probability": 0.6516642391991364
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T18:30:00.000Z",
+      "kickoffLocal": "14:30",
+      "country": "uruguay",
+      "league": "Liga AUF Uruguaya",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "CA Cerro",
+      "away": "Penarol",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTLW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 7,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "WWLTW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 3,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 4,
+      "awayRank": 2,
+      "goalsIndex": 33.7,
+      "mismatchIndex": 13.7,
+      "rankScore": 37.1,
+      "projected": {
+        "home": 1.02,
+        "away": 1.79,
+        "total": 2.81
+      },
+      "probabilities": {
+        "home": 0.2139295309369824,
+        "draw": 0.23173142078864922,
+        "away": 0.5543390482743683,
+        "btts": 0.5326495623393448,
+        "over15": 0.7706182960591116,
+        "over25": 0.5329252681735931,
+        "over35": 0.31028613205415795,
+        "under15": 0.22938170394088842,
+        "under25": 0.4670747318264069
+      },
+      "pick": {
+        "side": "Penarol",
+        "where": "A",
+        "probability": 0.5543390482743683
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "argentina",
+      "league": "Primera Nacional",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Atl. Rafaela",
+      "away": "San Martin T.",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWTT",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "WLTWT",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 23,
+      "awayRank": 17,
+      "goalsIndex": 0,
+      "mismatchIndex": 8.4,
+      "rankScore": 8.4,
+      "projected": {
+        "home": 0.97,
+        "away": 1.06,
+        "total": 2.03
+      },
+      "probabilities": {
+        "home": 0.32392443905069773,
+        "draw": 0.30531779486240684,
+        "away": 0.37075776608689603,
+        "btts": 0.40579666700006733,
+        "over15": 0.6020533607938654,
+        "over25": 0.33144307935746964,
+        "over35": 0.148330122252175,
+        "under15": 0.3979466392061346,
+        "under25": 0.6685569206425304
+      },
+      "pick": {
+        "side": "San Martin T.",
+        "where": "A",
+        "probability": 0.37075776608689603
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "argentina",
+      "league": "Primera Nacional",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Temperley",
+      "away": "Almagro",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWWWW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 2,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "away": {
+          "streak": "TLWTL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 6,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 29,
+      "goalsIndex": 5.7,
+      "mismatchIndex": 50.2,
+      "rankScore": 51.6,
+      "projected": {
+        "home": 1.7,
+        "away": 0.52,
+        "total": 2.22
+      },
+      "probabilities": {
+        "home": 0.6634420487634027,
+        "draw": 0.22804171686660482,
+        "away": 0.10851623436999248,
+        "btts": 0.3314049017046853,
+        "over15": 0.6502780317826156,
+        "over25": 0.38264297772010675,
+        "over35": 0.18459303771384994,
+        "under15": 0.34972196821738444,
+        "under25": 0.6173570222798932
+      },
+      "pick": {
+        "side": "Temperley",
+        "where": "H",
+        "probability": 0.6634420487634027
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "colombia",
+      "league": "Primera A",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Millonarios",
+      "away": "Chico",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTTTL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 7,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LLWWW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 6,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "descending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 3,
+      "awayRank": 12,
+      "goalsIndex": 2,
+      "mismatchIndex": 28.3,
+      "rankScore": 28.8,
+      "projected": {
+        "home": 1.36,
+        "away": 0.78,
+        "total": 2.14
+      },
+      "probabilities": {
+        "home": 0.5054920832318308,
+        "draw": 0.2797335577965072,
+        "away": 0.214774358971662,
+        "btts": 0.4025880248509049,
+        "over15": 0.6305637138422392,
+        "over25": 0.3611575966307617,
+        "over35": 0.16898123301990753,
+        "under15": 0.3694362861577608,
+        "under25": 0.6388424033692384
+      },
+      "pick": {
+        "side": "Millonarios",
+        "where": "H",
+        "probability": 0.5054920832318308
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "paraguay",
+      "league": "Copa de Primera",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Libertad Asuncion",
+      "away": "Ameliano",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLTW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 6,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "WWLTW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 5,
+      "goalsIndex": 28.1,
+      "mismatchIndex": 14.1,
+      "rankScore": 31.6,
+      "projected": {
+        "home": 1.61,
+        "away": 1.08,
+        "total": 2.69
+      },
+      "probabilities": {
+        "home": 0.49676470933876393,
+        "draw": 0.2482895292937701,
+        "away": 0.25494576136746605,
+        "btts": 0.5283976501474474,
+        "over15": 0.7495190558105941,
+        "over25": 0.503922150627808,
+        "over35": 0.28370359231390974,
+        "under15": 0.2504809441894059,
+        "under25": 0.496077849372192
+      },
+      "pick": {
+        "side": "Libertad Asuncion",
+        "where": "H",
+        "probability": 0.49676470933876393
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "uruguay",
+      "league": "Segunda División",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Plaza Colonia",
+      "away": "Paysandu FC",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLLT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 6,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "LWWTL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 5,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 6,
+      "goalsIndex": 13.4,
+      "mismatchIndex": 17.8,
+      "rankScore": 21.1,
+      "projected": {
+        "home": 1.41,
+        "away": 0.97,
+        "total": 2.38
+      },
+      "probabilities": {
+        "home": 0.4713907441250616,
+        "draw": 0.26958496143478217,
+        "away": 0.25902429444015596,
+        "btts": 0.46932420818625237,
+        "over15": 0.687178950882015,
+        "over25": 0.4250571238666429,
+        "over35": 0.21710714110111454,
+        "under15": 0.31282104911798503,
+        "under25": 0.574942876133357
+      },
+      "pick": {
+        "side": "Plaza Colonia",
+        "where": "H",
+        "probability": 0.4713907441250616
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T19:30:00.000Z",
+      "kickoffLocal": "15:30",
+      "country": "brazil",
+      "league": "Serie B",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Sport Recife",
+      "away": "Juventude",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LWWTT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 11,
+      "awayRank": 6,
+      "goalsIndex": 0,
+      "mismatchIndex": 15.2,
+      "rankScore": 15.2,
+      "projected": {
+        "home": 1.05,
+        "away": 0.92,
+        "total": 1.97
+      },
+      "probabilities": {
+        "home": 0.3790200678111674,
+        "draw": 0.31041708833117254,
+        "away": 0.31056284385765953,
+        "btts": 0.39100006144431243,
+        "over15": 0.5858131284513075,
+        "over25": 0.31520406619653973,
+        "over35": 0.13750411531590903,
+        "under15": 0.4141868715486925,
+        "under25": 0.6847959338034603
+      },
+      "pick": {
+        "side": "Sport Recife",
+        "where": "H",
+        "probability": 0.3790200678111674
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T19:30:00.000Z",
+      "kickoffLocal": "15:30",
+      "country": "brazil",
+      "league": "Brasileiro Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Sao Paulo W",
+      "away": "Flamengo W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 2,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "away": {
+          "streak": "LTWWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 8,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 1,
+      "awayRank": 3,
+      "goalsIndex": 31.3,
+      "mismatchIndex": 26,
+      "rankScore": 37.8,
+      "projected": {
+        "home": 1.98,
+        "away": 0.78,
+        "total": 2.76
+      },
+      "probabilities": {
+        "home": 0.6553123363062389,
+        "draw": 0.20592326950845277,
+        "away": 0.1387643941853084,
+        "btts": 0.4668159530367548,
+        "over15": 0.7620211482543099,
+        "over25": 0.5209536348157503,
+        "over35": 0.2991715224522756,
+        "under15": 0.2379788517456901,
+        "under25": 0.4790463651842497
+      },
+      "pick": {
+        "side": "Sao Paulo W",
+        "where": "H",
+        "probability": 0.6553123363062389
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T19:30:00.000Z",
+      "kickoffLocal": "15:30",
+      "country": "venezuela",
+      "league": "Liga FUTVE",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Rayo Zuliano",
+      "away": "Monagas",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTLW",
+          "played": 5,
+          "goalsFor": 14,
+          "goalsAgainst": 11,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "WWLWL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 5,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 10,
+      "awayRank": 9,
+      "goalsIndex": 48.8,
+      "mismatchIndex": 7.1,
+      "rankScore": 50.6,
+      "projected": {
+        "home": 1.55,
+        "away": 1.58,
+        "total": 3.13
+      },
+      "probabilities": {
+        "home": 0.37493366245278,
+        "draw": 0.23718733179725404,
+        "away": 0.38787900574996637,
+        "btts": 0.6254944503016107,
+        "over15": 0.8194451967039469,
+        "over25": 0.6052953961699151,
+        "over35": 0.3818657709460753,
+        "under15": 0.1805548032960531,
+        "under25": 0.3947046038300849
+      },
+      "pick": {
+        "side": "Monagas",
+        "where": "A",
+        "probability": 0.38787900574996637
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T19:45:00.000Z",
+      "kickoffLocal": "15:45",
+      "country": "argentina",
+      "league": "Liga Profesional",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Union de Santa Fe",
+      "away": "Independiente",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 9,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "TWLTW",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 5,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 6,
+      "awayRank": 20,
+      "goalsIndex": 25.3,
+      "mismatchIndex": 32.8,
+      "rankScore": 39.1,
+      "projected": {
+        "home": 1.72,
+        "away": 0.91,
+        "total": 2.63
+      },
+      "probabilities": {
+        "home": 0.5649145269339686,
+        "draw": 0.2375190721639566,
+        "away": 0.1975664009020745,
+        "btts": 0.4904878710931521,
+        "over15": 0.7383546481173213,
+        "over25": 0.4890743816659023,
+        "over35": 0.27053868141015863,
+        "under15": 0.2616453518826787,
+        "under25": 0.5109256183340978
+      },
+      "pick": {
+        "side": "Union de Santa Fe",
+        "where": "H",
+        "probability": 0.5649145269339686
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T20:00:00.000Z",
+      "kickoffLocal": "16:00",
+      "country": "costa-rica",
+      "league": "Liga de Ascenso",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Guadalupe",
+      "away": "FC Moravia",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 9,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "LLLLT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 8,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 13,
+      "awayRank": 14,
+      "goalsIndex": 20.2,
+      "mismatchIndex": 3.3,
+      "rankScore": 21,
+      "projected": {
+        "home": 1.38,
+        "away": 1.14,
+        "total": 2.52
+      },
+      "probabilities": {
+        "home": 0.42363801807325524,
+        "draw": 0.26643635464016635,
+        "away": 0.30992562728657824,
+        "btts": 0.5090619808523802,
+        "over15": 0.7167821040193911,
+        "over25": 0.4613066883041556,
+        "over35": 0.24670733910335763,
+        "under15": 0.28321789598060887,
+        "under25": 0.5386933116958443
+      },
+      "pick": {
+        "side": "Guadalupe",
+        "where": "H",
+        "probability": 0.42363801807325524
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T20:00:00.000Z",
+      "kickoffLocal": "16:00",
+      "country": "usa",
+      "league": "NWSL",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Orlando Pride W",
+      "away": "Portland Thorns W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWWL",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 8,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "TTLTT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 6,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 12,
+      "awayRank": 7,
+      "goalsIndex": 58,
+      "mismatchIndex": 21.8,
+      "rankScore": 63.5,
+      "projected": {
+        "home": 1.86,
+        "away": 1.46,
+        "total": 3.32
+      },
+      "probabilities": {
+        "home": 0.47109315631070686,
+        "draw": 0.22490751813893842,
+        "away": 0.30399932555035486,
+        "btts": 0.648243336074782,
+        "over15": 0.8438190376106507,
+        "over25": 0.6445726209624604,
+        "over35": 0.42407325320513,
+        "under15": 0.1561809623893493,
+        "under25": 0.3554273790375396
+      },
+      "pick": {
+        "side": "Orlando Pride W",
+        "where": "H",
+        "probability": 0.47109315631070686
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T20:00:00.000Z",
+      "kickoffLocal": "16:00",
+      "country": "venezuela",
+      "league": "Liga FUTVE",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Universidad Central",
+      "away": "Carabobo",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWTT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 0,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "away": {
+          "streak": "WWWWL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 4,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 6,
+      "awayRank": 3,
+      "goalsIndex": 0,
+      "mismatchIndex": 13.3,
+      "rankScore": 13.3,
+      "projected": {
+        "home": 0.91,
+        "away": 0.88,
+        "total": 1.79
+      },
+      "probabilities": {
+        "home": 0.3432499189081064,
+        "draw": 0.3299337397287121,
+        "away": 0.326816341363181,
+        "btts": 0.34965303236067613,
+        "over15": 0.5341811235491128,
+        "over25": 0.2667025819655485,
+        "over35": 0.1071070521540222,
+        "under15": 0.46581887645088715,
+        "under25": 0.7332974180344515
+      },
+      "pick": {
+        "side": "Universidad Central",
+        "where": "H",
+        "probability": 0.3432499189081064
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T20:15:00.000Z",
+      "kickoffLocal": "16:15",
+      "country": "peru",
+      "league": "Liga Femenina",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "U. de Deportes W",
+      "away": "Killas W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLWW",
+          "played": 5,
+          "goalsFor": 24,
+          "goalsAgainst": 6,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "WLLWL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 9,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 7,
+      "goalsIndex": 100,
+      "mismatchIndex": 53.3,
+      "rankScore": 113.3,
+      "projected": {
+        "home": 3.92,
+        "away": 0.87,
+        "total": 4.8
+      },
+      "probabilities": {
+        "home": 0.8874347392843124,
+        "draw": 0.0724127205121047,
+        "away": 0.04015254020358297,
+        "btts": 0.5694916015885285,
+        "over15": 0.9517530987372694,
+        "over25": 0.8561588217716202,
+        "over35": 0.7035266262164669,
+        "under15": 0.04824690126273057,
+        "under25": 0.14384117822837983
+      },
+      "pick": {
+        "side": "U. de Deportes W",
+        "where": "H",
+        "probability": 0.8874347392843124
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T20:30:00.000Z",
+      "kickoffLocal": "16:30",
+      "country": "colombia",
+      "league": "Primera B",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Leones",
+      "away": "Boca Juniors",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLLLT",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 12,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "away": {
+          "streak": "WTLLL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 9,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 12,
+      "awayRank": 13,
+      "goalsIndex": 36.8,
+      "mismatchIndex": 2.9,
+      "rankScore": 37.5,
+      "projected": {
+        "home": 1.26,
+        "away": 1.61,
+        "total": 2.87
+      },
+      "probabilities": {
+        "home": 0.29937460916655034,
+        "draw": 0.24500905345809657,
+        "away": 0.4556163373753532,
+        "btts": 0.5731571073804017,
+        "over15": 0.7805748933472625,
+        "over25": 0.5470629216433947,
+        "over35": 0.3236698020466949,
+        "under15": 0.2194251066527375,
+        "under25": 0.45293707835660535
+      },
+      "pick": {
+        "side": "Boca Juniors",
+        "where": "A",
+        "probability": 0.4556163373753532
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T20:30:00.000Z",
+      "kickoffLocal": "16:30",
+      "country": "peru",
+      "league": "Liga 1",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Sporting Cristal",
+      "away": "Grau",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLLW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 6,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "WLWWW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 6,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 4,
+      "goalsIndex": 38.1,
+      "mismatchIndex": 13.1,
+      "rankScore": 41.4,
+      "projected": {
+        "home": 1.66,
+        "away": 1.24,
+        "total": 2.9
+      },
+      "probabilities": {
+        "home": 0.4722348804167267,
+        "draw": 0.2417615000736817,
+        "away": 0.2860036195095914,
+        "btts": 0.5754998052117138,
+        "over15": 0.7854091110200191,
+        "over25": 0.554036114055707,
+        "over35": 0.33037555032353766,
+        "under15": 0.2145908889799809,
+        "under25": 0.44596388594429304
+      },
+      "pick": {
+        "side": "Sporting Cristal",
+        "where": "H",
+        "probability": 0.4722348804167267
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T21:00:00.000Z",
+      "kickoffLocal": "17:00",
+      "country": "canada",
+      "league": "Canadian Premier League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Cavalry",
+      "away": "Forge",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 3,
+          "points": 15,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WWTTL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 3,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 1,
+      "awayRank": 3,
+      "goalsIndex": 11.9,
+      "mismatchIndex": 28.5,
+      "rankScore": 31.5,
+      "projected": {
+        "home": 1.48,
+        "away": 0.87,
+        "total": 2.35
+      },
+      "probabilities": {
+        "home": 0.5149039450250388,
+        "draw": 0.2638296939156152,
+        "away": 0.22126636105934547,
+        "btts": 0.44877985967869966,
+        "over15": 0.680513150932475,
+        "over25": 0.4171749234734589,
+        "over35": 0.2108933119638967,
+        "under15": 0.319486849067525,
+        "under25": 0.582825076526541
+      },
+      "pick": {
+        "side": "Cavalry",
+        "where": "H",
+        "probability": 0.5149039450250388
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T21:00:00.000Z",
+      "kickoffLocal": "17:00",
+      "country": "costa-rica",
+      "league": "Liga de Ascenso",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Cofutpa",
+      "away": "AD Sarchi",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTLL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 8,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "LWLLT",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 8,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 15,
+      "awayRank": 12,
+      "goalsIndex": 0.6,
+      "mismatchIndex": 15.6,
+      "rankScore": 15.8,
+      "projected": {
+        "home": 1,
+        "away": 1.11,
+        "total": 2.11
+      },
+      "probabilities": {
+        "home": 0.32279182199271467,
+        "draw": 0.2980964072659181,
+        "away": 0.37911177074136815,
+        "btts": 0.42379955573985484,
+        "over15": 0.6229499098006375,
+        "over25": 0.3530681241773935,
+        "over35": 0.16325126828904432,
+        "under15": 0.37705009019936253,
+        "under25": 0.6469318758226065
+      },
+      "pick": {
+        "side": "AD Sarchi",
+        "where": "A",
+        "probability": 0.37911177074136815
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T21:00:00.000Z",
+      "kickoffLocal": "17:00",
+      "country": "el-salvador",
+      "league": "Primera División",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Cacahuatique",
+      "away": "FAS",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTTL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 9,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "away": {
+          "streak": "TWWWW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 4,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 12,
+      "awayRank": 2,
+      "goalsIndex": 6.7,
+      "mismatchIndex": 61.8,
+      "rankScore": 63.5,
+      "projected": {
+        "home": 0.7,
+        "away": 1.54,
+        "total": 2.24
+      },
+      "probabilities": {
+        "home": 0.16883218553668095,
+        "draw": 0.2561146093524822,
+        "away": 0.5750532051108368,
+        "btts": 0.39549202235324754,
+        "over15": 0.6550742005661064,
+        "over25": 0.38799091488099735,
+        "over35": 0.18856872823611645,
+        "under15": 0.34492579943389357,
+        "under25": 0.6120090851190026
+      },
+      "pick": {
+        "side": "FAS",
+        "where": "A",
+        "probability": 0.5750532051108368
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T21:00:00.000Z",
+      "kickoffLocal": "17:00",
+      "country": "guatemala",
+      "league": "Liga Nacional",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Aurora F.C.",
+      "away": "Marquense",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLWW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 7,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "TWWLW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 5,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 8,
+      "awayRank": 4,
+      "goalsIndex": 37.2,
+      "mismatchIndex": 20.4,
+      "rankScore": 42.3,
+      "projected": {
+        "home": 1.56,
+        "away": 1.32,
+        "total": 2.88
+      },
+      "probabilities": {
+        "home": 0.4302476343818152,
+        "draw": 0.24675528408137445,
+        "away": 0.3229970815368112,
+        "btts": 0.5788632321895124,
+        "over15": 0.7821969103191428,
+        "over25": 0.5493945975551094,
+        "over35": 0.32590437730163757,
+        "under15": 0.21780308968085715,
+        "under25": 0.45060540244489056
+      },
+      "pick": {
+        "side": "Aurora F.C.",
+        "where": "H",
+        "probability": 0.4302476343818152
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T21:05:00.000Z",
+      "kickoffLocal": "17:05",
+      "country": "colombia",
+      "league": "Primera A",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Alianza",
+      "away": "Santa Fe",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWLL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 10,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "WTTWT",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 7,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 15,
+      "awayRank": 4,
+      "goalsIndex": 25.2,
+      "mismatchIndex": 38.8,
+      "rankScore": 45.1,
+      "projected": {
+        "home": 0.95,
+        "away": 1.68,
+        "total": 2.63
+      },
+      "probabilities": {
+        "home": 0.21259761791216708,
+        "draw": 0.24202164133889265,
+        "away": 0.5453807407489404,
+        "btts": 0.4989632745168816,
+        "over15": 0.738354753926118,
+        "over25": 0.48907458828308326,
+        "over35": 0.2705389764026892,
+        "under15": 0.26164524607388195,
+        "under25": 0.5109254117169167
+      },
+      "pick": {
+        "side": "Santa Fe",
+        "where": "A",
+        "probability": 0.5453807407489404
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T21:30:00.000Z",
+      "kickoffLocal": "17:30",
+      "country": "brazil",
+      "league": "Serie B",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Athletic Club",
+      "away": "Botafogo SP",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLWW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 6,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 10,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 12,
+      "awayRank": 17,
+      "goalsIndex": 56,
+      "mismatchIndex": 31.4,
+      "rankScore": 63.9,
+      "projected": {
+        "home": 2.25,
+        "away": 1.03,
+        "total": 3.28
+      },
+      "probabilities": {
+        "home": 0.6489039599896107,
+        "draw": 0.19044055163130003,
+        "away": 0.16065548837908952,
+        "btts": 0.5752204257772798,
+        "over15": 0.8389471576914065,
+        "over25": 0.6365323330777649,
+        "over35": 0.4152254581668504,
+        "under15": 0.1610528423085935,
+        "under25": 0.3634676669222351
+      },
+      "pick": {
+        "side": "Athletic Club",
+        "where": "H",
+        "probability": 0.6489039599896107
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "ATK_VS_LEAKY"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T21:30:00.000Z",
+      "kickoffLocal": "17:30",
+      "country": "ecuador",
+      "league": "LigaPro",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Guayaquil City",
+      "away": "Leones del Norte",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 11,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LTTWL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 5,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 11,
+      "goalsIndex": 45.6,
+      "mismatchIndex": 27.8,
+      "rankScore": 52.6,
+      "projected": {
+        "home": 1.92,
+        "away": 1.14,
+        "total": 3.06
+      },
+      "probabilities": {
+        "home": 0.5554080857963679,
+        "draw": 0.22137463016007228,
+        "away": 0.22321728404356003,
+        "btts": 0.5804611326490575,
+        "over15": 0.8096348651750251,
+        "over25": 0.5901147941839987,
+        "over35": 0.366204321773152,
+        "under15": 0.19036513482497486,
+        "under25": 0.4098852058160013
+      },
+      "pick": {
+        "side": "Guayaquil City",
+        "where": "H",
+        "probability": 0.5554080857963679
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T21:30:00.000Z",
+      "kickoffLocal": "17:30",
+      "country": "honduras",
+      "league": "Liga Nacional",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Genesis",
+      "away": "Olancho",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWLTW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 4,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TTTLT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 5,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 9,
+      "awayRank": 5,
+      "goalsIndex": 0,
+      "mismatchIndex": 17.4,
+      "rankScore": 17.4,
+      "projected": {
+        "home": 1.04,
+        "away": 0.79,
+        "total": 1.83
+      },
+      "probabilities": {
+        "home": 0.4067170256168276,
+        "draw": 0.3218826499576118,
+        "away": 0.27140032442556067,
+        "btts": 0.35311408738779526,
+        "over15": 0.546029596012165,
+        "over25": 0.2774250932003517,
+        "over35": 0.11357634648514588,
+        "under15": 0.45397040398783495,
+        "under25": 0.7225749067996483
+      },
+      "pick": {
+        "side": "Genesis",
+        "where": "H",
+        "probability": 0.4067170256168276
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T21:30:00.000Z",
+      "kickoffLocal": "17:30",
+      "country": "paraguay",
+      "league": "Copa de Primera",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Cerro Porteno",
+      "away": "Rubio Nu",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWWTL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 5,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "LLWLT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 8,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 9,
+      "goalsIndex": 27.8,
+      "mismatchIndex": 18.4,
+      "rankScore": 32.4,
+      "projected": {
+        "home": 1.7,
+        "away": 0.98,
+        "total": 2.68
+      },
+      "probabilities": {
+        "home": 0.542825224611315,
+        "draw": 0.240152762156952,
+        "away": 0.21702201323173276,
+        "btts": 0.5105683206122058,
+        "over15": 0.7476871304955031,
+        "over25": 0.5014626802333974,
+        "over35": 0.28150217133258276,
+        "under15": 0.25231286950449694,
+        "under25": 0.49853731976660265
+      },
+      "pick": {
+        "side": "Cerro Porteno",
+        "where": "H",
+        "probability": 0.542825224611315
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T21:30:00.000Z",
+      "kickoffLocal": "17:30",
+      "country": "uruguay",
+      "league": "Liga AUF Uruguaya",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Maldonado",
+      "away": "Cerro Largo",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWLTW",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 3,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TTLTT",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 4,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 13,
+      "goalsIndex": 0,
+      "mismatchIndex": 19.5,
+      "rankScore": 19.5,
+      "projected": {
+        "home": 1.07,
+        "away": 0.72,
+        "total": 1.79
+      },
+      "probabilities": {
+        "home": 0.4339687999801145,
+        "draw": 0.3225856046740447,
+        "away": 0.24344559534584073,
+        "btts": 0.33719939268313376,
+        "over15": 0.5341811172225855,
+        "over25": 0.26670257200625674,
+        "over35": 0.1071070400271807,
+        "under15": 0.46581888277741446,
+        "under25": 0.7332974279937432
+      },
+      "pick": {
+        "side": "Maldonado",
+        "where": "H",
+        "probability": 0.4339687999801145
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T22:00:00.000Z",
+      "kickoffLocal": "18:00",
+      "country": "argentina",
+      "league": "Liga Profesional",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "River Plate",
+      "away": "Huracan",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWTW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 6,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "away": {
+          "streak": "WWTTT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 4,
+      "awayRank": 12,
+      "goalsIndex": 8.2,
+      "mismatchIndex": 21.4,
+      "rankScore": 23.5,
+      "projected": {
+        "home": 1.39,
+        "away": 0.88,
+        "total": 2.27
+      },
+      "probabilities": {
+        "home": 0.48817468918703394,
+        "draw": 0.2740021676017179,
+        "away": 0.23782314321124798,
+        "btts": 0.43945392446395487,
+        "over15": 0.6621690810851357,
+        "over25": 0.3959903437645846,
+        "over35": 0.194581765858701,
+        "under15": 0.3378309189148643,
+        "under25": 0.6040096562354154
+      },
+      "pick": {
+        "side": "River Plate",
+        "where": "H",
+        "probability": 0.48817468918703394
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T22:00:00.000Z",
+      "kickoffLocal": "18:00",
+      "country": "uruguay",
+      "league": "Segunda División",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "La Luz",
+      "away": "Atenas",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLTLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 7,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "TWLTW",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 5,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 14,
+      "awayRank": 1,
+      "goalsIndex": 0,
+      "mismatchIndex": 64.6,
+      "rankScore": 64.6,
+      "projected": {
+        "home": 0.7,
+        "away": 1.24,
+        "total": 1.94
+      },
+      "probabilities": {
+        "home": 0.20973667974195298,
+        "draw": 0.2982636731240712,
+        "away": 0.49199964713397537,
+        "btts": 0.35773441541505724,
+        "over15": 0.5775103511756845,
+        "over25": 0.3070882351356851,
+        "over35": 0.1322152667631522,
+        "under15": 0.4224896488243155,
+        "under25": 0.6929117648643148
+      },
+      "pick": {
+        "side": "Atenas",
+        "where": "A",
+        "probability": 0.49199964713397537
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T22:00:00.000Z",
+      "kickoffLocal": "18:00",
+      "country": "venezuela",
+      "league": "Liga FUTVE",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Puerto Cabello",
+      "away": "Portuguesa",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLLTT",
+          "played": 5,
+          "goalsFor": 1,
+          "goalsAgainst": 5,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "WTTTT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 5,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 4,
+      "awayRank": 7,
+      "goalsIndex": 0.4,
+      "mismatchIndex": 14.6,
+      "rankScore": 14.7,
+      "projected": {
+        "home": 1.32,
+        "away": 0.79,
+        "total": 2.11
+      },
+      "probabilities": {
+        "home": 0.4915998853748613,
+        "draw": 0.28470296435179837,
+        "away": 0.2236971502733402,
+        "btts": 0.4002578456522209,
+        "over15": 0.6229498640138612,
+        "over25": 0.3530680456177375,
+        "over35": 0.1632511666791306,
+        "under15": 0.3770501359861388,
+        "under25": 0.6469319543822625
+      },
+      "pick": {
+        "side": "Puerto Cabello",
+        "where": "H",
+        "probability": 0.4915998853748613
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T22:30:00.000Z",
+      "kickoffLocal": "18:30",
+      "country": "usa",
+      "league": "NWSL",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "North Carolina Courage W",
+      "away": "Gotham W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWLWW",
+          "played": 5,
+          "goalsFor": 13,
+          "goalsAgainst": 5,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "WLTTT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 6,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 1,
+      "awayRank": 6,
+      "goalsIndex": 43.3,
+      "mismatchIndex": 23.1,
+      "rankScore": 49.1,
+      "projected": {
+        "home": 1.94,
+        "away": 1.07,
+        "total": 3.01
+      },
+      "probabilities": {
+        "home": 0.5761784091809754,
+        "draw": 0.21868721031989216,
+        "away": 0.20513438049913205,
+        "btts": 0.5625786133916812,
+        "over15": 0.8023391241288103,
+        "over25": 0.5790439493806098,
+        "over35": 0.35500445738324976,
+        "under15": 0.19766087587118975,
+        "under25": 0.42095605061939023
+      },
+      "pick": {
+        "side": "North Carolina Courage W",
+        "where": "H",
+        "probability": 0.5761784091809754
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "costa-rica",
+      "league": "Primera División",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Puntarenas FC",
+      "away": "Escorpiones",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTLWW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 12,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 10,
+      "goalsIndex": 12.7,
+      "mismatchIndex": 28.7,
+      "rankScore": 31.9,
+      "projected": {
+        "home": 1.66,
+        "away": 0.7,
+        "total": 2.37
+      },
+      "probabilities": {
+        "home": 0.6048391013964903,
+        "draw": 0.24043777201487324,
+        "away": 0.1547231265886357,
+        "btts": 0.4076957999012656,
+        "over15": 0.682747588288854,
+        "over25": 0.4198057680111154,
+        "over35": 0.21295820272596172,
+        "under15": 0.31725241171114604,
+        "under25": 0.5801942319888846
+      },
+      "pick": {
+        "side": "Puntarenas FC",
+        "where": "H",
+        "probability": 0.6048391013964903
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "el-salvador",
+      "league": "Primera División",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Inter Santa Tecla",
+      "away": "Metapan",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWLLW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "WWWLL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 7,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 1,
+      "awayRank": 4,
+      "goalsIndex": 29.5,
+      "mismatchIndex": 26.1,
+      "rankScore": 36.1,
+      "projected": {
+        "home": 1.8,
+        "away": 0.92,
+        "total": 2.72
+      },
+      "probabilities": {
+        "home": 0.5810978818326092,
+        "draw": 0.22935643677453832,
+        "away": 0.18954568139285258,
+        "btts": 0.5020565130852781,
+        "over15": 0.7549451469329376,
+        "over25": 0.511260493044315,
+        "over35": 0.2903197401852973,
+        "under15": 0.24505485306706243,
+        "under25": 0.488739506955685
+      },
+      "pick": {
+        "side": "Inter Santa Tecla",
+        "where": "H",
+        "probability": 0.5810978818326092
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "mexico",
+      "league": "Liga MX",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Atlas",
+      "away": "UNAM Pumas",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTLL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 17,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "LWLTT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 7,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 9,
+      "awayRank": 12,
+      "goalsIndex": 35.8,
+      "mismatchIndex": 11.8,
+      "rankScore": 38.7,
+      "projected": {
+        "home": 1.66,
+        "away": 1.19,
+        "total": 2.85
+      },
+      "probabilities": {
+        "home": 0.48352248870247955,
+        "draw": 0.24258315643897801,
+        "away": 0.2738943548585428,
+        "btts": 0.5634838700687244,
+        "over15": 0.7772990277846473,
+        "over25": 0.5423784243016344,
+        "over35": 0.31920385099277215,
+        "under15": 0.22270097221535268,
+        "under25": 0.4576215756983656
+      },
+      "pick": {
+        "side": "Atlas",
+        "where": "H",
+        "probability": 0.48352248870247955
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "mexico",
+      "league": "Liga MX",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Atl. San Luis",
+      "away": "Necaxa",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLWT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 10,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "LTLTL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 8,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 15,
+      "awayRank": 17,
+      "goalsIndex": 22.5,
+      "mismatchIndex": 8.7,
+      "rankScore": 24.7,
+      "projected": {
+        "home": 1.39,
+        "away": 1.18,
+        "total": 2.57
+      },
+      "probabilities": {
+        "home": 0.41737922754837053,
+        "draw": 0.26395306738200547,
+        "away": 0.31866770506962383,
+        "btts": 0.5201814445218781,
+        "over15": 0.7267680163678779,
+        "over25": 0.4740131243942357,
+        "over35": 0.2574864336034824,
+        "under15": 0.2732319836321221,
+        "under25": 0.5259868756057643
+      },
+      "pick": {
+        "side": "Atl. San Luis",
+        "where": "H",
+        "probability": 0.41737922754837053
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "peru",
+      "league": "Liga 1",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Deportivo Garcilaso",
+      "away": "U. de Deportes",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWWWW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 4,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "WTWWW",
+          "played": 5,
+          "goalsFor": 14,
+          "goalsAgainst": 5,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 3,
+      "awayRank": 2,
+      "goalsIndex": 39.7,
+      "mismatchIndex": 8.2,
+      "rankScore": 41.8,
+      "projected": {
+        "home": 1.79,
+        "away": 1.14,
+        "total": 2.93
+      },
+      "probabilities": {
+        "home": 0.525921390086098,
+        "draw": 0.2322964794462739,
+        "away": 0.2417821304676281,
+        "btts": 0.5666174999883825,
+        "over15": 0.7901490100403344,
+        "over25": 0.5609442054977479,
+        "over35": 0.33708751306115486,
+        "under15": 0.20985098995966556,
+        "under25": 0.4390557945022521
+      },
+      "pick": {
+        "side": "Deportivo Garcilaso",
+        "where": "H",
+        "probability": 0.525921390086098
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Brooklyn",
+      "away": "FC Tulsa",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTTL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 12,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "away": {
+          "streak": "LTTWW",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 21,
+      "awayRank": 11,
+      "goalsIndex": 5.7,
+      "mismatchIndex": 24.4,
+      "rankScore": 25.8,
+      "projected": {
+        "home": 0.88,
+        "away": 1.34,
+        "total": 2.22
+      },
+      "probabilities": {
+        "home": 0.24590354295263336,
+        "draw": 0.2797657819067621,
+        "away": 0.4743306751406042,
+        "btts": 0.43198049945236955,
+        "over15": 0.6502786041050982,
+        "over25": 0.38264398802925426,
+        "over35": 0.18459437213313004,
+        "under15": 0.3497213958949018,
+        "under25": 0.6173560119707457
+      },
+      "pick": {
+        "side": "FC Tulsa",
+        "where": "A",
+        "probability": 0.4743306751406042
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Charleston",
+      "away": "Monterey Bay",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTLLW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "TTLLT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 9,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 22,
+      "goalsIndex": 63.7,
+      "mismatchIndex": 50.7,
+      "rankScore": 76.3,
+      "projected": {
+        "home": 2.49,
+        "away": 0.94,
+        "total": 3.44
+      },
+      "probabilities": {
+        "home": 0.7119143652643951,
+        "draw": 0.16595107113353952,
+        "away": 0.12213456360206516,
+        "btts": 0.5588461305270006,
+        "over15": 0.8565173141339315,
+        "over25": 0.6659914167359962,
+        "over35": 0.44815680737768987,
+        "under15": 0.1434826858660685,
+        "under25": 0.33400858326400384
+      },
+      "pick": {
+        "side": "Charleston",
+        "where": "H",
+        "probability": 0.7119143652643951
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "ATK_VS_LEAKY"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Detroit",
+      "away": "Pittsburgh",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTTTT",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "WWTTL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 4,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 15,
+      "awayRank": 5,
+      "goalsIndex": 0,
+      "mismatchIndex": 18.5,
+      "rankScore": 18.5,
+      "projected": {
+        "home": 0.64,
+        "away": 0.6,
+        "total": 1.24
+      },
+      "probabilities": {
+        "home": 0.306737165616146,
+        "draw": 0.41164187300355043,
+        "away": 0.2816209613803029,
+        "btts": 0.21328015776386713,
+        "over15": 0.3517793517157719,
+        "over25": 0.12930076492964934,
+        "over35": 0.03734294905805216,
+        "under15": 0.6482206482842281,
+        "under25": 0.8706992350703506
+      },
+      "pick": {
+        "side": "Draw",
+        "where": "D",
+        "probability": 0.41164187300355043
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Lexington",
+      "away": "Orange County SC",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 9,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "LTTTL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 10,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 14,
+      "awayRank": 25,
+      "goalsIndex": 52.3,
+      "mismatchIndex": 43.3,
+      "rankScore": 63.1,
+      "projected": {
+        "home": 2.35,
+        "away": 0.85,
+        "total": 3.2
+      },
+      "probabilities": {
+        "home": 0.7084022013659353,
+        "draw": 0.17309744749476652,
+        "away": 0.11850035113929815,
+        "btts": 0.517976158882721,
+        "over15": 0.8287926288260399,
+        "over25": 0.6200826906330219,
+        "over35": 0.3974587565604693,
+        "under15": 0.17120737117396012,
+        "under25": 0.3799173093669781
+      },
+      "pick": {
+        "side": "Lexington",
+        "where": "H",
+        "probability": 0.7084022013659353
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Louisville City",
+      "away": "Loudoun",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTTT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 6,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 16,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 16,
+      "awayRank": 23,
+      "goalsIndex": 23.7,
+      "mismatchIndex": 22.8,
+      "rankScore": 29.4,
+      "projected": {
+        "home": 1.67,
+        "away": 0.93,
+        "total": 2.6
+      },
+      "probabilities": {
+        "home": 0.5479150698020607,
+        "draw": 0.24294549873599047,
+        "away": 0.2091394314619484,
+        "btts": 0.4914726250672132,
+        "over15": 0.732614705193728,
+        "over25": 0.4815696228478391,
+        "over35": 0.26399721814806903,
+        "under15": 0.26738529480627204,
+        "under25": 0.5184303771521609
+      },
+      "pick": {
+        "side": "Louisville City",
+        "where": "H",
+        "probability": 0.5479150698020607
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:06:00.000Z",
+      "kickoffLocal": "19:06",
+      "country": "mexico",
+      "league": "Liga MX Femenil",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Club Tijuana W",
+      "away": "Guadalajara Chivas W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 18,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "LLWLL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 10,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 14,
+      "awayRank": 5,
+      "goalsIndex": 96.1,
+      "mismatchIndex": 31.2,
+      "rankScore": 103.9,
+      "projected": {
+        "home": 1.72,
+        "away": 2.4,
+        "total": 4.12
+      },
+      "probabilities": {
+        "home": 0.2755176597680081,
+        "draw": 0.19396543744985564,
+        "away": 0.5305169027821359,
+        "btts": 0.7464568763845246,
+        "over15": 0.9168243370635044,
+        "over25": 0.778947679548929,
+        "over35": 0.5895970698955789,
+        "under15": 0.08317566293649559,
+        "under25": 0.22105232045107104
+      },
+      "pick": {
+        "side": "Guadalajara Chivas W",
+        "where": "A",
+        "probability": 0.5305169027821359
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "TOP_VS_BOTTOM"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T23:10:00.000Z",
+      "kickoffLocal": "19:10",
+      "country": "colombia",
+      "league": "Primera A",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Dep. Cali",
+      "away": "Cucuta",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTTL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "LTTLW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 9,
+      "awayRank": 10,
+      "goalsIndex": 16.2,
+      "mismatchIndex": 10.1,
+      "rankScore": 18.7,
+      "projected": {
+        "home": 1.51,
+        "away": 0.93,
+        "total": 2.44
+      },
+      "probabilities": {
+        "home": 0.5076963593573894,
+        "draw": 0.25986043471035286,
+        "away": 0.23244320593225778,
+        "btts": 0.4716970829737588,
+        "over15": 0.7001664931539021,
+        "over25": 0.440705916648244,
+        "over35": 0.2296779810903088,
+        "under15": 0.2998335068460979,
+        "under25": 0.559294083351756
+      },
+      "pick": {
+        "side": "Dep. Cali",
+        "where": "H",
+        "probability": 0.5076963593573894
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:15:00.000Z",
+      "kickoffLocal": "19:15",
+      "country": "panama",
+      "league": "Liga Panameña",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Alianza",
+      "away": "Deportivo Universitario",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTTT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 8,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "LTTTT",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 10,
+      "awayRank": 8,
+      "goalsIndex": 5.8,
+      "mismatchIndex": 7.5,
+      "rankScore": 8.9,
+      "projected": {
+        "home": 1.23,
+        "away": 0.99,
+        "total": 2.22
+      },
+      "probabilities": {
+        "home": 0.4165142294807104,
+        "draw": 0.28700647315746697,
+        "away": 0.2964792973618228,
+        "btts": 0.4447398231387611,
+        "over15": 0.6502786386189612,
+        "over25": 0.38264404895586934,
+        "over35": 0.18459445260518154,
+        "under15": 0.3497213613810388,
+        "under25": 0.6173559510441307
+      },
+      "pick": {
+        "side": "Alianza",
+        "where": "H",
+        "probability": 0.4165142294807104
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:30:00.000Z",
+      "kickoffLocal": "19:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "CF Montreal",
+      "away": "Columbus Crew",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 9,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "LLLLW",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 6,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 26,
+      "awayRank": 29,
+      "goalsIndex": 51.4,
+      "mismatchIndex": 7.1,
+      "rankScore": 53.2,
+      "projected": {
+        "home": 1.56,
+        "away": 1.62,
+        "total": 3.18
+      },
+      "probabilities": {
+        "home": 0.369653056325977,
+        "draw": 0.23499014689124392,
+        "away": 0.3953567967827785,
+        "btts": 0.633550568885209,
+        "over15": 0.8261716211861124,
+        "over25": 0.615905819999802,
+        "over35": 0.393024070742313,
+        "under15": 0.17382837881388757,
+        "under25": 0.384094180000198
+      },
+      "pick": {
+        "side": "Columbus Crew",
+        "where": "A",
+        "probability": 0.3953567967827785
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:30:00.000Z",
+      "kickoffLocal": "19:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "DC United",
+      "away": "Charlotte",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWWT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "TTWWT",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 8,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 23,
+      "awayRank": 4,
+      "goalsIndex": 26.8,
+      "mismatchIndex": 42.6,
+      "rankScore": 49.3,
+      "projected": {
+        "home": 1,
+        "away": 1.66,
+        "total": 2.66
+      },
+      "probabilities": {
+        "home": 0.22761553693234488,
+        "draw": 0.24412411106695264,
+        "away": 0.528260352000703,
+        "btts": 0.5119296225675869,
+        "over15": 0.7439891332766464,
+        "over25": 0.4965259517755863,
+        "over35": 0.277108597511313,
+        "under15": 0.2560108667233536,
+        "under25": 0.5034740482244138
+      },
+      "pick": {
+        "side": "Charlotte",
+        "where": "A",
+        "probability": 0.528260352000703
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-19T23:30:00.000Z",
+      "kickoffLocal": "19:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "New England Revolution",
+      "away": "Orlando City",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWLW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 6,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 13,
+          "goalsAgainst": 4,
+          "points": 15,
+          "ppg": 3
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 8,
+      "awayRank": 6,
+      "goalsIndex": 43.1,
+      "mismatchIndex": 6.5,
+      "rankScore": 44.7,
+      "projected": {
+        "home": 1.57,
+        "away": 1.44,
+        "total": 3
+      },
+      "probabilities": {
+        "home": 0.40753290125333774,
+        "draw": 0.2419886801256546,
+        "away": 0.3504784186210082,
+        "btts": 0.6043185321815159,
+        "over15": 0.8023401256305783,
+        "over25": 0.5790460822671871,
+        "over35": 0.35500772542591835,
+        "under15": 0.19765987436942167,
+        "under25": 0.4209539177328129
+      },
+      "pick": {
+        "side": "New England Revolution",
+        "where": "H",
+        "probability": 0.40753290125333774
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:30:00.000Z",
+      "kickoffLocal": "19:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "San Jose Earthquakes",
+      "away": "Los Angeles FC",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTTT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "LLWTT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 19,
+      "awayRank": 22,
+      "goalsIndex": 3,
+      "mismatchIndex": 7.1,
+      "rankScore": 7.9,
+      "projected": {
+        "home": 1.1,
+        "away": 1.06,
+        "total": 2.16
+      },
+      "probabilities": {
+        "home": 0.3629162078022172,
+        "draw": 0.2944581633976705,
+        "away": 0.3426256288001122,
+        "btts": 0.4359982171417518,
+        "over15": 0.6355726013997977,
+        "over25": 0.3665421471420282,
+        "over35": 0.17284022007643404,
+        "under15": 0.36442739860020235,
+        "under25": 0.6334578528579717
+      },
+      "pick": {
+        "side": "San Jose Earthquakes",
+        "where": "H",
+        "probability": 0.3629162078022172
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:30:00.000Z",
+      "kickoffLocal": "19:30",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Rhode Island",
+      "away": "Miami FC",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTTL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 3,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "TTTLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 14,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 10,
+      "awayRank": 24,
+      "goalsIndex": 27.6,
+      "mismatchIndex": 44.4,
+      "rankScore": 51.3,
+      "projected": {
+        "home": 1.96,
+        "away": 0.72,
+        "total": 2.68
+      },
+      "probabilities": {
+        "home": 0.6663432777596815,
+        "draw": 0.20530880255640893,
+        "away": 0.1283479196839095,
+        "btts": 0.44095197846811923,
+        "over15": 0.7476858522910264,
+        "over25": 0.5014601546680737,
+        "over35": 0.28149853145823567,
+        "under15": 0.25231414770897365,
+        "under25": 0.4985398453319263
+      },
+      "pick": {
+        "side": "Rhode Island",
+        "where": "H",
+        "probability": 0.6663432777596815
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-19T23:30:00.000Z",
+      "kickoffLocal": "19:30",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Tampa Bay",
+      "away": "Birmingham",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 6,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TTTTT",
+          "played": 5,
+          "goalsFor": 14,
+          "goalsAgainst": 14,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 9,
+      "awayRank": 17,
+      "goalsIndex": 62.5,
+      "mismatchIndex": 31,
+      "rankScore": 70.2,
+      "projected": {
+        "home": 2.24,
+        "away": 1.17,
+        "total": 3.41
+      },
+      "probabilities": {
+        "home": 0.6152625353240632,
+        "draw": 0.1959102550782048,
+        "away": 0.18882720959773175,
+        "btts": 0.6162140326634961,
+        "over15": 0.8542849081373687,
+        "over25": 0.6621772369709445,
+        "over35": 0.44381485074510924,
+        "under15": 0.14571509186263132,
+        "under25": 0.33782276302905545
+      },
+      "pick": {
+        "side": "Tampa Bay",
+        "where": "H",
+        "probability": 0.6152625353240632
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "country": "canada",
+      "league": "Canadian Premier League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Pacific FC",
+      "away": "Vancouver FC",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTTTW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 10,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LWLLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 11,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 5,
+      "awayRank": 6,
+      "goalsIndex": 26.4,
+      "mismatchIndex": 9.9,
+      "rankScore": 28.9,
+      "projected": {
+        "home": 1.64,
+        "away": 1.01,
+        "total": 2.66
+      },
+      "probabilities": {
+        "home": 0.5209312802319644,
+        "draw": 0.246045299685414,
+        "away": 0.2330234200826213,
+        "btts": 0.5124520279915601,
+        "over15": 0.7421227350237565,
+        "over25": 0.4940483386818842,
+        "over35": 0.2749159552465638,
+        "under15": 0.2578772649762435,
+        "under25": 0.5059516613181159
+      },
+      "pick": {
+        "side": "Pacific FC",
+        "where": "H",
+        "probability": 0.5209312802319644
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-20T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "country": "ecuador",
+      "league": "LigaPro",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Emelec",
+      "away": "Libertad",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWWTT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 3,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "LLWWT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 7,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 7,
+      "goalsIndex": 0,
+      "mismatchIndex": 2.7,
+      "rankScore": 2.7,
+      "projected": {
+        "home": 1.04,
+        "away": 0.92,
+        "total": 1.96
+      },
+      "probabilities": {
+        "home": 0.3759104334058669,
+        "draw": 0.3115097857597164,
+        "away": 0.31257978083441684,
+        "btts": 0.3888846935940621,
+        "over15": 0.5830590660542996,
+        "over25": 0.312498205945211,
+        "over35": 0.13573177734060626,
+        "under15": 0.4169409339457004,
+        "under25": 0.687501794054789
+      },
+      "pick": {
+        "side": "Emelec",
+        "where": "H",
+        "probability": 0.3759104334058669
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-20T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "country": "nicaragua",
+      "league": "Liga Primera",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Ferretti",
+      "away": "Jalapa",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTLL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 9,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "LLTLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 11,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 10,
+      "goalsIndex": 30.8,
+      "mismatchIndex": 29.6,
+      "rankScore": 38.2,
+      "projected": {
+        "home": 1.86,
+        "away": 0.89,
+        "total": 2.75
+      },
+      "probabilities": {
+        "home": 0.6021031000237909,
+        "draw": 0.2224979907845423,
+        "away": 0.175398909191667,
+        "btts": 0.49759908764860805,
+        "over15": 0.7602695023129177,
+        "over25": 0.5185412504784428,
+        "over35": 0.2969570196301746,
+        "under15": 0.23973049768708232,
+        "under25": 0.4814587495215572
+      },
+      "pick": {
+        "side": "Ferretti",
+        "where": "H",
+        "probability": 0.6021031000237909
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-20T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "country": "venezuela",
+      "league": "Liga FUTVE",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "La Guaira",
+      "away": "Dep. Tachira",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 4,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TLWWT",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 2,
+      "goalsIndex": 62.3,
+      "mismatchIndex": 25.2,
+      "rankScore": 68.6,
+      "projected": {
+        "home": 1.92,
+        "away": 1.48,
+        "total": 3.41
+      },
+      "probabilities": {
+        "home": 0.48026513171799884,
+        "draw": 0.2210917336808651,
+        "away": 0.298643134601136,
+        "btts": 0.6591278798248518,
+        "over15": 0.8531567039629562,
+        "over25": 0.6602580105324762,
+        "over35": 0.44163949131126534,
+        "under15": 0.14684329603704382,
+        "under25": 0.33974198946752376
+      },
+      "pick": {
+        "side": "La Guaira",
+        "where": "H",
+        "probability": 0.48026513171799884
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T00:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "country": "argentina",
+      "league": "Liga Profesional",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Instituto",
+      "away": "Talleres Cordoba",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLLW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 8,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "WWLTT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 3,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 1,
+      "awayRank": 19,
+      "goalsIndex": 5.9,
+      "mismatchIndex": 43.3,
+      "rankScore": 44.7,
+      "projected": {
+        "home": 1.47,
+        "away": 0.76,
+        "total": 2.22
+      },
+      "probabilities": {
+        "home": 0.5407525707648043,
+        "draw": 0.2656810503314,
+        "away": 0.19356637890379616,
+        "btts": 0.40993646215156226,
+        "over15": 0.6526830127692949,
+        "over25": 0.38531882611301466,
+        "over35": 0.18657811403184568,
+        "under15": 0.34731698723070514,
+        "under25": 0.6146811738869853
+      },
+      "pick": {
+        "side": "Instituto",
+        "where": "H",
+        "probability": 0.5407525707648043
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T00:30:00.000Z",
+      "kickoffLocal": "20:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "FC Dallas",
+      "away": "Austin FC",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 7,
+          "points": 15,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WTTTT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 5,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 2,
+      "awayRank": 11,
+      "goalsIndex": 77.6,
+      "mismatchIndex": 18.4,
+      "rankScore": 82.2,
+      "projected": {
+        "home": 1.93,
+        "away": 1.8,
+        "total": 3.73
+      },
+      "probabilities": {
+        "home": 0.4185420746778062,
+        "draw": 0.21467664456334815,
+        "away": 0.3667812807588452,
+        "btts": 0.7135445830514191,
+        "over15": 0.8865128531891302,
+        "over25": 0.7196063706452666,
+        "over35": 0.5120859773490627,
+        "under15": 0.1134871468108698,
+        "under25": 0.28039362935473344
+      },
+      "pick": {
+        "side": "FC Dallas",
+        "where": "H",
+        "probability": 0.4185420746778062
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T00:30:00.000Z",
+      "kickoffLocal": "20:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Houston Dynamo",
+      "away": "FC Cincinnati",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWWTT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 3,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "TTLLL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 20,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 7,
+      "awayRank": 24,
+      "goalsIndex": 9.8,
+      "mismatchIndex": 41.1,
+      "rankScore": 43.5,
+      "projected": {
+        "home": 1.65,
+        "away": 0.65,
+        "total": 2.3
+      },
+      "probabilities": {
+        "home": 0.6159035934550425,
+        "draw": 0.2402937776319131,
+        "away": 0.14380262891304393,
+        "btts": 0.3861630321612767,
+        "over15": 0.6691453610529255,
+        "over25": 0.4039603549877694,
+        "over35": 0.20065185033781738,
+        "under15": 0.33085463894707445,
+        "under25": 0.5960396450122306
+      },
+      "pick": {
+        "side": "Houston Dynamo",
+        "where": "H",
+        "probability": 0.6159035934550425
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T00:30:00.000Z",
+      "kickoffLocal": "20:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Minnesota United",
+      "away": "Los Angeles Galaxy",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 17,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "TLWLT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 10,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 25,
+      "awayRank": 17,
+      "goalsIndex": 84.2,
+      "mismatchIndex": 22.4,
+      "rankScore": 89.8,
+      "projected": {
+        "home": 2.34,
+        "away": 1.53,
+        "total": 3.87
+      },
+      "probabilities": {
+        "home": 0.557331454475214,
+        "draw": 0.19586390426401334,
+        "away": 0.2468046412607728,
+        "btts": 0.7079923382405349,
+        "over15": 0.8984161802568881,
+        "over25": 0.7422138486438887,
+        "over35": 0.5407128408631199,
+        "under15": 0.10158381974311192,
+        "under25": 0.25778615135611127
+      },
+      "pick": {
+        "side": "Minnesota United",
+        "where": "H",
+        "probability": 0.557331454475214
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T00:30:00.000Z",
+      "kickoffLocal": "20:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Sporting Kansas City",
+      "away": "Philadelphia Union",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLLL",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 13,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 19,
+          "goalsAgainst": 0,
+          "points": 15,
+          "ppg": 3
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 28,
+      "awayRank": 1,
+      "goalsIndex": 84.2,
+      "mismatchIndex": 74.6,
+      "rankScore": 102.9,
+      "projected": {
+        "home": 1.12,
+        "away": 2.75,
+        "total": 3.87
+      },
+      "probabilities": {
+        "home": 0.1293625346725353,
+        "draw": 0.15521753766052168,
+        "away": 0.7154199276669425,
+        "btts": 0.6306446538407928,
+        "over15": 0.8984054682352037,
+        "over25": 0.7421866650742001,
+        "over35": 0.5406644089965054,
+        "under15": 0.10159453176479627,
+        "under25": 0.25781333492579994
+      },
+      "pick": {
+        "side": "Philadelphia Union",
+        "where": "A",
+        "probability": 0.7154199276669425
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T00:30:00.000Z",
+      "kickoffLocal": "20:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "St. Louis City",
+      "away": "Toronto FC",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTWT",
+          "played": 5,
+          "goalsFor": 16,
+          "goalsAgainst": 10,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "away": {
+          "streak": "LLWWT",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 12,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 12,
+      "goalsIndex": 100,
+      "mismatchIndex": 29.7,
+      "rankScore": 107.4,
+      "projected": {
+        "home": 2.86,
+        "away": 1.66,
+        "total": 4.53
+      },
+      "probabilities": {
+        "home": 0.6256360420027856,
+        "draw": 0.16803902971379409,
+        "away": 0.20632492828342033,
+        "btts": 0.763471934505756,
+        "over15": 0.9398807240307592,
+        "over25": 0.8286252117334787,
+        "over35": 0.6610002398722422,
+        "under15": 0.060119275969240826,
+        "under25": 0.1713747882665213
+      },
+      "pick": {
+        "side": "St. Louis City",
+        "where": "H",
+        "probability": 0.6256360420027856
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T00:45:00.000Z",
+      "kickoffLocal": "20:45",
+      "country": "usa",
+      "league": "NWSL",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Denver Summit W",
+      "away": "Seattle Reign W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWWW",
+          "played": 5,
+          "goalsFor": 20,
+          "goalsAgainst": 7,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "away": {
+          "streak": "LWWWW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 3,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 3,
+      "awayRank": 2,
+      "goalsIndex": 25.2,
+      "mismatchIndex": 10.4,
+      "rankScore": 27.8,
+      "projected": {
+        "home": 1.54,
+        "away": 1.09,
+        "total": 2.63
+      },
+      "probabilities": {
+        "home": 0.4768181245505289,
+        "draw": 0.2543767112969899,
+        "away": 0.26880516415248146,
+        "btts": 0.5214807596539449,
+        "over15": 0.7383549898595463,
+        "over25": 0.4890750489999728,
+        "over35": 0.27053963417974647,
+        "under15": 0.2616450101404537,
+        "under25": 0.5109249510000272
+      },
+      "pick": {
+        "side": "Denver Summit W",
+        "where": "H",
+        "probability": 0.4768181245505289
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-20T01:00:00.000Z",
+      "kickoffLocal": "21:00",
+      "country": "mexico",
+      "league": "Liga de Expansión MX",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Atl. Morelia",
+      "away": "Leones Negros",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWLW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 5,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "TWWTW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 6,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 1,
+      "awayRank": 4,
+      "goalsIndex": 53.6,
+      "mismatchIndex": 18,
+      "rankScore": 58.1,
+      "projected": {
+        "home": 1.89,
+        "away": 1.34,
+        "total": 3.23
+      },
+      "probabilities": {
+        "home": 0.5036142287565448,
+        "draw": 0.22415533023398806,
+        "away": 0.27223044100946686,
+        "btts": 0.6266394311176826,
+        "over15": 0.8326709251077863,
+        "over25": 0.6263201561428955,
+        "over35": 0.40414916155736247,
+        "under15": 0.16732907489221371,
+        "under25": 0.3736798438571045
+      },
+      "pick": {
+        "side": "Atl. Morelia",
+        "where": "H",
+        "probability": 0.5036142287565448
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-20T01:00:00.000Z",
+      "kickoffLocal": "21:00",
+      "country": "mexico",
+      "league": "Liga de Expansión MX",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Cancun",
+      "away": "Alebrijes Oaxaca",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWLW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 5,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "WLTLW",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 7,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 5,
+      "goalsIndex": 30,
+      "mismatchIndex": 10.5,
+      "rankScore": 32.6,
+      "projected": {
+        "home": 1.68,
+        "away": 1.05,
+        "total": 2.73
+      },
+      "probabilities": {
+        "home": 0.5210644126655627,
+        "draw": 0.24212398936029397,
+        "away": 0.2368115979741434,
+        "btts": 0.5289073623133947,
+        "over15": 0.7567316489225384,
+        "over25": 0.5136948267046817,
+        "over35": 0.2925313184864322,
+        "under15": 0.2432683510774616,
+        "under25": 0.4863051732953183
+      },
+      "pick": {
+        "side": "Cancun",
+        "where": "H",
+        "probability": 0.5210644126655627
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-20T01:00:00.000Z",
+      "kickoffLocal": "21:00",
+      "country": "mexico",
+      "league": "Liga de Expansión MX",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Jaiba Brava",
+      "away": "Dorados de Sinaloa",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWLWL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 13,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "TWWLL",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 8,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 6,
+      "goalsIndex": 81.7,
+      "mismatchIndex": 7.6,
+      "rankScore": 83.6,
+      "projected": {
+        "home": 1.85,
+        "away": 1.97,
+        "total": 3.82
+      },
+      "probabilities": {
+        "home": 0.37039593417078337,
+        "draw": 0.21194699925617705,
+        "away": 0.4176570665730398,
+        "btts": 0.7252323826299473,
+        "over15": 0.8943068090575896,
+        "over25": 0.7343153858721099,
+        "over35": 0.5305929736825988,
+        "under15": 0.10569319094241036,
+        "under25": 0.26568461412789013
+      },
+      "pick": {
+        "side": "Dorados de Sinaloa",
+        "where": "A",
+        "probability": 0.4176570665730398
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T01:00:00.000Z",
+      "kickoffLocal": "21:00",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Colorado Springs",
+      "away": "New Mexico",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 14,
+          "goalsAgainst": 9,
+          "points": 15,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "TTTWL",
+          "played": 5,
+          "goalsFor": 13,
+          "goalsAgainst": 13,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 6,
+      "awayRank": 3,
+      "goalsIndex": 90.3,
+      "mismatchIndex": 6.6,
+      "rankScore": 91.9,
+      "projected": {
+        "home": 1.89,
+        "away": 2.11,
+        "total": 4
+      },
+      "probabilities": {
+        "home": 0.3546731859640158,
+        "draw": 0.2059264349438407,
+        "away": 0.43940037909214347,
+        "btts": 0.746003814461278,
+        "over15": 0.9084201129960163,
+        "over25": 0.7618922937896425,
+        "over35": 0.5665218681811443,
+        "under15": 0.09157988700398367,
+        "under25": 0.23810770621035748
+      },
+      "pick": {
+        "side": "New Mexico",
+        "where": "A",
+        "probability": 0.43940037909214347
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "ATK_VS_LEAKY"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T01:10:00.000Z",
+      "kickoffLocal": "21:10",
+      "country": "mexico",
+      "league": "Liga MX",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Monterrey",
+      "away": "Cruz Azul",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLLW",
+          "played": 4,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "points": 4,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "WWWWL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 6,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 13,
+      "awayRank": 5,
+      "goalsIndex": 51.9,
+      "mismatchIndex": 20.8,
+      "rankScore": 57.1,
+      "projected": {
+        "home": 1.87,
+        "away": 1.51,
+        "total": 3.38
+      },
+      "probabilities": {
+        "home": 0.46288612179213195,
+        "draw": 0.22356647505584767,
+        "away": 0.3135474031520203,
+        "btts": 0.6590131693377131,
+        "over15": 0.8508713952263257,
+        "over25": 0.6563845422153253,
+        "over35": 0.43726268782293065,
+        "under15": 0.1491286047736743,
+        "under25": 0.3436154577846747
+      },
+      "pick": {
+        "side": "Monterrey",
+        "where": "H",
+        "probability": 0.46288612179213195
+      },
+      "confidence": "medium",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T01:15:00.000Z",
+      "kickoffLocal": "21:15",
+      "country": "colombia",
+      "league": "Primera A",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Dep. Pasto",
+      "away": "Once Caldas",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTTLL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "WWLLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 6,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 19,
+      "awayRank": 11,
+      "goalsIndex": 0,
+      "mismatchIndex": 21.5,
+      "rankScore": 21.5,
+      "projected": {
+        "home": 0.99,
+        "away": 1.05,
+        "total": 2.04
+      },
+      "probabilities": {
+        "home": 0.33209139478321464,
+        "draw": 0.30465144093256485,
+        "away": 0.36325716428422006,
+        "btts": 0.4085142649413366,
+        "over15": 0.6047127088501904,
+        "over25": 0.3341489603552815,
+        "over35": 0.15016561137874312,
+        "under15": 0.39528729114980965,
+        "under25": 0.6658510396447185
+      },
+      "pick": {
+        "side": "Once Caldas",
+        "where": "A",
+        "probability": 0.36325716428422006
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-20T01:15:00.000Z",
+      "kickoffLocal": "21:15",
+      "country": "peru",
+      "league": "Liga 1",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "FBC Melgar",
+      "away": "Sport Boys",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 1,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "WLWWT",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 4,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 5,
+      "goalsIndex": 15.9,
+      "mismatchIndex": 8.7,
+      "rankScore": 18.1,
+      "projected": {
+        "home": 1.29,
+        "away": 1.15,
+        "total": 2.43
+      },
+      "probabilities": {
+        "home": 0.39713614840435885,
+        "draw": 0.27310219348043857,
+        "away": 0.3297616581152025,
+        "btts": 0.49525326573306144,
+        "over15": 0.7001666206455589,
+        "over25": 0.4407061544646574,
+        "over35": 0.22967830863752478,
+        "under15": 0.2998333793544411,
+        "under25": 0.5592938455353427
+      },
+      "pick": {
+        "side": "FBC Melgar",
+        "where": "H",
+        "probability": 0.39713614840435885
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-20T01:30:00.000Z",
+      "kickoffLocal": "21:30",
+      "country": "honduras",
+      "league": "Liga Nacional",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Real Espana",
+      "away": "Motagua",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWWW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 3,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "away": {
+          "streak": "WTTWW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 2,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 3,
+      "awayRank": 4,
+      "goalsIndex": 10.5,
+      "mismatchIndex": 11.6,
+      "rankScore": 14.2,
+      "projected": {
+        "home": 1.48,
+        "away": 0.84,
+        "total": 2.32
+      },
+      "probabilities": {
+        "home": 0.5225599691414455,
+        "draw": 0.26409270313090394,
+        "away": 0.2133473277276509,
+        "btts": 0.43892531051550726,
+        "over15": 0.6737315370846524,
+        "over25": 0.4092575348564045,
+        "over35": 0.204730973133226,
+        "under15": 0.3262684629153476,
+        "under25": 0.5907424651435955
+      },
+      "pick": {
+        "side": "Real Espana",
+        "where": "H",
+        "probability": 0.5225599691414455
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-20T01:30:00.000Z",
+      "kickoffLocal": "21:30",
+      "country": "panama",
+      "league": "Liga Panameña",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Plaza Amador",
+      "away": "Veraguas",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWLW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 9,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "WWLTT",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 9,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 4,
+      "goalsIndex": 100,
+      "mismatchIndex": 17.7,
+      "rankScore": 104.4,
+      "projected": {
+        "home": 2.71,
+        "away": 1.72,
+        "total": 4.43
+      },
+      "probabilities": {
+        "home": 0.5880825519074653,
+        "draw": 0.1775504248135882,
+        "away": 0.2343670232789462,
+        "btts": 0.7663044250585578,
+        "over15": 0.9352961713383441,
+        "over25": 0.818371109910892,
+        "over35": 0.6457117692030212,
+        "under15": 0.06470382866165592,
+        "under25": 0.18162889008910799
+      },
+      "pick": {
+        "side": "Plaza Amador",
+        "where": "H",
+        "probability": 0.5880825519074653
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T01:30:00.000Z",
+      "kickoffLocal": "21:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Colorado Rapids",
+      "away": "Seattle Sounders",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTTLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "TTTTT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 4,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 9,
+      "awayRank": 27,
+      "goalsIndex": 0,
+      "mismatchIndex": 36.8,
+      "rankScore": 36.8,
+      "projected": {
+        "home": 1.12,
+        "away": 0.78,
+        "total": 1.9
+      },
+      "probabilities": {
+        "home": 0.43455061327905736,
+        "draw": 0.3116952372472481,
+        "away": 0.2537541494736942,
+        "btts": 0.36488280751043084,
+        "over15": 0.5662509903161995,
+        "over25": 0.29627962394404045,
+        "over35": 0.1252977585750067,
+        "under15": 0.4337490096838005,
+        "under25": 0.7037203760559596
+      },
+      "pick": {
+        "side": "Colorado Rapids",
+        "where": "H",
+        "probability": 0.43455061327905736
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T01:30:00.000Z",
+      "kickoffLocal": "21:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Nashville SC",
+      "away": "Chicago Fire",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTLLT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 8,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "LTTTT",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 12,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "descending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 5,
+      "awayRank": 14,
+      "goalsIndex": 65.4,
+      "mismatchIndex": 28.9,
+      "rankScore": 72.7,
+      "projected": {
+        "home": 2.26,
+        "away": 1.22,
+        "total": 3.47
+      },
+      "probabilities": {
+        "home": 0.6080448066873969,
+        "draw": 0.19570212207715446,
+        "away": 0.19625307123544916,
+        "btts": 0.6312248863120826,
+        "over15": 0.8619793097209144,
+        "over25": 0.6754295588776291,
+        "over35": 0.4590318478994188,
+        "under15": 0.1380206902790856,
+        "under25": 0.3245704411223709
+      },
+      "pick": {
+        "side": "Nashville SC",
+        "where": "H",
+        "probability": 0.6080448066873969
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T01:30:00.000Z",
+      "kickoffLocal": "21:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Real Salt Lake",
+      "away": "Vancouver Whitecaps",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLTL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 9,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "LWLWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 5,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 30,
+      "awayRank": 10,
+      "goalsIndex": 46,
+      "mismatchIndex": 52.8,
+      "rankScore": 64.3,
+      "projected": {
+        "home": 1.02,
+        "away": 2.05,
+        "total": 3.07
+      },
+      "probabilities": {
+        "home": 0.18086360937730292,
+        "draw": 0.20769784723609047,
+        "away": 0.6114385433866064,
+        "btts": 0.557090449542499,
+        "over15": 0.8110639287407005,
+        "over25": 0.5923042754223011,
+        "over35": 0.3684402301931388,
+        "under15": 0.18893607125929945,
+        "under25": 0.40769572457769887
+      },
+      "pick": {
+        "side": "Vancouver Whitecaps",
+        "where": "A",
+        "probability": 0.6114385433866064
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T02:00:00.000Z",
+      "kickoffLocal": "22:00",
+      "country": "costa-rica",
+      "league": "Primera División",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Saprissa",
+      "away": "Herediano",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWWWL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 7,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "WLLLL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 10,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 4,
+      "awayRank": 9,
+      "goalsIndex": 45.9,
+      "mismatchIndex": 53.1,
+      "rankScore": 64.6,
+      "projected": {
+        "home": 2.21,
+        "away": 0.85,
+        "total": 3.06
+      },
+      "probabilities": {
+        "home": 0.683273564969056,
+        "draw": 0.1860614400643202,
+        "away": 0.1306649949666235,
+        "btts": 0.509770819125631,
+        "over15": 0.8096320326621761,
+        "over25": 0.5901086953512833,
+        "over35": 0.36619489129417276,
+        "under15": 0.1903679673378239,
+        "under25": 0.4098913046487167
+      },
+      "pick": {
+        "side": "Saprissa",
+        "where": "H",
+        "probability": 0.683273564969056
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "ATK_VS_LEAKY"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T02:00:00.000Z",
+      "kickoffLocal": "22:00",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Phoenix Rising",
+      "away": "El Paso",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTWTW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 6,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 4,
+          "points": 15,
+          "ppg": 3
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 1,
+      "goalsIndex": 15.6,
+      "mismatchIndex": 22.4,
+      "rankScore": 26.3,
+      "projected": {
+        "home": 0.96,
+        "away": 1.47,
+        "total": 2.43
+      },
+      "probabilities": {
+        "home": 0.24655459674199273,
+        "draw": 0.2636200237683909,
+        "away": 0.4898253794896165,
+        "btts": 0.4752183950428661,
+        "over15": 0.698033525143128,
+        "over25": 0.43810905905240766,
+        "over35": 0.22757024151892358,
+        "under15": 0.301966474856872,
+        "under25": 0.5618909409475923
+      },
+      "pick": {
+        "side": "El Paso",
+        "where": "A",
+        "probability": 0.4898253794896165
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-20T02:30:00.000Z",
+      "kickoffLocal": "22:30",
+      "country": "usa",
+      "league": "MLS",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Portland Timbers",
+      "away": "Atlanta Utd",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTWL",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 12,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "TTLLT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 8,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 16,
+      "awayRank": 13,
+      "goalsIndex": 65.9,
+      "mismatchIndex": 8.6,
+      "rankScore": 68.1,
+      "projected": {
+        "home": 1.92,
+        "away": 1.57,
+        "total": 3.48
+      },
+      "probabilities": {
+        "home": 0.46162559560393146,
+        "draw": 0.21988444928039813,
+        "away": 0.3184899551156707,
+        "btts": 0.6758479140176237,
+        "over15": 0.8630501861932012,
+        "over25": 0.677297131945073,
+        "over35": 0.46120441216975055,
+        "under15": 0.13694981380679883,
+        "under25": 0.322702868054927
+      },
+      "pick": {
+        "side": "Portland Timbers",
+        "where": "H",
+        "probability": 0.46162559560393146
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-20T02:30:00.000Z",
+      "kickoffLocal": "22:30",
+      "country": "usa",
+      "league": "USL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Las Vegas Lights",
+      "away": "Hartford Athletic",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 8,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "WWWTT",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 4,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 13,
+      "awayRank": 2,
+      "goalsIndex": 9,
+      "mismatchIndex": 27.2,
+      "rankScore": 29.4,
+      "projected": {
+        "home": 0.95,
+        "away": 1.34,
+        "total": 2.29
+      },
+      "probabilities": {
+        "home": 0.26540976913055747,
+        "draw": 0.27749403339994005,
+        "away": 0.457096197469503,
+        "btts": 0.45267973848727733,
+        "over15": 0.6668332770441099,
+        "over25": 0.4013075001667571,
+        "over35": 0.19862282381704402,
+        "under15": 0.3331667229558901,
+        "under25": 0.5986924998332429
+      },
+      "pick": {
+        "side": "Hartford Athletic",
+        "where": "A",
+        "probability": 0.457096197469503
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-20T03:15:00.000Z",
+      "kickoffLocal": "23:15",
+      "country": "mexico",
+      "league": "Liga MX",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Club America",
+      "away": "Guadalajara Chivas",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWWWW",
+          "played": 5,
+          "goalsFor": 13,
+          "goalsAgainst": 5,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "WWWTT",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 2,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 3,
+      "awayRank": 2,
+      "goalsIndex": 48.4,
+      "mismatchIndex": 3.8,
+      "rankScore": 49.4,
+      "projected": {
+        "home": 1.55,
+        "away": 1.56,
+        "total": 3.12
+      },
+      "probabilities": {
+        "home": 0.37879870693467954,
+        "draw": 0.23807487010340836,
+        "away": 0.38312642296191196,
+        "btts": 0.6222166503602371,
+        "over15": 0.8166897874544053,
+        "over25": 0.6009970007436695,
+        "over35": 0.37739547852020666,
+        "under15": 0.18331021254559465,
+        "under25": 0.39900299925633054
+      },
+      "pick": {
+        "side": "Guadalajara Chivas",
+        "where": "A",
+        "probability": 0.38312642296191196
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "argentina",
+      "slug": "primera-b",
+      "name": "ARGENTINA: Primera B"
+    },
+    {
+      "country": "argentina",
+      "slug": "primera-c",
+      "name": "ARGENTINA: Primera C"
+    },
+    {
+      "country": "brazil",
+      "slug": "serie-a-betano",
+      "name": "BRAZIL: Serie A Betano"
+    },
+    {
+      "country": "canada",
+      "slug": "nsl-women",
+      "name": "CANADA: NSL Women"
+    },
+    {
+      "country": "dominican-republic",
+      "slug": "ldf",
+      "name": "DOMINICAN REPUBLIC: LDF"
+    },
+    {
+      "country": "ecuador",
+      "slug": "serie-b",
+      "name": "ECUADOR: Serie B - Relegation Group"
+    },
+    {
+      "country": "mexico",
+      "slug": "primera-premier",
+      "name": "MEXICO: Primera Premier"
+    },
+    {
+      "country": "usa",
+      "slug": "usl-super-league-women",
+      "name": "USA: USL Super League Women"
+    },
+    {
+      "country": "venezuela",
+      "slug": "liga-futve-2",
+      "name": "VENEZUELA: Liga FUTVE 2"
+    }
+  ],
+  "outOfRegionCountries": [
+    "africa",
+    "algeria",
+    "angola",
+    "australia",
+    "australia-oceania",
+    "bangladesh",
+    "bermuda",
+    "bhutan",
+    "botswana",
+    "burkina-faso",
+    "burundi",
+    "cambodia",
+    "eswatini",
+    "ghana",
+    "hong-kong",
+    "india",
+    "indonesia",
+    "iraq",
+    "jordan",
+    "kenya",
+    "kyrgyzstan",
+    "malawi",
+    "malaysia",
+    "niger",
+    "nigeria",
+    "saudi-arabia",
+    "singapore",
+    "south-africa",
+    "thailand",
+    "turkmenistan",
+    "uganda",
+    "united-arab-emirates",
+    "uzbekistan",
+    "vietnam",
+    "world",
+    "zimbabwe"
+  ]
+}
