@@ -1,0 +1,185 @@
+{
+  "date": "2026-09-21",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-09-21T14:40:52.168Z",
+  "stats": {
+    "totalGames": 4,
+    "otherDays": 2,
+    "daysCached": 7,
+    "daysFetched": 7,
+    "daysFailed": 0,
+    "teamsKnown": 31,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 20.647058823529413,
+    "marginSd": 13.5,
+    "totalSd": 10,
+    "spreadsDerivedFromGames": 0
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-09-22T00:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "home": "Los Angeles Rams",
+      "away": "New York Giants",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "baseline",
+        "points": {
+          "home": 21.4,
+          "away": 21.6,
+          "total": 43
+        },
+        "margin": -0.2,
+        "spread": {
+          "favourite": "New York Giants",
+          "line": -0.2,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.49320775803078715,
+          "away": 0.5050197581929639,
+          "tie": 0.0017724837762490386
+        },
+        "regulation": {
+          "tie": 0.02954139627081731
+        },
+        "total": {
+          "projected": 43,
+          "range": [
+            30.2,
+            55.8
+          ],
+          "overUnder": [
+            {
+              "line": 36.5,
+              "over": 0.7412031249391673
+            },
+            {
+              "line": 39.5,
+              "over": 0.63572637069028
+            },
+            {
+              "line": 42.5,
+              "over": 0.5187668934949383
+            },
+            {
+              "line": 45.5,
+              "over": 0.4001568910595583
+            },
+            {
+              "line": 48.5,
+              "over": 0.29015181683222535
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 10.7,
+            "away": 10.8,
+            "total": 21.5
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.05764247578388548
+          },
+          {
+            "margin": 7,
+            "probability": 0.05165554901754016
+          },
+          {
+            "margin": 10,
+            "probability": 0.0449150483185895
+          },
+          {
+            "margin": 14,
+            "probability": 0.034521255343637924
+          },
+          {
+            "margin": 6,
+            "probability": 0.05352981116352107
+          },
+          {
+            "margin": 4,
+            "probability": 0.05654685397913367
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 0,
+            "rank": null,
+            "pointsFor": 20.647058823529413,
+            "pointsAgainst": 20.647058823529413,
+            "offence": 1,
+            "defence": 1,
+            "pointDifferential": 0
+          },
+          "away": {
+            "played": 1,
+            "rank": 9,
+            "pointsFor": 22.485294117647058,
+            "pointsAgainst": 20.485294117647058,
+            "offence": 1.0890313390313389,
+            "defence": 0.992165242165242,
+            "pointDifferential": 2
+          }
+        },
+        "strengthGap": 2
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 37.5,
+        "totalUnder": 48.5,
+        "spread": {
+          "side": "New York Giants",
+          "where": "A",
+          "line": 7.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "pointsFor": 0,
+          "pointsAgainst": 0,
+          "winRate": null,
+          "pointsForAvg": null,
+          "pointsAgainstAvg": null
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "pointsFor": 28,
+          "pointsAgainst": 20,
+          "winRate": 1,
+          "pointsForAvg": 28,
+          "pointsAgainstAvg": 20
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
