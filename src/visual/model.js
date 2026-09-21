@@ -340,3 +340,140 @@ export function mlbDocument(data) {
       `generated ${new Date().toISOString()}`,
   };
 }
+
+// --- American football -------------------------------------------------------
+
+export function footballDocument(data) {
+  const { date, tz, games, stats, ctx } = data;
+  const cover = data.coverProbability ?? 0.7;
+  const label = ctx?.label ?? 'Football';
+
+  const toCard = (g) => {
+    const p = g.projection;
+    const key3 = p.keyNumbers.find((k) => k.margin === 3);
+    const key7 = p.keyNumbers.find((k) => k.margin === 7);
+    return {
+      time: formatTime(g.kickoff, tz),
+      confidence: p.confidence,
+      strong: Math.max(p.winProbability.home, p.winProbability.away) >= cover,
+      home: { name: g.home, crest: imageUrl(g.homeImage) },
+      away: { name: g.away, crest: imageUrl(g.awayImage) },
+      bars: [
+        { label: 'H', pct: p.winProbability.home, tone: 'home' },
+        // A tie needs the margin to land exactly on zero, so this segment is a
+        // sliver in the NFL and absent in college. It is drawn rather than
+        // folded into a winner, because it is the honest shape of the outcome.
+        ...(p.winProbability.tie > 0
+          ? [{ label: 'T', pct: p.winProbability.tie, tone: 'draw' }]
+          : []),
+        { label: 'A', pct: p.winProbability.away, tone: 'away' },
+      ],
+      stats: [
+        { label: 'projected', value: `${p.points.home.toFixed(0)}–${p.points.away.toFixed(0)}` },
+        { label: 'total', value: p.total.projected.toFixed(1), tone: 'hot' },
+        { label: 'spread', value: p.spread.line.toFixed(1) },
+        { label: 'by 3 / by 7', value: `${pct(key3?.probability)} / ${pct(key7?.probability)}` },
+        { label: 'gap', value: p.strengthGap.toFixed(1) },
+      ],
+      form: {
+        home: { streak: g.form?.home?.streak ?? '', sub: formSub(g.form?.home, 'pts') },
+        away: { streak: g.form?.away?.streak ?? '', sub: formSub(g.form?.away, 'pts') },
+      },
+      tags: [
+        `${p.spread.favourite} ${p.spread.line.toFixed(1)}`,
+        g.lines?.totalOver ? `over ${g.lines.totalOver.toFixed(1)} at ${pct(cover)}` : null,
+        g.h2hSummary?.played ? `h2h ${g.h2hSummary.aWins}-${g.h2hSummary.bWins}` : null,
+      ].filter(Boolean),
+    };
+  };
+
+  const picks = games
+    .filter(
+      (g) =>
+        Math.max(g.projection.winProbability.home, g.projection.winProbability.away) >= cover &&
+        g.projection.confidence !== 'baseline',
+    )
+    .sort(
+      (a, b) =>
+        Math.max(b.projection.winProbability.home, b.projection.winProbability.away) -
+        Math.max(a.projection.winProbability.home, a.projection.winProbability.away),
+    )
+    .slice(0, 6)
+    .map(toCard);
+
+  const byTotal = [...games]
+    .sort((a, b) => b.projection.total.projected - a.projection.total.projected)
+    .slice(0, 6)
+    .map(toCard);
+
+  return {
+    sport: 'football',
+    date,
+    title: `${label} slate`,
+    subtitle: `${date} · all times ${tz} · ${games.length} game${games.length === 1 ? '' : 's'}`,
+    kpis: [
+      { value: String(games.length), label: 'games' },
+      { value: String(picks.length), label: `at ${pct(cover)}+` },
+      { value: String(stats.teamsKnown ?? 0), label: 'teams tracked' },
+      { value: ctx?.marginSd ? ctx.marginSd.toFixed(1) : '—', label: 'margin sd' },
+    ],
+    highlights: [
+      {
+        title: `Strong favourites (${pct(cover)}+)`,
+        blurb: 'Win probability from the projected margin, with the home edge applied.',
+        emptyNote: `No game today has a side at ${pct(cover)} or better with enough games played behind it.`,
+        cards: picks,
+      },
+      {
+        title: 'Most points expected',
+        blurb: 'Highest projected combined points.',
+        emptyNote: 'No games today.',
+        cards: byTotal,
+      },
+    ],
+    groups: games.length
+      ? [
+          {
+            label,
+            sub: 'USA',
+            flag: countryFlag('usa'),
+            logo: imageUrl(games[0]?.tournamentImage),
+            cards: games.map(toCard),
+          },
+        ]
+      : [],
+    legend: [
+      ['H / A', 'Home and away win probability. A tie shows as a sliver in the NFL and is impossible in college.'],
+      ['projected', 'Projected points, home–away.'],
+      ['total', 'Projected combined points.'],
+      ['spread', 'Projected margin, quoted on the favourite.'],
+      ['by 3 / by 7', 'Chance the final margin lands exactly on 3 or on 7, either way. Read as a floor — see the note below.'],
+      ['gap', 'Point differential per game, the distance between the two sides.'],
+      ['W T L', 'Last five results, most recent first, with points for and against across them.'],
+      ['dots', 'How much rests on these teams’ own results: three dots = 4+ games each, none = league baseline.'],
+    ],
+    caveats: [
+      {
+        title: 'The quarterback is not in this model',
+        body: [
+          'In football the starting quarterback moves a line further than any other single factor — several points on the spread — and the feed carries no depth chart or injury data. A game where a starter is out is under-modelled here.',
+          'Weather is absent too, and it matters more in this sport than in any other in this repo. So are rest and travel, including the short week a Thursday game imposes.',
+        ],
+      },
+      {
+        title: 'Key numbers are a floor, not a figure',
+        body: [
+          'Football margins pile up on 3 and 7 because scores are built from field goals and touchdowns. The percentages here come from discretising a smooth normal curve, which spreads that mass evenly and so understates the real clustering.',
+          'The ordering is right and the numbers are conservative. Treat a projected margin sitting on 3 or 7 as more dangerous than the figure suggests, not less.',
+        ],
+      },
+    ],
+    footer:
+      `${stats.totalGames} football games worldwide · ${games.length} ${label} on ${date} · ` +
+      `${stats.teamsKnown} teams from ${stats.daysCached} days of results · ` +
+      (ctx?.derivedFrom
+        ? `spreads measured from ${ctx.derivedFrom} finished games`
+        : 'spreads from the competition prior, not yet measured') +
+      ` · generated ${new Date().toISOString()}`,
+  };
+}

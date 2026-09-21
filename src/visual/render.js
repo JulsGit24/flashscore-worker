@@ -33,6 +33,7 @@ const ACCENT = {
   soccer: { hue: '152 55% 32%', soft: '152 45% 94%' },
   basketball: { hue: '24 78% 45%', soft: '24 80% 95%' },
   baseball: { hue: '221 60% 40%', soft: '221 60% 95%' },
+  football: { hue: '340 55% 38%', soft: '340 50% 95%' },
 };
 
 export function escapeHtml(value) {
