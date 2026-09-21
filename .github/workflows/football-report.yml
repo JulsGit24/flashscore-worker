@@ -1,0 +1,138 @@
+name: Daily football slates
+
+on:
+  schedule:
+    # Checked every day, not on fixed weekdays.
+    #
+    # It is tempting to encode "NFL is Thursday, Sunday, Monday" and "college is
+    # Saturday", and it would be wrong. The NFL plays Saturdays through December
+    # and January, on Thanksgiving and the Friday after, and on Christmas
+    # whatever day that lands; college fills weeknights through November. The
+    # probe that opened this work found college games on a Thursday, Friday,
+    # Saturday and Sunday in a single seven-day window.
+    #
+    # So the feed is asked every morning and the answer decides. A day with no
+    # games writes nothing at all — see the note in src/football.js.
+    #
+    # Window rather than an instant, for the same reason as every other schedule
+    # here: GitHub delivers scheduled runs late, routinely by an hour or more.
+    - cron: '13 10-14 * * *'
+  workflow_dispatch:
+    inputs:
+      day_offset:
+        description: '0 = today, 1 = tomorrow'
+        default: '0'
+      force:
+        description: 'regenerate even if today has already been checked'
+        default: 'false'
+
+permissions:
+  contents: write
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.check.outputs.go }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: check
+        run: |
+          hour=$(TZ=America/New_York date +%H)
+          today=$(TZ=America/New_York date +%F)
+
+          # A marker rather than the report folder, because on most days there
+          # is legitimately no report to find. Without it the gate could never
+          # be satisfied on a Tuesday and would re-run every hour of the window
+          # for nothing.
+          checked=$(node -e "
+            const fs = require('node:fs');
+            try {
+              const m = JSON.parse(fs.readFileSync('data/football-checked.json', 'utf8'));
+              process.stdout.write(m['$today'] ? 'yes' : 'no');
+            } catch { process.stdout.write('no'); }
+          ")
+
+          if [ "${{ github.event_name }}" != 'schedule' ]; then
+            if [ "${{ github.event.inputs.force }}" = 'true' ] || [ "$checked" = 'no' ]; then
+              echo 'go=true' >> "$GITHUB_OUTPUT"
+            else
+              echo 'go=false' >> "$GITHUB_OUTPUT"
+              echo "Dispatched, but $today has already been checked. Re-run with force=true."
+            fi
+          elif [ "$hour" -lt 6 ]; then
+            echo 'go=false' >> "$GITHUB_OUTPUT"
+            echo "New York hour is $hour — too early. A later cron will pick it up."
+          elif [ "$checked" = 'yes' ]; then
+            echo 'go=false' >> "$GITHUB_OUTPUT"
+            echo "$today already checked; nothing to do."
+          else
+            echo 'go=true' >> "$GITHUB_OUTPUT"
+            echo "New York hour is $hour and $today has not been checked — reading the feed."
+          fi
+
+  report:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - run: npm test
+
+      - name: Generate the football slates
+        env:
+          REPORT_TZ: ${{ vars.REPORT_TZ || 'America/New_York' }}
+        run: |
+          # One pass per competition. The day feed is per sport, so the second
+          # run reads the same cache and costs almost nothing. Each writes a
+          # report only if that competition has games today.
+          for competition in nfl ncaa; do
+            echo "::group::$competition"
+            node src/football.js \
+              --competition "$competition" \
+              --day-offset "${{ github.event.inputs.day_offset || 0 }}" \
+              --quiet
+            echo "::endgroup::"
+          done
+
+      - name: Publish the slates to the job summary
+        if: always()
+        run: |
+          today=$(TZ=America/New_York date +%F)
+          found=0
+          for competition in nfl ncaa; do
+            file="reports/$competition/$today/report.md"
+            if [ -f "$file" ]; then
+              found=1
+              cat "$file" >> "$GITHUB_STEP_SUMMARY"
+              echo >> "$GITHUB_STEP_SUMMARY"
+            fi
+          done
+          if [ "$found" = 0 ]; then
+            echo "No NFL or college games on $today — nothing to report, which is the expected outcome on most days." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit the slates
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          # The marker under data/ is committed even on a day with no games, so
+          # the gate does not re-read the feed every hour of the window.
+          git add -A reports/ data/
+          if git diff --cached --quiet; then
+            echo 'Nothing to commit.'
+          else
+            git commit -m "Football slates for $(TZ=America/New_York date +%F)"
+            for attempt in 1 2 3; do
+              git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0
+              sleep $((attempt * 5))
+            done
+            echo 'Could not push after three attempts.' >&2
+            exit 1
+          fi

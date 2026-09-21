@@ -1,10 +1,12 @@
 # flashscore-worker
 
-Three reports, on three schedules:
+Five reports, on their own schedules:
 
 | Report | Read at | Output |
 |---|---|---|
 | Soccer, three regions | 05:00 America/New_York | `reports/<region>/YYYY-MM-DD/` |
+| NFL slate | 09:00 America/New_York, on game days | `reports/nfl/YYYY-MM-DD/` |
+| NCAA football slate | 09:00 America/New_York, on game days | `reports/ncaa/YYYY-MM-DD/` |
 | MLB slate | 10:00 America/New_York | `reports/mlb/YYYY-MM-DD/` |
 | WNBA slate | 16:00 America/New_York | `reports/wnba/YYYY-MM-DD/` |
 
@@ -194,6 +196,10 @@ node src/wnba.js --help
 
 node src/mlb.js                # today's MLB slate
 node src/mlb.js --help
+
+node src/football.js --competition nfl    # today's NFL slate, if there are games
+node src/football.js --competition ncaa   # today's college slate
+node src/football.js --help
 ```
 
 Output is written to `reports/<region>/YYYY-MM-DD/` — see [what a day's folder
@@ -234,6 +240,88 @@ Emoji, which is what makes the flags render rather than showing tofu).
 A machine with no browser is a normal condition rather than a failure — local
 development, mostly. There the run writes `report.html` beside the other two
 files and says so on stderr, so the visual report is never silently lost.
+
+## Football: NFL and college
+
+`node src/football.js --competition nfl|ncaa` builds the day's NFL or college
+football slate, on the schedule in
+[`.github/workflows/football-report.yml`](.github/workflows/football-report.yml).
+
+### Schedule-driven, not weekday-driven
+
+The feed is asked **every morning**, and the answer decides whether a report is
+written. Nothing is written on a day with no games.
+
+Encoding "NFL is Thursday, Sunday, Monday; college is Saturday" would be wrong,
+and wrong in the direction that loses games. The NFL plays Saturdays through
+December and January, on Thanksgiving and the Friday after, and on Christmas
+whatever day that falls; college fills weeknights through November. The probe
+that opened this work found college games on a Thursday, Friday, Saturday
+*and* Sunday inside one seven-day window.
+
+A day with no games still records that it was checked, in
+`data/football-checked.json`. That keeps **"no games today"** and **"the job
+never ran"** distinguishable — without it both look identical from outside, an
+empty folder either way — and it lets the workflow gate stop after one read
+instead of retrying every hour of a Tuesday.
+
+### A fourth scoring model, and why it is two
+
+A football score is the sum of a dozen or so drive outcomes, so margin and total
+are close to normal, as in basketball. What is different is how far apart the two
+competitions are. Measured from real finished games on the live feed:
+
+| | games | points/team | sd | mean \|margin\| |
+|---|---:|---:|---:|---:|
+| NFL | 14 | 19.3 | 9.8 | 12.2 |
+| NCAA | 77 | 28.3 | 16.0 | 21.8 |
+
+College margins are nearly **twice** the NFL's, because the talent range across
+~130 FBS programmes is far wider than across 32 professional franchises. One set
+of constants for "football" would be wrong for both, so each competition carries
+its own — and the spreads are **re-measured from cached results** once 40 games
+have accumulated, so the constants are a starting point rather than a permanent
+assumption. The report's footer says which of the two it used.
+
+Two calibration points worth stating, since both were wrong in the first draft:
+
+- **A tie is not a regulation tie.** Landing exactly on zero happens about 3% of
+  the time in the NFL, but overtime resolves nearly all of it — roughly 5-6% of
+  games reach overtime and roughly 0.3% end tied. Quoting the regulation figure
+  as the tie would be an order of magnitude out and would quietly steal that mass
+  from both win probabilities. College plays overtime until somebody wins, so
+  there the tie is exactly zero.
+- **College home advantage is larger**, 3 points against the NFL's 1.8. The
+  NFL's has shrunk markedly from the 3 it sat at for decades.
+
+### Key numbers
+
+Football margins pile up on 3 and 7, because scores are built from field goals
+and touchdowns. The report gives the chance the final margin lands exactly on
+each of 3, 7, 10, 14, 6 and 4.
+
+**Those figures are a floor, and the report says so on its face.** They come from
+discretising a smooth normal curve, which spreads the mass evenly and so
+understates the real clustering — a pick'em NFL game comes out near 5.7% on a
+margin of 3 where reality is closer to 9-10%. The ordering is right and the
+numbers are conservative: treat a projected margin sitting on 3 or 7 as more
+dangerous than the figure suggests, not less.
+
+### What the football reports do not contain
+
+**The quarterback.** In football the starting quarterback moves a line further
+than any other single factor — several points on the spread — and the feed
+carries no depth chart or injury data. A game where a starter is out is
+under-modelled here, and the report states that rather than burying it.
+
+Weather is absent too, and it matters more in this sport than in any other here.
+So are rest and travel, including the short week a Thursday game imposes. For
+college, an FBS side playing an FCS opponent for the first time has no shared
+history to measure against, and will show as league baseline.
+
+Other American football competitions sit on the same feed — the CFL, Japan's X
+League, Brazil's BFA, several European leagues — and are deliberately out of
+scope.
 
 ## Weekly cleanup
 
@@ -398,8 +486,10 @@ src/report.js        markdown and JSON rendering
 src/index.js         CLI and pipeline
 src/basketball/      WNBA: normal margin/total model, quarter splits, rendering
 src/baseball/        MLB: negative-binomial run model and rendering
+src/football/        NFL + NCAA: per-competition normal model, key numbers
 src/wnba.js          WNBA CLI and pipeline
 src/mlb.js           MLB CLI and pipeline
+src/football.js      NFL and NCAA CLI and pipeline
 test/                offline tests over recorded feed samples
 data/history.json    cached results, all regions (committed; regenerates if deleted)
 data/wnba-history.json, data/mlb-history.json   the same, per sport

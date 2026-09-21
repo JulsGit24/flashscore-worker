@@ -16,13 +16,21 @@
 // history.js and table.js.
 
 /**
- * Feed sport ids, confirmed live: 1 and 3 both return a full day, 2 and 6 too.
- * The WNBA sits on 3 at /basketball/usa/wnba/, and MLB on 6 at
- * /baseball/usa/mlb/.
+ * Feed sport ids, all confirmed against the live feed.
+ *
+ *   1  soccer
+ *   3  basketball  — the WNBA at /basketball/usa/wnba/
+ *   5  American football — NFL at /american-football/usa/nfl/ and college at
+ *      /american-football/usa/ncaa/, alongside the CFL, Japan's X League,
+ *      Brazil's BFA and several European leagues, none of which are in scope
+ *   6  baseball    — MLB at /baseball/usa/mlb/
+ *
+ * 16 is boxing and 17 answers nothing, both checked while looking for football.
  */
 export const SPORT = {
   soccer: 1,
   basketball: 3,
+  americanFootball: 5,
   baseball: 6,
 };
 
