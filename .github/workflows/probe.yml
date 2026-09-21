@@ -39,6 +39,9 @@ jobs:
       - name: Image hosts, with real filenames
         run: node tools/probe-images.js
 
+      - name: American football — sport id, competitions, scoring
+        run: node tools/probe-football.js
+
       - name: Image URL patterns
         run: |
           # Which of the documented Flashscore image hosts actually answer, and
