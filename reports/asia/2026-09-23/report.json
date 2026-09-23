@@ -1,0 +1,117 @@
+{
+  "date": "2026-09-23",
+  "region": "asia",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-09-23T11:19:42.741Z",
+  "stats": {
+    "totalFixtures": 353,
+    "inScope": 1,
+    "tablesLoaded": 620,
+    "daysCached": 51,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "africa",
+      "angola",
+      "bangladesh",
+      "bhutan",
+      "ghana",
+      "india",
+      "niger",
+      "nigeria",
+      "united-arab-emirates",
+      "world"
+    ],
+    "otherDays": 106,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-09-23T07:00:00.000Z",
+      "kickoffLocal": "03:00",
+      "country": "south-korea",
+      "league": "WK League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Seoul W",
+      "away": "Hwacheon W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWWLT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "TTWTT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 5,
+      "awayRank": 2,
+      "goalsIndex": 0,
+      "mismatchIndex": 19.8,
+      "rankScore": 19.8,
+      "projected": {
+        "home": 0.53,
+        "away": 0.56,
+        "total": 1.09
+      },
+      "probabilities": {
+        "home": 0.26833754752631855,
+        "draw": 0.4436586596418376,
+        "away": 0.2880037928318436,
+        "btts": 0.17640246016996466,
+        "over15": 0.2973075281249684,
+        "over25": 0.09757812003053681,
+        "over35": 0.025009768422893264,
+        "under15": 0.7026924718750316,
+        "under25": 0.9024218799694632
+      },
+      "pick": {
+        "side": "Draw",
+        "where": "D",
+        "probability": 0.4436586596418376
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "asia",
+      "slug": "asian-games",
+      "name": "ASIA: Asian Games"
+    }
+  ],
+  "outOfRegionCountries": [
+    "africa",
+    "angola",
+    "bangladesh",
+    "bhutan",
+    "ghana",
+    "india",
+    "niger",
+    "nigeria",
+    "united-arab-emirates",
+    "world"
+  ]
+}
