@@ -1,0 +1,445 @@
+{
+  "date": "2026-09-23",
+  "sport": "basketball",
+  "competition": "WNBA",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-09-23T20:15:23.595Z",
+  "stats": {
+    "totalGames": 127,
+    "daysCached": 51,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 15,
+    "gamesWithQuarters": 147,
+    "otherDays": 55,
+    "errors": []
+  },
+  "notCovered": {
+    "playerProps": "feed exposes no player-level data",
+    "injuries": "no injury or news feed responded"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "tipoff": "2026-09-24T00:00:00.000Z",
+      "tipoffLocal": "20:00",
+      "home": "New York Liberty W",
+      "away": "Atlanta Dream W",
+      "projection": {
+        "confidence": "high",
+        "points": {
+          "home": 88.6,
+          "away": 88.3,
+          "total": 176.9
+        },
+        "margin": 0.3,
+        "spread": {
+          "favourite": "New York Liberty W",
+          "line": -0.3,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5102064814277545,
+          "away": 0.4897935185722455
+        },
+        "total": {
+          "projected": 176.9,
+          "range": [
+            155.7,
+            198
+          ],
+          "overUnder": [
+            {
+              "line": 170.5,
+              "over": 0.6508340821175587
+            },
+            {
+              "line": 175.5,
+              "over": 0.53368776146406
+            },
+            {
+              "line": 180.5,
+              "over": 0.41352481609045966
+            }
+          ]
+        },
+        "ratings": {
+          "home": {
+            "played": 13,
+            "rank": 4,
+            "pointsFor": 88.64590542099192,
+            "pointsAgainst": 82.76355247981546,
+            "offence": 1.027837030003544,
+            "defence": 0.9596319600933473,
+            "netRating": 5.882352941176464
+          },
+          "away": {
+            "played": 15,
+            "rank": 2,
+            "pointsFor": 93.57791537667698,
+            "pointsAgainst": 84.7358101135191,
+            "offence": 1.0850230042538425,
+            "defence": 0.9825000149572521,
+            "netRating": 8.84210526315789
+          }
+        },
+        "strengthGap": 3
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 167.5,
+        "totalUnder": 186.5,
+        "spread": {
+          "side": "New York Liberty W",
+          "where": "H",
+          "line": 6.5
+        }
+      },
+      "periods": {
+        "quarters": [
+          {
+            "period": "Q1",
+            "points": {
+              "home": 22.8,
+              "away": 21.8,
+              "total": 44.6
+            },
+            "margin": 1,
+            "outcome": {
+              "home": 0.5314738110415218,
+              "tie": 0.06834876607227364,
+              "away": 0.40017742288620456
+            }
+          },
+          {
+            "period": "Q2",
+            "points": {
+              "home": 21.4,
+              "away": 21.6,
+              "total": 43
+            },
+            "margin": -0.2,
+            "outcome": {
+              "home": 0.4525870068508928,
+              "tie": 0.06925828061661066,
+              "away": 0.47815471253249653
+            }
+          },
+          {
+            "period": "Q3",
+            "points": {
+              "home": 22.8,
+              "away": 23.1,
+              "total": 45.9
+            },
+            "margin": -0.3,
+            "outcome": {
+              "home": 0.445358484529621,
+              "tie": 0.06920614343284848,
+              "away": 0.4854353720375305
+            }
+          },
+          {
+            "period": "Q4",
+            "points": {
+              "home": 21.7,
+              "away": 21.8,
+              "total": 43.5
+            },
+            "margin": -0.2,
+            "outcome": {
+              "home": 0.45299322009693865,
+              "tie": 0.06926052436140523,
+              "away": 0.4777462555416561
+            }
+          }
+        ],
+        "halves": [
+          {
+            "period": "H1",
+            "points": {
+              "home": 44.2,
+              "away": 43.4,
+              "total": 87.6
+            },
+            "margin": 0.8,
+            "outcome": {
+              "home": 0.5147147107726535,
+              "tie": 0.048792619817569494,
+              "away": 0.436492669409777
+            }
+          },
+          {
+            "period": "H2",
+            "points": {
+              "home": 44.5,
+              "away": 44.9,
+              "total": 89.4
+            },
+            "margin": -0.4,
+            "outcome": {
+              "home": 0.45593596148976356,
+              "tie": 0.04896993874835098,
+              "away": 0.49509409976188545
+            }
+          }
+        ],
+        "bestForHome": "Q1",
+        "bestForAway": "Q3"
+      },
+      "quarterSample": 20,
+      "form": {
+        "home": {
+          "streak": "LLWWW",
+          "played": 5,
+          "pointsFor": 460,
+          "pointsAgainst": 421,
+          "winRate": 0.6,
+          "pointsForAvg": 92,
+          "pointsAgainstAvg": 84.2
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 505,
+          "pointsAgainst": 389,
+          "winRate": 1,
+          "pointsForAvg": 101,
+          "pointsAgainstAvg": 77.8
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1790035200,
+          "home": "New York Liberty W",
+          "away": "Atlanta Dream W",
+          "homePoints": 84,
+          "awayPoints": 95,
+          "total": 179,
+          "winner": "Atlanta Dream W"
+        },
+        {
+          "ts": 1790035200,
+          "home": "New York Liberty W",
+          "away": "Atlanta Dream W",
+          "homePoints": 84,
+          "awayPoints": 95,
+          "total": 179,
+          "winner": "Atlanta Dream W"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 2,
+        "aWins": 0,
+        "bWins": 2,
+        "averageTotal": 179
+      }
+    },
+    {
+      "tipoff": "2026-09-24T02:00:00.000Z",
+      "tipoffLocal": "22:00",
+      "home": "Seattle Storm W",
+      "away": "Dallas Wings W",
+      "projection": {
+        "confidence": "high",
+        "points": {
+          "home": 81.5,
+          "away": 89.5,
+          "total": 171
+        },
+        "margin": -8,
+        "spread": {
+          "favourite": "Dallas Wings W",
+          "line": -8,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.24208497042971233,
+          "away": 0.7579150295702877
+        },
+        "total": {
+          "projected": 171,
+          "range": [
+            149.8,
+            192.1
+          ],
+          "overUnder": [
+            {
+              "line": 165.5,
+              "over": 0.6297995520970797
+            },
+            {
+              "line": 170.5,
+              "over": 0.5112855721529241
+            },
+            {
+              "line": 175.5,
+              "over": 0.3917588603469566
+            }
+          ]
+        },
+        "ratings": {
+          "home": {
+            "played": 12,
+            "rank": 14,
+            "pointsFor": 81.93627450980392,
+            "pointsAgainst": 89.24877450980392,
+            "offence": 0.9500397862907809,
+            "defence": 1.0348272138228942,
+            "netRating": -7.3125
+          },
+          "away": {
+            "played": 14,
+            "rank": 8,
+            "pointsFor": 87.94335511982571,
+            "pointsAgainst": 84.16557734204792,
+            "offence": 1.019691056294444,
+            "defence": 0.9758882447298952,
+            "netRating": 3.7777777777777857
+          }
+        },
+        "strengthGap": 11.1
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 161.5,
+        "totalUnder": 180.5,
+        "spread": {
+          "side": "Dallas Wings W",
+          "where": "A",
+          "line": -1.5
+        }
+      },
+      "periods": {
+        "quarters": [
+          {
+            "period": "Q1",
+            "points": {
+              "home": 19.5,
+              "away": 24.2,
+              "total": 43.7
+            },
+            "margin": -4.7,
+            "outcome": {
+              "home": 0.18091167064197444,
+              "tie": 0.049350619324844636,
+              "away": 0.7697377100331809
+            }
+          },
+          {
+            "period": "Q2",
+            "points": {
+              "home": 20.5,
+              "away": 22.7,
+              "total": 43.2
+            },
+            "margin": -2.3,
+            "outcome": {
+              "home": 0.3160858642420572,
+              "tie": 0.06418892624979722,
+              "away": 0.6197252095081456
+            }
+          },
+          {
+            "period": "Q3",
+            "points": {
+              "home": 20.8,
+              "away": 22,
+              "total": 42.8
+            },
+            "margin": -1.2,
+            "outcome": {
+              "home": 0.386598644881595,
+              "tie": 0.06790828508883551,
+              "away": 0.5454930700295695
+            }
+          },
+          {
+            "period": "Q4",
+            "points": {
+              "home": 20.7,
+              "away": 20.6,
+              "total": 41.3
+            },
+            "margin": 0.2,
+            "outcome": {
+              "home": 0.4759318086618072,
+              "tie": 0.0692696151073739,
+              "away": 0.45479857623081893
+            }
+          }
+        ],
+        "halves": [
+          {
+            "period": "H1",
+            "points": {
+              "home": 40,
+              "away": 46.9,
+              "total": 86.9
+            },
+            "margin": -6.9,
+            "outcome": {
+              "home": 0.18140709390034626,
+              "tie": 0.03422189586727353,
+              "away": 0.7843710102323802
+            }
+          },
+          {
+            "period": "H2",
+            "points": {
+              "home": 41.5,
+              "away": 42.6,
+              "total": 84.1
+            },
+            "margin": -1.1,
+            "outcome": {
+              "home": 0.42200764177831096,
+              "tie": 0.04858299896846563,
+              "away": 0.5294093592532234
+            }
+          }
+        ],
+        "bestForHome": "Q4",
+        "bestForAway": "Q1"
+      },
+      "quarterSample": 15,
+      "form": {
+        "home": {
+          "streak": "LLLLW",
+          "played": 5,
+          "pointsFor": 375,
+          "pointsAgainst": 450,
+          "winRate": 0.2,
+          "pointsForAvg": 75,
+          "pointsAgainstAvg": 90
+        },
+        "away": {
+          "streak": "LWWWW",
+          "played": 5,
+          "pointsFor": 464,
+          "pointsAgainst": 394,
+          "winRate": 0.8,
+          "pointsForAvg": 92.8,
+          "pointsAgainstAvg": 78.8
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1787515200,
+          "home": "Dallas Wings W",
+          "away": "Seattle Storm W",
+          "homePoints": 92,
+          "awayPoints": 70,
+          "total": 162,
+          "winner": "Dallas Wings W"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 1,
+        "aWins": 0,
+        "bWins": 1,
+        "averageTotal": 162
+      }
+    }
+  ]
+}
