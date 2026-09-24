@@ -1,0 +1,185 @@
+{
+  "date": "2026-09-24",
+  "sport": "american-football",
+  "competition": "NCAA Football",
+  "competitionKey": "ncaa",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-09-24T15:02:39.441Z",
+  "stats": {
+    "totalGames": 9,
+    "otherDays": 7,
+    "daysCached": 10,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "teamsKnown": 150,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 28.02,
+    "marginSd": 22.25314336994139,
+    "totalSd": 15.614856677743395,
+    "spreadsDerivedFromGames": 104
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-09-24T23:30:00.000Z",
+      "kickoffLocal": "19:30",
+      "home": "Coastal Carolina",
+      "away": "Liberty Flames",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "low",
+        "points": {
+          "home": 23.2,
+          "away": 30.5,
+          "total": 53.6
+        },
+        "margin": -7.3,
+        "spread": {
+          "favourite": "Liberty Flames",
+          "line": -7.3,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.37173808324869717,
+          "away": 0.6282619167513028,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.016991004052268277
+        },
+        "total": {
+          "projected": 53.6,
+          "range": [
+            33.6,
+            73.6
+          ],
+          "overUnder": [
+            {
+              "line": 48.5,
+              "over": 0.6284695062826782
+            },
+            {
+              "line": 51.5,
+              "over": 0.5539620983086637
+            },
+            {
+              "line": 54.5,
+              "over": 0.4774928882815478
+            },
+            {
+              "line": 57.5,
+              "over": 0.4018461930359134
+            },
+            {
+              "line": 60.5,
+              "over": 0.32971650602479463
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 11.6,
+            "away": 15.2,
+            "total": 26.8
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.03370742207264388
+          },
+          {
+            "margin": 7,
+            "probability": 0.032513567750387884
+          },
+          {
+            "margin": 10,
+            "probability": 0.031051717305750237
+          },
+          {
+            "margin": 14,
+            "probability": 0.028474646698069428
+          },
+          {
+            "margin": 6,
+            "probability": 0.032896869204482315
+          },
+          {
+            "margin": 4,
+            "probability": 0.033495385184717175
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 1,
+            "rank": 95,
+            "pointsFor": 24.515,
+            "pointsAgainst": 26.515,
+            "offence": 0.874910778015703,
+            "defence": 0.9462883654532477,
+            "pointDifferential": -2
+          },
+          "away": {
+            "played": 1,
+            "rank": 15,
+            "pointsFor": 33.765,
+            "pointsAgainst": 24.765,
+            "offence": 1.205032119914347,
+            "defence": 0.8838329764453962,
+            "pointDifferential": 9
+          }
+        },
+        "strengthGap": 11
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 44.5,
+        "totalUnder": 62.5,
+        "spread": {
+          "side": "Liberty Flames",
+          "where": "A",
+          "line": 4.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "pointsFor": 14,
+          "pointsAgainst": 22,
+          "winRate": 0,
+          "pointsForAvg": 14,
+          "pointsAgainstAvg": 22
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "pointsFor": 51,
+          "pointsAgainst": 15,
+          "winRate": 1,
+          "pointsForAvg": 51,
+          "pointsAgainstAvg": 15
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
