@@ -1,0 +1,793 @@
+{
+  "date": "2026-09-25",
+  "sport": "american-football",
+  "competition": "NCAA Football",
+  "competitionKey": "ncaa",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-09-25T15:14:22.532Z",
+  "stats": {
+    "totalGames": 75,
+    "otherDays": 68,
+    "daysCached": 11,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "teamsKnown": 150,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 27.986842105263158,
+    "marginSd": 22.371333370556098,
+    "totalSd": 15.54570244372587,
+    "spreadsDerivedFromGames": 105
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-09-25T20:00:00.000Z",
+      "kickoffLocal": "16:00",
+      "home": "Temple",
+      "away": "Army",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "baseline",
+        "points": {
+          "home": 34.5,
+          "away": 31.7,
+          "total": 66.2
+        },
+        "margin": 2.8,
+        "spread": {
+          "favourite": "Temple",
+          "line": -2.7,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5489047081996568,
+          "away": 0.45109529180034325,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.017697034394563438
+        },
+        "total": {
+          "projected": 66.2,
+          "range": [
+            46.3,
+            86.2
+          ],
+          "overUnder": [
+            {
+              "line": 60.5,
+              "over": 0.6437898027198117
+            },
+            {
+              "line": 63.5,
+              "over": 0.5697069570034143
+            },
+            {
+              "line": 66.5,
+              "over": 0.4930781772953676
+            },
+            {
+              "line": 69.5,
+              "over": 0.41670486134691576
+            },
+            {
+              "line": 72.5,
+              "over": 0.34336015063772507
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 17.2,
+            "away": 15.9,
+            "total": 33.1
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.03508220349746782
+          },
+          {
+            "margin": 7,
+            "probability": 0.03372839155064056
+          },
+          {
+            "margin": 10,
+            "probability": 0.03207789457912902
+          },
+          {
+            "margin": 14,
+            "probability": 0.02918693359443142
+          },
+          {
+            "margin": 6,
+            "probability": 0.03416251774160378
+          },
+          {
+            "margin": 4,
+            "probability": 0.034841381057088616
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 1,
+            "rank": 76,
+            "pointsFor": 32.99013157894737,
+            "pointsAgainst": 33.24013157894737,
+            "offence": 1.1787729196050776,
+            "defence": 1.1877056887635167,
+            "pointDifferential": -0.25
+          },
+          "away": {
+            "played": 0,
+            "rank": null,
+            "pointsFor": 27.98684210526316,
+            "pointsAgainst": 27.98684210526316,
+            "offence": 1.0000000000000002,
+            "defence": 1.0000000000000002,
+            "pointDifferential": 0
+          }
+        },
+        "strengthGap": 0.3
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 57.5,
+        "totalUnder": 74.5,
+        "spread": {
+          "side": "Temple",
+          "where": "H",
+          "line": 9.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "pointsFor": 48,
+          "pointsAgainst": 49,
+          "winRate": 0,
+          "pointsForAvg": 48,
+          "pointsAgainstAvg": 49
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "pointsFor": 0,
+          "pointsAgainst": 0,
+          "winRate": null,
+          "pointsForAvg": null,
+          "pointsAgainstAvg": null
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-09-25T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "home": "Rutgers",
+      "away": "Howard Bison",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "baseline",
+        "points": {
+          "home": 31.2,
+          "away": 30,
+          "total": 61.2
+        },
+        "margin": 1.2,
+        "spread": {
+          "favourite": "Rutgers",
+          "line": -1.2,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5222738417339271,
+          "away": 0.4777261582660729,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.017803462569998763
+        },
+        "total": {
+          "projected": 61.2,
+          "range": [
+            41.3,
+            81.2
+          ],
+          "overUnder": [
+            {
+              "line": 54.5,
+              "over": 0.6674686069498136
+            },
+            {
+              "line": 57.5,
+              "over": 0.5948172322127786
+            },
+            {
+              "line": 60.5,
+              "over": 0.5187335866889226
+            },
+            {
+              "line": 63.5,
+              "over": 0.4419590412063684
+            },
+            {
+              "line": 66.5,
+              "over": 0.36731114190252434
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 15.6,
+            "away": 15,
+            "total": 30.6
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.035289177343828027
+          },
+          {
+            "margin": 7,
+            "probability": 0.03391125609825729
+          },
+          {
+            "margin": 10,
+            "probability": 0.03223215106673122
+          },
+          {
+            "margin": 14,
+            "probability": 0.02929364545377433
+          },
+          {
+            "margin": 6,
+            "probability": 0.034353065058853605
+          },
+          {
+            "margin": 4,
+            "probability": 0.035044042496115424
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 1,
+            "rank": 92,
+            "pointsFor": 29.74013157894737,
+            "pointsAgainst": 31.49013157894737,
+            "offence": 1.062646920545369,
+            "defence": 1.125176304654443,
+            "pointDifferential": -1.75
+          },
+          "away": {
+            "played": 0,
+            "rank": null,
+            "pointsFor": 27.98684210526316,
+            "pointsAgainst": 27.98684210526316,
+            "offence": 1.0000000000000002,
+            "defence": 1.0000000000000002,
+            "pointDifferential": 0
+          }
+        },
+        "strengthGap": 1.8
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 52.5,
+        "totalUnder": 69.5,
+        "spread": {
+          "side": "Rutgers",
+          "where": "H",
+          "line": 11.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "L",
+          "played": 1,
+          "pointsFor": 35,
+          "pointsAgainst": 42,
+          "winRate": 0,
+          "pointsForAvg": 35,
+          "pointsAgainstAvg": 42
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "pointsFor": 0,
+          "pointsAgainst": 0,
+          "winRate": null,
+          "pointsForAvg": null,
+          "pointsAgainstAvg": null
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-09-25T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "home": "UAB",
+      "away": "Navy",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "baseline",
+        "points": {
+          "home": 26,
+          "away": 24.7,
+          "total": 50.7
+        },
+        "margin": 1.3,
+        "spread": {
+          "favourite": "UAB",
+          "line": -1.2,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5222738417339271,
+          "away": 0.4777261582660729,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.017803462569998763
+        },
+        "total": {
+          "projected": 50.7,
+          "range": [
+            30.8,
+            70.7
+          ],
+          "overUnder": [
+            {
+              "line": 45.5,
+              "over": 0.631732012986009
+            },
+            {
+              "line": 48.5,
+              "over": 0.5570385208997071
+            },
+            {
+              "line": 51.5,
+              "over": 0.48025459555106487
+            },
+            {
+              "line": 54.5,
+              "over": 0.4041988221633679
+            },
+            {
+              "line": 57.5,
+              "over": 0.3316095255386097
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 13,
+            "away": 12.4,
+            "total": 25.4
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.03528917734382814
+          },
+          {
+            "margin": 7,
+            "probability": 0.033911256098257125
+          },
+          {
+            "margin": 10,
+            "probability": 0.03223215106673122
+          },
+          {
+            "margin": 14,
+            "probability": 0.029293645453774386
+          },
+          {
+            "margin": 6,
+            "probability": 0.034353065058853605
+          },
+          {
+            "margin": 4,
+            "probability": 0.035044042496115424
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 1,
+            "rank": 94,
+            "pointsFor": 24.49013157894737,
+            "pointsAgainst": 26.24013157894737,
+            "offence": 0.8750587682181477,
+            "defence": 0.9375881523272215,
+            "pointDifferential": -1.75
+          },
+          "away": {
+            "played": 0,
+            "rank": null,
+            "pointsFor": 27.98684210526316,
+            "pointsAgainst": 27.98684210526316,
+            "offence": 1.0000000000000002,
+            "defence": 1.0000000000000002,
+            "pointDifferential": 0
+          }
+        },
+        "strengthGap": 1.8
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 42.5,
+        "totalUnder": 59.5,
+        "spread": {
+          "side": "UAB",
+          "where": "H",
+          "line": 10.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LL",
+          "played": 2,
+          "pointsFor": 28,
+          "pointsAgainst": 42,
+          "winRate": 0,
+          "pointsForAvg": 14,
+          "pointsAgainstAvg": 21
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "pointsFor": 0,
+          "pointsAgainst": 0,
+          "winRate": null,
+          "pointsForAvg": null,
+          "pointsAgainstAvg": null
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-09-26T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "home": "Indiana",
+      "away": "Northwestern",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "low",
+        "points": {
+          "home": 26.3,
+          "away": 21.9,
+          "total": 48.2
+        },
+        "margin": 4.3,
+        "spread": {
+          "favourite": "Indiana",
+          "line": -4.3,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5769628887940215,
+          "away": 0.42303711120597853,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.017498263693608684
+        },
+        "total": {
+          "projected": 48.2,
+          "range": [
+            28.3,
+            68.1
+          ],
+          "overUnder": [
+            {
+              "line": 42.5,
+              "over": 0.6431653281811505
+            },
+            {
+              "line": 45.5,
+              "over": 0.5690489213440613
+            },
+            {
+              "line": 48.5,
+              "over": 0.49241011879840846
+            },
+            {
+              "line": 51.5,
+              "over": 0.4160514287018158
+            },
+            {
+              "line": 54.5,
+              "over": 0.3427443823017249
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 13.1,
+            "away": 11,
+            "total": 24.1
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.03469515406058721
+          },
+          {
+            "margin": 7,
+            "probability": 0.03338642424872873
+          },
+          {
+            "margin": 10,
+            "probability": 0.03178909718104905
+          },
+          {
+            "margin": 14,
+            "probability": 0.028986582509955394
+          },
+          {
+            "margin": 6,
+            "probability": 0.03380627937812852
+          },
+          {
+            "margin": 4,
+            "probability": 0.0344625676447638
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 1,
+            "rank": 15,
+            "pointsFor": 30.49013157894737,
+            "pointsAgainst": 20.99013157894737,
+            "offence": 1.0894452280206866,
+            "defence": 0.7500000000000001,
+            "pointDifferential": 9.5
+          },
+          "away": {
+            "played": 1,
+            "rank": 19,
+            "pointsFor": 31.24013157894737,
+            "pointsAgainst": 22.74013157894737,
+            "offence": 1.1162435354960039,
+            "defence": 0.8125293841090738,
+            "pointDifferential": 8.5
+          }
+        },
+        "strengthGap": 1
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 39.5,
+        "totalUnder": 56.5,
+        "spread": {
+          "side": "Indiana",
+          "where": "H",
+          "line": 7.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "pointsFor": 38,
+          "pointsAgainst": 0,
+          "winRate": 1,
+          "pointsForAvg": 38,
+          "pointsAgainstAvg": 0
+        },
+        "away": {
+          "streak": "WW",
+          "played": 2,
+          "pointsFor": 82,
+          "pointsAgainst": 14,
+          "winRate": 1,
+          "pointsForAvg": 41,
+          "pointsAgainstAvg": 7
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-09-26T02:30:00.000Z",
+      "kickoffLocal": "22:30",
+      "home": "California",
+      "away": "Clemson",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "low",
+        "points": {
+          "home": 32.4,
+          "away": 21.2,
+          "total": 53.6
+        },
+        "margin": 11.1,
+        "spread": {
+          "favourite": "California",
+          "line": -11.1,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.6904762633898767,
+          "away": 0.30952373661012333,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.01575738526556897
+        },
+        "total": {
+          "projected": 53.6,
+          "range": [
+            33.7,
+            73.5
+          ],
+          "overUnder": [
+            {
+              "line": 48.5,
+              "over": 0.6288466104756212
+            },
+            {
+              "line": 51.5,
+              "over": 0.5540186006804859
+            },
+            {
+              "line": 54.5,
+              "over": 0.4772094126911054
+            },
+            {
+              "line": 57.5,
+              "over": 0.4012404302594741
+            },
+            {
+              "line": 60.5,
+              "over": 0.32884050302314893
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 16.2,
+            "away": 10.6,
+            "total": 26.8
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.03130216094456406
+          },
+          {
+            "margin": 7,
+            "probability": 0.030373279653125862
+          },
+          {
+            "margin": 10,
+            "probability": 0.029226252687902354
+          },
+          {
+            "margin": 14,
+            "probability": 0.027175759380740294
+          },
+          {
+            "margin": 6,
+            "probability": 0.030672311210467207
+          },
+          {
+            "margin": 4,
+            "probability": 0.031137720786492684
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 1,
+            "rank": 9,
+            "pointsFor": 33.24013157894737,
+            "pointsAgainst": 22.74013157894737,
+            "offence": 1.1877056887635167,
+            "defence": 0.8125293841090738,
+            "pointDifferential": 10.5
+          },
+          "away": {
+            "played": 1,
+            "rank": 53,
+            "pointsFor": 27.99013157894737,
+            "pointsAgainst": 25.99013157894737,
+            "offence": 1.0001175364362953,
+            "defence": 0.9286553831687824,
+            "pointDifferential": 2
+          }
+        },
+        "strengthGap": 8.5
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 44.5,
+        "totalUnder": 62.5,
+        "spread": {
+          "side": "California",
+          "where": "H",
+          "line": 1.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "pointsFor": 49,
+          "pointsAgainst": 7,
+          "winRate": 1,
+          "pointsForAvg": 49,
+          "pointsAgainstAvg": 7
+        },
+        "away": {
+          "streak": "W",
+          "played": 1,
+          "pointsFor": 28,
+          "pointsAgainst": 20,
+          "winRate": 1,
+          "pointsForAvg": 28,
+          "pointsAgainstAvg": 20
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
