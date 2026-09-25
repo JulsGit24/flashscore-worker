@@ -1,0 +1,1867 @@
+{
+  "date": "2026-09-25",
+  "region": "europe",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-09-25T11:38:45.596Z",
+  "stats": {
+    "totalFixtures": 1776,
+    "inScope": 23,
+    "tablesLoaded": 627,
+    "daysCached": 53,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "africa",
+      "bangladesh",
+      "bhutan",
+      "egypt",
+      "ghana",
+      "india",
+      "indonesia",
+      "new-zealand",
+      "oman",
+      "saudi-arabia",
+      "vietnam",
+      "world"
+    ],
+    "otherDays": 1443,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [
+    {
+      "kickoff": "2026-09-25T15:30:00.000Z",
+      "kickoffLocal": "11:30",
+      "country": "finland",
+      "league": "Ykkösliiga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "KTP",
+      "away": "Mikkeli",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 1,
+          "points": 15,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WTWLL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 1,
+      "awayRank": 8,
+      "goalsIndex": 25.5,
+      "mismatchIndex": 68.7,
+      "rankScore": 75.1,
+      "projected": {
+        "home": 2.13,
+        "away": 0.51,
+        "total": 2.64
+      },
+      "probabilities": {
+        "home": 0.7517954082325866,
+        "draw": 0.1726572674161398,
+        "away": 0.07554732435127307,
+        "btts": 0.35202769565787373,
+        "over15": 0.7402411421873303,
+        "over25": 0.49155771699348627,
+        "over35": 0.272716302822904,
+        "under15": 0.2597588578126697,
+        "under25": 0.5084422830065137
+      },
+      "pick": {
+        "side": "KTP",
+        "where": "H",
+        "probability": 0.7517954082325866
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "netherlands",
+      "league": "Eerste Divisie",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Dordrecht",
+      "away": "Almere City",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 18,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "WWLWW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 2,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 19,
+      "awayRank": 2,
+      "goalsIndex": 70.1,
+      "mismatchIndex": 75.8,
+      "rankScore": 93.3,
+      "projected": {
+        "home": 0.92,
+        "away": 2.65,
+        "total": 3.57
+      },
+      "probabilities": {
+        "home": 0.10647097094140193,
+        "draw": 0.15189480186005958,
+        "away": 0.7416342271985382,
+        "btts": 0.5589812532026741,
+        "over15": 0.8713145926513226,
+        "over25": 0.6918744779775635,
+        "over35": 0.4783407415157907,
+        "under15": 0.1286854073486774,
+        "under25": 0.3081255220224365
+      },
+      "pick": {
+        "side": "Almere City",
+        "where": "A",
+        "probability": 0.7416342271985382
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "kickoff": "2026-09-25T13:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "croatia",
+      "league": "Prva NL",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "NK Dinamo Zagreb 2",
+      "away": "Mladost Zdralovi",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWL",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 10,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LWTWW",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 4,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 13,
+      "awayRank": 2,
+      "goalsIndex": 23.4,
+      "mismatchIndex": 44.3,
+      "rankScore": 50.2,
+      "projected": {
+        "home": 1.32,
+        "away": 1.27,
+        "total": 2.59
+      },
+      "probabilities": {
+        "home": 0.3795276933083314,
+        "draw": 0.2644098299223957,
+        "away": 0.35606247676927255,
+        "btts": 0.5270530633269479,
+        "over15": 0.7306779838664224,
+        "over25": 0.4790569509380585,
+        "over35": 0.2618241258432378,
+        "under15": 0.26932201613357765,
+        "under25": 0.5209430490619416
+      },
+      "pick": {
+        "side": "NK Dinamo Zagreb 2",
+        "where": "H",
+        "probability": 0.3795276933083314
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T13:30:00.000Z",
+      "kickoffLocal": "09:30",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "FC Slonim",
+      "away": "BATE 2",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTWLW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 4,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "LWLTW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 10,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 5,
+      "awayRank": 11,
+      "goalsIndex": 73.8,
+      "mismatchIndex": 30.7,
+      "rankScore": 81.4,
+      "projected": {
+        "home": 2.4,
+        "away": 1.25,
+        "total": 3.65
+      },
+      "probabilities": {
+        "home": 0.6281888754513288,
+        "draw": 0.18607842639453492,
+        "away": 0.18573269815413587,
+        "btts": 0.6487655686255056,
+        "over15": 0.8791360383679491,
+        "over25": 0.7059951642988096,
+        "over35": 0.49534043418135637,
+        "under15": 0.12086396163205093,
+        "under25": 0.2940048357011904
+      },
+      "pick": {
+        "side": "FC Slonim",
+        "where": "H",
+        "probability": 0.6281888754513288
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T13:30:00.000Z",
+      "kickoffLocal": "09:30",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Lida",
+      "away": "Smorgon",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWWWW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 10,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "WWTLL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 5,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 4,
+      "awayRank": 6,
+      "goalsIndex": 33.9,
+      "mismatchIndex": 12,
+      "rankScore": 36.9,
+      "projected": {
+        "home": 1.44,
+        "away": 1.38,
+        "total": 2.81
+      },
+      "probabilities": {
+        "home": 0.38773997693357787,
+        "draw": 0.2516429153657379,
+        "away": 0.3606171077006842,
+        "btts": 0.5710995178299281,
+        "over15": 0.7723051582005865,
+        "over25": 0.5352998623987991,
+        "over35": 0.3125148843451191,
+        "under15": 0.22769484179941346,
+        "under25": 0.4647001376012009
+      },
+      "pick": {
+        "side": "Lida",
+        "where": "H",
+        "probability": 0.38773997693357787
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-25T14:00:00.000Z",
+      "kickoffLocal": "10:00",
+      "country": "slovenia",
+      "league": "2. SNL",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Jadran Dekani",
+      "away": "Ilirija",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTTTL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "WLTLW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 5,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 11,
+      "awayRank": 3,
+      "goalsIndex": 0,
+      "mismatchIndex": 27.3,
+      "rankScore": 27.3,
+      "projected": {
+        "home": 0.73,
+        "away": 0.94,
+        "total": 1.68
+      },
+      "probabilities": {
+        "home": 0.2703548331399364,
+        "draw": 0.3413462642779107,
+        "away": 0.3882989025821523,
+        "btts": 0.3157102389842681,
+        "over15": 0.4973803318414088,
+        "over25": 0.2348792096452492,
+        "over35": 0.08875358495605366,
+        "under15": 0.5026196681585913,
+        "under25": 0.7651207903547508
+      },
+      "pick": {
+        "side": "Ilirija",
+        "where": "A",
+        "probability": 0.3882989025821523
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-25T14:30:00.000Z",
+      "kickoffLocal": "10:30",
+      "country": "slovakia",
+      "league": "2. liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Pohronie",
+      "away": "I. Bratislava",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWWWL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 5,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "TWTTL",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 7,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 5,
+      "goalsIndex": 35.2,
+      "mismatchIndex": 4.7,
+      "rankScore": 36.4,
+      "projected": {
+        "home": 1.37,
+        "away": 1.47,
+        "total": 2.84
+      },
+      "probabilities": {
+        "home": 0.3522757639787341,
+        "draw": 0.25039673631059683,
+        "away": 0.3973274997106687,
+        "btts": 0.574393098547244,
+        "over15": 0.7756452894556305,
+        "over25": 0.5400261028193458,
+        "over35": 0.31697327280366266,
+        "under15": 0.2243547105443695,
+        "under25": 0.4599738971806542
+      },
+      "pick": {
+        "side": "I. Bratislava",
+        "where": "A",
+        "probability": 0.3973274997106687
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-25T15:30:00.000Z",
+      "kickoffLocal": "11:30",
+      "country": "finland",
+      "league": "Ykkösliiga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "KTP",
+      "away": "Mikkeli",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 1,
+          "points": 15,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WTWLL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 1,
+      "awayRank": 8,
+      "goalsIndex": 25.5,
+      "mismatchIndex": 68.7,
+      "rankScore": 75.1,
+      "projected": {
+        "home": 2.13,
+        "away": 0.51,
+        "total": 2.64
+      },
+      "probabilities": {
+        "home": 0.7517954082325866,
+        "draw": 0.1726572674161398,
+        "away": 0.07554732435127307,
+        "btts": 0.35202769565787373,
+        "over15": 0.7402411421873303,
+        "over25": 0.49155771699348627,
+        "over35": 0.272716302822904,
+        "under15": 0.2597588578126697,
+        "under25": 0.5084422830065137
+      },
+      "pick": {
+        "side": "KTP",
+        "where": "H",
+        "probability": 0.7517954082325866
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T16:00:00.000Z",
+      "kickoffLocal": "12:00",
+      "country": "finland",
+      "league": "Ykkösliiga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "KaPa",
+      "away": "Haka",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLTTL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 11,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "WTLLW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 9,
+      "awayRank": 3,
+      "goalsIndex": 41.1,
+      "mismatchIndex": 42.9,
+      "rankScore": 53.2,
+      "projected": {
+        "home": 1.12,
+        "away": 1.85,
+        "total": 2.96
+      },
+      "probabilities": {
+        "home": 0.22850097621031715,
+        "draw": 0.2271310925807244,
+        "away": 0.5443679312089579,
+        "btts": 0.5677859132261928,
+        "over15": 0.7963250295645794,
+        "over25": 0.5700534241850076,
+        "over35": 0.346044534859231,
+        "under15": 0.2036749704354206,
+        "under25": 0.4299465758149924
+      },
+      "pick": {
+        "side": "Haka",
+        "where": "A",
+        "probability": 0.5443679312089579
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T18:00:00.000Z",
+      "kickoffLocal": "14:00",
+      "country": "belgium",
+      "league": "Super League Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Genk W",
+      "away": "Gent W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTL",
+          "played": 3,
+          "goalsFor": 0,
+          "goalsAgainst": 5,
+          "points": 1,
+          "ppg": 0.3333333333333333
+        },
+        "away": {
+          "streak": "LLL",
+          "played": 3,
+          "goalsFor": 3,
+          "goalsAgainst": 11,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 8,
+      "goalsIndex": 25,
+      "mismatchIndex": 11.1,
+      "rankScore": 27.7,
+      "projected": {
+        "home": 1.51,
+        "away": 1.21,
+        "total": 2.72
+      },
+      "probabilities": {
+        "home": 0.4417783552241632,
+        "draw": 0.25374559803698643,
+        "away": 0.30447604673885115,
+        "btts": 0.5467673901428842,
+        "over15": 0.7549457528272765,
+        "over25": 0.5112617014451958,
+        "over35": 0.29032149485877656,
+        "under15": 0.2450542471727235,
+        "under25": 0.4887382985548042
+      },
+      "pick": {
+        "side": "Genk W",
+        "where": "H",
+        "probability": 0.4417783552241632
+      },
+      "confidence": "medium",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T18:00:00.000Z",
+      "kickoffLocal": "14:00",
+      "country": "iceland",
+      "league": "Besta deild kvenna",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Thor/KA W",
+      "away": "Fram W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLTLW",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 3,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TWWLL",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 16,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 2,
+      "awayRank": 8,
+      "goalsIndex": 52.3,
+      "mismatchIndex": 50.8,
+      "rankScore": 65.1,
+      "projected": {
+        "home": 2.22,
+        "away": 0.97,
+        "total": 3.2
+      },
+      "probabilities": {
+        "home": 0.6570210158359492,
+        "draw": 0.19066316149910797,
+        "away": 0.15231582266494298,
+        "btts": 0.5534782736182001,
+        "over15": 0.8274861556494394,
+        "over25": 0.61799711847811,
+        "over35": 0.39524044228592975,
+        "under15": 0.1725138443505606,
+        "under25": 0.38200288152189
+      },
+      "pick": {
+        "side": "Thor/KA W",
+        "where": "H",
+        "probability": 0.6570210158359492
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T18:00:00.000Z",
+      "kickoffLocal": "14:00",
+      "country": "iceland",
+      "league": "Besta deild kvenna",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Valur W",
+      "away": "Vikingur Reykjavik W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWTWL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 7,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TWWWL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 6,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 4,
+      "goalsIndex": 23.1,
+      "mismatchIndex": 5.5,
+      "rankScore": 24.5,
+      "projected": {
+        "home": 1.5,
+        "away": 1.08,
+        "total": 2.59
+      },
+      "probabilities": {
+        "home": 0.4689099507099975,
+        "draw": 0.25815962723653424,
+        "away": 0.27293042205346807,
+        "btts": 0.5130482311784907,
+        "over15": 0.7287289100145381,
+        "over25": 0.4765377251850372,
+        "over35": 0.25965330623166644,
+        "under15": 0.2712710899854619,
+        "under25": 0.5234622748149629
+      },
+      "pick": {
+        "side": "Valur W",
+        "where": "H",
+        "probability": 0.4689099507099975
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-25T18:30:00.000Z",
+      "kickoffLocal": "14:30",
+      "country": "spain",
+      "league": "LaLiga 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Girona",
+      "away": "Albacete",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLWWL",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 7,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "LTLLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 8,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 21,
+      "goalsIndex": 47.5,
+      "mismatchIndex": 53.4,
+      "rankScore": 65.3,
+      "projected": {
+        "home": 2.25,
+        "away": 0.84,
+        "total": 3.1
+      },
+      "probabilities": {
+        "home": 0.6929867844146366,
+        "draw": 0.18176100447821372,
+        "away": 0.12525221110715007,
+        "btts": 0.5083907548975751,
+        "over15": 0.8138924983033305,
+        "over25": 0.5966586307055357,
+        "over35": 0.3729077470798073,
+        "under15": 0.18610750169666945,
+        "under25": 0.4033413692944643
+      },
+      "pick": {
+        "side": "Girona",
+        "where": "H",
+        "probability": 0.6929867844146366
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "ireland",
+      "league": "Premier Division",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Galway",
+      "away": "Shelbourne",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWLTW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 7,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "WLLTT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 6,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 5,
+      "awayRank": 8,
+      "goalsIndex": 13,
+      "mismatchIndex": 20.1,
+      "rankScore": 23.4,
+      "projected": {
+        "home": 1.44,
+        "away": 0.94,
+        "total": 2.37
+      },
+      "probabilities": {
+        "home": 0.4867759348371837,
+        "draw": 0.26716642895467324,
+        "away": 0.24605763620814286,
+        "btts": 0.4649949281814292,
+        "over15": 0.6871789300116282,
+        "over25": 0.4250570855083539,
+        "over35": 0.21710708886909,
+        "under15": 0.3128210699883718,
+        "under25": 0.574942914491646
+      },
+      "pick": {
+        "side": "Galway",
+        "where": "H",
+        "probability": 0.4867759348371837
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "northern-ireland",
+      "league": "NIFL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Glenavon",
+      "away": "Loughgall",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTLWT",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 7,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "TLLTW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 11,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 5,
+      "awayRank": 11,
+      "goalsIndex": 70,
+      "mismatchIndex": 34,
+      "rankScore": 78.5,
+      "projected": {
+        "home": 2.33,
+        "away": 1.24,
+        "total": 3.57
+      },
+      "probabilities": {
+        "home": 0.6171725570401496,
+        "draw": 0.19096342654178938,
+        "away": 0.19186401641806125,
+        "btts": 0.6414735776798084,
+        "over15": 0.8713234786365075,
+        "over25": 0.6918957546621556,
+        "over35": 0.47837676313267613,
+        "under15": 0.1286765213634925,
+        "under25": 0.3081042453378444
+      },
+      "pick": {
+        "side": "Glenavon",
+        "where": "H",
+        "probability": 0.6171725570401496
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "northern-ireland",
+      "league": "NIFL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Newry City",
+      "away": "H&W Welders",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTTWL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 9,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LLWWW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 8,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 4,
+      "goalsIndex": 47.7,
+      "mismatchIndex": 15.7,
+      "rankScore": 51.6,
+      "projected": {
+        "home": 1.42,
+        "away": 1.68,
+        "total": 3.1
+      },
+      "probabilities": {
+        "home": 0.32560562967500095,
+        "draw": 0.23639482069445042,
+        "away": 0.4379995496305484,
+        "btts": 0.6169609151929875,
+        "over15": 0.8152979090849605,
+        "over25": 0.5988360683906274,
+        "over35": 0.3751588330064836,
+        "under15": 0.18470209091503953,
+        "under25": 0.4011639316093726
+      },
+      "pick": {
+        "side": "H&W Welders",
+        "where": "A",
+        "probability": 0.4379995496305484
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "northern-ireland",
+      "league": "NIFL Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Rathfriland",
+      "away": "Warrenpoint",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 10,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "LWLTW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 8,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 16,
+      "awayRank": 10,
+      "goalsIndex": 56.3,
+      "mismatchIndex": 35.7,
+      "rankScore": 65.2,
+      "projected": {
+        "home": 1.2,
+        "away": 2.08,
+        "total": 3.28
+      },
+      "probabilities": {
+        "home": 0.2146874735823885,
+        "draw": 0.20921765712343343,
+        "away": 0.5760948692941784,
+        "btts": 0.6115027775017126,
+        "over15": 0.8389491345477019,
+        "over25": 0.636536794491393,
+        "over35": 0.41523263602982874,
+        "under15": 0.16105086545229808,
+        "under25": 0.363463205508607
+      },
+      "pick": {
+        "side": "Warrenpoint",
+        "where": "A",
+        "probability": 0.5760948692941784
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "northern-ireland",
+      "league": "NIFL Premiership Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Linfield W",
+      "away": "Cliftonville W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLWW",
+          "played": 5,
+          "goalsFor": 16,
+          "goalsAgainst": 13,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 15,
+          "goalsAgainst": 3,
+          "points": 15,
+          "ppg": 3
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 1,
+      "goalsIndex": 100,
+      "mismatchIndex": 34.6,
+      "rankScore": 108.6,
+      "projected": {
+        "home": 1.68,
+        "away": 2.93,
+        "total": 4.61
+      },
+      "probabilities": {
+        "home": 0.20190226571448433,
+        "draw": 0.16467600164231747,
+        "away": 0.6334217326431976,
+        "btts": 0.7701700844577247,
+        "over15": 0.9441568024618844,
+        "over25": 0.83838271882554,
+        "over35": 0.6758432103043576,
+        "under15": 0.05584319753811562,
+        "under25": 0.16161728117445995
+      },
+      "pick": {
+        "side": "Cliftonville W",
+        "where": "A",
+        "probability": 0.6334217326431976
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "scotland",
+      "league": "Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Arbroath",
+      "away": "Queen's Park",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLTWW",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 7,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "LLWTL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 7,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 5,
+      "awayRank": 9,
+      "goalsIndex": 0,
+      "mismatchIndex": 24.2,
+      "rankScore": 24.2,
+      "projected": {
+        "home": 1.14,
+        "away": 0.69,
+        "total": 1.83
+      },
+      "probabilities": {
+        "home": 0.4640723442698971,
+        "draw": 0.31368719987977134,
+        "away": 0.2222404558503313,
+        "btts": 0.33901847085670295,
+        "over15": 0.546029586122486,
+        "over25": 0.27742507745916367,
+        "over35": 0.11357632717453704,
+        "under15": 0.453970413877514,
+        "under25": 0.7225749225408363
+      },
+      "pick": {
+        "side": "Arbroath",
+        "where": "H",
+        "probability": 0.4640723442698971
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "scotland",
+      "league": "Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Ayr",
+      "away": "Stenhousemuir",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLTL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 7,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 1,
+          "points": 15,
+          "ppg": 3
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 1,
+      "goalsIndex": 0,
+      "mismatchIndex": 57.1,
+      "rankScore": 57.1,
+      "projected": {
+        "home": 0.5,
+        "away": 1.5,
+        "total": 2
+      },
+      "probabilities": {
+        "home": 0.12182556444021607,
+        "draw": 0.2575309916466433,
+        "away": 0.6206434439131407,
+        "btts": 0.30567441493076764,
+        "over15": 0.5939939262718541,
+        "over25": 0.3233232104530902,
+        "over35": 0.14287606657391427,
+        "under15": 0.4060060737281459,
+        "under25": 0.6766767895469098
+      },
+      "pick": {
+        "side": "Stenhousemuir",
+        "where": "A",
+        "probability": 0.6206434439131407
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "scotland",
+      "league": "Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Inverness",
+      "away": "Morton",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWLLT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 9,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "LLLTL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 10,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 10,
+      "goalsIndex": 36,
+      "mismatchIndex": 29.2,
+      "rankScore": 43.3,
+      "projected": {
+        "home": 1.92,
+        "away": 0.93,
+        "total": 2.86
+      },
+      "probabilities": {
+        "home": 0.6054391089404546,
+        "draw": 0.21748484092653708,
+        "away": 0.1770760501330082,
+        "btts": 0.5166831407841738,
+        "over15": 0.7772980941179918,
+        "over25": 0.5423765057379123,
+        "over35": 0.3192009967768364,
+        "under15": 0.22270190588200822,
+        "under25": 0.4576234942620877
+      },
+      "pick": {
+        "side": "Inverness",
+        "where": "H",
+        "probability": 0.6054391089404546
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "scotland",
+      "league": "Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Raith",
+      "away": "Livingston",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWWLW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 1,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "TWLLW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 5,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 2,
+      "awayRank": 6,
+      "goalsIndex": 11.1,
+      "mismatchIndex": 35.6,
+      "rankScore": 38.4,
+      "projected": {
+        "home": 1.68,
+        "away": 0.65,
+        "total": 2.33
+      },
+      "probabilities": {
+        "home": 0.6230525588175158,
+        "draw": 0.2363188423392461,
+        "away": 0.1406285988432381,
+        "btts": 0.38887584900579003,
+        "over15": 0.6760046339158788,
+        "over25": 0.41189976260445427,
+        "over35": 0.20677831255258147,
+        "under15": 0.32399536608412116,
+        "under25": 0.5881002373955457
+      },
+      "pick": {
+        "side": "Raith",
+        "where": "H",
+        "probability": 0.6230525588175158
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-09-25T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "netherlands",
+      "league": "Eerste Divisie",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Dordrecht",
+      "away": "Almere City",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 18,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "WWLWW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 2,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 19,
+      "awayRank": 2,
+      "goalsIndex": 70.1,
+      "mismatchIndex": 75.8,
+      "rankScore": 93.3,
+      "projected": {
+        "home": 0.92,
+        "away": 2.65,
+        "total": 3.57
+      },
+      "probabilities": {
+        "home": 0.10647097094140193,
+        "draw": 0.15189480186005958,
+        "away": 0.7416342271985382,
+        "btts": 0.5589812532026741,
+        "over15": 0.8713145926513226,
+        "over25": 0.6918744779775635,
+        "over35": 0.4783407415157907,
+        "under15": 0.1286854073486774,
+        "under25": 0.3081255220224365
+      },
+      "pick": {
+        "side": "Almere City",
+        "where": "A",
+        "probability": 0.7416342271985382
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "northern-ireland",
+      "league": "NIFL Premiership Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Derry City W",
+      "away": "Larne W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLWLL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 12,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 26,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 8,
+      "goalsIndex": 100,
+      "mismatchIndex": 35.2,
+      "rankScore": 108.8,
+      "projected": {
+        "home": 2.94,
+        "away": 1.36,
+        "total": 4.3
+      },
+      "probabilities": {
+        "home": 0.6968158110352703,
+        "draw": 0.15328277983354405,
+        "away": 0.14990140913118555,
+        "btts": 0.7040322924285216,
+        "over15": 0.9280688544341232,
+        "over25": 0.8025965071215698,
+        "over35": 0.6227528093069101,
+        "under15": 0.07193114556587676,
+        "under25": 0.19740349287843018
+      },
+      "pick": {
+        "side": "Derry City W",
+        "where": "H",
+        "probability": 0.6968158110352703
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "northern-ireland",
+      "league": "NIFL Premiership Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Lisburn Ladies W",
+      "away": "Crusaders W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLLTL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 15,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "away": {
+          "streak": "WWLTL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 15,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 5,
+      "goalsIndex": 97.6,
+      "mismatchIndex": 17.9,
+      "rankScore": 102.1,
+      "projected": {
+        "home": 2.03,
+        "away": 2.12,
+        "total": 4.15
+      },
+      "probabilities": {
+        "home": 0.3815787457127879,
+        "draw": 0.20272542306096888,
+        "away": 0.4156958312262438,
+        "btts": 0.7643946903907602,
+        "over15": 0.9188113328097036,
+        "over25": 0.7830567871121425,
+        "over35": 0.5952629988971829,
+        "under15": 0.08118866719029638,
+        "under25": 0.21694321288785745
+      },
+      "pick": {
+        "side": "Crusaders W",
+        "where": "A",
+        "probability": 0.4156958312262438
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "austria",
+      "slug": "niederosterreich",
+      "name": "AUSTRIA: Niederosterreich"
+    },
+    {
+      "country": "austria",
+      "slug": "wien",
+      "name": "AUSTRIA: Wien"
+    },
+    {
+      "country": "croatia",
+      "slug": "druga-nl",
+      "name": "CROATIA: Druga NL"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "3-cfl-group-a",
+      "name": "CZECH REPUBLIC: 3. CFL - Group A"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "3-msfl",
+      "name": "CZECH REPUBLIC: 3. MSFL"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "4-liga-group-b",
+      "name": "CZECH REPUBLIC: 4. liga - Group B"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "4-liga-group-d",
+      "name": "CZECH REPUBLIC: 4. liga - Group D"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "4-liga-group-e",
+      "name": "CZECH REPUBLIC: 4. liga - Group E"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "olomoucky-kp",
+      "name": "CZECH REPUBLIC: Olomoucky KP"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "zlinsky-kp",
+      "name": "CZECH REPUBLIC: Zlinsky KP"
+    },
+    {
+      "country": "denmark",
+      "slug": "2nd-division",
+      "name": "DENMARK: 2nd Division"
+    },
+    {
+      "country": "england",
+      "slug": "professional-development-league",
+      "name": "ENGLAND: Professional Development League"
+    },
+    {
+      "country": "europe",
+      "slug": "uefa-nations-league",
+      "name": "EUROPE: UEFA Nations League - League C"
+    },
+    {
+      "country": "hungary",
+      "slug": "nb-i-women",
+      "name": "HUNGARY: NB I Women"
+    },
+    {
+      "country": "ireland",
+      "slug": "division-1",
+      "name": "IRELAND: Division 1"
+    },
+    {
+      "country": "northern-ireland",
+      "slug": "nifl-premiership",
+      "name": "NORTHERN IRELAND: NIFL Premiership"
+    },
+    {
+      "country": "north-macedonia",
+      "slug": "1-wfl-women",
+      "name": "NORTH MACEDONIA: 1. WFL Women"
+    },
+    {
+      "country": "norway",
+      "slug": "toppserien-women",
+      "name": "NORWAY: Toppserien Women"
+    },
+    {
+      "country": "russia",
+      "slug": "fnl-2-division-b-group-4",
+      "name": "RUSSIA: FNL 2 - Division B - Group 4 - Championship Group"
+    },
+    {
+      "country": "scotland",
+      "slug": "highland-league",
+      "name": "SCOTLAND: Highland League"
+    },
+    {
+      "country": "serbia",
+      "slug": "srpska-liga-belgrade",
+      "name": "SERBIA: Srpska Liga - Belgrade"
+    },
+    {
+      "country": "spain",
+      "slug": "primera-rfef-group-2",
+      "name": "SPAIN: Primera RFEF - Group 2"
+    },
+    {
+      "country": "sweden",
+      "slug": "division-1-norra",
+      "name": "SWEDEN: Division 1 - Norra"
+    },
+    {
+      "country": "sweden",
+      "slug": "division-1-sodra",
+      "name": "SWEDEN: Division 1 - Södra"
+    },
+    {
+      "country": "sweden",
+      "slug": "elitettan-women",
+      "name": "SWEDEN: Elitettan Women"
+    },
+    {
+      "country": "switzerland",
+      "slug": "1-liga-classic-group-1",
+      "name": "SWITZERLAND: 1.Liga Classic Group 1"
+    },
+    {
+      "country": "ukraine",
+      "slug": "druha-liga",
+      "name": "UKRAINE: Druha Liga"
+    },
+    {
+      "country": "wales",
+      "slug": "cymru-south",
+      "name": "WALES: Cymru South"
+    },
+    {
+      "country": "wales",
+      "slug": "cymru-north",
+      "name": "WALES: Cymru North"
+    }
+  ],
+  "outOfRegionCountries": [
+    "africa",
+    "bangladesh",
+    "bhutan",
+    "egypt",
+    "ghana",
+    "india",
+    "indonesia",
+    "new-zealand",
+    "oman",
+    "saudi-arabia",
+    "vietnam",
+    "world"
+  ]
+}
