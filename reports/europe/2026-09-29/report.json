@@ -1,0 +1,138 @@
+{
+  "date": "2026-09-29",
+  "region": "europe",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-09-29T12:37:05.478Z",
+  "stats": {
+    "totalFixtures": 405,
+    "inScope": 1,
+    "tablesLoaded": 647,
+    "daysCached": 57,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "africa",
+      "bangladesh",
+      "bhutan",
+      "india",
+      "iran",
+      "qatar",
+      "united-arab-emirates",
+      "world"
+    ],
+    "otherDays": 226,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-09-29T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "wales",
+      "league": "Cymru Premier",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Cardiff Metropolitan",
+      "away": "Haverfordwest",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLTTW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 6,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LWWTW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 4,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 9,
+      "awayRank": 11,
+      "goalsIndex": 21.3,
+      "mismatchIndex": 15.9,
+      "rankScore": 25.3,
+      "projected": {
+        "home": 1.74,
+        "away": 0.81,
+        "total": 2.55
+      },
+      "probabilities": {
+        "home": 0.5949722573025765,
+        "draw": 0.23354452075968637,
+        "away": 0.1714832219377366,
+        "btts": 0.4577029773862209,
+        "over15": 0.7228094557004577,
+        "over25": 0.46894586213598305,
+        "over35": 0.2531618076061793,
+        "under15": 0.27719054429954226,
+        "under25": 0.531054137864017
+      },
+      "pick": {
+        "side": "Cardiff Metropolitan",
+        "where": "H",
+        "probability": 0.5949722573025765
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "czech-republic",
+      "slug": "jihomoravsky-kp",
+      "name": "CZECH REPUBLIC: Jihomoravsky KP"
+    },
+    {
+      "country": "denmark",
+      "slug": "a-liga-women",
+      "name": "DENMARK: A-Liga Women"
+    },
+    {
+      "country": "england",
+      "slug": "professional-development-league",
+      "name": "ENGLAND: Professional Development League"
+    },
+    {
+      "country": "europe",
+      "slug": "uefa-nations-league",
+      "name": "EUROPE: UEFA Nations League - League C"
+    },
+    {
+      "country": "serbia",
+      "slug": "mozzart-bet-prva-liga",
+      "name": "SERBIA: Mozzart Bet Prva Liga"
+    },
+    {
+      "country": "slovenia",
+      "slug": "3-snl-east",
+      "name": "SLOVENIA: 3. SNL - East"
+    }
+  ],
+  "outOfRegionCountries": [
+    "africa",
+    "bangladesh",
+    "bhutan",
+    "india",
+    "iran",
+    "qatar",
+    "united-arab-emirates",
+    "world"
+  ]
+}
