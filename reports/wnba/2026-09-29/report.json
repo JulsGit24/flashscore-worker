@@ -1,0 +1,472 @@
+{
+  "date": "2026-09-29",
+  "sport": "basketball",
+  "competition": "WNBA",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-09-29T21:22:05.521Z",
+  "stats": {
+    "totalGames": 135,
+    "daysCached": 57,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 15,
+    "gamesWithQuarters": 168,
+    "otherDays": 85,
+    "errors": []
+  },
+  "notCovered": {
+    "playerProps": "feed exposes no player-level data",
+    "injuries": "no injury or news feed responded"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "tipoff": "2026-09-29T22:30:00.000Z",
+      "tipoffLocal": "18:30",
+      "home": "Indiana Fever W",
+      "away": "Las Vegas Aces W",
+      "projection": {
+        "confidence": "high",
+        "points": {
+          "home": 92.4,
+          "away": 93.3,
+          "total": 185.7
+        },
+        "margin": -0.9,
+        "spread": {
+          "favourite": "Las Vegas Aces W",
+          "line": -0.9,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.4680810146674821,
+          "away": 0.5319189853325179
+        },
+        "total": {
+          "projected": 185.7,
+          "range": [
+            164.5,
+            206.8
+          ],
+          "overUnder": [
+            {
+              "line": 180.5,
+              "over": 0.6226345821995829
+            },
+            {
+              "line": 185.5,
+              "over": 0.5037410079380649
+            },
+            {
+              "line": 190.5,
+              "over": 0.384511640264416
+            }
+          ]
+        },
+        "ratings": {
+          "home": {
+            "played": 15,
+            "rank": 6,
+            "pointsFor": 92.47322654462243,
+            "pointsAgainst": 89.78901601830664,
+            "offence": 1.0721803753220325,
+            "defence": 1.0410583094324004,
+            "netRating": 2.6842105263157947
+          },
+          "away": {
+            "played": 16,
+            "rank": 3,
+            "pointsFor": 91.0495652173913,
+            "pointsAgainst": 84.74956521739131,
+            "offence": 1.0556737409890609,
+            "defence": 0.9826284216363361,
+            "netRating": 6.299999999999997
+          }
+        },
+        "strengthGap": 3.6
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 176.5,
+        "totalUnder": 194.5,
+        "spread": {
+          "side": "Las Vegas Aces W",
+          "where": "A",
+          "line": 5.5
+        }
+      },
+      "periods": {
+        "quarters": [
+          {
+            "period": "Q1",
+            "points": {
+              "home": 23,
+              "away": 24.2,
+              "total": 47.1
+            },
+            "margin": -1.2,
+            "outcome": {
+              "home": 0.3853165828795472,
+              "tie": 0.06786223601741315,
+              "away": 0.5468211811030397
+            }
+          },
+          {
+            "period": "Q2",
+            "points": {
+              "home": 23.7,
+              "away": 24.1,
+              "total": 47.7
+            },
+            "margin": -0.4,
+            "outcome": {
+              "home": 0.4359155583843657,
+              "tie": 0.06910304737626621,
+              "away": 0.4949813942393681
+            }
+          },
+          {
+            "period": "Q3",
+            "points": {
+              "home": 22,
+              "away": 23.5,
+              "total": 45.5
+            },
+            "margin": -1.6,
+            "outcome": {
+              "home": 0.3594876536525552,
+              "tie": 0.06676778186886789,
+              "away": 0.5737445644785769
+            }
+          },
+          {
+            "period": "Q4",
+            "points": {
+              "home": 23.8,
+              "away": 21.5,
+              "total": 45.3
+            },
+            "margin": 2.3,
+            "outcome": {
+              "home": 0.6210960726050629,
+              "tie": 0.06409824814186904,
+              "away": 0.314805679253068
+            }
+          }
+        ],
+        "halves": [
+          {
+            "period": "H1",
+            "points": {
+              "home": 46.7,
+              "away": 48.3,
+              "total": 95
+            },
+            "margin": -1.6,
+            "outcome": {
+              "home": 0.39810793410508916,
+              "tie": 0.04809020909277473,
+              "away": 0.5538018568021361
+            }
+          },
+          {
+            "period": "H2",
+            "points": {
+              "home": 45.8,
+              "away": 45,
+              "total": 90.8
+            },
+            "margin": 0.8,
+            "outcome": {
+              "home": 0.5147147107726535,
+              "tie": 0.048792619817569494,
+              "away": 0.436492669409777
+            }
+          }
+        ],
+        "bestForHome": "Q4",
+        "bestForAway": "Q3"
+      },
+      "quarterSample": 20,
+      "form": {
+        "home": {
+          "streak": "LLLWW",
+          "played": 5,
+          "pointsFor": 409,
+          "pointsAgainst": 428,
+          "winRate": 0.4,
+          "pointsForAvg": 81.8,
+          "pointsAgainstAvg": 85.6
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 503,
+          "pointsAgainst": 400,
+          "winRate": 1,
+          "pointsForAvg": 100.6,
+          "pointsAgainstAvg": 80
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1790539200,
+          "home": "Las Vegas Aces W",
+          "away": "Indiana Fever W",
+          "homePoints": 102,
+          "awayPoints": 85,
+          "total": 187,
+          "winner": "Las Vegas Aces W"
+        },
+        {
+          "ts": 1786057200,
+          "home": "Indiana Fever W",
+          "away": "Las Vegas Aces W",
+          "homePoints": 84,
+          "awayPoints": 86,
+          "total": 170,
+          "winner": "Las Vegas Aces W"
+        },
+        {
+          "ts": 1786057200,
+          "home": "Indiana Fever W",
+          "away": "Las Vegas Aces W",
+          "homePoints": 84,
+          "awayPoints": 86,
+          "total": 170,
+          "winner": "Las Vegas Aces W"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 3,
+        "aWins": 0,
+        "bWins": 3,
+        "averageTotal": 175.66666666666666
+      }
+    },
+    {
+      "tipoff": "2026-09-30T00:30:00.000Z",
+      "tipoffLocal": "20:30",
+      "home": "New York Liberty W",
+      "away": "Minnesota Lynx W",
+      "projection": {
+        "confidence": "high",
+        "points": {
+          "home": 87.9,
+          "away": 80.4,
+          "total": 168.3
+        },
+        "margin": 7.6,
+        "spread": {
+          "favourite": "New York Liberty W",
+          "line": -7.6,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.7446093189013615,
+          "away": 0.2553906810986385
+        },
+        "total": {
+          "projected": 168.3,
+          "range": [
+            147.1,
+            189.4
+          ],
+          "overUnder": [
+            {
+              "line": 165.5,
+              "over": 0.5672263397246733
+            },
+            {
+              "line": 170.5,
+              "over": 0.44681460311491317
+            },
+            {
+              "line": 175.5,
+              "over": 0.331148675459108
+            }
+          ]
+        },
+        "ratings": {
+          "home": {
+            "played": 15,
+            "rank": 5,
+            "pointsFor": 87.52585812356979,
+            "pointsAgainst": 82.3679633867277,
+            "offence": 1.014818136231338,
+            "defence": 0.9550149507963588,
+            "netRating": 5.1578947368420955
+          },
+          "away": {
+            "played": 14,
+            "rank": 7,
+            "pointsFor": 85.72173913043478,
+            "pointsAgainst": 85.16618357487923,
+            "offence": 0.993900287341836,
+            "defence": 0.9874589011555287,
+            "netRating": 0.5555555555555571
+          }
+        },
+        "strengthGap": 4.6
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 159.5,
+        "totalUnder": 177.5,
+        "spread": {
+          "side": "New York Liberty W",
+          "where": "H",
+          "line": -1.5
+        }
+      },
+      "periods": {
+        "quarters": [
+          {
+            "period": "Q1",
+            "points": {
+              "home": 22.5,
+              "away": 20.2,
+              "total": 42.6
+            },
+            "margin": 2.3,
+            "outcome": {
+              "home": 0.622128927183217,
+              "tie": 0.06402939837108956,
+              "away": 0.31384167444569344
+            }
+          },
+          {
+            "period": "Q2",
+            "points": {
+              "home": 20.6,
+              "away": 21.2,
+              "total": 41.8
+            },
+            "margin": -0.6,
+            "outcome": {
+              "home": 0.42630716951214254,
+              "tie": 0.06895716965708543,
+              "away": 0.504735660830772
+            }
+          },
+          {
+            "period": "Q3",
+            "points": {
+              "home": 21.5,
+              "away": 20.1,
+              "total": 41.6
+            },
+            "margin": 1.4,
+            "outcome": {
+              "home": 0.5648145994012912,
+              "tie": 0.06716477718387548,
+              "away": 0.3680206234148333
+            }
+          },
+          {
+            "period": "Q4",
+            "points": {
+              "home": 23.3,
+              "away": 18.9,
+              "total": 42.2
+            },
+            "margin": 4.3,
+            "outcome": {
+              "home": 0.7479463354755915,
+              "tie": 0.05214685755946297,
+              "away": 0.1999068069649455
+            }
+          }
+        ],
+        "halves": [
+          {
+            "period": "H1",
+            "points": {
+              "home": 43.1,
+              "away": 41.4,
+              "total": 84.5
+            },
+            "margin": 1.7,
+            "outcome": {
+              "home": 0.5586589969521083,
+              "tie": 0.04797051756385251,
+              "away": 0.3933704854840392
+            }
+          },
+          {
+            "period": "H2",
+            "points": {
+              "home": 44.8,
+              "away": 39,
+              "total": 83.8
+            },
+            "margin": 5.8,
+            "outcome": {
+              "home": 0.7427246353685704,
+              "tie": 0.038029685282393144,
+              "away": 0.2192456793490365
+            }
+          }
+        ],
+        "bestForHome": "Q4",
+        "bestForAway": "Q2"
+      },
+      "quarterSample": 20,
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "pointsFor": 389,
+          "pointsAgainst": 431,
+          "winRate": 0.2,
+          "pointsForAvg": 77.8,
+          "pointsAgainstAvg": 86.2
+        },
+        "away": {
+          "streak": "LWWLL",
+          "played": 5,
+          "pointsFor": 401,
+          "pointsAgainst": 415,
+          "winRate": 0.4,
+          "pointsForAvg": 80.2,
+          "pointsAgainstAvg": 83
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1790532000,
+          "home": "Minnesota Lynx W",
+          "away": "New York Liberty W",
+          "homePoints": 75,
+          "awayPoints": 91,
+          "total": 166,
+          "winner": "New York Liberty W"
+        },
+        {
+          "ts": 1789774200,
+          "home": "Minnesota Lynx W",
+          "away": "New York Liberty W",
+          "homePoints": 81,
+          "awayPoints": 93,
+          "total": 174,
+          "winner": "New York Liberty W"
+        },
+        {
+          "ts": 1789774200,
+          "home": "Minnesota Lynx W",
+          "away": "New York Liberty W",
+          "homePoints": 81,
+          "awayPoints": 93,
+          "total": 174,
+          "winner": "New York Liberty W"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 3,
+        "aWins": 3,
+        "bWins": 0,
+        "averageTotal": 171.33333333333334
+      }
+    }
+  ]
+}
