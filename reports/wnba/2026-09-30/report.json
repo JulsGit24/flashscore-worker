@@ -1,0 +1,481 @@
+{
+  "date": "2026-09-30",
+  "sport": "basketball",
+  "competition": "WNBA",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-09-30T21:24:18.052Z",
+  "stats": {
+    "totalGames": 131,
+    "daysCached": 58,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 15,
+    "gamesWithQuarters": 170,
+    "otherDays": 45,
+    "errors": []
+  },
+  "notCovered": {
+    "playerProps": "feed exposes no player-level data",
+    "injuries": "no injury or news feed responded"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "tipoff": "2026-09-30T23:00:00.000Z",
+      "tipoffLocal": "19:00",
+      "home": "Washington Mystics W",
+      "away": "Atlanta Dream W",
+      "projection": {
+        "confidence": "high",
+        "points": {
+          "home": 86.5,
+          "away": 88.7,
+          "total": 175.2
+        },
+        "margin": -2.2,
+        "spread": {
+          "favourite": "Atlanta Dream W",
+          "line": -2.2,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.4230795365431166,
+          "away": 0.5769204634568834
+        },
+        "total": {
+          "projected": 175.2,
+          "range": [
+            154,
+            196.3
+          ],
+          "overUnder": [
+            {
+              "line": 170.5,
+              "over": 0.6120022338502519
+            },
+            {
+              "line": 175.5,
+              "over": 0.4926244350876965
+            },
+            {
+              "line": 180.5,
+              "over": 0.37390860397327996
+            }
+          ]
+        },
+        "ratings": {
+          "home": {
+            "played": 17,
+            "rank": 4,
+            "pointsFor": 87.85754985754986,
+            "pointsAgainst": 83.66707366707367,
+            "offence": 1.0186130241622489,
+            "defence": 0.9700289965860001,
+            "netRating": 4.19047619047619
+          },
+          "away": {
+            "played": 17,
+            "rank": 2,
+            "pointsFor": 93.000407000407,
+            "pointsAgainst": 83.42897842897843,
+            "offence": 1.078238876187645,
+            "defence": 0.9672685404737131,
+            "netRating": 9.57142857142857
+          }
+        },
+        "strengthGap": 5.4
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 166.5,
+        "totalUnder": 184.5,
+        "spread": {
+          "side": "Atlanta Dream W",
+          "where": "A",
+          "line": 4.5
+        }
+      },
+      "periods": {
+        "quarters": [
+          {
+            "period": "Q1",
+            "points": {
+              "home": 22.7,
+              "away": 22.1,
+              "total": 44.8
+            },
+            "margin": 0.7,
+            "outcome": {
+              "home": 0.5114400658798899,
+              "tie": 0.0688332630003397,
+              "away": 0.4197266711197704
+            }
+          },
+          {
+            "period": "Q2",
+            "points": {
+              "home": 20.7,
+              "away": 20.6,
+              "total": 41.3
+            },
+            "margin": 0.2,
+            "outcome": {
+              "home": 0.47748936331064884,
+              "tie": 0.06926189839819408,
+              "away": 0.4532487382911571
+            }
+          },
+          {
+            "period": "Q3",
+            "points": {
+              "home": 21.6,
+              "away": 23.8,
+              "total": 45.4
+            },
+            "margin": -2.3,
+            "outcome": {
+              "home": 0.31408497917972333,
+              "tie": 0.0640468213751142,
+              "away": 0.6218681994451625
+            }
+          },
+          {
+            "period": "Q4",
+            "points": {
+              "home": 21.5,
+              "away": 22.2,
+              "total": 43.7
+            },
+            "margin": -0.8,
+            "outcome": {
+              "home": 0.4135764153102409,
+              "tie": 0.06869969720975344,
+              "away": 0.5177238874800056
+            }
+          }
+        ],
+        "halves": [
+          {
+            "period": "H1",
+            "points": {
+              "home": 43.4,
+              "away": 42.7,
+              "total": 86.1
+            },
+            "margin": 0.7,
+            "outcome": {
+              "home": 0.509811050449313,
+              "tie": 0.04884794650279484,
+              "away": 0.4413410030478922
+            }
+          },
+          {
+            "period": "H2",
+            "points": {
+              "home": 43.1,
+              "away": 46,
+              "total": 89.1
+            },
+            "margin": -2.9,
+            "outcome": {
+              "home": 0.3379314456551279,
+              "tie": 0.046012004585391564,
+              "away": 0.6160565497594805
+            }
+          }
+        ],
+        "bestForHome": "Q1",
+        "bestForAway": "Q3"
+      },
+      "quarterSample": 27,
+      "form": {
+        "home": {
+          "streak": "LLWWW",
+          "played": 5,
+          "pointsFor": 435,
+          "pointsAgainst": 439,
+          "winRate": 0.6,
+          "pointsForAvg": 87,
+          "pointsAgainstAvg": 87.8
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 445,
+          "pointsAgainst": 368,
+          "winRate": 1,
+          "pointsForAvg": 89,
+          "pointsAgainstAvg": 73.6
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1790550000,
+          "home": "Atlanta Dream W",
+          "away": "Washington Mystics W",
+          "homePoints": 92,
+          "awayPoints": 77,
+          "total": 169,
+          "winner": "Atlanta Dream W"
+        },
+        {
+          "ts": 1790550000,
+          "home": "Atlanta Dream W",
+          "away": "Washington Mystics W",
+          "homePoints": 92,
+          "awayPoints": 77,
+          "total": 169,
+          "winner": "Atlanta Dream W"
+        },
+        {
+          "ts": 1786145400,
+          "home": "Washington Mystics W",
+          "away": "Atlanta Dream W",
+          "homePoints": 79,
+          "awayPoints": 74,
+          "total": 153,
+          "winner": "Washington Mystics W"
+        },
+        {
+          "ts": 1786145400,
+          "home": "Washington Mystics W",
+          "away": "Atlanta Dream W",
+          "homePoints": 79,
+          "awayPoints": 74,
+          "total": 153,
+          "winner": "Washington Mystics W"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 4,
+        "aWins": 2,
+        "bWins": 2,
+        "averageTotal": 161
+      }
+    },
+    {
+      "tipoff": "2026-10-01T01:00:00.000Z",
+      "tipoffLocal": "21:00",
+      "home": "Dallas Wings W",
+      "away": "Golden State Valkyries W",
+      "projection": {
+        "confidence": "high",
+        "points": {
+          "home": 77.6,
+          "away": 80.6,
+          "total": 158.1
+        },
+        "margin": -3,
+        "spread": {
+          "favourite": "Golden State Valkyries W",
+          "line": -3,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.395823864765813,
+          "away": 0.604176135234187
+        },
+        "total": {
+          "projected": 158.1,
+          "range": [
+            137,
+            179.3
+          ],
+          "overUnder": [
+            {
+              "line": 155.5,
+              "over": 0.5635228902649396
+            },
+            {
+              "line": 160.5,
+              "over": 0.4430964263691263
+            },
+            {
+              "line": 165.5,
+              "over": 0.3277432186851481
+            }
+          ]
+        },
+        "ratings": {
+          "home": {
+            "played": 16,
+            "rank": 7,
+            "pointsFor": 88.30042735042734,
+            "pointsAgainst": 85.50042735042734,
+            "offence": 1.0237477084675222,
+            "defence": 0.9912847445870286,
+            "netRating": 2.799999999999997
+          },
+          "away": {
+            "played": 17,
+            "rank": 1,
+            "pointsFor": 82.8099308099308,
+            "pointsAgainst": 74.28612128612129,
+            "offence": 0.9600913545817673,
+            "defence": 0.8612670257618977,
+            "netRating": 8.523809523809518
+          }
+        },
+        "strengthGap": 5.7
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 148.5,
+        "totalUnder": 167.5,
+        "spread": {
+          "side": "Golden State Valkyries W",
+          "where": "A",
+          "line": 3.5
+        }
+      },
+      "periods": {
+        "quarters": [
+          {
+            "period": "Q1",
+            "points": {
+              "home": 19.8,
+              "away": 20,
+              "total": 39.8
+            },
+            "margin": -0.2,
+            "outcome": {
+              "home": 0.44847425210775804,
+              "tie": 0.06923145492403238,
+              "away": 0.4822942929682096
+            }
+          },
+          {
+            "period": "Q2",
+            "points": {
+              "home": 18.3,
+              "away": 20.1,
+              "total": 38.5
+            },
+            "margin": -1.8,
+            "outcome": {
+              "home": 0.34318642877914673,
+              "tie": 0.06591027212877643,
+              "away": 0.5909032990920768
+            }
+          },
+          {
+            "period": "Q3",
+            "points": {
+              "home": 20.2,
+              "away": 20.5,
+              "total": 40.7
+            },
+            "margin": -0.3,
+            "outcome": {
+              "home": 0.44219237072792317,
+              "tie": 0.0691760054664371,
+              "away": 0.48863162380563974
+            }
+          },
+          {
+            "period": "Q4",
+            "points": {
+              "home": 19.4,
+              "away": 20,
+              "total": 39.3
+            },
+            "margin": -0.6,
+            "outcome": {
+              "home": 0.424320467738194,
+              "tie": 0.0689218242837637,
+              "away": 0.5067577079780423
+            }
+          }
+        ],
+        "halves": [
+          {
+            "period": "H1",
+            "points": {
+              "home": 38.1,
+              "away": 40.1,
+              "total": 78.2
+            },
+            "margin": -2,
+            "outcome": {
+              "home": 0.3792551751425737,
+              "tie": 0.04757010457613631,
+              "away": 0.57317472028129
+            }
+          },
+          {
+            "period": "H2",
+            "points": {
+              "home": 39.6,
+              "away": 40.5,
+              "total": 80.1
+            },
+            "margin": -0.9,
+            "outcome": {
+              "home": 0.4316538578553417,
+              "tie": 0.04873000073846501,
+              "away": 0.5196161414061933
+            }
+          }
+        ],
+        "bestForHome": "Q1",
+        "bestForAway": "Q2"
+      },
+      "quarterSample": 22,
+      "form": {
+        "home": {
+          "streak": "LWLWW",
+          "played": 5,
+          "pointsFor": 453,
+          "pointsAgainst": 441,
+          "winRate": 0.6,
+          "pointsForAvg": 90.6,
+          "pointsAgainstAvg": 88.2
+        },
+        "away": {
+          "streak": "WWLWW",
+          "played": 5,
+          "pointsFor": 414,
+          "pointsAgainst": 368,
+          "winRate": 0.8,
+          "pointsForAvg": 82.8,
+          "pointsAgainstAvg": 73.6
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1790557200,
+          "home": "Golden State Valkyries W",
+          "away": "Dallas Wings W",
+          "homePoints": 104,
+          "awayPoints": 80,
+          "total": 184,
+          "winner": "Golden State Valkyries W"
+        },
+        {
+          "ts": 1787018400,
+          "home": "Golden State Valkyries W",
+          "away": "Dallas Wings W",
+          "homePoints": 78,
+          "awayPoints": 70,
+          "total": 148,
+          "winner": "Golden State Valkyries W"
+        },
+        {
+          "ts": 1786152600,
+          "home": "Dallas Wings W",
+          "away": "Golden State Valkyries W",
+          "homePoints": 76,
+          "awayPoints": 94,
+          "total": 170,
+          "winner": "Golden State Valkyries W"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 3,
+        "aWins": 0,
+        "bWins": 3,
+        "averageTotal": 167.33333333333334
+      }
+    }
+  ]
+}
