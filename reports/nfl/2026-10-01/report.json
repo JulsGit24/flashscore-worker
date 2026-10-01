@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-01",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-01T17:01:11.738Z",
+  "stats": {
+    "totalGames": 8,
+    "otherDays": 5,
+    "daysCached": 17,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 21.941176470588236,
+    "marginSd": 14.128979042396793,
+    "totalSd": 14.221119643067457,
+    "spreadsDerivedFromGames": 41
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-10-02T00:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "home": "Cleveland Browns",
+      "away": "Pittsburgh Steelers",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "medium",
+        "points": {
+          "home": 23.5,
+          "away": 17.6,
+          "total": 41.1
+        },
+        "margin": 5.9,
+        "spread": {
+          "favourite": "Cleveland Browns",
+          "line": -5.9,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.6600724834244068,
+          "away": 0.3383734480192444,
+          "tie": 0.00155406855634873
+        },
+        "regulation": {
+          "tie": 0.025901142605812166
+        },
+        "total": {
+          "projected": 41.1,
+          "range": [
+            22.9,
+            59.3
+          ],
+          "overUnder": [
+            {
+              "line": 36.5,
+              "over": 0.6271915839295988
+            },
+            {
+              "line": 39.5,
+              "over": 0.5451713197203394
+            },
+            {
+              "line": 42.5,
+              "over": 0.4611712644307381
+            },
+            {
+              "line": 45.5,
+              "over": 0.37887495004222116
+            },
+            {
+              "line": 48.5,
+              "over": 0.30174406055259784
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 11.7,
+            "away": 8.8,
+            "total": 20.6
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.05084464128205424
+          },
+          {
+            "margin": 7,
+            "probability": 0.04679290218113891
+          },
+          {
+            "margin": 10,
+            "probability": 0.04208009542549057
+          },
+          {
+            "margin": 14,
+            "probability": 0.034430498920316965
+          },
+          {
+            "margin": 6,
+            "probability": 0.0480741512437049
+          },
+          {
+            "margin": 4,
+            "probability": 0.05011176794853822
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 2,
+            "rank": 6,
+            "pointsFor": 21.96470588235294,
+            "pointsAgainst": 20.564705882352943,
+            "offence": 1.0010723860589812,
+            "defence": 0.937265415549598,
+            "pointDifferential": 1.3999999999999986
+          },
+          "away": {
+            "played": 2,
+            "rank": 21,
+            "pointsFor": 19.764705882352942,
+            "pointsAgainst": 22.564705882352943,
+            "offence": 0.900804289544236,
+            "defence": 1.0284182305630027,
+            "pointDifferential": -2.8000000000000007
+          }
+        },
+        "strengthGap": 4.2
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 33.5,
+        "totalUnder": 49.5,
+        "spread": {
+          "side": "Cleveland Browns",
+          "where": "H",
+          "line": 2.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WW",
+          "played": 2,
+          "pointsFor": 44,
+          "pointsAgainst": 37,
+          "winRate": 1,
+          "pointsForAvg": 22,
+          "pointsAgainstAvg": 18.5
+        },
+        "away": {
+          "streak": "WL",
+          "played": 2,
+          "pointsFor": 33,
+          "pointsAgainst": 47,
+          "winRate": 0.5,
+          "pointsForAvg": 16.5,
+          "pointsAgainstAvg": 23.5
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
