@@ -1,0 +1,252 @@
+{
+  "date": "2026-10-01",
+  "sport": "baseball",
+  "competition": "MLB",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-01T18:23:34.128Z",
+  "stats": {
+    "totalGames": 15,
+    "otherDays": 4,
+    "daysCached": 57,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 30,
+    "errors": []
+  },
+  "notCovered": {
+    "startingPitchers": "feed exposes no probable-pitcher data",
+    "injuries": "no injury or news feed responded",
+    "parkAndWeather": "not carried by the feed",
+    "inningData": "feed carries final scores only; the first-five split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "firstPitch": "2026-10-02T00:00:00.000Z",
+      "firstPitchLocal": "20:00",
+      "home": "Atlanta Braves",
+      "away": "Philadelphia Phillies",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 3.84,
+          "away": 3.59,
+          "total": 7.43
+        },
+        "margin": 0.25,
+        "winProbability": {
+          "home": 0.5295496798817606,
+          "away": 0.4704503201182397
+        },
+        "regulation": {
+          "home": 0.46559217566178124,
+          "away": 0.41596800170862763,
+          "tie": 0.11843982262959141
+        },
+        "runLine": {
+          "favourite": "Atlanta Braves",
+          "where": "H",
+          "line": -1.5,
+          "coverProbability": 0.3523021317062307,
+          "underdogProbability": 0.6476978682937693
+        },
+        "total": {
+          "projected": 7.43,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.5493891795956831
+            },
+            {
+              "line": 7.5,
+              "over": 0.44183092779512423
+            },
+            {
+              "line": 8.5,
+              "over": 0.34474276052361597
+            },
+            {
+              "line": 9.5,
+              "over": 0.26164692786320715
+            },
+            {
+              "line": 10.5,
+              "over": 0.19363614065930493
+            },
+            {
+              "line": 11.5,
+              "over": 0.14005383184557155
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 3.84,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.47717139012603915
+              },
+              {
+                "line": 4.5,
+                "over": 0.3406909299116721
+              },
+              {
+                "line": 5.5,
+                "over": 0.23378643766583457
+              }
+            ]
+          },
+          "away": {
+            "projected": 3.59,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.4412268539589532
+              },
+              {
+                "line": 4.5,
+                "over": 0.3060894950321633
+              },
+              {
+                "line": 5.5,
+                "over": 0.2038058328075472
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.13,
+            "away": 1.99,
+            "total": 4.13
+          },
+          "winProbability": {
+            "home": 0.4287603839375973,
+            "away": 0.38762490876654226,
+            "tie": 0.18361470729585927
+          },
+          "total": {
+            "projected": 4.13,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.5471548021141724
+              },
+              {
+                "line": 4.5,
+                "over": 0.38842115238739233
+              },
+              {
+                "line": 5.5,
+                "over": 0.25879406020356
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 52,
+            "rank": 9,
+            "runsFor": 3.9261548471047494,
+            "runsAgainst": 3.7709824333116457,
+            "offence": 0.8817212156633547,
+            "defence": 0.8468731735827001,
+            "runDifferential": 0.15517241379310365
+          },
+          "away": {
+            "played": 50,
+            "rank": 7,
+            "runsFor": 4.387803234501347,
+            "runsAgainst": 4.209231805929919,
+            "offence": 0.9853964891041161,
+            "defence": 0.945293583535109,
+            "runDifferential": 0.17857142857142794
+          }
+        },
+        "strengthGap": 0.02
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 4.5,
+        "totalUnder": 9.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LWLWL",
+          "played": 5,
+          "pointsFor": 19,
+          "pointsAgainst": 18,
+          "winRate": 0.4,
+          "pointsForAvg": 3.8,
+          "pointsAgainstAvg": 3.6
+        },
+        "away": {
+          "streak": "WLWLL",
+          "played": 5,
+          "pointsFor": 16,
+          "pointsAgainst": 35,
+          "winRate": 0.4,
+          "pointsForAvg": 3.2,
+          "pointsAgainstAvg": 7
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1790791200,
+          "home": "Atlanta Braves",
+          "away": "Philadelphia Phillies",
+          "homePoints": 3,
+          "awayPoints": 4,
+          "total": 7,
+          "winner": "Philadelphia Phillies"
+        },
+        {
+          "ts": 1790704800,
+          "home": "Atlanta Braves",
+          "away": "Philadelphia Phillies",
+          "homePoints": 5,
+          "awayPoints": 3,
+          "total": 8,
+          "winner": "Atlanta Braves"
+        },
+        {
+          "ts": 1789320900,
+          "home": "Atlanta Braves",
+          "away": "Philadelphia Phillies",
+          "homePoints": 4,
+          "awayPoints": 9,
+          "total": 13,
+          "winner": "Philadelphia Phillies"
+        },
+        {
+          "ts": 1789254900,
+          "home": "Atlanta Braves",
+          "away": "Philadelphia Phillies",
+          "homePoints": 12,
+          "awayPoints": 2,
+          "total": 14,
+          "winner": "Atlanta Braves"
+        },
+        {
+          "ts": 1789254900,
+          "home": "Atlanta Braves",
+          "away": "Philadelphia Phillies",
+          "homePoints": 12,
+          "awayPoints": 2,
+          "total": 14,
+          "winner": "Atlanta Braves"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 5,
+        "aWins": 3,
+        "bWins": 2,
+        "averageTotal": 11.2
+      }
+    }
+  ]
+}
