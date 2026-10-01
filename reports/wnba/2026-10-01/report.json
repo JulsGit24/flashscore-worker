@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-01",
+  "sport": "basketball",
+  "competition": "WNBA",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-01T21:47:16.898Z",
+  "stats": {
+    "totalGames": 154,
+    "daysCached": 59,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 15,
+    "gamesWithQuarters": 172,
+    "otherDays": 108,
+    "errors": []
+  },
+  "notCovered": {
+    "playerProps": "feed exposes no player-level data",
+    "injuries": "no injury or news feed responded"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "tipoff": "2026-10-02T01:00:00.000Z",
+      "tipoffLocal": "21:00",
+      "home": "Las Vegas Aces W",
+      "away": "Indiana Fever W",
+      "projection": {
+        "confidence": "high",
+        "points": {
+          "home": 96.2,
+          "away": 90.4,
+          "total": 186.6
+        },
+        "margin": 5.7,
+        "spread": {
+          "favourite": "Las Vegas Aces W",
+          "line": -5.7,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.6907716092101281,
+          "away": 0.30922839078987185
+        },
+        "total": {
+          "projected": 186.6,
+          "range": [
+            165.4,
+            207.7
+          ],
+          "overUnder": [
+            {
+              "line": 180.5,
+              "over": 0.6437958785098777
+            },
+            {
+              "line": 185.5,
+              "over": 0.5261493529884819
+            },
+            {
+              "line": 190.5,
+              "over": 0.40615903458100777
+            }
+          ]
+        },
+        "ratings": {
+          "home": {
+            "played": 17,
+            "rank": 3,
+            "pointsFor": 90.94915254237289,
+            "pointsAgainst": 85.42534301856337,
+            "offence": 1.0546901872143875,
+            "defence": 0.9906334309066362,
+            "netRating": 5.523809523809518
+          },
+          "away": {
+            "played": 16,
+            "rank": 6,
+            "pointsFor": 92.79661016949153,
+            "pointsAgainst": 89.74661016949153,
+            "offence": 1.076114195862611,
+            "defence": 1.0407449265392363,
+            "netRating": 3.049999999999997
+          }
+        },
+        "strengthGap": 2.5
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 177.5,
+        "totalUnder": 195.5,
+        "spread": {
+          "side": "Las Vegas Aces W",
+          "where": "H",
+          "line": 0.5
+        }
+      },
+      "periods": {
+        "quarters": [
+          {
+            "period": "Q1",
+            "points": {
+              "home": 25,
+              "away": 22.2,
+              "total": 47.3
+            },
+            "margin": 2.8,
+            "outcome": {
+              "home": 0.6543154169664054,
+              "tie": 0.061654587641210956,
+              "away": 0.28402999539238366
+            }
+          },
+          {
+            "period": "Q2",
+            "points": {
+              "home": 24.6,
+              "away": 23.3,
+              "total": 47.9
+            },
+            "margin": 1.3,
+            "outcome": {
+              "home": 0.5542383868815479,
+              "tie": 0.06759132908481541,
+              "away": 0.37817028403363667
+            }
+          },
+          {
+            "period": "Q3",
+            "points": {
+              "home": 24.1,
+              "away": 21.5,
+              "total": 45.6
+            },
+            "margin": 2.6,
+            "outcome": {
+              "home": 0.6396685423261214,
+              "tie": 0.06279051612371017,
+              "away": 0.29754094155016847
+            }
+          },
+          {
+            "period": "Q4",
+            "points": {
+              "home": 22.5,
+              "away": 23.3,
+              "total": 45.9
+            },
+            "margin": -0.8,
+            "outcome": {
+              "home": 0.4090154874805445,
+              "tie": 0.06858950166953415,
+              "away": 0.5223950108499213
+            }
+          }
+        ],
+        "halves": [
+          {
+            "period": "H1",
+            "points": {
+              "home": 49.6,
+              "away": 45.5,
+              "total": 95.1
+            },
+            "margin": 4.1,
+            "outcome": {
+              "home": 0.6710123369055131,
+              "tie": 0.043183874828129354,
+              "away": 0.28580378826635755
+            }
+          },
+          {
+            "period": "H2",
+            "points": {
+              "home": 46.6,
+              "away": 44.8,
+              "total": 91.4
+            },
+            "margin": 1.8,
+            "outcome": {
+              "home": 0.5635073305902234,
+              "tie": 0.047843898338934654,
+              "away": 0.38864877107084195
+            }
+          }
+        ],
+        "bestForHome": "Q1",
+        "bestForAway": "Q4"
+      },
+      "quarterSample": 21,
+      "form": {
+        "home": {
+          "streak": "LWWWW",
+          "played": 5,
+          "pointsFor": 478,
+          "pointsAgainst": 422,
+          "winRate": 0.8,
+          "pointsForAvg": 95.6,
+          "pointsAgainstAvg": 84.4
+        },
+        "away": {
+          "streak": "WLLLW",
+          "played": 5,
+          "pointsFor": 412,
+          "pointsAgainst": 440,
+          "winRate": 0.4,
+          "pointsForAvg": 82.4,
+          "pointsAgainstAvg": 88
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1790721000,
+          "home": "Indiana Fever W",
+          "away": "Las Vegas Aces W",
+          "homePoints": 99,
+          "awayPoints": 89,
+          "total": 188,
+          "winner": "Indiana Fever W"
+        },
+        {
+          "ts": 1790539200,
+          "home": "Las Vegas Aces W",
+          "away": "Indiana Fever W",
+          "homePoints": 102,
+          "awayPoints": 85,
+          "total": 187,
+          "winner": "Las Vegas Aces W"
+        },
+        {
+          "ts": 1786057200,
+          "home": "Indiana Fever W",
+          "away": "Las Vegas Aces W",
+          "homePoints": 84,
+          "awayPoints": 86,
+          "total": 170,
+          "winner": "Las Vegas Aces W"
+        },
+        {
+          "ts": 1786057200,
+          "home": "Indiana Fever W",
+          "away": "Las Vegas Aces W",
+          "homePoints": 84,
+          "awayPoints": 86,
+          "total": 170,
+          "winner": "Las Vegas Aces W"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 4,
+        "aWins": 3,
+        "bWins": 1,
+        "averageTotal": 178.75
+      }
+    }
+  ]
+}
