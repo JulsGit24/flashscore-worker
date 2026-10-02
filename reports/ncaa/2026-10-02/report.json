@@ -1,0 +1,489 @@
+{
+  "date": "2026-10-02",
+  "sport": "american-football",
+  "competition": "NCAA Football",
+  "competitionKey": "ncaa",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-02T16:15:40.412Z",
+  "stats": {
+    "totalGames": 72,
+    "otherDays": 67,
+    "daysCached": 18,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "teamsKnown": 168,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 26.95578231292517,
+    "marginSd": 23.17132288156273,
+    "totalSd": 15.17020476152319,
+    "spreadsDerivedFromGames": 196
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-10-02T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "home": "Delaware Fightin",
+      "away": "Liberty Flames",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "medium",
+        "points": {
+          "home": 19.2,
+          "away": 32.2,
+          "total": 51.4
+        },
+        "margin": -13,
+        "spread": {
+          "favourite": "Liberty Flames",
+          "line": -13,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.2880733959961386,
+          "away": 0.7119266040038614,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.014724663239758073
+        },
+        "total": {
+          "projected": 51.4,
+          "range": [
+            32,
+            70.9
+          ],
+          "overUnder": [
+            {
+              "line": 45.5,
+              "over": 0.6517885144825719
+            },
+            {
+              "line": 48.5,
+              "over": 0.5762846252324503
+            },
+            {
+              "line": 51.5,
+              "over": 0.49786230952365784
+            },
+            {
+              "line": 54.5,
+              "over": 0.4195228148769854
+            },
+            {
+              "line": 57.5,
+              "over": 0.34425777740450325
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 9.6,
+            "away": 16.1,
+            "total": 25.7
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.029280093706186228
+          },
+          {
+            "margin": 7,
+            "probability": 0.02853807702374711
+          },
+          {
+            "margin": 10,
+            "probability": 0.027615727733229734
+          },
+          {
+            "margin": 14,
+            "probability": 0.025949932181193458
+          },
+          {
+            "margin": 6,
+            "probability": 0.028777425642129262
+          },
+          {
+            "margin": 4,
+            "probability": 0.02914904909191718
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 2,
+            "rank": 102,
+            "pointsFor": 21.1734693877551,
+            "pointsAgainst": 27.3734693877551,
+            "offence": 0.7854889589905363,
+            "defence": 1.0154952681388012,
+            "pointDifferential": -6.199999999999999
+          },
+          "away": {
+            "played": 2,
+            "rank": 13,
+            "pointsFor": 33.173469387755105,
+            "pointsAgainst": 22.573469387755104,
+            "offence": 1.2306624605678236,
+            "defence": 0.8374258675078865,
+            "pointDifferential": 10.600000000000001
+          }
+        },
+        "strengthGap": 16.8
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 42.5,
+        "totalUnder": 59.5,
+        "spread": {
+          "side": "Liberty Flames",
+          "where": "A",
+          "line": -0.5
+        },
+        "moneylineCovers": true
+      },
+      "form": {
+        "home": {
+          "streak": "LW",
+          "played": 2,
+          "pointsFor": 25,
+          "pointsAgainst": 56,
+          "winRate": 0.5,
+          "pointsForAvg": 12.5,
+          "pointsAgainstAvg": 28
+        },
+        "away": {
+          "streak": "WWW",
+          "played": 3,
+          "pointsFor": 119,
+          "pointsAgainst": 49,
+          "winRate": 1,
+          "pointsForAvg": 39.666666666666664,
+          "pointsAgainstAvg": 16.333333333333332
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-02T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "home": "Virginia Tech",
+      "away": "Pittsburgh",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "medium",
+        "points": {
+          "home": 20.6,
+          "away": 28.4,
+          "total": 49
+        },
+        "margin": -7.9,
+        "spread": {
+          "favourite": "Pittsburgh",
+          "line": -7.9,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.3671836817380827,
+          "away": 0.6328163182619173,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.016252334236691368
+        },
+        "total": {
+          "projected": 49,
+          "range": [
+            29.6,
+            68.4
+          ],
+          "overUnder": [
+            {
+              "line": 42.5,
+              "over": 0.6656806296448883
+            },
+            {
+              "line": 45.5,
+              "over": 0.5910554883242944
+            },
+            {
+              "line": 48.5,
+              "over": 0.5129653810912468
+            },
+            {
+              "line": 51.5,
+              "over": 0.43437317285699883
+            },
+            {
+              "line": 54.5,
+              "over": 0.3582998314486677
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 10.3,
+            "away": 14.2,
+            "total": 24.5
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.03226451412336906
+          },
+          {
+            "margin": 7,
+            "probability": 0.031218349303006043
+          },
+          {
+            "margin": 10,
+            "probability": 0.029932874765148332
+          },
+          {
+            "margin": 14,
+            "probability": 0.02765366291446164
+          },
+          {
+            "margin": 6,
+            "probability": 0.03155459287102569
+          },
+          {
+            "margin": 4,
+            "probability": 0.03207894823240642
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 2,
+            "rank": 41,
+            "pointsFor": 27.3734693877551,
+            "pointsAgainst": 24.1734693877551,
+            "offence": 1.0154952681388012,
+            "defence": 0.8967823343848581,
+            "pointDifferential": 3.1999999999999993
+          },
+          "away": {
+            "played": 2,
+            "rank": 5,
+            "pointsFor": 33.3734693877551,
+            "pointsAgainst": 18.773469387755103,
+            "offence": 1.2380820189274448,
+            "defence": 0.6964542586750789,
+            "pointDifferential": 14.599999999999998
+          }
+        },
+        "strengthGap": 11.4
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 40.5,
+        "totalUnder": 57.5,
+        "spread": {
+          "side": "Pittsburgh",
+          "where": "A",
+          "line": 4.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWW",
+          "played": 3,
+          "pointsFor": 91,
+          "pointsAgainst": 66,
+          "winRate": 1,
+          "pointsForAvg": 30.333333333333332,
+          "pointsAgainstAvg": 22
+        },
+        "away": {
+          "streak": "WWW",
+          "played": 3,
+          "pointsFor": 113,
+          "pointsAgainst": 26,
+          "winRate": 1,
+          "pointsForAvg": 37.666666666666664,
+          "pointsAgainstAvg": 8.666666666666666
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-03T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "home": "Northwestern",
+      "away": "Penn State",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "medium",
+        "points": {
+          "home": 26.8,
+          "away": 25.5,
+          "total": 52.4
+        },
+        "margin": 1.3,
+        "spread": {
+          "favourite": "Northwestern",
+          "line": -1.3,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.522491481814009,
+          "away": 0.477508518185991,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.01718836792478351
+        },
+        "total": {
+          "projected": 52.4,
+          "range": [
+            32.9,
+            71.8
+          ],
+          "overUnder": [
+            {
+              "line": 45.5,
+              "over": 0.6746431245190825
+            },
+            {
+              "line": 48.5,
+              "over": 0.6006441312619419
+            },
+            {
+              "line": 51.5,
+              "over": 0.5228305468231191
+            },
+            {
+              "line": 54.5,
+              "over": 0.44413352834633946
+            },
+            {
+              "line": 57.5,
+              "over": 0.36758620975109013
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 13.4,
+            "away": 12.8,
+            "total": 26.2
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.0340907107468823
+          },
+          {
+            "margin": 7,
+            "probability": 0.0328483009355498
+          },
+          {
+            "margin": 10,
+            "probability": 0.031329683800511876
+          },
+          {
+            "margin": 14,
+            "probability": 0.028658889718634284
+          },
+          {
+            "margin": 6,
+            "probability": 0.03324702451061551
+          },
+          {
+            "margin": 4,
+            "probability": 0.03386992526490379
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 2,
+            "rank": 59,
+            "pointsFor": 28.973469387755102,
+            "pointsAgainst": 23.3734693877551,
+            "offence": 1.074851735015773,
+            "defence": 0.8671041009463722,
+            "pointDifferential": 5.600000000000001
+          },
+          "away": {
+            "played": 2,
+            "rank": 51,
+            "pointsFor": 31.1734693877551,
+            "pointsAgainst": 23.573469387755104,
+            "offence": 1.1564668769716089,
+            "defence": 0.8745236593059937,
+            "pointDifferential": 7.599999999999998
+          }
+        },
+        "strengthGap": 2
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 43.5,
+        "totalUnder": 60.5,
+        "spread": {
+          "side": "Northwestern",
+          "where": "H",
+          "line": 11.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLWW",
+          "played": 4,
+          "pointsFor": 128,
+          "pointsAgainst": 72,
+          "winRate": 0.5,
+          "pointsForAvg": 32,
+          "pointsAgainstAvg": 18
+        },
+        "away": {
+          "streak": "LW",
+          "played": 2,
+          "pointsFor": 75,
+          "pointsAgainst": 37,
+          "winRate": 0.5,
+          "pointsForAvg": 37.5,
+          "pointsAgainstAvg": 18.5
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
