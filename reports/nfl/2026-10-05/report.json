@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-05",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-05T19:17:03.404Z",
+  "stats": {
+    "totalGames": 2,
+    "otherDays": 1,
+    "daysCached": 21,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 22.316326530612244,
+    "marginSd": 12.586990538928188,
+    "totalSd": 13.370749506138003,
+    "spreadsDerivedFromGames": 57
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-10-06T00:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "home": "New Orleans Saints",
+      "away": "Atlanta Falcons",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "medium",
+        "points": {
+          "home": 25.2,
+          "away": 21.5,
+          "total": 46.7
+        },
+        "margin": 3.7,
+        "spread": {
+          "favourite": "New Orleans Saints",
+          "line": -3.7,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.6153940209934781,
+          "away": 0.38278624982876236,
+          "tie": 0.0018197291777595293
+        },
+        "regulation": {
+          "tie": 0.030328819629325487
+        },
+        "total": {
+          "projected": 46.7,
+          "range": [
+            29.5,
+            63.8
+          ],
+          "overUnder": [
+            {
+              "line": 42.5,
+              "over": 0.6226416992059877
+            },
+            {
+              "line": 45.5,
+              "over": 0.5350840057454507
+            },
+            {
+              "line": 48.5,
+              "over": 0.4457863789807821
+            },
+            {
+              "line": 51.5,
+              "over": 0.3591676545468466
+            },
+            {
+              "line": 54.5,
+              "over": 0.27925531125844216
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 12.6,
+            "away": 10.7,
+            "total": 23.3
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.059106614975268534
+          },
+          {
+            "margin": 7,
+            "probability": 0.05267611140750694
+          },
+          {
+            "margin": 10,
+            "probability": 0.04547647853219161
+          },
+          {
+            "margin": 14,
+            "probability": 0.03447405871785636
+          },
+          {
+            "margin": 6,
+            "probability": 0.054685773243256686
+          },
+          {
+            "margin": 4,
+            "probability": 0.05792758146128307
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 2,
+            "rank": 18,
+            "pointsFor": 23.589795918367347,
+            "pointsAgainst": 23.789795918367346,
+            "offence": 1.0570644718792868,
+            "defence": 1.066026520347508,
+            "pointDifferential": -0.1999999999999993
+          },
+          "away": {
+            "played": 2,
+            "rank": 19,
+            "pointsFor": 20.989795918367346,
+            "pointsAgainst": 22.989795918367346,
+            "offence": 0.9405578417924096,
+            "defence": 1.0301783264746227,
+            "pointDifferential": -2
+          }
+        },
+        "strengthGap": 1.8
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 39.5,
+        "totalUnder": 54.5,
+        "spread": {
+          "side": "New Orleans Saints",
+          "where": "H",
+          "line": 3.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LW",
+          "played": 2,
+          "pointsFor": 51,
+          "pointsAgainst": 52,
+          "winRate": 0.5,
+          "pointsForAvg": 25.5,
+          "pointsAgainstAvg": 26
+        },
+        "away": {
+          "streak": "WWL",
+          "played": 3,
+          "pointsFor": 73,
+          "pointsAgainst": 62,
+          "winRate": 0.6666666666666666,
+          "pointsForAvg": 24.333333333333332,
+          "pointsAgainstAvg": 20.666666666666668
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
