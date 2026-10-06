@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-06",
+  "sport": "american-football",
+  "competition": "NCAA Football",
+  "competitionKey": "ncaa",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-06T16:46:19.196Z",
+  "stats": {
+    "totalGames": 3,
+    "otherDays": 2,
+    "daysCached": 22,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "teamsKnown": 171,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 26.909756097560976,
+    "marginSd": 23.35913327451731,
+    "totalSd": 15.700432094056872,
+    "spreadsDerivedFromGames": 272
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-10-07T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "home": "Troy",
+      "away": "Southern Miss",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "medium",
+        "points": {
+          "home": 26,
+          "away": 21.8,
+          "total": 47.8
+        },
+        "margin": 4.2,
+        "spread": {
+          "favourite": "Troy",
+          "line": -4.2,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5707300454035698,
+          "away": 0.4292699545964302,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.016808115422647485
+        },
+        "total": {
+          "projected": 47.8,
+          "range": [
+            27.6,
+            67.9
+          ],
+          "overUnder": [
+            {
+              "line": 42.5,
+              "over": 0.6309560476360628
+            },
+            {
+              "line": 45.5,
+              "over": 0.5569770133334933
+            },
+            {
+              "line": 48.5,
+              "over": 0.48095035176570033
+            },
+            {
+              "line": 51.5,
+              "over": 0.40561257861692845
+            },
+            {
+              "line": 54.5,
+              "over": 0.33362569227625627
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 13,
+            "away": 10.9,
+            "total": 23.9
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.03334900047633488
+          },
+          {
+            "margin": 7,
+            "probability": 0.03218636510713763
+          },
+          {
+            "margin": 10,
+            "probability": 0.03076259715241947
+          },
+          {
+            "margin": 14,
+            "probability": 0.02825108650767011
+          },
+          {
+            "margin": 6,
+            "probability": 0.0325597206071106
+          },
+          {
+            "margin": 4,
+            "probability": 0.03314263247045279
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 2,
+            "rank": 128,
+            "pointsFor": 21.545853658536586,
+            "pointsAgainst": 25.74585365853659,
+            "offence": 0.8006707151273452,
+            "defence": 0.9567479380041695,
+            "pointDifferential": -4.200000000000003
+          },
+          "away": {
+            "played": 2,
+            "rank": 134,
+            "pointsFor": 24.345853658536587,
+            "pointsAgainst": 30.54585365853659,
+            "offence": 0.904722197045228,
+            "defence": 1.1351219070062541,
+            "pointDifferential": -6.200000000000003
+          }
+        },
+        "strengthGap": 2
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 39.5,
+        "totalUnder": 56.5,
+        "spread": {
+          "side": "Troy",
+          "where": "H",
+          "line": 8.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLLL",
+          "played": 4,
+          "pointsFor": 54,
+          "pointsAgainst": 96,
+          "winRate": 0,
+          "pointsForAvg": 13.5,
+          "pointsAgainstAvg": 24
+        },
+        "away": {
+          "streak": "LLLL",
+          "played": 4,
+          "pointsFor": 82,
+          "pointsAgainst": 144,
+          "winRate": 0,
+          "pointsForAvg": 20.5,
+          "pointsAgainstAvg": 36
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
