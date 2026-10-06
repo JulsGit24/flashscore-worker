@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-06",
+  "region": "europe",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-06T13:10:58.218Z",
+  "stats": {
+    "totalFixtures": 471,
+    "inScope": 1,
+    "tablesLoaded": 652,
+    "daysCached": 64,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "africa",
+      "algeria",
+      "bangladesh",
+      "ivory-coast",
+      "kenya",
+      "vietnam",
+      "world"
+    ],
+    "otherDays": 262,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-10-06T14:00:00.000Z",
+      "kickoffLocal": "10:00",
+      "country": "slovenia",
+      "league": "2. SNL",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Bilje",
+      "away": "Jadran Dekani",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 11,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "WWTTT",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 11,
+      "awayRank": 10,
+      "goalsIndex": 5.9,
+      "mismatchIndex": 2.7,
+      "rankScore": 6.5,
+      "projected": {
+        "home": 1.07,
+        "away": 1.15,
+        "total": 2.22
+      },
+      "probabilities": {
+        "home": 0.3352265082224381,
+        "draw": 0.2894399626037126,
+        "away": 0.375333529173849,
+        "btts": 0.44896380889206117,
+        "over15": 0.6502786483815288,
+        "over25": 0.3826440661895295,
+        "over35": 0.18459447536745055,
+        "under15": 0.3497213516184712,
+        "under25": 0.6173559338104705
+      },
+      "pick": {
+        "side": "Jadran Dekani",
+        "where": "A",
+        "probability": 0.375333529173849
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "england",
+      "slug": "professional-development-league",
+      "name": "ENGLAND: Professional Development League"
+    },
+    {
+      "country": "europe",
+      "slug": "uefa-nations-league",
+      "name": "EUROPE: UEFA Nations League - League C"
+    },
+    {
+      "country": "israel",
+      "slug": "liga-alef-north",
+      "name": "ISRAEL: Liga Alef North"
+    },
+    {
+      "country": "montenegro",
+      "slug": "druga-liga",
+      "name": "MONTENEGRO: Druga Liga"
+    },
+    {
+      "country": "wales",
+      "slug": "cymru-south",
+      "name": "WALES: Cymru South"
+    }
+  ],
+  "outOfRegionCountries": [
+    "africa",
+    "algeria",
+    "bangladesh",
+    "ivory-coast",
+    "kenya",
+    "vietnam",
+    "world"
+  ]
+}
