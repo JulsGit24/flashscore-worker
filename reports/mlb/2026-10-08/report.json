@@ -1,0 +1,252 @@
+{
+  "date": "2026-10-08",
+  "sport": "baseball",
+  "competition": "MLB",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-08T18:48:13.763Z",
+  "stats": {
+    "totalGames": 16,
+    "otherDays": 14,
+    "daysCached": 64,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 30,
+    "errors": []
+  },
+  "notCovered": {
+    "startingPitchers": "feed exposes no probable-pitcher data",
+    "injuries": "no injury or news feed responded",
+    "parkAndWeather": "not carried by the feed",
+    "inningData": "feed carries final scores only; the first-five split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "firstPitch": "2026-10-09T00:00:00.000Z",
+      "firstPitchLocal": "20:00",
+      "home": "Chicago White Sox",
+      "away": "Cleveland Guardians",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 4.56,
+          "away": 4.83,
+          "total": 9.39
+        },
+        "margin": -0.27,
+        "winProbability": {
+          "home": 0.4811388995824122,
+          "away": 0.5188611004175879
+        },
+        "regulation": {
+          "home": 0.4278311727395483,
+          "away": 0.47345081458848165,
+          "tie": 0.09871801267197014
+        },
+        "runLine": {
+          "favourite": "Cleveland Guardians",
+          "where": "A",
+          "line": -1.5,
+          "coverProbability": 0.37753508463152774,
+          "underdogProbability": 0.6224649153684723
+        },
+        "total": {
+          "projected": 9.39,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.7159706397654695
+            },
+            {
+              "line": 7.5,
+              "over": 0.6238667362474788
+            },
+            {
+              "line": 8.5,
+              "over": 0.5306125117095734
+            },
+            {
+              "line": 9.5,
+              "over": 0.4410876736908983
+            },
+            {
+              "line": 10.5,
+              "over": 0.358901574261953
+            },
+            {
+              "line": 11.5,
+              "over": 0.2862755215993478
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 4.56,
+            "overUnder": [
+              {
+                "line": 4.5,
+                "over": 0.4371012985461717
+              },
+              {
+                "line": 5.5,
+                "over": 0.32254298238091034
+              },
+              {
+                "line": 6.5,
+                "over": 0.2309850060949944
+              }
+            ]
+          },
+          "away": {
+            "projected": 4.83,
+            "overUnder": [
+              {
+                "line": 4.5,
+                "over": 0.4700192049407928
+              },
+              {
+                "line": 5.5,
+                "over": 0.3545354274500574
+              },
+              {
+                "line": 6.5,
+                "over": 0.2597764835648164
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.53,
+            "away": 2.68,
+            "total": 5.22
+          },
+          "winProbability": {
+            "home": 0.4034052490659245,
+            "away": 0.4420154069726563,
+            "tie": 0.1545793439614193
+          },
+          "total": {
+            "projected": 5.22,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.6911609490285068
+              },
+              {
+                "line": 4.5,
+                "over": 0.5468740823034915
+              },
+              {
+                "line": 5.5,
+                "over": 0.4101793260118573
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 56,
+            "rank": 13,
+            "runsFor": 4.750777687816934,
+            "runsAgainst": 4.654003494268547,
+            "offence": 1.0736941960523718,
+            "defence": 1.0518228527127305,
+            "runDifferential": 0.09677419354838701
+          },
+          "away": {
+            "played": 51,
+            "rank": 6,
+            "runsFor": 4.711372221835964,
+            "runsAgainst": 4.132424853414911,
+            "offence": 1.064788407801112,
+            "defence": 0.9339440555411517,
+            "runDifferential": 0.5789473684210531
+          }
+        },
+        "strengthGap": 0.48
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 6.5,
+        "totalUnder": 11.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LWWWW",
+          "played": 5,
+          "pointsFor": 23,
+          "pointsAgainst": 18,
+          "winRate": 0.8,
+          "pointsForAvg": 4.6,
+          "pointsAgainstAvg": 3.6
+        },
+        "away": {
+          "streak": "WLLLW",
+          "played": 5,
+          "pointsFor": 25,
+          "pointsAgainst": 18,
+          "winRate": 0.4,
+          "pointsForAvg": 5,
+          "pointsAgainstAvg": 3.6
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1791403200,
+          "home": "Chicago White Sox",
+          "away": "Cleveland Guardians",
+          "homePoints": 3,
+          "awayPoints": 9,
+          "total": 12,
+          "winner": "Cleveland Guardians"
+        },
+        {
+          "ts": 1791234000,
+          "home": "Cleveland Guardians",
+          "away": "Chicago White Sox",
+          "homePoints": 3,
+          "awayPoints": 4,
+          "total": 7,
+          "winner": "Chicago White Sox"
+        },
+        {
+          "ts": 1791046800,
+          "home": "Cleveland Guardians",
+          "away": "Chicago White Sox",
+          "homePoints": 0,
+          "awayPoints": 3,
+          "total": 3,
+          "winner": "Chicago White Sox"
+        },
+        {
+          "ts": 1789578600,
+          "home": "Cleveland Guardians",
+          "away": "Chicago White Sox",
+          "homePoints": 6,
+          "awayPoints": 3,
+          "total": 9,
+          "winner": "Cleveland Guardians"
+        },
+        {
+          "ts": 1789512000,
+          "home": "Cleveland Guardians",
+          "away": "Chicago White Sox",
+          "homePoints": 7,
+          "awayPoints": 6,
+          "total": 13,
+          "winner": "Cleveland Guardians"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 5,
+        "aWins": 2,
+        "bWins": 3,
+        "averageTotal": 8.8
+      }
+    }
+  ]
+}
