@@ -1,0 +1,766 @@
+{
+  "date": "2026-10-08",
+  "region": "europe",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-08T13:14:46.845Z",
+  "stats": {
+    "totalFixtures": 730,
+    "inScope": 9,
+    "tablesLoaded": 656,
+    "daysCached": 66,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "algeria",
+      "bhutan",
+      "egypt",
+      "india",
+      "iran",
+      "iraq",
+      "jordan",
+      "kuwait",
+      "kyrgyzstan",
+      "lebanon",
+      "libya",
+      "morocco",
+      "mozambique",
+      "qatar",
+      "saudi-arabia",
+      "tanzania",
+      "uganda",
+      "united-arab-emirates",
+      "uzbekistan",
+      "vietnam",
+      "world",
+      "yemen",
+      "zimbabwe"
+    ],
+    "otherDays": 558,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [
+    {
+      "kickoff": "2026-10-08T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "romania",
+      "league": "Liga 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Politehnica Timisoara",
+      "away": "Steaua Bucuresti",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTWW",
+          "played": 5,
+          "goalsFor": 15,
+          "goalsAgainst": 6,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "away": {
+          "streak": "WLTLT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 10,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 1,
+      "awayRank": 18,
+      "goalsIndex": 71.6,
+      "mismatchIndex": 74.2,
+      "rankScore": 92.1,
+      "projected": {
+        "home": 2.78,
+        "away": 0.83,
+        "total": 3.6
+      },
+      "probabilities": {
+        "home": 0.7789791874363631,
+        "draw": 0.13619261389472923,
+        "away": 0.08482819866890776,
+        "btts": 0.528958661801777,
+        "over15": 0.8752717705815799,
+        "over25": 0.6989734236614292,
+        "over35": 0.48682774620084746,
+        "under15": 0.1247282294184201,
+        "under25": 0.3010265763385708
+      },
+      "pick": {
+        "side": "Politehnica Timisoara",
+        "where": "H",
+        "probability": 0.7789791874363631
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "ATK_VS_LEAKY",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "kickoff": "2026-10-08T11:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "armenia",
+      "league": "First League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Ararat-Armenia 2",
+      "away": "Andranik",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLTTL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 9,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "LWWTL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 8,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 13,
+      "awayRank": 4,
+      "goalsIndex": 44.9,
+      "mismatchIndex": 46.6,
+      "rankScore": 57.8,
+      "projected": {
+        "home": 1.09,
+        "away": 1.95,
+        "total": 3.04
+      },
+      "probabilities": {
+        "home": 0.20819712315204664,
+        "draw": 0.21814315825743122,
+        "away": 0.5736597185905218,
+        "btts": 0.5693436959645384,
+        "over15": 0.8067457703501129,
+        "over25": 0.585708853427787,
+        "over35": 0.3617247776131632,
+        "under15": 0.19325422964988714,
+        "under25": 0.414291146572213
+      },
+      "pick": {
+        "side": "Andranik",
+        "where": "A",
+        "probability": 0.5736597185905218
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-10-08T11:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "armenia",
+      "league": "First League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Lernayin Artsakh",
+      "away": "Araks Ararat",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLWL",
+          "played": 5,
+          "goalsFor": 15,
+          "goalsAgainst": 10,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "TWTLT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 4,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 5,
+      "awayRank": 7,
+      "goalsIndex": 45.7,
+      "mismatchIndex": 8.3,
+      "rankScore": 47.8,
+      "projected": {
+        "home": 1.58,
+        "away": 1.48,
+        "total": 3.06
+      },
+      "probabilities": {
+        "home": 0.40180950012504,
+        "draw": 0.23995794899241887,
+        "away": 0.3582325508825412,
+        "btts": 0.6132746764384973,
+        "over15": 0.8096356921296389,
+        "over25": 0.5901165747435654,
+        "over35": 0.36620707500977073,
+        "under15": 0.19036430787036107,
+        "under25": 0.4098834252564346
+      },
+      "pick": {
+        "side": "Lernayin Artsakh",
+        "where": "H",
+        "probability": 0.40180950012504
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-08T11:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "armenia",
+      "league": "First League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Mika",
+      "away": "Sardarapat 2",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTTWL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 12,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 8,
+      "awayRank": 14,
+      "goalsIndex": 50.9,
+      "mismatchIndex": 38.3,
+      "rankScore": 60.5,
+      "projected": {
+        "home": 2.19,
+        "away": 0.98,
+        "total": 3.17
+      },
+      "probabilities": {
+        "home": 0.6489292650186883,
+        "draw": 0.19374705875851142,
+        "away": 0.15732367622280047,
+        "btts": 0.5547744198579432,
+        "over15": 0.8248416686251301,
+        "over25": 0.6137926810768171,
+        "over35": 0.3907842509007673,
+        "under15": 0.1751583313748699,
+        "under25": 0.38620731892318294
+      },
+      "pick": {
+        "side": "Mika",
+        "where": "H",
+        "probability": 0.6489292650186883
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-08T14:30:00.000Z",
+      "kickoffLocal": "10:30",
+      "country": "armenia",
+      "league": "First League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Urartu 2",
+      "away": "Bentonit",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTLWT",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 12,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "WWWLT",
+          "played": 5,
+          "goalsFor": 14,
+          "goalsAgainst": 12,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 9,
+      "awayRank": 3,
+      "goalsIndex": 100,
+      "mismatchIndex": 39.7,
+      "rankScore": 109.9,
+      "projected": {
+        "home": 1.95,
+        "away": 3.06,
+        "total": 5.01
+      },
+      "probabilities": {
+        "home": 0.23160717033049658,
+        "draw": 0.16412697954555452,
+        "away": 0.6042658501239488,
+        "btts": 0.8174943857802656,
+        "over15": 0.9598937916618647,
+        "over25": 0.8761442209540423,
+        "over35": 0.7362824378719788,
+        "under15": 0.040106208338135274,
+        "under25": 0.12385577904595768
+      },
+      "pick": {
+        "side": "Bentonit",
+        "where": "A",
+        "probability": 0.6042658501239488
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-10-08T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "finland",
+      "league": "Veikkausliiga",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "HJK",
+      "away": "VPS",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWWL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "LLWLW",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 9,
+      "goalsIndex": 9.6,
+      "mismatchIndex": 32.1,
+      "rankScore": 34.5,
+      "projected": {
+        "home": 1.44,
+        "away": 0.86,
+        "total": 2.3
+      },
+      "probabilities": {
+        "home": 0.5067963346380981,
+        "draw": 0.2685793537034916,
+        "away": 0.22462431165841015,
+        "btts": 0.44016895120104205,
+        "over15": 0.6691456919676667,
+        "over25": 0.4039609511356909,
+        "over35": 0.2006526498311756,
+        "under15": 0.3308543080323333,
+        "under25": 0.596039048864309
+      },
+      "pick": {
+        "side": "HJK",
+        "where": "H",
+        "probability": 0.5067963346380981
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-08T15:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "romania",
+      "league": "Liga 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Politehnica Timisoara",
+      "away": "Steaua Bucuresti",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTWW",
+          "played": 5,
+          "goalsFor": 15,
+          "goalsAgainst": 6,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "away": {
+          "streak": "WLTLT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 10,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 1,
+      "awayRank": 18,
+      "goalsIndex": 71.6,
+      "mismatchIndex": 74.2,
+      "rankScore": 92.1,
+      "projected": {
+        "home": 2.78,
+        "away": 0.83,
+        "total": 3.6
+      },
+      "probabilities": {
+        "home": 0.7789791874363631,
+        "draw": 0.13619261389472923,
+        "away": 0.08482819866890776,
+        "btts": 0.528958661801777,
+        "over15": 0.8752717705815799,
+        "over25": 0.6989734236614292,
+        "over35": 0.48682774620084746,
+        "under15": 0.1247282294184201,
+        "under25": 0.3010265763385708
+      },
+      "pick": {
+        "side": "Politehnica Timisoara",
+        "where": "H",
+        "probability": 0.7789791874363631
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "ATK_VS_LEAKY",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-10-08T16:00:00.000Z",
+      "kickoffLocal": "12:00",
+      "country": "finland",
+      "league": "Veikkausliiga",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "KuPS",
+      "away": "AC Oulu",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTTLL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 6,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "LLLTW",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 11,
+      "goalsIndex": 0,
+      "mismatchIndex": 24.1,
+      "rankScore": 24.1,
+      "projected": {
+        "home": 1.27,
+        "away": 0.7,
+        "total": 1.97
+      },
+      "probabilities": {
+        "home": 0.5008814898099702,
+        "draw": 0.2938664071413604,
+        "away": 0.2052521030486696,
+        "btts": 0.36203991514802336,
+        "over15": 0.5858130918039804,
+        "over25": 0.31520400560567535,
+        "over35": 0.13750403900212188,
+        "under15": 0.41418690819601955,
+        "under25": 0.6847959943943247
+      },
+      "pick": {
+        "side": "KuPS",
+        "where": "H",
+        "probability": 0.5008814898099702
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-08T17:30:00.000Z",
+      "kickoffLocal": "13:30",
+      "country": "romania",
+      "league": "SuperLiga",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "CFR Cluj",
+      "away": "U. Cluj",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLTWW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 6,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "WWLLL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 9,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 8,
+      "awayRank": 5,
+      "goalsIndex": 51,
+      "mismatchIndex": 8.6,
+      "rankScore": 53.1,
+      "projected": {
+        "home": 1.64,
+        "away": 1.53,
+        "total": 3.17
+      },
+      "probabilities": {
+        "home": 0.4060132641167238,
+        "draw": 0.23514892572007143,
+        "away": 0.3588378101632055,
+        "btts": 0.6314875746764352,
+        "over15": 0.8248446526461306,
+        "over25": 0.6137992605568867,
+        "over35": 0.39079462958258565,
+        "under15": 0.1751553473538694,
+        "under25": 0.3862007394431133
+      },
+      "pick": {
+        "side": "CFR Cluj",
+        "where": "H",
+        "probability": 0.4060132641167238
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-08T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "ireland",
+      "league": "Premier Division",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Shamrock Rovers",
+      "away": "Drogheda",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLTTW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 9,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "LWWLL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 7,
+      "goalsIndex": 43.6,
+      "mismatchIndex": 9.1,
+      "rankScore": 45.9,
+      "projected": {
+        "home": 1.71,
+        "away": 1.3,
+        "total": 3.02
+      },
+      "probabilities": {
+        "home": 0.47089688598675733,
+        "draw": 0.23709320387760877,
+        "away": 0.29200991013563377,
+        "btts": 0.5958938088689089,
+        "over15": 0.8023399600413388,
+        "over25": 0.5790457296137244,
+        "over35": 0.35500718508468415,
+        "under15": 0.19766003995866122,
+        "under25": 0.42095427038627564
+      },
+      "pick": {
+        "side": "Shamrock Rovers",
+        "where": "H",
+        "probability": 0.47089688598675733
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "azerbaijan",
+      "slug": "i-liqa",
+      "name": "AZERBAIJAN: I Liqa"
+    },
+    {
+      "country": "israel",
+      "slug": "liga-alef-north",
+      "name": "ISRAEL: Liga Alef North"
+    },
+    {
+      "country": "israel",
+      "slug": "liga-alef-south",
+      "name": "ISRAEL: Liga Alef South"
+    },
+    {
+      "country": "kazakhstan",
+      "slug": "first-league",
+      "name": "KAZAKHSTAN: First League"
+    },
+    {
+      "country": "montenegro",
+      "slug": "prva-crnogorska-liga",
+      "name": "MONTENEGRO: Prva Crnogorska Liga"
+    }
+  ],
+  "outOfRegionCountries": [
+    "algeria",
+    "bhutan",
+    "egypt",
+    "india",
+    "iran",
+    "iraq",
+    "jordan",
+    "kuwait",
+    "kyrgyzstan",
+    "lebanon",
+    "libya",
+    "morocco",
+    "mozambique",
+    "qatar",
+    "saudi-arabia",
+    "tanzania",
+    "uganda",
+    "united-arab-emirates",
+    "uzbekistan",
+    "vietnam",
+    "world",
+    "yemen",
+    "zimbabwe"
+  ]
+}
