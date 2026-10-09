@@ -1,0 +1,909 @@
+{
+  "date": "2026-10-09",
+  "region": "asia",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-09T13:01:36.770Z",
+  "stats": {
+    "totalFixtures": 2276,
+    "inScope": 11,
+    "tablesLoaded": 656,
+    "daysCached": 67,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "algeria",
+      "angola",
+      "bahrain",
+      "bangladesh",
+      "botswana",
+      "burkina-faso",
+      "burundi",
+      "egypt",
+      "eswatini",
+      "ethiopia",
+      "ghana",
+      "hong-kong",
+      "indonesia",
+      "iran",
+      "iraq",
+      "jordan",
+      "kenya",
+      "kuwait",
+      "kyrgyzstan",
+      "lebanon",
+      "malaysia",
+      "martinique",
+      "morocco",
+      "mozambique",
+      "myanmar",
+      "new-zealand",
+      "niger",
+      "nigeria",
+      "oman",
+      "qatar",
+      "rwanda",
+      "saudi-arabia",
+      "sri-lanka",
+      "syria",
+      "taiwan",
+      "tajikistan",
+      "tanzania",
+      "thailand",
+      "uganda",
+      "united-arab-emirates",
+      "uzbekistan",
+      "world",
+      "yemen"
+    ],
+    "otherDays": 1719,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [
+    {
+      "kickoff": "2026-10-09T11:35:00.000Z",
+      "kickoffLocal": "07:35",
+      "country": "china",
+      "league": "Chinese Super League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Qingdao Hainiu",
+      "away": "Beijing Guoan",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 13,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "TTTWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 6,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 16,
+      "awayRank": 2,
+      "goalsIndex": 71,
+      "mismatchIndex": 73.7,
+      "rankScore": 91.5,
+      "projected": {
+        "home": 0.98,
+        "away": 2.61,
+        "total": 3.59
+      },
+      "probabilities": {
+        "home": 0.11884567859559267,
+        "draw": 0.15844794698097944,
+        "away": 0.7227063744234274,
+        "btts": 0.5787485666410229,
+        "over15": 0.8733123054070464,
+        "over25": 0.6954513384480651,
+        "over35": 0.48261104798715054,
+        "under15": 0.1266876945929536,
+        "under25": 0.30454866155193494
+      },
+      "pick": {
+        "side": "Beijing Guoan",
+        "where": "A",
+        "probability": 0.7227063744234274
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "ATK_VS_LEAKY",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "kickoff": "2026-10-09T05:00:00.000Z",
+      "kickoffLocal": "01:00",
+      "country": "south-korea",
+      "league": "K League 1",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Daejeon",
+      "away": "Jeonbuk",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWWL",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 8,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "TLTWT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 8,
+      "goalsIndex": 67.2,
+      "mismatchIndex": 39.8,
+      "rankScore": 77.2,
+      "projected": {
+        "home": 2.24,
+        "away": 1.27,
+        "total": 3.51
+      },
+      "probabilities": {
+        "home": 0.5930741439421123,
+        "draw": 0.1983787193705865,
+        "away": 0.20854713668730127,
+        "btts": 0.6426049791186748,
+        "over15": 0.8651617631783943,
+        "over25": 0.6809909692243074,
+        "over35": 0.46551114029802565,
+        "under15": 0.13483823682160567,
+        "under25": 0.31900903077569265
+      },
+      "pick": {
+        "side": "Daejeon",
+        "where": "H",
+        "probability": 0.5930741439421123
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-10-09T05:00:00.000Z",
+      "kickoffLocal": "01:00",
+      "country": "south-korea",
+      "league": "K League 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Suwon FC",
+      "away": "Hwaseong",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTTWW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 3,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "away": {
+          "streak": "TWTWL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 5,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 2,
+      "awayRank": 6,
+      "goalsIndex": 0,
+      "mismatchIndex": 19.6,
+      "rankScore": 19.6,
+      "projected": {
+        "home": 1.26,
+        "away": 0.72,
+        "total": 1.99
+      },
+      "probabilities": {
+        "home": 0.4925965946949429,
+        "draw": 0.2947657813378186,
+        "away": 0.2126376239672385,
+        "btts": 0.36766294005493444,
+        "over15": 0.5885536311976778,
+        "over25": 0.31791028484656614,
+        "over35": 0.13928567625483243,
+        "under15": 0.4114463688023222,
+        "under25": 0.6820897151534339
+      },
+      "pick": {
+        "side": "Suwon FC",
+        "where": "H",
+        "probability": 0.4925965946949429
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-09T07:30:00.000Z",
+      "kickoffLocal": "03:30",
+      "country": "south-korea",
+      "league": "K League 1",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Gangwon",
+      "away": "Bucheon FC 1995",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLTTW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LTLLT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 12,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 6,
+      "awayRank": 10,
+      "goalsIndex": 25.5,
+      "mismatchIndex": 22.2,
+      "rankScore": 31,
+      "projected": {
+        "home": 1.63,
+        "away": 1,
+        "total": 2.64
+      },
+      "probabilities": {
+        "home": 0.52089275840675,
+        "draw": 0.2470575524763758,
+        "away": 0.232049689116874,
+        "btts": 0.508269292429692,
+        "over15": 0.7383548593076382,
+        "over25": 0.48907479406590343,
+        "over35": 0.27053927020398266,
+        "under15": 0.2616451406923618,
+        "under25": 0.5109252059340965
+      },
+      "pick": {
+        "side": "Gangwon",
+        "where": "H",
+        "probability": 0.52089275840675
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-09T07:30:00.000Z",
+      "kickoffLocal": "03:30",
+      "country": "south-korea",
+      "league": "K League 1",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Incheon",
+      "away": "Pohang",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTLWL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 5,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "WTTLT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 5,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 9,
+      "awayRank": 5,
+      "goalsIndex": 0,
+      "mismatchIndex": 18.3,
+      "rankScore": 18.3,
+      "projected": {
+        "home": 1.13,
+        "away": 0.77,
+        "total": 1.9
+      },
+      "probabilities": {
+        "home": 0.44019451062653164,
+        "draw": 0.3109078683722762,
+        "away": 0.24889762100119267,
+        "btts": 0.3635222883303209,
+        "over15": 0.5662509890988385,
+        "over25": 0.29627962196897845,
+        "over35": 0.1252977561200665,
+        "under15": 0.43374901090116147,
+        "under25": 0.7037203780310215
+      },
+      "pick": {
+        "side": "Incheon",
+        "where": "H",
+        "probability": 0.44019451062653164
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-09T07:30:00.000Z",
+      "kickoffLocal": "03:30",
+      "country": "south-korea",
+      "league": "K League 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Cheongju",
+      "away": "Seongnam",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLLT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 7,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TLWTW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 5,
+      "goalsIndex": 45,
+      "mismatchIndex": 6.3,
+      "rankScore": 46.5,
+      "projected": {
+        "home": 1.46,
+        "away": 1.58,
+        "total": 3.04
+      },
+      "probabilities": {
+        "home": 0.35342587173820245,
+        "draw": 0.24071083957438807,
+        "away": 0.40586328868740973,
+        "btts": 0.6096232944730792,
+        "over15": 0.8067467886846773,
+        "over25": 0.5857110364951119,
+        "over35": 0.36172814094301886,
+        "under15": 0.1932532113153227,
+        "under25": 0.4142889635048881
+      },
+      "pick": {
+        "side": "Seongnam",
+        "where": "A",
+        "probability": 0.40586328868740973
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-09T07:30:00.000Z",
+      "kickoffLocal": "03:30",
+      "country": "south-korea",
+      "league": "K League 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Gimpo FC",
+      "away": "Seoul E-Land",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTLLT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 9,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "WLWTT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 11,
+      "awayRank": 4,
+      "goalsIndex": 17.2,
+      "mismatchIndex": 21.1,
+      "rankScore": 25.3,
+      "projected": {
+        "home": 1.14,
+        "away": 1.32,
+        "total": 2.46
+      },
+      "probabilities": {
+        "home": 0.32123542162948243,
+        "draw": 0.2712577043877613,
+        "away": 0.40750687398275715,
+        "btts": 0.49848058949179347,
+        "over15": 0.704395011534683,
+        "over25": 0.4458858860727302,
+        "over35": 0.2339084031939285,
+        "under15": 0.295604988465317,
+        "under25": 0.5541141139272698
+      },
+      "pick": {
+        "side": "Seoul E-Land",
+        "where": "A",
+        "probability": 0.40750687398275715
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-09T10:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "japan",
+      "league": "J1 League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Kashima Antlers",
+      "away": "Gamba Osaka",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLLLW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 10,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "LLLTT",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 7,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "homeTrend": "descending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 8,
+      "awayRank": 16,
+      "goalsIndex": 73.5,
+      "mismatchIndex": 38.6,
+      "rankScore": 83.2,
+      "projected": {
+        "home": 2.36,
+        "away": 1.29,
+        "total": 3.64
+      },
+      "probabilities": {
+        "home": 0.6120151010287602,
+        "draw": 0.19011196007585732,
+        "away": 0.19787293889538257,
+        "btts": 0.6562975530997845,
+        "over15": 0.8791367537288306,
+        "over25": 0.7059969044333843,
+        "over35": 0.4953434211239241,
+        "under15": 0.1208632462711694,
+        "under25": 0.29400309556661575
+      },
+      "pick": {
+        "side": "Kashima Antlers",
+        "where": "H",
+        "probability": 0.6120151010287602
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-10-09T10:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "japan",
+      "league": "J1 League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Kashiwa Reysol",
+      "away": "Vissel Kobe",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLLW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 8,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 2,
+          "points": 15,
+          "ppg": 3
+        },
+        "homeTrend": "descending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 2,
+      "awayRank": 1,
+      "goalsIndex": 26.1,
+      "mismatchIndex": 3.7,
+      "rankScore": 27,
+      "projected": {
+        "home": 1.29,
+        "away": 1.36,
+        "total": 2.65
+      },
+      "probabilities": {
+        "home": 0.35333386582824705,
+        "draw": 0.2608116436967148,
+        "away": 0.38585449047503834,
+        "btts": 0.5387195873551703,
+        "over15": 0.7421229845762971,
+        "over25": 0.4940488283005497,
+        "over35": 0.2749166569236395,
+        "under15": 0.2578770154237029,
+        "under25": 0.5059511716994503
+      },
+      "pick": {
+        "side": "Vissel Kobe",
+        "where": "A",
+        "probability": 0.38585449047503834
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-09T11:35:00.000Z",
+      "kickoffLocal": "07:35",
+      "country": "china",
+      "league": "Chinese Super League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Qingdao Hainiu",
+      "away": "Beijing Guoan",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 13,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "TTTWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 6,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 16,
+      "awayRank": 2,
+      "goalsIndex": 71,
+      "mismatchIndex": 73.7,
+      "rankScore": 91.5,
+      "projected": {
+        "home": 0.98,
+        "away": 2.61,
+        "total": 3.59
+      },
+      "probabilities": {
+        "home": 0.11884567859559267,
+        "draw": 0.15844794698097944,
+        "away": 0.7227063744234274,
+        "btts": 0.5787485666410229,
+        "over15": 0.8733123054070464,
+        "over25": 0.6954513384480651,
+        "over35": 0.48261104798715054,
+        "under15": 0.1266876945929536,
+        "under25": 0.30454866155193494
+      },
+      "pick": {
+        "side": "Beijing Guoan",
+        "where": "A",
+        "probability": 0.7227063744234274
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "ATK_VS_LEAKY",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-10-09T11:35:00.000Z",
+      "kickoffLocal": "07:35",
+      "country": "china",
+      "league": "Chinese Super League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Shenzhen Xinpengcheng",
+      "away": "Henan Songshan Longmen",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLTWL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "TTTTL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 10,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 13,
+      "awayRank": 12,
+      "goalsIndex": 19.5,
+      "mismatchIndex": 4.4,
+      "rankScore": 20.6,
+      "projected": {
+        "home": 1.3,
+        "away": 1.21,
+        "total": 2.51
+      },
+      "probabilities": {
+        "home": 0.3868631420322412,
+        "draw": 0.26908119773313854,
+        "away": 0.3440556602346203,
+        "btts": 0.5105391259019894,
+        "over15": 0.7147484218896026,
+        "over25": 0.45874935248029847,
+        "over35": 0.244563464407847,
+        "under15": 0.28525157811039736,
+        "under25": 0.5412506475197015
+      },
+      "pick": {
+        "side": "Shenzhen Xinpengcheng",
+        "where": "H",
+        "probability": 0.3868631420322412
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-09T12:00:00.000Z",
+      "kickoffLocal": "08:00",
+      "country": "china",
+      "league": "Chinese Super League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Zhejiang Professional",
+      "away": "Shanghai Port",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLWTL",
+          "played": 5,
+          "goalsFor": 14,
+          "goalsAgainst": 7,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TWWTW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 4,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 1,
+      "goalsIndex": 57.7,
+      "mismatchIndex": 30.3,
+      "rankScore": 65.3,
+      "projected": {
+        "home": 1.94,
+        "away": 1.38,
+        "total": 3.31
+      },
+      "probabilities": {
+        "home": 0.5060191443461325,
+        "draw": 0.22058989432937776,
+        "away": 0.27339096132449003,
+        "btts": 0.6408696011730747,
+        "over15": 0.843818748545494,
+        "over25": 0.6445719631251062,
+        "over35": 0.4240721872598776,
+        "under15": 0.156181251454506,
+        "under25": 0.35542803687489377
+      },
+      "pick": {
+        "side": "Zhejiang Professional",
+        "where": "H",
+        "probability": 0.5060191443461325
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    }
+  ],
+  "needsReview": [],
+  "outOfRegionCountries": [
+    "algeria",
+    "angola",
+    "bahrain",
+    "bangladesh",
+    "botswana",
+    "burkina-faso",
+    "burundi",
+    "egypt",
+    "eswatini",
+    "ethiopia",
+    "ghana",
+    "hong-kong",
+    "indonesia",
+    "iran",
+    "iraq",
+    "jordan",
+    "kenya",
+    "kuwait",
+    "kyrgyzstan",
+    "lebanon",
+    "malaysia",
+    "martinique",
+    "morocco",
+    "mozambique",
+    "myanmar",
+    "new-zealand",
+    "niger",
+    "nigeria",
+    "oman",
+    "qatar",
+    "rwanda",
+    "saudi-arabia",
+    "sri-lanka",
+    "syria",
+    "taiwan",
+    "tajikistan",
+    "tanzania",
+    "thailand",
+    "uganda",
+    "united-arab-emirates",
+    "uzbekistan",
+    "world",
+    "yemen"
+  ]
+}
