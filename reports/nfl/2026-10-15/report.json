@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-15",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-15T14:58:51.837Z",
+  "stats": {
+    "totalGames": 10,
+    "otherDays": 6,
+    "daysCached": 31,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 22.93846153846154,
+    "marginSd": 13.071953081921516,
+    "totalSd": 13.754041575975393,
+    "spreadsDerivedFromGames": 78
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-10-16T00:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "home": "Denver Broncos",
+      "away": "Seattle Seahawks",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 22,
+          "away": 25.7,
+          "total": 47.7
+        },
+        "margin": -3.6,
+        "spread": {
+          "favourite": "Seattle Seahawks",
+          "line": -3.6,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.38996966277819817,
+          "away": 0.6082686675115831,
+          "tie": 0.0017616697102186805
+        },
+        "regulation": {
+          "tie": 0.02936116183697801
+        },
+        "total": {
+          "projected": 47.7,
+          "range": [
+            30.1,
+            65.3
+          ],
+          "overUnder": [
+            {
+              "line": 42.5,
+              "over": 0.6477652862530412
+            },
+            {
+              "line": 45.5,
+              "over": 0.5640228594708021
+            },
+            {
+              "line": 48.5,
+              "over": 0.4772959931097591
+            },
+            {
+              "line": 51.5,
+              "over": 0.391635598262687
+            },
+            {
+              "line": 54.5,
+              "over": 0.3109439428020673
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 11,
+            "away": 12.8,
+            "total": 23.9
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.057312673363036915
+          },
+          {
+            "margin": 7,
+            "probability": 0.05144356617951201
+          },
+          {
+            "margin": 10,
+            "probability": 0.044820542480226266
+          },
+          {
+            "margin": 14,
+            "probability": 0.03457088655007595
+          },
+          {
+            "margin": 6,
+            "probability": 0.05328218291025555
+          },
+          {
+            "margin": 4,
+            "probability": 0.056239559467637645
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 12,
+            "pointsFor": 20.72692307692308,
+            "pointsAgainst": 22.47692307692308,
+            "offence": 0.903588195841717,
+            "defence": 0.9798792756539236,
+            "pointDifferential": -1.75
+          },
+          "away": {
+            "played": 4,
+            "rank": 13,
+            "pointsFor": 27.11648351648352,
+            "pointsAgainst": 23.402197802197804,
+            "offence": 1.1821404618185303,
+            "defence": 1.0202165373191532,
+            "pointDifferential": 3.7142857142857153
+          }
+        },
+        "strengthGap": 5.5
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 39.5,
+        "totalUnder": 55.5,
+        "spread": {
+          "side": "Seattle Seahawks",
+          "where": "A",
+          "line": 3.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WLWWW",
+          "played": 5,
+          "pointsFor": 117,
+          "pointsAgainst": 106,
+          "winRate": 0.8,
+          "pointsForAvg": 23.4,
+          "pointsAgainstAvg": 21.2
+        },
+        "away": {
+          "streak": "LWLW",
+          "played": 4,
+          "pointsFor": 121,
+          "pointsAgainst": 95,
+          "winRate": 0.5,
+          "pointsForAvg": 30.25,
+          "pointsAgainstAvg": 23.75
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
