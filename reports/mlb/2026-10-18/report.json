@@ -1,0 +1,252 @@
+{
+  "date": "2026-10-18",
+  "sport": "baseball",
+  "competition": "MLB",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-18T15:46:58.251Z",
+  "stats": {
+    "totalGames": 25,
+    "otherDays": 10,
+    "daysCached": 74,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 30,
+    "errors": []
+  },
+  "notCovered": {
+    "startingPitchers": "feed exposes no probable-pitcher data",
+    "injuries": "no injury or news feed responded",
+    "parkAndWeather": "not carried by the feed",
+    "inningData": "feed carries final scores only; the first-five split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "firstPitch": "2026-10-18T21:00:00.000Z",
+      "firstPitchLocal": "17:00",
+      "home": "Cleveland Guardians",
+      "away": "Tampa Bay Rays",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 4.04,
+          "away": 4.11,
+          "total": 8.15
+        },
+        "margin": -0.07,
+        "winProbability": {
+          "home": 0.4973489394332251,
+          "away": 0.5026510605667744
+        },
+        "regulation": {
+          "home": 0.43771091804555234,
+          "away": 0.45184830160690503,
+          "tie": 0.11044078034754218
+        },
+        "runLine": {
+          "favourite": "Tampa Bay Rays",
+          "where": "A",
+          "line": -1.5,
+          "coverProbability": 0.3466232286157256,
+          "underdogProbability": 0.6533767713842744
+        },
+        "total": {
+          "projected": 8.15,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.6180555987003871
+            },
+            {
+              "line": 7.5,
+              "over": 0.5143374847514228
+            },
+            {
+              "line": 8.5,
+              "over": 0.4162144432850444
+            },
+            {
+              "line": 9.5,
+              "over": 0.32819784266440644
+            },
+            {
+              "line": 10.5,
+              "over": 0.25270068049269223
+            },
+            {
+              "line": 11.5,
+              "over": 0.1903661689907078
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 4.04,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.5049429365767308
+              },
+              {
+                "line": 4.5,
+                "over": 0.36823535576019906
+              },
+              {
+                "line": 5.5,
+                "over": 0.2583750276878852
+              }
+            ]
+          },
+          "away": {
+            "projected": 4.11,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.5149803259773987
+              },
+              {
+                "line": 4.5,
+                "over": 0.37836417293041585
+              },
+              {
+                "line": 5.5,
+                "over": 0.26757406105852405
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.24,
+            "away": 2.28,
+            "total": 4.53
+          },
+          "winProbability": {
+            "home": 0.40820577989310997,
+            "away": 0.4200205840119617,
+            "tie": 0.17177363609492724
+          },
+          "total": {
+            "projected": 4.53,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.6055091228686641
+              },
+              {
+                "line": 4.5,
+                "over": 0.44979532162125446
+              },
+              {
+                "line": 5.5,
+                "over": 0.31475601609339504
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 57,
+            "rank": 6,
+            "runsFor": 4.658482142857143,
+            "runsAgainst": 4.0553075396825395,
+            "offence": 1.0553729456384324,
+            "defence": 0.918724539963478,
+            "runDifferential": 0.6031746031746037
+          },
+          "away": {
+            "played": 57,
+            "rank": 3,
+            "runsFor": 4.610863095238095,
+            "runsAgainst": 3.7061011904761907,
+            "offence": 1.0445849136114622,
+            "defence": 0.8396123050990308,
+            "runDifferential": 0.9047619047619042
+          }
+        },
+        "strengthGap": 0.3
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 5.5,
+        "totalUnder": 10.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LWLLW",
+          "played": 5,
+          "pointsFor": 15,
+          "pointsAgainst": 18,
+          "winRate": 0.4,
+          "pointsForAvg": 3,
+          "pointsAgainstAvg": 3.6
+        },
+        "away": {
+          "streak": "WLWWL",
+          "played": 5,
+          "pointsFor": 18,
+          "pointsAgainst": 15,
+          "winRate": 0.6,
+          "pointsForAvg": 3.6,
+          "pointsAgainstAvg": 3
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1792281600,
+          "home": "Cleveland Guardians",
+          "away": "Tampa Bay Rays",
+          "homePoints": 3,
+          "awayPoints": 7,
+          "total": 10,
+          "winner": "Tampa Bay Rays"
+        },
+        {
+          "ts": 1792083600,
+          "home": "Cleveland Guardians",
+          "away": "Tampa Bay Rays",
+          "homePoints": 3,
+          "awayPoints": 2,
+          "total": 5,
+          "winner": "Cleveland Guardians"
+        },
+        {
+          "ts": 1791936000,
+          "home": "Tampa Bay Rays",
+          "away": "Cleveland Guardians",
+          "homePoints": 3,
+          "awayPoints": 1,
+          "total": 4,
+          "winner": "Tampa Bay Rays"
+        },
+        {
+          "ts": 1791936000,
+          "home": "Tampa Bay Rays",
+          "away": "Cleveland Guardians",
+          "homePoints": 3,
+          "awayPoints": 1,
+          "total": 4,
+          "winner": "Tampa Bay Rays"
+        },
+        {
+          "ts": 1791849600,
+          "home": "Tampa Bay Rays",
+          "away": "Cleveland Guardians",
+          "homePoints": 3,
+          "awayPoints": 7,
+          "total": 10,
+          "winner": "Cleveland Guardians"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 5,
+        "aWins": 2,
+        "bWins": 3,
+        "averageTotal": 6.6
+      }
+    }
+  ]
+}
