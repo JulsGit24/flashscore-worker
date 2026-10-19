@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-19",
+  "sport": "basketball",
+  "competition": "WNBA",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-19T21:27:28.909Z",
+  "stats": {
+    "totalGames": 138,
+    "daysCached": 77,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 15,
+    "gamesWithQuarters": 185,
+    "otherDays": 80,
+    "errors": []
+  },
+  "notCovered": {
+    "playerProps": "feed exposes no player-level data",
+    "injuries": "no injury or news feed responded"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "tipoff": "2026-10-20T00:00:00.000Z",
+      "tipoffLocal": "20:00",
+      "home": "Golden State Valkyries W",
+      "away": "Atlanta Dream W",
+      "projection": {
+        "confidence": "high",
+        "points": {
+          "home": 81,
+          "away": 78.4,
+          "total": 159.4
+        },
+        "margin": 2.5,
+        "spread": {
+          "favourite": "Golden State Valkyries W",
+          "line": -2.5,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5865206056414511,
+          "away": 0.41347939435854886
+        },
+        "total": {
+          "projected": 159.4,
+          "range": [
+            138.3,
+            180.5
+          ],
+          "overUnder": [
+            {
+              "line": 155.5,
+              "over": 0.5933412335198893
+            },
+            {
+              "line": 160.5,
+              "over": 0.47333783227730575
+            },
+            {
+              "line": 165.5,
+              "over": 0.3557240524712213
+            }
+          ]
+        },
+        "ratings": {
+          "home": {
+            "played": 23,
+            "rank": 1,
+            "pointsFor": 82.37152777777777,
+            "pointsAgainst": 74.89004629629629,
+            "offence": 0.9577214602194164,
+            "defence": 0.8707353915819716,
+            "netRating": 7.481481481481481
+          },
+          "away": {
+            "played": 22,
+            "rank": 2,
+            "pointsFor": 91.80889423076923,
+            "pointsAgainst": 82.96274038461539,
+            "offence": 1.0674483115213427,
+            "defence": 0.9645954009656436,
+            "netRating": 8.84615384615384
+          }
+        },
+        "strengthGap": 1.4
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 150.5,
+        "totalUnder": 168.5,
+        "spread": {
+          "side": "Golden State Valkyries W",
+          "where": "H",
+          "line": 4.5
+        }
+      },
+      "periods": {
+        "quarters": [
+          {
+            "period": "Q1",
+            "points": {
+              "home": 20.7,
+              "away": 19.5,
+              "total": 40.2
+            },
+            "margin": 1.2,
+            "outcome": {
+              "home": 0.5456522466183713,
+              "tie": 0.06790280542911376,
+              "away": 0.38644494795251494
+            }
+          },
+          {
+            "period": "Q2",
+            "points": {
+              "home": 20,
+              "away": 18.5,
+              "total": 38.5
+            },
+            "margin": 1.5,
+            "outcome": {
+              "home": 0.5714431922863641,
+              "tie": 0.06687331884644371,
+              "away": 0.3616834888671922
+            }
+          },
+          {
+            "period": "Q3",
+            "points": {
+              "home": 21.2,
+              "away": 20.7,
+              "total": 41.9
+            },
+            "margin": 0.4,
+            "outcome": {
+              "home": 0.4943735130206428,
+              "tie": 0.06911078426132644,
+              "away": 0.43651570271803075
+            }
+          },
+          {
+            "period": "Q4",
+            "points": {
+              "home": 19.1,
+              "away": 19.6,
+              "total": 38.7
+            },
+            "margin": -0.5,
+            "outcome": {
+              "home": 0.43003624347055147,
+              "tie": 0.06901871118422243,
+              "away": 0.5009450453452261
+            }
+          }
+        ],
+        "halves": [
+          {
+            "period": "H1",
+            "points": {
+              "home": 40.7,
+              "away": 38,
+              "total": 78.7
+            },
+            "margin": 2.7,
+            "outcome": {
+              "home": 0.6066295145159608,
+              "tie": 0.046402815149868215,
+              "away": 0.346967670334171
+            }
+          },
+          {
+            "period": "H2",
+            "points": {
+              "home": 40.3,
+              "away": 40.3,
+              "total": 80.6
+            },
+            "margin": 0,
+            "outcome": {
+              "home": 0.4754853965491259,
+              "tie": 0.049029206901748223,
+              "away": 0.47548539654912586
+            }
+          }
+        ],
+        "bestForHome": "Q2",
+        "bestForAway": "Q4"
+      },
+      "quarterSample": 28,
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 386,
+          "pointsAgainst": 355,
+          "winRate": 1,
+          "pointsForAvg": 77.2,
+          "pointsAgainstAvg": 71
+        },
+        "away": {
+          "streak": "LWWWW",
+          "played": 5,
+          "pointsFor": 436,
+          "pointsAgainst": 430,
+          "winRate": 0.8,
+          "pointsForAvg": 87.2,
+          "pointsAgainstAvg": 86
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1792265400,
+          "home": "Golden State Valkyries W",
+          "away": "Atlanta Dream W",
+          "homePoints": 68,
+          "awayPoints": 64,
+          "total": 132,
+          "winner": "Golden State Valkyries W"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 1,
+        "aWins": 1,
+        "bWins": 0,
+        "averageTotal": 132
+      }
+    }
+  ]
+}
