@@ -1,0 +1,1306 @@
+{
+  "date": "2026-10-20",
+  "region": "europe",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-20T11:20:14.733Z",
+  "stats": {
+    "totalFixtures": 572,
+    "inScope": 16,
+    "tablesLoaded": 678,
+    "daysCached": 78,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "africa",
+      "bangladesh",
+      "dr-congo",
+      "egypt",
+      "ethiopia",
+      "indonesia",
+      "iran",
+      "ivory-coast",
+      "kenya",
+      "kyrgyzstan",
+      "libya",
+      "mauritania",
+      "saudi-arabia",
+      "singapore",
+      "sri-lanka",
+      "tajikistan",
+      "thailand",
+      "turkmenistan",
+      "uganda",
+      "uzbekistan",
+      "world"
+    ],
+    "otherDays": 323,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [
+    {
+      "kickoff": "2026-10-20T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "sweden",
+      "league": "Superettan",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Norrkoping",
+      "away": "Orebro",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTWT",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 3,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "away": {
+          "streak": "TLTWL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 7,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 1,
+      "awayRank": 11,
+      "goalsIndex": 84.4,
+      "mismatchIndex": 71.1,
+      "rankScore": 102.2,
+      "projected": {
+        "home": 3.02,
+        "away": 0.86,
+        "total": 3.87
+      },
+      "probabilities": {
+        "home": 0.8039284698645575,
+        "draw": 0.121010636518397,
+        "away": 0.07506089361704547,
+        "btts": 0.5486788246431902,
+        "over15": 0.8991928312658954,
+        "over25": 0.7437019049348804,
+        "over35": 0.542600306880101,
+        "under15": 0.10080716873410456,
+        "under25": 0.2562980950651196
+      },
+      "pick": {
+        "side": "Norrkoping",
+        "where": "H",
+        "probability": 0.8039284698645575
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "ATK_VS_LEAKY",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "europe",
+      "league": "Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "AS Roma",
+      "away": "Slovan Bratislava",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LT",
+          "played": 2,
+          "goalsFor": 4,
+          "goalsAgainst": 5,
+          "points": 1,
+          "ppg": 0.5
+        },
+        "away": {
+          "streak": "LL",
+          "played": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 9,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 39,
+      "awayRank": 60,
+      "goalsIndex": 85,
+      "mismatchIndex": 30.9,
+      "rankScore": 92.7,
+      "projected": {
+        "home": 3.09,
+        "away": 1.4,
+        "total": 4.49
+      },
+      "probabilities": {
+        "home": 0.71154075127777,
+        "draw": 0.1457037962459811,
+        "away": 0.14275545247624905,
+        "btts": 0.7191088553281941,
+        "over15": 0.9383756408715742,
+        "over25": 0.8252287153283158,
+        "over35": 0.6558854834319052,
+        "under15": 0.06162435912842579,
+        "under25": 0.17477128467168423
+      },
+      "pick": {
+        "side": "AS Roma",
+        "where": "H",
+        "probability": 0.71154075127777
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "LOW_SAMPLE"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "kickoff": "2026-10-20T11:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "armenia",
+      "league": "First League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Lernayin Artsakh",
+      "away": "Shirak Gyumri 2",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWL",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 14,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LWWLW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 10,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 6,
+      "awayRank": 10,
+      "goalsIndex": 83.5,
+      "mismatchIndex": 19.1,
+      "rankScore": 88.2,
+      "projected": {
+        "home": 2.3,
+        "away": 1.56,
+        "total": 3.85
+      },
+      "probabilities": {
+        "home": 0.5432482335734045,
+        "draw": 0.1985293637302783,
+        "away": 0.25822240269631763,
+        "btts": 0.710670597318856,
+        "over15": 0.8976064206455977,
+        "over25": 0.7406492833051808,
+        "over35": 0.5386977665938439,
+        "under15": 0.1023935793544023,
+        "under25": 0.25935071669481924
+      },
+      "pick": {
+        "side": "Lernayin Artsakh",
+        "where": "H",
+        "probability": 0.5432482335734045
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T11:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "armenia",
+      "league": "First League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Mika",
+      "away": "Araks Ararat",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWLTT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "WWTWT",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 3,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 5,
+      "goalsIndex": 39.4,
+      "mismatchIndex": 13.3,
+      "rankScore": 42.7,
+      "projected": {
+        "home": 1.29,
+        "away": 1.63,
+        "total": 2.93
+      },
+      "probabilities": {
+        "home": 0.3032292124292842,
+        "draw": 0.242877042009255,
+        "away": 0.45389374556146095,
+        "btts": 0.5827331282204877,
+        "over15": 0.788579660235183,
+        "over25": 0.5586492539889159,
+        "over35": 0.3348503252425495,
+        "under15": 0.211420339764817,
+        "under25": 0.44135074601108415
+      },
+      "pick": {
+        "side": "Araks Ararat",
+        "where": "A",
+        "probability": 0.45389374556146095
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-20T11:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "armenia",
+      "league": "First League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Pyunik Yerevan 2",
+      "away": "Olympia Yerevan",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLW",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 9,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 14,
+          "goalsAgainst": 3,
+          "points": 15,
+          "ppg": 3
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 1,
+      "goalsIndex": 55.9,
+      "mismatchIndex": 49.2,
+      "rankScore": 68.2,
+      "projected": {
+        "home": 1.1,
+        "away": 2.18,
+        "total": 3.27
+      },
+      "probabilities": {
+        "home": 0.18198429175227582,
+        "draw": 0.198753900328547,
+        "away": 0.6192618079191767,
+        "btts": 0.591714260415614,
+        "over15": 0.8389481217069915,
+        "over25": 0.6365345086897599,
+        "over35": 0.4152289584575863,
+        "under15": 0.1610518782930085,
+        "under25": 0.3634654913102401
+      },
+      "pick": {
+        "side": "Olympia Yerevan",
+        "where": "A",
+        "probability": 0.6192618079191767
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-20T14:30:00.000Z",
+      "kickoffLocal": "10:30",
+      "country": "romania",
+      "league": "Liga 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "FC ASA Tg. Mures",
+      "away": "Chindia Targoviste",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWTWL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 11,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "WWWLW",
+          "played": 5,
+          "goalsFor": 13,
+          "goalsAgainst": 6,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 13,
+      "awayRank": 4,
+      "goalsIndex": 57.8,
+      "mismatchIndex": 30.1,
+      "rankScore": 65.3,
+      "projected": {
+        "home": 1.29,
+        "away": 2.03,
+        "total": 3.31
+      },
+      "probabilities": {
+        "home": 0.2405347165172126,
+        "draw": 0.21412740525788612,
+        "away": 0.5453378782249017,
+        "btts": 0.6295455905065294,
+        "over15": 0.8438182593423157,
+        "over25": 0.644570849825503,
+        "over35": 0.42407038329356395,
+        "under15": 0.1561817406576843,
+        "under25": 0.35542915017449705
+      },
+      "pick": {
+        "side": "Chindia Targoviste",
+        "where": "A",
+        "probability": 0.5453378782249017
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-20T16:45:00.000Z",
+      "kickoffLocal": "12:45",
+      "country": "europe",
+      "league": "Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Fenerbahce",
+      "away": "Slavia Prague",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LT",
+          "played": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 7,
+          "points": 1,
+          "ppg": 0.5
+        },
+        "away": {
+          "streak": "LL",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 42,
+      "awayRank": 53,
+      "goalsIndex": 58.4,
+      "mismatchIndex": 8,
+      "rankScore": 60.4,
+      "projected": {
+        "home": 1.72,
+        "away": 1.83,
+        "total": 3.54
+      },
+      "probabilities": {
+        "home": 0.36722624484967076,
+        "draw": 0.22073719393541208,
+        "away": 0.41203656121491705,
+        "btts": 0.6892441375243162,
+        "over15": 0.869302146759206,
+        "over25": 0.6882999824221615,
+        "over35": 0.47411408795665844,
+        "under15": 0.13069785324079397,
+        "under25": 0.3117000175778385
+      },
+      "pick": {
+        "side": "Slavia Prague",
+        "where": "A",
+        "probability": 0.41203656121491705
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T16:45:00.000Z",
+      "kickoffLocal": "12:45",
+      "country": "europe",
+      "league": "Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Sabah Baku",
+      "away": "Dortmund",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WL",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "away": {
+          "streak": "LW",
+          "played": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 3,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 35,
+      "awayRank": 30,
+      "goalsIndex": 45,
+      "mismatchIndex": 2.9,
+      "rankScore": 45.7,
+      "projected": {
+        "home": 1.61,
+        "away": 1.6,
+        "total": 3.21
+      },
+      "probabilities": {
+        "home": 0.38520592773751905,
+        "draw": 0.23385453115005922,
+        "away": 0.38093954111242145,
+        "btts": 0.6385721421141163,
+        "over15": 0.8300982991867025,
+        "over25": 0.6221785705227717,
+        "over35": 0.39970446085236555,
+        "under15": 0.16990170081329747,
+        "under25": 0.3778214294772283
+      },
+      "pick": {
+        "side": "Sabah Baku",
+        "where": "H",
+        "probability": 0.38520592773751905
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "sweden",
+      "league": "Superettan",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Norrkoping",
+      "away": "Orebro",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTWT",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 3,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "away": {
+          "streak": "TLTWL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 7,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 1,
+      "awayRank": 11,
+      "goalsIndex": 84.4,
+      "mismatchIndex": 71.1,
+      "rankScore": 102.2,
+      "projected": {
+        "home": 3.02,
+        "away": 0.86,
+        "total": 3.87
+      },
+      "probabilities": {
+        "home": 0.8039284698645575,
+        "draw": 0.121010636518397,
+        "away": 0.07506089361704547,
+        "btts": 0.5486788246431902,
+        "over15": 0.8991928312658954,
+        "over25": 0.7437019049348804,
+        "over35": 0.542600306880101,
+        "under15": 0.10080716873410456,
+        "under25": 0.2562980950651196
+      },
+      "pick": {
+        "side": "Norrkoping",
+        "where": "H",
+        "probability": 0.8039284698645575
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "ATK_VS_LEAKY",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "england",
+      "league": "Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Wolves",
+      "away": "Portsmouth",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLWW",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 5,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "WWLTT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 5,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 13,
+      "goalsIndex": 41.7,
+      "mismatchIndex": 15.2,
+      "rankScore": 45.6,
+      "projected": {
+        "home": 1.74,
+        "away": 1.24,
+        "total": 2.98
+      },
+      "probabilities": {
+        "home": 0.49133556838545234,
+        "draw": 0.23575486348968286,
+        "away": 0.2729095681248651,
+        "btts": 0.5858879114378538,
+        "over15": 0.797844044596461,
+        "over25": 0.5723131719374676,
+        "over35": 0.34828583842953414,
+        "under15": 0.20215595540353903,
+        "under25": 0.42768682806253244
+      },
+      "pick": {
+        "side": "Wolves",
+        "where": "H",
+        "probability": 0.49133556838545234
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-20T18:45:00.000Z",
+      "kickoffLocal": "14:45",
+      "country": "scotland",
+      "league": "Championship",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Dunfermline",
+      "away": "Partick Thistle",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWWT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 2,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "WWWTL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 2,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 5,
+      "awayRank": 3,
+      "goalsIndex": 0,
+      "mismatchIndex": 14.2,
+      "rankScore": 14.2,
+      "projected": {
+        "home": 0.54,
+        "away": 0.72,
+        "total": 1.26
+      },
+      "probabilities": {
+        "home": 0.2413364499519626,
+        "draw": 0.4051329033836666,
+        "away": 0.3535306466643708,
+        "btts": 0.21415351808960514,
+        "over15": 0.35894189987526176,
+        "over25": 0.13377733355711258,
+        "over35": 0.03920821570348994,
+        "under15": 0.6410581001247382,
+        "under25": 0.8662226664428874
+      },
+      "pick": {
+        "side": "Draw",
+        "where": "D",
+        "probability": 0.4051329033836666
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-10-20T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "europe",
+      "league": "Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "AS Roma",
+      "away": "Slovan Bratislava",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LT",
+          "played": 2,
+          "goalsFor": 4,
+          "goalsAgainst": 5,
+          "points": 1,
+          "ppg": 0.5
+        },
+        "away": {
+          "streak": "LL",
+          "played": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 9,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 39,
+      "awayRank": 60,
+      "goalsIndex": 85,
+      "mismatchIndex": 30.9,
+      "rankScore": 92.7,
+      "projected": {
+        "home": 3.09,
+        "away": 1.4,
+        "total": 4.49
+      },
+      "probabilities": {
+        "home": 0.71154075127777,
+        "draw": 0.1457037962459811,
+        "away": 0.14275545247624905,
+        "btts": 0.7191088553281941,
+        "over15": 0.9383756408715742,
+        "over25": 0.8252287153283158,
+        "over35": 0.6558854834319052,
+        "under15": 0.06162435912842579,
+        "under25": 0.17477128467168423
+      },
+      "pick": {
+        "side": "AS Roma",
+        "where": "H",
+        "probability": 0.71154075127777
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "europe",
+      "league": "Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "FC Porto",
+      "away": "PSV",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LL",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "LT",
+          "played": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "points": 1,
+          "ppg": 0.5
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 52,
+      "awayRank": 40,
+      "goalsIndex": 30.8,
+      "mismatchIndex": 8.6,
+      "rankScore": 32.9,
+      "projected": {
+        "home": 1.46,
+        "away": 1.4,
+        "total": 2.86
+      },
+      "probabilities": {
+        "home": 0.3886703147975524,
+        "draw": 0.2496133069777423,
+        "away": 0.36171637822470554,
+        "btts": 0.5784353936828118,
+        "over15": 0.7789424289015127,
+        "over25": 0.5447244873785612,
+        "over35": 0.3214367164600147,
+        "under15": 0.22105757109848734,
+        "under25": 0.45527551262143884
+      },
+      "pick": {
+        "side": "FC Porto",
+        "where": "H",
+        "probability": 0.3886703147975524
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "europe",
+      "league": "Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Liverpool",
+      "away": "Villarreal",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 8,
+          "goalsAgainst": 4,
+          "points": 6,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WL",
+          "played": 2,
+          "goalsFor": 5,
+          "goalsAgainst": 4,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 9,
+      "awayRank": 26,
+      "goalsIndex": 85,
+      "mismatchIndex": 23,
+      "rankScore": 90.7,
+      "projected": {
+        "home": 2.9,
+        "away": 1.91,
+        "total": 4.81
+      },
+      "probabilities": {
+        "home": 0.5849031400946247,
+        "draw": 0.17105013460468652,
+        "away": 0.24404672530068885,
+        "btts": 0.8050331685241551,
+        "over15": 0.9526502512988955,
+        "over25": 0.8583741307374823,
+        "over35": 0.7072180841040162,
+        "under15": 0.04734974870110453,
+        "under25": 0.14162586926251775
+      },
+      "pick": {
+        "side": "Liverpool",
+        "where": "H",
+        "probability": 0.5849031400946247
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "europe",
+      "league": "Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Manchester City",
+      "away": "AEK Athens",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LW",
+          "played": 2,
+          "goalsFor": 4,
+          "goalsAgainst": 4,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "away": {
+          "streak": "LW",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 29,
+      "awayRank": 33,
+      "goalsIndex": 52.6,
+      "mismatchIndex": 4.4,
+      "rankScore": 53.7,
+      "projected": {
+        "home": 1.96,
+        "away": 1.45,
+        "total": 3.4
+      },
+      "probabilities": {
+        "home": 0.4954018122058363,
+        "draw": 0.21893540381731577,
+        "away": 0.2856627839768484,
+        "btts": 0.6576116675526329,
+        "over15": 0.8542872433502211,
+        "over25": 0.6621826508786459,
+        "over35": 0.4438237641026224,
+        "under15": 0.1457127566497789,
+        "under25": 0.3378173491213541
+      },
+      "pick": {
+        "side": "Manchester City",
+        "where": "H",
+        "probability": 0.4954018122058363
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "europe",
+      "league": "Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Napoli",
+      "away": "Bodo/Glimt",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LL",
+          "played": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 4,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "WL",
+          "played": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 5,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 54,
+      "awayRank": 38,
+      "goalsIndex": 36.7,
+      "mismatchIndex": 15.2,
+      "rankScore": 40.5,
+      "projected": {
+        "home": 1.72,
+        "away": 1.29,
+        "total": 3.01
+      },
+      "probabilities": {
+        "home": 0.47546864329843264,
+        "draw": 0.23655358180067318,
+        "away": 0.2879777749008941,
+        "btts": 0.5949544547080655,
+        "over15": 0.8023399404422571,
+        "over25": 0.5790456878737901,
+        "over35": 0.3550071211300948,
+        "under15": 0.1976600595577429,
+        "under25": 0.42095431212620993
+      },
+      "pick": {
+        "side": "Napoli",
+        "where": "H",
+        "probability": 0.47546864329843264
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "europe",
+      "league": "Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "PSG",
+      "away": "Barcelona",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 10,
+          "goalsAgainst": 3,
+          "points": 6,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 9,
+          "goalsAgainst": 2,
+          "points": 6,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 4,
+      "awayRank": 6,
+      "goalsIndex": 85,
+      "mismatchIndex": 1.7,
+      "rankScore": 85.4,
+      "projected": {
+        "home": 2.7,
+        "away": 2.3,
+        "total": 5
+      },
+      "probabilities": {
+        "home": 0.4786882331613083,
+        "draw": 0.18095936445403535,
+        "away": 0.3403524023846563,
+        "btts": 0.8392635726296344,
+        "over15": 0.9595662716852447,
+        "over25": 0.8753293376961708,
+        "over35": 0.7349344477143809,
+        "under15": 0.040433728314755335,
+        "under25": 0.12467066230382917
+      },
+      "pick": {
+        "side": "PSG",
+        "where": "H",
+        "probability": 0.4786882331613083
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T19:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "europe",
+      "league": "Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Stuttgart",
+      "away": "Atl. Madrid",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "points": 6,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WL",
+          "played": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 8,
+      "awayRank": 27,
+      "goalsIndex": 46.7,
+      "mismatchIndex": 23,
+      "rankScore": 52.5,
+      "projected": {
+        "home": 2.08,
+        "away": 1.18,
+        "total": 3.25
+      },
+      "probabilities": {
+        "home": 0.5806288362514609,
+        "draw": 0.20886455103534812,
+        "away": 0.21050661271319132,
+        "btts": 0.6061784033060693,
+        "over15": 0.8364634699595127,
+        "over25": 0.6324727626052546,
+        "over35": 0.4108028606136275,
+        "under15": 0.1635365300404873,
+        "under25": 0.36752723739474535
+      },
+      "pick": {
+        "side": "Stuttgart",
+        "where": "H",
+        "probability": 0.5806288362514609
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "denmark",
+      "slug": "a-liga-women",
+      "name": "DENMARK: A-Liga Women"
+    },
+    {
+      "country": "england",
+      "slug": "professional-development-league",
+      "name": "ENGLAND: Professional Development League"
+    },
+    {
+      "country": "northern-ireland",
+      "slug": "nifl-premiership",
+      "name": "NORTHERN IRELAND: NIFL Premiership"
+    },
+    {
+      "country": "romania",
+      "slug": "superliga-women",
+      "name": "ROMANIA: Superliga Women"
+    },
+    {
+      "country": "scotland",
+      "slug": "lowland-league",
+      "name": "SCOTLAND: Lowland League"
+    },
+    {
+      "country": "ukraine",
+      "slug": "druha-liga",
+      "name": "UKRAINE: Druha Liga"
+    }
+  ],
+  "outOfRegionCountries": [
+    "africa",
+    "bangladesh",
+    "dr-congo",
+    "egypt",
+    "ethiopia",
+    "indonesia",
+    "iran",
+    "ivory-coast",
+    "kenya",
+    "kyrgyzstan",
+    "libya",
+    "mauritania",
+    "saudi-arabia",
+    "singapore",
+    "sri-lanka",
+    "tajikistan",
+    "thailand",
+    "turkmenistan",
+    "uganda",
+    "uzbekistan",
+    "world"
+  ]
+}
