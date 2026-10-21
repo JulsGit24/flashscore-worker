@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-21",
+  "sport": "american-football",
+  "competition": "NCAA Football",
+  "competitionKey": "ncaa",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-21T15:12:28.804Z",
+  "stats": {
+    "totalGames": 5,
+    "otherDays": 4,
+    "daysCached": 37,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "teamsKnown": 174,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 26.364329268292682,
+    "marginSd": 21.29611150551195,
+    "totalSd": 16.543280704450115,
+    "spreadsDerivedFromGames": 439
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-10-22T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "home": "Sam Houston State",
+      "away": "New Mexico State",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "medium",
+        "points": {
+          "home": 23.8,
+          "away": 20.2,
+          "total": 44
+        },
+        "margin": 3.6,
+        "spread": {
+          "favourite": "Sam Houston State",
+          "line": -3.6,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5670628845765033,
+          "away": 0.43293711542349667,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.01846596159135011
+        },
+        "total": {
+          "projected": 44,
+          "range": [
+            22.8,
+            65.2
+          ],
+          "overUnder": [
+            {
+              "line": 39.5,
+              "over": 0.6065863005523353
+            },
+            {
+              "line": 42.5,
+              "over": 0.5354950053852693
+            },
+            {
+              "line": 45.5,
+              "over": 0.463248783538736
+            },
+            {
+              "line": 48.5,
+              "over": 0.3921981264724954
+            },
+            {
+              "line": 51.5,
+              "over": 0.3245772386194883
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 11.9,
+            "away": 10.1,
+            "total": 22
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.036577840153270036
+          },
+          {
+            "margin": 7,
+            "probability": 0.035044097654049144
+          },
+          {
+            "margin": 10,
+            "probability": 0.03318153978245758
+          },
+          {
+            "margin": 14,
+            "probability": 0.029939722315954542
+          },
+          {
+            "margin": 6,
+            "probability": 0.03553536416651665
+          },
+          {
+            "margin": 4,
+            "probability": 0.036304717658254715
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 4,
+            "rank": 114,
+            "pointsFor": 22.58471254355401,
+            "pointsAgainst": 25.58471254355401,
+            "offence": 0.8566389955808864,
+            "defence": 0.9704291083302359,
+            "pointDifferential": -3
+          },
+          "away": {
+            "played": 3,
+            "rank": 109,
+            "pointsFor": 22.348831300813007,
+            "pointsAgainst": 26.015497967479675,
+            "offence": 0.847692011178568,
+            "defence": 0.9867688156499952,
+            "pointDifferential": -3.666666666666668
+          }
+        },
+        "strengthGap": 0.7
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 34.5,
+        "totalUnder": 53.5,
+        "spread": {
+          "side": "Sam Houston State",
+          "where": "H",
+          "line": 8.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLL",
+          "played": 5,
+          "pointsFor": 26,
+          "pointsAgainst": 151,
+          "winRate": 0,
+          "pointsForAvg": 5.2,
+          "pointsAgainstAvg": 30.2
+        },
+        "away": {
+          "streak": "LLWWL",
+          "played": 5,
+          "pointsFor": 92,
+          "pointsAgainst": 112,
+          "winRate": 0.4,
+          "pointsForAvg": 18.4,
+          "pointsAgainstAvg": 22.4
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
