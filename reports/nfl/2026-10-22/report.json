@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-22",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-22T15:14:00.312Z",
+  "stats": {
+    "totalGames": 11,
+    "otherDays": 7,
+    "daysCached": 38,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 22.734177215189874,
+    "marginSd": 12.241247987669917,
+    "totalSd": 13.591216450842863,
+    "spreadsDerivedFromGames": 95
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-10-23T00:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "home": "Chicago Bears",
+      "away": "New England Patriots",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 19.3,
+          "away": 19.1,
+          "total": 38.5
+        },
+        "margin": 0.2,
+        "spread": {
+          "favourite": "Chicago Bears",
+          "line": -0.2,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5041147659157782,
+          "away": 0.49393052987950004,
+          "tie": 0.0019547042047217697
+        },
+        "regulation": {
+          "tie": 0.0325784034120295
+        },
+        "total": {
+          "projected": 38.5,
+          "range": [
+            21,
+            55.9
+          ],
+          "overUnder": [
+            {
+              "line": 33.5,
+              "over": 0.6422179555388228
+            },
+            {
+              "line": 36.5,
+              "over": 0.5571167297854669
+            },
+            {
+              "line": 39.5,
+              "over": 0.469284740766563
+            },
+            {
+              "line": 42.5,
+              "over": 0.38292851589739896
+            },
+            {
+              "line": 45.5,
+              "over": 0.3020444729744862
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 9.7,
+            "away": 9.6,
+            "total": 19.2
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.063230266969313
+          },
+          {
+            "margin": 7,
+            "probability": 0.0553354121957681
+          },
+          {
+            "margin": 10,
+            "probability": 0.04668211096155195
+          },
+          {
+            "margin": 14,
+            "probability": 0.03389497884772291
+          },
+          {
+            "margin": 6,
+            "probability": 0.05778674213281082
+          },
+          {
+            "margin": 4,
+            "probability": 0.06177163574554301
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 11,
+            "pointsFor": 19.900316455696203,
+            "pointsAgainst": 18.775316455696203,
+            "offence": 0.875347995545657,
+            "defence": 0.8258630289532294,
+            "pointDifferential": 1.125
+          },
+          "away": {
+            "played": 5,
+            "rank": 4,
+            "pointsFor": 24.275316455696203,
+            "pointsAgainst": 21.025316455696203,
+            "offence": 1.0677895322939865,
+            "defence": 0.9248329621380846,
+            "pointDifferential": 3.25
+          }
+        },
+        "strengthGap": 2.1
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 30.5,
+        "totalUnder": 46.5,
+        "spread": {
+          "side": "Chicago Bears",
+          "where": "H",
+          "line": 6.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WLWWW",
+          "played": 5,
+          "pointsFor": 115,
+          "pointsAgainst": 80,
+          "winRate": 0.8,
+          "pointsForAvg": 23,
+          "pointsAgainstAvg": 16
+        },
+        "away": {
+          "streak": "WWWLW",
+          "played": 5,
+          "pointsFor": 126,
+          "pointsAgainst": 100,
+          "winRate": 0.8,
+          "pointsForAvg": 25.2,
+          "pointsAgainstAvg": 20
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
