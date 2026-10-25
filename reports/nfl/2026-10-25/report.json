@@ -1,0 +1,1857 @@
+{
+  "date": "2026-10-25",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-25T14:21:10.301Z",
+  "stats": {
+    "totalGames": 14,
+    "otherDays": 1,
+    "daysCached": 41,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 22.7875,
+    "marginSd": 12.135085878490951,
+    "totalSd": 13.494844376363444,
+    "spreadsDerivedFromGames": 97
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-10-25T13:30:00.000Z",
+      "kickoffLocal": "09:30",
+      "home": "New Orleans Saints",
+      "away": "Pittsburgh Steelers",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 24.8,
+          "away": 26.5,
+          "total": 51.3
+        },
+        "margin": -1.6,
+        "spread": {
+          "favourite": "Pittsburgh Steelers",
+          "line": -1.6,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.4453638226066599,
+          "away": 0.5526821173466013,
+          "tie": 0.0019540600467387458
+        },
+        "regulation": {
+          "tie": 0.032567667445645765
+        },
+        "total": {
+          "projected": 51.3,
+          "range": [
+            34,
+            68.6
+          ],
+          "overUnder": [
+            {
+              "line": 45.5,
+              "over": 0.6665037156027284
+            },
+            {
+              "line": 48.5,
+              "over": 0.5823746162243033
+            },
+            {
+              "line": 51.5,
+              "over": 0.49428134209789865
+            },
+            {
+              "line": 54.5,
+              "over": 0.4064672833316505
+            },
+            {
+              "line": 57.5,
+              "over": 0.32313534249204867
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 12.4,
+            "away": 13.2,
+            "total": 25.7
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.06321138051493891
+          },
+          {
+            "margin": 7,
+            "probability": 0.055324668136260524
+          },
+          {
+            "margin": 10,
+            "probability": 0.04667910736315789
+          },
+          {
+            "margin": 14,
+            "probability": 0.03390042420427092
+          },
+          {
+            "margin": 6,
+            "probability": 0.05777354415323144
+          },
+          {
+            "margin": 4,
+            "probability": 0.061754268634996445
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 23,
+            "pointsFor": 23.7953125,
+            "pointsAgainst": 26.9203125,
+            "offence": 1.0442265496434449,
+            "defence": 1.1813631376851343,
+            "pointDifferential": -3.125
+          },
+          "away": {
+            "played": 5,
+            "rank": 13,
+            "pointsFor": 23.1703125,
+            "pointsAgainst": 22.9203125,
+            "offence": 1.016799232035107,
+            "defence": 1.0058283049917718,
+            "pointDifferential": 0.25
+          }
+        },
+        "strengthGap": 3.4
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 43.5,
+        "totalUnder": 58.5,
+        "spread": {
+          "side": "Pittsburgh Steelers",
+          "where": "A",
+          "line": 5.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "pointsFor": 122,
+          "pointsAgainst": 175,
+          "winRate": 0.2,
+          "pointsForAvg": 24.4,
+          "pointsAgainstAvg": 35
+        },
+        "away": {
+          "streak": "WWLLW",
+          "played": 5,
+          "pointsFor": 138,
+          "pointsAgainst": 122,
+          "winRate": 0.6,
+          "pointsForAvg": 27.6,
+          "pointsAgainstAvg": 24.4
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "home": "Atlanta Falcons",
+      "away": "San Francisco 49ers",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 24.1,
+          "away": 29.2,
+          "total": 53.3
+        },
+        "margin": -5.2,
+        "spread": {
+          "favourite": "San Francisco 49ers",
+          "line": -5.2,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.33459140035159246,
+          "away": 0.6636069640740644,
+          "tie": 0.00180163557434313
+        },
+        "regulation": {
+          "tie": 0.0300272595723855
+        },
+        "total": {
+          "projected": 53.3,
+          "range": [
+            36,
+            70.6
+          ],
+          "overUnder": [
+            {
+              "line": 48.5,
+              "over": 0.6400639092304674
+            },
+            {
+              "line": 51.5,
+              "over": 0.554216928917524
+            },
+            {
+              "line": 54.5,
+              "over": 0.4657393255978226
+            },
+            {
+              "line": 57.5,
+              "over": 0.3789303093600598
+            },
+            {
+              "line": 60.5,
+              "over": 0.29784843452109055
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 12,
+            "away": 14.6,
+            "total": 26.7
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.05856967226906973
+          },
+          {
+            "margin": 7,
+            "probability": 0.05238995630203758
+          },
+          {
+            "margin": 10,
+            "probability": 0.04542219633348099
+          },
+          {
+            "margin": 14,
+            "probability": 0.03466645749009678
+          },
+          {
+            "margin": 6,
+            "probability": 0.05432566418738133
+          },
+          {
+            "margin": 4,
+            "probability": 0.05743952668228469
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 21,
+            "pointsFor": 24.6703125,
+            "pointsAgainst": 25.1703125,
+            "offence": 1.082624794295118,
+            "defence": 1.1045666483817882,
+            "pointDifferential": -0.5
+          },
+          "away": {
+            "played": 5,
+            "rank": 2,
+            "pointsFor": 27.2953125,
+            "pointsAgainst": 21.4203125,
+            "offence": 1.1978195282501372,
+            "defence": 0.9400027427317609,
+            "pointDifferential": 5.875
+          }
+        },
+        "strengthGap": 6.4
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 45.5,
+        "totalUnder": 60.5,
+        "spread": {
+          "side": "San Francisco 49ers",
+          "where": "A",
+          "line": 1.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLLWW",
+          "played": 5,
+          "pointsFor": 159,
+          "pointsAgainst": 139,
+          "winRate": 0.4,
+          "pointsForAvg": 31.8,
+          "pointsAgainstAvg": 27.8
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 138,
+          "pointsAgainst": 107,
+          "winRate": 1,
+          "pointsForAvg": 27.6,
+          "pointsAgainstAvg": 21.4
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "home": "Baltimore Ravens",
+      "away": "Cincinnati Bengals",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 22.5,
+          "away": 21.8,
+          "total": 44.3
+        },
+        "margin": 0.7,
+        "spread": {
+          "favourite": "Baltimore Ravens",
+          "line": -0.7,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5220004707745368,
+          "away": 0.4760308566907675,
+          "tie": 0.0019686725346956735
+        },
+        "regulation": {
+          "tie": 0.03281120891159456
+        },
+        "total": {
+          "projected": 44.3,
+          "range": [
+            27,
+            61.6
+          ],
+          "overUnder": [
+            {
+              "line": 39.5,
+              "over": 0.639268392539557
+            },
+            {
+              "line": 42.5,
+              "over": 0.5533766209682491
+            },
+            {
+              "line": 45.5,
+              "over": 0.4648945014713912
+            },
+            {
+              "line": 48.5,
+              "over": 0.3781219003992764
+            },
+            {
+              "line": 51.5,
+              "over": 0.29711217127250555
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 11.3,
+            "away": 10.9,
+            "total": 22.2
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.0636549022226941
+          },
+          {
+            "margin": 7,
+            "probability": 0.05560054296405781
+          },
+          {
+            "margin": 10,
+            "probability": 0.04679150274771332
+          },
+          {
+            "margin": 14,
+            "probability": 0.0338187400941411
+          },
+          {
+            "margin": 6,
+            "probability": 0.058099730246492565
+          },
+          {
+            "margin": 4,
+            "probability": 0.062165647540014246
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 12,
+            "pointsFor": 22.9203125,
+            "pointsAgainst": 22.1703125,
+            "offence": 1.0058283049917718,
+            "defence": 0.9729155238617663,
+            "pointDifferential": 0.75
+          },
+          "away": {
+            "played": 4,
+            "rank": 16,
+            "pointsFor": 23.337500000000002,
+            "pointsAgainst": 21.480357142857144,
+            "offence": 1.0241360394953374,
+            "defence": 0.9426377243162761,
+            "pointDifferential": 1.8571428571428577
+          }
+        },
+        "strengthGap": 1.1
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 36.5,
+        "totalUnder": 51.5,
+        "spread": {
+          "side": "Baltimore Ravens",
+          "where": "H",
+          "line": 6.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LWWWW",
+          "played": 5,
+          "pointsFor": 128,
+          "pointsAgainst": 108,
+          "winRate": 0.8,
+          "pointsForAvg": 25.6,
+          "pointsAgainstAvg": 21.6
+        },
+        "away": {
+          "streak": "WLLW",
+          "played": 4,
+          "pointsFor": 95,
+          "pointsAgainst": 82,
+          "winRate": 0.5,
+          "pointsForAvg": 23.75,
+          "pointsAgainstAvg": 20.5
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "home": "Carolina Panthers",
+      "away": "Tampa Bay Buccaneers",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 25,
+          "away": 15.7,
+          "total": 40.7
+        },
+        "margin": 9.3,
+        "spread": {
+          "favourite": "Carolina Panthers",
+          "line": -9.3,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.7764058072276183,
+          "away": 0.22212026716047298,
+          "tie": 0.0014739256119087074
+        },
+        "regulation": {
+          "tie": 0.024565426865145124
+        },
+        "total": {
+          "projected": 40.7,
+          "range": [
+            23.4,
+            58
+          ],
+          "overUnder": [
+            {
+              "line": 36.5,
+              "over": 0.62299716289335
+            },
+            {
+              "line": 39.5,
+              "over": 0.5362756296955432
+            },
+            {
+              "line": 42.5,
+              "over": 0.4477879113250949
+            },
+            {
+              "line": 45.5,
+              "over": 0.3618346877352415
+            },
+            {
+              "line": 48.5,
+              "over": 0.28235272822822344
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 12.5,
+            "away": 7.9,
+            "total": 20.4
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.048502874371290305
+          },
+          {
+            "margin": 7,
+            "probability": 0.04569741127446053
+          },
+          {
+            "margin": 10,
+            "probability": 0.04213678253778713
+          },
+          {
+            "margin": 14,
+            "probability": 0.03569441203369195
+          },
+          {
+            "margin": 6,
+            "probability": 0.04661025486756071
+          },
+          {
+            "margin": 4,
+            "probability": 0.048013164153792864
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 4,
+            "rank": 7,
+            "pointsFor": 25.337500000000002,
+            "pointsAgainst": 18.90892857142857,
+            "offence": 1.1119034558420187,
+            "defence": 0.8297939032991144,
+            "pointDifferential": 6.428571428571431
+          },
+          "away": {
+            "played": 5,
+            "rank": 26,
+            "pointsFor": 20.0453125,
+            "pointsAgainst": 21.6703125,
+            "offence": 0.8796626439934174,
+            "defence": 0.950973669775096,
+            "pointDifferential": -1.625
+          }
+        },
+        "strengthGap": 8.1
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 33.5,
+        "totalUnder": 48.5,
+        "spread": {
+          "side": "Carolina Panthers",
+          "where": "H",
+          "line": -2.5
+        },
+        "moneylineCovers": true
+      },
+      "form": {
+        "home": {
+          "streak": "WWWLW",
+          "played": 5,
+          "pointsFor": 141,
+          "pointsAgainst": 90,
+          "winRate": 0.8,
+          "pointsForAvg": 28.2,
+          "pointsAgainstAvg": 18
+        },
+        "away": {
+          "streak": "LWWLL",
+          "played": 5,
+          "pointsFor": 97,
+          "pointsAgainst": 98,
+          "winRate": 0.4,
+          "pointsForAvg": 19.4,
+          "pointsAgainstAvg": 19.6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "home": "Houston Texans",
+      "away": "New York Giants",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 23.9,
+          "away": 20.9,
+          "total": 44.9
+        },
+        "margin": 3,
+        "spread": {
+          "favourite": "Houston Texans",
+          "line": -3,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.596257810456431,
+          "away": 0.401829149880342,
+          "tie": 0.001913039663226882
+        },
+        "regulation": {
+          "tie": 0.0318839943871147
+        },
+        "total": {
+          "projected": 44.9,
+          "range": [
+            27.6,
+            62.2
+          ],
+          "overUnder": [
+            {
+              "line": 39.5,
+              "over": 0.6547996812269146
+            },
+            {
+              "line": 42.5,
+              "over": 0.5698547684305482
+            },
+            {
+              "line": 45.5,
+              "over": 0.4815344367335923
+            },
+            {
+              "line": 48.5,
+              "over": 0.3941150473967655
+            },
+            {
+              "line": 51.5,
+              "over": 0.31174260817992727
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 12,
+            "away": 10.5,
+            "total": 22.4
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.06196475258717521
+          },
+          {
+            "margin": 7,
+            "probability": 0.05454500877139351
+          },
+          {
+            "margin": 10,
+            "probability": 0.046356112270674765
+          },
+          {
+            "margin": 14,
+            "probability": 0.03412231967034779
+          },
+          {
+            "margin": 6,
+            "probability": 0.056853626033770754
+          },
+          {
+            "margin": 4,
+            "probability": 0.06059712792838734
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 19,
+            "pointsFor": 22.6703125,
+            "pointsAgainst": 21.9203125,
+            "offence": 0.9948573779484366,
+            "defence": 0.9619445968184311,
+            "pointDifferential": 0.75
+          },
+          "away": {
+            "played": 6,
+            "rank": 14,
+            "pointsFor": 22.706944444444446,
+            "pointsAgainst": 23.15138888888889,
+            "offence": 0.9964649235082587,
+            "defence": 1.015968793807521,
+            "pointDifferential": -0.44444444444444287
+          }
+        },
+        "strengthGap": 1.2
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 37.5,
+        "totalUnder": 52.5,
+        "spread": {
+          "side": "Houston Texans",
+          "where": "H",
+          "line": 3.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWLLL",
+          "played": 5,
+          "pointsFor": 113,
+          "pointsAgainst": 107,
+          "winRate": 0.4,
+          "pointsForAvg": 22.6,
+          "pointsAgainstAvg": 21.4
+        },
+        "away": {
+          "streak": "LTWWL",
+          "played": 5,
+          "pointsFor": 108,
+          "pointsAgainst": 120,
+          "winRate": 0.5,
+          "pointsForAvg": 21.6,
+          "pointsAgainstAvg": 24
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "home": "Minnesota Vikings",
+      "away": "Indianapolis Colts",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 21.6,
+          "away": 15.5,
+          "total": 37.1
+        },
+        "margin": 6.2,
+        "spread": {
+          "favourite": "Minnesota Vikings",
+          "line": -6.2,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.6934634461992595,
+          "away": 0.3048037105121137,
+          "tie": 0.0017328432886268474
+        },
+        "regulation": {
+          "tie": 0.028880721477114124
+        },
+        "total": {
+          "projected": 37.1,
+          "range": [
+            19.8,
+            54.4
+          ],
+          "overUnder": [
+            {
+              "line": 30.5,
+              "over": 0.6882757717256436
+            },
+            {
+              "line": 33.5,
+              "over": 0.6059049516682244
+            },
+            {
+              "line": 36.5,
+              "over": 0.5184862749291206
+            },
+            {
+              "line": 39.5,
+              "over": 0.430165646827146
+            },
+            {
+              "line": 42.5,
+              "over": 0.34521947167668365
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 10.8,
+            "away": 7.7,
+            "total": 18.6
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.056466819101615384
+          },
+          {
+            "margin": 7,
+            "probability": 0.05103060805680637
+          },
+          {
+            "margin": 10,
+            "probability": 0.044802012023212046
+          },
+          {
+            "margin": 14,
+            "probability": 0.034956977645535625
+          },
+          {
+            "margin": 6,
+            "probability": 0.05274204671941157
+          },
+          {
+            "margin": 4,
+            "probability": 0.05547844904231203
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 4,
+            "rank": 3,
+            "pointsFor": 19.76607142857143,
+            "pointsAgainst": 15.766071428571431,
+            "offence": 0.867408510304835,
+            "defence": 0.6918736776114726,
+            "pointDifferential": 3.9999999999999982
+          },
+          "away": {
+            "played": 5,
+            "rank": 20,
+            "pointsFor": 23.6703125,
+            "pointsAgainst": 23.9203125,
+            "offence": 1.0387410861217772,
+            "defence": 1.0497120131651125,
+            "pointDifferential": -0.25
+          }
+        },
+        "strengthGap": 4.2
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 29.5,
+        "totalUnder": 44.5,
+        "spread": {
+          "side": "Minnesota Vikings",
+          "where": "H",
+          "line": 0.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWWW",
+          "played": 4,
+          "pointsFor": 70,
+          "pointsAgainst": 42,
+          "winRate": 1,
+          "pointsForAvg": 17.5,
+          "pointsAgainstAvg": 10.5
+        },
+        "away": {
+          "streak": "LLWWL",
+          "played": 5,
+          "pointsFor": 121,
+          "pointsAgainst": 123,
+          "winRate": 0.4,
+          "pointsForAvg": 24.2,
+          "pointsAgainstAvg": 24.6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "home": "New York Jets",
+      "away": "Miami Dolphins",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 22.3,
+          "away": 16.8,
+          "total": 39.1
+        },
+        "margin": 5.5,
+        "spread": {
+          "favourite": "New York Jets",
+          "line": -5.5,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.6725817758102177,
+          "away": 0.3256359795775534,
+          "tie": 0.0017822446122288359
+        },
+        "regulation": {
+          "tie": 0.0297040768704806
+        },
+        "total": {
+          "projected": 39.1,
+          "range": [
+            21.8,
+            56.4
+          ],
+          "overUnder": [
+            {
+              "line": 33.5,
+              "over": 0.6608329363716356
+            },
+            {
+              "line": 36.5,
+              "over": 0.5762974510912569
+            },
+            {
+              "line": 39.5,
+              "over": 0.4880826438077872
+            },
+            {
+              "line": 42.5,
+              "over": 0.4004495501533457
+            },
+            {
+              "line": 45.5,
+              "over": 0.31757494275362463
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 11.1,
+            "away": 8.4,
+            "total": 19.5
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.057977443028727926
+          },
+          {
+            "margin": 7,
+            "probability": 0.05200905443897752
+          },
+          {
+            "margin": 10,
+            "probability": 0.04525084301562127
+          },
+          {
+            "margin": 14,
+            "probability": 0.03475199734215856
+          },
+          {
+            "margin": 6,
+            "probability": 0.05388110395687934
+          },
+          {
+            "margin": 4,
+            "probability": 0.05688762316228135
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 27,
+            "pointsFor": 19.6703125,
+            "pointsAgainst": 22.5453125,
+            "offence": 0.8632062534284147,
+            "defence": 0.9893719144267691,
+            "pointDifferential": -2.875
+          },
+          "away": {
+            "played": 4,
+            "rank": 31,
+            "pointsFor": 17.90892857142857,
+            "pointsAgainst": 24.76607142857143,
+            "offence": 0.7859101951257738,
+            "defence": 1.0868270511715383,
+            "pointDifferential": -6.857142857142858
+          }
+        },
+        "strengthGap": 4
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 31.5,
+        "totalUnder": 46.5,
+        "spread": {
+          "side": "New York Jets",
+          "where": "H",
+          "line": 1.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LWLLL",
+          "played": 5,
+          "pointsFor": 89,
+          "pointsAgainst": 112,
+          "winRate": 0.2,
+          "pointsForAvg": 17.8,
+          "pointsAgainstAvg": 22.4
+        },
+        "away": {
+          "streak": "LLLL",
+          "played": 4,
+          "pointsFor": 57,
+          "pointsAgainst": 105,
+          "winRate": 0,
+          "pointsForAvg": 14.25,
+          "pointsAgainstAvg": 26.25
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "home": "Tennessee Titans",
+      "away": "Cleveland Browns",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 16.2,
+          "away": 18.8,
+          "total": 34.9
+        },
+        "margin": -2.6,
+        "spread": {
+          "favourite": "Cleveland Browns",
+          "line": -2.6,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.4146876730353613,
+          "away": 0.5833846729269068,
+          "tie": 0.001927654037731874
+        },
+        "regulation": {
+          "tie": 0.032127567295531234
+        },
+        "total": {
+          "projected": 34.9,
+          "range": [
+            17.6,
+            52.2
+          ],
+          "overUnder": [
+            {
+              "line": 30.5,
+              "over": 0.6282037407978505
+            },
+            {
+              "line": 33.5,
+              "over": 0.5417299056950484
+            },
+            {
+              "line": 36.5,
+              "over": 0.4532261667492765
+            },
+            {
+              "line": 39.5,
+              "over": 0.36699553201806
+            },
+            {
+              "line": 42.5,
+              "over": 0.2870141504717958
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 8.1,
+            "away": 9.4,
+            "total": 17.5
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.06240912479514088
+          },
+          {
+            "margin": 7,
+            "probability": 0.05482362190964657
+          },
+          {
+            "margin": 10,
+            "probability": 0.04647244294098424
+          },
+          {
+            "margin": 14,
+            "probability": 0.03404454572728832
+          },
+          {
+            "margin": 6,
+            "probability": 0.05718203419535228
+          },
+          {
+            "margin": 4,
+            "probability": 0.06100970744722056
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 28,
+            "pointsFor": 17.7953125,
+            "pointsAgainst": 21.7953125,
+            "offence": 0.780924300603401,
+            "defence": 0.9564591332967636,
+            "pointDifferential": -4
+          },
+          "away": {
+            "played": 5,
+            "rank": 6,
+            "pointsFor": 20.5453125,
+            "pointsAgainst": 19.5453125,
+            "offence": 0.9016044980800878,
+            "defence": 0.8577207899067472,
+            "pointDifferential": 1
+          }
+        },
+        "strengthGap": 5
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 27.5,
+        "totalUnder": 42.5,
+        "spread": {
+          "side": "Cleveland Browns",
+          "where": "A",
+          "line": 4.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "pointsFor": 74,
+          "pointsAgainst": 106,
+          "winRate": 0.2,
+          "pointsForAvg": 14.8,
+          "pointsAgainstAvg": 21.2
+        },
+        "away": {
+          "streak": "WLWWW",
+          "played": 5,
+          "pointsFor": 100,
+          "pointsAgainst": 93,
+          "winRate": 0.8,
+          "pointsForAvg": 20,
+          "pointsAgainstAvg": 18.6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-25T20:05:00.000Z",
+      "kickoffLocal": "16:05",
+      "home": "Arizona Cardinals",
+      "away": "Denver Broncos",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 20.7,
+          "away": 24.9,
+          "total": 45.7
+        },
+        "margin": -4.2,
+        "spread": {
+          "favourite": "Denver Broncos",
+          "line": -4.2,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.3642849744921551,
+          "away": 0.6338568484557611,
+          "tie": 0.001858177052083849
+        },
+        "regulation": {
+          "tie": 0.03096961753473082
+        },
+        "total": {
+          "projected": 45.7,
+          "range": [
+            28.4,
+            63
+          ],
+          "overUnder": [
+            {
+              "line": 39.5,
+              "over": 0.6762150536094396
+            },
+            {
+              "line": 42.5,
+              "over": 0.5928310374523302
+            },
+            {
+              "line": 45.5,
+              "over": 0.5049972691038611
+            },
+            {
+              "line": 48.5,
+              "over": 0.4169195022391856
+            },
+            {
+              "line": 51.5,
+              "over": 0.33283887583911265
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 10.4,
+            "away": 12.5,
+            "total": 22.8
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.060294316843250706
+          },
+          {
+            "margin": 7,
+            "probability": 0.053490703564687714
+          },
+          {
+            "margin": 10,
+            "probability": 0.045906765874345556
+          },
+          {
+            "margin": 14,
+            "probability": 0.034401266275566666
+          },
+          {
+            "margin": 6,
+            "probability": 0.05561417563948917
+          },
+          {
+            "margin": 4,
+            "probability": 0.05904500894757703
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 30,
+            "pointsFor": 21.0453125,
+            "pointsAgainst": 29.0453125,
+            "offence": 0.9235463521667581,
+            "defence": 1.2746160175534833,
+            "pointDifferential": -8
+          },
+          "away": {
+            "played": 6,
+            "rank": 10,
+            "pointsFor": 20.262500000000003,
+            "pointsAgainst": 21.484722222222224,
+            "offence": 0.8891936368623149,
+            "defence": 0.9428292801852868,
+            "pointDifferential": -1.2222222222222214
+          }
+        },
+        "strengthGap": 6.8
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 38.5,
+        "totalUnder": 53.5,
+        "spread": {
+          "side": "Denver Broncos",
+          "where": "A",
+          "line": 2.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "pointsFor": 100,
+          "pointsAgainst": 164,
+          "winRate": 0.2,
+          "pointsForAvg": 20,
+          "pointsAgainstAvg": 32.8
+        },
+        "away": {
+          "streak": "WWWLW",
+          "played": 5,
+          "pointsFor": 101,
+          "pointsAgainst": 95,
+          "winRate": 0.8,
+          "pointsForAvg": 20.2,
+          "pointsAgainstAvg": 19
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-25T20:25:00.000Z",
+      "kickoffLocal": "16:25",
+      "home": "Detroit Lions",
+      "away": "Green Bay Packers",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 25.3,
+          "away": 24.4,
+          "total": 49.7
+        },
+        "margin": 0.8,
+        "spread": {
+          "favourite": "Detroit Lions",
+          "line": -0.8,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.526575995380496,
+          "away": 0.4714567685824487,
+          "tie": 0.001967236037055261
+        },
+        "regulation": {
+          "tie": 0.03278726728425435
+        },
+        "total": {
+          "projected": 49.7,
+          "range": [
+            32.4,
+            67
+          ],
+          "overUnder": [
+            {
+              "line": 45.5,
+              "over": 0.6215008204257978
+            },
+            {
+              "line": 48.5,
+              "over": 0.5347111749636122
+            },
+            {
+              "line": 51.5,
+              "over": 0.44623111397463666
+            },
+            {
+              "line": 54.5,
+              "over": 0.36036020467916474
+            },
+            {
+              "line": 57.5,
+              "over": 0.2810235490181975
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 12.6,
+            "away": 12.2,
+            "total": 24.8
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.06361133656434348
+          },
+          {
+            "margin": 7,
+            "probability": 0.05557347995134149
+          },
+          {
+            "margin": 10,
+            "probability": 0.046780520668386116
+          },
+          {
+            "margin": 14,
+            "probability": 0.033826826363423046
+          },
+          {
+            "margin": 6,
+            "probability": 0.05806771596865268
+          },
+          {
+            "margin": 4,
+            "probability": 0.06212524691869614
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 4,
+            "rank": 15,
+            "pointsFor": 28.76607142857143,
+            "pointsAgainst": 26.623214285714287,
+            "offence": 1.262361883864901,
+            "defence": 1.1683253663505995,
+            "pointDifferential": 2.1428571428571423
+          },
+          "away": {
+            "played": 5,
+            "rank": 5,
+            "pointsFor": 21.6703125,
+            "pointsAgainst": 19.2953125,
+            "offence": 0.950973669775096,
+            "defence": 0.8467498628634119,
+            "pointDifferential": 2.375
+          }
+        },
+        "strengthGap": 0.2
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 42.5,
+        "totalUnder": 57.5,
+        "spread": {
+          "side": "Detroit Lions",
+          "where": "H",
+          "line": 6.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WLLWL",
+          "played": 5,
+          "pointsFor": 159,
+          "pointsAgainst": 150,
+          "winRate": 0.4,
+          "pointsForAvg": 31.8,
+          "pointsAgainstAvg": 30
+        },
+        "away": {
+          "streak": "WWWWL",
+          "played": 5,
+          "pointsFor": 108,
+          "pointsAgainst": 82,
+          "winRate": 0.8,
+          "pointsForAvg": 21.6,
+          "pointsAgainstAvg": 16.4
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-25T20:25:00.000Z",
+      "kickoffLocal": "16:25",
+      "home": "Las Vegas Raiders",
+      "away": "Los Angeles Rams",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 25.9,
+          "away": 28.4,
+          "total": 54.3
+        },
+        "margin": -2.5,
+        "spread": {
+          "favourite": "Los Angeles Rams",
+          "line": -2.5,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.4189234368229732,
+          "away": 0.5791445557752496,
+          "tie": 0.0019320074017771848
+        },
+        "regulation": {
+          "tie": 0.03220012336295308
+        },
+        "total": {
+          "projected": 54.3,
+          "range": [
+            37,
+            71.6
+          ],
+          "overUnder": [
+            {
+              "line": 48.5,
+              "over": 0.6657046116196221
+            },
+            {
+              "line": 51.5,
+              "over": 0.581516973449921
+            },
+            {
+              "line": 54.5,
+              "over": 0.49340524833645816
+            },
+            {
+              "line": 57.5,
+              "over": 0.40561550495730736
+            },
+            {
+              "line": 60.5,
+              "over": 0.322347130040451
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 13,
+            "away": 14.2,
+            "total": 27.1
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.0625414338884363
+          },
+          {
+            "margin": 7,
+            "probability": 0.05490643589581745
+          },
+          {
+            "margin": 10,
+            "probability": 0.04650682606077744
+          },
+          {
+            "margin": 14,
+            "probability": 0.03402110214519155
+          },
+          {
+            "margin": 6,
+            "probability": 0.057279719119672445
+          },
+          {
+            "margin": 4,
+            "probability": 0.06113253991756379
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 22,
+            "pointsFor": 25.4203125,
+            "pointsAgainst": 27.1703125,
+            "offence": 1.1155375754251233,
+            "defence": 1.1923340647284695,
+            "pointDifferential": -1.75
+          },
+          "away": {
+            "played": 5,
+            "rank": 18,
+            "pointsFor": 24.5453125,
+            "pointsAgainst": 22.4203125,
+            "offence": 1.0771393307734503,
+            "defence": 0.9838864509051015,
+            "pointDifferential": 2.125
+          }
+        },
+        "strengthGap": 3.9
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 46.5,
+        "totalUnder": 61.5,
+        "spread": {
+          "side": "Los Angeles Rams",
+          "where": "A",
+          "line": 4.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLLWW",
+          "played": 5,
+          "pointsFor": 135,
+          "pointsAgainst": 149,
+          "winRate": 0.4,
+          "pointsForAvg": 27,
+          "pointsAgainstAvg": 29.8
+        },
+        "away": {
+          "streak": "LLLWL",
+          "played": 5,
+          "pointsFor": 134,
+          "pointsAgainst": 142,
+          "winRate": 0.2,
+          "pointsForAvg": 26.8,
+          "pointsAgainstAvg": 28.4
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-26T00:20:00.000Z",
+      "kickoffLocal": "20:20",
+      "home": "Seattle Seahawks",
+      "away": "Kansas City Chiefs",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 22,
+          "away": 24.9,
+          "total": 46.9
+        },
+        "margin": -2.9,
+        "spread": {
+          "favourite": "Kansas City Chiefs",
+          "line": -2.9,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.40588940928103906,
+          "away": 0.5921927084249275,
+          "tie": 0.001917882294033355
+        },
+        "regulation": {
+          "tie": 0.03196470490055592
+        },
+        "total": {
+          "projected": 46.9,
+          "range": [
+            29.6,
+            64.2
+          ],
+          "overUnder": [
+            {
+              "line": 42.5,
+              "over": 0.627100776995135
+            },
+            {
+              "line": 45.5,
+              "over": 0.5405730781256555
+            },
+            {
+              "line": 48.5,
+              "over": 0.45207134850171626
+            },
+            {
+              "line": 51.5,
+              "over": 0.36589830418147073
+            },
+            {
+              "line": 54.5,
+              "over": 0.2860219114024598
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 11,
+            "away": 12.4,
+            "total": 23.4
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.06211203330392029
+          },
+          {
+            "margin": 7,
+            "probability": 0.05463743345916533
+          },
+          {
+            "margin": 10,
+            "probability": 0.04639481467181733
+          },
+          {
+            "margin": 14,
+            "probability": 0.03409670732465814
+          },
+          {
+            "margin": 6,
+            "probability": 0.0569625290269587
+          },
+          {
+            "margin": 4,
+            "probability": 0.06073387918739703
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 17,
+            "pointsFor": 25.4203125,
+            "pointsAgainst": 22.5453125,
+            "offence": 1.1155375754251233,
+            "defence": 0.9893719144267691,
+            "pointDifferential": 2.875
+          },
+          "away": {
+            "played": 5,
+            "rank": 1,
+            "pointsFor": 26.0453125,
+            "pointsAgainst": 18.9203125,
+            "offence": 1.1429648930334613,
+            "defence": 0.8302934722984092,
+            "pointDifferential": 7.125
+          }
+        },
+        "strengthGap": 4.3
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 39.5,
+        "totalUnder": 54.5,
+        "spread": {
+          "side": "Kansas City Chiefs",
+          "where": "A",
+          "line": 3.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLLWL",
+          "played": 5,
+          "pointsFor": 118,
+          "pointsAgainst": 122,
+          "winRate": 0.2,
+          "pointsForAvg": 23.6,
+          "pointsAgainstAvg": 24.4
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 142,
+          "pointsAgainst": 103,
+          "winRate": 1,
+          "pointsForAvg": 28.4,
+          "pointsAgainstAvg": 20.6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
