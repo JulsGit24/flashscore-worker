@@ -1,0 +1,337 @@
+{
+  "date": "2026-10-27",
+  "sport": "american-football",
+  "competition": "NCAA Football",
+  "competitionKey": "ncaa",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-27T15:51:53.866Z",
+  "stats": {
+    "totalGames": 4,
+    "otherDays": 2,
+    "daysCached": 43,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "teamsKnown": 174,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 26.4750656167979,
+    "marginSd": 20.68333324328779,
+    "totalSd": 16.8908810348652,
+    "spreadsDerivedFromGames": 503
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-10-27T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "home": "Western Kentucky",
+      "away": "Delaware Fightin",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "high",
+        "points": {
+          "home": 28.6,
+          "away": 20.1,
+          "total": 48.7
+        },
+        "margin": 8.6,
+        "spread": {
+          "favourite": "Western Kentucky",
+          "line": -8.6,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.6606458710214277,
+          "away": 0.33935412897857226,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.017700043672636
+        },
+        "total": {
+          "projected": 48.7,
+          "range": [
+            27,
+            70.3
+          ],
+          "overUnder": [
+            {
+              "line": 42.5,
+              "over": 0.6429341411863895
+            },
+            {
+              "line": 45.5,
+              "over": 0.5748369032856075
+            },
+            {
+              "line": 48.5,
+              "over": 0.5044248647444041
+            },
+            {
+              "line": 51.5,
+              "over": 0.43387427382168675
+            },
+            {
+              "line": 54.5,
+              "over": 0.3653744771082583
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 14.3,
+            "away": 10,
+            "total": 24.3
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.03509295935414236
+          },
+          {
+            "margin": 7,
+            "probability": 0.03375911518930186
+          },
+          {
+            "margin": 10,
+            "probability": 0.032129787546881505
+          },
+          {
+            "margin": 14,
+            "probability": 0.02926777093754035
+          },
+          {
+            "margin": 6,
+            "probability": 0.034187089393728
+          },
+          {
+            "margin": 4,
+            "probability": 0.0348558797740931
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 62,
+            "pointsFor": 24.30314960629921,
+            "pointsAgainst": 21.80314960629921,
+            "offence": 0.9179637156736393,
+            "defence": 0.8235352433825717,
+            "pointDifferential": 2.5
+          },
+          "away": {
+            "played": 5,
+            "rank": 102,
+            "pointsFor": 26.17814960629921,
+            "pointsAgainst": 29.55314960629921,
+            "offence": 0.9887850698919401,
+            "defence": 1.1162635074848815,
+            "pointDifferential": -3.375
+          }
+        },
+        "strengthGap": 5.9
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 39.5,
+        "totalUnder": 58.5,
+        "spread": {
+          "side": "Western Kentucky",
+          "where": "H",
+          "line": 2.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWL",
+          "played": 5,
+          "pointsFor": 113,
+          "pointsAgainst": 66,
+          "winRate": 0.8,
+          "pointsForAvg": 22.6,
+          "pointsAgainstAvg": 13.2
+        },
+        "away": {
+          "streak": "WWLLL",
+          "played": 5,
+          "pointsFor": 196,
+          "pointsAgainst": 172,
+          "winRate": 0.4,
+          "pointsForAvg": 39.2,
+          "pointsAgainstAvg": 34.4
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-28T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "home": "Missouri State",
+      "away": "Sam Houston State",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "high",
+        "points": {
+          "home": 26.5,
+          "away": 26.4,
+          "total": 52.9
+        },
+        "margin": 0.1,
+        "spread": {
+          "favourite": "Missouri State",
+          "line": -0.1,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5017122107761205,
+          "away": 0.49828778922387956,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.01928613952938274
+        },
+        "total": {
+          "projected": 52.9,
+          "range": [
+            31.3,
+            74.6
+          ],
+          "overUnder": [
+            {
+              "line": 48.5,
+              "over": 0.6038992994280289
+            },
+            {
+              "line": 51.5,
+              "over": 0.5342042876603412
+            },
+            {
+              "line": 54.5,
+              "over": 0.4634411051148337
+            },
+            {
+              "line": 57.5,
+              "over": 0.3938192103469558
+            },
+            {
+              "line": 60.5,
+              "over": 0.3274414191503472
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 13.3,
+            "away": 13.2,
+            "total": 26.5
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.038168487033447995
+          },
+          {
+            "margin": 7,
+            "probability": 0.036425605133419525
+          },
+          {
+            "margin": 10,
+            "probability": 0.03431829400587655
+          },
+          {
+            "margin": 14,
+            "probability": 0.030676579417463157
+          },
+          {
+            "margin": 6,
+            "probability": 0.036983132793082185
+          },
+          {
+            "margin": 4,
+            "probability": 0.03785756366914034
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 123,
+            "pointsFor": 25.30314960629921,
+            "pointsAgainst": 32.428149606299215,
+            "offence": 0.9557351045900664,
+            "defence": 1.2248562506196095,
+            "pointDifferential": -7.1250000000000036
+          },
+          "away": {
+            "played": 5,
+            "rank": 120,
+            "pointsFor": 22.80314960629921,
+            "pointsAgainst": 26.17814960629921,
+            "offence": 0.8613066322989987,
+            "defence": 0.9887850698919401,
+            "pointDifferential": -3.375
+          }
+        },
+        "strengthGap": 3.8
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 43.5,
+        "totalUnder": 62.5,
+        "spread": {
+          "side": "Missouri State",
+          "where": "H",
+          "line": 11.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWL",
+          "played": 5,
+          "pointsFor": 137,
+          "pointsAgainst": 198,
+          "winRate": 0.4,
+          "pointsForAvg": 27.4,
+          "pointsAgainstAvg": 39.6
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "pointsFor": 57,
+          "pointsAgainst": 127,
+          "winRate": 0,
+          "pointsForAvg": 11.4,
+          "pointsAgainstAvg": 25.4
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
