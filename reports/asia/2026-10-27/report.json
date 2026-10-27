@@ -1,0 +1,612 @@
+{
+  "date": "2026-10-27",
+  "region": "asia",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-27T11:58:01.919Z",
+  "stats": {
+    "totalFixtures": 910,
+    "inScope": 8,
+    "tablesLoaded": 687,
+    "daysCached": 85,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "algeria",
+      "angola",
+      "botswana",
+      "dr-congo",
+      "ethiopia",
+      "india",
+      "indonesia",
+      "iran",
+      "kyrgyzstan",
+      "libya",
+      "rwanda",
+      "saudi-arabia",
+      "south-africa",
+      "sri-lanka",
+      "tajikistan",
+      "tanzania",
+      "tunisia",
+      "uganda",
+      "uzbekistan",
+      "vietnam"
+    ],
+    "otherDays": 575,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-10-27T10:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "asia",
+      "league": "AFC Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Daejeon (Kor)",
+      "away": "Vissel Kobe (Jpn)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TW",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "points": 4,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "points": 6,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 14,
+      "awayRank": 9,
+      "goalsIndex": 7.2,
+      "mismatchIndex": 7.8,
+      "rankScore": 9.6,
+      "projected": {
+        "home": 1.12,
+        "away": 1.15,
+        "total": 2.28
+      },
+      "probabilities": {
+        "home": 0.34960986034555064,
+        "draw": 0.28587747614135534,
+        "away": 0.3645126635130947,
+        "btts": 0.4603956003943006,
+        "over15": 0.6621691467645903,
+        "over25": 0.3959904611932237,
+        "over35": 0.19458192244422207,
+        "under15": 0.33783085323540973,
+        "under25": 0.6040095388067763
+      },
+      "pick": {
+        "side": "Vissel Kobe (Jpn)",
+        "where": "A",
+        "probability": 0.3645126635130947
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-27T10:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "asia",
+      "league": "AFC Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Johor DT (Mys)",
+      "away": "Port MTI FC (Tha)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WT",
+          "played": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "points": 4,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "LL",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 7,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 13,
+      "awayRank": 38,
+      "goalsIndex": 48.4,
+      "mismatchIndex": 43.2,
+      "rankScore": 59.2,
+      "projected": {
+        "home": 2.38,
+        "away": 0.92,
+        "total": 3.3
+      },
+      "probabilities": {
+        "home": 0.6976757143901012,
+        "draw": 0.17422140827661825,
+        "away": 0.12810287733328082,
+        "btts": 0.5458113224103697,
+        "over15": 0.8413960408905079,
+        "over25": 0.6405591670879072,
+        "over35": 0.4196386059050467,
+        "under15": 0.1586039591094921,
+        "under25": 0.35944083291209283
+      },
+      "pick": {
+        "side": "Johor DT (Mys)",
+        "where": "H",
+        "probability": 0.6976757143901012
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP",
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-27T10:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "asia",
+      "league": "AFC Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Kyoto (Jpn)",
+      "away": "Newcastle Jets (Aus)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WL",
+          "played": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "away": {
+          "streak": "LL",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 10,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 18,
+      "awayRank": 39,
+      "goalsIndex": 44,
+      "mismatchIndex": 36.6,
+      "rankScore": 53.2,
+      "projected": {
+        "home": 2.27,
+        "away": 0.92,
+        "total": 3.19
+      },
+      "probabilities": {
+        "home": 0.6779839303359196,
+        "draw": 0.18394897393625853,
+        "away": 0.13806709572782172,
+        "btts": 0.5393390187853234,
+        "over15": 0.8274853364604922,
+        "over25": 0.6179953045220213,
+        "over35": 0.39523757056078085,
+        "under15": 0.17251466353950784,
+        "under25": 0.38200469547797866
+      },
+      "pick": {
+        "side": "Kyoto (Jpn)",
+        "where": "H",
+        "probability": 0.6779839303359196
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-27T10:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "asia",
+      "league": "AFC Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Shanghai Port (Chn)",
+      "away": "Cong An Ha Noi (Vie)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TW",
+          "played": 2,
+          "goalsFor": 7,
+          "goalsAgainst": 5,
+          "points": 4,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "LLW",
+          "played": 3,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
+          "points": 3,
+          "ppg": 1
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "steady"
+      },
+      "homeRank": 12,
+      "awayRank": 21,
+      "goalsIndex": 73,
+      "mismatchIndex": 21.2,
+      "rankScore": 78.3,
+      "projected": {
+        "home": 2.5,
+        "away": 1.41,
+        "total": 3.9
+      },
+      "probabilities": {
+        "home": 0.6126776610054473,
+        "draw": 0.1835404338234582,
+        "away": 0.20378190517109454,
+        "btts": 0.6938083275082342,
+        "over15": 0.9015950455671309,
+        "over25": 0.7483949657437964,
+        "over35": 0.548724195040717,
+        "under15": 0.09840495443286912,
+        "under25": 0.2516050342562036
+      },
+      "pick": {
+        "side": "Shanghai Port (Chn)",
+        "where": "H",
+        "probability": 0.6126776610054473
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-27T12:15:00.000Z",
+      "kickoffLocal": "08:15",
+      "country": "asia",
+      "league": "AFC Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Beijing Guoan (Chn)",
+      "away": "Jeonbuk (Kor)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "points": 6,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "LW",
+          "played": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 8,
+      "awayRank": 19,
+      "goalsIndex": 25.9,
+      "mismatchIndex": 21.9,
+      "rankScore": 31.4,
+      "projected": {
+        "home": 1.82,
+        "away": 0.92,
+        "total": 2.74
+      },
+      "probabilities": {
+        "home": 0.5856643715861869,
+        "draw": 0.2273082561105485,
+        "away": 0.18702737230326436,
+        "btts": 0.5040252158014572,
+        "over15": 0.7585060649317248,
+        "over25": 0.5161210559853897,
+        "over35": 0.2947427478144038,
+        "under15": 0.2414939350682752,
+        "under25": 0.4838789440146103
+      },
+      "pick": {
+        "side": "Beijing Guoan (Chn)",
+        "where": "H",
+        "probability": 0.5856643715861869
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-27T12:15:00.000Z",
+      "kickoffLocal": "08:15",
+      "country": "asia",
+      "league": "AFC Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Ratchaburi (Tha)",
+      "away": "Kashiwa Reysol (Jpn)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LL",
+          "played": 2,
+          "goalsFor": 4,
+          "goalsAgainst": 7,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "WL",
+          "played": 2,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "points": 3,
+          "ppg": 1.5
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 32,
+      "awayRank": 15,
+      "goalsIndex": 85,
+      "mismatchIndex": 25.7,
+      "rankScore": 91.4,
+      "projected": {
+        "home": 1.82,
+        "away": 2.6,
+        "total": 4.42
+      },
+      "probabilities": {
+        "home": 0.26671650191162716,
+        "draw": 0.18453016623009477,
+        "away": 0.5487533318582787,
+        "btts": 0.7757289860005221,
+        "over15": 0.9347685785589266,
+        "over25": 0.8172051890901642,
+        "over35": 0.6439951286061874,
+        "under15": 0.06523142144107341,
+        "under25": 0.18279481090983585
+      },
+      "pick": {
+        "side": "Kashiwa Reysol (Jpn)",
+        "where": "A",
+        "probability": 0.5487533318582787
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "ATK_VS_LEAKY",
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-27T16:00:00.000Z",
+      "kickoffLocal": "12:00",
+      "country": "asia",
+      "league": "AFC Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Shabab Al Ahli Dubai (Uae)",
+      "away": "Esteghlal F.C. (Irn)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "W",
+          "played": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "points": 3,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 5,
+          "goalsAgainst": 1,
+          "points": 6,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 16,
+      "awayRank": 6,
+      "goalsIndex": 31.3,
+      "mismatchIndex": 11.1,
+      "rankScore": 34.1,
+      "projected": {
+        "home": 1.35,
+        "away": 1.52,
+        "total": 2.87
+      },
+      "probabilities": {
+        "home": 0.33779492135925265,
+        "draw": 0.24823628124868163,
+        "away": 0.41396879739206555,
+        "btts": 0.5787466372453027,
+        "over15": 0.7805749730629475,
+        "over25": 0.5470630861924297,
+        "over35": 0.3236700477529677,
+        "under15": 0.21942502693705246,
+        "under25": 0.4529369138075703
+      },
+      "pick": {
+        "side": "Esteghlal F.C. (Irn)",
+        "where": "A",
+        "probability": 0.41396879739206555
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-10-27T18:15:00.000Z",
+      "kickoffLocal": "14:15",
+      "country": "asia",
+      "league": "AFC Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Shamal (Qat)",
+      "away": "Al Hilal (Sau)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TT",
+          "played": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "points": 2,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "WW",
+          "played": 2,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "points": 6,
+          "ppg": 3
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 24,
+      "awayRank": 7,
+      "goalsIndex": 1.4,
+      "mismatchIndex": 21.8,
+      "rankScore": 22.2,
+      "projected": {
+        "home": 0.98,
+        "away": 1.15,
+        "total": 2.13
+      },
+      "probabilities": {
+        "home": 0.30889799143718794,
+        "draw": 0.2955751489093456,
+        "away": 0.3955268596534664,
+        "btts": 0.42688941545388254,
+        "over15": 0.6280392520249896,
+        "over25": 0.3584627795828443,
+        "over35": 0.16706348414892186,
+        "under15": 0.37196074797501044,
+        "under25": 0.6415372204171557
+      },
+      "pick": {
+        "side": "Al Hilal (Sau)",
+        "where": "A",
+        "probability": 0.3955268596534664
+      },
+      "confidence": "low",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "asia",
+      "slug": "gulf-club-champions-league",
+      "name": "ASIA: Gulf Club Champions League"
+    }
+  ],
+  "outOfRegionCountries": [
+    "algeria",
+    "angola",
+    "botswana",
+    "dr-congo",
+    "ethiopia",
+    "india",
+    "indonesia",
+    "iran",
+    "kyrgyzstan",
+    "libya",
+    "rwanda",
+    "saudi-arabia",
+    "south-africa",
+    "sri-lanka",
+    "tajikistan",
+    "tanzania",
+    "tunisia",
+    "uganda",
+    "uzbekistan",
+    "vietnam"
+  ]
+}
