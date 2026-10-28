@@ -1,0 +1,252 @@
+{
+  "date": "2026-10-28",
+  "sport": "baseball",
+  "competition": "MLB",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-28T18:18:34.988Z",
+  "stats": {
+    "totalGames": 35,
+    "otherDays": 21,
+    "daysCached": 84,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 30,
+    "errors": []
+  },
+  "notCovered": {
+    "startingPitchers": "feed exposes no probable-pitcher data",
+    "injuries": "no injury or news feed responded",
+    "parkAndWeather": "not carried by the feed",
+    "inningData": "feed carries final scores only; the first-five split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "firstPitch": "2026-10-29T00:00:00.000Z",
+      "firstPitchLocal": "20:00",
+      "home": "Tampa Bay Rays",
+      "away": "Milwaukee Brewers",
+      "projection": {
+        "confidence": "high",
+        "runs": {
+          "home": 3.93,
+          "away": 4.32,
+          "total": 8.24
+        },
+        "margin": -0.39,
+        "winProbability": {
+          "home": 0.46785577474037476,
+          "away": 0.5321442252596249
+        },
+        "regulation": {
+          "home": 0.40892629581034884,
+          "away": 0.4819450395044176,
+          "tie": 0.10912866468523323
+        },
+        "runLine": {
+          "favourite": "Milwaukee Brewers",
+          "where": "A",
+          "line": -1.5,
+          "coverProbability": 0.3759088675342622,
+          "underdogProbability": 0.6240911324657378
+        },
+        "total": {
+          "projected": 8.24,
+          "overUnder": [
+            {
+              "line": 6.5,
+              "over": 0.6261659199042572
+            },
+            {
+              "line": 7.5,
+              "over": 0.5231769837209085
+            },
+            {
+              "line": 8.5,
+              "over": 0.4252064428931843
+            },
+            {
+              "line": 9.5,
+              "over": 0.3368368473058083
+            },
+            {
+              "line": 10.5,
+              "over": 0.2606100111646387
+            },
+            {
+              "line": 11.5,
+              "over": 0.19731492070242088
+            }
+          ]
+        },
+        "teamTotals": {
+          "home": {
+            "projected": 3.93,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.48971057409398305
+              },
+              {
+                "line": 4.5,
+                "over": 0.3530402249152209
+              },
+              {
+                "line": 5.5,
+                "over": 0.24473261491954143
+              }
+            ]
+          },
+          "away": {
+            "projected": 4.32,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.5414271849469557
+              },
+              {
+                "line": 4.5,
+                "over": 0.40549355251158536
+              },
+              {
+                "line": 5.5,
+                "over": 0.2926217882811968
+              }
+            ]
+          }
+        },
+        "firstFive": {
+          "runs": {
+            "home": 2.18,
+            "away": 2.4,
+            "total": 4.58
+          },
+          "winProbability": {
+            "home": 0.38444976250184004,
+            "away": 0.44555594574774865,
+            "tie": 0.16999429175041114
+          },
+          "total": {
+            "projected": 4.58,
+            "overUnder": [
+              {
+                "line": 3.5,
+                "over": 0.6124941854760391
+              },
+              {
+                "line": 4.5,
+                "over": 0.4574461413300661
+              },
+              {
+                "line": 5.5,
+                "over": 0.3220187765237658
+              }
+            ]
+          },
+          "note": "proportional split of the full-game projection, not measured inning data"
+        },
+        "ratings": {
+          "home": {
+            "played": 63,
+            "rank": 3,
+            "runsFor": 4.513874845522975,
+            "runsAgainst": 3.7457589034939898,
+            "offence": 1.0236563523102205,
+            "defence": 0.8494630504847196,
+            "runDifferential": 0.7681159420289849
+          },
+          "away": {
+            "played": 62,
+            "rank": 1,
+            "runsFor": 5.227314181486548,
+            "runsAgainst": 3.712608299133607,
+            "offence": 1.1854500956550214,
+            "defence": 0.8419451577876976,
+            "runDifferential": 1.5147058823529411
+          }
+        },
+        "strengthGap": 0.75
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 5.5,
+        "totalUnder": 10.5,
+        "runLineCovers": false,
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "pointsFor": 14,
+          "pointsAgainst": 33,
+          "winRate": 0.2,
+          "pointsForAvg": 2.8,
+          "pointsAgainstAvg": 6.6
+        },
+        "away": {
+          "streak": "LWWWW",
+          "played": 5,
+          "pointsFor": 33,
+          "pointsAgainst": 14,
+          "winRate": 0.8,
+          "pointsForAvg": 6.6,
+          "pointsAgainstAvg": 2.8
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1793145600,
+          "home": "Tampa Bay Rays",
+          "away": "Milwaukee Brewers",
+          "homePoints": 4,
+          "awayPoints": 3,
+          "total": 7,
+          "winner": "Tampa Bay Rays"
+        },
+        {
+          "ts": 1793059200,
+          "home": "Tampa Bay Rays",
+          "away": "Milwaukee Brewers",
+          "homePoints": 1,
+          "awayPoints": 10,
+          "total": 11,
+          "winner": "Milwaukee Brewers"
+        },
+        {
+          "ts": 1793059200,
+          "home": "Tampa Bay Rays",
+          "away": "Milwaukee Brewers",
+          "homePoints": 1,
+          "awayPoints": 10,
+          "total": 11,
+          "winner": "Milwaukee Brewers"
+        },
+        {
+          "ts": 1792886400,
+          "home": "Milwaukee Brewers",
+          "away": "Tampa Bay Rays",
+          "homePoints": 5,
+          "awayPoints": 4,
+          "total": 9,
+          "winner": "Milwaukee Brewers"
+        },
+        {
+          "ts": 1792886400,
+          "home": "Milwaukee Brewers",
+          "away": "Tampa Bay Rays",
+          "homePoints": 5,
+          "awayPoints": 4,
+          "total": 9,
+          "winner": "Milwaukee Brewers"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 5,
+        "aWins": 1,
+        "bWins": 4,
+        "averageTotal": 9.4
+      }
+    }
+  ]
+}
