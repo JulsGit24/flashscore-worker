@@ -1,0 +1,337 @@
+{
+  "date": "2026-10-28",
+  "sport": "american-football",
+  "competition": "NCAA Football",
+  "competitionKey": "ncaa",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-28T16:36:05.342Z",
+  "stats": {
+    "totalGames": 5,
+    "otherDays": 3,
+    "daysCached": 44,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "teamsKnown": 174,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 26.445169712793735,
+    "marginSd": 20.673195574085337,
+    "totalSd": 16.8971703043312,
+    "spreadsDerivedFromGames": 505
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-10-28T23:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "home": "Middle Tennessee St",
+      "away": "Kennesaw State",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "high",
+        "points": {
+          "home": 25,
+          "away": 19.6,
+          "total": 44.7
+        },
+        "margin": 5.4,
+        "spread": {
+          "favourite": "Middle Tennessee St",
+          "line": -5.4,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.602865437158192,
+          "away": 0.3971345628418081,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.018650375857528045
+        },
+        "total": {
+          "projected": 44.7,
+          "range": [
+            23,
+            66.3
+          ],
+          "overUnder": [
+            {
+              "line": 39.5,
+              "over": 0.6202437268882517
+            },
+            {
+              "line": 42.5,
+              "over": 0.5511537040222432
+            },
+            {
+              "line": 45.5,
+              "over": 0.48047237345733196
+            },
+            {
+              "line": 48.5,
+              "over": 0.4104014943980603
+            },
+            {
+              "line": 51.5,
+              "over": 0.3430854728784779
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 12.5,
+            "away": 9.8,
+            "total": 22.3
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.03693659508005537
+          },
+          {
+            "margin": 7,
+            "probability": 0.035360444061380336
+          },
+          {
+            "margin": 10,
+            "probability": 0.03344762402794105
+          },
+          {
+            "margin": 14,
+            "probability": 0.030122466302678563
+          },
+          {
+            "margin": 6,
+            "probability": 0.035865279346457335
+          },
+          {
+            "margin": 4,
+            "probability": 0.036655836130135844
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 5,
+            "rank": 73,
+            "pointsFor": 22.29193864229765,
+            "pointsAgainst": 28.79193864229765,
+            "offence": 0.8429493508416843,
+            "defence": 1.088740929061559,
+            "pointDifferential": -6.5
+          },
+          "away": {
+            "played": 5,
+            "rank": 166,
+            "pointsFor": 19.41693864229765,
+            "pointsAgainst": 27.91693864229765,
+            "offence": 0.734233845090586,
+            "defence": 1.055653601224268,
+            "pointDifferential": -8.5
+          }
+        },
+        "strengthGap": 2
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 35.5,
+        "totalUnder": 54.5,
+        "spread": {
+          "side": "Middle Tennessee St",
+          "where": "H",
+          "line": 5.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWL",
+          "played": 5,
+          "pointsFor": 118,
+          "pointsAgainst": 161,
+          "winRate": 0.8,
+          "pointsForAvg": 23.6,
+          "pointsAgainstAvg": 32.2
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "pointsFor": 80,
+          "pointsAgainst": 143,
+          "winRate": 0,
+          "pointsForAvg": 16,
+          "pointsAgainstAvg": 28.6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-10-29T00:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "home": "New Mexico State",
+      "away": "Jacksonville State",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "high",
+        "points": {
+          "home": 23,
+          "away": 24.6,
+          "total": 47.5
+        },
+        "margin": -1.6,
+        "spread": {
+          "favourite": "Jacksonville State",
+          "line": -1.6,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.46924281152168873,
+          "away": 0.5307571884783113,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.019238272603951834
+        },
+        "total": {
+          "projected": 47.5,
+          "range": [
+            25.9,
+            69.2
+          ],
+          "overUnder": [
+            {
+              "line": 42.5,
+              "over": 0.6173946538433414
+            },
+            {
+              "line": 45.5,
+              "over": 0.5481945094562581
+            },
+            {
+              "line": 48.5,
+              "over": 0.47749416088554153
+            },
+            {
+              "line": 51.5,
+              "over": 0.4074971648292317
+            },
+            {
+              "line": 54.5,
+              "over": 0.3403410664507016
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 11.5,
+            "away": 12.3,
+            "total": 23.8
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.038075998759091456
+          },
+          {
+            "margin": 7,
+            "probability": 0.03634571490464489
+          },
+          {
+            "margin": 10,
+            "probability": 0.034253153432186934
+          },
+          {
+            "margin": 14,
+            "probability": 0.03063540264109027
+          },
+          {
+            "margin": 6,
+            "probability": 0.03689924317718257
+          },
+          {
+            "margin": 4,
+            "probability": 0.03776733665554299
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 4,
+            "rank": 79,
+            "pointsFor": 23.47650130548303,
+            "pointsAgainst": 25.762215591197315,
+            "offence": 0.8877425087624031,
+            "defence": 0.9741747120924689,
+            "pointDifferential": -2.2857142857142847
+          },
+          "away": {
+            "played": 4,
+            "rank": 10,
+            "pointsFor": 26.762215591197315,
+            "pointsAgainst": 24.190787019768745,
+            "offence": 1.0119888010493727,
+            "defence": 0.9147525723030487,
+            "pointDifferential": 2.5714285714285694
+          }
+        },
+        "strengthGap": 4.9
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 38.5,
+        "totalUnder": 56.5,
+        "spread": {
+          "side": "Jacksonville State",
+          "where": "A",
+          "line": 9.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWLLW",
+          "played": 5,
+          "pointsFor": 100,
+          "pointsAgainst": 105,
+          "winRate": 0.6,
+          "pointsForAvg": 20,
+          "pointsAgainstAvg": 21
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 131,
+          "pointsAgainst": 113,
+          "winRate": 1,
+          "pointsForAvg": 26.2,
+          "pointsAgainstAvg": 22.6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
