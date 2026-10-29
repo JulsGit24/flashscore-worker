@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-29",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-10-29T16:54:17.780Z",
+  "stats": {
+    "totalGames": 6,
+    "otherDays": 3,
+    "daysCached": 45,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 22.70967741935484,
+    "marginSd": 12.512233396000275,
+    "totalSd": 13.44447325126057,
+    "spreadsDerivedFromGames": 112
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-10-30T00:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "home": "Green Bay Packers",
+      "away": "Carolina Panthers",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 21.3,
+          "away": 19.3,
+          "total": 40.6
+        },
+        "margin": 1.9,
+        "spread": {
+          "favourite": "Green Bay Packers",
+          "line": -1.9,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5598676907840359,
+          "away": 0.4382420587836214,
+          "tie": 0.0018902504323427749
+        },
+        "regulation": {
+          "tie": 0.03150417387237958
+        },
+        "total": {
+          "projected": 40.6,
+          "range": [
+            23.4,
+            57.8
+          ],
+          "overUnder": [
+            {
+              "line": 36.5,
+              "over": 0.6201328907576891
+            },
+            {
+              "line": 39.5,
+              "over": 0.5329510428984587
+            },
+            {
+              "line": 42.5,
+              "over": 0.4441521901193457
+            },
+            {
+              "line": 45.5,
+              "over": 0.3580821418215049
+            },
+            {
+              "line": 48.5,
+              "over": 0.2786924631107843
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 10.6,
+            "away": 9.7,
+            "total": 20.3
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.061265343323315014
+          },
+          {
+            "margin": 7,
+            "probability": 0.054083115808923
+          },
+          {
+            "margin": 10,
+            "probability": 0.04613302391683577
+          },
+          {
+            "margin": 14,
+            "probability": 0.03419991991540938
+          },
+          {
+            "margin": 6,
+            "probability": 0.056319886831093735
+          },
+          {
+            "margin": 4,
+            "probability": 0.0599429364076105
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 6,
+            "rank": 8,
+            "pointsFor": 21.125448028673834,
+            "pointsAgainst": 19.34767025089606,
+            "offence": 0.9302398989898989,
+            "defence": 0.8519570707070707,
+            "pointDifferential": 1.777777777777775
+          },
+          "away": {
+            "played": 5,
+            "rank": 15,
+            "pointsFor": 23.766129032258064,
+            "pointsAgainst": 21.891129032258064,
+            "offence": 1.0465198863636362,
+            "defence": 0.9639559659090908,
+            "pointDifferential": 1.875
+          }
+        },
+        "strengthGap": 0.1
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 33.5,
+        "totalUnder": 48.5,
+        "spread": {
+          "side": "Green Bay Packers",
+          "where": "H",
+          "line": 5.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LWWWW",
+          "played": 5,
+          "pointsFor": 111,
+          "pointsAgainst": 67,
+          "winRate": 0.8,
+          "pointsForAvg": 22.2,
+          "pointsAgainstAvg": 13.4
+        },
+        "away": {
+          "streak": "LWWWL",
+          "played": 5,
+          "pointsFor": 120,
+          "pointsAgainst": 130,
+          "winRate": 0.6,
+          "pointsForAvg": 24,
+          "pointsAgainstAvg": 26
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
