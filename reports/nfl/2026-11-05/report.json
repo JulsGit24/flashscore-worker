@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-05",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-05T17:59:13.450Z",
+  "stats": {
+    "totalGames": 8,
+    "otherDays": 5,
+    "daysCached": 52,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 22.789719626168225,
+    "marginSd": 12.87265170253465,
+    "totalSd": 13.687912738274186,
+    "spreadsDerivedFromGames": 127
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-11-06T01:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "home": "Baltimore Ravens",
+      "away": "Jacksonville Jaguars",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 17.9,
+          "away": 27,
+          "total": 44.9
+        },
+        "margin": -9.1,
+        "spread": {
+          "favourite": "Jacksonville Jaguars",
+          "line": -9.1,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.2403380668633952,
+          "away": 0.7582101708264608,
+          "tie": 0.0014517623101440024
+        },
+        "regulation": {
+          "tie": 0.02419603850240004
+        },
+        "total": {
+          "projected": 44.9,
+          "range": [
+            27.4,
+            62.5
+          ],
+          "overUnder": [
+            {
+              "line": 39.5,
+              "over": 0.6543945369888768
+            },
+            {
+              "line": 42.5,
+              "over": 0.5706545829469494
+            },
+            {
+              "line": 45.5,
+              "over": 0.48359585603801913
+            },
+            {
+              "line": 48.5,
+              "over": 0.39731547375822496
+            },
+            {
+              "line": 51.5,
+              "over": 0.31580092684134153
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 9,
+            "away": 13.5,
+            "total": 22.5
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.04772984683376358
+          },
+          {
+            "margin": 7,
+            "probability": 0.04483211633494655
+          },
+          {
+            "margin": 10,
+            "probability": 0.04126530034420156
+          },
+          {
+            "margin": 14,
+            "probability": 0.03501743623173248
+          },
+          {
+            "margin": 6,
+            "probability": 0.04576510609197226
+          },
+          {
+            "margin": 4,
+            "probability": 0.047217192346257875
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 7,
+            "rank": 21,
+            "pointsFor": 20.636915887850467,
+            "pointsAgainst": 24.836915887850466,
+            "offence": 0.9055361902809104,
+            "defence": 1.0898298134098832,
+            "pointDifferential": -4.199999999999999
+          },
+          "away": {
+            "played": 6,
+            "rank": 11,
+            "pointsFor": 25.59657320872274,
+            "pointsAgainst": 18.818795430944963,
+            "offence": 1.1231631467432164,
+            "defence": 0.8257580935456679,
+            "pointDifferential": 6.777777777777779
+          }
+        },
+        "strengthGap": 11
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 37.5,
+        "totalUnder": 52.5,
+        "spread": {
+          "side": "Jacksonville Jaguars",
+          "where": "A",
+          "line": -1.5
+        },
+        "moneylineCovers": true
+      },
+      "form": {
+        "home": {
+          "streak": "LLLWW",
+          "played": 5,
+          "pointsFor": 93,
+          "pointsAgainst": 130,
+          "winRate": 0.4,
+          "pointsForAvg": 18.6,
+          "pointsAgainstAvg": 26
+        },
+        "away": {
+          "streak": "WLWWW",
+          "played": 5,
+          "pointsFor": 149,
+          "pointsAgainst": 81,
+          "winRate": 0.8,
+          "pointsForAvg": 29.8,
+          "pointsAgainstAvg": 16.2
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
