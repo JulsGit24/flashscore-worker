@@ -1,0 +1,127 @@
+{
+  "date": "2026-11-10",
+  "region": "europe",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-10T14:42:46.464Z",
+  "stats": {
+    "totalFixtures": 349,
+    "inScope": 1,
+    "tablesLoaded": 701,
+    "daysCached": 99,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "algeria",
+      "dr-congo",
+      "egypt",
+      "mongolia",
+      "world"
+    ],
+    "otherDays": 231,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-11-10T17:30:00.000Z",
+      "kickoffLocal": "12:30",
+      "country": "romania",
+      "league": "Liga 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Metalul Buzau",
+      "away": "Steaua Bucuresti",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWTWW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 2,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "TWTTW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 8,
+      "awayRank": 16,
+      "goalsIndex": 7.1,
+      "mismatchIndex": 32.5,
+      "rankScore": 34.2,
+      "projected": {
+        "home": 1.52,
+        "away": 0.73,
+        "total": 2.25
+      },
+      "probabilities": {
+        "home": 0.5618480151671914,
+        "draw": 0.25908241454185305,
+        "away": 0.1790695702909555,
+        "btts": 0.40477827634094277,
+        "over15": 0.6574523053200266,
+        "over25": 0.3906603508096623,
+        "over35": 0.19056638492688946,
+        "under15": 0.34254769467997337,
+        "under25": 0.6093396491903377
+      },
+      "pick": {
+        "side": "Metalul Buzau",
+        "where": "H",
+        "probability": 0.5618480151671914
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "denmark",
+      "slug": "a-liga-women",
+      "name": "DENMARK: A-Liga Women"
+    },
+    {
+      "country": "england",
+      "slug": "professional-development-league",
+      "name": "ENGLAND: Professional Development League"
+    },
+    {
+      "country": "europe",
+      "slug": "uefa-champions-league-women",
+      "name": "EUROPE: UEFA Champions League Women - League phase"
+    },
+    {
+      "country": "france",
+      "slug": "national-1-group-c",
+      "name": "FRANCE: National 1 - Group C"
+    },
+    {
+      "country": "ukraine",
+      "slug": "championship-women",
+      "name": "UKRAINE: Championship Women"
+    }
+  ],
+  "outOfRegionCountries": [
+    "algeria",
+    "dr-congo",
+    "egypt",
+    "mongolia",
+    "world"
+  ]
+}
