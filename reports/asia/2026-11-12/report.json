@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-12",
+  "region": "asia",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-12T14:59:17.897Z",
+  "stats": {
+    "totalFixtures": 435,
+    "inScope": 1,
+    "tablesLoaded": 703,
+    "daysCached": 101,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "africa",
+      "australia",
+      "dr-congo",
+      "egypt",
+      "liberia",
+      "niger",
+      "oman",
+      "turkmenistan",
+      "uganda",
+      "world"
+    ],
+    "otherDays": 297,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-11-12T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "south-korea",
+      "league": "WK League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Hwacheon W",
+      "away": "Gyeongju W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWWTT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 3,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "WWLLT",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 5,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 1,
+      "awayRank": 6,
+      "goalsIndex": 0,
+      "mismatchIndex": 37.4,
+      "rankScore": 37.4,
+      "projected": {
+        "home": 1.21,
+        "away": 0.74,
+        "total": 1.96
+      },
+      "probabilities": {
+        "home": 0.47242182998848037,
+        "draw": 0.30118474160119824,
+        "away": 0.22639342841032103,
+        "btts": 0.36696286594482297,
+        "over15": 0.580291460266219,
+        "over25": 0.30979286325982874,
+        "over35": 0.13396877520567552,
+        "under15": 0.41970853973378097,
+        "under25": 0.6902071367401712
+      },
+      "pick": {
+        "side": "Hwacheon W",
+        "where": "H",
+        "probability": 0.47242182998848037
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP"
+      ]
+    }
+  ],
+  "needsReview": [],
+  "outOfRegionCountries": [
+    "africa",
+    "australia",
+    "dr-congo",
+    "egypt",
+    "liberia",
+    "niger",
+    "oman",
+    "turkmenistan",
+    "uganda",
+    "world"
+  ]
+}
