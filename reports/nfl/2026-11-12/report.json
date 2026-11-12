@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-12",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-12T18:14:21.423Z",
+  "stats": {
+    "totalGames": 6,
+    "otherDays": 3,
+    "daysCached": 59,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 22.721311475409838,
+    "marginSd": 13.14165995796969,
+    "totalSd": 13.72411794780307,
+    "spreadsDerivedFromGames": 142
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-11-13T01:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "home": "New York Giants",
+      "away": "Washington Commanders",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 25.5,
+          "away": 20.1,
+          "total": 45.6
+        },
+        "margin": 5.5,
+        "spread": {
+          "favourite": "New York Giants",
+          "line": -5.5,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.6605871784210068,
+          "away": 0.33774315744816125,
+          "tie": 0.0016696641308319847
+        },
+        "regulation": {
+          "tie": 0.027827735513866414
+        },
+        "total": {
+          "projected": 45.6,
+          "range": [
+            28,
+            63.2
+          ],
+          "overUnder": [
+            {
+              "line": 39.5,
+              "over": 0.6717165447558184
+            },
+            {
+              "line": 42.5,
+              "over": 0.589424452983758
+            },
+            {
+              "line": 45.5,
+              "over": 0.502980700532389
+            },
+            {
+              "line": 48.5,
+              "over": 0.41639616710101324
+            },
+            {
+              "line": 51.5,
+              "over": 0.333701508917833
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 12.8,
+            "away": 10,
+            "total": 22.8
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.05446982022980307
+          },
+          {
+            "margin": 7,
+            "probability": 0.049490849496902745
+          },
+          {
+            "margin": 10,
+            "probability": 0.04378084360228729
+          },
+          {
+            "margin": 14,
+            "probability": 0.03472117884137599
+          },
+          {
+            "margin": 6,
+            "probability": 0.05105854136568455
+          },
+          {
+            "margin": 4,
+            "probability": 0.05356471062703322
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 8,
+            "rank": 12,
+            "pointsFor": 22.742175856929954,
+            "pointsAgainst": 21.833084947839044,
+            "offence": 1.0009182736455462,
+            "defence": 0.9609077790895971,
+            "pointDifferential": 0.9090909090909101
+          },
+          "away": {
+            "played": 7,
+            "rank": 25,
+            "pointsFor": 21.81639344262295,
+            "pointsAgainst": 24.61639344262295,
+            "offence": 0.96017316017316,
+            "defence": 1.0834054834054834,
+            "pointDifferential": -2.8000000000000007
+          }
+        },
+        "strengthGap": 3.7
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 37.5,
+        "totalUnder": 53.5,
+        "spread": {
+          "side": "New York Giants",
+          "where": "H",
+          "line": 1.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWLTW",
+          "played": 5,
+          "pointsFor": 136,
+          "pointsAgainst": 117,
+          "winRate": 0.7,
+          "pointsForAvg": 27.2,
+          "pointsAgainstAvg": 23.4
+        },
+        "away": {
+          "streak": "LWLLT",
+          "played": 5,
+          "pointsFor": 101,
+          "pointsAgainst": 103,
+          "winRate": 0.3,
+          "pointsForAvg": 20.2,
+          "pointsAgainstAvg": 20.6
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1791738000,
+          "home": "Washington Commanders",
+          "away": "New York Giants",
+          "homePoints": 27,
+          "awayPoints": 27,
+          "total": 54,
+          "winner": null
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 1,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 1,
+        "averageTotal": 54
+      }
+    }
+  ]
+}
