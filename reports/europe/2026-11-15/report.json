@@ -1,0 +1,3669 @@
+{
+  "date": "2026-11-15",
+  "region": "europe",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-15T13:48:49.323Z",
+  "stats": {
+    "totalFixtures": 1053,
+    "inScope": 46,
+    "tablesLoaded": 708,
+    "daysCached": 104,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "africa",
+      "angola",
+      "antigua-barbuda",
+      "aruba",
+      "benin",
+      "burkina-faso",
+      "burundi",
+      "cameroon",
+      "dr-congo",
+      "egypt",
+      "ghana",
+      "hong-kong",
+      "india",
+      "kenya",
+      "laos",
+      "mali",
+      "mauritius",
+      "morocco",
+      "niger",
+      "nigeria",
+      "saudi-arabia",
+      "senegal",
+      "sierra-leone",
+      "south-africa",
+      "suriname",
+      "tunisia",
+      "uganda",
+      "united-arab-emirates",
+      "world",
+      "zambia"
+    ],
+    "otherDays": 133,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [
+    {
+      "kickoff": "2026-11-15T14:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "italy",
+      "league": "Serie A Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Inter W",
+      "away": "Juventus W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 0,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "away": {
+          "streak": "WWLLL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 13,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 2,
+      "awayRank": 5,
+      "goalsIndex": 61.9,
+      "mismatchIndex": 45.1,
+      "rankScore": 73.2,
+      "projected": {
+        "home": 2.74,
+        "away": 0.66,
+        "total": 3.4
+      },
+      "probabilities": {
+        "home": 0.8082132696856799,
+        "draw": 0.127177382645953,
+        "away": 0.06460934766836739,
+        "btts": 0.45194734030378947,
+        "over15": 0.8531376161685107,
+        "over25": 0.6602138483171452,
+        "over35": 0.4415669114189313,
+        "under15": 0.1468623838314893,
+        "under25": 0.33978615168285475
+      },
+      "pick": {
+        "side": "Inter W",
+        "where": "H",
+        "probability": 0.8082132696856799
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T11:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "poland",
+      "league": "Ekstraliga Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Slask Wroclaw W",
+      "away": "Leczna W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 14,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "TLWTL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 12,
+      "awayRank": 5,
+      "goalsIndex": 72.4,
+      "mismatchIndex": 60.3,
+      "rankScore": 87.5,
+      "projected": {
+        "home": 1,
+        "away": 2.62,
+        "total": 3.62
+      },
+      "probabilities": {
+        "home": 0.1212130538843514,
+        "draw": 0.15874795464873645,
+        "away": 0.7200389914669117,
+        "btts": 0.5860961044436416,
+        "over15": 0.8762525669309684,
+        "over25": 0.7007508502740617,
+        "over35": 0.4889787788413943,
+        "under15": 0.12374743306903158,
+        "under25": 0.2992491497259383
+      },
+      "pick": {
+        "side": "Leczna W",
+        "where": "A",
+        "probability": 0.7200389914669117
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "ATK_VS_LEAKY",
+        "WIDE_TABLE_GAP"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "kickoff": "2026-11-15T09:00:00.000Z",
+      "kickoffLocal": "04:00",
+      "country": "ukraine",
+      "league": "Persha Liha",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "SC Poltava",
+      "away": "Ahrobiznes Volochysk",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 7,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LWWWW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 4,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 6,
+      "awayRank": 4,
+      "goalsIndex": 26.1,
+      "mismatchIndex": 11.3,
+      "rankScore": 28.9,
+      "projected": {
+        "home": 1.48,
+        "away": 1.17,
+        "total": 2.65
+      },
+      "probabilities": {
+        "home": 0.4430720118454953,
+        "draw": 0.25732445143515686,
+        "away": 0.2996035367193484,
+        "btts": 0.5326464957105074,
+        "over15": 0.7421229348450943,
+        "over25": 0.4940487307286116,
+        "over35": 0.27491651709238485,
+        "under15": 0.2578770651549057,
+        "under25": 0.5059512692713883
+      },
+      "pick": {
+        "side": "SC Poltava",
+        "where": "H",
+        "probability": 0.4430720118454953
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T09:30:00.000Z",
+      "kickoffLocal": "04:30",
+      "country": "slovakia",
+      "league": "2. liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Slovan Bratislava B",
+      "away": "Malzenice",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTTTW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 4,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "LTWTL",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 12,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 9,
+      "awayRank": 12,
+      "goalsIndex": 36.5,
+      "mismatchIndex": 24.8,
+      "rankScore": 42.7,
+      "projected": {
+        "home": 1.85,
+        "away": 1.02,
+        "total": 2.87
+      },
+      "probabilities": {
+        "home": 0.5680730907196315,
+        "draw": 0.22609356672408842,
+        "away": 0.20583334255628005,
+        "btts": 0.5388664105894688,
+        "over15": 0.7805742658384197,
+        "over25": 0.54706162634029,
+        "over35": 0.3236678678870797,
+        "under15": 0.2194257341615803,
+        "under25": 0.45293837365971
+      },
+      "pick": {
+        "side": "Slovan Bratislava B",
+        "where": "H",
+        "probability": 0.5680730907196315
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T09:30:00.000Z",
+      "kickoffLocal": "04:30",
+      "country": "slovakia",
+      "league": "2. liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Zilina B",
+      "away": "I. Bratislava",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWTL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 10,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "WLTTW",
+          "played": 5,
+          "goalsFor": 14,
+          "goalsAgainst": 10,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 5,
+      "goalsIndex": 49.5,
+      "mismatchIndex": 2.7,
+      "rankScore": 50.2,
+      "projected": {
+        "home": 1.49,
+        "away": 1.65,
+        "total": 3.14
+      },
+      "probabilities": {
+        "home": 0.3475623039570138,
+        "draw": 0.23599711517036048,
+        "away": 0.41644058087262636,
+        "btts": 0.6258599351308812,
+        "over15": 0.8208088777697425,
+        "over25": 0.6074329371004853,
+        "over35": 0.3840994525333298,
+        "under15": 0.17919112223025746,
+        "under25": 0.3925670628995147
+      },
+      "pick": {
+        "side": "I. Bratislava",
+        "where": "A",
+        "probability": 0.41644058087262636
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "turkey",
+      "league": "Kadınlar Süper Ligi",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Trabzonspor W",
+      "away": "Yuksekova W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTWWW",
+          "played": 5,
+          "goalsFor": 21,
+          "goalsAgainst": 1,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "away": {
+          "streak": "TWTWT",
+          "played": 5,
+          "goalsFor": 17,
+          "goalsAgainst": 2,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 8,
+      "goalsIndex": 9.8,
+      "mismatchIndex": 11.8,
+      "rankScore": 14.3,
+      "projected": {
+        "home": 1.38,
+        "away": 0.92,
+        "total": 2.31
+      },
+      "probabilities": {
+        "home": 0.47547079242129753,
+        "draw": 0.2741242798341486,
+        "away": 0.25040492774455336,
+        "btts": 0.45016121108570495,
+        "over15": 0.6691457329393793,
+        "over25": 0.4039610249468512,
+        "over35": 0.20065274881924702,
+        "under15": 0.3308542670606207,
+        "under25": 0.5960389750531487
+      },
+      "pick": {
+        "side": "Trabzonspor W",
+        "where": "H",
+        "probability": 0.47547079242129753
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T10:30:00.000Z",
+      "kickoffLocal": "05:30",
+      "country": "greece",
+      "league": "Super League 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Kalamaria",
+      "away": "Athens Kallithea",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLW",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 8,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "WLTTW",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 14,
+      "awayRank": 3,
+      "goalsIndex": 0,
+      "mismatchIndex": 46.2,
+      "rankScore": 46.2,
+      "projected": {
+        "home": 0.6,
+        "away": 1.16,
+        "total": 1.76
+      },
+      "probabilities": {
+        "home": 0.1909287622064392,
+        "draw": 0.31430676865228235,
+        "away": 0.4947644691412788,
+        "btts": 0.3097470405394279,
+        "over15": 0.5251561547161554,
+        "over25": 0.2586930577684677,
+        "over35": 0.10236804089249092,
+        "under15": 0.4748438452838446,
+        "under25": 0.7413069422315324
+      },
+      "pick": {
+        "side": "Athens Kallithea",
+        "where": "A",
+        "probability": 0.4947644691412788
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T11:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "BATE 2",
+      "away": "Osipovichi",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 13,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "TLLWT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 14,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 17,
+      "awayRank": 15,
+      "goalsIndex": 63.5,
+      "mismatchIndex": 10.4,
+      "rankScore": 66.2,
+      "projected": {
+        "home": 2.02,
+        "away": 1.42,
+        "total": 3.43
+      },
+      "probabilities": {
+        "home": 0.5148294521952617,
+        "draw": 0.21525378180367521,
+        "away": 0.2699167660010632,
+        "btts": 0.6576942195716564,
+        "over15": 0.857631454903357,
+        "over25": 0.6679093360682631,
+        "over35": 0.45036130647068884,
+        "under15": 0.14236854509664298,
+        "under25": 0.3320906639317369
+      },
+      "pick": {
+        "side": "BATE 2",
+        "where": "H",
+        "probability": 0.5148294521952617
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T11:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "FC Gomel 2",
+      "away": "Smorgon",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWLL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 14,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "LLLWW",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 7,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 18,
+      "awayRank": 9,
+      "goalsIndex": 38,
+      "mismatchIndex": 39.6,
+      "rankScore": 49.1,
+      "projected": {
+        "home": 1.13,
+        "away": 1.77,
+        "total": 2.9
+      },
+      "probabilities": {
+        "home": 0.242420600787698,
+        "draw": 0.23399184792820943,
+        "away": 0.5235875512840924,
+        "btts": 0.5616566579708052,
+        "over15": 0.7854088618777234,
+        "over25": 0.5540355962869099,
+        "over35": 0.33037477288245715,
+        "under15": 0.2145911381222766,
+        "under25": 0.4459644037130901
+      },
+      "pick": {
+        "side": "Smorgon",
+        "where": "A",
+        "probability": 0.5235875512840924
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T11:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Molodechno",
+      "away": "BumProm Gomel",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWLLL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 6,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "WLLLL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 11,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 6,
+      "awayRank": 10,
+      "goalsIndex": 84.7,
+      "mismatchIndex": 26.4,
+      "rankScore": 91.3,
+      "projected": {
+        "home": 2.46,
+        "away": 1.42,
+        "total": 3.88
+      },
+      "probabilities": {
+        "home": 0.6031928491742947,
+        "draw": 0.18640957711296402,
+        "away": 0.210397573712741,
+        "btts": 0.6934983194793096,
+        "over15": 0.8992185486948266,
+        "over25": 0.7437672904439453,
+        "over35": 0.5427169964394721,
+        "under15": 0.10078145130517335,
+        "under25": 0.2562327095560547
+      },
+      "pick": {
+        "side": "Molodechno",
+        "where": "H",
+        "probability": 0.6031928491742947
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T11:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Orsha",
+      "away": "Volna Pinsk",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWLL",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 8,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "WWWLT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 12,
+      "awayRank": 13,
+      "goalsIndex": 38.8,
+      "mismatchIndex": 7.9,
+      "rankScore": 40.8,
+      "projected": {
+        "home": 1.76,
+        "away": 1.16,
+        "total": 2.91
+      },
+      "probabilities": {
+        "home": 0.5142797070070461,
+        "draw": 0.23476223095620685,
+        "away": 0.250958062036747,
+        "btts": 0.5684023322706355,
+        "over15": 0.7885794015539054,
+        "over25": 0.558648713978551,
+        "over35": 0.3348495114052055,
+        "under15": 0.21142059844609462,
+        "under25": 0.441351286021449
+      },
+      "pick": {
+        "side": "Orsha",
+        "where": "H",
+        "probability": 0.5142797070070461
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T11:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "belarus",
+      "league": "Pershaya Liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Uni X Labs",
+      "away": "Minsk 2",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWLTW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "LWLWL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 11,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 11,
+      "awayRank": 14,
+      "goalsIndex": 31.7,
+      "mismatchIndex": 15.6,
+      "rankScore": 35.6,
+      "projected": {
+        "home": 1.72,
+        "away": 1.05,
+        "total": 2.77
+      },
+      "probabilities": {
+        "home": 0.5306751386310065,
+        "draw": 0.2384236095457158,
+        "away": 0.23090125182327756,
+        "btts": 0.533657865898509,
+        "over15": 0.7637637570539635,
+        "over25": 0.5233636153430027,
+        "over35": 0.30139415116321555,
+        "under15": 0.2362362429460365,
+        "under25": 0.4766363846569973
+      },
+      "pick": {
+        "side": "Uni X Labs",
+        "where": "H",
+        "probability": 0.5306751386310065
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T11:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "poland",
+      "league": "Ekstraliga Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Slask Wroclaw W",
+      "away": "Leczna W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 14,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "TLWTL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 12,
+      "awayRank": 5,
+      "goalsIndex": 72.4,
+      "mismatchIndex": 60.3,
+      "rankScore": 87.5,
+      "projected": {
+        "home": 1,
+        "away": 2.62,
+        "total": 3.62
+      },
+      "probabilities": {
+        "home": 0.1212130538843514,
+        "draw": 0.15874795464873645,
+        "away": 0.7200389914669117,
+        "btts": 0.5860961044436416,
+        "over15": 0.8762525669309684,
+        "over25": 0.7007508502740617,
+        "over35": 0.4889787788413943,
+        "under15": 0.12374743306903158,
+        "under25": 0.2992491497259383
+      },
+      "pick": {
+        "side": "Leczna W",
+        "where": "A",
+        "probability": 0.7200389914669117
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS",
+        "MISMATCH",
+        "ATK_VS_LEAKY",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T11:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "portugal",
+      "league": "Liga Portugal 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Amarante",
+      "away": "Felgueiras",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWLLT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 7,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "TLTLL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 11,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 14,
+      "awayRank": 15,
+      "goalsIndex": 13,
+      "mismatchIndex": 3.8,
+      "rankScore": 13.9,
+      "projected": {
+        "home": 1.25,
+        "away": 1.12,
+        "total": 2.37
+      },
+      "probabilities": {
+        "home": 0.39270613519544434,
+        "draw": 0.27794441819104165,
+        "away": 0.3293494466135128,
+        "btts": 0.48069610951388747,
+        "over15": 0.6849699132167062,
+        "over25": 0.42243393481120367,
+        "over35": 0.2150305118708576,
+        "under15": 0.3150300867832938,
+        "under25": 0.5775660651887964
+      },
+      "pick": {
+        "side": "Amarante",
+        "where": "H",
+        "probability": 0.39270613519544434
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T11:00:00.000Z",
+      "kickoffLocal": "06:00",
+      "country": "portugal",
+      "league": "Liga Portugal 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Tondela",
+      "away": "SC Farense",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWLWW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 5,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "LTLWW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 9,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 8,
+      "goalsIndex": 34.1,
+      "mismatchIndex": 3.8,
+      "rankScore": 35.1,
+      "projected": {
+        "home": 1.53,
+        "away": 1.29,
+        "total": 2.82
+      },
+      "probabilities": {
+        "home": 0.4292619625920853,
+        "draw": 0.24973045142047812,
+        "away": 0.3210075859874367,
+        "btts": 0.5677993601305218,
+        "over15": 0.7723051179063123,
+        "over25": 0.5352997801626156,
+        "over35": 0.31251476268354056,
+        "under15": 0.2276948820936877,
+        "under25": 0.4647002198373844
+      },
+      "pick": {
+        "side": "Tondela",
+        "where": "H",
+        "probability": 0.4292619625920853
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T11:15:00.000Z",
+      "kickoffLocal": "06:15",
+      "country": "netherlands",
+      "league": "Eredivisie Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Den Haag W",
+      "away": "De Graafschap W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLT",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 14,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "WWWLW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 7,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "homeTrend": "descending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 9,
+      "awayRank": 4,
+      "goalsIndex": 65.3,
+      "mismatchIndex": 37.6,
+      "rankScore": 74.6,
+      "projected": {
+        "home": 1.41,
+        "away": 2.06,
+        "total": 3.47
+      },
+      "probabilities": {
+        "home": 0.2618217606488662,
+        "draw": 0.21264486416775072,
+        "away": 0.5255333751833831,
+        "btts": 0.6595186635425947,
+        "over15": 0.8609053154976708,
+        "over25": 0.6735646905956468,
+        "over35": 0.45687403445897184,
+        "under15": 0.1390946845023292,
+        "under25": 0.32643530940435317
+      },
+      "pick": {
+        "side": "De Graafschap W",
+        "where": "A",
+        "probability": 0.5255333751833831
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T11:30:00.000Z",
+      "kickoffLocal": "06:30",
+      "country": "bulgaria",
+      "league": "Vtora liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Dobrudzha",
+      "away": "Etar",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLLWL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 13,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "TWLWL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 7,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 17,
+      "awayRank": 12,
+      "goalsIndex": 36.7,
+      "mismatchIndex": 27.7,
+      "rankScore": 43.7,
+      "projected": {
+        "home": 1.12,
+        "away": 1.75,
+        "total": 2.87
+      },
+      "probabilities": {
+        "home": 0.24305842889979476,
+        "draw": 0.23571488980121968,
+        "away": 0.5212266812989858,
+        "btts": 0.5566448993573024,
+        "over15": 0.7805746211624971,
+        "over25": 0.5470623597998835,
+        "over35": 0.3236689630963166,
+        "under15": 0.2194253788375029,
+        "under25": 0.4529376402001165
+      },
+      "pick": {
+        "side": "Etar",
+        "where": "A",
+        "probability": 0.5212266812989858
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T11:30:00.000Z",
+      "kickoffLocal": "06:30",
+      "country": "italy",
+      "league": "Serie A Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Sassuolo W",
+      "away": "Ternana W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTTLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 10,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "away": {
+          "streak": "LTLWW",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 9,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 12,
+      "awayRank": 8,
+      "goalsIndex": 24.4,
+      "mismatchIndex": 21.1,
+      "rankScore": 29.7,
+      "projected": {
+        "home": 1.37,
+        "away": 1.25,
+        "total": 2.61
+      },
+      "probabilities": {
+        "home": 0.39691491033730475,
+        "draw": 0.2621758224408337,
+        "away": 0.3409092672218607,
+        "btts": 0.532191044976797,
+        "over15": 0.7364535516462023,
+        "over25": 0.48657948533683615,
+        "over35": 0.2683561340933233,
+        "under15": 0.2635464483537977,
+        "under25": 0.5134205146631639
+      },
+      "pick": {
+        "side": "Sassuolo W",
+        "where": "H",
+        "probability": 0.39691491033730475
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T12:00:00.000Z",
+      "kickoffLocal": "07:00",
+      "country": "lithuania",
+      "league": "TOPLYGA",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "FK Minija",
+      "away": "FA Siauliai",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "away": {
+          "streak": "WWTLT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 4,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "unknown",
+        "awayTrend": "ascending"
+      },
+      "homeRank": null,
+      "awayRank": 7,
+      "goalsIndex": 19.8,
+      "mismatchIndex": 9.7,
+      "rankScore": 22.2,
+      "projected": {
+        "home": 1.65,
+        "away": 0.93,
+        "total": 2.59
+      },
+      "probabilities": {
+        "home": 0.5430353314074959,
+        "draw": 0.2450371037099111,
+        "away": 0.21192756488259318,
+        "btts": 0.48917022372091784,
+        "over15": 0.7287286915412834,
+        "over25": 0.47653730360488555,
+        "over35": 0.259652709979584,
+        "under15": 0.2712713084587166,
+        "under25": 0.5234626963951144
+      },
+      "pick": {
+        "side": "FK Minija",
+        "where": "H",
+        "probability": 0.5430353314074959
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T12:00:00.000Z",
+      "kickoffLocal": "07:00",
+      "country": "slovenia",
+      "league": "2. SNL",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Primorje",
+      "away": "NK Jesenice",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWWLT",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 3,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TTLLT",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 9,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 12,
+      "awayRank": 9,
+      "goalsIndex": 16.8,
+      "mismatchIndex": 11.2,
+      "rankScore": 19.6,
+      "projected": {
+        "home": 1.18,
+        "away": 1.27,
+        "total": 2.45
+      },
+      "probabilities": {
+        "home": 0.341904588885478,
+        "draw": 0.2729330197130928,
+        "away": 0.38516239140142866,
+        "btts": 0.4981831932817391,
+        "over15": 0.7022870784552423,
+        "over25": 0.44329841011141496,
+        "over35": 0.23179099763062283,
+        "under15": 0.2977129215447577,
+        "under25": 0.556701589888585
+      },
+      "pick": {
+        "side": "NK Jesenice",
+        "where": "A",
+        "probability": 0.38516239140142866
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T12:00:00.000Z",
+      "kickoffLocal": "07:00",
+      "country": "ukraine",
+      "league": "Persha Liha",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Nyva Ternopil",
+      "away": "Oleksandriya",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTWTW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 6,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "away": {
+          "streak": "WTWTL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 4,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 2,
+      "goalsIndex": 0,
+      "mismatchIndex": 19.6,
+      "rankScore": 19.6,
+      "projected": {
+        "home": 0.79,
+        "away": 0.88,
+        "total": 1.67
+      },
+      "probabilities": {
+        "home": 0.3028292056065381,
+        "draw": 0.34369695702421693,
+        "away": 0.3534738373692447,
+        "btts": 0.31961935781082723,
+        "over15": 0.497380332906482,
+        "over25": 0.23487921126657316,
+        "over35": 0.08875358688702406,
+        "under15": 0.502619667093518,
+        "under25": 0.7651207887334268
+      },
+      "pick": {
+        "side": "Oleksandriya",
+        "where": "A",
+        "probability": 0.3534738373692447
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T12:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "bulgaria",
+      "league": "Vtora liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Lok. Gorna",
+      "away": "CSKA Sofia II",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWWTT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 3,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "WWTTW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 5,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 1,
+      "goalsIndex": 0.4,
+      "mismatchIndex": 23.2,
+      "rankScore": 23.3,
+      "projected": {
+        "home": 0.84,
+        "away": 1.27,
+        "total": 2.11
+      },
+      "probabilities": {
+        "home": 0.2461031332384874,
+        "draw": 0.2894420475517179,
+        "away": 0.4644548192097953,
+        "btts": 0.40869580330661776,
+        "over15": 0.6229498826654649,
+        "over25": 0.35306807761963155,
+        "over35": 0.16325120807072852,
+        "under15": 0.3770501173345351,
+        "under25": 0.6469319223803685
+      },
+      "pick": {
+        "side": "CSKA Sofia II",
+        "where": "A",
+        "probability": 0.4644548192097953
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T12:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "bulgaria",
+      "league": "Vtora liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Nesebar",
+      "away": "Fratria",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLTL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 8,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "WLLWW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 7,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 11,
+      "awayRank": 6,
+      "goalsIndex": 35.4,
+      "mismatchIndex": 19,
+      "rankScore": 40.1,
+      "projected": {
+        "home": 1.34,
+        "away": 1.5,
+        "total": 2.84
+      },
+      "probabilities": {
+        "home": 0.3390570234756652,
+        "draw": 0.24984852896966986,
+        "away": 0.4110944475546653,
+        "btts": 0.5734497088317916,
+        "over15": 0.7756452775181173,
+        "over25": 0.5400260783449572,
+        "over35": 0.31697323646103276,
+        "under15": 0.2243547224818827,
+        "under25": 0.4599739216550428
+      },
+      "pick": {
+        "side": "Fratria",
+        "where": "A",
+        "probability": 0.4110944475546653
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T12:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "bulgaria",
+      "league": "Vtora liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Pirin Blagoevgrad",
+      "away": "Montana",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLLTL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 9,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "away": {
+          "streak": "TLWLL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 9,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 18,
+      "awayRank": 15,
+      "goalsIndex": 37.1,
+      "mismatchIndex": 26,
+      "rankScore": 43.6,
+      "projected": {
+        "home": 1.02,
+        "away": 1.86,
+        "total": 2.88
+      },
+      "probabilities": {
+        "home": 0.20451205865743996,
+        "draw": 0.22515868018268415,
+        "away": 0.5703292611598757,
+        "btts": 0.5398667661147056,
+        "over15": 0.7821961931660922,
+        "over25": 0.5493931138615606,
+        "over35": 0.32590215772921005,
+        "under15": 0.21780380683390776,
+        "under25": 0.45060688613843936
+      },
+      "pick": {
+        "side": "Montana",
+        "where": "A",
+        "probability": 0.5703292611598757
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T12:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "bulgaria",
+      "league": "Vtora liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Rilski Sportist",
+      "away": "Hebar",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTLTW",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 6,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "WLWWL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 8,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 5,
+      "goalsIndex": 42.7,
+      "mismatchIndex": 10.1,
+      "rankScore": 45.3,
+      "projected": {
+        "home": 1.5,
+        "away": 1.5,
+        "total": 3
+      },
+      "probabilities": {
+        "home": 0.3784996888428636,
+        "draw": 0.24300062231427347,
+        "away": 0.37849968884286367,
+        "btts": 0.60352655678569,
+        "over15": 0.8008515067669536,
+        "over25": 0.5768094518797766,
+        "over35": 0.35276739699260007,
+        "under15": 0.1991484932330464,
+        "under25": 0.4231905481202234
+      },
+      "pick": {
+        "side": "Hebar",
+        "where": "A",
+        "probability": 0.37849968884286367
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T12:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "bulgaria",
+      "league": "Vtora liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Svoge",
+      "away": "Spartak Pleven",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTTLL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 12,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "away": {
+          "streak": "TWWTL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 7,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 16,
+      "awayRank": 14,
+      "goalsIndex": 9.8,
+      "mismatchIndex": 9.9,
+      "rankScore": 12.3,
+      "projected": {
+        "home": 1.29,
+        "away": 1.01,
+        "total": 2.31
+      },
+      "probabilities": {
+        "home": 0.4288537832786762,
+        "draw": 0.2801230006885335,
+        "away": 0.29102321603278986,
+        "btts": 0.46076905589200956,
+        "over15": 0.6691457700005335,
+        "over25": 0.40396109171308214,
+        "over35": 0.2006528383593695,
+        "under15": 0.33085422999946645,
+        "under25": 0.5960389082869179
+      },
+      "pick": {
+        "side": "Svoge",
+        "where": "H",
+        "probability": 0.4288537832786762
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T12:30:00.000Z",
+      "kickoffLocal": "07:30",
+      "country": "bulgaria",
+      "league": "Vtora liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Yantra Gabrovo",
+      "away": "Ludogorets II",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWTWL",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 7,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "WTWWL",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 5,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 4,
+      "awayRank": 9,
+      "goalsIndex": 16.3,
+      "mismatchIndex": 15.2,
+      "rankScore": 20.1,
+      "projected": {
+        "home": 1.38,
+        "away": 1.06,
+        "total": 2.44
+      },
+      "probabilities": {
+        "home": 0.4419187892008526,
+        "draw": 0.2695995837301408,
+        "away": 0.28848162706900643,
+        "btts": 0.4891264429642828,
+        "over15": 0.7001665918364192,
+        "over25": 0.4407061007255625,
+        "over35": 0.22967823462206613,
+        "under15": 0.29983340816358084,
+        "under25": 0.5592938992744375
+      },
+      "pick": {
+        "side": "Yantra Gabrovo",
+        "where": "H",
+        "probability": 0.4419187892008526
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T13:00:00.000Z",
+      "kickoffLocal": "08:00",
+      "country": "slovenia",
+      "league": "2. SNL",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Slovan Ljubljana",
+      "away": "Krsko Posavje",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLLLT",
+          "played": 5,
+          "goalsFor": 1,
+          "goalsAgainst": 6,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 15,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "descending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 10,
+      "awayRank": 15,
+      "goalsIndex": 17.9,
+      "mismatchIndex": 30.5,
+      "rankScore": 34.9,
+      "projected": {
+        "home": 1.66,
+        "away": 0.81,
+        "total": 2.48
+      },
+      "probabilities": {
+        "home": 0.5759215369801586,
+        "draw": 0.24276785774384047,
+        "away": 0.18131060527600135,
+        "btts": 0.44958765864301675,
+        "over15": 0.7064901117823886,
+        "over25": 0.4484678528448055,
+        "over35": 0.23602952631952862,
+        "under15": 0.29350988821761137,
+        "under25": 0.5515321471551945
+      },
+      "pick": {
+        "side": "Slovan Ljubljana",
+        "where": "H",
+        "probability": 0.5759215369801586
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T13:00:00.000Z",
+      "kickoffLocal": "08:00",
+      "country": "spain",
+      "league": "LaLiga 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Tenerife",
+      "away": "Ceuta",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTTTL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 12,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "descending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 14,
+      "awayRank": 22,
+      "goalsIndex": 41.8,
+      "mismatchIndex": 41.7,
+      "rankScore": 52.2,
+      "projected": {
+        "home": 2.14,
+        "away": 0.84,
+        "total": 2.98
+      },
+      "probabilities": {
+        "home": 0.6724190432829273,
+        "draw": 0.19231953158109052,
+        "away": 0.13526142513598205,
+        "btts": 0.5014264363248919,
+        "over15": 0.7978414053691435,
+        "over25": 0.5723075883138851,
+        "over35": 0.3482773300389954,
+        "under15": 0.2021585946308565,
+        "under25": 0.42769241168611494
+      },
+      "pick": {
+        "side": "Tenerife",
+        "where": "H",
+        "probability": 0.6724190432829273
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T13:30:00.000Z",
+      "kickoffLocal": "08:30",
+      "country": "bulgaria",
+      "league": "Vtora liga",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Beroe",
+      "away": "Vihren",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLWLW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 9,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "WTTLW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 10,
+      "awayRank": 3,
+      "goalsIndex": 38.4,
+      "mismatchIndex": 23.8,
+      "rankScore": 44.3,
+      "projected": {
+        "home": 1.24,
+        "away": 1.67,
+        "total": 2.91
+      },
+      "probabilities": {
+        "home": 0.28433670937662137,
+        "draw": 0.24101457376244936,
+        "away": 0.4746487168609284,
+        "btts": 0.5768442199762261,
+        "over15": 0.786999549718527,
+        "over25": 0.5563462104565653,
+        "over35": 0.3326124713724619,
+        "under15": 0.21300045028147296,
+        "under25": 0.4436537895434347
+      },
+      "pick": {
+        "side": "Vihren",
+        "where": "A",
+        "probability": 0.4746487168609284
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T13:30:00.000Z",
+      "kickoffLocal": "08:30",
+      "country": "netherlands",
+      "league": "Eerste Divisie",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Maastricht",
+      "away": "Vitesse",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLTLL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 10,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "TLWLT",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 7,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "descending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 9,
+      "awayRank": 11,
+      "goalsIndex": 31.6,
+      "mismatchIndex": 4.9,
+      "rankScore": 32.8,
+      "projected": {
+        "home": 1.32,
+        "away": 1.44,
+        "total": 2.76
+      },
+      "probabilities": {
+        "home": 0.34543538400653995,
+        "draw": 0.25438935762106635,
+        "away": 0.40017525837239354,
+        "btts": 0.5592286106883608,
+        "over15": 0.7620228245843075,
+        "over25": 0.5209570092323687,
+        "over35": 0.29917645910858487,
+        "under15": 0.23797717541569252,
+        "under25": 0.47904299076763135
+      },
+      "pick": {
+        "side": "Vitesse",
+        "where": "A",
+        "probability": 0.40017525837239354
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T14:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "england",
+      "league": "Women’s Super League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Aston Villa W",
+      "away": "Birmingham W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTWWT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "LLWTL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 11,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 10,
+      "awayRank": 13,
+      "goalsIndex": 49.2,
+      "mismatchIndex": 16.1,
+      "rankScore": 53.2,
+      "projected": {
+        "home": 1.83,
+        "away": 1.3,
+        "total": 3.13
+      },
+      "probabilities": {
+        "home": 0.4988398878404459,
+        "draw": 0.22860943302929357,
+        "away": 0.27255067913026093,
+        "btts": 0.6107719795397368,
+        "over15": 0.8194448141922004,
+        "over25": 0.6052945599742303,
+        "over35": 0.3818644614068152,
+        "under15": 0.1805551858077996,
+        "under25": 0.3947054400257697
+      },
+      "pick": {
+        "side": "Aston Villa W",
+        "where": "H",
+        "probability": 0.4988398878404459
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T14:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "england",
+      "league": "Women’s Super League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "West Ham W",
+      "away": "Charlton W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWLWL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 12,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 18,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 11,
+      "awayRank": 14,
+      "goalsIndex": 48.8,
+      "mismatchIndex": 31.4,
+      "rankScore": 56.7,
+      "projected": {
+        "home": 2.16,
+        "away": 0.96,
+        "total": 3.13
+      },
+      "probabilities": {
+        "home": 0.6477695558670927,
+        "draw": 0.19567005597688095,
+        "away": 0.15656038815602613,
+        "btts": 0.5459379659053588,
+        "over15": 0.8180694145851873,
+        "over25": 0.6031440395048538,
+        "over35": 0.37962164942130644,
+        "under15": 0.18193058541481266,
+        "under25": 0.39685596049514615
+      },
+      "pick": {
+        "side": "West Ham W",
+        "where": "H",
+        "probability": 0.6477695558670927
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T14:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "italy",
+      "league": "Serie A Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Como 1907 W",
+      "away": "Como W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTTWW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 10,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "LWTTL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 4,
+      "awayRank": 6,
+      "goalsIndex": 21.1,
+      "mismatchIndex": 13.6,
+      "rankScore": 24.5,
+      "projected": {
+        "home": 1.52,
+        "away": 1.02,
+        "total": 2.54
+      },
+      "probabilities": {
+        "home": 0.48830070772458173,
+        "draw": 0.25754131614163156,
+        "away": 0.25415797613378677,
+        "btts": 0.4995594815511831,
+        "over15": 0.720812766315824,
+        "over25": 0.46640537128237347,
+        "over35": 0.25100711015405214,
+        "under15": 0.279187233684176,
+        "under25": 0.5335946287176265
+      },
+      "pick": {
+        "side": "Como 1907 W",
+        "where": "H",
+        "probability": 0.48830070772458173
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T14:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "italy",
+      "league": "Serie A Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Inter W",
+      "away": "Juventus W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 0,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "away": {
+          "streak": "WWLLL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 13,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 2,
+      "awayRank": 5,
+      "goalsIndex": 61.9,
+      "mismatchIndex": 45.1,
+      "rankScore": 73.2,
+      "projected": {
+        "home": 2.74,
+        "away": 0.66,
+        "total": 3.4
+      },
+      "probabilities": {
+        "home": 0.8082132696856799,
+        "draw": 0.127177382645953,
+        "away": 0.06460934766836739,
+        "btts": 0.45194734030378947,
+        "over15": 0.8531376161685107,
+        "over25": 0.6602138483171452,
+        "over35": 0.4415669114189313,
+        "under15": 0.1468623838314893,
+        "under25": 0.33978615168285475
+      },
+      "pick": {
+        "side": "Inter W",
+        "where": "H",
+        "probability": 0.8082132696856799
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T14:00:00.000Z",
+      "kickoffLocal": "09:00",
+      "country": "portugal",
+      "league": "Liga Portugal 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Portimonense",
+      "away": "Academica",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTLWL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 6,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TLWWL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 6,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 10,
+      "awayRank": 6,
+      "goalsIndex": 1,
+      "mismatchIndex": 12.4,
+      "rankScore": 12.6,
+      "projected": {
+        "home": 0.97,
+        "away": 1.15,
+        "total": 2.12
+      },
+      "probabilities": {
+        "home": 0.3059389490586108,
+        "draw": 0.2962325808766195,
+        "away": 0.39782847006476885,
+        "btts": 0.4243118110976249,
+        "over15": 0.6255013010052851,
+        "over25": 0.3557662124216552,
+        "over35": 0.16515341648922405,
+        "under15": 0.3744986989947149,
+        "under25": 0.6442337875783448
+      },
+      "pick": {
+        "side": "Academica",
+        "where": "A",
+        "probability": 0.39782847006476885
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T15:00:00.000Z",
+      "kickoffLocal": "10:00",
+      "country": "poland",
+      "league": "Ekstraliga Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Pogon Szczecin W",
+      "away": "GKS Katowice W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWLW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 5,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 18,
+          "goalsAgainst": 2,
+          "points": 15,
+          "ppg": 3
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 1,
+      "goalsIndex": 72.6,
+      "mismatchIndex": 16.5,
+      "rankScore": 76.7,
+      "projected": {
+        "home": 1.56,
+        "away": 2.06,
+        "total": 3.62
+      },
+      "probabilities": {
+        "home": 0.2937115679418126,
+        "draw": 0.21234932352194122,
+        "away": 0.49393910853624595,
+        "btts": 0.6891913911878118,
+        "over15": 0.876262587083659,
+        "over25": 0.7007750812588862,
+        "over35": 0.4890201575636597,
+        "under15": 0.123737412916341,
+        "under25": 0.2992249187411138
+      },
+      "pick": {
+        "side": "GKS Katowice W",
+        "where": "A",
+        "probability": 0.49393910853624595
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T15:15:00.000Z",
+      "kickoffLocal": "10:15",
+      "country": "spain",
+      "league": "LaLiga 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Granada CF",
+      "away": "Las Palmas",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 3,
+          "points": 15,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WWWLL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 11,
+      "goalsIndex": 49.3,
+      "mismatchIndex": 20.1,
+      "rankScore": 54.3,
+      "projected": {
+        "home": 1.99,
+        "away": 1.15,
+        "total": 3.14
+      },
+      "probabilities": {
+        "home": 0.5683923158775332,
+        "draw": 0.21568010448693378,
+        "away": 0.21592757963553239,
+        "btts": 0.5899498507991372,
+        "over15": 0.8208077876888465,
+        "over25": 0.6074305489807487,
+        "over35": 0.38409570579960595,
+        "under15": 0.17919221231115345,
+        "under25": 0.39256945101925134
+      },
+      "pick": {
+        "side": "Granada CF",
+        "where": "H",
+        "probability": 0.5683923158775332
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T15:30:00.000Z",
+      "kickoffLocal": "10:30",
+      "country": "portugal",
+      "league": "Liga Portugal 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Penafiel",
+      "away": "Lusitania FC",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWLW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 6,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "LTTTW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 6,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 1,
+      "awayRank": 4,
+      "goalsIndex": 32.8,
+      "mismatchIndex": 15.1,
+      "rankScore": 36.6,
+      "projected": {
+        "home": 1.69,
+        "away": 1.1,
+        "total": 2.79
+      },
+      "probabilities": {
+        "home": 0.511618927836353,
+        "draw": 0.24100419666218528,
+        "away": 0.24737687550146187,
+        "btts": 0.5440303868137227,
+        "over15": 0.7672131916868732,
+        "over25": 0.5281583375192993,
+        "over35": 0.305837323143455,
+        "under15": 0.23278680831312681,
+        "under25": 0.4718416624807007
+      },
+      "pick": {
+        "side": "Penafiel",
+        "where": "H",
+        "probability": 0.511618927836353
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T15:45:00.000Z",
+      "kickoffLocal": "10:45",
+      "country": "netherlands",
+      "league": "Eredivisie Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "AZ Alkmaar W",
+      "away": "Ajax W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 1,
+          "goalsAgainst": 16,
+          "points": 0,
+          "ppg": 0
+        },
+        "away": {
+          "streak": "WLWWW",
+          "played": 5,
+          "goalsFor": 19,
+          "goalsAgainst": 7,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 5,
+      "awayRank": 2,
+      "goalsIndex": 60.6,
+      "mismatchIndex": 40.6,
+      "rankScore": 70.8,
+      "projected": {
+        "home": 1.01,
+        "away": 2.36,
+        "total": 3.37
+      },
+      "probabilities": {
+        "home": 0.14589715790999577,
+        "draw": 0.1802746029154455,
+        "away": 0.6738282391745581,
+        "btts": 0.5757482046545934,
+        "over15": 0.8497117098476906,
+        "over25": 0.6544246294780384,
+        "over35": 0.4350521425294615,
+        "under15": 0.15028829015230938,
+        "under25": 0.34557537052196163
+      },
+      "pick": {
+        "side": "Ajax W",
+        "where": "A",
+        "probability": 0.6738282391745581
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T15:45:00.000Z",
+      "kickoffLocal": "10:45",
+      "country": "netherlands",
+      "league": "Eredivisie Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Feyenoord W",
+      "away": "Heerenveen W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LWTWT",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 9,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 8,
+      "awayRank": 7,
+      "goalsIndex": 59.9,
+      "mismatchIndex": 7.1,
+      "rankScore": 61.7,
+      "projected": {
+        "home": 1.58,
+        "away": 1.78,
+        "total": 3.36
+      },
+      "probabilities": {
+        "home": 0.3448673463523122,
+        "draw": 0.22680673097961207,
+        "away": 0.4283259226680754,
+        "btts": 0.6601214811630054,
+        "over15": 0.8485537073307449,
+        "over25": 0.6524793878675766,
+        "over35": 0.4328761500688283,
+        "under15": 0.15144629266925513,
+        "under25": 0.34752061213242336
+      },
+      "pick": {
+        "side": "Heerenveen W",
+        "where": "A",
+        "probability": 0.4283259226680754
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T15:45:00.000Z",
+      "kickoffLocal": "10:45",
+      "country": "netherlands",
+      "league": "Eredivisie Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "PEC Zwolle W",
+      "away": "Utrecht W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTTWL",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 8,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "LWLLL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 9,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 10,
+      "goalsIndex": 40.4,
+      "mismatchIndex": 36.6,
+      "rankScore": 49.5,
+      "projected": {
+        "home": 1.96,
+        "away": 0.99,
+        "total": 2.95
+      },
+      "probabilities": {
+        "home": 0.5995553436023097,
+        "draw": 0.21518356962947266,
+        "away": 0.18526108676821781,
+        "btts": 0.5399039805464619,
+        "over15": 0.7932567336182399,
+        "over25": 0.5655120151768138,
+        "over35": 0.34156304204274535,
+        "under15": 0.2067432663817601,
+        "under25": 0.4344879848231862
+      },
+      "pick": {
+        "side": "PEC Zwolle W",
+        "where": "H",
+        "probability": 0.5995553436023097
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T15:45:00.000Z",
+      "kickoffLocal": "10:45",
+      "country": "netherlands",
+      "league": "Eredivisie Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Twente W",
+      "away": "PSV W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTWWW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 3,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "WWWWL",
+          "played": 5,
+          "goalsFor": 16,
+          "goalsAgainst": 7,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 1,
+      "awayRank": 3,
+      "goalsIndex": 79.5,
+      "mismatchIndex": 25.3,
+      "rankScore": 85.8,
+      "projected": {
+        "home": 2.47,
+        "away": 1.3,
+        "total": 3.77
+      },
+      "probabilities": {
+        "home": 0.6303584094927435,
+        "draw": 0.1825547558940225,
+        "away": 0.18708683461323417,
+        "btts": 0.6659319655299709,
+        "over15": 0.8900355466949814,
+        "over25": 0.7262081066133357,
+        "over35": 0.5203316235774007,
+        "under15": 0.10996445330501858,
+        "under25": 0.2737918933866643
+      },
+      "pick": {
+        "side": "Twente W",
+        "where": "H",
+        "probability": 0.6303584094927435
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T16:00:00.000Z",
+      "kickoffLocal": "11:00",
+      "country": "belgium",
+      "league": "Super League Women",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Leuven W",
+      "away": "Genk W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWLTT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 5,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LTWWW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 4,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "descending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 4,
+      "awayRank": 6,
+      "goalsIndex": 18.6,
+      "mismatchIndex": 26.7,
+      "rankScore": 31.3,
+      "projected": {
+        "home": 1.84,
+        "away": 0.65,
+        "total": 2.49
+      },
+      "probabilities": {
+        "home": 0.6592157931648953,
+        "draw": 0.2159691505341747,
+        "away": 0.12481505630092989,
+        "btts": 0.4020464723985035,
+        "over15": 0.7106431063645055,
+        "over25": 0.4536170782514066,
+        "over35": 0.2402854749175348,
+        "under15": 0.28935689363549455,
+        "under25": 0.5463829217485934
+      },
+      "pick": {
+        "side": "Leuven W",
+        "where": "H",
+        "probability": 0.6592157931648953
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T16:30:00.000Z",
+      "kickoffLocal": "11:30",
+      "country": "england",
+      "league": "Women’s Super League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Arsenal W",
+      "away": "London City Lionesses W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTWTL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 8,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "WLTWW",
+          "played": 5,
+          "goalsFor": 15,
+          "goalsAgainst": 7,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 3,
+      "goalsIndex": 34.6,
+      "mismatchIndex": 17.7,
+      "rankScore": 39,
+      "projected": {
+        "home": 1.16,
+        "away": 1.66,
+        "total": 2.83
+      },
+      "probabilities": {
+        "home": 0.26661050285759136,
+        "draw": 0.24299754679075666,
+        "away": 0.4903919503516515,
+        "btts": 0.5559805804781589,
+        "over15": 0.7723049573722467,
+        "over25": 0.5352994525302384,
+        "over35": 0.31251427797875037,
+        "under15": 0.2276950426277533,
+        "under25": 0.46470054746976164
+      },
+      "pick": {
+        "side": "London City Lionesses W",
+        "where": "A",
+        "probability": 0.4903919503516515
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T17:30:00.000Z",
+      "kickoffLocal": "12:30",
+      "country": "spain",
+      "league": "LaLiga 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Eibar",
+      "away": "Cadiz CF",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLTLW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 8,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "LLWLL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 8,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 20,
+      "goalsIndex": 35.2,
+      "mismatchIndex": 49.6,
+      "rankScore": 58.4,
+      "projected": {
+        "home": 1.83,
+        "away": 1.01,
+        "total": 2.84
+      },
+      "probabilities": {
+        "home": 0.5659424494669727,
+        "draw": 0.22783676820950055,
+        "away": 0.20622078232352703,
+        "btts": 0.5337927433151405,
+        "over15": 0.7756446220799896,
+        "over25": 0.5400247345602451,
+        "over35": 0.31697124104155305,
+        "under15": 0.22435537792001037,
+        "under25": 0.45997526543975487
+      },
+      "pick": {
+        "side": "Eibar",
+        "where": "H",
+        "probability": 0.5659424494669727
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-11-15T17:30:00.000Z",
+      "kickoffLocal": "12:30",
+      "country": "spain",
+      "league": "LaLiga 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Eldense",
+      "away": "Sabadell",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLWW",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 9,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "TLTLW",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 5,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 16,
+      "awayRank": 13,
+      "goalsIndex": 0,
+      "mismatchIndex": 10,
+      "rankScore": 10,
+      "projected": {
+        "home": 0.84,
+        "away": 0.97,
+        "total": 1.82
+      },
+      "probabilities": {
+        "home": 0.3012050829557651,
+        "draw": 0.32675049970118986,
+        "away": 0.37204441734304483,
+        "btts": 0.35286057322123143,
+        "over15": 0.5401318714023494,
+        "over25": 0.2720582101748108,
+        "over35": 0.11032043456752968,
+        "under15": 0.4598681285976506,
+        "under25": 0.7279417898251892
+      },
+      "pick": {
+        "side": "Sabadell",
+        "where": "A",
+        "probability": 0.37204441734304483
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-15T18:00:00.000Z",
+      "kickoffLocal": "13:00",
+      "country": "portugal",
+      "league": "Liga Portugal 2",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Leixoes",
+      "away": "Chaves",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TLLLT",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 11,
+          "points": 2,
+          "ppg": 0.4
+        },
+        "away": {
+          "streak": "LLWTL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 12,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "descending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 12,
+      "awayRank": 16,
+      "goalsIndex": 60.9,
+      "mismatchIndex": 20.7,
+      "rankScore": 66.1,
+      "projected": {
+        "home": 2.09,
+        "away": 1.29,
+        "total": 3.38
+      },
+      "probabilities": {
+        "home": 0.5580525860915316,
+        "draw": 0.2097394252659343,
+        "away": 0.23220798864253406,
+        "btts": 0.6350883908906662,
+        "over15": 0.8508702755460008,
+        "over25": 0.6563819622980251,
+        "over35": 0.43725846270530616,
+        "under15": 0.1491297244539992,
+        "under25": 0.34361803770197485
+      },
+      "pick": {
+        "side": "Leixoes",
+        "where": "H",
+        "probability": 0.5580525860915316
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "austria",
+      "slug": "wien",
+      "name": "AUSTRIA: Wien"
+    },
+    {
+      "country": "austria",
+      "slug": "bundesliga-women",
+      "name": "AUSTRIA: Bundesliga Women"
+    },
+    {
+      "country": "belgium",
+      "slug": "national-division-1-acff",
+      "name": "BELGIUM: National Division 1 - ACFF"
+    },
+    {
+      "country": "belgium",
+      "slug": "national-division-1-vv",
+      "name": "BELGIUM: National Division 1 - VV"
+    },
+    {
+      "country": "belgium",
+      "slug": "second-amateur-division-group-acff",
+      "name": "BELGIUM: Second Amateur Division Group ACFF"
+    },
+    {
+      "country": "belgium",
+      "slug": "second-amateur-division-group-vfv-a",
+      "name": "BELGIUM: Second Amateur Division Group VFV A"
+    },
+    {
+      "country": "belgium",
+      "slug": "1st-national-women",
+      "name": "BELGIUM: 1st National Women"
+    },
+    {
+      "country": "bosnia-and-herzegovina",
+      "slug": "prva-liga-fbih",
+      "name": "BOSNIA AND HERZEGOVINA: Prva Liga - FBiH"
+    },
+    {
+      "country": "bosnia-and-herzegovina",
+      "slug": "prva-liga-rs",
+      "name": "BOSNIA AND HERZEGOVINA: Prva Liga - RS"
+    },
+    {
+      "country": "croatia",
+      "slug": "1-hnl-women",
+      "name": "CROATIA: 1. HNL Women"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "3-cfl-group-a",
+      "name": "CZECH REPUBLIC: 3. CFL - Group A"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "3-cfl-group-b",
+      "name": "CZECH REPUBLIC: 3. CFL - Group B"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "3-msfl",
+      "name": "CZECH REPUBLIC: 3. MSFL"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "4-liga-group-a",
+      "name": "CZECH REPUBLIC: 4. liga - Group A"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "4-liga-group-c",
+      "name": "CZECH REPUBLIC: 4. liga - Group C"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "4-liga-group-d",
+      "name": "CZECH REPUBLIC: 4. liga - Group D"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "4-liga-group-e",
+      "name": "CZECH REPUBLIC: 4. liga - Group E"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "4-liga-group-f",
+      "name": "CZECH REPUBLIC: 4. liga - Group F"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "kralovehradecky-kp",
+      "name": "CZECH REPUBLIC: Kralovehradecky KP"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "moravskoslezsky-kp",
+      "name": "CZECH REPUBLIC: Moravskoslezsky KP"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "olomoucky-kp",
+      "name": "CZECH REPUBLIC: Olomoucky KP"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "pardubicky-kp",
+      "name": "CZECH REPUBLIC: Pardubicky KP"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "prazsky-prebor",
+      "name": "CZECH REPUBLIC: Prazsky prebor"
+    },
+    {
+      "country": "czech-republic",
+      "slug": "ustecky-kp",
+      "name": "CZECH REPUBLIC: Ustecky KP"
+    },
+    {
+      "country": "denmark",
+      "slug": "2nd-division",
+      "name": "DENMARK: 2nd Division"
+    },
+    {
+      "country": "denmark",
+      "slug": "a-liga-women",
+      "name": "DENMARK: A-Liga Women"
+    },
+    {
+      "country": "denmark",
+      "slug": "b-liga-women",
+      "name": "DENMARK: B-Liga Women"
+    },
+    {
+      "country": "england",
+      "slug": "wsl-2",
+      "name": "ENGLAND: WSL 2"
+    },
+    {
+      "country": "europe",
+      "slug": "uefa-nations-league",
+      "name": "EUROPE: UEFA Nations League - League C"
+    },
+    {
+      "country": "europe",
+      "slug": "premier-league-crimea",
+      "name": "EUROPE: Premier League (Crimea)"
+    },
+    {
+      "country": "france",
+      "slug": "seconde-ligue-women",
+      "name": "FRANCE: Seconde Ligue Women"
+    },
+    {
+      "country": "georgia",
+      "slug": "crystalbet-erovnuli-liga",
+      "name": "GEORGIA: Crystalbet Erovnuli Liga"
+    },
+    {
+      "country": "germany",
+      "slug": "bundesliga-women",
+      "name": "GERMANY: Bundesliga Women"
+    },
+    {
+      "country": "germany",
+      "slug": "2-bundesliga-women",
+      "name": "GERMANY: 2. Bundesliga Women"
+    },
+    {
+      "country": "greece",
+      "slug": "gamma-ethniki-group-1",
+      "name": "GREECE: Gamma Ethniki - Group 1"
+    },
+    {
+      "country": "greece",
+      "slug": "gamma-ethniki-group-2",
+      "name": "GREECE: Gamma Ethniki - Group 2"
+    },
+    {
+      "country": "greece",
+      "slug": "gamma-ethniki-group-3",
+      "name": "GREECE: Gamma Ethniki - Group 3"
+    },
+    {
+      "country": "greece",
+      "slug": "gamma-ethniki-group-4",
+      "name": "GREECE: Gamma Ethniki - Group 4"
+    },
+    {
+      "country": "greece",
+      "slug": "gamma-ethniki-group-5",
+      "name": "GREECE: Gamma Ethniki - Group 5"
+    },
+    {
+      "country": "greece",
+      "slug": "gamma-ethniki-group-6",
+      "name": "GREECE: Gamma Ethniki - Group 6"
+    },
+    {
+      "country": "greece",
+      "slug": "gamma-ethniki-group-8",
+      "name": "GREECE: Gamma Ethniki - Group 8"
+    },
+    {
+      "country": "greece",
+      "slug": "gamma-ethniki-group-9",
+      "name": "GREECE: Gamma Ethniki - Group 9"
+    },
+    {
+      "country": "greece",
+      "slug": "gamma-ethniki-group-10",
+      "name": "GREECE: Gamma Ethniki - Group 10"
+    },
+    {
+      "country": "greece",
+      "slug": "division-a-women",
+      "name": "GREECE: Division A Women"
+    },
+    {
+      "country": "hungary",
+      "slug": "nb-iii-northeast",
+      "name": "HUNGARY: NB III - Northeast"
+    },
+    {
+      "country": "hungary",
+      "slug": "nb-iii-northwest",
+      "name": "HUNGARY: NB III - Northwest"
+    },
+    {
+      "country": "hungary",
+      "slug": "nb-iii-southeast",
+      "name": "HUNGARY: NB III - Southeast"
+    },
+    {
+      "country": "hungary",
+      "slug": "nb-iii-southwest",
+      "name": "HUNGARY: NB III - Southwest"
+    },
+    {
+      "country": "hungary",
+      "slug": "nb-i-women",
+      "name": "HUNGARY: NB I Women"
+    },
+    {
+      "country": "italy",
+      "slug": "serie-b-women",
+      "name": "ITALY: Serie B Women"
+    },
+    {
+      "country": "kosovo",
+      "slug": "liga-e-pare",
+      "name": "KOSOVO: Liga e Pare"
+    },
+    {
+      "country": "montenegro",
+      "slug": "druga-liga",
+      "name": "MONTENEGRO: Druga Liga"
+    },
+    {
+      "country": "north-macedonia",
+      "slug": "1-wfl-women",
+      "name": "NORTH MACEDONIA: 1. WFL Women"
+    },
+    {
+      "country": "norway",
+      "slug": "toppserien-women",
+      "name": "NORWAY: Toppserien Women - Relegation"
+    },
+    {
+      "country": "norway",
+      "slug": "division-1-women",
+      "name": "NORWAY: Division 1 Women - Relegation"
+    },
+    {
+      "country": "portugal",
+      "slug": "campeonato-de-portugal-group-d",
+      "name": "PORTUGAL: Campeonato de Portugal - Group D"
+    },
+    {
+      "country": "romania",
+      "slug": "superliga-women",
+      "name": "ROMANIA: Superliga Women"
+    },
+    {
+      "country": "russia",
+      "slug": "fnl",
+      "name": "RUSSIA: FNL"
+    },
+    {
+      "country": "russia",
+      "slug": "fnl-2-division-a-gold",
+      "name": "RUSSIA: FNL 2 - Division A Gold - Fall Season"
+    },
+    {
+      "country": "scotland",
+      "slug": "swpl-1-women",
+      "name": "SCOTLAND: SWPL 1 Women"
+    },
+    {
+      "country": "serbia",
+      "slug": "mozzart-bet-prva-liga",
+      "name": "SERBIA: Mozzart Bet Prva Liga"
+    },
+    {
+      "country": "serbia",
+      "slug": "srpska-liga-vojvodina",
+      "name": "SERBIA: Srpska Liga - Vojvodina"
+    },
+    {
+      "country": "serbia",
+      "slug": "srpska-liga-east",
+      "name": "SERBIA: Srpska Liga - East"
+    },
+    {
+      "country": "serbia",
+      "slug": "srpska-liga-west",
+      "name": "SERBIA: Srpska Liga - West"
+    },
+    {
+      "country": "slovakia",
+      "slug": "4-liga-bratislava",
+      "name": "SLOVAKIA: 4. liga - Bratislava"
+    },
+    {
+      "country": "slovakia",
+      "slug": "4-liga-west",
+      "name": "SLOVAKIA: 4. liga - West"
+    },
+    {
+      "country": "slovenia",
+      "slug": "3-snl-east",
+      "name": "SLOVENIA: 3. SNL - East"
+    },
+    {
+      "country": "slovenia",
+      "slug": "3-snl-west",
+      "name": "SLOVENIA: 3. SNL - West"
+    },
+    {
+      "country": "slovenia",
+      "slug": "1-sznl-women",
+      "name": "SLOVENIA: 1. SZNL Women"
+    },
+    {
+      "country": "spain",
+      "slug": "primera-rfef-group-1",
+      "name": "SPAIN: Primera RFEF - Group 1"
+    },
+    {
+      "country": "spain",
+      "slug": "primera-rfef-group-2",
+      "name": "SPAIN: Primera RFEF - Group 2"
+    },
+    {
+      "country": "spain",
+      "slug": "segunda-rfef-group-1",
+      "name": "SPAIN: Segunda RFEF - Group 1"
+    },
+    {
+      "country": "spain",
+      "slug": "segunda-rfef-group-2",
+      "name": "SPAIN: Segunda RFEF - Group 2"
+    },
+    {
+      "country": "spain",
+      "slug": "segunda-rfef-group-3",
+      "name": "SPAIN: Segunda RFEF - Group 3"
+    },
+    {
+      "country": "spain",
+      "slug": "segunda-rfef-group-4",
+      "name": "SPAIN: Segunda RFEF - Group 4"
+    },
+    {
+      "country": "spain",
+      "slug": "segunda-rfef-group-5",
+      "name": "SPAIN: Segunda RFEF - Group 5"
+    },
+    {
+      "country": "spain",
+      "slug": "liga-f-women",
+      "name": "SPAIN: Liga F Women"
+    },
+    {
+      "country": "sweden",
+      "slug": "division-1-relegation",
+      "name": "SWEDEN: Division 1 - Relegation"
+    },
+    {
+      "country": "sweden",
+      "slug": "allsvenskan-women",
+      "name": "SWEDEN: Allsvenskan Women"
+    },
+    {
+      "country": "switzerland",
+      "slug": "promotion-league",
+      "name": "SWITZERLAND: Promotion League"
+    },
+    {
+      "country": "switzerland",
+      "slug": "1-liga-classic-group-1",
+      "name": "SWITZERLAND: 1.Liga Classic Group 1"
+    },
+    {
+      "country": "switzerland",
+      "slug": "1-liga-classic-group-2",
+      "name": "SWITZERLAND: 1.Liga Classic Group 2"
+    },
+    {
+      "country": "switzerland",
+      "slug": "1-liga-classic-group-3",
+      "name": "SWITZERLAND: 1.Liga Classic Group 3"
+    },
+    {
+      "country": "ukraine",
+      "slug": "druha-liga",
+      "name": "UKRAINE: Druha Liga"
+    },
+    {
+      "country": "ukraine",
+      "slug": "championship-women",
+      "name": "UKRAINE: Championship Women"
+    }
+  ],
+  "outOfRegionCountries": [
+    "africa",
+    "angola",
+    "antigua-barbuda",
+    "aruba",
+    "benin",
+    "burkina-faso",
+    "burundi",
+    "cameroon",
+    "dr-congo",
+    "egypt",
+    "ghana",
+    "hong-kong",
+    "india",
+    "kenya",
+    "laos",
+    "mali",
+    "mauritius",
+    "morocco",
+    "niger",
+    "nigeria",
+    "saudi-arabia",
+    "senegal",
+    "sierra-leone",
+    "south-africa",
+    "suriname",
+    "tunisia",
+    "uganda",
+    "united-arab-emirates",
+    "world",
+    "zambia"
+  ]
+}
