@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-16",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-16T20:24:38.663Z",
+  "stats": {
+    "totalGames": 4,
+    "otherDays": 3,
+    "daysCached": 63,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 22.84328358208955,
+    "marginSd": 13.398345450456882,
+    "totalSd": 13.715573921616292,
+    "spreadsDerivedFromGames": 154
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-11-17T01:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "home": "Baltimore Ravens",
+      "away": "Los Angeles Chargers",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 23.4,
+          "away": 18.8,
+          "total": 42.2
+        },
+        "margin": 4.7,
+        "spread": {
+          "favourite": "Baltimore Ravens",
+          "line": -4.7,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.6353606061756363,
+          "away": 0.36295850537366187,
+          "tie": 0.0016808884507018096
+        },
+        "regulation": {
+          "tie": 0.028014807511696826
+        },
+        "total": {
+          "projected": 42.2,
+          "range": [
+            24.6,
+            59.8
+          ],
+          "overUnder": [
+            {
+              "line": 36.5,
+              "over": 0.6612219193055133
+            },
+            {
+              "line": 39.5,
+              "over": 0.5781139619778555
+            },
+            {
+              "line": 42.5,
+              "over": 0.4913601320132036
+            },
+            {
+              "line": 45.5,
+              "over": 0.40501479923475614
+            },
+            {
+              "line": 48.5,
+              "over": 0.3230749402536707
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 11.7,
+            "away": 9.4,
+            "total": 21.1
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.05480948889489701
+          },
+          {
+            "margin": 7,
+            "probability": 0.049696717364035525
+          },
+          {
+            "margin": 10,
+            "probability": 0.04385623388350968
+          },
+          {
+            "margin": 14,
+            "probability": 0.034642186123717666
+          },
+          {
+            "margin": 6,
+            "probability": 0.05130446179952691
+          },
+          {
+            "margin": 4,
+            "probability": 0.05387879035483628
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 8,
+            "rank": 23,
+            "pointsFor": 19.684531886024423,
+            "pointsAgainst": 25.593622795115333,
+            "offence": 0.8617207686139409,
+            "defence": 1.1204003445101127,
+            "pointDifferential": -5.90909090909091
+          },
+          "away": {
+            "played": 7,
+            "rank": 32,
+            "pointsFor": 17.552985074626868,
+            "pointsAgainst": 26.152985074626866,
+            "offence": 0.768409016661222,
+            "defence": 1.1448872917347273,
+            "pointDifferential": -8.599999999999998
+          }
+        },
+        "strengthGap": 2.7
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 34.5,
+        "totalUnder": 49.5,
+        "spread": {
+          "side": "Baltimore Ravens",
+          "where": "H",
+          "line": 2.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLW",
+          "played": 5,
+          "pointsFor": 73,
+          "pointsAgainst": 140,
+          "winRate": 0.2,
+          "pointsForAvg": 14.6,
+          "pointsAgainstAvg": 28
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "pointsFor": 77,
+          "pointsAgainst": 143,
+          "winRate": 0,
+          "pointsForAvg": 15.4,
+          "pointsAgainstAvg": 28.6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
