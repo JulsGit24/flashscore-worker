@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-17",
+  "region": "asia",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-17T15:50:44.786Z",
+  "stats": {
+    "totalFixtures": 430,
+    "inScope": 1,
+    "tablesLoaded": 710,
+    "daysCached": 106,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "africa",
+      "dr-congo",
+      "india",
+      "indonesia",
+      "iran",
+      "mozambique",
+      "nigeria",
+      "uganda",
+      "world"
+    ],
+    "otherDays": 196,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-11-18T04:00:00.000Z",
+      "kickoffLocal": "23:00",
+      "country": "japan",
+      "league": "WE League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "JEF United W",
+      "away": "Parceiro Nagano W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWTWW",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 4,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "WTLLT",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 4,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 1,
+      "awayRank": 9,
+      "goalsIndex": 0,
+      "mismatchIndex": 42.3,
+      "rankScore": 42.3,
+      "projected": {
+        "home": 1.06,
+        "away": 0.64,
+        "total": 1.69
+      },
+      "probabilities": {
+        "home": 0.45166954121891584,
+        "draw": 0.32928838183132014,
+        "away": 0.2190420769497643,
+        "btts": 0.3089352866864418,
+        "over15": 0.5067544760988697,
+        "over25": 0.24277677904808,
+        "over35": 0.0931894173859657,
+        "under15": 0.4932455239011303,
+        "under25": 0.75722322095192
+      },
+      "pick": {
+        "side": "JEF United W",
+        "where": "H",
+        "probability": 0.45166954121891584
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP"
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "asia",
+      "slug": "saff-championship",
+      "name": "ASIA: SAFF Championship - Play Offs"
+    }
+  ],
+  "outOfRegionCountries": [
+    "africa",
+    "dr-congo",
+    "india",
+    "indonesia",
+    "iran",
+    "mozambique",
+    "nigeria",
+    "uganda",
+    "world"
+  ]
+}
