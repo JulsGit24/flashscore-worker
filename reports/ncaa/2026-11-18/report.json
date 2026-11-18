@@ -1,0 +1,337 @@
+{
+  "date": "2026-11-18",
+  "sport": "american-football",
+  "competition": "NCAA Football",
+  "competitionKey": "ncaa",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-18T18:50:09.859Z",
+  "stats": {
+    "totalGames": 4,
+    "otherDays": 2,
+    "daysCached": 65,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "teamsKnown": 175,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 26.199122807017545,
+    "marginSd": 20.46783516502039,
+    "totalSd": 17.40659984693202,
+    "spreadsDerivedFromGames": 748
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-11-19T00:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "home": "Massachusetts",
+      "away": "Akron",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "high",
+        "points": {
+          "home": 29.8,
+          "away": 15.9,
+          "total": 45.7
+        },
+        "margin": 13.9,
+        "spread": {
+          "favourite": "Massachusetts",
+          "line": -13.9,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.7520432687708176,
+          "away": 0.24795673122918235,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.015455046428078434
+        },
+        "total": {
+          "projected": 45.7,
+          "range": [
+            23.4,
+            68
+          ],
+          "overUnder": [
+            {
+              "line": 39.5,
+              "over": 0.6391344898285654
+            },
+            {
+              "line": 42.5,
+              "over": 0.5729140367057304
+            },
+            {
+              "line": 45.5,
+              "over": 0.5045676587517515
+            },
+            {
+              "line": 48.5,
+              "over": 0.4360865408932154
+            },
+            {
+              "line": 51.5,
+              "over": 0.3694739008044132
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 14.9,
+            "away": 7.9,
+            "total": 22.8
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.030732373182123074
+          },
+          {
+            "margin": 7,
+            "probability": 0.029948873652387686
+          },
+          {
+            "margin": 10,
+            "probability": 0.028965688883571428
+          },
+          {
+            "margin": 14,
+            "probability": 0.02716641710822565
+          },
+          {
+            "margin": 6,
+            "probability": 0.030202351014779694
+          },
+          {
+            "margin": 4,
+            "probability": 0.030594504591782867
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 8,
+            "rank": 96,
+            "pointsFor": 22.50885167464115,
+            "pointsAgainst": 24.59976076555024,
+            "offence": 0.8591452408708913,
+            "defence": 0.9389536033993127,
+            "pointDifferential": -2.09090909090909
+          },
+          "away": {
+            "played": 8,
+            "rank": 173,
+            "pointsFor": 18.50885167464115,
+            "pointsAgainst": 32.9633971291866,
+            "offence": 0.7064683734252154,
+            "defence": 1.2581870535129984,
+            "pointDifferential": -14.454545454545453
+          }
+        },
+        "strengthGap": 12.4
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 36.5,
+        "totalUnder": 55.5,
+        "spread": {
+          "side": "Massachusetts",
+          "where": "H",
+          "line": -2.5
+        },
+        "moneylineCovers": true
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWL",
+          "played": 5,
+          "pointsFor": 78,
+          "pointsAgainst": 143,
+          "winRate": 0.4,
+          "pointsForAvg": 15.6,
+          "pointsAgainstAvg": 28.6
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "pointsFor": 88,
+          "pointsAgainst": 175,
+          "winRate": 0,
+          "pointsForAvg": 17.6,
+          "pointsAgainstAvg": 35
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-11-19T00:30:00.000Z",
+      "kickoffLocal": "19:30",
+      "home": "Buffalo",
+      "away": "Central Michigan",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "high",
+        "points": {
+          "home": 23.8,
+          "away": 21,
+          "total": 44.8
+        },
+        "margin": 2.8,
+        "spread": {
+          "favourite": "Buffalo",
+          "line": -2.8,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5537611116811059,
+          "away": 0.44623888831889413,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.019311900009945593
+        },
+        "total": {
+          "projected": 44.8,
+          "range": [
+            22.5,
+            67.1
+          ],
+          "overUnder": [
+            {
+              "line": 39.5,
+              "over": 0.6190128632368224
+            },
+            {
+              "line": 42.5,
+              "over": 0.5519308235404977
+            },
+            {
+              "line": 45.5,
+              "over": 0.48332604487900865
+            },
+            {
+              "line": 48.5,
+              "over": 0.415212798482942
+            },
+            {
+              "line": 51.5,
+              "over": 0.3495616760944067
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 11.9,
+            "away": 10.5,
+            "total": 22.4
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.03821888015603153
+          },
+          {
+            "margin": 7,
+            "probability": 0.036469217106943785
+          },
+          {
+            "margin": 10,
+            "probability": 0.034354180521831756
+          },
+          {
+            "margin": 14,
+            "probability": 0.03069987155106535
+          },
+          {
+            "margin": 6,
+            "probability": 0.037028853876639456
+          },
+          {
+            "margin": 4,
+            "probability": 0.037906691498091616
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 8,
+            "rank": 36,
+            "pointsFor": 25.50885167464115,
+            "pointsAgainst": 24.50885167464115,
+            "offence": 0.9736528914551481,
+            "defence": 0.9354836745937292,
+            "pointDifferential": 1
+          },
+          "away": {
+            "played": 8,
+            "rank": 69,
+            "pointsFor": 24.054306220095693,
+            "pointsAgainst": 22.872488038277513,
+            "offence": 0.9181340305658114,
+            "defence": 0.8730249560932254,
+            "pointDifferential": 1.1818181818181799
+          }
+        },
+        "strengthGap": 0.2
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 35.5,
+        "totalUnder": 54.5,
+        "spread": {
+          "side": "Buffalo",
+          "where": "H",
+          "line": 8.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 146,
+          "pointsAgainst": 87,
+          "winRate": 1,
+          "pointsForAvg": 29.2,
+          "pointsAgainstAvg": 17.4
+        },
+        "away": {
+          "streak": "WWWWL",
+          "played": 5,
+          "pointsFor": 153,
+          "pointsAgainst": 56,
+          "winRate": 0.8,
+          "pointsForAvg": 30.6,
+          "pointsAgainstAvg": 11.2
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
