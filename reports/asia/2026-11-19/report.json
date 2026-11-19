@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-19",
+  "region": "asia",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-19T15:36:47.636Z",
+  "stats": {
+    "totalFixtures": 562,
+    "inScope": 1,
+    "tablesLoaded": 712,
+    "daysCached": 108,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "algeria",
+      "australia",
+      "cameroon",
+      "dr-congo",
+      "egypt",
+      "india",
+      "iran",
+      "iraq",
+      "jordan",
+      "kuwait",
+      "liberia",
+      "mauritania",
+      "qatar",
+      "senegal",
+      "seychelles",
+      "suriname",
+      "syria",
+      "uganda",
+      "united-arab-emirates",
+      "uzbekistan",
+      "world",
+      "zambia"
+    ],
+    "otherDays": 440,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [],
+  "games": [
+    {
+      "kickoff": "2026-11-19T09:00:00.000Z",
+      "kickoffLocal": "04:00",
+      "country": "japan",
+      "league": "WE League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "W",
+      "home": "Omiya Ardija W",
+      "away": "Inac Kobe Leonesa W",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLWL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 6,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "TLLWW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 9,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 9,
+      "awayRank": 10,
+      "goalsIndex": 19.5,
+      "mismatchIndex": 3.7,
+      "rankScore": 20.4,
+      "projected": {
+        "home": 1.29,
+        "away": 1.29,
+        "total": 2.58
+      },
+      "probabilities": {
+        "home": 0.36744634175627405,
+        "draw": 0.2651073164874514,
+        "away": 0.36744634175627405,
+        "btts": 0.5252323871464656,
+        "over15": 0.7287289966618127,
+        "over25": 0.4765378923852327,
+        "over35": 0.25965354270737434,
+        "under15": 0.2712710033381873,
+        "under25": 0.5234621076147673
+      },
+      "pick": {
+        "side": "Omiya Ardija W",
+        "where": "H",
+        "probability": 0.36744634175627405
+      },
+      "confidence": "medium",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "asia",
+      "slug": "asean-club-championship",
+      "name": "ASIA: ASEAN Club Championship"
+    }
+  ],
+  "outOfRegionCountries": [
+    "algeria",
+    "australia",
+    "cameroon",
+    "dr-congo",
+    "egypt",
+    "india",
+    "iran",
+    "iraq",
+    "jordan",
+    "kuwait",
+    "liberia",
+    "mauritania",
+    "qatar",
+    "senegal",
+    "seychelles",
+    "suriname",
+    "syria",
+    "uganda",
+    "united-arab-emirates",
+    "uzbekistan",
+    "world",
+    "zambia"
+  ]
+}
