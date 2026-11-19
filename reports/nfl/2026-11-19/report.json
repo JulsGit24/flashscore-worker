@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-19",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-19T18:58:00.639Z",
+  "stats": {
+    "totalGames": 8,
+    "otherDays": 6,
+    "daysCached": 66,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 22.871323529411764,
+    "marginSd": 13.41087512233012,
+    "totalSd": 13.65212817859535,
+    "spreadsDerivedFromGames": 156
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-11-20T01:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "home": "Houston Texans",
+      "away": "Indianapolis Colts",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 27.7,
+          "away": 20.2,
+          "total": 47.9
+        },
+        "margin": 7.4,
+        "spread": {
+          "favourite": "Houston Texans",
+          "line": -7.4,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.7093167050978577,
+          "away": 0.28915260622671507,
+          "tie": 0.0015306886754272496
+        },
+        "regulation": {
+          "tie": 0.025511477923787496
+        },
+        "total": {
+          "projected": 47.9,
+          "range": [
+            30.4,
+            65.4
+          ],
+          "overUnder": [
+            {
+              "line": 42.5,
+              "over": 0.6538783342777381
+            },
+            {
+              "line": 45.5,
+              "over": 0.5698792277288376
+            },
+            {
+              "line": 48.5,
+              "over": 0.4825799761078384
+            },
+            {
+              "line": 51.5,
+              "over": 0.39611149213118746
+            },
+            {
+              "line": 54.5,
+              "over": 0.314487110807127
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 13.8,
+            "away": 10.1,
+            "total": 24
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.05014495828198878
+          },
+          {
+            "margin": 7,
+            "probability": 0.04640086274747213
+          },
+          {
+            "margin": 10,
+            "probability": 0.04198555726236891
+          },
+          {
+            "margin": 14,
+            "probability": 0.03468021395226578
+          },
+          {
+            "margin": 6,
+            "probability": 0.047589737642567076
+          },
+          {
+            "margin": 4,
+            "probability": 0.04947121147896122
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 8,
+            "rank": 21,
+            "pointsFor": 24.601270053475936,
+            "pointsAgainst": 22.87399732620321,
+            "offence": 1.075638234133653,
+            "defence": 1.0001169060805775,
+            "pointDifferential": 1.7272727272727266
+          },
+          "away": {
+            "played": 9,
+            "rank": 23,
+            "pointsFor": 21.13449754901961,
+            "pointsAgainst": 24.88449754901961,
+            "offence": 0.9240609762631946,
+            "defence": 1.088021754273161,
+            "pointDifferential": -3.75
+          }
+        },
+        "strengthGap": 5.5
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 40.5,
+        "totalUnder": 55.5,
+        "spread": {
+          "side": "Houston Texans",
+          "where": "H",
+          "line": 0.5
+        },
+        "moneylineCovers": true
+      },
+      "form": {
+        "home": {
+          "streak": "LWLWW",
+          "played": 5,
+          "pointsFor": 149,
+          "pointsAgainst": 110,
+          "winRate": 0.6,
+          "pointsForAvg": 29.8,
+          "pointsAgainstAvg": 22
+        },
+        "away": {
+          "streak": "WLLLL",
+          "played": 5,
+          "pointsFor": 84,
+          "pointsAgainst": 133,
+          "winRate": 0.2,
+          "pointsForAvg": 16.8,
+          "pointsAgainstAvg": 26.6
+        }
+      },
+      "headToHead": [
+        {
+          "ts": 1790528400,
+          "home": "Indianapolis Colts",
+          "away": "Houston Texans",
+          "homePoints": 19,
+          "awayPoints": 17,
+          "total": 36,
+          "winner": "Indianapolis Colts"
+        }
+      ],
+      "headToHeadSummary": {
+        "played": 1,
+        "aWins": 0,
+        "bWins": 1,
+        "ties": 0,
+        "averageTotal": 36
+      }
+    }
+  ]
+}
