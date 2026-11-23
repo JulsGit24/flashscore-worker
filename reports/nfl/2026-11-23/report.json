@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-23",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-23T22:01:19.375Z",
+  "stats": {
+    "totalGames": 3,
+    "otherDays": 2,
+    "daysCached": 70,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 22.959183673469386,
+    "marginSd": 13.482906208593837,
+    "totalSd": 13.80374569229077,
+    "spreadsDerivedFromGames": 167
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-11-24T01:15:00.000Z",
+      "kickoffLocal": "20:15",
+      "home": "Washington Commanders",
+      "away": "Cincinnati Bengals",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 21.4,
+          "away": 29.4,
+          "total": 50.8
+        },
+        "margin": -7.9,
+        "spread": {
+          "favourite": "Cincinnati Bengals",
+          "line": -7.9,
+          "where": "A"
+        },
+        "winProbability": {
+          "home": 0.2775708058690457,
+          "away": 0.7209361537198072,
+          "tie": 0.0014930404111470174
+        },
+        "regulation": {
+          "tie": 0.02488400685245029
+        },
+        "total": {
+          "projected": 50.8,
+          "range": [
+            33.1,
+            68.5
+          ],
+          "overUnder": [
+            {
+              "line": 45.5,
+              "over": 0.6495102424399368
+            },
+            {
+              "line": 48.5,
+              "over": 0.5661837281542585
+            },
+            {
+              "line": 51.5,
+              "over": 0.4797957994511408
+            },
+            {
+              "line": 54.5,
+              "over": 0.39435040072893957
+            },
+            {
+              "line": 57.5,
+              "over": 0.31372095096440167
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 10.7,
+            "away": 14.7,
+            "total": 25.4
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.04896777595863955
+          },
+          {
+            "margin": 7,
+            "probability": 0.045538054279733564
+          },
+          {
+            "margin": 10,
+            "probability": 0.0414576028909171
+          },
+          {
+            "margin": 14,
+            "probability": 0.03461765647411613
+          },
+          {
+            "margin": 6,
+            "probability": 0.04663014700825918
+          },
+          {
+            "margin": 4,
+            "probability": 0.04835266464282273
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 8,
+            "rank": 20,
+            "pointsFor": 22.07977736549165,
+            "pointsAgainst": 24.352504638218928,
+            "offence": 0.9616969696969697,
+            "defence": 1.060686868686869,
+            "pointDifferential": -2.272727272727277
+          },
+          "away": {
+            "played": 8,
+            "rank": 7,
+            "pointsFor": 28.534322820037108,
+            "pointsAgainst": 21.352504638218925,
+            "offence": 1.242828282828283,
+            "defence": 0.9300202020202021,
+            "pointDifferential": 7.181818181818183
+          }
+        },
+        "strengthGap": 9.5
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 43.5,
+        "totalUnder": 58.5,
+        "spread": {
+          "side": "Cincinnati Bengals",
+          "where": "A",
+          "line": -0.5
+        },
+        "moneylineCovers": true
+      },
+      "form": {
+        "home": {
+          "streak": "WLWLL",
+          "played": 5,
+          "pointsFor": 98,
+          "pointsAgainst": 97,
+          "winRate": 0.4,
+          "pointsForAvg": 19.6,
+          "pointsAgainstAvg": 19.4
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 181,
+          "pointsAgainst": 108,
+          "winRate": 1,
+          "pointsForAvg": 36.2,
+          "pointsAgainstAvg": 21.6
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
