@@ -1,0 +1,337 @@
+{
+  "date": "2026-11-24",
+  "sport": "american-football",
+  "competition": "NCAA Football",
+  "competitionKey": "ncaa",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-24T20:38:27.486Z",
+  "stats": {
+    "totalGames": 3,
+    "otherDays": 1,
+    "daysCached": 71,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "teamsKnown": 178,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 26.183673469387756,
+    "marginSd": 20.325253817742038,
+    "totalSd": 17.182997513442555,
+    "spreadsDerivedFromGames": 836
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-11-25T00:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "home": "Eastern Michigan",
+      "away": "Kent State",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "high",
+        "points": {
+          "home": 25.6,
+          "away": 16.1,
+          "total": 41.6
+        },
+        "margin": 9.5,
+        "spread": {
+          "favourite": "Eastern Michigan",
+          "line": -9.5,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.6799085083550749,
+          "away": 0.3200914916449251,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.017593995346374625
+        },
+        "total": {
+          "projected": 41.6,
+          "range": [
+            19.6,
+            63.6
+          ],
+          "overUnder": [
+            {
+              "line": 36.5,
+              "over": 0.6169980215964984
+            },
+            {
+              "line": 39.5,
+              "over": 0.5489523931891447
+            },
+            {
+              "line": 42.5,
+              "over": 0.47943309019732894
+            },
+            {
+              "line": 45.5,
+              "over": 0.41053562537102317
+            },
+            {
+              "line": 48.5,
+              "over": 0.3442989553500344
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 12.8,
+            "away": 8,
+            "total": 20.8
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.034889709361576704
+          },
+          {
+            "margin": 7,
+            "probability": 0.03359286952597912
+          },
+          {
+            "margin": 10,
+            "probability": 0.032005858198944415
+          },
+          {
+            "margin": 14,
+            "probability": 0.029209687810461238
+          },
+          {
+            "margin": 6,
+            "probability": 0.03400922253695626
+          },
+          {
+            "margin": 4,
+            "probability": 0.03465937556286913
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 8,
+            "rank": 98,
+            "pointsFor": 22.595547309833023,
+            "pointsAgainst": 27.23191094619666,
+            "offence": 0.8629632253950258,
+            "defence": 1.0400340111953517,
+            "pointDifferential": -4.636363636363637
+          },
+          "away": {
+            "played": 9,
+            "rank": 129,
+            "pointsFor": 16.87925170068027,
+            "pointsAgainst": 27.87925170068027,
+            "offence": 0.6446479605092231,
+            "defence": 1.0647570797609769,
+            "pointDifferential": -11
+          }
+        },
+        "strengthGap": 6.4
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 32.5,
+        "totalUnder": 51.5,
+        "spread": {
+          "side": "Eastern Michigan",
+          "where": "H",
+          "line": 1.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLLLL",
+          "played": 5,
+          "pointsFor": 88,
+          "pointsAgainst": 162,
+          "winRate": 0,
+          "pointsForAvg": 17.6,
+          "pointsAgainstAvg": 32.4
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "pointsFor": 72,
+          "pointsAgainst": 137,
+          "winRate": 0,
+          "pointsForAvg": 14.4,
+          "pointsAgainstAvg": 27.4
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    },
+    {
+      "kickoff": "2026-11-25T00:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "home": "Western Michigan",
+      "away": "Miami (Oh)",
+      "projection": {
+        "competition": "ncaa",
+        "confidence": "high",
+        "points": {
+          "home": 25.3,
+          "away": 21.1,
+          "total": 46.4
+        },
+        "margin": 4.2,
+        "spread": {
+          "favourite": "Western Michigan",
+          "line": -4.2,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.582707273140145,
+          "away": 0.41729272685985486,
+          "tie": 0
+        },
+        "regulation": {
+          "tie": 0.019202440176579627
+        },
+        "total": {
+          "projected": 46.4,
+          "range": [
+            24.4,
+            68.4
+          ],
+          "overUnder": [
+            {
+              "line": 39.5,
+              "over": 0.6559577710003912
+            },
+            {
+              "line": 42.5,
+              "over": 0.5897355584319243
+            },
+            {
+              "line": 45.5,
+              "over": 0.5208447665943441
+            },
+            {
+              "line": 48.5,
+              "over": 0.4513237522337792
+            },
+            {
+              "line": 51.5,
+              "over": 0.38326818478845803
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 12.7,
+            "away": 10.5,
+            "total": 23.2
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.03800703118153437
+          },
+          {
+            "margin": 7,
+            "probability": 0.036287628111015435
+          },
+          {
+            "margin": 10,
+            "probability": 0.034207633168973905
+          },
+          {
+            "margin": 14,
+            "probability": 0.03060992092942283
+          },
+          {
+            "margin": 6,
+            "probability": 0.03683775273970369
+          },
+          {
+            "margin": 4,
+            "probability": 0.0377004671872187
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 9,
+            "rank": 27,
+            "pointsFor": 27.462585034013603,
+            "pointsAgainst": 22.12925170068027,
+            "offence": 1.048843855546895,
+            "defence": 0.845154585606651,
+            "pointDifferential": 5.333333333333332
+          },
+          "away": {
+            "played": 9,
+            "rank": 43,
+            "pointsFor": 26.712585034013603,
+            "pointsAgainst": 22.712585034013603,
+            "offence": 1.0202000519615484,
+            "defence": 0.8674330995063652,
+            "pointDifferential": 4
+          }
+        },
+        "strengthGap": 1.3
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 36.5,
+        "totalUnder": 55.5,
+        "spread": {
+          "side": "Western Michigan",
+          "where": "H",
+          "line": 6.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 175,
+          "pointsAgainst": 92,
+          "winRate": 1,
+          "pointsForAvg": 35,
+          "pointsAgainstAvg": 18.4
+        },
+        "away": {
+          "streak": "WWWLW",
+          "played": 5,
+          "pointsFor": 133,
+          "pointsAgainst": 84,
+          "winRate": 0.8,
+          "pointsForAvg": 26.6,
+          "pointsAgainstAvg": 16.8
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
