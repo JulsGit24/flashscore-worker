@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-25",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-25T19:54:39.253Z",
+  "stats": {
+    "totalGames": 5,
+    "otherDays": 4,
+    "daysCached": 72,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 22.94295302013423,
+    "marginSd": 13.531815509924984,
+    "totalSd": 13.725640580852607,
+    "spreadsDerivedFromGames": 169
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-11-26T01:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "home": "Los Angeles Rams",
+      "away": "Green Bay Packers",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 24.4,
+          "away": 18,
+          "total": 42.4
+        },
+        "margin": 6.4,
+        "spread": {
+          "favourite": "Los Angeles Rams",
+          "line": -6.4,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.6816552764715087,
+          "away": 0.31676470574219934,
+          "tie": 0.0015800177862920416
+        },
+        "regulation": {
+          "tie": 0.02633362977153403
+        },
+        "total": {
+          "projected": 42.4,
+          "range": [
+            24.8,
+            60
+          ],
+          "overUnder": [
+            {
+              "line": 36.5,
+              "over": 0.6668668204408702
+            },
+            {
+              "line": 39.5,
+              "over": 0.5842229558805875
+            },
+            {
+              "line": 42.5,
+              "over": 0.49766214591081637
+            },
+            {
+              "line": 45.5,
+              "over": 0.411211732059246
+            },
+            {
+              "line": 48.5,
+              "over": 0.3288835487525721
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 12.2,
+            "away": 9,
+            "total": 21.2
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.05167398154154901
+          },
+          {
+            "margin": 7,
+            "probability": 0.047470153956330585
+          },
+          {
+            "margin": 10,
+            "probability": 0.04257870759605936
+          },
+          {
+            "margin": 14,
+            "probability": 0.034641875347515116
+          },
+          {
+            "margin": 6,
+            "probability": 0.048799611489054595
+          },
+          {
+            "margin": 4,
+            "probability": 0.05091372111356568
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 9,
+            "rank": 8,
+            "pointsFor": 25.819071588366892,
+            "pointsAgainst": 19.069071588366892,
+            "offence": 1.1253595631612305,
+            "defence": 0.8311515772024768,
+            "pointDifferential": 6.75
+          },
+          "away": {
+            "played": 9,
+            "rank": 10,
+            "pointsFor": 22.735738255033556,
+            "pointsAgainst": 20.902404921700224,
+            "offence": 0.9909682609331577,
+            "defence": 0.9110599190678172,
+            "pointDifferential": 1.8333333333333321
+          }
+        },
+        "strengthGap": 4.9
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 34.5,
+        "totalUnder": 50.5,
+        "spread": {
+          "side": "Los Angeles Rams",
+          "where": "H",
+          "line": 1.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWL",
+          "played": 5,
+          "pointsFor": 129,
+          "pointsAgainst": 67,
+          "winRate": 0.8,
+          "pointsForAvg": 25.8,
+          "pointsAgainstAvg": 13.4
+        },
+        "away": {
+          "streak": "LWWWL",
+          "played": 5,
+          "pointsFor": 126,
+          "pointsAgainst": 115,
+          "winRate": 0.6,
+          "pointsForAvg": 25.2,
+          "pointsAgainstAvg": 23
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
