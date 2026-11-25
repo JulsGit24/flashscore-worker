@@ -1,0 +1,1409 @@
+{
+  "date": "2026-11-25",
+  "region": "asia",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-25T17:02:07.348Z",
+  "stats": {
+    "totalFixtures": 415,
+    "inScope": 19,
+    "tablesLoaded": 715,
+    "daysCached": 114,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "angola",
+      "botswana",
+      "cameroon",
+      "dr-congo",
+      "egypt",
+      "ethiopia",
+      "hong-kong",
+      "india",
+      "indonesia",
+      "kenya",
+      "kuwait",
+      "lebanon",
+      "liberia",
+      "mozambique",
+      "myanmar",
+      "qatar",
+      "republic-of-the-congo",
+      "rwanda",
+      "saudi-arabia",
+      "taiwan",
+      "tajikistan",
+      "thailand",
+      "turkmenistan",
+      "uganda",
+      "uzbekistan",
+      "world",
+      "zambia",
+      "zimbabwe"
+    ],
+    "otherDays": 160,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Shonan Bellmare",
+      "away": "Kofu",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTLL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 4,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "LLLLT",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 10,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 9,
+      "awayRank": 20,
+      "goalsIndex": 13.8,
+      "mismatchIndex": 59.4,
+      "rankScore": 62.8,
+      "projected": {
+        "home": 1.87,
+        "away": 0.52,
+        "total": 2.39
+      },
+      "probabilities": {
+        "home": 0.7002090829359663,
+        "draw": 0.2048798830753327,
+        "away": 0.09491103398870127,
+        "btts": 0.3429851952777841,
+        "over15": 0.6893739858414566,
+        "over25": 0.4276738596652008,
+        "over35": 0.2191860924781171,
+        "under15": 0.3106260141585434,
+        "under25": 0.5723261403347992
+      },
+      "pick": {
+        "side": "Shonan Bellmare",
+        "where": "H",
+        "probability": 0.7002090829359663
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "MISMATCH"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "kickoff": "2026-11-25T09:30:00.000Z",
+      "kickoffLocal": "04:30",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Imabari",
+      "away": "Tegevajaro Miyazaki",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLT",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 8,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "TWWWW",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 3,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 19,
+      "awayRank": 4,
+      "goalsIndex": 39.3,
+      "mismatchIndex": 64.4,
+      "rankScore": 74.3,
+      "projected": {
+        "home": 0.94,
+        "away": 1.98,
+        "total": 2.93
+      },
+      "probabilities": {
+        "home": 0.172220112991843,
+        "draw": 0.21189496781483502,
+        "away": 0.6158849191933216,
+        "btts": 0.5252359755491268,
+        "over15": 0.788578343275402,
+        "over25": 0.5586465047681815,
+        "over35": 0.3348461819544864,
+        "under15": 0.211421656724598,
+        "under25": 0.44135349523181855
+      },
+      "pick": {
+        "side": "Tegevajaro Miyazaki",
+        "where": "A",
+        "probability": 0.6158849191933216
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-11-25T09:30:00.000Z",
+      "kickoffLocal": "04:30",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Vanraure",
+      "away": "Albirex Niigata",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTLLL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 6,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "away": {
+          "streak": "WLWWL",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 6,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 17,
+      "awayRank": 1,
+      "goalsIndex": 27.5,
+      "mismatchIndex": 55.5,
+      "rankScore": 62.4,
+      "projected": {
+        "home": 1.14,
+        "away": 1.54,
+        "total": 2.68
+      },
+      "probabilities": {
+        "home": 0.2814973393594121,
+        "draw": 0.25328256449541015,
+        "away": 0.4652200961451776,
+        "btts": 0.5343629178780505,
+        "over15": 0.7476874039491143,
+        "over25": 0.5014632205420649,
+        "over35": 0.28150295003176756,
+        "under15": 0.25231259605088574,
+        "under25": 0.49853677945793506
+      },
+      "pick": {
+        "side": "Albirex Niigata",
+        "where": "A",
+        "probability": 0.4652200961451776
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "asia",
+      "league": "AFC Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Gamba Osaka (Jpn)",
+      "away": "Port FC (Tha)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWWW",
+          "played": 5,
+          "goalsFor": 12,
+          "goalsAgainst": 6,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "away": {
+          "streak": "",
+          "played": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "points": 0,
+          "ppg": null
+        },
+        "homeTrend": "steady",
+        "awayTrend": "unknown"
+      },
+      "homeRank": 4,
+      "awayRank": null,
+      "goalsIndex": 57.5,
+      "mismatchIndex": 13.2,
+      "rankScore": 60.8,
+      "projected": {
+        "home": 2.27,
+        "away": 1.25,
+        "total": 3.52
+      },
+      "probabilities": {
+        "home": 0.6033816215271026,
+        "draw": 0.19569720019794876,
+        "away": 0.20092117827494843,
+        "btts": 0.6397805013911216,
+        "over15": 0.8662070323483038,
+        "over25": 0.68282778606605,
+        "over35": 0.46766280376153857,
+        "under15": 0.13379296765169624,
+        "under25": 0.31717221393395
+      },
+      "pick": {
+        "side": "Gamba Osaka (Jpn)",
+        "where": "H",
+        "probability": 0.6033816215271026
+      },
+      "confidence": "baseline",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "asia",
+      "league": "AFC Champions League",
+      "tier": null,
+      "kind": "international",
+      "gender": "M",
+      "home": "Kashima Antlers (Jpn)",
+      "away": "Jeonbuk (Kor)",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWWW",
+          "played": 4,
+          "goalsFor": 11,
+          "goalsAgainst": 1,
+          "points": 10,
+          "ppg": 2.5
+        },
+        "away": {
+          "streak": "WTLW",
+          "played": 4,
+          "goalsFor": 6,
+          "goalsAgainst": 5,
+          "points": 7,
+          "ppg": 1.75
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 5,
+      "awayRank": 17,
+      "goalsIndex": 34,
+      "mismatchIndex": 26.9,
+      "rankScore": 40.8,
+      "projected": {
+        "home": 2.13,
+        "away": 0.81,
+        "total": 2.94
+      },
+      "probabilities": {
+        "home": 0.677736389248534,
+        "draw": 0.1918323999803533,
+        "away": 0.13043121077111267,
+        "btts": 0.48916939379082375,
+        "over15": 0.7917059520334946,
+        "over25": 0.5632274706878996,
+        "over35": 0.3393185589692169,
+        "under15": 0.2082940479665054,
+        "under25": 0.4367725293121004
+      },
+      "pick": {
+        "side": "Kashima Antlers (Jpn)",
+        "where": "H",
+        "probability": 0.677736389248534
+      },
+      "confidence": "medium",
+      "basis": "league table",
+      "tags": [
+        "LOW_SAMPLE"
+      ]
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J1 League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Avispa Fukuoka",
+      "away": "Yokohama F. Marinos",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTLLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 10,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "away": {
+          "streak": "TTWTT",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 8,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 20,
+      "awayRank": 8,
+      "goalsIndex": 20.8,
+      "mismatchIndex": 44.3,
+      "rankScore": 49.5,
+      "projected": {
+        "home": 0.95,
+        "away": 1.58,
+        "total": 2.54
+      },
+      "probabilities": {
+        "home": 0.2270106686836689,
+        "draw": 0.25232434015835253,
+        "away": 0.5206649911579785,
+        "btts": 0.486942781994123,
+        "over15": 0.7188034011585748,
+        "over25": 0.4638584564667789,
+        "over35": 0.2488548864433646,
+        "under15": 0.2811965988414252,
+        "under25": 0.5361415435332211
+      },
+      "pick": {
+        "side": "Yokohama F. Marinos",
+        "where": "A",
+        "probability": 0.5206649911579785
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J1 League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Chiba",
+      "away": "Nagoya Grampus",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWTL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 5,
+          "points": 10,
+          "ppg": 2
+        },
+        "away": {
+          "streak": "TLLTT",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 7,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 13,
+      "awayRank": 14,
+      "goalsIndex": 17,
+      "mismatchIndex": 3.1,
+      "rankScore": 17.8,
+      "projected": {
+        "home": 1.39,
+        "away": 1.07,
+        "total": 2.46
+      },
+      "probabilities": {
+        "home": 0.4422863908149849,
+        "draw": 0.26832787055660995,
+        "away": 0.28938573862840455,
+        "btts": 0.4933510806396796,
+        "over15": 0.7043949858106782,
+        "over25": 0.44588583785285996,
+        "over35": 0.23390833652744938,
+        "under15": 0.29560501418932184,
+        "under25": 0.55411416214714
+      },
+      "pick": {
+        "side": "Chiba",
+        "where": "H",
+        "probability": 0.4422863908149849
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J1 League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "FC Tokyo",
+      "away": "Sanfrecce Hiroshima",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWT",
+          "played": 5,
+          "goalsFor": 15,
+          "goalsAgainst": 0,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "away": {
+          "streak": "TTWWL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 1,
+      "awayRank": 2,
+      "goalsIndex": 20,
+      "mismatchIndex": 11.2,
+      "rankScore": 22.8,
+      "projected": {
+        "home": 1.57,
+        "away": 0.95,
+        "total": 2.52
+      },
+      "probabilities": {
+        "home": 0.5181365850839875,
+        "draw": 0.25336223574035943,
+        "away": 0.22850117917565296,
+        "btts": 0.4856732899938512,
+        "over15": 0.7167819403375423,
+        "over25": 0.46130637697383875,
+        "over35": 0.24670690374832788,
+        "under15": 0.2832180596624577,
+        "under25": 0.5386936230261612
+      },
+      "pick": {
+        "side": "FC Tokyo",
+        "where": "H",
+        "probability": 0.5181365850839875
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J1 League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Mito",
+      "away": "Verdy",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLLLL",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 13,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "TWWWT",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 4,
+          "points": 11,
+          "ppg": 2.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 19,
+      "awayRank": 15,
+      "goalsIndex": 3.4,
+      "mismatchIndex": 11.4,
+      "rankScore": 12.2,
+      "projected": {
+        "home": 1.16,
+        "away": 1.01,
+        "total": 2.17
+      },
+      "probabilities": {
+        "home": 0.39162301563211566,
+        "draw": 0.29262162617000276,
+        "away": 0.3157553581978809,
+        "btts": 0.4364724448196807,
+        "over15": 0.6380569342833041,
+        "over25": 0.3692314292117973,
+        "over35": 0.1747809805434079,
+        "under15": 0.3619430657166959,
+        "under25": 0.6307685707882027
+      },
+      "pick": {
+        "side": "Mito",
+        "where": "H",
+        "probability": 0.39162301563211566
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J1 League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Okayama",
+      "away": "Shimizu S-Pulse",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WTLLW",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 7,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TLLLL",
+          "played": 5,
+          "goalsFor": 1,
+          "goalsAgainst": 13,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 10,
+      "awayRank": 16,
+      "goalsIndex": 6.7,
+      "mismatchIndex": 21.8,
+      "rankScore": 23.5,
+      "projected": {
+        "home": 1.44,
+        "away": 0.81,
+        "total": 2.24
+      },
+      "probabilities": {
+        "home": 0.5196341561836471,
+        "draw": 0.2691866004971947,
+        "away": 0.21117924331915822,
+        "btts": 0.4236133503484688,
+        "over15": 0.6574523923944444,
+        "over25": 0.3906605057016556,
+        "over35": 0.1905665906820644,
+        "under15": 0.3425476076055556,
+        "under25": 0.6093394942983443
+      },
+      "pick": {
+        "side": "Okayama",
+        "where": "H",
+        "probability": 0.5196341561836471
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J1 League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "V-Varen Nagasaki",
+      "away": "Kawasaki Frontale",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTLLW",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "points": 5,
+          "ppg": 1
+        },
+        "away": {
+          "streak": "WLLWW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 8,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 17,
+      "awayRank": 6,
+      "goalsIndex": 48,
+      "mismatchIndex": 34,
+      "rankScore": 56.5,
+      "projected": {
+        "home": 1.44,
+        "away": 1.67,
+        "total": 3.11
+      },
+      "probabilities": {
+        "home": 0.332118092478699,
+        "draw": 0.23642627083308568,
+        "away": 0.43145563668821485,
+        "btts": 0.6194258381945841,
+        "over15": 0.8166897229714966,
+        "over25": 0.600996860386656,
+        "over35": 0.377395259507038,
+        "under15": 0.18331027702850344,
+        "under25": 0.399003139613344
+      },
+      "pick": {
+        "side": "Kawasaki Frontale",
+        "where": "A",
+        "probability": 0.43145563668821485
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Hokkaido Consadole Sapporo",
+      "away": "Fujieda MYFC",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WLWWW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 2,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "LWLLT",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 8,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 8,
+      "awayRank": 15,
+      "goalsIndex": 10.2,
+      "mismatchIndex": 30.5,
+      "rankScore": 33.1,
+      "projected": {
+        "home": 1.44,
+        "away": 0.87,
+        "total": 2.31
+      },
+      "probabilities": {
+        "home": 0.5042588732495404,
+        "draw": 0.26843175265925906,
+        "away": 0.22730937409120075,
+        "btts": 0.4433818916569937,
+        "over15": 0.6714451343610987,
+        "over25": 0.40661105301128897,
+        "over35": 0.2026888103719355,
+        "under15": 0.32855486563890135,
+        "under25": 0.593388946988711
+      },
+      "pick": {
+        "side": "Hokkaido Consadole Sapporo",
+        "where": "H",
+        "probability": 0.5042588732495404
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Iwaki",
+      "away": "Toyama",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTWLW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "TLWWW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 7,
+          "points": 10,
+          "ppg": 2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 10,
+      "awayRank": 5,
+      "goalsIndex": 46,
+      "mismatchIndex": 19.2,
+      "rankScore": 50.9,
+      "projected": {
+        "home": 1.45,
+        "away": 1.61,
+        "total": 3.07
+      },
+      "probabilities": {
+        "home": 0.3454293376774439,
+        "draw": 0.23946005239555665,
+        "away": 0.41511060992699944,
+        "btts": 0.6124295520009907,
+        "over15": 0.8096356746489357,
+        "over25": 0.5901165371049427,
+        "over35": 0.36620701681006984,
+        "under15": 0.1903643253510643,
+        "under25": 0.4098834628950573
+      },
+      "pick": {
+        "side": "Toyama",
+        "where": "A",
+        "probability": 0.41511060992699944
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Montedio Yamagata",
+      "away": "Iwata",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLWW",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 8,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "WWTWW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 2,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "homeTrend": "steady",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 16,
+      "awayRank": 7,
+      "goalsIndex": 0,
+      "mismatchIndex": 31.4,
+      "rankScore": 31.4,
+      "projected": {
+        "home": 0.83,
+        "away": 1.06,
+        "total": 1.89
+      },
+      "probabilities": {
+        "home": 0.2804046176404294,
+        "draw": 0.31623961964042824,
+        "away": 0.4033557627191426,
+        "btts": 0.36856670822563553,
+        "over15": 0.5634024639183928,
+        "over25": 0.2935806544656059,
+        "over35": 0.12359291451034997,
+        "under15": 0.43659753608160723,
+        "under25": 0.7064193455343941
+      },
+      "pick": {
+        "side": "Iwata",
+        "where": "A",
+        "probability": 0.4033557627191426
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Omiya Ardija",
+      "away": "Tokushima",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWWWW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 5,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "LWLLL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 8,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 3,
+      "awayRank": 14,
+      "goalsIndex": 19.5,
+      "mismatchIndex": 47.9,
+      "rankScore": 52.8,
+      "projected": {
+        "home": 1.71,
+        "away": 0.8,
+        "total": 2.51
+      },
+      "probabilities": {
+        "home": 0.5904943138662369,
+        "draw": 0.2367670266180352,
+        "away": 0.1727386595157279,
+        "btts": 0.45107329012796676,
+        "over15": 0.7147479300805087,
+        "over25": 0.4587484192970631,
+        "over35": 0.24456216194158065,
+        "under15": 0.28525206991949126,
+        "under25": 0.5412515807029369
+      },
+      "pick": {
+        "side": "Omiya Ardija",
+        "where": "H",
+        "probability": 0.5904943138662369
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Sagan Tosu",
+      "away": "Oita Trinita",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TWLWL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 6,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "TLLWL",
+          "played": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 11,
+          "points": 4,
+          "ppg": 0.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 11,
+      "awayRank": 12,
+      "goalsIndex": 0,
+      "mismatchIndex": 3.4,
+      "rankScore": 3.4,
+      "projected": {
+        "home": 1.11,
+        "away": 0.99,
+        "total": 2.1
+      },
+      "probabilities": {
+        "home": 0.3813619965790646,
+        "draw": 0.2988308206410401,
+        "away": 0.31980718277989495,
+        "btts": 0.4213207679603368,
+        "over15": 0.620385058092928,
+        "over25": 0.3503686236074131,
+        "over35": 0.16135711946755324,
+        "under15": 0.379614941907072,
+        "under25": 0.649631376392587
+      },
+      "pick": {
+        "side": "Sagan Tosu",
+        "where": "H",
+        "probability": 0.3813619965790646
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Shonan Bellmare",
+      "away": "Kofu",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTLL",
+          "played": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 4,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "LLLLT",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 10,
+          "points": 1,
+          "ppg": 0.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 9,
+      "awayRank": 20,
+      "goalsIndex": 13.8,
+      "mismatchIndex": 59.4,
+      "rankScore": 62.8,
+      "projected": {
+        "home": 1.87,
+        "away": 0.52,
+        "total": 2.39
+      },
+      "probabilities": {
+        "home": 0.7002090829359663,
+        "draw": 0.2048798830753327,
+        "away": 0.09491103398870127,
+        "btts": 0.3429851952777841,
+        "over15": 0.6893739858414566,
+        "over25": 0.4276738596652008,
+        "over35": 0.2191860924781171,
+        "under15": 0.3106260141585434,
+        "under25": 0.5723261403347992
+      },
+      "pick": {
+        "side": "Shonan Bellmare",
+        "where": "H",
+        "probability": 0.7002090829359663
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "MISMATCH"
+      ]
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Tochigi City",
+      "away": "Blaublitz",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWLLL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 13,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "WLWLT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 9,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 18,
+      "awayRank": 13,
+      "goalsIndex": 48,
+      "mismatchIndex": 20.5,
+      "rankScore": 53.1,
+      "projected": {
+        "home": 1.59,
+        "away": 1.51,
+        "total": 3.11
+      },
+      "probabilities": {
+        "home": 0.3981758594797347,
+        "draw": 0.23831187001964477,
+        "away": 0.3635122705006207,
+        "btts": 0.6202133558866799,
+        "over15": 0.815297983242802,
+        "over25": 0.598836229457842,
+        "over35": 0.3751590838800496,
+        "under15": 0.184702016757198,
+        "under25": 0.401163770542158
+      },
+      "pick": {
+        "side": "Tochigi City",
+        "where": "H",
+        "probability": 0.3981758594797347
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:00:00.000Z",
+      "kickoffLocal": "05:00",
+      "country": "japan",
+      "league": "J2 League",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Yokohama FC",
+      "away": "Vegalta Sendai",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 5,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "TWWLL",
+          "played": 5,
+          "goalsFor": 11,
+          "goalsAgainst": 5,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 6,
+      "awayRank": 2,
+      "goalsIndex": 34.4,
+      "mismatchIndex": 12.2,
+      "rankScore": 37.4,
+      "projected": {
+        "home": 1.38,
+        "away": 1.44,
+        "total": 2.82
+      },
+      "probabilities": {
+        "home": 0.36061710770068417,
+        "draw": 0.2516429153657379,
+        "away": 0.3877399769335778,
+        "btts": 0.5710995178299282,
+        "over15": 0.7723051582005865,
+        "over25": 0.5352998623987991,
+        "over35": 0.31251488434511904,
+        "under15": 0.22769484179941346,
+        "under25": 0.4647001376012009
+      },
+      "pick": {
+        "side": "Vegalta Sendai",
+        "where": "A",
+        "probability": 0.3877399769335778
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-25T10:30:00.000Z",
+      "kickoffLocal": "05:30",
+      "country": "japan",
+      "league": "J1 League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Urawa Reds",
+      "away": "Cerezo Osaka",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTLWW",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 10,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "LWLTT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 12,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 9,
+      "awayRank": 12,
+      "goalsIndex": 67.4,
+      "mismatchIndex": 17.2,
+      "rankScore": 71.7,
+      "projected": {
+        "home": 2.13,
+        "away": 1.39,
+        "total": 3.52
+      },
+      "probabilities": {
+        "home": 0.5445584639744968,
+        "draw": 0.2078984631793888,
+        "away": 0.24754307284611446,
+        "btts": 0.661685460731168,
+        "over15": 0.8662085416563636,
+        "over25": 0.682831364061121,
+        "over35": 0.4676688090160364,
+        "under15": 0.13379145834363637,
+        "under25": 0.317168635938879
+      },
+      "pick": {
+        "side": "Urawa Reds",
+        "where": "H",
+        "probability": 0.5445584639744968
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "HIGH_GOALS"
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "country": "asia",
+      "slug": "gulf-club-champions-league",
+      "name": "ASIA: Gulf Club Champions League"
+    }
+  ],
+  "outOfRegionCountries": [
+    "angola",
+    "botswana",
+    "cameroon",
+    "dr-congo",
+    "egypt",
+    "ethiopia",
+    "hong-kong",
+    "india",
+    "indonesia",
+    "kenya",
+    "kuwait",
+    "lebanon",
+    "liberia",
+    "mozambique",
+    "myanmar",
+    "qatar",
+    "republic-of-the-congo",
+    "rwanda",
+    "saudi-arabia",
+    "taiwan",
+    "tajikistan",
+    "thailand",
+    "turkmenistan",
+    "uganda",
+    "uzbekistan",
+    "world",
+    "zambia",
+    "zimbabwe"
+  ]
+}
