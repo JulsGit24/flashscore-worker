@@ -1,0 +1,607 @@
+{
+  "date": "2026-11-26",
+  "region": "americas",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-26T16:43:26.193Z",
+  "stats": {
+    "totalFixtures": 583,
+    "inScope": 7,
+    "tablesLoaded": 715,
+    "daysCached": 115,
+    "daysFetched": 0,
+    "daysFailed": 0,
+    "outOfRegion": [
+      "australia",
+      "botswana",
+      "dr-congo",
+      "egypt",
+      "india",
+      "indonesia",
+      "iran",
+      "jordan",
+      "kenya",
+      "kuwait",
+      "liberia",
+      "libya",
+      "mozambique",
+      "qatar",
+      "saudi-arabia",
+      "seychelles",
+      "sudan",
+      "suriname",
+      "syria",
+      "taiwan",
+      "tajikistan",
+      "thailand",
+      "uganda",
+      "uzbekistan",
+      "world",
+      "zambia"
+    ],
+    "otherDays": 415,
+    "errors": []
+  },
+  "strongPickThreshold": 0.7,
+  "minConfidenceForPicks": "low",
+  "strongPicks": [
+    {
+      "kickoff": "2026-11-27T00:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "nicaragua",
+      "league": "Liga Primera",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Diriangen",
+      "away": "Matagalpa",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWLWW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 5,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 9,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "descending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 2,
+      "awayRank": 10,
+      "goalsIndex": 51.1,
+      "mismatchIndex": 83.7,
+      "rankScore": 96.5,
+      "projected": {
+        "home": 2.65,
+        "away": 0.52,
+        "total": 3.17
+      },
+      "probabilities": {
+        "home": 0.8257137413096535,
+        "draw": 0.12316817795703563,
+        "away": 0.05111808073331075,
+        "btts": 0.37682890792907403,
+        "over15": 0.824827088861812,
+        "over25": 0.6137605340972389,
+        "over35": 0.39073354122933995,
+        "under15": 0.175172911138188,
+        "under25": 0.38623946590276115
+      },
+      "pick": {
+        "side": "Diriangen",
+        "where": "H",
+        "probability": 0.8257137413096535
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "kickoff": "2026-11-26T20:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "country": "jamaica",
+      "league": "Premier League",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Cavalier",
+      "away": "Portmore",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWLW",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 4,
+          "points": 12,
+          "ppg": 2.4
+        },
+        "away": {
+          "streak": "WLWTT",
+          "played": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "steady"
+      },
+      "homeRank": 3,
+      "awayRank": 8,
+      "goalsIndex": 42.3,
+      "mismatchIndex": 18.8,
+      "rankScore": 47,
+      "projected": {
+        "home": 1.54,
+        "away": 1.45,
+        "total": 2.99
+      },
+      "probabilities": {
+        "home": 0.3982169328737592,
+        "draw": 0.24319693556679356,
+        "away": 0.35858613155944746,
+        "btts": 0.6013358572956861,
+        "over15": 0.7993529050785952,
+        "over25": 0.5745652994010452,
+        "over35": 0.35052698574242025,
+        "under15": 0.20064709492140476,
+        "under25": 0.42543470059895483
+      },
+      "pick": {
+        "side": "Cavalier",
+        "where": "H",
+        "probability": 0.3982169328737592
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-26T22:00:00.000Z",
+      "kickoffLocal": "17:00",
+      "country": "chile",
+      "league": "Liga de Ascenso",
+      "tier": 2,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "S. Wanderers",
+      "away": "Recoleta",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LTWWL",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 8,
+          "points": 7,
+          "ppg": 1.4
+        },
+        "away": {
+          "streak": "WTTTL",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 10,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "homeTrend": "steady",
+        "awayTrend": "descending"
+      },
+      "homeRank": 8,
+      "awayRank": 4,
+      "goalsIndex": 21.8,
+      "mismatchIndex": 16.7,
+      "rankScore": 26,
+      "projected": {
+        "home": 1.32,
+        "away": 1.23,
+        "total": 2.56
+      },
+      "probabilities": {
+        "home": 0.3879566085340031,
+        "draw": 0.2666013545660097,
+        "away": 0.3454420368999875,
+        "btts": 0.5186537392309364,
+        "over15": 0.7228100195345653,
+        "over25": 0.4689469423547781,
+        "over35": 0.25316332675195885,
+        "under15": 0.27718998046543475,
+        "under25": 0.5310530576452219
+      },
+      "pick": {
+        "side": "S. Wanderers",
+        "where": "H",
+        "probability": 0.3879566085340031
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-26T22:00:00.000Z",
+      "kickoffLocal": "17:00",
+      "country": "nicaragua",
+      "league": "Liga Primera",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Jalapa",
+      "away": "San Marcos",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LLLWW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 8,
+          "points": 6,
+          "ppg": 1.2
+        },
+        "away": {
+          "streak": "LWTTL",
+          "played": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 7,
+          "points": 5,
+          "ppg": 1
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 7,
+      "awayRank": 8,
+      "goalsIndex": 5.5,
+      "mismatchIndex": 4.5,
+      "rankScore": 6.6,
+      "projected": {
+        "home": 1.27,
+        "away": 0.95,
+        "total": 2.22
+      },
+      "probabilities": {
+        "home": 0.43741287796265294,
+        "draw": 0.2848879225588784,
+        "away": 0.27769919947846894,
+        "btts": 0.44103644316336527,
+        "over15": 0.6502786293867253,
+        "over25": 0.38264403265839275,
+        "over35": 0.18459443107942639,
+        "under15": 0.3497213706132747,
+        "under25": 0.6173559673416072
+      },
+      "pick": {
+        "side": "Jalapa",
+        "where": "H",
+        "probability": 0.43741287796265294
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-26T23:00:00.000Z",
+      "kickoffLocal": "18:00",
+      "country": "brazil",
+      "league": "Serie A",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Sao Paulo",
+      "away": "Remo",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "TTLLT",
+          "played": 5,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "points": 3,
+          "ppg": 0.6
+        },
+        "away": {
+          "streak": "LWWLW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 11,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "descending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 16,
+      "awayRank": 15,
+      "goalsIndex": 23.3,
+      "mismatchIndex": 6.8,
+      "rankScore": 25,
+      "projected": {
+        "home": 1.57,
+        "away": 1.02,
+        "total": 2.59
+      },
+      "probabilities": {
+        "home": 0.5010572482171638,
+        "draw": 0.252726217975458,
+        "away": 0.2462165338073788,
+        "btts": 0.5063798002877444,
+        "over15": 0.7306778224634968,
+        "over25": 0.4790566387402912,
+        "over35": 0.26182368345925655,
+        "under15": 0.2693221775365032,
+        "under25": 0.5209433612597087
+      },
+      "pick": {
+        "side": "Sao Paulo",
+        "where": "H",
+        "probability": 0.5010572482171638
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-27T00:00:00.000Z",
+      "kickoffLocal": "19:00",
+      "country": "nicaragua",
+      "league": "Liga Primera",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Diriangen",
+      "away": "Matagalpa",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "LWLWW",
+          "played": 5,
+          "goalsFor": 9,
+          "goalsAgainst": 5,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "away": {
+          "streak": "LLLLL",
+          "played": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 9,
+          "points": 0,
+          "ppg": 0
+        },
+        "homeTrend": "descending",
+        "awayTrend": "descending"
+      },
+      "homeRank": 2,
+      "awayRank": 10,
+      "goalsIndex": 51.1,
+      "mismatchIndex": 83.7,
+      "rankScore": 96.5,
+      "projected": {
+        "home": 2.65,
+        "away": 0.52,
+        "total": 3.17
+      },
+      "probabilities": {
+        "home": 0.8257137413096535,
+        "draw": 0.12316817795703563,
+        "away": 0.05111808073331075,
+        "btts": 0.37682890792907403,
+        "over15": 0.824827088861812,
+        "over25": 0.6137605340972389,
+        "over35": 0.39073354122933995,
+        "under15": 0.175172911138188,
+        "under25": 0.38623946590276115
+      },
+      "pick": {
+        "side": "Diriangen",
+        "where": "H",
+        "probability": 0.8257137413096535
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": [
+        "MISMATCH",
+        "TOP_VS_BOTTOM",
+        "WIDE_TABLE_GAP"
+      ]
+    },
+    {
+      "kickoff": "2026-11-27T01:00:00.000Z",
+      "kickoffLocal": "20:00",
+      "country": "mexico",
+      "league": "Liga MX",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Pachuca",
+      "away": "Guadalajara Chivas",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWWWW",
+          "played": 5,
+          "goalsFor": 16,
+          "goalsAgainst": 2,
+          "points": 15,
+          "ppg": 3
+        },
+        "away": {
+          "streak": "WWTWW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 3,
+          "points": 13,
+          "ppg": 2.6
+        },
+        "homeTrend": "ascending",
+        "awayTrend": "ascending"
+      },
+      "homeRank": 7,
+      "awayRank": 1,
+      "goalsIndex": 26.9,
+      "mismatchIndex": 23,
+      "rankScore": 32.6,
+      "projected": {
+        "home": 1.34,
+        "away": 1.32,
+        "total": 2.66
+      },
+      "probabilities": {
+        "home": 0.3744323836929456,
+        "draw": 0.2604132639453281,
+        "away": 0.36515435236172616,
+        "btts": 0.5409671843997391,
+        "over15": 0.7439894204219386,
+        "over25": 0.49652651647896917,
+        "over35": 0.2771094083162034,
+        "under15": 0.2560105795780614,
+        "under25": 0.5034734835210308
+      },
+      "pick": {
+        "side": "Pachuca",
+        "where": "H",
+        "probability": 0.3744323836929456
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    },
+    {
+      "kickoff": "2026-11-27T03:10:00.000Z",
+      "kickoffLocal": "22:10",
+      "country": "mexico",
+      "league": "Liga MX",
+      "tier": 1,
+      "kind": "domestic",
+      "gender": "M",
+      "home": "Club Leon",
+      "away": "Cruz Azul",
+      "tableFromPreviousSeason": false,
+      "movement": {
+        "home": "unknown",
+        "away": "unknown"
+      },
+      "form": {
+        "home": {
+          "streak": "WWTLT",
+          "played": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "points": 8,
+          "ppg": 1.6
+        },
+        "away": {
+          "streak": "LLWWW",
+          "played": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 6,
+          "points": 9,
+          "ppg": 1.8
+        },
+        "homeTrend": "steady",
+        "awayTrend": "steady"
+      },
+      "homeRank": 6,
+      "awayRank": 3,
+      "goalsIndex": 57.7,
+      "mismatchIndex": 10.9,
+      "rankScore": 60.4,
+      "projected": {
+        "home": 1.71,
+        "away": 1.6,
+        "total": 3.31
+      },
+      "probabilities": {
+        "home": 0.4083765189761498,
+        "draw": 0.2295093616290884,
+        "away": 0.36211411939476185,
+        "btts": 0.6537534153745612,
+        "over15": 0.842614826420242,
+        "over25": 0.6425768101491065,
+        "over35": 0.42186819886328747,
+        "under15": 0.157385173579758,
+        "under25": 0.3574231898508935
+      },
+      "pick": {
+        "side": "Club Leon",
+        "where": "H",
+        "probability": 0.4083765189761498
+      },
+      "confidence": "high",
+      "basis": "league table",
+      "tags": []
+    }
+  ],
+  "needsReview": [],
+  "outOfRegionCountries": [
+    "australia",
+    "botswana",
+    "dr-congo",
+    "egypt",
+    "india",
+    "indonesia",
+    "iran",
+    "jordan",
+    "kenya",
+    "kuwait",
+    "liberia",
+    "libya",
+    "mozambique",
+    "qatar",
+    "saudi-arabia",
+    "seychelles",
+    "sudan",
+    "suriname",
+    "syria",
+    "taiwan",
+    "tajikistan",
+    "thailand",
+    "uganda",
+    "uzbekistan",
+    "world",
+    "zambia"
+  ]
+}
