@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-27",
+  "sport": "american-football",
+  "competition": "NFL",
+  "competitionKey": "nfl",
+  "timezone": "America/New_York",
+  "generatedAt": "2026-11-27T19:27:20.375Z",
+  "stats": {
+    "totalGames": 69,
+    "otherDays": 55,
+    "daysCached": 74,
+    "daysFetched": 1,
+    "daysFailed": 0,
+    "teamsKnown": 32,
+    "errors": []
+  },
+  "model": {
+    "pointsPerTeamGame": 23.11513157894737,
+    "marginSd": 13.450428048500264,
+    "totalSd": 13.976280882573217,
+    "spreadsDerivedFromGames": 172
+  },
+  "notCovered": {
+    "quarterback": "feed exposes no depth chart or injury data",
+    "injuries": "no injury or news feed responded",
+    "weather": "not carried by the feed",
+    "restAndTravel": "not carried by the feed",
+    "halfData": "feed carries final scores only; the first-half split is proportional"
+  },
+  "coverProbability": 0.7,
+  "games": [
+    {
+      "kickoff": "2026-11-27T20:00:00.000Z",
+      "kickoffLocal": "15:00",
+      "home": "Pittsburgh Steelers",
+      "away": "Denver Broncos",
+      "projection": {
+        "competition": "nfl",
+        "confidence": "high",
+        "points": {
+          "home": 21.3,
+          "away": 20.9,
+          "total": 42.2
+        },
+        "margin": 0.4,
+        "spread": {
+          "favourite": "Pittsburgh Steelers",
+          "line": -0.4,
+          "where": "H"
+        },
+        "winProbability": {
+          "home": 0.5112396868646549,
+          "away": 0.4869819293266796,
+          "tie": 0.0017783838086654735
+        },
+        "regulation": {
+          "tie": 0.02963973014442456
+        },
+        "total": {
+          "projected": 42.2,
+          "range": [
+            24.3,
+            60.1
+          ],
+          "overUnder": [
+            {
+              "line": 36.5,
+              "over": 0.6580982793836729
+            },
+            {
+              "line": 39.5,
+              "over": 0.5763753177234852
+            },
+            {
+              "line": 42.5,
+              "over": 0.49121591120675956
+            },
+            {
+              "line": 45.5,
+              "over": 0.4064566499168554
+            },
+            {
+              "line": 48.5,
+              "over": 0.3258798971939312
+            }
+          ]
+        },
+        "firstHalf": {
+          "points": {
+            "home": 10.7,
+            "away": 10.4,
+            "total": 21.1
+          },
+          "note": "proportional split of the full-game projection, not measured half data"
+        },
+        "keyNumbers": [
+          {
+            "margin": 3,
+            "probability": 0.05782488554183429
+          },
+          {
+            "margin": 7,
+            "probability": 0.0517811197557857
+          },
+          {
+            "margin": 10,
+            "probability": 0.04498226372693481
+          },
+          {
+            "margin": 14,
+            "probability": 0.03451227741049745
+          },
+          {
+            "margin": 6,
+            "probability": 0.05367269585118056
+          },
+          {
+            "margin": 4,
+            "probability": 0.05671853330192611
+          }
+        ],
+        "ratings": {
+          "home": {
+            "played": 9,
+            "rank": 16,
+            "pointsFor": 21.945449561403507,
+            "pointsAgainst": 21.445449561403507,
+            "offence": 0.949397561785494,
+            "defence": 0.9277667093591384,
+            "pointDifferential": 0.5
+          },
+          "away": {
+            "played": 10,
+            "rank": 5,
+            "pointsFor": 23.48810728744939,
+            "pointsAgainst": 21.48810728744939,
+            "offence": 1.0161355650184452,
+            "defence": 0.9296121553130233,
+            "pointDifferential": 2
+          }
+        },
+        "strengthGap": 1.5
+      },
+      "linesAtProbability": {
+        "probability": 0.7,
+        "totalOver": 34.5,
+        "totalUnder": 50.5,
+        "spread": {
+          "side": "Pittsburgh Steelers",
+          "where": "H",
+          "line": 7.5
+        },
+        "moneylineCovers": false
+      },
+      "form": {
+        "home": {
+          "streak": "LLWWW",
+          "played": 5,
+          "pointsFor": 103,
+          "pointsAgainst": 92,
+          "winRate": 0.6,
+          "pointsForAvg": 20.6,
+          "pointsAgainstAvg": 18.4
+        },
+        "away": {
+          "streak": "WWWWW",
+          "played": 5,
+          "pointsFor": 139,
+          "pointsAgainst": 99,
+          "winRate": 1,
+          "pointsForAvg": 27.8,
+          "pointsAgainstAvg": 19.8
+        }
+      },
+      "headToHead": [],
+      "headToHeadSummary": {
+        "played": 0,
+        "aWins": 0,
+        "bWins": 0,
+        "ties": 0,
+        "averageTotal": null
+      }
+    }
+  ]
+}
